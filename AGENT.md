@@ -41,8 +41,13 @@ Du bist ein Experte für Aktien und Finanzen. Dieser Lauf passiert 2× täglich 
    haupt{vermoegen,rendite,cashQuote,score,fazit,punkte}, speku{…}, vergleich, lektionen).
 7. **Schatten-Depot fortschreiben** (`data/schatten.json` — das eigene Depot des Reviewers,
    GUI: `schatten.html`):
+   **Hinweis:** Ein GitHub-Actions-Job (`.github/workflows/kurse.yml` → `scripts/update_kurse.py`)
+   aktualisiert die Positions-Kurse alle 15 Minuten automatisch (Stand-Vermerk „(Auto-Kurse)")
+   und setzt bei Stop-Unterschreitung nur das Flag `stopVerletzt` — er handelt NICHT.
+   Die Exekution von Stops/Zielen und alle Trades bleiben ausschließlich Aufgabe dieses Laufs.
    a. **Kurse aktualisieren:** Für jede Position in `positionen` den aktuellen Kurs aus den
-      Dashboards übernehmen (CEG aus Haupt-Depot, QBTS/IONQ aus Speku-Depot). `rendite` je
+      Dashboards übernehmen (CEG aus Haupt-Depot, QBTS/IONQ aus Speku-Depot); sind die
+      Auto-Kurse aktueller, gelten die Auto-Kurse. `rendite` je
       Position = (kurs/einstand − 1) × 100. `aktuell.vermoegen` = cash + Σ(einsatz × kurs/einstand),
       `aktuell.rendite` = (vermoegen/startKapital − 1) × 100. `aktuell.stand` aktualisieren.
    b. **Stops/Ziele exekutieren:** Reißt ein Stop oder wird ein Ziel erreicht → Position verkaufen

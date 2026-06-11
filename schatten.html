@@ -186,6 +186,8 @@ const fmtP = v => (v > 0 ? "+" : "") + v.toLocaleString("de-DE", { minimumFracti
 const fmtE = v => v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
 const cls = v => v > 0 ? "pos" : (v < 0 ? "neg" : "neutral");
 
+let letzterVerlauf = [];
+function ladeDaten() {
 fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).then(d => {
   document.getElementById("stand").textContent = d.aktuell.stand + " · Start " + d.meta.start + " mit " + fmtE(d.meta.startKapital);
   document.getElementById("regeln").textContent = d.meta.regeln;
@@ -217,7 +219,7 @@ fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).then(d => {
       <td>${p.einstand.toLocaleString("de-DE")}</td>
       <td>${p.kurs.toLocaleString("de-DE")}</td>
       <td class="${cls(p.rendite)}">${fmtP(p.rendite)}</td>
-      <td>${p.stop.toLocaleString("de-DE")} / ${p.ziel.toLocaleString("de-DE")}</td>
+      <td>${p.stop.toLocaleString("de-DE")} / ${p.ziel.toLocaleString("de-DE")}${p.stopVerletzt ? ' <span class="badge falsch">STOP!</span>' : ""}</td>
     </tr>`).join("") || '<tr><td colspan="6" style="color:var(--muted)">Keine offenen Positionen — voll in Cash.</td></tr>';
 
   document.getElementById("abweichungen").innerHTML = d.abweichungen.map(a => `
@@ -245,11 +247,15 @@ fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).then(d => {
       <td style="color:var(--muted)">${t.kommentar}</td>
     </tr>`).join("");
 
+  letzterVerlauf = d.verlauf;
   drawChart(d.verlauf);
-  let rt;
-  window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => drawChart(d.verlauf), 150); });
-  window.addEventListener("orientationchange", () => setTimeout(() => drawChart(d.verlauf), 300));
 });
+}
+ladeDaten();
+setInterval(ladeDaten, 5 * 60 * 1000);
+let rt;
+window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => letzterVerlauf.length && drawChart(letzterVerlauf), 150); });
+window.addEventListener("orientationchange", () => setTimeout(() => letzterVerlauf.length && drawChart(letzterVerlauf), 300));
 
 function drawChart(verlauf) {
   const cv = document.getElementById("chart");
