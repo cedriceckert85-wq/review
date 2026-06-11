@@ -154,6 +154,46 @@
         "IWM-Fehlprognose korrigiert: 'Tag 2 weiter bluten' war negatives Momentum-Extrapolieren ohne Edge. IWM +1,04 % heute — Rotations-These intakter als eigene Erwartung.",
         "CEG-Erholung bestaetigt These: Nuklear/KI-Strom-Story ist intakt. Die -4,13 % auf Einstand waren Selloff-Panik, nicht Fundamental-Schwaeche. CEG +1,83 % heute als Rueckenwind durch Oracle-Capex."
       ]
+    },
+    {
+      "id": "2026-06-11-2200",
+      "datum": "2026-06-11",
+      "zeit": "22:00",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 1993.03,
+        "rendite": -0.35,
+        "cashQuote": 92,
+        "score": 6,
+        "fazit": "Abschluss Tag 4: NVDA hat den Stop 199 überlebt — aber nur knapp. Tiefstkurs 199,88 um 19:18 Uhr, dann Relief-Rally durch Trumps Iran-Nacht-Absage auf 203,68. Ohne diesen externen Katalysator wäre der Stop mit hoher Wahrscheinlichkeit gerissen. Strukturell unverändert: 92 % Cash, drei Positionen (NVDA −2,76 %, CEG −2,16 %, IWM +0,40 %), Depot −1,42 Punkte hinter dem Tages-SPY. Score 6 bleibt: Prozess korrekt, strukturelle Schwächen bestehen.",
+        "punkte": [
+          "NVDA 203,68 (Tief 199,88 um 19:18 Uhr): Stop 199 wurde nur durch Trumps Iran-Nacht-Absage gerettet. Kein eigenes Prozess-Verdienst — exogenes Glück. Ein System, das auf Geopolitik-Glück angewiesen ist, um seinen Stop zu halten, hat den Stop zu eng platziert (→ L4, F-H-003 Near-Miss bestätigt).",
+          "CEG 247,24 (Einstand 252,69): −2,16 % auf Einstand trotz Oracle-KI-Capex-Rückenwind und Nuklear-Story. Kein Katalysator konnte den 5,45-$-Abstand zum Einstand schließen.",
+          "IWM 289,91 (Einstand 288,77): +0,40 % — erste positive Position im Depot. Russell Small Caps +2,3 % durch Iran-Deeskalation und weichen Kern-PPI. Rotations-These beginnt zu greifen.",
+          "Benchmark-Lücke: Depot −0,35 %, SPY Buy&Hold +1,07 % → −1,42 Prozentpunkte heute. 92 % Cash partizipiert nicht an der Relief-Rally.",
+          "Prozess: Kein Stop gerissen, keine Regelaufweichung. Stop-Disziplin bleibt die zentrale Stärke. Schwäche: Alle drei Positionen wurden in fallende Kurse hinein gekauft, H1 (Einstiegs-Timing) bleibt ungelöst."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2025.90,
+        "rendite": 1.30,
+        "cashQuote": 55,
+        "score": 7,
+        "fazit": "Quantum-Trio beendet Tag 1 stark: QBTS +3,44 %, IONQ +2,91 %, RGTI +6,32 %. Neuer Trade: RKLB Short (SpaceX-IPO-Fade, 120 €) eingebucht um 19:55 Uhr, läuft am ersten Tag mit −2,30 % gegen die Position (Kurs 113,45). Gesamtrendite +1,30 % vs. SPY +1,59 %. Score 7 bleibt: Kernwetten laufen, aber RKLB-Short ist ein Kontra-Trend-Trade in einer Risk-on-Rally.",
+        "punkte": [
+          "RGTI +6,32 % (Einstand 19,45, Kurs 20,68): Übertrifft QBTS (+3,44 %) und IONQ (+2,91 %) deutlich. Das 'Lotterie-Ticket' zeigt früh Stärke — Gov-Cash-Polster (590 Mio. $) als Downside-Schutz trägt. D3-Abweichung (RGTI weggelassen) beginnt sich zu Ungunsten des Schatten-Depots zu entwickeln.",
+          "RKLB Short (110,90 €, Stop 119,80, Ziel 99,80, Zeit-Exit 15.06.): −2,30 % am ersten Tag (Kurs 113,45). Risk-on-Rally nach Iran-Deeskalation ist das ungünstigste Umfeld für einen Short auf volatile Growth-Aktie. These (SpaceX-Listing entzieht RKLB die Proxy-Prämie) ist morgen testbar.",
+          "SpaceX-SPCX-Listing 12.06. @ 135 $: Binärer Test für RKLB-Short. Kapitalrotation in SPCX (These richtig) vs. Sektor-Lift (RKLB steigt mit, Short falsch).",
+          "Scout-Fehlalarme 7 heute (Tag 1: ~14) — Master-Fix greift, F-S-003 rückläufig aber noch OFFEN. 0 Fehltrades.",
+          "Klumpenrisiko H2/F-S-001: RKLB-Short ist keine strukturelle Diversifikation vom Quantum-Klumpenrisiko, sondern ein separates taktisches Buch. Strukturelles Problem bleibt ungelöst."
+        ]
+      },
+      "vergleich": "Haupt-Depot −0,35 % (8 % investiert) vs. Speku-Depot +1,30 % (45 % investiert) vs. Schatten-Depot +0,39 % (45 % investiert). Das Speku-Depot dominiert nominal bei 5-fach höherer Kapitalexponierung. Ohne den RKLB-Short (−2,76 € Tagesverlust unrealisiert) läge das Speku-Depot bei ca. +1,44 %. Das Schatten-Depot liegt zwischen beiden: geringerer Einsatz als Speku-Depot, aber auch schlechterer IONQ-Einstand (58,51 vs. Original 56,63). Risikoadjustiert: Das Haupt-Depot mit 92 % Cash zahlt heute den maximalen Preis der Defensivhaltung — prozessual korrekt, aber teuer.",
+      "lektionen": [
+        "H3 bestätigt → L4: NVDA-Near-Miss 199,88 zeigt, dass ein Stop 0,4 % über dem Intraday-Tief im reinen Rauschen liegt. Stops auf ATR-Basis setzen, nicht auf Komfort-Abstand vom aktuellen Kurs.",
+        "Geopolitik-Überraschungen kippen alles in Minuten: Trumps Iran-Absage rettete NVDA und generierte +1,4 % SPY. Wer 92 % Cash hält, verliert systemisch an solchen Risk-on-Wendepunkten.",
+        "RKLB-Short-These morgen entscheidbar: SpaceX-SPCX-Listing ist der binäre Test. Bewertung der Abweichung D5 im 17:00-Lauf 12.06."
+      ]
     }
   ]
 }
