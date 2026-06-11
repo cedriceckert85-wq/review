@@ -39,6 +39,43 @@
         "Konzentration dokumentieren: Das Speku-Depot sollte sein Quantum-Klumpenrisiko explizit als Risiko-Kennzahl führen (Korrelation der Positionen), nicht nur Einzel-Stops.",
         "Einstiegs-Timing des Haupt-Depots beobachten: Drei Käufe, drei Positionen sofort im Minus — kaufte das System systematisch in Schwäche ohne Bestätigung? Über die nächsten Reviews verfolgen."
       ]
+    },
+    {
+      "id": "2026-06-11-1340",
+      "datum": "2026-06-11",
+      "zeit": "13:40",
+      "slot": "Manueller Lauf",
+      "haupt": {
+        "vermoegen": 1989.82,
+        "rendite": -0.51,
+        "cashQuote": 92,
+        "score": 6,
+        "fazit": "Dashboard nicht erreichbar (HTTP 403 Forbidden) — Werte aus Erst-Bewertung unverändert übernommen. Score bleibt 6, da keine neuen Daten vorliegen. Prozessqualität: Stop-Disziplin bleibt weiterhin als Stärke des Systems bewertet; Einstiegs-Timing (H1) und NVDA-Whipsaw-Gefahr (H3) bleiben offene Fragen.",
+        "punkte": [
+          "Dashboard-Abruf fehlgeschlagen (HTTP 403 Forbidden) — GitHub Pages ist nicht öffentlich erreichbar oder Repository ist privat. Datenbasis ist die Erst-Bewertung vom selben Tag.",
+          "Letzte bekannte Werte: Vermögen 1.989,82 €, Rendite −0,51 %, Cash-Quote 92 %. Keine Veränderung dokumentierbar.",
+          "H1 (systematisches Kaufen in Schwäche ohne Bestätigung) nicht prüfbar — keine neuen Trade-Daten vorhanden.",
+          "H3 (NVDA-Stop 199, Whipsaw-Risiko): NVDA war zuletzt 0,7 % vom Stop entfernt, aktueller Status unbekannt. Offene Frage bleibt bestehen."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2022.37,
+        "rendite": 1.12,
+        "cashQuote": 61.5,
+        "score": 7,
+        "fazit": "Dashboard nicht erreichbar (HTTP 403 Forbidden) — Werte aus Erst-Bewertung unverändert. Score bleibt 7. H2 (Quantum-Klumpenrisiko: QBTS/IONQ/RGTI gleichzeitiger Drawdown bei Marktschwäche) nicht verifizierbar, da keine aktuellen Kursdaten vorliegen.",
+        "punkte": [
+          "Dashboard-Abruf fehlgeschlagen (HTTP 403 Forbidden) — keine neuen Positionsdaten.",
+          "Letzte bekannte Werte: Vermögen 2.022,37 €, Rendite +1,12 %, Cash-Quote 61,5 %. Keine Veränderung dokumentierbar.",
+          "H2 (Quantum-Trio-Korrelation) bleibt offen — ohne aktuelle Kurse ist keine Prüfung möglich.",
+          "Prozess-Warnung: Wenn der automatische Agent die Dashboards nicht abrufen kann, ist der gesamte Review-Prozess strukturell blockiert — dies ist das zentrale Finding dieses Laufs."
+        ]
+      },
+      "vergleich": "Kein belastbarer Vergleich möglich — beide Dashboards gaben HTTP 403 zurück. Auf Basis der letzten bekannten Daten führt das Speku-Depot weiterhin nominal (+1,12 % vs. −0,51 %), aber ohne aktuelle Kurse und Trades ist jeder Vergleich der Denkwege nicht aktualisierbar. Das eigentliche Problem dieses Laufs ist technischer Natur: Die Review-Pipeline ist von externen, nicht authentifizierten GitHub-Pages-URLs abhängig. Ohne Fallback-Datenpfad (z. B. direkte JSON-Dateien im Repository) bleibt der Lernzyklus bei jedem Zugangsproblem unterbrochen.",
+      "lektionen": [
+        "Pipeline-Resilienz fehlt: Der Review-Prozess hat keinen Fallback, wenn die Dashboard-URLs nicht erreichbar sind. Empfehlung: Rohdaten (Portfolio-JSON) direkt im Repository versionieren, damit der Agent auch ohne funktionierende GitHub Pages auswerten kann.",
+        "H1, H2, H3 bleiben offen — in diesem Lauf nicht prüfbar, da keine neuen Finanzdaten abgerufen werden konnten."
+      ]
     }
   ]
 }
