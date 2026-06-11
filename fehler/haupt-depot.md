@@ -25,13 +25,15 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Was passiert ist:** NVDA, CEG, IWM — alle drei Positionen notierten unmittelbar nach Kauf im Minus. Käufe erfolgten in fallende Kurse hinein, ohne Bestätigung (kein Stabilisierungs-Kriterium).
 - **Einstufung:** UNKLAR — bei n=3 kann das Zufall sein. Wird zum SKILL-FEHLER, wenn sich das Muster bei den nächsten 5 Einstiegen fortsetzt.
 - **Messlatte:** Anteil der Einstiege, die nach 2 Handelstagen im Minus sind. > 70 % bei n≥8 → SKILL-FEHLER „kauft fallende Messer".
+- **Update 11.06.2026 (22:00):** Stand Tag 4: NVDA −2,76 %, CEG −2,16 %, IWM +0,40 %. IWM erstmals leicht positiv — 2/3 noch im Minus. Muster läuft weiter.
 - **Status:** OFFEN (Beobachtung läuft)
 
 ### F-H-003 · 2026-06-11 · Stop-Abstand im Nachrichtensturm (NVDA 0,7 %)
 - **Was passiert ist:** NVDA-Stop 199 lag nur 0,7 % unter dem Kurs — bei 3–4 % Tagesschwankung (Iran + CPI) ist das innerhalb des Rauschens.
-- **Einstufung:** UNKLAR — wird zum SKILL-FEHLER, wenn der Stop reißt und der Kurs sich danach erholt (Whipsaw). War der Stop-Riss der Beginn eines echten Abverkaufs, war der enge Stop richtig.
-- **Messlatte:** Kursverlauf nach Stop-Riss beobachten (siehe Schatten-Depot D1).
-- **Status:** OFFEN
+- **Einstufung:** UNKLAR → stark Richtung SKILL-FEHLER — NVDA fiel am 11.06. intraday auf 199,88 (nur 0,4 % über Stop 199). Der Stop wurde nicht getriggert, weil Trumps Iran-Nacht-Absage eine Relief-Rally auslöste (exogenes Glück, kein Prozess-Verdienst). Das Rauschen hat den Stop beinahe ausgelöst — das ist ein starkes Indiz für einen zu engen Stop, unabhängig vom Ausgang.
+- **Messlatte:** Reißt der Stop 199 und erholt sich NVDA danach über 205 → SKILL-FEHLER (klassischer Whipsaw). Fällt NVDA nach Stop-Riss weiter unter 195 → enger Stop war richtig.
+- **Update 11.06.2026 (22:00):** Near-Miss 199,88 am 11.06. bestätigt Kernthese der Hypothese H3 → L4. Endgültige Einstufung bei nächstem Stop-Riss.
+- **Status:** OFFEN (Near-Miss 199,88 — Tendenz SKILL-FEHLER)
 
 ---
 
@@ -47,4 +49,4 @@ _(noch keine — erstes Wochen-Review am Sonntag, 14.06.2026)_
 |---|---|---|---|
 | Ungetestete Makro-These | 1 | F-H-001 | neu |
 | Kauf ohne Bestätigung in Schwäche | 1 (3 Trades) | F-H-002 | beobachten |
-| Stop im Rauschen platziert | 1 | F-H-003 | beobachten |
+| Stop im Rauschen platziert | 1 | F-H-003 | beobachten → Tendenz SKILL-FEHLER |
