@@ -7,7 +7,7 @@ Vor jeder neuen Bewertung prüfen: Welche früheren Einschätzungen waren falsch
 
 - **H1 (11.06.2026):** Das Haupt-Depot kauft systematisch in Schwäche ohne Bestätigung — drei Käufe, drei Positionen sofort im Minus. → Bei künftigen Trades prüfen, ob Einstiege weiter sofort ins Minus laufen.
 - **H2 (11.06.2026):** Das Quantum-Klumpenrisiko im Speku-Depot (QBTS/IONQ/RGTI, Korrelation ~1) wird sich bei der nächsten Marktschwäche in einem gleichzeitigen Drawdown aller drei Positionen zeigen.
-- **H3 (11.06.2026):** NVDA-Stop bei 199: Wenn der Stop reißt und sich der Kurs danach erholt (Whipsaw), ist das ein Hinweis, dass die Stops des Haupt-Depots zu eng am Markt-Rauschen liegen.
+- **H3 (11.06.2026):** NVDA-Stop bei 199: Wenn der Stop reißt und sich der Kurs danach erholt (Whipsaw), ist das ein Hinweis, dass die Stops des Haupt-Depots zu eng am Markt-Rauschen liegen. → *Stand 17:03 Uhr: NVDA bei 199,95 — nur 0,5 % über dem Stop. Oracle-Catalyst hat NVDA nicht gestützt; Relative-Stärke-These inhaltlich gebrochen.*
 
 ## Bestätigte Lektionen
 
@@ -25,7 +25,8 @@ Hier wird festgehalten, welche Einschätzungen aus früheren Reviews sich als ri
 
 | Datum | Einschätzung | Ergebnis | Urteil |
 |-------|--------------|----------|--------|
-| 11.06.2026 (14:05) | NVDA 0,7 % vom Stop 199 — Whipsaw-Gefahr, Stop trotzdem halten | Offen — vorbörslich 13:43 noch im 199er-Band; Oracle-Capex-Katalysator könnte Stop heute knapp halten; entscheidbar nach Marktöffnung 15:30 Uhr | Ausstehend |
-| 11.06.2026 (14:05) | IWM-Kauf (Chips→Small-Cap-Rotation) blutet Tag 2 weiter | Offen — keine neuen Preisdaten (US noch geschlossen) | Ausstehend |
-| 11.06.2026 (14:05) | Quantum-Positionen: bei nächster Marktschwäche gleichzeitiger Drawdown aller drei | Offen — vorbörslich seitwärts, kein Test-Ereignis heute | Ausstehend |
-| 11.06.2026 (13:48) | Oracle-Earnings (Capex 70 Mrd. $) → AI-Hardware vorbörslich im Plus; NVDA wird Stop 199 heute halten und eröffnet ≥ 201 | Offen — entscheidbar nach Handelseröffnung 15:30 Uhr | Ausstehend |
+| 11.06.2026 (14:05) | NVDA 0,7 % vom Stop 199 — Whipsaw-Gefahr, Stop trotzdem halten | 17:03 Uhr: NVDA 199,95 — Stop noch nicht gerissen, aber Oracle-Catalyst hat nicht geholfen. Entscheidung bis 22:00 Uhr. | Ausstehend |
+| 11.06.2026 (14:05) | IWM-Kauf (Chips→Small-Cap-Rotation) blutet Tag 2 weiter | IWM 284,97 (+1,04 % am 11.06., 17:03 Uhr) — Rotations-These zeigt Stärke, kein weiteres Bluten | **FALSCH** |
+| 11.06.2026 (14:05) | Quantum-Positionen: bei nächster Marktschwäche gleichzeitiger Drawdown aller drei | Kein Stressereignis heute — QBTS/IONQ/RGTI alle positiv auf Einstand | Ausstehend |
+| 11.06.2026 (13:48) | Oracle-Earnings (Capex 70 Mrd. $) → AI-Hardware vorbörslich im Plus; NVDA wird Stop 199 heute halten und eröffnet ≥ 201 | NVDA 199,95 (17:03) — nicht ≥ 201; fällt trotz Oracle-Catalyst. CEG +1,83 % bestätigt AI-Strom-Rückenwind ✓, NVDA-Magnitude ✗ | **TEILWEISE FALSCH** (CEG ✓, NVDA ✗) |
+| 11.06.2026 (17:04) | NVDA reißt den Stop 199 heute noch — Relative-Stärke-These ist gebrochen (kein Catalyst hilft) | Offen — US-Markt bis 22:00 Uhr | Ausstehend |

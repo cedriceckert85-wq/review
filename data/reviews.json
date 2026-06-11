@@ -114,6 +114,46 @@
         "Dashboard-Aktualisierungsrhythmus: Kurse aktualisieren sich nur ~16 und ~22 Uhr Berlin-Zeit. Zwischenläufe liefern Kontext/News-Updates, keine neuen Preisdaten — das ist der Nutzen, nicht die Einschränkung.",
         "Oracle-Sektor-Katalysator beobachten: Starke Cloud/AI-Capex-Prognosen stützen AI-Hardware direkt (NVDA, CEG indirekt), Quantum nur indirekt. Beim 16:00-Lauf prüfen, ob NVDA über dem Stop eröffnet hat."
       ]
+    },
+    {
+      "id": "2026-06-11-1704",
+      "datum": "2026-06-11",
+      "zeit": "17:04",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 1990.99,
+        "rendite": -0.45,
+        "cashQuote": 92,
+        "score": 6,
+        "fazit": "Erste Intraday-Kurse nach US-Handelseröffnung (15:30 Uhr): CEG und IWM erholen sich, NVDA faellt weiter auf 199,95 — nur 0,5 % ueber dem Stop 199. Oracle-Capex-Katalysator hat den erhofften NVDA-Schub ausbleiben lassen; Relative-Staerke-These inhaltlich gebrochen. Score bleibt 6: Prozessdisziplin intakt, aber Einstiegs-Timing (H1) und NVDA-Risiko (F-H-003) bestimmen weiterhin das Bild.",
+        "punkte": [
+          "NVDA 199,95 — nahezu am Stop 199 (Abstand 0,5 %). Kursverlauf: 209,46 (Kauf) → 200,31 (gestern Abend) → 199,95 (17:03 Uhr). Oracle-Catalyst hat NVDA nicht gestuetzt — Relative-Staerke-These gebrochen. Mechanischer Regelverkauf bei <199 bleibt verbindlich.",
+          "CEG 246,68 (+1,83 % heute, gestern 242,26) — Nuklear/KI-Strom-These gewinnt Rueckenwind durch Oracle-Capex 70 Mrd. $. Stop 237 jetzt 3,9 % entfernt, deutlich entspannter.",
+          "IWM 284,97 (+1,04 % heute, gestern 282,01) — Rotations-These zeigt relative Staerke. Prognose 'IWM blutet Tag 2 weiter' war FALSCH (→ Prognose-Bilanz korrigiert).",
+          "92 % Cash schuetzt vor Verlust, kostet aber heute Rendite: Waehrend CEG und IWM steigen, partizipiert nur das 8 %-Segment. Systeminhaerenter Trade-off.",
+          "Gesamtbewertung Prozess: Stops werden penibel gehalten. Schwaeche liegt im Einstiegs-Timing — drei Positionen, alle im Minus auf Einstand. H1 weiterhin bestaetigt."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2010.57,
+        "rendite": 0.53,
+        "cashQuote": 61.2,
+        "score": 7,
+        "fazit": "Day-1-Abschluss: Alle drei Quantum-Positionen im Plus auf Einstand — QBTS +1,68 %, IONQ +0,30 %, RGTI +2,57 %. Depot zog vom Eroeffnungshoch (2.022 EUR) auf 2.010 EUR zurueck; normales Intraday-Geschaeft. Score 7 bleibt: These intakt, Stops weit entfernt, aber 100 %-Quantum-Klumpenrisiko (H2) ist der unresolvierte Strukturfehler.",
+        "punkte": [
+          "QBTS 23,64 $ (+1,68 % auf Einstand 23,25) — Kernwette im Plus. Stop 18,60 $ ist 21 % entfernt. Asymmetrisches Chance-Risiko-Profil (Ziel 36 / Stop 18,60) bleibt intakt.",
+          "IONQ 56,80 $ (+0,30 % auf Einstand 56,63) — schwaeche Performance heute, aber positiv. Ruhige Bewegung passt zum Qualitaetsfuehrer-Charakter. Kein Panikverhalten.",
+          "RGTI 19,95 $ (+2,57 % auf Einstand 19,45) — Lotterielos ueberrascht positiv. Gov-Katalysator-Narrativ (590M$ Cash) traegt. Kein Signal nach Tag 1.",
+          "Quantum entkoppelt von Oracle/AI-Hardware-Rally: IONQ nur +0,30 % an einem Tag mit Oracle-Rueckenwind. Bestaetigt F-S-001-Kern: Quantum hat eigene Risikoachse, kein passiver Markt-Beta.",
+          "SpaceX-Listing morgen (12.06.): Tranche-2-Entscheidung (Space, ~250 EUR) erst nach IPO-Abkuehlung — kein Einstieg im Hype, das waere der AMD-Fehler des Haupt-Depots."
+        ]
+      },
+      "vergleich": "Haupt-Depot -0,45 % (8 % investiert) vs. Speku-Depot +0,53 % (38,5 % investiert) vs. Schatten-Depot -0,30 % (45 % investiert, ohne NVDA und RGTI). Das Speku-Depot traegt ~5x mehr Marktrisiko pro Kapitaleuro und liegt nominell vorn — nach einem Tag kein belastbares Signal. Strukturell auffaellig: Das Schatten-Depot leidet unter der IONQ-Entscheidung (Einstand 58,51 vs. Original 56,63 — 1,75 % teurer durch verzoegerten Kauf). Das Haupt-Depot kaempft mit einem NVDA-Stop, der jeden Moment reissen kann. Das Speku-Depot ist das ruhigste der drei (Stops weit entfernt), traegt aber das hoechste Themenrisiko.",
+      "lektionen": [
+        "NVDA-Warnsignal: Kurs faellt trotz Oracle-Catalyst (199,95 vs. erhofften >=201). Relative-Staerke-These ist inhaltlich gebrochen. Stop mechanisch halten bleibt richtig; die urspruengliche Kaufthese war das Problem.",
+        "IWM-Fehlprognose korrigiert: 'Tag 2 weiter bluten' war negatives Momentum-Extrapolieren ohne Edge. IWM +1,04 % heute — Rotations-These intakter als eigene Erwartung.",
+        "CEG-Erholung bestaetigt These: Nuklear/KI-Strom-Story ist intakt. Die -4,13 % auf Einstand waren Selloff-Panik, nicht Fundamental-Schwaeche. CEG +1,83 % heute als Rueckenwind durch Oracle-Capex."
+      ]
     }
   ]
 }
