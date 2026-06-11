@@ -9,7 +9,7 @@
     "rendite": 0.0,
     "cash": 1100.0,
     "cashQuote": 55.0,
-    "stand": "11.06.2026, 14:20"
+    "stand": "11.06.2026, 13:48"
   },
   "scoreboard": { "richtig": 0, "falsch": 0, "offen": 4 },
   "positionen": [
@@ -99,6 +99,7 @@
     { "datum": "2026-06-11", "zeit": "14:20", "aktion": "Kauf", "ticker": "IONQ", "kurs": 58.51, "einsatz": 250, "kommentar": "Start-Bestückung: Quantum auf 2 Titel begrenzt, RGTI bewusst weggelassen" }
   ],
   "verlauf": [
-    { "datum": "11.06.", "zeit": "14:20", "schatten": 0.0, "haupt": -0.51, "speku": 1.12 }
+    { "datum": "11.06.", "zeit": "14:20", "schatten": 0.0, "haupt": -0.51, "speku": 1.12 },
+    { "datum": "11.06.", "zeit": "13:48", "schatten": 0.0, "haupt": -0.51, "speku": 1.12 }
   ]
 }

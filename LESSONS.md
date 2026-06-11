@@ -8,11 +8,12 @@ Vor jeder neuen Bewertung prüfen: Welche früheren Einschätzungen waren falsch
 - **H1 (11.06.2026):** Das Haupt-Depot kauft systematisch in Schwäche ohne Bestätigung — drei Käufe, drei Positionen sofort im Minus. → Bei künftigen Trades prüfen, ob Einstiege weiter sofort ins Minus laufen.
 - **H2 (11.06.2026):** Das Quantum-Klumpenrisiko im Speku-Depot (QBTS/IONQ/RGTI, Korrelation ~1) wird sich bei der nächsten Marktschwäche in einem gleichzeitigen Drawdown aller drei Positionen zeigen.
 - **H3 (11.06.2026):** NVDA-Stop bei 199: Wenn der Stop reißt und sich der Kurs danach erholt (Whipsaw), ist das ein Hinweis, dass die Stops des Haupt-Depots zu eng am Markt-Rauschen liegen.
-- **H4 (11.06.2026, 13:40):** Die Review-Pipeline hängt von externen GitHub-Pages-URLs ab, die bei nicht-öffentlichen Repositories HTTP 403 zurückgeben. Wenn der Agent die Dashboards nicht abrufen kann, ist der gesamte Erkenntnisprozess blockiert. Prüfen, ob ein direkter Datenpfad (z. B. rohe JSON-Dateien im epmt-dashboard-Repository oder ein öffentlicher API-Endpunkt) als Fallback eingebaut werden kann.
 
 ## Bestätigte Lektionen
 
 - **L1 (11.06.2026):** Makro-Reflexe sind keine Strategie. „Geopolitik-Krise → Gold steigt" ist gescheitert (GLD −5,20 % trotz Iran-Eskalation). Hedge-Thesen müssen vor dem Kauf an historischen Episoden geprüft werden.
+- **L2 (11.06.2026, 13:48 — bestätigt aus H4):** Lokaler Checkout ist die robuste Primärquelle. Der Agent liest `index.html` und `speku.html` direkt aus dem `epmt-dashboard`-Checkout — das umgeht HTTP 403 bei GitHub Pages vollständig. Die Review-Pipeline ist damit unabhängig von öffentlichem Netzzugang zu den Pages-URLs.
+- **L3 (11.06.2026, 13:48):** Die Dashboards aktualisieren Kursdaten nur ~16 Uhr und ~22 Uhr Berlin-Zeit. Läufe zwischen diesen Zeiten finden immer dieselben Preisdaten vor. Der Erkenntnisgewinn in Zwischenläufen liegt im News/Kontext-Update, nicht in neuen Kursen — Kursvergleiche zwischen Zwischenläufen sind daher sinnlos.
 
 ## Verworfene Annahmen
 
@@ -24,6 +25,7 @@ Hier wird festgehalten, welche Einschätzungen aus früheren Reviews sich als ri
 
 | Datum | Einschätzung | Ergebnis | Urteil |
 |-------|--------------|----------|--------|
-| 11.06.2026 (14:05) | NVDA 0,7 % vom Stop 199 — Whipsaw-Gefahr, Stop trotzdem halten | Offen — im Folgelauf (13:40) keine Kursdaten abrufbar | Ausstehend |
-| 11.06.2026 (14:05) | IWM-Kauf (Chips→Small-Cap-Rotation) blutet Tag 2 weiter | Offen — keine neuen Daten | Ausstehend |
-| 11.06.2026 (14:05) | Quantum-Positionen: bei nächster Marktschwäche gleichzeitiger Drawdown aller drei | Offen — keine neuen Daten | Ausstehend |
+| 11.06.2026 (14:05) | NVDA 0,7 % vom Stop 199 — Whipsaw-Gefahr, Stop trotzdem halten | Offen — vorbörslich 13:43 noch im 199er-Band; Oracle-Capex-Katalysator könnte Stop heute knapp halten; entscheidbar nach Marktöffnung 15:30 Uhr | Ausstehend |
+| 11.06.2026 (14:05) | IWM-Kauf (Chips→Small-Cap-Rotation) blutet Tag 2 weiter | Offen — keine neuen Preisdaten (US noch geschlossen) | Ausstehend |
+| 11.06.2026 (14:05) | Quantum-Positionen: bei nächster Marktschwäche gleichzeitiger Drawdown aller drei | Offen — vorbörslich seitwärts, kein Test-Ereignis heute | Ausstehend |
+| 11.06.2026 (13:48) | Oracle-Earnings (Capex 70 Mrd. $) → AI-Hardware vorbörslich im Plus; NVDA wird Stop 199 heute halten und eröffnet ≥ 201 | Offen — entscheidbar nach Handelseröffnung 15:30 Uhr | Ausstehend |

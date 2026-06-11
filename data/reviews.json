@@ -76,6 +76,44 @@
         "Pipeline-Resilienz fehlt: Der Review-Prozess hat keinen Fallback, wenn die Dashboard-URLs nicht erreichbar sind. Empfehlung: Rohdaten (Portfolio-JSON) direkt im Repository versionieren, damit der Agent auch ohne funktionierende GitHub Pages auswerten kann.",
         "H1, H2, H3 bleiben offen — in diesem Lauf nicht prüfbar, da keine neuen Finanzdaten abgerufen werden konnten."
       ]
+    },
+    {
+      "id": "2026-06-11-1348",
+      "datum": "2026-06-11",
+      "zeit": "13:48",
+      "slot": "Manueller Lauf",
+      "haupt": {
+        "vermoegen": 1989.82,
+        "rendite": -0.51,
+        "cashQuote": 92,
+        "score": 6,
+        "fazit": "Preisdaten unverändert (Stand 13:44, US-Markt noch geschlossen, nächste Aktualisierung ~16 Uhr). Neuer Kontext verändert das Bild: Oracle-Earnings sehr stark (Capex 70 Mrd. $ für 2027), AI-Hardware vorbörslich im Plus, Iran-Eskalation laut Meldung 13:43 für abgeschlossen erklärt, Öl fällt zurück. NVDA-Stop bleibt akut — entscheidbar erst nach Handelseröffnung 15:30 Uhr. Score bleibt 6: strukturell keine Änderung, Timing-Problem und Konzentrationsrisiko unverändert.",
+        "punkte": [
+          "NVDA vorbörslich noch im 199er-Band (Scout 13:43) trotz Oracle-Katalysator: Der Stop könnte heute knapp halten — oder auch nicht. Die Auflösung von D1 (Schatten-Abweichung: aktiver Verkauf zu 200,31 vs. warten) kommt erst nach 15:30 Uhr.",
+          "Oracle-Capex-Signal stützt Haupt-Depot-Thesen direkt: NVDA (AI-Chip-Leader) und CEG (KI-Strom/Nuklear) sind genau die Titel, die von höheren AI-Infrastruktur-Budgets profitieren. Der gestrige Selloff war möglicherweise ein Überschiessen.",
+          "H1 weiterhin bestätigt: Alle drei Positionen im Minus (NVDA −4,37 %, CEG −4,13 %, IWM −2,35 %). Kein Einstieg hat sich bisher 'gefangen'. Muster: Kauf in fallenden Markt ohne Bestätigung.",
+          "Cash 92 % zahlt doppelten Preis: Gestern Schutz (−0,51 % vs. −1,58 % SPY). Heute bei grünen Futures (+0,8–1,0 %) kostet dieselbe Position Opportunität. Das ist der inhärente Trade-off eines Systems mit 92 % Cash und nur 8 % investiert."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2022.37,
+        "rendite": 1.12,
+        "cashQuote": 61.5,
+        "score": 7,
+        "fazit": "Quantum-Trio seitwärts vorbörslich (Scout 13:51: 'Kein Material, Futures grün, Quantum seitwärts'). Oracle-Katalysator wirkt nicht auf Quantum — Sektor läuft nach eigenem Takt. Alle drei Positionen bleiben im Plus auf Einstand. Klumpenrisiko (H2) noch nicht getestet. Score bleibt 7.",
+        "punkte": [
+          "Quantum entkoppelt von AI-Hardware-Rally: NVDA/AMD/SMCI vorbörslich im Plus durch Oracle-Capex — QBTS/IONQ/RGTI seitwärts. Quantum braucht eigene Katalysatoren (kommerzielle Verträge, Forschungs-Milestones), profitiert nicht direkt von allgemeiner KI-Infrastruktur.",
+          "Dashboard-Inkonsistenz dokumentiert: QBTS zeigt 'Stop 19' in der Positions-Anzeige, Trade-Log und Schatten-Depot führen 18,60 $. Für mechanische Auslösung gelten die Trade-Log-Werte — Stop ist NICHT gerissen (23,83 $ >> 18,60 $).",
+          "RGTI (Lotterielos) leicht stärker als QBTS/IONQ auf Einzel-Tag (+3,39 % vs. +2,49 %/+3,32 %): statistisches Rauschen nach Tag 1, kein sinnvolles Signal.",
+          "SpaceX-IPO 12.06.: Tranche-2-Entscheidung (RKLB/UFO ~250 €) erst nach IPO-Hype-Abschwächung — konsequentes Warten auf Stabilisierung ist das korrekte Vorgehen."
+        ]
+      },
+      "vergleich": "Keine neuen Preisdaten — kein belastbarer Rendite-Vergleich möglich. Strukturell wichtig ist der Kontext-Shift: Oracle-Earnings und Iran-Beruhigung signalisieren, dass der gestrige Selloff möglicherweise übertrieben war. Davon profitiert das Haupt-Depot heute tendenziell mehr (NVDA, CEG als direkte Nutznießer von AI-Capex), das Speku-Depot weniger direkt (Quantum seitwärts). Risikoadjustiert bleibt das Haupt-Depot strukturell schlechter gestellt: 92 % Cash bedeutet, dass nur 8 % des Kapitals an der potenziellen Erholung partizipieren. Das Speku-Depot hat mit 38,5 % investiertem Kapital bei klarer These eine kohärentere Kapitalallokation — höheres Risiko, aber konsequenter.",
+      "lektionen": [
+        "H4 bestätigt und gelöst (→ L2): Lokaler Checkout von index.html/speku.html funktioniert einwandfrei als Primärquelle — HTTP 403 ist kein Blocker mehr. Dieser Lauf hat beide Dashboards erfolgreich direkt aus dem Dateisystem gelesen.",
+        "Dashboard-Aktualisierungsrhythmus: Kurse aktualisieren sich nur ~16 und ~22 Uhr Berlin-Zeit. Zwischenläufe liefern Kontext/News-Updates, keine neuen Preisdaten — das ist der Nutzen, nicht die Einschränkung.",
+        "Oracle-Sektor-Katalysator beobachten: Starke Cloud/AI-Capex-Prognosen stützen AI-Hardware direkt (NVDA, CEG indirekt), Quantum nur indirekt. Beim 16:00-Lauf prüfen, ob NVDA über dem Stop eröffnet hat."
+      ]
     }
   ]
 }
