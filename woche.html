@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d1117">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Wochen-Review">
+<title>Wochen-Review — Der Weg zum profitablen Trader</title>
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --card2: #1c2330; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e;
+    --green: #3fb950; --red: #f85149; --amber: #d29922; --blue: #58a6ff; --purple: #bc8cff; --teal: #39d2c0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    padding: calc(24px + env(safe-area-inset-top, 0px))
+             calc(16px + env(safe-area-inset-right, 0px))
+             calc(60px + env(safe-area-inset-bottom, 0px))
+             calc(16px + env(safe-area-inset-left, 0px));
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  header { margin-bottom: 24px; }
+  h1 { font-size: 1.7rem; margin-bottom: 6px; }
+  .sub { color: var(--muted); font-size: 0.92rem; }
+  .sub a { color: var(--blue); text-decoration: none; }
+  .sub a:hover { text-decoration: underline; }
+
+  .woche {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; margin-bottom: 26px; overflow: hidden;
+  }
+  .woche-head {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+    padding: 14px 20px; border-bottom: 1px solid var(--border); background: var(--card2);
+  }
+  .woche-head .kw { font-size: 1.1rem; font-weight: 700; }
+  .woche-head .zeitraum { color: var(--muted); font-size: 0.85rem; }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 760px) { .cols { grid-template-columns: 1fr; } }
+  .col { padding: 18px 20px; }
+  .col + .col { border-left: 1px solid var(--border); }
+  @media (max-width: 760px) { .col + .col { border-left: none; border-top: 1px solid var(--border); } }
+
+  .col h3 { font-size: 1rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .dot.haupt { background: var(--blue); }
+  .dot.speku { background: var(--purple); }
+  .wrendite { font-size: 1.2rem; font-weight: 800; margin-bottom: 12px; }
+  .pos { color: var(--green); } .neg { color: var(--red); }
+
+  .block { margin-bottom: 14px; }
+  .block h4 { font-size: 0.74rem; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+  .block.skill h4 { color: var(--red); }
+  .block.pech h4 { color: var(--amber); }
+  .block.gut h4 { color: var(--green); }
+  .block.empf h4 { color: var(--teal); }
+  .block ul { list-style: none; }
+  .block li { font-size: 0.88rem; padding: 4px 0 4px 18px; position: relative; color: var(--muted); }
+  .block.skill li::before { content: "✗"; position: absolute; left: 0; color: var(--red); }
+  .block.pech li::before { content: "◌"; position: absolute; left: 0; color: var(--amber); }
+  .block.gut li::before { content: "✓"; position: absolute; left: 0; color: var(--green); }
+  .block.empf li::before { content: "→"; position: absolute; left: 0; color: var(--teal); }
+  .block li b { color: var(--text); }
+  .umsetzung { font-size: 0.84rem; color: var(--muted); border-left: 3px solid var(--blue); padding-left: 10px; margin-top: 10px; }
+
+  .fazit { padding: 16px 20px; border-top: 1px solid var(--border); background: rgba(57,210,192,.05); }
+  .fazit h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--teal); margin-bottom: 8px; }
+  .fazit p { font-size: 0.92rem; }
+
+  .empty { text-align: center; color: var(--muted); padding: 60px 20px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
+  footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 30px; }
+
+  @media (max-width: 500px) {
+    body { padding-top: calc(14px + env(safe-area-inset-top, 0px)); }
+    h1 { font-size: 1.35rem; }
+    .sub a { display: inline-block; padding: 4px 0; }
+    .col { padding: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Wochen-Review</h1>
+    <p class="sub">
+      Jeden Sonntag: Was war Können, was war Pech — und was muss besser werden. Ziel: profitable Trader.
+      <br>
+      <a href="index.html">← Tages-Reviews</a> ·
+      <a href="schatten.html">Schatten-Depot</a> ·
+      <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/index.html" target="_blank">Haupt-Depot</a> ·
+      <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/speku.html" target="_blank">Speku-Depot</a>
+    </p>
+  </header>
+  <div id="wochen"></div>
+  <footer>Fehler-Akten: <a href="fehler/haupt-depot.md" style="color:var(--blue)">Haupt-Depot</a> · <a href="fehler/speku-depot.md" style="color:var(--blue)">Speku-Depot</a> · Keine Anlageberatung</footer>
+</div>
+
+<script>
+const fmtP = v => (v > 0 ? "+" : "") + v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " %";
+
+function liste(items, cls, titel) {
+  if (!items || !items.length) return "";
+  const lis = items.map(i => typeof i === "string"
+    ? `<li>${i}</li>`
+    : `<li><b>${i.titel}:</b> ${i.detail}${i.empfehlung ? " — <i>" + i.empfehlung + "</i>" : ""}</li>`).join("");
+  return `<div class="block ${cls}"><h4>${titel}</h4><ul>${lis}</ul></div>`;
+}
+
+function traderCol(t, name, cls) {
+  return `
+  <div class="col">
+    <h3><span class="dot ${cls}"></span>${name}</h3>
+    <div class="wrendite ${t.wochenrendite >= 0 ? "pos" : "neg"}">${fmtP(t.wochenrendite)} <span style="font-size:.8rem;color:var(--muted);font-weight:400">diese Woche · Stand ${t.stand.toLocaleString("de-DE", {minimumFractionDigits:2})} €</span></div>
+    ${liste(t.skillFehler, "skill", "Können-Fehler (abstellen!)")}
+    ${liste(t.pech, "pech", "Pech (nicht überreagieren)")}
+    ${liste(t.gutGemacht, "gut", "Gut gemacht (beibehalten)")}
+    ${liste(t.empfehlungen, "empf", "Empfehlungen für nächste Woche")}
+    ${t.umsetzungVorwoche && t.umsetzungVorwoche !== "—" ? `<div class="umsetzung"><b>Umsetzung der Vorwochen-Empfehlungen:</b> ${t.umsetzungVorwoche}</div>` : ""}
+  </div>`;
+}
+
+fetch("data/wochenreviews.json?_=" + Date.now()).then(r => r.json()).then(d => {
+  const el = document.getElementById("wochen");
+  const wochen = [...d.wochen].reverse();
+  if (!wochen.length) {
+    el.innerHTML = `<div class="empty">Noch kein Wochen-Review.<br><br>Das erste Review erscheint am <b style="color:var(--text)">${d.naechstesReview}</b>.<br>Bis dahin sammeln die Tages-Läufe Fehler und Beobachtungen in den Fehler-Akten beider Trader.</div>`;
+    return;
+  }
+  el.innerHTML = wochen.map(w => `
+    <article class="woche">
+      <div class="woche-head">
+        <span class="kw">${w.id}</span>
+        <span class="zeitraum">${w.zeitraum} · erstellt ${w.erstellt}</span>
+      </div>
+      <div class="cols">
+        ${traderCol(w.haupt, "Haupt-Depot", "haupt")}
+        ${traderCol(w.speku, "Speku-Depot", "speku")}
+      </div>
+      <div class="fazit"><h4>Wochen-Fazit des Reviewers</h4><p>${w.fazit}</p></div>
+    </article>`).join("");
+}).catch(() => {
+  document.getElementById("wochen").innerHTML = '<div class="empty">Wochen-Reviews konnten nicht geladen werden.</div>';
+});
+</script>
+</body>
+</html>

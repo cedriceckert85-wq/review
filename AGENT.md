@@ -27,6 +27,15 @@ Du bist ein Experte für Aktien und Finanzen. Dieser Lauf passiert 2× täglich 
 5. **Lektionen:** 1–3 neue Lektionen oder Hypothesen-Updates in `LESSONS.md` eintragen
    (bestätigte Hypothesen nach „Bestätigte Lektionen" verschieben, widerlegte nach „Verworfene
    Annahmen", eigene Fehleinschätzungen in die Prognose-Bilanz-Tabelle).
+   **Rollenverteilung der Lern-Dateien:** `LESSONS.md` = Lernen des REVIEWERS über sich selbst.
+   `fehler/haupt-depot.md` und `fehler/speku-depot.md` = Fehler-Akten der beiden TRADER.
+5b. **Fehler-Akten pflegen** (`fehler/haupt-depot.md`, `fehler/speku-depot.md`):
+   - Neuen Fehler eines Traders entdeckt → neuer Eintrag mit fortlaufender ID (F-H-…/F-S-…),
+     Einstufung (SKILL-FEHLER / PECH / UNKLAR), Messlatte und Status OFFEN.
+   - Bestehende UNKLAR-Einträge gegen ihre Messlatte prüfen und ggf. umstufen — die Unterscheidung
+     Können vs. Pech ist der Kern: schlechtes Ergebnis bei korrektem Prozess ist PECH (nicht
+     überreagieren), Prozessverstoß oder ungetestete Annahme ist SKILL-FEHLER (abstellen).
+   - Muster-Zähler-Tabelle aktuell halten. Wiederholt sich ein Muster → im Eintrag vermerken.
 6. **Review-Eintrag anhängen:** Neues Objekt ans Ende von `data/reviews.json` → `reviews`.
    Schema exakt wie bestehende Einträge (id, datum, zeit, slot „17:00-Lauf"/„22:00-Lauf",
    haupt{vermoegen,rendite,cashQuote,score,fazit,punkte}, speku{…}, vergleich, lektionen).
@@ -48,9 +57,27 @@ Du bist ein Experte für Aktien und Finanzen. Dieser Lauf passiert 2× täglich 
       Dashboards), jeder Trade mit Begründung ins Trade-Log.
    e. **Verlauf:** Neuen Punkt an `verlauf` anhängen: {datum „TT.MM.", zeit, schatten, haupt, speku}
       mit den aktuellen Rendite-Prozentwerten aller drei Depots.
-8. **Validieren:** Beide JSON-Dateien nach dem Schreiben prüfen
-   (`python -c "import json; json.load(open('data/reviews.json',encoding='utf-8')); json.load(open('data/schatten.json',encoding='utf-8'))"`).
-   `index.html` und `schatten.html` NICHT verändern — die GUIs rendern die JSON-Daten automatisch.
+7b. **Wochen-Review (NUR sonntags beim 17:00-Lauf):** Neues Objekt an `data/wochenreviews.json`
+   → `wochen` anhängen und `naechstesReview` auf den Folgesonntag setzen. GUI: `woche.html`.
+   Schema je Woche:
+   `{id: "KW24 2026", zeitraum: "08.06.–14.06.2026", erstellt: "TT.MM. HH:MM",`
+   ` haupt: {wochenrendite, stand, skillFehler: [{titel, detail, empfehlung}], pech: [{titel, detail}],`
+   `         gutGemacht: ["…"], empfehlungen: ["…"], umsetzungVorwoche: "…"},`
+   ` speku: {…gleiches Schema…}, fazit: "…"}`
+   Inhaltliche Pflichten:
+   - Alle OFFENEN Einträge der Fehler-Akten durchgehen: Was ist jetzt entscheidbar? Entschiedene
+     Einträge in der Akte nach „Erledigte Einträge" verschieben (mit KW-Vermerk und Urteil).
+   - **Können vs. Pech sauber trennen** — Wochenverlust durch korrekt gerissene Stops in einem
+     Marktcrash ist Pech; Wochenverlust durch Regelbruch oder ungetestete These ist ein Können-Fehler.
+   - 2–4 konkrete, umsetzbare Empfehlungen pro Trader („was sie besser machen könnten") —
+     priorisiert nach erwartetem Gewinn an Profitabilität.
+   - `umsetzungVorwoche`: ehrlich bewerten, ob die Empfehlungen der Vorwoche umgesetzt wurden
+     (umgesetzt / teilweise / ignoriert — mit Beleg). Ignorierte Empfehlungen wiederholen oder
+     begründet fallen lassen.
+   - Fazit: Sind die Trader auf dem Weg zur Profitabilität? Woran wird das in 4 Wochen gemessen?
+8. **Validieren:** Alle JSON-Dateien nach dem Schreiben prüfen
+   (`python -c "import json; [json.load(open(f,encoding='utf-8')) for f in ['data/reviews.json','data/schatten.json','data/wochenreviews.json']]"`).
+   `index.html`, `schatten.html` und `woche.html` NICHT verändern — die GUIs rendern die JSON-Daten automatisch.
 9. **Veröffentlichen:** `git add -A`, Commit (`Review YYYY-MM-DD HH:MM`), `git push`.
    Ergebnis: https://cedriceckert85-wq.github.io/review/ und …/review/schatten.html
 
