@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schatten-Depot — Wäre der Reviewer schlauer?</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --card2: #1c2330;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --green: #3fb950;
+    --red: #f85149;
+    --amber: #d29922;
+    --blue: #58a6ff;
+    --purple: #bc8cff;
+    --teal: #39d2c0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55; padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  header { margin-bottom: 24px; }
+  h1 { font-size: 1.7rem; margin-bottom: 6px; }
+  .sub { color: var(--muted); font-size: 0.92rem; }
+  .sub a { color: var(--blue); text-decoration: none; }
+  .sub a:hover { text-decoration: underline; }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; margin-bottom: 22px; padding: 18px 20px;
+  }
+  .card h2 { font-size: 1.05rem; margin-bottom: 14px; }
+  .card h2 small { color: var(--muted); font-weight: 400; font-size: 0.8rem; margin-left: 8px; }
+
+  .kpis { display: flex; gap: 28px; flex-wrap: wrap; }
+  .kpi .v { font-size: 1.5rem; font-weight: 700; }
+  .kpi .l { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .pos { color: var(--green); } .neg { color: var(--red); } .neutral { color: var(--text); }
+
+  .scoreboard { display: flex; gap: 14px; flex-wrap: wrap; }
+  .score-box {
+    flex: 1; min-width: 110px; text-align: center; padding: 14px 10px;
+    background: var(--card2); border: 1px solid var(--border); border-radius: 10px;
+  }
+  .score-box .n { font-size: 1.8rem; font-weight: 800; }
+  .score-box .t { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+
+  canvas { width: 100%; height: 260px; display: block; }
+  .legend { display: flex; gap: 18px; margin-top: 10px; font-size: 0.82rem; color: var(--muted); flex-wrap: wrap; }
+  .legend span::before { content: "●"; margin-right: 5px; }
+  .legend .ls::before { color: var(--teal); }
+  .legend .lh::before { color: var(--blue); }
+  .legend .lp::before { color: var(--purple); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th { text-align: left; color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: .04em; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+  td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .ticker { font-weight: 700; }
+  .why { color: var(--muted); font-size: 0.84rem; margin-top: 3px; }
+
+  .abw { border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; background: var(--card2); }
+  .abw-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+  .abw-head .id { font-weight: 800; color: var(--teal); }
+  .abw-head .depot-tag { font-size: 0.7rem; padding: 2px 8px; border-radius: 999px; text-transform: uppercase; letter-spacing: .04em; }
+  .depot-tag.haupt { background: rgba(88,166,255,.15); color: var(--blue); }
+  .depot-tag.speku { background: rgba(188,140,255,.15); color: var(--purple); }
+  .abw-head .datum { color: var(--muted); font-size: 0.8rem; }
+  .badge { margin-left: auto; font-size: 0.75rem; font-weight: 700; padding: 3px 12px; border-radius: 999px; }
+  .badge.offen { background: rgba(210,153,34,.15); color: var(--amber); }
+  .badge.richtig { background: rgba(63,185,80,.15); color: var(--green); }
+  .badge.falsch { background: rgba(248,81,73,.15); color: var(--red); }
+  .abw .row { font-size: 0.88rem; margin-bottom: 5px; }
+  .abw .row b { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: .03em; display: block; }
+  .abw .messlatte { border-left: 3px solid var(--amber); padding-left: 10px; margin-top: 8px; font-size: 0.84rem; color: var(--muted); }
+  .abw .aufloesung { border-left: 3px solid var(--teal); padding-left: 10px; margin-top: 8px; font-size: 0.86rem; }
+
+  .regeln { font-size: 0.84rem; color: var(--muted); font-style: italic; }
+  footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Schatten-Depot</h1>
+    <p class="sub">
+      Was der Reviewer anders gemacht hätte — nachprüfbar festgehalten.
+      <a href="index.html">← zurück zu den Reviews</a> ·
+      <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/index.html" target="_blank">Haupt-Depot</a> ·
+      <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/speku.html" target="_blank">Speku-Depot</a>
+    </p>
+  </header>
+
+  <div class="card">
+    <h2>Stand <small id="stand"></small></h2>
+    <div class="kpis" id="kpis"></div>
+  </div>
+
+  <div class="card">
+    <h2>War ich schlauer? <small>Bilanz der Abweichungs-Entscheidungen</small></h2>
+    <div class="scoreboard" id="scoreboard"></div>
+  </div>
+
+  <div class="card">
+    <h2>Performance-Vergleich <small>Rendite in % seit Start</small></h2>
+    <canvas id="chart"></canvas>
+    <div class="legend">
+      <span class="ls">Schatten-Depot (Reviewer)</span>
+      <span class="lh">Haupt-Depot</span>
+      <span class="lp">Speku-Depot</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Meine Positionen</h2>
+    <table>
+      <thead><tr><th>Titel</th><th>Einsatz</th><th>Einstand</th><th>Kurs</th><th>+/−</th><th>Stop / Ziel</th></tr></thead>
+      <tbody id="positionen"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Abweichungs-Protokoll <small>jede Entscheidung gegen das Original — mit Messlatte</small></h2>
+    <div id="abweichungen"></div>
+  </div>
+
+  <div class="card">
+    <h2>Trade-Log</h2>
+    <table>
+      <thead><tr><th>Datum</th><th>Aktion</th><th>Titel</th><th>Kurs</th><th>Einsatz</th><th>Kommentar</th></tr></thead>
+      <tbody id="trades"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Regeln des Schatten-Depots</h2>
+    <p class="regeln" id="regeln"></p>
+  </div>
+
+  <footer>Automatisch fortgeschrieben (2× täglich) · Keine Anlageberatung</footer>
+</div>
+
+<script>
+const fmtP = v => (v > 0 ? "+" : "") + v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " %";
+const fmtE = v => v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+const cls = v => v > 0 ? "pos" : (v < 0 ? "neg" : "neutral");
+
+fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).then(d => {
+  document.getElementById("stand").textContent = d.aktuell.stand + " · Start " + d.meta.start + " mit " + fmtE(d.meta.startKapital);
+  document.getElementById("regeln").textContent = d.meta.regeln;
+
+  const last = d.verlauf[d.verlauf.length - 1];
+  const dvH = d.aktuell.rendite - last.haupt;
+  const dvS = d.aktuell.rendite - last.speku;
+  document.getElementById("kpis").innerHTML = `
+    <div class="kpi"><div class="v">${fmtE(d.aktuell.vermoegen)}</div><div class="l">Vermögen</div></div>
+    <div class="kpi"><div class="v ${cls(d.aktuell.rendite)}">${fmtP(d.aktuell.rendite)}</div><div class="l">Rendite</div></div>
+    <div class="kpi"><div class="v">${d.aktuell.cashQuote.toLocaleString("de-DE")} %</div><div class="l">Cash</div></div>
+    <div class="kpi"><div class="v ${cls(dvH)}">${fmtP(dvH)}</div><div class="l">vs. Haupt</div></div>
+    <div class="kpi"><div class="v ${cls(dvS)}">${fmtP(dvS)}</div><div class="l">vs. Speku</div></div>`;
+
+  const sb = d.scoreboard;
+  const entschieden = sb.richtig + sb.falsch;
+  const quote = entschieden ? Math.round(sb.richtig / entschieden * 100) + " %" : "—";
+  document.getElementById("scoreboard").innerHTML = `
+    <div class="score-box"><div class="n pos">${sb.richtig}</div><div class="t">Richtig</div></div>
+    <div class="score-box"><div class="n neg">${sb.falsch}</div><div class="t">Falsch</div></div>
+    <div class="score-box"><div class="n" style="color:var(--amber)">${sb.offen}</div><div class="t">Offen</div></div>
+    <div class="score-box"><div class="n">${quote}</div><div class="t">Trefferquote</div></div>`;
+
+  document.getElementById("positionen").innerHTML = d.positionen.map(p => `
+    <tr>
+      <td><span class="ticker">${p.ticker}</span> <span style="color:var(--muted)">${p.name}</span>
+        <div class="why">${p.begruendung}</div></td>
+      <td>${fmtE(p.einsatz)}</td>
+      <td>${p.einstand.toLocaleString("de-DE")}</td>
+      <td>${p.kurs.toLocaleString("de-DE")}</td>
+      <td class="${cls(p.rendite)}">${fmtP(p.rendite)}</td>
+      <td>${p.stop.toLocaleString("de-DE")} / ${p.ziel.toLocaleString("de-DE")}</td>
+    </tr>`).join("") || '<tr><td colspan="6" style="color:var(--muted)">Keine offenen Positionen — voll in Cash.</td></tr>';
+
+  document.getElementById("abweichungen").innerHTML = d.abweichungen.map(a => `
+    <div class="abw">
+      <div class="abw-head">
+        <span class="id">${a.id}</span>
+        <span class="depot-tag ${a.depot}">${a.depot === "haupt" ? "Haupt-Depot" : "Speku-Depot"}</span>
+        <span class="datum">${a.datum}</span>
+        <span class="badge ${a.status}">${a.status.toUpperCase()}</span>
+      </div>
+      <div class="row"><b>Original</b>${a.original}</div>
+      <div class="row"><b>Meine Entscheidung</b>${a.meineEntscheidung}</div>
+      <div class="row"><b>Warum</b>${a.begruendung}</div>
+      <div class="messlatte"><b style="color:var(--amber)">Messlatte:</b> ${a.messlatte}</div>
+      ${a.aufloesung ? `<div class="aufloesung"><b style="color:var(--teal)">Auflösung:</b> ${a.aufloesung}</div>` : ""}
+    </div>`).join("");
+
+  document.getElementById("trades").innerHTML = [...d.trades].reverse().map(t => `
+    <tr>
+      <td>${t.datum} ${t.zeit || ""}</td>
+      <td class="${t.aktion === "Kauf" ? "pos" : "neg"}">${t.aktion}</td>
+      <td class="ticker">${t.ticker}</td>
+      <td>${t.kurs.toLocaleString("de-DE")}</td>
+      <td>${fmtE(t.einsatz)}</td>
+      <td style="color:var(--muted)">${t.kommentar}</td>
+    </tr>`).join("");
+
+  drawChart(d.verlauf);
+});
+
+function drawChart(verlauf) {
+  const cv = document.getElementById("chart");
+  const dpr = window.devicePixelRatio || 1;
+  const W = cv.clientWidth, H = 260;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const ctx = cv.getContext("2d");
+  ctx.scale(dpr, dpr);
+
+  const series = [
+    { key: "schatten", color: "#39d2c0", w: 2.5 },
+    { key: "haupt", color: "#58a6ff", w: 1.5 },
+    { key: "speku", color: "#bc8cff", w: 1.5 }
+  ];
+  const all = verlauf.flatMap(p => series.map(s => p[s.key]));
+  let min = Math.min(...all, 0), max = Math.max(...all, 0);
+  const span = Math.max(max - min, 1);
+  min -= span * 0.15; max += span * 0.15;
+
+  const padL = 44, padR = 14, padT = 12, padB = 26;
+  const x = i => verlauf.length === 1 ? (padL + (W - padL - padR) / 2) : padL + (W - padL - padR) * i / (verlauf.length - 1);
+  const y = v => padT + (H - padT - padB) * (1 - (v - min) / (max - min));
+
+  ctx.font = "11px sans-serif";
+  const steps = 4;
+  for (let i = 0; i <= steps; i++) {
+    const v = min + (max - min) * i / steps;
+    ctx.strokeStyle = "#21262d"; ctx.beginPath();
+    ctx.moveTo(padL, y(v)); ctx.lineTo(W - padR, y(v)); ctx.stroke();
+    ctx.fillStyle = "#8b949e"; ctx.textAlign = "right";
+    ctx.fillText(v.toFixed(1) + "%", padL - 6, y(v) + 4);
+  }
+  ctx.strokeStyle = "#484f58"; ctx.setLineDash([4, 4]); ctx.beginPath();
+  ctx.moveTo(padL, y(0)); ctx.lineTo(W - padR, y(0)); ctx.stroke(); ctx.setLineDash([]);
+
+  const labelStep = Math.max(1, Math.ceil(verlauf.length / 8));
+  ctx.fillStyle = "#8b949e"; ctx.textAlign = "center";
+  verlauf.forEach((p, i) => {
+    if (i % labelStep === 0 || i === verlauf.length - 1) ctx.fillText(p.datum, x(i), H - 8);
+  });
+
+  series.forEach(s => {
+    ctx.strokeStyle = s.color; ctx.lineWidth = s.w; ctx.beginPath();
+    verlauf.forEach((p, i) => i === 0 ? ctx.moveTo(x(i), y(p[s.key])) : ctx.lineTo(x(i), y(p[s.key])));
+    ctx.stroke();
+    verlauf.forEach((p, i) => {
+      ctx.fillStyle = s.color; ctx.beginPath();
+      ctx.arc(x(i), y(p[s.key]), s.w + 0.5, 0, Math.PI * 2); ctx.fill();
+    });
+  });
+}
+</script>
+</body>
+</html>
