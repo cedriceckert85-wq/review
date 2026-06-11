@@ -2,7 +2,12 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d1117">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Schatten-Depot">
 <title>Schatten-Depot — Wäre der Reviewer schlauer?</title>
 <style>
   :root {
@@ -20,10 +25,15 @@
     --teal: #39d2c0;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     background: var(--bg); color: var(--text);
     font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.55; padding: 24px 16px 60px;
+    line-height: 1.55;
+    padding: calc(24px + env(safe-area-inset-top, 0px))
+             calc(16px + env(safe-area-inset-right, 0px))
+             calc(60px + env(safe-area-inset-bottom, 0px))
+             calc(16px + env(safe-area-inset-left, 0px));
   }
   .wrap { max-width: 1100px; margin: 0 auto; }
   header { margin-bottom: 24px; }
@@ -59,6 +69,7 @@
   .legend .lh::before { color: var(--blue); }
   .legend .lp::before { color: var(--purple); }
 
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -4px; padding: 0 4px; }
   table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
   th { text-align: left; color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: .04em; padding: 6px 10px; border-bottom: 1px solid var(--border); }
   td { padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
@@ -84,6 +95,24 @@
 
   .regeln { font-size: 0.84rem; color: var(--muted); font-style: italic; }
   footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 30px; }
+
+  /* iPhone (16 Pro Max: 440pt) */
+  @media (max-width: 500px) {
+    body { padding-top: calc(14px + env(safe-area-inset-top, 0px)); }
+    h1 { font-size: 1.35rem; }
+    .sub { font-size: 0.88rem; }
+    .sub a { display: inline-block; padding: 4px 0; }
+    .card { padding: 14px; }
+    .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .kpi .v { font-size: 1.15rem; }
+    .scoreboard { display: grid; grid-template-columns: 1fr 1fr; }
+    .score-box { min-width: 0; }
+    canvas { height: 220px; }
+    .positionen-table { min-width: 560px; }
+    .trades-table { min-width: 560px; }
+    .abw { padding: 12px; }
+    .abw .badge { margin-left: 0; }
+  }
 </style>
 </head>
 <body>
@@ -120,10 +149,12 @@
 
   <div class="card">
     <h2>Meine Positionen</h2>
-    <table>
-      <thead><tr><th>Titel</th><th>Einsatz</th><th>Einstand</th><th>Kurs</th><th>+/−</th><th>Stop / Ziel</th></tr></thead>
-      <tbody id="positionen"></tbody>
-    </table>
+    <div class="table-scroll">
+      <table class="positionen-table">
+        <thead><tr><th>Titel</th><th>Einsatz</th><th>Einstand</th><th>Kurs</th><th>+/−</th><th>Stop / Ziel</th></tr></thead>
+        <tbody id="positionen"></tbody>
+      </table>
+    </div>
   </div>
 
   <div class="card">
@@ -133,10 +164,12 @@
 
   <div class="card">
     <h2>Trade-Log</h2>
-    <table>
-      <thead><tr><th>Datum</th><th>Aktion</th><th>Titel</th><th>Kurs</th><th>Einsatz</th><th>Kommentar</th></tr></thead>
-      <tbody id="trades"></tbody>
-    </table>
+    <div class="table-scroll">
+      <table class="trades-table">
+        <thead><tr><th>Datum</th><th>Aktion</th><th>Titel</th><th>Kurs</th><th>Einsatz</th><th>Kommentar</th></tr></thead>
+        <tbody id="trades"></tbody>
+      </table>
+    </div>
   </div>
 
   <div class="card">
@@ -212,12 +245,15 @@ fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).then(d => {
     </tr>`).join("");
 
   drawChart(d.verlauf);
+  let rt;
+  window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => drawChart(d.verlauf), 150); });
+  window.addEventListener("orientationchange", () => setTimeout(() => drawChart(d.verlauf), 300));
 });
 
 function drawChart(verlauf) {
   const cv = document.getElementById("chart");
   const dpr = window.devicePixelRatio || 1;
-  const W = cv.clientWidth, H = 260;
+  const W = cv.clientWidth, H = cv.clientHeight || 260;
   cv.width = W * dpr; cv.height = H * dpr;
   const ctx = cv.getContext("2d");
   ctx.scale(dpr, dpr);
