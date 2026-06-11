@@ -1,0 +1,41 @@
+name: Kurs-Update Schatten-Depot
+
+on:
+  schedule:
+    # Alle 15 Min während US-Marktzeiten (13-20 UTC = 15:30-22:00 Berlin im Sommer), Mo-Fr.
+    # Minuten 7/22/37/52: versetzt zu den Review-Läufen (17:00/22:00) gegen Push-Kollisionen.
+    - cron: '7,22,37,52 13-20 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kurs-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Kurse aktualisieren
+        run: python scripts/update_kurse.py
+      - name: Commit & Push (nur bei Änderung)
+        run: |
+          if git diff --quiet data/schatten.json; then
+            echo "Keine Kursänderung — kein Commit."
+            exit 0
+          fi
+          git config user.name "kurs-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/schatten.json
+          git commit -m "Kurse $(TZ=Europe/Berlin date +%H:%M) Uhr"
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase
+          done
+          exit 1
