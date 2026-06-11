@@ -1,0 +1,44 @@
+{
+  "reviews": [
+    {
+      "id": "2026-06-11-initial",
+      "datum": "2026-06-11",
+      "zeit": "14:05",
+      "slot": "Erst-Bewertung",
+      "haupt": {
+        "vermoegen": 1989.82,
+        "rendite": -0.51,
+        "cashQuote": 92,
+        "score": 6,
+        "fazit": "Disziplin top, Ergebnis mau. Das System hält seine Regeln eisern ein (AMD- und GLD-Stops mechanisch exekutiert), liegt aber hinter Tagesgeld und knapp hinter SPY. Die 92 % Cash sind in der Iran-Eskalation defensiv richtig, kosten aber Opportunität, falls der Markt dreht.",
+        "punkte": [
+          "Stop-Disziplin funktioniert: AMD (−4,36 %) und GLD (−5,20 %) wurden regelkonform ohne Zögern verkauft — das ist die wichtigste Eigenschaft eines mechanischen Systems.",
+          "Gold-Hedge-These gescheitert: Gold fiel trotz Iran-Eskalation. Der Reflex 'Krise = Gold kaufen' war eine ungetestete Annahme, kein Edge.",
+          "NVDA ist nur 0,7 % vom Stop (199) entfernt — Whipsaw-Gefahr: Stop reißt, Kurs erholt sich. Trotzdem: Regel durchziehen, nicht aufweichen.",
+          "IWM-Rotation (Chips → Small Caps) ist eine nachvollziehbare These, aber Tag 2 mit −2,35 % zeigt: Timing in einen fallenden Markt hinein ist teuer.",
+          "Benchmark-Realität: Nach Wochen Laufzeit schlägt 2%-Tagesgeld das System. Das ist für ein aktives System mit Transaktionskosten ein Warnsignal, aber die Stichprobe ist noch zu klein für ein Urteil."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2022.37,
+        "rendite": 1.12,
+        "cashQuote": 61.5,
+        "score": 7,
+        "fazit": "Im Plus, aber mit verstecktem Klumpenrisiko. Alle drei Positionen (QBTS +2,49 %, IONQ +3,32 %, RGTI +3,39 %) laufen — doch sie sind faktisch EINE Wette: 100 % des investierten Kapitals steckt im Quantum-Thema mit Korrelation nahe 1.",
+        "punkte": [
+          "Positiv: Klare Ziele und Stops je Position (z. B. QBTS Ziel 36 $ / Stop 18,60 $) — das Chance-Risiko-Verhältnis ist sauber definiert (ca. 2,5:1 bis 3:1).",
+          "Klumpenrisiko: Ein einziger negativer Quantum-Katalysator (Finanzierungsrunde, Kurszielsenkung, Sektor-Rotation) trifft alle drei Positionen gleichzeitig. Diversifikation innerhalb des Depots ist aktuell null.",
+          "High-Beta-Warnung: Beim gestrigen KI-Selloff (S&P −1,58 %) sind Quantum-Titel typischerweise mit 2–3-fachem Beta dabei. Das Plus von heute kann morgen weg sein.",
+          "Nachkauf-Regeln (IONQ < 50 $, QBTS < 21 $ aufstocken) sind in Spekulationswerten gefährlich: Averaging-down in fallende Story-Aktien ist der klassische Speku-Depot-Killer. Besser: nur nachkaufen bei intakter These UND Stabilisierung.",
+          "Tranche 2 (Space nach SpaceX-IPO) wäre die erste echte Diversifikation — sinnvoll, aber IPO-Hype-Einstiege brauchen besonders enge Limits."
+        ]
+      },
+      "vergleich": "Nominal führt das Speku-Depot (+1,12 % vs. −0,51 %), aber das ist kein fairer Vergleich: Das Haupt-Depot hat in einer Krisenwoche kontrolliert kleine Verluste realisiert und sitzt defensiv auf Cash — das Speku-Depot fährt eine konzentrierte Themenwette, die bisher aufgeht. Risikoadjustiert liegen beide näher beieinander, als die Renditen suggerieren. Die entscheidende Beobachtung: Das Haupt-Depot verliert Geld durch Einstiegs-Timing (Käufe vor/in den Selloff), nicht durch fehlende Disziplin. Das Speku-Depot gewinnt durch Themen-Momentum, nicht durch Diversifikation. Beide Denkwege sind aktuell unvollständig.",
+      "lektionen": [
+        "Makro-Reflexe sind keine Strategie: 'Geopolitik-Krise → Gold steigt' hat nicht funktioniert. Hedge-Thesen vor dem Kauf an historischen Episoden prüfen.",
+        "Konzentration dokumentieren: Das Speku-Depot sollte sein Quantum-Klumpenrisiko explizit als Risiko-Kennzahl führen (Korrelation der Positionen), nicht nur Einzel-Stops.",
+        "Einstiegs-Timing des Haupt-Depots beobachten: Drei Käufe, drei Positionen sofort im Minus — kaufte das System systematisch in Schwäche ohne Bestätigung? Über die nächsten Reviews verfolgen."
+      ]
+    }
+  ]
+}

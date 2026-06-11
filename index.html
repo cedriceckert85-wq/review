@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EPMT Review — Tägliche Experten-Bewertung</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --card2: #1c2330;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --green: #3fb950;
+    --red: #f85149;
+    --amber: #d29922;
+    --blue: #58a6ff;
+    --purple: #bc8cff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    padding: 24px 16px 60px;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  header { margin-bottom: 28px; }
+  h1 { font-size: 1.7rem; margin-bottom: 6px; }
+  h1 .tag {
+    font-size: 0.75rem; vertical-align: middle; margin-left: 10px;
+    background: var(--card2); border: 1px solid var(--border);
+    border-radius: 999px; padding: 3px 10px; color: var(--muted); font-weight: 500;
+  }
+  .sub { color: var(--muted); font-size: 0.92rem; }
+  .sub a { color: var(--blue); text-decoration: none; }
+  .sub a:hover { text-decoration: underline; }
+
+  .review {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; margin-bottom: 26px; overflow: hidden;
+  }
+  .review-head {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+    padding: 14px 20px; border-bottom: 1px solid var(--border);
+    background: var(--card2);
+  }
+  .review-head .datum { font-size: 1.1rem; font-weight: 600; }
+  .review-head .slot {
+    font-size: 0.75rem; background: rgba(88,166,255,.15); color: var(--blue);
+    border-radius: 999px; padding: 2px 10px;
+  }
+  .review-head .zeit { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  @media (max-width: 760px) { .cols { grid-template-columns: 1fr; } }
+  .col { padding: 18px 20px; }
+  .col + .col { border-left: 1px solid var(--border); }
+  @media (max-width: 760px) { .col + .col { border-left: none; border-top: 1px solid var(--border); } }
+
+  .col h3 { font-size: 1rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .col h3 a { color: inherit; text-decoration: none; }
+  .col h3 a:hover { text-decoration: underline; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .dot.haupt { background: var(--blue); }
+  .dot.speku { background: var(--purple); }
+
+  .kpis { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 12px; }
+  .kpi .v { font-size: 1.15rem; font-weight: 700; }
+  .kpi .l { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .pos { color: var(--green); } .neg { color: var(--red); }
+
+  .score { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .score-bar { flex: 1; height: 8px; background: var(--card2); border-radius: 999px; overflow: hidden; border: 1px solid var(--border); }
+  .score-fill { height: 100%; border-radius: 999px; }
+  .score-num { font-weight: 700; font-size: 0.9rem; min-width: 44px; text-align: right; }
+
+  .fazit { font-size: 0.92rem; margin-bottom: 12px; padding: 10px 12px; background: var(--card2); border-radius: 8px; border-left: 3px solid var(--border); }
+  .punkte { list-style: none; }
+  .punkte li { font-size: 0.88rem; color: var(--muted); padding: 5px 0 5px 18px; position: relative; }
+  .punkte li::before { content: "›"; position: absolute; left: 4px; color: var(--blue); }
+
+  .vergleich, .lektionen { padding: 16px 20px; border-top: 1px solid var(--border); }
+  .vergleich h4, .lektionen h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 8px; }
+  .vergleich p { font-size: 0.92rem; }
+  .lektionen { background: rgba(210,153,34,.06); }
+  .lektionen ul { list-style: none; }
+  .lektionen li { font-size: 0.9rem; padding: 4px 0 4px 22px; position: relative; }
+  .lektionen li::before { content: "⚠"; position: absolute; left: 0; color: var(--amber); }
+
+  .empty { text-align: center; color: var(--muted); padding: 60px 0; }
+  footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>EPMT Review <span class="tag">2× täglich · 17:00 &amp; 22:00</span></h1>
+    <p class="sub">
+      Unabhängige Experten-Bewertung der beiden Denkwege:
+      <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/index.html" target="_blank">Haupt-Depot (Regel-Trader)</a> ·
+      <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/speku.html" target="_blank">Speku-Depot (Zukunfts-Mandat)</a>
+    </p>
+  </header>
+  <div id="reviews"><p class="empty">Lade Bewertungen…</p></div>
+  <footer>Automatisch erstellt · Bewertungen sind keine Anlageberatung</footer>
+</div>
+
+<script>
+function fmtEur(v) {
+  return v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+}
+function fmtPct(v) {
+  const s = v > 0 ? "+" : "";
+  return s + v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " %";
+}
+function scoreColor(s) {
+  if (s >= 8) return "var(--green)";
+  if (s >= 5) return "var(--amber)";
+  return "var(--red)";
+}
+function depotCol(d, name, cls, link) {
+  const cls2 = d.rendite >= 0 ? "pos" : "neg";
+  return `
+  <div class="col">
+    <h3><span class="dot ${cls}"></span><a href="${link}" target="_blank">${name}</a></h3>
+    <div class="kpis">
+      <div class="kpi"><div class="v">${fmtEur(d.vermoegen)}</div><div class="l">Vermögen</div></div>
+      <div class="kpi"><div class="v ${cls2}">${fmtPct(d.rendite)}</div><div class="l">Rendite</div></div>
+      <div class="kpi"><div class="v">${d.cashQuote.toLocaleString("de-DE")} %</div><div class="l">Cash</div></div>
+    </div>
+    <div class="score">
+      <div class="score-bar"><div class="score-fill" style="width:${d.score * 10}%; background:${scoreColor(d.score)}"></div></div>
+      <div class="score-num">${d.score}/10</div>
+    </div>
+    <div class="fazit">${d.fazit}</div>
+    <ul class="punkte">${d.punkte.map(p => `<li>${p}</li>`).join("")}</ul>
+  </div>`;
+}
+
+fetch("data/reviews.json?_=" + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    const el = document.getElementById("reviews");
+    const reviews = [...data.reviews].reverse();
+    if (!reviews.length) { el.innerHTML = '<p class="empty">Noch keine Bewertungen.</p>'; return; }
+    el.innerHTML = reviews.map(r => `
+      <article class="review">
+        <div class="review-head">
+          <span class="datum">${r.datum}</span>
+          <span class="slot">${r.slot}</span>
+          <span class="zeit">${r.zeit} Uhr</span>
+        </div>
+        <div class="cols">
+          ${depotCol(r.haupt, "Haupt-Depot", "haupt", "https://cedriceckert85-wq.github.io/epmt-dashboard/index.html")}
+          ${depotCol(r.speku, "Speku-Depot", "speku", "https://cedriceckert85-wq.github.io/epmt-dashboard/speku.html")}
+        </div>
+        <div class="vergleich"><h4>Vergleich der Denkwege</h4><p>${r.vergleich}</p></div>
+        ${r.lektionen && r.lektionen.length ? `
+        <div class="lektionen"><h4>Lektionen / Fehler-Lernen</h4>
+          <ul>${r.lektionen.map(l => `<li>${l}</li>`).join("")}</ul>
+        </div>` : ""}
+      </article>`).join("");
+  })
+  .catch(() => {
+    document.getElementById("reviews").innerHTML = '<p class="empty">Bewertungen konnten nicht geladen werden.</p>';
+  });
+</script>
+</body>
+</html>
