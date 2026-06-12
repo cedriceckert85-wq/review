@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-12T15:59:33Z",
+ "standUtc": "2026-06-12T16:03:23Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T16:03:23Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Themen-Konzentration als Kennzahl auf jedem Trader-Tab (Klumpen-Warnung ab 60 Prozent)"
+  },
+  {
+   "zeit": "2026-06-12T15:59:38Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: GUI — Agent-Datenblock"
+  },
   {
    "zeit": "2026-06-12T15:59:33Z",
    "agent": "haupt",
@@ -399,13 +413,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Phase 0: SOLID+RISK Geruest - Specs, Quant-Pipeline, Journale, GUI (NICHT LIVE)"
-  },
-  {
-   "zeit": "2026-06-12T12:09:22Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 14:06: SPCX-Graumarkt evtl. 167 (unbestaetigt)"
   },
   {
    "zeit": "2026-06-12T10:25:58Z",
