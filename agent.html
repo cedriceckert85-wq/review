@@ -117,7 +117,51 @@ function journalModell(d, risikoUsd, notiz) {
   };
 }
 
+async function depotModell(seite, detailUrl) {
+  const html = await (await fetch(seite + "?_=" + Date.now())).text();
+  const m = html.match(/<script type="application\/json" id="agent-daten">([\s\S]*?)<\/script>/);
+  if (!m) throw new Error("kein Datenblock");
+  const d = JSON.parse(m[1]);
+  return {
+    vermoegen: fmtEur(d.vermoegen), rendite: d.rendite, stand: d.stand,
+    chips: [
+      { t: "Cash", v: d.cashQuote.toLocaleString("de-DE") + " %" },
+      { t: "Realisiert", v: (d.realisiert > 0 ? "+" : "") + d.realisiert.toLocaleString("de-DE", {minimumFractionDigits: 2}) + " €", cls: d.realisiert > 0 ? "up" : d.realisiert < 0 ? "down" : "" },
+      { t: "vs. SPY", v: fmtPct(d.vsSpyPp).replace(" %", " pp"), cls: d.vsSpyPp > 0 ? "up" : "down" },
+    ],
+    positionen: d.positionen.map(p => {
+      const kurs = p.kurs || p.entry;
+      let plPct = (kurs / p.entry - 1) * 100;
+      if (p.side === "short") plPct = -plPct;
+      return {
+        tk: p.ticker, sub: `${p.eur.toLocaleString("de-DE")} € · Einstieg ${p.entry} · Stop ${p.stop} · Ziel ${p.ziel} · max ${p.maxTage} Tage`,
+        badge: p.side === "short" ? ["sell", "short"] : p.speku ? ["wait", "speku"] : ["buy", "long"],
+        rechts: fmtPct(plPct), rcls: plPct > 0 ? "up" : plPct < 0 ? "down" : "",
+        rsub: "Kurs " + kurs.toLocaleString("de-DE"),
+      };
+    }),
+    trades: d.trades.map(t => ({
+      tk: t.ticker, sub: `${(t.zeit || "").slice(0, 16).replace("T", " ")} · ${t.info || ""}${t.grund ? " · " + t.grund : ""}`,
+      badge: t.aktion === "Kauf" ? ["buy", "Kauf"] : ["sell", t.aktion],
+      rechts: typeof t.preis === "number" ? t.preis.toLocaleString("de-DE") : (t.preis || "—"),
+      rcls: (t.ergebnis || "").startsWith("+") ? "up" : (t.ergebnis || "").startsWith("-") ? "down" : "",
+      rsub: t.ergebnis || "",
+    })),
+    notiz: null,
+  };
+}
+
 const AGENTEN = {
+  haupt: {
+    name: "📊 Haupt-Depot (Regel-Trader)",
+    details: BASIS + "/epmt-dashboard/index.html",
+    laden: () => depotModell(BASIS + "/epmt-dashboard/index.html"),
+  },
+  speku: {
+    name: "🚀 Speku-Depot (Zukunfts-Mandat)",
+    details: BASIS + "/epmt-dashboard/speku.html",
+    laden: () => depotModell(BASIS + "/epmt-dashboard/speku.html"),
+  },
   schatten: {
     name: "👤 Schatten-Depot (Reviewer)",
     details: "schatten.html",

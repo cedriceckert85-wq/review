@@ -6,8 +6,8 @@
   const B = "https://cedriceckert85-wq.github.io";
   const GRUPPEN = [
     ["Trader", [
-      ["haupt",    "📊 Haupt-Depot",   B + "/epmt-dashboard/index.html"],
-      ["speku",    "🚀 Speku-Depot",   B + "/epmt-dashboard/speku.html"],
+      ["haupt",    "📊 Haupt-Depot",   B + "/review/agent.html?a=haupt"],
+      ["speku",    "🚀 Speku-Depot",   B + "/review/agent.html?a=speku"],
       ["schatten", "👤 Schatten",      B + "/review/agent.html?a=schatten"],
       ["swing",    "◆ Swing",          B + "/review/agent.html?a=swing"],
       ["solid",    "🤍 SOLID",         B + "/review/agent.html?a=solid"],
@@ -20,6 +20,8 @@
       ["woche",     "🗓 Wochen-Review", B + "/review/woche.html"],
     ]],
     ["Detail-Ansichten", [
+      ["haupt-detail",    "📊 Haupt-Details",    B + "/epmt-dashboard/index.html"],
+      ["speku-detail",    "🚀 Speku-Details",    B + "/epmt-dashboard/speku.html"],
       ["manuell",         "🧠 Manuell/Research", B + "/epmt-dashboard/spec.html"],
       ["schatten-detail", "👤 Schatten-Details", B + "/review/schatten.html"],
       ["swing-detail",    "◆ Swing-Details",     B + "/swing/"],
