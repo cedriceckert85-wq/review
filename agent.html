@@ -70,6 +70,11 @@
     <div class="stamp" id="stamp"></div>
   </div>
   <div class="compare" id="chips"></div>
+  <h2>Performance <span style="font-weight:400;font-size:13px;color:var(--dim)">seit 12.06. — vs. S&amp;P 500 &amp; Tagesgeld 2 %</span></h2>
+  <div class="card" style="padding:14px 14px 10px;">
+    <canvas id="chart" style="width:100%;height:240px;display:block;"></canvas>
+    <div id="legende" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:12px;color:var(--dim);"></div>
+  </div>
   <h2 id="konz-titel" style="display:none">Themen-Konzentration <span style="font-weight:400;font-size:13px;color:var(--dim)">(Kennzahl, keine Regel)</span></h2>
   <div class="card" id="konz" style="display:none"></div>
   <h2>Offene Positionen</h2>
@@ -271,6 +276,87 @@ const key = new URLSearchParams(location.search).get("a") || "schatten";
 const cfg = AGENTEN[key] || AGENTEN.schatten;
 
 document.getElementById("flotten-nav").dataset.active = key;
+
+const AGENT_FARBEN = { haupt: "#0a84ff", speku: "#bf5af2", schatten: "#64d2ff",
+                       swing: "#ffd60a", solid: "#f5f5f7", risk: "#ff9f0a" };
+let chartDaten = [];
+
+function chartZeichnen() {
+  const cv = document.getElementById("chart");
+  if (!cv || !chartDaten.length) return;
+  const dpr = window.devicePixelRatio || 1;
+  const W = cv.clientWidth, H = cv.clientHeight || 240;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const ctx = cv.getContext("2d");
+  ctx.scale(dpr, dpr);
+  const serien = [
+    { k: key, farbe: AGENT_FARBEN[key] || "#f5f5f7", breite: 2.5, dash: [] },
+    { k: "spy", farbe: "#8e8e93", breite: 1.5, dash: [6, 4] },
+    { k: "tagesgeld", farbe: "#30d158", breite: 1.5, dash: [2, 4] },
+  ];
+  const werte = chartDaten.flatMap(p => serien.map(s => p[s.k]).filter(v => v != null));
+  let min = Math.min(...werte, 0), max = Math.max(...werte, 0);
+  const span = Math.max(max - min, 0.4);
+  min -= span * 0.15; max += span * 0.15;
+  const padL = 44, padR = 10, padT = 10, padB = 24;
+  const x = i => chartDaten.length === 1 ? (padL + (W - padL - padR) / 2)
+    : padL + (W - padL - padR) * i / (chartDaten.length - 1);
+  const y = v => padT + (H - padT - padB) * (1 - (v - min) / (max - min));
+  ctx.font = "10px -apple-system,sans-serif";
+  for (let i = 0; i <= 4; i++) {
+    const v = min + (max - min) * i / 4;
+    ctx.strokeStyle = "#2c2c2e"; ctx.beginPath();
+    ctx.moveTo(padL, y(v)); ctx.lineTo(W - padR, y(v)); ctx.stroke();
+    ctx.fillStyle = "#98989d"; ctx.textAlign = "right";
+    ctx.fillText(v.toFixed(1) + "%", padL - 5, y(v) + 3);
+  }
+  ctx.strokeStyle = "#48484a"; ctx.setLineDash([4, 4]); ctx.beginPath();
+  ctx.moveTo(padL, y(0)); ctx.lineTo(W - padR, y(0)); ctx.stroke(); ctx.setLineDash([]);
+  const step = Math.max(1, Math.ceil(chartDaten.length / 7));
+  ctx.fillStyle = "#98989d"; ctx.textAlign = "center";
+  chartDaten.forEach((p, i) => {
+    if (i % step === 0 || i === chartDaten.length - 1) ctx.fillText(p.label, x(i), H - 6);
+  });
+  serien.forEach(s => {
+    ctx.strokeStyle = s.farbe; ctx.lineWidth = s.breite; ctx.setLineDash(s.dash);
+    ctx.beginPath();
+    let begonnen = false;
+    chartDaten.forEach((p, i) => {
+      if (p[s.k] == null) return;
+      if (!begonnen) { ctx.moveTo(x(i), y(p[s.k])); begonnen = true; }
+      else ctx.lineTo(x(i), y(p[s.k]));
+    });
+    ctx.stroke(); ctx.setLineDash([]);
+    chartDaten.forEach((p, i) => {
+      if (p[s.k] == null) return;
+      ctx.fillStyle = s.farbe; ctx.beginPath();
+      ctx.arc(x(i), y(p[s.k]), s.breite + 0.5, 0, Math.PI * 2); ctx.fill();
+    });
+  });
+  const namen = { haupt: "Haupt-Depot", speku: "Speku-Depot", schatten: "Schatten", swing: "Swing", solid: "SOLID", risk: "RISK" };
+  document.getElementById("legende").innerHTML =
+    `<span style="color:${AGENT_FARBEN[key]}">●</span> ${namen[key] || key} &nbsp;` +
+    `<span style="color:#8e8e93">◌</span> S&P 500 &nbsp;` +
+    `<span style="color:#30d158">●</span> Tagesgeld 2 %`;
+}
+
+function chartLaden() {
+  Promise.all([
+    fetch(BASIS + "/review/data/vergleich.json?_=" + Date.now()).then(r => r.json()),
+    fetch("https://raw.githubusercontent.com/cedriceckert85-wq/review/live/data/live.json?_=" + Date.now())
+      .then(r => r.ok ? r.json() : null).catch(() => null),
+  ]).then(([d, live]) => {
+    chartDaten = [...d.verlauf];
+    if (live && live.standUhr) {
+      const letzter = chartDaten[chartDaten.length - 1];
+      if (!letzter || letzter.label !== "live") chartDaten.push({ ...live, label: "live" });
+    }
+    chartZeichnen();
+  }).catch(() => {});
+}
+chartLaden();
+setInterval(chartLaden, 60 * 1000);
+window.addEventListener("resize", () => setTimeout(chartZeichnen, 150));
 
 document.title = cfg.name + " — EPMT-Flotte";
 document.getElementById("agent-name").textContent = cfg.name;
