@@ -2,26 +2,30 @@ name: Live-Punkt
 
 on:
   schedule:
-    # Alle 5 Min während US-Marktzeiten (Actions-Minimum), versetzt zu :00.
-    - cron: '3-58/5 13-20 * * 1-5'
+    # Nur STARTER (GitHub drosselt häufige Crons brutal — der Job selbst läuft dann durch):
+    - cron: '13 13 * * 1-5'   # 15:13 Berlin, kurz vor US-Eröffnung
+    - cron: '3 15 * * 1-5'    # Backup-Starter 17:03 Berlin
+    - cron: '3 18 * * 1-5'    # Backup-Starter 20:03 Berlin
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: live-punkt
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   live:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Live-Equities holen
+      - name: Dauerschleife bis Börsenschluss (~4-Min-Takt)
         env:
           ALPACA_SWING_KEY: ${{ secrets.ALPACA_SWING_KEY }}
           ALPACA_SWING_SECRET: ${{ secrets.ALPACA_SWING_SECRET }}
@@ -33,16 +37,39 @@ jobs:
           ALPACA_SOLID_SECRET: ${{ secrets.ALPACA_SOLID_SECRET }}
           ALPACA_RISK_KEY: ${{ secrets.ALPACA_RISK_KEY }}
           ALPACA_RISK_SECRET: ${{ secrets.ALPACA_RISK_SECRET }}
-        run: python scripts/live_update.py
-      - name: Commit & Push
         run: |
-          git add data/live.json
-          if git diff --cached --quiet; then
-            echo "Keine Änderung."
-            exit 0
-          fi
           git config user.name "live-bot"
           git config user.email "actions@users.noreply.github.com"
-          git commit -m "Live $(TZ=Europe/Berlin date +%H:%M)"
-          for i in 1 2 3; do git push && exit 0; git pull --rebase; done
-          exit 1
+          START=$(date +%s)
+          while true; do
+            STUNDE=$(TZ=UTC date +%H); MINUTE=$(TZ=UTC date +%M); TAG=$(TZ=UTC date +%u)
+            JETZT="$STUNDE$MINUTE"
+            # US-Marktzeiten (Sommer): 13:30–20:00 UTC, Mo–Fr
+            if [ "$TAG" -gt 5 ] || [ "$JETZT" -lt 1325 ] || [ "$JETZT" -gt 2005 ]; then
+              echo "Markt zu ($JETZT UTC) — Ende."
+              break
+            fi
+            if [ $(( $(date +%s) - START )) -gt 19800 ]; then
+              echo "5,5h-Limit — Neustart wird ausgelöst."
+              break
+            fi
+            python scripts/live_update.py || true
+            git add data/live.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Live $(TZ=Europe/Berlin date +%H:%M)" || true
+              git pull --rebase || true
+              git push || (git pull --rebase && git push) || true
+            fi
+            sleep 240
+          done
+      - name: Selbst-Neustart (falls Markt noch offen)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          STUNDE=$(TZ=UTC date +%H); MINUTE=$(TZ=UTC date +%M); TAG=$(TZ=UTC date +%u)
+          JETZT="$STUNDE$MINUTE"
+          if [ "$TAG" -le 5 ] && [ "$JETZT" -ge 1325 ] && [ "$JETZT" -lt 1955 ]; then
+            echo "Markt noch offen — starte Folge-Lauf."
+            gh workflow run live.yml -R ${{ github.repository }} || true
+          fi
