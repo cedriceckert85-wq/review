@@ -100,8 +100,10 @@
     <a href="index.html">📝 Reviews</a>
     <a href="woche.html">🗓 Woche</a>
   </nav>
-  <h1>Wer performt besser?</h1>
-  <p class="sub">Alle 6 Depots gegen S&amp;P 500 und 2 % Tagesgeld — Rendite in % seit 12.06.2026, täglich nach US-Börsenschluss. Karte antippen = Details, Tabs unten = Trades &amp; Verbesserungen.</p>
+  <h1>Wer performt besser?
+    <button id="refresh" onclick="laden()" style="float:right; background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:999px; padding:6px 16px; font-size:0.85rem; font-weight:600; cursor:pointer; font-family:inherit;">↻ Aktualisieren</button>
+  </h1>
+  <p class="sub">Alle 6 Depots gegen S&amp;P 500 und 2 % Tagesgeld — Rendite in % seit 12.06.2026, alle starten bei 0. <span id="live-stand" style="color:var(--geld); font-weight:600;"></span><br>Karte antippen = Details, Tabs unten = Trades &amp; Verbesserungen.</p>
 
   <div class="card">
     <canvas id="chart"></canvas>
@@ -244,9 +246,20 @@ function laden() {
     fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("https://cedriceckert85-wq.github.io/swing/data/journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("https://cedriceckert85-wq.github.io/bots/data/solid_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
-    fetch("https://cedriceckert85-wq.github.io/bots/data/risk_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null)
-  ]).then(([d, kom, schatten, swingJournal, solidJournal, riskJournal]) => {
-    daten = d.verlauf;
+    fetch("https://cedriceckert85-wq.github.io/bots/data/risk_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
+    fetch("data/live.json?_=" + Date.now()).then(r => r.json()).catch(() => null)
+  ]).then(([d, kom, schatten, swingJournal, solidJournal, riskJournal, live]) => {
+    daten = [...d.verlauf];
+    if (live && live.standUhr) {
+      const letzterTag = daten.length ? daten[daten.length - 1] : null;
+      const livePunkt = { ...live, label: "live" };
+      if (letzterTag && letzterTag.datum === live.datum && letzterTag.label !== "live") {
+        daten.push(livePunkt);
+      } else if (!letzterTag || letzterTag.datum <= live.datum) {
+        daten.push(livePunkt);
+      }
+      document.getElementById("live-stand").textContent = "● LIVE " + live.standUhr + " Uhr (aktualisiert alle ~5 Min)";
+    }
     kommentare = kom;
     document.getElementById("hinweis").textContent = d.meta.hinweis + " · Keine Anlageberatung";
 
@@ -304,7 +317,7 @@ function laden() {
   });
 }
 laden();
-setInterval(laden, 5 * 60 * 1000);
+setInterval(laden, 60 * 1000);
 let rt;
 window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(zeichnen, 150); });
 window.addEventListener("orientationchange", () => setTimeout(zeichnen, 300));
