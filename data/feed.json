@@ -1,12 +1,313 @@
 {
- "standUtc": "2026-06-12T16:17:08Z",
+ "standUtc": "2026-06-12T16:40:06Z",
  "eintraege": [
   {
-   "zeit": "2026-06-12T16:17:08Z",
+   "zeit": "2026-06-12T16:40:06Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, kein Material, Iran-Deal verifiziert"
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:59Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:55Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:54Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:34Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:26Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:21Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:11Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Schatten im Vergleich auf Alpaca-Equity umgestellt (Konto-Reset-Gutschrift); SOLID/RISK-Keys in vergleich.yml ergaenzt"
+  },
+  {
+   "zeit": "2026-06-12T16:39:02Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:39:00Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:38:42Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:38:38Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:38:33Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:38:29Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:38:22Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:38:19Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:38:15Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:38:07Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:55Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:52Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:49Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:47Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:43Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:28Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:24Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:23Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:03Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:37:00Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:55Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:44Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:42Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:39Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:34Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:29Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:22Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:20Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:18Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:16Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:12Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:36:08Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
+  },
+  {
+   "zeit": "2026-06-12T16:31:05Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Alpaca-Spiegelkonto fuer Schatten-Depot (PA3XH5SA83HN): sync-Skript, Workflow-Hook, Doku"
+  },
+  {
+   "zeit": "2026-06-12T16:29:40Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-12 17:57"
+  },
+  {
+   "zeit": "2026-06-12T16:25:27Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Themen-Konzentration: % vom Gesamtwert + Cash-Zeile, Klumpen-Warnung bleibt auf Investiertem"
   },
   {
    "zeit": "2026-06-12T16:08:20Z",
@@ -30,74 +331,11 @@
    "text": "Themen-Konzentration als Kennzahl auf jedem Trader-Tab (Klumpen-Warnung ab 60 Prozent)"
   },
   {
-   "zeit": "2026-06-12T15:59:38Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: GUI — Agent-Datenblock"
-  },
-  {
-   "zeit": "2026-06-12T15:59:33Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: GUI 18:0x — Agent-Datenblock"
-  },
-  {
    "zeit": "2026-06-12T15:59:25Z",
    "agent": "system",
    "label": "🛠 Review-System",
    "repo": "review",
    "text": "Haupt+Speku in der einheitlichen Agenten-Ansicht (Datenblock-Adapter), Originale als Detail-Ansichten"
-  },
-  {
-   "zeit": "2026-06-12T15:51:30Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: GUI Desktop-Breite"
-  },
-  {
-   "zeit": "2026-06-12T15:51:24Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: GUI Desktop-Breite"
-  },
-  {
-   "zeit": "2026-06-12T15:51:16Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Desktop-Fix: Pills umbrechen statt unsichtbar zu scrollen, agent/logs auf 1000px Breite"
-  },
-  {
-   "zeit": "2026-06-12T15:49:46Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 17:48"
-  },
-  {
-   "zeit": "2026-06-12T15:41:26Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:06 — HOLD x3 (QBTS 24.32/IONQ 59.61/RGTI 21.84), kein Material"
-  },
-  {
-   "zeit": "2026-06-12T15:40:24Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: GUI-Update einheitliche Navigation"
-  },
-  {
-   "zeit": "2026-06-12T15:40:18Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: GUI-Update einheitliche Navigation"
   },
   {
    "zeit": "2026-06-12T15:40:13Z",
@@ -114,167 +352,6 @@
    "text": "Einheitliche Nav-Komponente"
   },
   {
-   "zeit": "2026-06-12T15:34:43Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 17:33"
-  },
-  {
-   "zeit": "2026-06-12T15:25:49Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Stop-Wache 17:21: HOLD x3"
-  },
-  {
-   "zeit": "2026-06-12T15:19:51Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 17:18"
-  },
-  {
-   "zeit": "2026-06-12T15:10:54Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Stop-Wache 17:06: HOLD x3, neue Buchhochs"
-  },
-  {
-   "zeit": "2026-06-12T15:04:52Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 17:03"
-  },
-  {
-   "zeit": "2026-06-12T14:55:51Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Stop-Wache 16:51: HOLD x3"
-  },
-  {
-   "zeit": "2026-06-12T14:49:46Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 16:48"
-  },
-  {
-   "zeit": "2026-06-12T14:40:58Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Stop-Wache 16:36: HOLD x3, RGTI +10% auf Einstand"
-  },
-  {
-   "zeit": "2026-06-12T14:38:25Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 16:36"
-  },
-  {
-   "zeit": "2026-06-12T14:36:09Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Hauptlauf Tag 5: AMZN-Kauf + IWM-Aufstockung"
-  },
-  {
-   "zeit": "2026-06-12T14:29:36Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 16:28"
-  },
-  {
-   "zeit": "2026-06-12T14:25:54Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Stop-Wache 16:21: HOLD x3, SPCX haelt Pop"
-  },
-  {
-   "zeit": "2026-06-12T14:19:46Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 16:18"
-  },
-  {
-   "zeit": "2026-06-12T14:11:26Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "SPCX-Erstprint 171, Proxies fallen, Hauptlauf: HOLD x3, keine Tranche 2"
-  },
-  {
-   "zeit": "2026-06-12T14:03:14Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "UMich T+1: Reaktion positiv, Zahlen unscharf"
-  },
-  {
-   "zeit": "2026-06-12T13:58:46Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "UMich T-2: Basis erfasst"
-  },
-  {
-   "zeit": "2026-06-12T13:53:39Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "EROEFFNUNGS-CHECK: RKLB-Short gecovert +5.25 EUR (+4.4%), Quantum HALTEN x3"
-  },
-  {
-   "zeit": "2026-06-12T13:51:39Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 15:50"
-  },
-  {
-   "zeit": "2026-06-12T13:36:51Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 15:35 zum Open"
-  },
-  {
-   "zeit": "2026-06-12T13:34:17Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "SPCX T+3: Sell-the-News live, RKLB -8% am Open"
-  },
-  {
-   "zeit": "2026-06-12T13:28:50Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "SPCX T-2: Referenzen erfasst, handelbar ab 16:00 dt."
-  },
-  {
-   "zeit": "2026-06-12T13:22:15Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 15:21: Deal-Entwurf jetzt beidseitig bestaetigt, Markt oeffnet"
-  },
-  {
-   "zeit": "2026-06-12T13:21:47Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 15:20 Vorboerse"
-  },
-  {
    "zeit": "2026-06-12T13:13:39Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -287,34 +364,6 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Link-Netzwerk bereinigt + Woche-Button"
-  },
-  {
-   "zeit": "2026-06-12T13:13:14Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "GUI: Flotten-Leiste ergaenzt"
-  },
-  {
-   "zeit": "2026-06-12T13:13:11Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "GUI: Flotten-Leiste ergaenzt"
-  },
-  {
-   "zeit": "2026-06-12T13:09:53Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 15:06: RKLB faded auf 117.74, Iran-Daempfer (G7-Rand)"
-  },
-  {
-   "zeit": "2026-06-12T13:06:56Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 15:05 Vorboerse"
   },
   {
    "zeit": "2026-06-12T13:05:52Z",
@@ -345,32 +394,11 @@
    "text": "Apple-Design + Flotten-Navigationsleiste"
   },
   {
-   "zeit": "2026-06-12T12:51:50Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 14:50 Vorboerse"
-  },
-  {
-   "zeit": "2026-06-12T12:39:13Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 14:36: Unterzeichnung evtl. Sonntag/Schweiz, Risk-on"
-  },
-  {
    "zeit": "2026-06-12T12:38:47Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
-  },
-  {
-   "zeit": "2026-06-12T12:36:40Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 14:35 Vorboerse"
   },
   {
    "zeit": "2026-06-12T12:35:23Z",
@@ -399,13 +427,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Stufe 1 LIVE: Abrechnung, Bracket-Order-Anbindung, dokumentierte Stufe-1-Regeln"
-  },
-  {
-   "zeit": "2026-06-12T12:24:18Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 14:21: SPCX-Pop-Erwartung 155-167, Praemie schrumpft"
   },
   {
    "zeit": "2026-06-12T12:17:24Z",
