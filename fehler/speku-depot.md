@@ -19,6 +19,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Einstufung:** UNKLAR (strukturelles Risiko, noch kein realisierter Schaden) — wird zum SKILL-FEHLER, wenn ein gemeinsamer Drawdown >10 % aller drei Positionen eintritt und keine Diversifikation stattgefunden hat.
 - **Messlatte:** Gleichzeitiger Drawdown aller drei Positionen; Umsetzung von Tranche 2 (Space) als erste echte Diversifikation.
 - **Update 11.06.2026 (22:00):** RKLB-Short (120 €) eingebucht — taktische Ergänzung in entgegengesetzter Richtung, aber kein Ersatz für strukturelle Diversifikation. Quantum-Klumpenrisiko bleibt ungelöst.
+- **Update 12.06.2026 (17:57):** RKLB-Short profitabel gecovert (+5,25 €). Das taktische Gegen-Buch ist abgeschlossen — das offene Aktienbuch ist nun wieder 100 % Quantum (QBTS/IONQ/RGTI). Teilweise Divergenz der Titel heute (RGTI +6,58 % vs. QBTS −1,33 %) zeigt, dass die Korrelation nicht ~1 ist. Trotzdem: ein einziger negativer Quantum-Katalysator würde alle drei gleichzeitig treffen. Strukturell keine Verbesserung, Tranche 2 (Space/Diversifikation) weiter offen.
 - **Status:** OFFEN
 
 ### F-S-002 · 2026-06-11 · Nachkauf-Automatik in Story-Aktien
@@ -26,6 +27,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Einstufung:** UNKLAR — bewertbar, sobald ein Trigger auslöst (siehe Schatten-Depot D4). Strukturell ein klassischer Speku-Depot-Killer.
 - **Messlatte:** Löst ein Nachkauf-Trigger aus: Fällt der Kurs danach weiter Richtung Stop → SKILL-FEHLER. Dreht die Position → die Automatik hatte (diesmal) recht.
 - **Update 11.06.2026 (22:00):** IONQ 58,28 $, QBTS 24,05 $ — beide weit über Trigger-Niveaus. Kein Trigger.
+- **Update 12.06.2026 (17:57):** IONQ 56,77 $, QBTS 22,94 $ — beide weiterhin weit über Trigger-Niveaus (50 $ bzw. 21 $). Kein Trigger ausgelöst.
 - **Status:** OFFEN
 
 ### F-S-003 · 2026-06-11 · Scout-Fehlalarme als Prozessrisiko
@@ -34,7 +36,17 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Lehre:** Kein Handeln auf unverifizierte Meldungen (Quellendatum < 24 h + zwei unabhängige Quellen). Wird durch den Master-Fix technisch abgesichert.
 - **Kosten:** 0 € (bisher abgefangen)
 - **Update 11.06.2026 (22:00):** 7 Fehlalarme heute (Tag 2: down von ~14 auf 7) — Master-Fix greift, Verbesserung sichtbar. Noch nicht bei 0 Fehlalarmen.
-- **Status:** OFFEN (Fehlalarm-Rate: Tag 1 ~14, Tag 2 7 — Ziel: 0 über eine Woche)
+- **Update 12.06.2026 (17:57):** Kein expliziter Fehlalarm-Count im Dashboard sichtbar. Beobachtung läuft weiter.
+- **Status:** OFFEN (Fehlalarm-Rate: Tag 1 ~14, Tag 2 7, Tag 3 unbekannt — Ziel: 0 über eine Woche)
+
+---
+
+### F-S-004 · 2026-06-11/12 · Overnight-Stop-Breach bei Extrem-Speku-Short (RKLB)
+- **Was passiert ist:** RKLB-Short mit Stop 119,80 — das Papier handelte nachbörslich am 11.06. bis 121,50 $ (ca. +9 % über Schlusskurs), also deutlich über dem Stop. Das System hatte keine Schutzregel für After-Hours-Bewegungen; erst das mechanische Cover zur Markteröffnung (15:30 Uhr) rettete den Trade.
+- **Einstufung:** UNKLAR — das Cover-at-Open-Regelwerk hat funktioniert (+5,25 €), aber der Overnight-Squeeze hätte auch am nächsten Tag unkontrolliert eskalieren können. Das ist ein Designproblem für Extrem-Speku-Shorts, keine Entscheidung, die sich einfach wiederholen lässt.
+- **Messlatte:** SKILL-FEHLER, wenn ein künftiger Extrem-Speku-Short durch einen Overnight-Breach zu schlechterem Kurs als der ursprüngliche Stop schließt (d. h. das Cover-at-Open erleidet einen Slippage-Verlust, der die geplante Positionsgröße übersteigt). PECH, wenn der Overnight-Breach durch nicht-antizipierbare Ereignisse entsteht und das Cover mechanisch ausgeführt wird.
+- **Lehre:** Extrem-Speku-Shorts in volatilen Small Caps brauchen entweder (a) explizite AH-Monitoring-Regel mit enger Positionsgröße oder (b) Day-only-Charakter (kein Overnight-Halten). Positionsgröße 120 € war angemessen — das war der plan­gemäße Risikopuffer.
+- **Status:** OFFEN
 
 ---
 
@@ -48,6 +60,7 @@ _(noch keine — erstes Wochen-Review am Sonntag, 14.06.2026)_
 
 | Muster | Vorkommen | IDs | Trend |
 |---|---|---|---|
-| Konzentration ohne Risiko-Kennzahl | 1 | F-S-001 | beobachten |
-| Automatik ohne Stabilisierungs-Bedingung | 1 | F-S-002 | beobachten |
-| Ungesicherte Datenquelle im Entscheidungsweg | 1 | F-S-003 | rückläufig (14→7 Fehlalarme/Tag) |
+| Konzentration ohne Risiko-Kennzahl | 1 | F-S-001 | beobachten — RKLB-Schließung macht 100 % Quantum wieder vollständig |
+| Automatik ohne Stabilisierungs-Bedingung | 1 | F-S-002 | beobachten — kein Trigger |
+| Ungesicherte Datenquelle im Entscheidungsweg | 1 | F-S-003 | rückläufig (14→7→unbekannt Fehlalarme/Tag) |
+| Kein AH-Schutz für Extrem-Speku-Short | 1 | F-S-004 | neu — UNKLAR |

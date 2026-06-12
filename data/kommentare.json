@@ -1,13 +1,13 @@
 {
-  "stand": "12.06.2026, 13:30",
+  "stand": "12.06.2026, 17:57",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Solider Start (+0,11 %), alle drei Positionen im Plan — aber der Vorsprung kommt bisher aus Weglassen, nicht aus eigenen Ideen.",
+      "kommentar": "D5 (RKLB-Short) entschieden als FALSCH — Reviewer hat kalibrierten Winning-Trade verpasst. Aktuelle Rendite −0,77 %, hinter beiden bewerteten Depots. Die Subtraktion von Fehlern schützt nicht vor eigenen Fehleinschätzungen.",
       "verbesserungen": [
-        "Prognose-Kalibrierung: 2 der ersten 4 Calls waren FALSCH (IWM-Blutung, NVDA-Stop-Riss) — erkennbare Tendenz zu voreilig negativen Urteilen über das Haupt-Depot. Vor jedem Verfalls-Urteil: Was müsste passieren, damit ich falsch liege?",
-        "D1 (NVDA aktiv verkaufen statt Stop riskieren) droht nach der Iran-Entspannung als Fehl-Call zu enden — Lehre vorbereiten: Gap-Risiko-Thesen sind regime-abhängig und kippen mit der Nachrichtenlage.",
-        "Subtraktion allein trägt nicht ewig: 2 von 3 Positionen sind vom Speku-Buch geerbt. Mittelfristig eigener Research-Weg (z. B. ein Thema, das beide Trader ignorieren) statt nur Fehler-Vermeidung."
+        "D5-Lehre internalisieren: Risk-on-Umfeld schließt einen klar definierten, kleinen Extrem-Speku-Short nicht aus — Geopolitik-Risikoabschätzung war zu konservativ. Nächster ähnlicher Trade: kritischer prüfen, ob Geopolitik ein Blocker ist oder nur Rauschen.",
+        "D2 (IWM-Skip) kurz vor dem FALSCH-Schwellenwert (294,11 vs. 295) — Rotations-These war robuster als angenommen. Eigene Makro-Skepsis bei bewiesenen Rotations-Mustern zurücknehmen.",
+        "D3 (RGTI-Ausschluss) wird zum Problem: RGTI +6,58 % heute vs. QBTS −1,33 %. Das 'Lotterie-Ticket' outperformt. Fundamentale Schwäche (Umsatz, Verwässerung) war ein zu hartes Urteil für einen Momentum-Trade mit weitem Stop."
       ]
     },
     "swing": {
@@ -27,14 +27,16 @@
         { "datum": "09.06.", "aktion": "Kauf", "ticker": "GLD", "kurs": 397.80, "info": "40 € — Diversifikator/Kriegs-Hedge" },
         { "datum": "10.06.", "aktion": "Verkauf", "ticker": "AMD", "kurs": 471.90, "info": "Stop 469 gerissen → −4,36 % (Disziplin gehalten)" },
         { "datum": "10.06.", "aktion": "Kauf", "ticker": "IWM", "kurs": 288.77, "info": "40 € — Rotation Chips → Small Caps, Stop 274" },
-        { "datum": "10.06.", "aktion": "Verkauf", "ticker": "GLD", "kurs": 377.14, "info": "These-Bruch: Gold fiel TROTZ Eskalation → −5,20 %" }
+        { "datum": "10.06.", "aktion": "Verkauf", "ticker": "GLD", "kurs": 377.14, "info": "These-Bruch: Gold fiel TROTZ Eskalation → −5,20 %" },
+        { "datum": "12.06.", "aktion": "Kauf", "ticker": "IWM", "kurs": 294.25, "info": "120 € Aufstockung — Small-Cap-Rotation bestätigt, Stop 274, Ziel 309" },
+        { "datum": "12.06.", "aktion": "Kauf", "ticker": "AMZN", "kurs": 236.56, "info": "180 € — KI-Commerce/AWS-These, Stop 219, Ziel 257" }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Rendite noch negativ (~−0,4 %), aber der Prozess stabilisiert sich: Stops gehalten, NVDA-Near-Miss (199,88) überstanden, Scheduler-Leiche und Härtung erledigt.",
+      "kommentar": "Score auf 5 gesenkt: F-H-002-Muster bei n=4 zu klar — AMZN folgt identischem Einstiegs-Timing ohne Bestätigung. IWM-Aufstockung ist Gegenpol und zeigt gutes Trade-Management. Depot −0,29 %, Cash von 92 % auf 77 % reduziert.",
       "verbesserungen": [
-        "Einstiegs-Bestätigung einführen (Fehler-Akte F-H-002): Kein Kauf in den fallenden Kurs — mindestens ein grüner Tagesschluss als Bedingung. Bisher notierte jeder Einstieg sofort im Minus.",
-        "Stops aus der Volatilität ableiten statt aus runden Zahlen (Lektion L4): mindestens 1 ATR unter dem letzten Swing-Tief. Der NVDA-Stop 199 lag 0,4 % vom Tagesrauschen entfernt — das ist kein Schutz, das ist ein schlechterer Verkaufskurs.",
-        "92 % Cash ist Schutz UND Bremse zugleich: Eine klare Wiedereinstiegs-Staffel definieren (welche Setup-Qualität rechtfertigt welchen Einsatz), sonst frisst Tagesgeld die Benchmark."
+        "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs als Aufwärtsbestätigung — bisher notierte JEDER Einstieg (NVDA, CEG, IWM, AMZN) sofort im Minus. Das ist kein Pech mehr, das ist ein Muster.",
+        "Stops aus der Volatilität ableiten (L4/F-H-003): mindestens 1 ATR unter dem letzten Swing-Tief. NVDA-Near-Miss 199,88 ist Beweis genug — Stop war im Rauschen, nicht am Signal.",
+        "NVDA Zeit-Exit Montag 15.06. konsequent einhalten: Wenn nach 7 Tagen die Relative-Stärke-These nicht greift, ist Zeitmanagement genauso wichtig wie Stop-Disziplin."
       ]
     },
     "solid": {
@@ -60,14 +62,15 @@
         { "datum": "11.06.", "aktion": "Kauf", "ticker": "QBTS", "kurs": 23.25, "info": "400 € — Quantum-Kernwette, Ziel 36 / Stop 18,60" },
         { "datum": "11.06.", "aktion": "Kauf", "ticker": "IONQ", "kurs": 56.63, "info": "250 € — Quantum-Anker, Ziel 75 / Stop 46" },
         { "datum": "11.06.", "aktion": "Kauf", "ticker": "RGTI", "kurs": 19.45, "info": "120 € — Quantum-Lottery, Ziel 28 / Stop 15,50" },
-        { "datum": "11.06.", "aktion": "Short", "ticker": "RKLB", "kurs": 110.90, "info": "120 € — Sell-the-News aufs SPCX-Listing, Ziel 99,80 / Stop 119,80, Zeit-Exit Mo 15.06." }
+        { "datum": "11.06.", "aktion": "Short", "ticker": "RKLB", "kurs": 110.90, "info": "120 € — Sell-the-News aufs SPCX-Listing, Ziel 99,80 / Stop 119,80, Zeit-Exit Mo 15.06." },
+        { "datum": "12.06.", "aktion": "Verkauf", "ticker": "RKLB", "kurs": 106.05, "info": "Short gecovert: +5,25 € (+4,37 %) — Sell-the-News-These bestätigt, Cover-at-Open nach Overnight-Stop-Breach 121,50" }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Nominal vorn dank Quantum-Momentum, aber der RKLB-Short läuft seit Tag 1 gegen die Position (−2,3 %) — der SPCX-Listing-Tag heute ist der binäre Test.",
+      "kommentar": "RKLB-Short profitabel gecovert (+5,25 €) — Sell-the-News-These bestätigt. Quantum-Buch gemischt: RGTI stark (+6,58 %), QBTS schwächer (−1,33 %). Klumpenrisiko nach RKLB-Schließung wieder 100 % Quantum.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",
-        "Scout-Fehlalarme weiter senken: 14 → 7 pro Tag nach der Härtung ist gut, Ziel ist 0 über eine volle Woche — sonst Scan-Prompt weiter nachschärfen (F-S-003)."
+        "Extrem-Speku-Shorts brauchen AH-Protokoll (F-S-004): Bei Overnight-Stop-Breach muss die Positionsgröße klein genug sein, um den Worst-Case-Eröffnungskurs noch tragen zu können — oder Day-only-Charakter definieren."
       ]
     }
   }

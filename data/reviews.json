@@ -194,6 +194,46 @@
         "Geopolitik-Überraschungen kippen alles in Minuten: Trumps Iran-Absage rettete NVDA und generierte +1,4 % SPY. Wer 92 % Cash hält, verliert systemisch an solchen Risk-on-Wendepunkten.",
         "RKLB-Short-These morgen entscheidbar: SpaceX-SPCX-Listing ist der binäre Test. Bewertung der Abweichung D5 im 17:00-Lauf 12.06."
       ]
+    },
+    {
+      "id": "2026-06-12-1700",
+      "datum": "2026-06-12",
+      "zeit": "17:57",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 1994.25,
+        "rendite": -0.29,
+        "cashQuote": 77,
+        "score": 5,
+        "fazit": "Tag 5: Das Einstiegs-Muster hält sich hartnäckig. IWM-Aufstockung (in laufende These) ist gutes Trade-Management. AMZN hingegen folgt exakt dem Muster aus F-H-002 — vierter Einstieg, sofort im Minus, keine Bestätigung. Score sinkt von 6 auf 5: bei n=4 (alle 4 sofort im Minus) ist das kein Zufall mehr, sondern ein erkennbares Muster. Prozessdisziplin (kein Stop gerissen, kein Regelbruch) bleibt die Stärke.",
+        "punkte": [
+          "AMZN 236,26 (Einstand 236,56, −0,13 %) — vierter Einstieg, viertes Mal sofort im Minus. Die These (KI-Infrastruktur/E-Commerce-Wachstum) mag solide sein, aber Einstiegs-Handwerk fehlt: kein grüner Schlusskurs als Bestätigung, kein Swing-High gebrochen, kein Volumen-Signal. F-H-002 hat jetzt n=4, alle 4 underwater nach dem Kauf.",
+          "IWM-Aufstockung zu 294,25 (120 €, Tag 3): Positiver Gegenpol — in eine laufende, profitable These nachkaufen ist korrektes Trade-Management. Gesamtposition IWM nun 160 € zu Durchschnittseinstieg 292,86, aktuell 294,11 (+0,43 %). Stop 274 = 6,8 % Puffer. Ziel 309 = 5,1 % Weg.",
+          "NVDA 205,17 (Stop 199, 3,0 % entfernt): Viel entspannter als gestern (0,5 %). Near-Miss 199,88 gestern war exogenes Glück. Max. Haltedauer endet Montag 15.06. — 17:00-Lauf Montag entscheidet über Verlängerung mit neuer These oder Zeit-Exit.",
+          "CEG 249,00 (Einstand 252,69, −1,46 %): Nuklear/KI-Strom-Story intakt. Stop 237 = 4,8 % Puffer. Tag 5/10 — die fundamentale Thesis braucht noch Zeit, um den Kurs-Rückstand aufzuholen.",
+          "Cash: 77 % (von 92 % gestern) — der Trader deploit langsam. Benchmark-Lücke bleibt: Depot −0,29 % während S&P Buy&Hold deutlich im Plus ist. Hohe Cash-Quote ist Schutz UND Bremse."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2008.45,
+        "rendite": 0.42,
+        "cashQuote": 61.5,
+        "score": 7,
+        "fazit": "Tag 3 mit einem klar positiven Ereignis: RKLB-Short profitabel gecovert (+5,25 €, +4,37 %) — die Sell-the-News-These hat exakt geliefert. Cover-at-Open nach Overnight-Stop-Breach war mustergültige Regelausführung. Quantum-Buch gemischt (RGTI +6,58 %, IONQ +0,25 %, QBTS −1,33 %). Score 7 bleibt: RKLB-Execution war beste Trade-Qualität des gesamten Reviews, aber Quantum-Klumpenrisiko (F-S-001) ist strukturell weiter ungelöst.",
+        "punkte": [
+          "RKLB-Short gecovert zu 106,05 (+5,25 €, +4,37 %) trotz nachbörslichem Stop-Breach (121,50 am 11.06.). SPCX-Listing eröffnete schwächer als erwartet, RKLB gappte auf 109,50 und fiel weiter. Mechanisches Cover-at-Open hat das Regelwerk exakt angewendet: Erwarteten Verlust von −10 bis −13 € in +5,25 € Gewinn umgewandelt. These (Sell-the-News) war richtig, Overnight-Squeeze war PECH, Regelausführung war SKILL.",
+          "RGTI 20,73 (Einstand 19,45, +6,58 %): Das Lotterie-Ticket entwickelt sich am stärksten im Trio. Überperformance gegenüber QBTS (−1,33 %) und IONQ (+0,25 %) signifikant. Reviewer-Abweichung D3 (RGTI weggelassen) entwickelt sich zunehmend als Fehl-Call.",
+          "QBTS 22,94 (Einstand 23,25, −1,33 %): Kernwette gibt Gewinne zurück — premarket war 24,09 (stark), Schlusskurs 22,94 = 4,8 % Intraday-Rückgang. High-Beta-Volatilität. Stop 19,00 = 17,1 % Puffer. Kein Handlungsbedarf.",
+          "Nachkauf-Trigger nicht ausgelöst: QBTS 22,94 weit über 21 $, IONQ 56,77 weit über 50 $. F-S-002 bleibt ruhend.",
+          "Klumpenrisiko F-S-001: Mit Schließung des RKLB-Shorts ist das offene Aktienbuch wieder zu 100 % Quantum (QBTS/IONQ/RGTI). Die kurzfristige Diversifikation durch den Short-Trade ist aufgebraucht. Tranche 2 (Space/SPCX-Feld) nach IPO-Abkühlung weiterhin offen — noch keine Entscheidung."
+        ]
+      },
+      "vergleich": "Haupt-Depot −0,29 % (23 % investiert) vs. Speku-Depot +0,42 % (38,5 % investiert) vs. Schatten-Depot −0,77 % (45 % investiert). Speku führt nominal, aber der Vorteil stammt heute aus einer abgeschlossenen Einzelentscheidung (RKLB-Short +5,25 €), nicht aus struktureller Überlegenheit. Risikoadjustiert sind Haupt und Speku enger beieinander als die absoluten Renditen vermuten lassen. Das Schatten-Depot ist das schlechteste der drei — D5 (RKLB-Short verpasst) erweist sich als FALSCH und zieht die Rendite auf −0,77 %. Lehre: Der Reviewer hat das Overnight-Risiko übergewichtet und einen kalibrierten Trade verpasst. Für das Haupt-Depot gilt weiterhin: hohe Cash-Quote ist Sicherheit, aber das Tempo bei der Portfolio-Befüllung ist zu langsam für eine Rally-Marktphase.",
+      "lektionen": [
+        "H5 → L5 bestätigt: RKLB-Sell-the-News hat funktioniert. SpaceX-SPCX-Listing am 12.06. löste exakt die Kapitalrotation aus RKLB aus. D5 ist FALSCH — Reviewer hat einen profitablen, kalibrierten Trade wegen Geopolitik-Risikoschätzung verpasst.",
+        "F-H-002 bei n=4: AMZN-Einstieg heute setzt das Muster fort — 4/4 Einstiege sofort im Minus. Die Empfehlung (mindestens grüner Schlusskurs vor Kauf) ist seit L4/F-H-002 dokumentiert aber noch nicht implementiert. Das wird von einem Beobachtungs- zu einem Persistenz-Fehler.",
+        "Overnight-Stop-Management für Extrem-Speku (F-S-004): RKLB-Short-Breach auf 121,50 nachbörslich zeigt ein Design-Gap. Cover-at-Open hat funktioniert, aber das Zittern war vermeidbar. Extrem-Speku-Shorts in volatilen Small Caps brauchen explizite AH-Protokolle oder Day-only-Charakter."
+      ]
     }
   ]
 }

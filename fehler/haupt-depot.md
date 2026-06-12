@@ -26,14 +26,16 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Einstufung:** UNKLAR — bei n=3 kann das Zufall sein. Wird zum SKILL-FEHLER, wenn sich das Muster bei den nächsten 5 Einstiegen fortsetzt.
 - **Messlatte:** Anteil der Einstiege, die nach 2 Handelstagen im Minus sind. > 70 % bei n≥8 → SKILL-FEHLER „kauft fallende Messer".
 - **Update 11.06.2026 (22:00):** Stand Tag 4: NVDA −2,76 %, CEG −2,16 %, IWM +0,40 %. IWM erstmals leicht positiv — 2/3 noch im Minus. Muster läuft weiter.
-- **Status:** OFFEN (Beobachtung läuft)
+- **Update 12.06.2026 (17:57):** AMZN neu eingegangen zu 236,56 — sofort −0,13 % auf Einstand. **n=4, alle 4 Einstiege sofort im Minus.** IWM-Aufstockung (294,25) nur marginal unter aktuellem Kurs (294,11). Das Muster ist bei n=4 eindeutiger als bei n=3. Messlatte rückt näher.
+- **Status:** OFFEN (n=4, alle 4 sofort im Minus — Tendenz SKILL-FEHLER, Messlatte bei n≥8)
 
 ### F-H-003 · 2026-06-11 · Stop-Abstand im Nachrichtensturm (NVDA 0,7 %)
 - **Was passiert ist:** NVDA-Stop 199 lag nur 0,7 % unter dem Kurs — bei 3–4 % Tagesschwankung (Iran + CPI) ist das innerhalb des Rauschens.
 - **Einstufung:** UNKLAR → stark Richtung SKILL-FEHLER — NVDA fiel am 11.06. intraday auf 199,88 (nur 0,4 % über Stop 199). Der Stop wurde nicht getriggert, weil Trumps Iran-Nacht-Absage eine Relief-Rally auslöste (exogenes Glück, kein Prozess-Verdienst). Das Rauschen hat den Stop beinahe ausgelöst — das ist ein starkes Indiz für einen zu engen Stop, unabhängig vom Ausgang.
 - **Messlatte:** Reißt der Stop 199 und erholt sich NVDA danach über 205 → SKILL-FEHLER (klassischer Whipsaw). Fällt NVDA nach Stop-Riss weiter unter 195 → enger Stop war richtig.
 - **Update 11.06.2026 (22:00):** Near-Miss 199,88 am 11.06. bestätigt Kernthese der Hypothese H3 → L4. Endgültige Einstufung bei nächstem Stop-Riss.
-- **Status:** OFFEN (Near-Miss 199,88 — Tendenz SKILL-FEHLER)
+- **Update 12.06.2026 (17:57):** NVDA aktuell 205,17 — Stop 199 nun 3,0 % entfernt (deutlich entspannter). Keine Gefahr mehr kurzfristig. Messlatte (Stop reißt, NVDA erholt sich danach über 205) nicht getriggert. Die ursprüngliche Fehlplatzierung (0,7 % Abstand) war trotzdem ein Fehler — das Rauschen hat den Stop beinahe ausgelöst, gerettet durch exogenes Geopolitik-Glück. Max. Haltedauer endet 15.06. — dann Verlängerung oder Zeit-Exit.
+- **Status:** OFFEN (Messlatte nicht getriggert, aber Near-Miss bleibt als dokumentierter Prozessfehler)
 
 ---
 
@@ -48,5 +50,5 @@ _(noch keine — erstes Wochen-Review am Sonntag, 14.06.2026)_
 | Muster | Vorkommen | IDs | Trend |
 |---|---|---|---|
 | Ungetestete Makro-These | 1 | F-H-001 | neu |
-| Kauf ohne Bestätigung in Schwäche | 1 (3 Trades) | F-H-002 | beobachten |
-| Stop im Rauschen platziert | 1 | F-H-003 | beobachten → Tendenz SKILL-FEHLER |
+| Kauf ohne Bestätigung in Schwäche | 1 (4 Trades: NVDA, CEG, IWM, AMZN) | F-H-002 | Tendenz SKILL-FEHLER — alle 4 sofort im Minus |
+| Stop im Rauschen platziert | 1 | F-H-003 | beobachten → Near-Miss dokumentiert, Stop jetzt 3 % entfernt |
