@@ -8,6 +8,15 @@ Vor jeder neuen Bewertung prüfen: Welche früheren Einschätzungen waren falsch
 - **H1 (11.06.2026):** Das Haupt-Depot kauft systematisch in Schwäche ohne Bestätigung — drei Käufe, drei Positionen sofort im Minus. Stand 22:00 Uhr: NVDA −2,76 %, CEG −2,16 %, IWM +0,40 %. Bei künftigen Trades prüfen, ob Einstiege weiter sofort ins Minus laufen.
 - **H2 (11.06.2026):** Das Quantum-Klumpenrisiko im Speku-Depot (QBTS/IONQ/RGTI, Korrelation ~1) wird sich bei der nächsten Marktschwäche in einem gleichzeitigen Drawdown aller drei Positionen zeigen. Heute keine Marktschwäche (SPY +1,07 %, alle drei Quantum-Titel im Plus) — Hypothese ungetestet.
 - **H5 (11.06.2026, 22:00):** RKLB-Short (SpaceX-IPO-Fade) läuft Tag 1 mit −2,30 % gegen die Position. SpaceX-SPCX-Listing 12.06. @ 135 $ ist der binäre Test: Kapitalrotation aus RKLB → SPCX (These richtig) oder Sektor-Lift stützt RKLB (These falsch).
+- **H6 (12.06.2026) — RANGLISTEN-PROGNOSE des Reviewers (Nutzerfrage „wer performt am besten?"):**
+  Risikoadjustierte Rangfolge über 4 Wochen (Stichtag 10.07.2026): 1. Schatten-Depot
+  (Subtraktions-Edge: gleiches Buch minus dokumentierte Fehler), 2. Swing-Agent (beste
+  Prozessarchitektur, Edge unbewiesen), 3. Haupt-Depot (Disziplin top, Einstiegs-Timing offen),
+  4. Speku-Depot (höchste Varianz — Kandidat für nominal besten UND schlechtesten Platz
+  zugleich). Hintergrund-These: Wahrscheinlichster Gesamtsieger bleibt SPY Buy&Hold (SPIVA).
+  Messlatten am 10.07.: (a) Schatten-Rendite > Haupt-Rendite, (b) Swing-Erwartungswert ≥ 0 R,
+  (c) Speku belegt nominal Platz 1 ODER Platz 4 der vier Depots. Jede Teilprognose wird
+  einzeln als richtig/falsch gewertet.
 
 ## Bestätigte Lektionen
 
@@ -32,3 +41,4 @@ Hier wird festgehalten, welche Einschätzungen aus früheren Reviews sich als ri
 | 11.06.2026 (13:48) | Oracle-Earnings (Capex 70 Mrd. $) → AI-Hardware vorbörslich im Plus; NVDA wird Stop 199 heute halten und eröffnet ≥ 201 | NVDA 203,68 (22:00) — hielt dank Iran-Deeskalation, nicht Oracle allein. CEG AI-Strom-Rückenwind ✓, NVDA-Magnitude ohne externe Hilfe ✗ | **TEILWEISE FALSCH** (CEG ✓, NVDA ✗ ohne Geopolitik-Hilfe) |
 | 11.06.2026 (17:04) | NVDA reißt den Stop 199 heute noch — Relative-Stärke-These ist gebrochen (kein Catalyst hilft) | 22:00: NVDA 203,68 — Stop 199 NICHT gerissen. Tief 199,88 um 19:18, dann +2,0 % durch Trumps Iran-Nacht-Absage | **FALSCH** |
 | 11.06.2026 (22:00) | SpaceX-SPCX-Listing 12.06. löst Sell-the-News bei RKLB aus — RKLB-Short schließt vor Zeit-Exit 15.06. profitabel (Schlusskurs < 110,90) | Offen — Listing 12.06. | Ausstehend |
+| 12.06.2026 (H6) | Ranglisten-Prognose 4 Wochen: Schatten > Swing > Haupt; Speku = Platz 1 oder 4 (Varianz). Drei Messlatten (a/b/c), Stichtag 10.07. | Offen | Ausstehend |
