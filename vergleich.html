@@ -101,7 +101,7 @@
     <a href="woche.html">🗓 Woche</a>
   </nav>
   <h1>Wer performt besser?
-    <button id="refresh" onclick="laden()" style="float:right; background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:999px; padding:6px 16px; font-size:0.85rem; font-weight:600; cursor:pointer; font-family:inherit;">↻ Aktualisieren</button>
+    <button id="refresh" onclick="manuellAktualisieren()" style="float:right; background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:999px; padding:6px 16px; font-size:0.85rem; font-weight:600; cursor:pointer; font-family:inherit;">↻ Aktualisieren</button>
   </h1>
   <p class="sub">Alle 6 Depots gegen S&amp;P 500 und 2 % Tagesgeld — Rendite in % seit 12.06.2026, alle starten bei 0. <span id="live-stand" style="color:var(--geld); font-weight:600;"></span><br>Karte antippen = Details, Tabs unten = Trades &amp; Verbesserungen.</p>
 
@@ -239,8 +239,18 @@ function tabUndScroll(key) {
   document.getElementById("tabs").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+function manuellAktualisieren() {
+  const b = document.getElementById("refresh");
+  b.textContent = "⏳ lädt…";
+  b.disabled = true;
+  Promise.resolve(laden()).finally(() => {
+    b.textContent = "✓ aktuell " + new Date().toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    setTimeout(() => { b.textContent = "↻ Aktualisieren"; b.disabled = false; }, 2000);
+  });
+}
+
 function laden() {
-  Promise.all([
+  return Promise.all([
     fetch("data/vergleich.json?_=" + Date.now()).then(r => r.json()),
     fetch("data/kommentare.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
