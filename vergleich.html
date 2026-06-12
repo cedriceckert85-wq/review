@@ -268,7 +268,17 @@ function laden() {
       } else if (!letzterTag || letzterTag.datum <= live.datum) {
         daten.push(livePunkt);
       }
-      document.getElementById("live-stand").textContent = "● LIVE " + live.standUhr + " Uhr (aktualisiert alle ~5 Min)";
+      const el = document.getElementById("live-stand");
+      const jetzt = new Date();
+      const [lh, lm] = live.standUhr.split(":").map(Number);
+      const alterMin = (jetzt.getHours() * 60 + jetzt.getMinutes()) - (lh * 60 + lm);
+      if (live.datum === jetzt.toISOString().slice(0, 10) && alterMin >= 0 && alterMin <= 20) {
+        el.textContent = "● LIVE " + live.standUhr + " Uhr";
+        el.style.color = "var(--geld)";
+      } else {
+        el.textContent = "Datenstand " + live.standUhr + " Uhr — neuer Punkt kommt alle 5–15 Min (GitHub-Takt)";
+        el.style.color = "var(--muted)";
+      }
     }
     kommentare = kom;
     document.getElementById("hinweis").textContent = d.meta.hinweis + " · Keine Anlageberatung";
