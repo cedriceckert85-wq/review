@@ -29,8 +29,8 @@
 
   const css = `
   #flotten-nav { margin-bottom: 16px; }
-  #flotten-nav .fn-pills { display: flex; gap: 4px; overflow-x: auto; -webkit-overflow-scrolling: touch;
-    background: #161618; border-radius: 14px; padding: 4px; scrollbar-width: none; }
+  #flotten-nav .fn-pills { display: flex; flex-wrap: wrap; gap: 4px;
+    background: #161618; border-radius: 14px; padding: 4px; }
   #flotten-nav .fn-pills::-webkit-scrollbar { display: none; }
   #flotten-nav .fn-pills a { white-space: nowrap; padding: 9px 13px; border-radius: 10px; color: #98989d;
     text-decoration: none; font-size: 13px; font-weight: 600;
