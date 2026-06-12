@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-12T19:04:29Z",
+ "standUtc": "2026-06-12T19:13:13Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T19:13:13Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Fix GitHub secret setup helper"
+  },
   {
    "zeit": "2026-06-12T19:04:29Z",
    "agent": "bots",
