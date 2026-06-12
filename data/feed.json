@@ -324,20 +324,6 @@
    "text": "Agenten-Chart auf jedem Tab: er selbst vs. SPY vs. Tagesgeld (Minuten-Live-Punkt inklusive)"
   },
   {
-   "zeit": "2026-06-12T16:03:23Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Themen-Konzentration als Kennzahl auf jedem Trader-Tab (Klumpen-Warnung ab 60 Prozent)"
-  },
-  {
-   "zeit": "2026-06-12T15:59:25Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Haupt+Speku in der einheitlichen Agenten-Ansicht (Datenblock-Adapter), Originale als Detail-Ansichten"
-  },
-  {
    "zeit": "2026-06-12T15:40:13Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
