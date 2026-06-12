@@ -200,6 +200,8 @@ function tabZeigen(key) {
   document.getElementById("tab-panel").innerHTML = `
     <div style="--c:${s.farbe}">
       <h3>${s.name}</h3>
+      ${k.beschreibung ? `<p style="font-size:.85rem;color:var(--muted);margin-bottom:10px;font-style:italic">${k.beschreibung}</p>` : ""}
+      <div class="trades-titel">Aktueller Stand</div>
       <div class="t-kommentar" style="--c:${s.farbe}">${k.kommentar}</div>
       <div class="trades-titel">Verbesserungsvorschläge</div>
       <ul style="--c:${s.farbe}">${k.verbesserungen.map(v => `<li style="--c:${s.farbe}">${v}</li>`).join("")}</ul>
@@ -266,7 +268,7 @@ function laden() {
     const sortiert = [...SERIEN].sort((a, b) => (letzte[b.key] ?? -999) - (letzte[a.key] ?? -999));
     document.getElementById("rangliste").innerHTML = sortiert.map((s, i) => {
       const istAgent = AGENTEN.includes(s.key);
-      const kurz = istAgent && kom ? kom.agenten[s.key].kommentar : "";
+      const kurz = istAgent && kom ? (kom.agenten[s.key].beschreibung || kom.agenten[s.key].kommentar) : "";
       return `
       <div class="r-item ${istAgent ? "klickbar" : ""}" style="--c:${s.farbe}" ${istAgent ? `onclick="tabUndScroll('${s.key}')"` : ""}>
         <div class="platz">Platz ${i + 1}${istAgent ? " · Tippen für Details" : ""}</div>

@@ -63,7 +63,8 @@ Du bist ein Experte für Aktien und Finanzen. Dieser Lauf passiert 2× täglich 
    e. **Verlauf:** Neuen Punkt an `verlauf` anhängen: {datum „TT.MM.", zeit, schatten, haupt, speku}
       mit den aktuellen Rendite-Prozentwerten aller drei Depots.
 7a2. **Agenten-Check pflegen** (`data/kommentare.json` — GUI: `vergleich.html`):
-   - Je Agent (schatten, swing, haupt, speku): `kommentar` (1 Satz, wie läuft es GERADE —
+   - Je Agent (schatten, swing, haupt, speku): `beschreibung` (1 Satz, WIE der Agent arbeitet —
+     stabil, nur bei Mandatsänderung anfassen), `kommentar` (1 Satz, wie läuft es GERADE —
      ehrlich, auch über das Schatten-Depot/sich selbst) und `verbesserungen` (2–4 konkrete,
      umsetzbare Vorschläge — aus den Fehler-Akten und aktuellen Beobachtungen ableiten,
      erledigte Vorschläge entfernen oder ersetzen).

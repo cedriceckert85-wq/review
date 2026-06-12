@@ -2,6 +2,7 @@
   "stand": "12.06.2026, 13:30",
   "agenten": {
     "schatten": {
+      "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
       "kommentar": "Solider Start (+0,11 %), alle drei Positionen im Plan — aber der Vorsprung kommt bisher aus Weglassen, nicht aus eigenen Ideen.",
       "verbesserungen": [
         "Prognose-Kalibrierung: 2 der ersten 4 Calls waren FALSCH (IWM-Blutung, NVDA-Stop-Riss) — erkennbare Tendenz zu voreilig negativen Urteilen über das Haupt-Depot. Vor jedem Verfalls-Urteil: Was müsste passieren, damit ich falsch liege?",
@@ -10,6 +11,7 @@
       ]
     },
     "swing": {
+      "beschreibung": "Durchsucht jeden Abend 20+ Aktien (S&P 500, Nasdaq, DAX, EuroStoxx) per Deep Research — und handelt maximal DEN einen besten Trade, sonst keinen.",
       "kommentar": "Tag 1 fehlerfrei: HPE-Empfehlung (Score 85) liegt als echte 250-Stück-Bracket-Order im Alpaca-Konto und wartet auf den Montags-Fill.",
       "verbesserungen": [
         "Score-Kalibrierung von Anfang an mitschreiben: Ab 30 Trades muss belegbar sein, dass 85er-Scores öfter gewinnen als 70er — sonst ist der Score Dekoration (Regel 12).",
@@ -27,6 +29,7 @@
         { "datum": "10.06.", "aktion": "Kauf", "ticker": "IWM", "kurs": 288.77, "info": "40 € — Rotation Chips → Small Caps, Stop 274" },
         { "datum": "10.06.", "aktion": "Verkauf", "ticker": "GLD", "kurs": 377.14, "info": "These-Bruch: Gold fiel TROTZ Eskalation → −5,20 %" }
       ],
+      "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
       "kommentar": "Rendite noch negativ (~−0,4 %), aber der Prozess stabilisiert sich: Stops gehalten, NVDA-Near-Miss (199,88) überstanden, Scheduler-Leiche und Härtung erledigt.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (Fehler-Akte F-H-002): Kein Kauf in den fallenden Kurs — mindestens ein grüner Tagesschluss als Bedingung. Bisher notierte jeder Einstieg sofort im Minus.",
@@ -41,6 +44,7 @@
         { "datum": "11.06.", "aktion": "Kauf", "ticker": "RGTI", "kurs": 19.45, "info": "120 € — Quantum-Lottery, Ziel 28 / Stop 15,50" },
         { "datum": "11.06.", "aktion": "Short", "ticker": "RKLB", "kurs": 110.90, "info": "120 € — Sell-the-News aufs SPCX-Listing, Ziel 99,80 / Stop 119,80, Zeit-Exit Mo 15.06." }
       ],
+      "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
       "kommentar": "Nominal vorn dank Quantum-Momentum, aber der RKLB-Short läuft seit Tag 1 gegen die Position (−2,3 %) — der SPCX-Listing-Tag heute ist der binäre Test.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
