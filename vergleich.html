@@ -118,7 +118,7 @@
   </div>
 
   <footer id="hinweis">Paper-/Journal-Performance · Keine Anlageberatung</footer>
-  <footer style="margin-top:4px; opacity:.6;">Seiten-Version: <span id="version">v2026-06-12.5</span> — steht hier eine ältere Nummer als auf GitHub, lädt dein Browser aus dem Cache</footer>
+  <footer style="margin-top:4px; opacity:.6;">Seiten-Version: <span id="version">v2026-06-12.6</span> — steht hier eine ältere Nummer als auf GitHub, lädt dein Browser aus dem Cache</footer>
 </div>
 
 <script>
@@ -258,7 +258,9 @@ function laden() {
     fetch("https://cedriceckert85-wq.github.io/swing/data/journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("https://cedriceckert85-wq.github.io/bots/data/solid_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("https://cedriceckert85-wq.github.io/bots/data/risk_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
-    fetch("data/live.json?_=" + Date.now()).then(r => r.json()).catch(() => null)
+    fetch("https://raw.githubusercontent.com/cedriceckert85-wq/review/main/data/live.json?_=" + Date.now())
+      .then(r => r.json())
+      .catch(() => fetch("data/live.json?_=" + Date.now()).then(r => r.json()).catch(() => null))
   ]).then(([d, kom, schatten, swingJournal, solidJournal, riskJournal, live]) => {
     daten = [...d.verlauf];
     if (live && live.standUhr) {
