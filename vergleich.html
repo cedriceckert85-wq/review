@@ -112,6 +112,8 @@ const SERIEN = [
   { key: "swing",     name: "◆ Swing-Agent",       farbe: "#e3b341", breite: 2.5, dash: [] },
   { key: "haupt",     name: "Haupt-Depot",          farbe: "#58a6ff", breite: 2,   dash: [] },
   { key: "speku",     name: "Speku-Depot",          farbe: "#bc8cff", breite: 2,   dash: [] },
+  { key: "solid",     name: "🤍 SOLID",             farbe: "#a5d6ff", breite: 2,   dash: [] },
+  { key: "risk",      name: "🔥 RISK",              farbe: "#ff7b54", breite: 2,   dash: [] },
   { key: "spy",       name: "S&P 500 (SPY)",        farbe: "#ffffff", breite: 1.5, dash: [6, 4] },
   { key: "tagesgeld", name: "Tagesgeld 2 %",        farbe: "#3fb950", breite: 1.5, dash: [2, 4] }
 ];
@@ -171,9 +173,9 @@ function zeichnen() {
   });
 }
 
-const AGENTEN = ["schatten", "swing", "haupt", "speku"];
+const AGENTEN = ["schatten", "swing", "haupt", "speku", "solid", "risk"];
 let kommentare = null;
-let agentenTrades = { schatten: [], swing: [], haupt: [], speku: [] };
+let agentenTrades = { schatten: [], swing: [], haupt: [], speku: [], solid: [], risk: [] };
 let aktiverTab = "schatten";
 
 function tradesTabelle(zeilen) {
@@ -228,8 +230,10 @@ function laden() {
     fetch("data/vergleich.json?_=" + Date.now()).then(r => r.json()),
     fetch("data/kommentare.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
-    fetch("https://cedriceckert85-wq.github.io/swing/data/journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null)
-  ]).then(([d, kom, schatten, swingJournal]) => {
+    fetch("https://cedriceckert85-wq.github.io/swing/data/journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
+    fetch("https://cedriceckert85-wq.github.io/bots/data/solid_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
+    fetch("https://cedriceckert85-wq.github.io/bots/data/risk_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null)
+  ]).then(([d, kom, schatten, swingJournal, solidJournal, riskJournal]) => {
     daten = d.verlauf;
     kommentare = kom;
     document.getElementById("hinweis").textContent = d.meta.hinweis + " · Keine Anlageberatung";
@@ -242,19 +246,23 @@ function laden() {
         aktion: t.aktion, ticker: t.ticker, kurs: t.kurs, info: t.kommentar
       }));
     }
-    if (swingJournal) {
+    const journalTrades = (jrn) => {
+      if (!jrn) return [];
       const st = [];
-      [...swingJournal.trades].reverse().forEach(t => {
+      [...jrn.trades].reverse().forEach(t => {
         if (t.exitDatum) st.push({ datum: t.exitDatum.slice(8, 10) + "." + t.exitDatum.slice(5, 7) + ".",
           aktion: t.richtung === "long" ? "Verkauf" : "Kauf", ticker: t.ticker, kurs: t.exitKurs,
           info: `${t.id} Exit (${t.status}) — ${t.ergebnisR != null ? t.ergebnisR + " R" : ""}` });
         st.push({ datum: t.datumEmpfehlung.slice(8, 10) + "." + t.datumEmpfehlung.slice(5, 7) + ".",
           aktion: (t.richtung === "long" ? "Kauf" : "Short") + (t.status === "wartet" ? " (wartet)" : ""),
           ticker: t.ticker, kurs: t.entryFill || t.entry,
-          info: `${t.id} — Score ${t.score}, Stop ${t.stop}, Ziel ${t.tp}` });
+          info: `${t.id}${t.engine ? " [" + t.engine + "]" : ""} — ${t.score != null ? "Score " + t.score + ", " : ""}Stop ${t.stop}, Ziel ${t.tp}` });
       });
-      agentenTrades.swing = st;
-    }
+      return st;
+    };
+    agentenTrades.swing = journalTrades(swingJournal);
+    agentenTrades.solid = journalTrades(solidJournal);
+    agentenTrades.risk = journalTrades(riskJournal);
 
     if (kom) document.getElementById("tab-stand").textContent = "Stand der Kommentare: " + kom.stand + " — gepflegt von den täglichen Review-Läufen.";
     tabsBauen();

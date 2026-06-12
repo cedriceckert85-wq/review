@@ -58,7 +58,8 @@ def main():
 
     punkt = {"datum": heute.isoformat(), "label": heute.strftime("%d.%m.")}
 
-    for name, prefix in (("swing", "ALPACA_SWING"), ("speku", "ALPACA_SPEKU"), ("haupt", "ALPACA_HAUPT")):
+    for name, prefix in (("swing", "ALPACA_SWING"), ("speku", "ALPACA_SPEKU"), ("haupt", "ALPACA_HAUPT"),
+                         ("solid", "ALPACA_SOLID"), ("risk", "ALPACA_RISK")):
         eq = sicher(alpaca_equity, prefix)
         punkt[name] = round((eq / 100000 - 1) * 100, 2) if eq else letzter.get(name, 0.0)
 

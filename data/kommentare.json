@@ -37,6 +37,24 @@
         "92 % Cash ist Schutz UND Bremse zugleich: Eine klare Wiedereinstiegs-Staffel definieren (welche Setup-Qualität rechtfertigt welchen Einsatz), sonst frisst Tagesgeld die Benchmark."
       ]
     },
+    "solid": {
+      "beschreibung": "Der Evidenz-Bot: handelt nur, was die Deep Research als robust belegt — Long-only-Momentum plus verifizierte News-Drifts. Lieber kein Trade als ein unbelegter.",
+      "kommentar": "Live seit 12.06. (Stufe 1). Erster Entscheider-Lauf heute Nacht 02:53 — noch keine Trades.",
+      "verbesserungen": [
+        "Phase 2 ausbauen: share-basierte Portfolio-Buchführung (eval_v2) und risk-gate-Workflow, damit der volle Spec-Momentum-Kern mit Roll-Logik statt der diskreten Stufe-1-Trades laufen kann.",
+        "EDGAR-Filing-Feed anbinden, damit der News-Drift-Satellit deterministische Kandidaten bekommt statt WebSearch-Funde.",
+        "Kalibrierung von Anfang an: Jede Nacht ohne Trade ist ein Datenpunkt — dokumentieren, WARUM kein Kandidat die Filter überlebte."
+      ]
+    },
+    "risk": {
+      "beschreibung": "Der kontrolliert aggressive Gewinn-Jäger: konzentrierte High-Beta-Wetten (2 % Risiko), Volumen-Spikes früh statt am Buzz-Peak, TQQQ nur bei grünen Regime-Gates — die research-dokumentierten Todesarten sind hart verboten.",
+      "kommentar": "Live seit 12.06. (Stufe 1). Erster Entscheider-Lauf heute Nacht 03:08 — Engine D (Shorts) bleibt deaktiviert.",
+      "verbesserungen": [
+        "Engine-Statistik von Tag 1 getrennt führen (A/B/C) — die Spec verlangt gepoolte Expectancy nur für A+B, C ist kalendergegated.",
+        "FINRA-Short-Interest-Feed für die deaktivierte Engine D nachweisen oder D endgültig streichen.",
+        "Beta-Budget (≤1,3×) und 8-%-Gesamtdeckel werden in Stufe 1 nur vom Entscheider geprüft — in Phase 2 in den risk-eval-Workflow verlagern."
+      ]
+    },
     "speku": {
       "trades": [
         { "datum": "11.06.", "aktion": "Kauf", "ticker": "QBTS", "kurs": 23.25, "info": "400 € — Quantum-Kernwette, Ziel 36 / Stop 18,60" },
