@@ -65,7 +65,11 @@ def main():
 
     try:
         with open("data/schatten.json", encoding="utf-8") as f:
-            punkt["schatten"] = json.load(f)["aktuell"]["rendite"]
+            roh = json.load(f)["aktuell"]["rendite"]
+        # Fairness-Rebase (Nutzerwunsch 12.06.): Schatten startete am 11.06. und stand am
+        # 12.06. (Vergleichsstart) bei +0,11 % — im Chart zaehlt nur die Leistung AB 12.06.
+        basis = d["meta"].get("schattenStartRendite", 0.11)
+        punkt["schatten"] = round(((1 + roh / 100) / (1 + basis / 100) - 1) * 100, 2)
     except Exception as e:
         print(f"WARN schatten: {e}")
         punkt["schatten"] = letzter.get("schatten", 0.0)
