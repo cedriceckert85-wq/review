@@ -70,6 +70,8 @@
     <div class="stamp" id="stamp"></div>
   </div>
   <div class="compare" id="chips"></div>
+  <h2 id="konz-titel" style="display:none">Themen-Konzentration <span style="font-weight:400;font-size:13px;color:var(--dim)">(Kennzahl, keine Regel)</span></h2>
+  <div class="card" id="konz" style="display:none"></div>
   <h2>Offene Positionen</h2>
   <div class="card" id="positionen"><div class="leer">Lade…</div></div>
   <h2>Trades</h2>
@@ -88,9 +90,48 @@ const dd = s => s && s.includes("-") ? s.slice(8, 10) + "." + s.slice(5, 7) + ".
 
 const BASIS = "https://cedriceckert85-wq.github.io";
 
+const THEMEN = {
+  "Quantum": ["QBTS", "IONQ", "RGTI", "QUBT"],
+  "KI / Chips": ["NVDA", "AMD", "AVGO", "MU", "INTC", "AMAT", "LRCX", "KLAC", "TSM", "ARM", "SMCI"],
+  "Energie / Nuklear": ["CEG", "VST", "OKLO", "SMR", "NEE", "DUK", "SO", "XLE", "USO", "COP", "EOG", "SLB"],
+  "Space": ["RKLB", "UFO", "SPCX", "LUNR", "ASTS"],
+  "Hebel-Index": ["TQQQ", "SQQQ", "UPRO", "SPXL"],
+  "Index / Breite": ["SPY", "QQQ", "IWM", "DIA"],
+  "IT-Hardware": ["HPE", "DELL", "IBM", "CSCO", "ANET"],
+};
+function themaVon(ticker) {
+  for (const [thema, liste] of Object.entries(THEMEN)) {
+    if (liste.includes(ticker)) return thema;
+  }
+  return "Sonstiges";
+}
+function konzentrationZeigen(betraege, waehrung) {
+  const titel = document.getElementById("konz-titel");
+  const karte = document.getElementById("konz");
+  const gesamt = betraege.reduce((s, p) => s + p.betrag, 0);
+  if (!gesamt) { titel.style.display = "none"; karte.style.display = "none"; return; }
+  const proThema = {};
+  betraege.forEach(p => { const t = themaVon(p.ticker); proThema[t] = (proThema[t] || 0) + p.betrag; });
+  const sortiert = Object.entries(proThema).sort((a, b) => b[1] - a[1]);
+  karte.innerHTML = sortiert.map(([thema, betrag]) => {
+    const pct = betrag / gesamt * 100;
+    const warn = pct >= 60 ? ' <span class="badge loss">⚠️ Klumpen</span>' : pct >= 40 ? ' <span class="badge wait">erhöht</span>' : "";
+    return `<div class="row">
+      <div><span class="tk">${thema}</span>${warn}</div>
+      <div class="right"><div class="res">${Math.round(betrag).toLocaleString("de-DE")} ${waehrung} · ${pct.toFixed(0)} %</div>
+      <div class="dim">des investierten Kapitals</div></div></div>`;
+  }).join("");
+  titel.style.display = "";
+  karte.style.display = "";
+}
+
 function journalModell(d, risikoUsd, notiz) {
   const equity = 100000 + (d.statistik.summeR || 0) * risikoUsd;
   const offen = d.trades.filter(t => t.status === "offen" || t.status === "wartet");
+  const betraege = offen.filter(t => t.status === "offen").map(t => ({
+    ticker: t.ticker,
+    betrag: (t.alpaca ? t.alpaca.qty : Math.max(1, Math.floor(risikoUsd / Math.abs(t.entry - t.stop)))) * (t.entryFill || t.entry),
+  }));
   const fertig = d.trades.filter(t => !["offen", "wartet"].includes(t.status));
   return {
     vermoegen: fmtUsd(equity),
@@ -114,6 +155,7 @@ function journalModell(d, risikoUsd, notiz) {
       rsub: t.pnlEur != null ? t.pnlEur.toLocaleString("de-DE") + " $" : "",
     })),
     notiz,
+    betraege, waehrung: "$",
   };
 }
 
@@ -148,6 +190,8 @@ async function depotModell(seite, detailUrl) {
       rsub: t.ergebnis || "",
     })),
     notiz: null,
+    betraege: d.positionen.map(p => ({ ticker: p.ticker, betrag: p.eur })),
+    waehrung: "€",
   };
 }
 
@@ -186,6 +230,8 @@ const AGENTEN = {
           rechts: t.kurs.toLocaleString("de-DE"), rsub: fmtEur(t.einsatz),
         })),
         notiz: null,
+        betraege: d.positionen.map(p => ({ ticker: p.ticker, betrag: p.einsatz })),
+        waehrung: "€",
       };
     },
   },
@@ -250,6 +296,7 @@ cfg.laden().then(m => {
     ? m.positionen.map(zeile).join("") : '<div class="leer">Keine offenen Positionen.</div>';
   document.getElementById("trades").innerHTML = m.trades.length
     ? m.trades.map(zeile).join("") : '<div class="leer">Noch keine Trades.</div>';
+  konzentrationZeigen(m.betraege || [], m.waehrung || "€");
   if (m.notiz) {
     document.getElementById("notiz-titel").style.display = "";
     document.getElementById("notiz").style.display = "";
