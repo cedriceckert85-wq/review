@@ -1,6 +1,237 @@
 {
- "standUtc": "2026-06-12T17:42:11Z",
+ "standUtc": "2026-06-12T17:47:35Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T17:47:35Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:47:27Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:47:18Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:47:14Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:47:04Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:47:00Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:46:47Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:46:41Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:46:37Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:46:24Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:46:19Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:46:10Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:56Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:54Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:51Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:40Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:33Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:27Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:25Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:15Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:45:07Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:44:57Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:44:50Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:44:34Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:44:26Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:44:22Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:44:17Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:43:56Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:43:52Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:43:34Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:43:21Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:43:19Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:43:12Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
   {
    "zeit": "2026-06-12T17:42:11Z",
    "agent": "haupt",
@@ -49,237 +280,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:39:29Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:39:22Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:36:55Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:33:57Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 18:36 — HOLD x3, kein Material, Depot 2029 EUR"
-  },
-  {
-   "zeit": "2026-06-12T17:27:06Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 18:36 — HOLD x3, kein Material, Quantum leicht zurueck von Tageshochs"
-  },
-  {
-   "zeit": "2026-06-12T16:43:41Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:43:31Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:43:27Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:43:13Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:43:12Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:46Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:44Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:28Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:26Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:23Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:17Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:09Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:07Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:05Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:03Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:42:02Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:41:55Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:41:47Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:41:45Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:41:19Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:41:07Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:41:03Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:40:56Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:40:53Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:40:50Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:40:37Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:40:31Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:40:30Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
   },
   {
    "zeit": "2026-06-12T15:40:13Z",
