@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-12T17:27:06Z",
+ "standUtc": "2026-06-12T17:36:55Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T17:36:55Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
+  {
+   "zeit": "2026-06-12T17:33:57Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:36 — HOLD x3, kein Material, Depot 2029 EUR"
+  },
   {
    "zeit": "2026-06-12T17:27:06Z",
    "agent": "speku",
@@ -262,20 +276,6 @@
   },
   {
    "zeit": "2026-06-12T16:39:26Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:39:21Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:51 — HOLD x3, depot 2034.95 EUR (+1.75%)"
-  },
-  {
-   "zeit": "2026-06-12T16:39:11Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
