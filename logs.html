@@ -43,17 +43,8 @@
 </head>
 <body>
 <div class="wrap">
-  <nav class="flotte">
-    <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/index.html">📊 Haupt</a>
-    <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/speku.html">🚀 Speku</a>
-    <a href="agent.html?a=schatten">👤 Schatten</a>
-    <a href="agent.html?a=swing">◆ Swing</a>
-    <a href="agent.html?a=solid">🤍 SOLID</a>
-    <a href="agent.html?a=risk">🔥 RISK</a>
-    <a href="vergleich.html">📈 Vergleich</a>
-    <a href="logs.html" class="active">📜 Logs</a>
-    <a href="index.html">📝 Reviews</a>
-  </nav>
+  <div id="flotten-nav" data-active="logs"></div>
+<script src="https://cedriceckert85-wq.github.io/review/nav.js" defer></script>
   <h1>📜 Flotten-Log</h1>
   <p class="sub">Alle Agenten-Aktivitäten in einem Strom — neueste zuerst, aktualisiert sich jede Minute. <span id="stand" style="color:var(--green); font-weight:600;"></span><br>Volle Denkprotokolle der Läufe: <a href="https://claude.ai/code/routines" style="color:var(--blue); text-decoration:none;">claude.ai/code → Routines</a></p>
   <div class="filter" id="filter"></div>

@@ -89,18 +89,8 @@
 </head>
 <body>
 <div class="wrap">
-  <nav class="flotte">
-    <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/index.html">📊 Haupt</a>
-    <a href="https://cedriceckert85-wq.github.io/epmt-dashboard/speku.html">🚀 Speku</a>
-    <a href="agent.html?a=schatten">👤 Schatten</a>
-    <a href="agent.html?a=swing">◆ Swing</a>
-    <a href="agent.html?a=solid">🤍 SOLID</a>
-    <a href="agent.html?a=risk">🔥 RISK</a>
-    <a href="vergleich.html" class="active">📈 Vergleich</a>
-    <a href="logs.html">📜 Logs</a>
-    <a href="index.html">📝 Reviews</a>
-    <a href="woche.html">🗓 Woche</a>
-  </nav>
+  <div id="flotten-nav" data-active="vergleich"></div>
+<script src="https://cedriceckert85-wq.github.io/review/nav.js" defer></script>
   <h1>Wer performt besser?
     <button id="refresh" onclick="manuellAktualisieren()" style="float:right; background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:999px; padding:6px 16px; font-size:0.85rem; font-weight:600; cursor:pointer; font-family:inherit;">↻ Aktualisieren</button>
   </h1>
@@ -119,7 +109,7 @@
   </div>
 
   <footer id="hinweis">Paper-/Journal-Performance · Keine Anlageberatung</footer>
-  <footer style="margin-top:4px; opacity:.6;">Seiten-Version: <span id="version">v2026-06-12.7</span> — steht hier eine ältere Nummer als auf GitHub, lädt dein Browser aus dem Cache</footer>
+  <footer style="margin-top:4px; opacity:.6;">Seiten-Version: <span id="version">v2026-06-12.8</span> — steht hier eine ältere Nummer als auf GitHub, lädt dein Browser aus dem Cache</footer>
 </div>
 
 <script>
