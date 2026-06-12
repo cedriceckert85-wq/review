@@ -1,0 +1,52 @@
+{
+  "stand": "12.06.2026, 13:30",
+  "agenten": {
+    "schatten": {
+      "kommentar": "Solider Start (+0,11 %), alle drei Positionen im Plan — aber der Vorsprung kommt bisher aus Weglassen, nicht aus eigenen Ideen.",
+      "verbesserungen": [
+        "Prognose-Kalibrierung: 2 der ersten 4 Calls waren FALSCH (IWM-Blutung, NVDA-Stop-Riss) — erkennbare Tendenz zu voreilig negativen Urteilen über das Haupt-Depot. Vor jedem Verfalls-Urteil: Was müsste passieren, damit ich falsch liege?",
+        "D1 (NVDA aktiv verkaufen statt Stop riskieren) droht nach der Iran-Entspannung als Fehl-Call zu enden — Lehre vorbereiten: Gap-Risiko-Thesen sind regime-abhängig und kippen mit der Nachrichtenlage.",
+        "Subtraktion allein trägt nicht ewig: 2 von 3 Positionen sind vom Speku-Buch geerbt. Mittelfristig eigener Research-Weg (z. B. ein Thema, das beide Trader ignorieren) statt nur Fehler-Vermeidung."
+      ]
+    },
+    "swing": {
+      "kommentar": "Tag 1 fehlerfrei: HPE-Empfehlung (Score 85) liegt als echte 250-Stück-Bracket-Order im Alpaca-Konto und wartet auf den Montags-Fill.",
+      "verbesserungen": [
+        "Score-Kalibrierung von Anfang an mitschreiben: Ab 30 Trades muss belegbar sein, dass 85er-Scores öfter gewinnen als 70er — sonst ist der Score Dekoration (Regel 12).",
+        "DAX/EuroStoxx-Kandidaten laufen nur in der Yahoo-Simulation, nicht als echte Paper-Orders (Alpaca ist US-only) — bei häufigen EU-Empfehlungen IBKR-Paper als Stufe 2 erwägen.",
+        "Der 22:31-Lauf sieht After-Hours-Earnings nur teilweise — Empfehlungen vor großen Übernacht-Events explizit kennzeichnen oder meiden (Gap-Risiko schlägt Setup-Qualität)."
+      ]
+    },
+    "haupt": {
+      "trades": [
+        { "datum": "08.06.", "aktion": "Kauf", "ticker": "NVDA", "kurs": 209.46, "info": "70 € — KI-Kernposition, Stop 199" },
+        { "datum": "08.06.", "aktion": "Kauf", "ticker": "AMD", "kurs": 493.40, "info": "50 € — Chase am +5,8 %-Tag (späterer Lesson-Kandidat)" },
+        { "datum": "08.06.", "aktion": "Kauf", "ticker": "CEG", "kurs": 252.69, "info": "50 € — Nuklear/AI-Strom, Stop 237" },
+        { "datum": "09.06.", "aktion": "Kauf", "ticker": "GLD", "kurs": 397.80, "info": "40 € — Diversifikator/Kriegs-Hedge" },
+        { "datum": "10.06.", "aktion": "Verkauf", "ticker": "AMD", "kurs": 471.90, "info": "Stop 469 gerissen → −4,36 % (Disziplin gehalten)" },
+        { "datum": "10.06.", "aktion": "Kauf", "ticker": "IWM", "kurs": 288.77, "info": "40 € — Rotation Chips → Small Caps, Stop 274" },
+        { "datum": "10.06.", "aktion": "Verkauf", "ticker": "GLD", "kurs": 377.14, "info": "These-Bruch: Gold fiel TROTZ Eskalation → −5,20 %" }
+      ],
+      "kommentar": "Rendite noch negativ (~−0,4 %), aber der Prozess stabilisiert sich: Stops gehalten, NVDA-Near-Miss (199,88) überstanden, Scheduler-Leiche und Härtung erledigt.",
+      "verbesserungen": [
+        "Einstiegs-Bestätigung einführen (Fehler-Akte F-H-002): Kein Kauf in den fallenden Kurs — mindestens ein grüner Tagesschluss als Bedingung. Bisher notierte jeder Einstieg sofort im Minus.",
+        "Stops aus der Volatilität ableiten statt aus runden Zahlen (Lektion L4): mindestens 1 ATR unter dem letzten Swing-Tief. Der NVDA-Stop 199 lag 0,4 % vom Tagesrauschen entfernt — das ist kein Schutz, das ist ein schlechterer Verkaufskurs.",
+        "92 % Cash ist Schutz UND Bremse zugleich: Eine klare Wiedereinstiegs-Staffel definieren (welche Setup-Qualität rechtfertigt welchen Einsatz), sonst frisst Tagesgeld die Benchmark."
+      ]
+    },
+    "speku": {
+      "trades": [
+        { "datum": "11.06.", "aktion": "Kauf", "ticker": "QBTS", "kurs": 23.25, "info": "400 € — Quantum-Kernwette, Ziel 36 / Stop 18,60" },
+        { "datum": "11.06.", "aktion": "Kauf", "ticker": "IONQ", "kurs": 56.63, "info": "250 € — Quantum-Anker, Ziel 75 / Stop 46" },
+        { "datum": "11.06.", "aktion": "Kauf", "ticker": "RGTI", "kurs": 19.45, "info": "120 € — Quantum-Lottery, Ziel 28 / Stop 15,50" },
+        { "datum": "11.06.", "aktion": "Short", "ticker": "RKLB", "kurs": 110.90, "info": "120 € — Sell-the-News aufs SPCX-Listing, Ziel 99,80 / Stop 119,80, Zeit-Exit Mo 15.06." }
+      ],
+      "kommentar": "Nominal vorn dank Quantum-Momentum, aber der RKLB-Short läuft seit Tag 1 gegen die Position (−2,3 %) — der SPCX-Listing-Tag heute ist der binäre Test.",
+      "verbesserungen": [
+        "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
+        "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",
+        "Scout-Fehlalarme weiter senken: 14 → 7 pro Tag nach der Härtung ist gut, Ziel ist 0 über eine volle Woche — sonst Scan-Prompt weiter nachschärfen (F-S-003)."
+      ]
+    }
+  }
+}

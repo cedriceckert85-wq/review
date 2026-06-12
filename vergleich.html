@@ -43,7 +43,33 @@
   .r-item .platz { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
   .r-item .name { font-weight: 700; font-size: 0.88rem; }
   .r-item .wert { font-size: 1.25rem; font-weight: 800; }
+  .r-item .kommentar { font-size: 0.76rem; color: var(--muted); margin-top: 5px; line-height: 1.4; }
   .pos { color: var(--geld); } .neg { color: #f85149; }
+
+  .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+  .tab-btn {
+    background: var(--card2); border: 1px solid var(--border); color: var(--muted);
+    border-radius: 999px; padding: 7px 16px; font-size: 0.85rem; font-weight: 600;
+    cursor: pointer; font-family: inherit;
+  }
+  .tab-btn.aktiv { color: var(--text); border-color: var(--c, var(--blue)); background: var(--card); }
+  .tab-panel h3 { font-size: 0.95rem; margin-bottom: 4px; }
+  .tab-panel .t-kommentar { font-size: 0.9rem; color: var(--muted); margin-bottom: 12px; padding: 10px 12px; background: var(--card2); border-radius: 8px; border-left: 3px solid var(--c, var(--border)); }
+  .tab-panel ul { list-style: none; }
+  .tab-panel li { font-size: 0.88rem; padding: 6px 0 6px 22px; position: relative; }
+  .tab-panel li::before { content: "→"; position: absolute; left: 2px; color: var(--c, var(--blue)); font-weight: 700; }
+  .tab-stand { font-size: 0.74rem; color: var(--muted); margin-top: 12px; }
+  .r-item.klickbar { cursor: pointer; }
+  .r-item.klickbar:hover { border-color: var(--c, var(--blue)); }
+  .trades-titel { font-size: 0.78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 14px 0 6px; }
+  .t-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table.trades { width: 100%; border-collapse: collapse; font-size: 0.84rem; min-width: 480px; }
+  table.trades th { text-align: left; color: var(--muted); font-size: 0.68rem; text-transform: uppercase; padding: 5px 8px; border-bottom: 1px solid var(--border); }
+  table.trades td { padding: 7px 8px; border-bottom: 1px solid var(--border); }
+  table.trades tr:last-child td { border-bottom: none; }
+  .akt { font-weight: 700; }
+  .akt.kauf { color: var(--geld); } .akt.verkauf { color: #f85149; } .akt.short { color: #f85149; }
+  .akt.wartet { color: var(--blue); }
 
   .empty { text-align: center; color: var(--muted); padding: 60px 20px; }
   footer { text-align: center; color: var(--muted); font-size: 0.78rem; margin-top: 22px; }
@@ -68,6 +94,13 @@
   <div class="card">
     <canvas id="chart"></canvas>
     <div class="rangliste" id="rangliste"></div>
+  </div>
+
+  <div class="card" style="margin-top: 18px;">
+    <h1 style="font-size: 1.05rem; margin-bottom: 12px;">Agenten-Check — Verbesserungsvorschläge</h1>
+    <div class="tabs" id="tabs"></div>
+    <div class="tab-panel" id="tab-panel"></div>
+    <div class="tab-stand" id="tab-stand"></div>
   </div>
 
   <footer id="hinweis">Paper-/Journal-Performance · Keine Anlageberatung</footer>
@@ -138,10 +171,92 @@ function zeichnen() {
   });
 }
 
+const AGENTEN = ["schatten", "swing", "haupt", "speku"];
+let kommentare = null;
+let agentenTrades = { schatten: [], swing: [], haupt: [], speku: [] };
+let aktiverTab = "schatten";
+
+function tradesTabelle(zeilen) {
+  if (!zeilen.length) return '<p style="color:var(--muted);font-size:.86rem">Noch keine Trades.</p>';
+  return `<div class="t-scroll"><table class="trades">
+    <thead><tr><th>Datum</th><th>Aktion</th><th>Titel</th><th>Kurs</th><th>Details</th></tr></thead>
+    <tbody>${zeilen.map(t => `
+      <tr><td>${t.datum}</td>
+      <td class="akt ${t.aktion.toLowerCase().replace("(wartet)", "wartet").trim()}">${t.aktion}</td>
+      <td><b>${t.ticker}</b></td>
+      <td>${t.kurs == null ? "—" : t.kurs.toLocaleString("de-DE")}</td>
+      <td style="color:var(--muted)">${t.info || ""}</td></tr>`).join("")}</tbody>
+  </table></div>`;
+}
+
+function tabZeigen(key) {
+  aktiverTab = key;
+  const s = SERIEN.find(x => x.key === key);
+  document.querySelectorAll(".tab-btn").forEach(b => {
+    b.classList.toggle("aktiv", b.dataset.key === key);
+    b.style.setProperty("--c", SERIEN.find(x => x.key === b.dataset.key).farbe);
+  });
+  const k = kommentare && kommentare.agenten[key] ? kommentare.agenten[key] : { kommentar: "—", verbesserungen: [] };
+  document.getElementById("tab-panel").innerHTML = `
+    <div style="--c:${s.farbe}">
+      <h3>${s.name}</h3>
+      <div class="t-kommentar" style="--c:${s.farbe}">${k.kommentar}</div>
+      <div class="trades-titel">Verbesserungsvorschläge</div>
+      <ul style="--c:${s.farbe}">${k.verbesserungen.map(v => `<li style="--c:${s.farbe}">${v}</li>`).join("")}</ul>
+      <div class="trades-titel">Trades (Kauf / Verkauf)</div>
+      ${tradesTabelle(agentenTrades[key] || [])}
+    </div>`;
+}
+
+function tabsBauen() {
+  document.getElementById("tabs").innerHTML = AGENTEN.map(key => {
+    const s = SERIEN.find(x => x.key === key);
+    return `<button class="tab-btn" data-key="${key}" onclick="tabZeigen('${key}')">${s.name}</button>`;
+  }).join("");
+  tabZeigen(aktiverTab);
+}
+
+function tabUndScroll(key) {
+  tabZeigen(key);
+  document.getElementById("tabs").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function laden() {
-  fetch("data/vergleich.json?_=" + Date.now()).then(r => r.json()).then(d => {
+  Promise.all([
+    fetch("data/vergleich.json?_=" + Date.now()).then(r => r.json()),
+    fetch("data/kommentare.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
+    fetch("data/schatten.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
+    fetch("https://cedriceckert85-wq.github.io/swing/data/journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null)
+  ]).then(([d, kom, schatten, swingJournal]) => {
     daten = d.verlauf;
+    kommentare = kom;
     document.getElementById("hinweis").textContent = d.meta.hinweis + " · Keine Anlageberatung";
+
+    agentenTrades.haupt = (kom && kom.agenten.haupt.trades) || [];
+    agentenTrades.speku = (kom && kom.agenten.speku.trades) || [];
+    if (schatten) {
+      agentenTrades.schatten = [...schatten.trades].reverse().map(t => ({
+        datum: t.datum.includes("-") ? t.datum.slice(8, 10) + "." + t.datum.slice(5, 7) + "." : t.datum,
+        aktion: t.aktion, ticker: t.ticker, kurs: t.kurs, info: t.kommentar
+      }));
+    }
+    if (swingJournal) {
+      const st = [];
+      [...swingJournal.trades].reverse().forEach(t => {
+        if (t.exitDatum) st.push({ datum: t.exitDatum.slice(8, 10) + "." + t.exitDatum.slice(5, 7) + ".",
+          aktion: t.richtung === "long" ? "Verkauf" : "Kauf", ticker: t.ticker, kurs: t.exitKurs,
+          info: `${t.id} Exit (${t.status}) — ${t.ergebnisR != null ? t.ergebnisR + " R" : ""}` });
+        st.push({ datum: t.datumEmpfehlung.slice(8, 10) + "." + t.datumEmpfehlung.slice(5, 7) + ".",
+          aktion: (t.richtung === "long" ? "Kauf" : "Short") + (t.status === "wartet" ? " (wartet)" : ""),
+          ticker: t.ticker, kurs: t.entryFill || t.entry,
+          info: `${t.id} — Score ${t.score}, Stop ${t.stop}, Ziel ${t.tp}` });
+      });
+      agentenTrades.swing = st;
+    }
+
+    if (kom) document.getElementById("tab-stand").textContent = "Stand der Kommentare: " + kom.stand + " — gepflegt von den täglichen Review-Läufen.";
+    tabsBauen();
+
     if (!daten.length) {
       document.getElementById("rangliste").innerHTML =
         '<div class="empty" style="width:100%">Erste Daten heute Abend nach US-Börsenschluss (~22:21 Uhr).</div>';
@@ -149,12 +264,17 @@ function laden() {
     }
     const letzte = daten[daten.length - 1];
     const sortiert = [...SERIEN].sort((a, b) => (letzte[b.key] ?? -999) - (letzte[a.key] ?? -999));
-    document.getElementById("rangliste").innerHTML = sortiert.map((s, i) => `
-      <div class="r-item" style="--c:${s.farbe}">
-        <div class="platz">Platz ${i + 1}</div>
+    document.getElementById("rangliste").innerHTML = sortiert.map((s, i) => {
+      const istAgent = AGENTEN.includes(s.key);
+      const kurz = istAgent && kom ? kom.agenten[s.key].kommentar : "";
+      return `
+      <div class="r-item ${istAgent ? "klickbar" : ""}" style="--c:${s.farbe}" ${istAgent ? `onclick="tabUndScroll('${s.key}')"` : ""}>
+        <div class="platz">Platz ${i + 1}${istAgent ? " · Tippen für Details" : ""}</div>
         <div class="name">${s.name}</div>
         <div class="wert ${letzte[s.key] >= 0 ? "pos" : "neg"}">${letzte[s.key] == null ? "—" : fmtP(letzte[s.key])}</div>
-      </div>`).join("");
+        ${kurz ? `<div class="kommentar">${kurz}</div>` : ""}
+      </div>`;
+    }).join("");
     zeichnen();
   }).catch(() => {
     document.getElementById("rangliste").innerHTML = '<div class="empty" style="width:100%">Daten nicht ladbar.</div>';

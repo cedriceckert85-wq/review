@@ -62,6 +62,16 @@ Du bist ein Experte für Aktien und Finanzen. Dieser Lauf passiert 2× täglich 
       Dashboards), jeder Trade mit Begründung ins Trade-Log.
    e. **Verlauf:** Neuen Punkt an `verlauf` anhängen: {datum „TT.MM.", zeit, schatten, haupt, speku}
       mit den aktuellen Rendite-Prozentwerten aller drei Depots.
+7a2. **Agenten-Check pflegen** (`data/kommentare.json` — GUI: `vergleich.html`):
+   - Je Agent (schatten, swing, haupt, speku): `kommentar` (1 Satz, wie läuft es GERADE —
+     ehrlich, auch über das Schatten-Depot/sich selbst) und `verbesserungen` (2–4 konkrete,
+     umsetzbare Vorschläge — aus den Fehler-Akten und aktuellen Beobachtungen ableiten,
+     erledigte Vorschläge entfernen oder ersetzen).
+   - `trades`-Listen für haupt und speku aktuell halten: Neue Käufe/Verkäufe aus den
+     Dashboards als {datum "TT.MM.", aktion "Kauf"/"Verkauf"/"Short", ticker, kurs, info}
+     ANHÄNGEN (nie alte Einträge umschreiben). Schatten- und Swing-Trades holt die GUI
+     selbst live — dafür nichts pflegen.
+   - `stand` aktualisieren.
 7b. **Wochen-Review (NUR sonntags beim 17:00-Lauf):** Neues Objekt an `data/wochenreviews.json`
    → `wochen` anhängen und `naechstesReview` auf den Folgesonntag setzen. GUI: `woche.html`.
    Schema je Woche:
