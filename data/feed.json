@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-12T15:51:30Z",
+ "standUtc": "2026-06-12T15:59:33Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T15:59:33Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: GUI 18:0x — Agent-Datenblock"
+  },
+  {
+   "zeit": "2026-06-12T15:59:25Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Haupt+Speku in der einheitlichen Agenten-Ansicht (Datenblock-Adapter), Originale als Detail-Ansichten"
+  },
   {
    "zeit": "2026-06-12T15:51:30Z",
    "agent": "speku",
@@ -392,13 +406,6 @@
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Scan 14:06: SPCX-Graumarkt evtl. 167 (unbestaetigt)"
-  },
-  {
-   "zeit": "2026-06-12T12:06:43Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 14:05 Vorboerse"
   },
   {
    "zeit": "2026-06-12T10:25:58Z",
