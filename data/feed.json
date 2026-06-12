@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-12T15:25:49Z",
+ "standUtc": "2026-06-12T15:33:27Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T15:33:27Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Flotten-Log: alle Agenten-Aktivitaeten in einem Strom (logs.html + feed im Minuten-Laeufer)"
+  },
   {
    "zeit": "2026-06-12T15:25:49Z",
    "agent": "system",
