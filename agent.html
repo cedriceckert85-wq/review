@@ -110,22 +110,33 @@ function themaVon(ticker) {
   }
   return "Sonstiges";
 }
-function konzentrationZeigen(betraege, waehrung) {
+function konzentrationZeigen(betraege, waehrung, gesamtwert) {
   const titel = document.getElementById("konz-titel");
   const karte = document.getElementById("konz");
-  const gesamt = betraege.reduce((s, p) => s + p.betrag, 0);
-  if (!gesamt) { titel.style.display = "none"; karte.style.display = "none"; return; }
+  const investiert = betraege.reduce((s, p) => s + p.betrag, 0);
+  if (!investiert) { titel.style.display = "none"; karte.style.display = "none"; return; }
+  const gesamt = (gesamtwert && gesamtwert > investiert) ? gesamtwert : investiert;
   const proThema = {};
   betraege.forEach(p => { const t = themaVon(p.ticker); proThema[t] = (proThema[t] || 0) + p.betrag; });
   const sortiert = Object.entries(proThema).sort((a, b) => b[1] - a[1]);
-  karte.innerHTML = sortiert.map(([thema, betrag]) => {
+  // Hauptzahl = Anteil am Gesamtvermoegen; Klumpen-Warnung bleibt auf dem investierten Anteil.
+  let html = sortiert.map(([thema, betrag]) => {
     const pct = betrag / gesamt * 100;
-    const warn = pct >= 60 ? ' <span class="badge loss">⚠️ Klumpen</span>' : pct >= 40 ? ' <span class="badge wait">erhöht</span>' : "";
+    const investPct = betrag / investiert * 100;
+    const warn = investPct >= 60 ? ' <span class="badge loss">⚠️ Klumpen</span>' : investPct >= 40 ? ' <span class="badge wait">erhöht</span>' : "";
     return `<div class="row">
       <div><span class="tk">${thema}</span>${warn}</div>
       <div class="right"><div class="res">${Math.round(betrag).toLocaleString("de-DE")} ${waehrung} · ${pct.toFixed(0)} %</div>
-      <div class="dim">des investierten Kapitals</div></div></div>`;
+      <div class="dim">vom Gesamtwert (${investPct.toFixed(0)} % des Investierten)</div></div></div>`;
   }).join("");
+  const cash = gesamt - investiert;
+  if (cash > 0.5) {
+    html += `<div class="row">
+      <div><span class="tk">Cash</span></div>
+      <div class="right"><div class="res">${Math.round(cash).toLocaleString("de-DE")} ${waehrung} · ${(cash / gesamt * 100).toFixed(0)} %</div>
+      <div class="dim">vom Gesamtwert</div></div></div>`;
+  }
+  karte.innerHTML = html;
   titel.style.display = "";
   karte.style.display = "";
 }
@@ -163,7 +174,7 @@ function journalModell(d, risikoUsd, notiz) {
       rsub: t.pnlEur != null ? t.pnlEur.toLocaleString("de-DE") + " $" : "",
     })),
     notiz,
-    betraege, waehrung: "$",
+    betraege, waehrung: "$", gesamtwert: equity,
   };
 }
 
@@ -201,7 +212,7 @@ async function depotModell(seite, detailUrl) {
     })),
     notiz: null,
     betraege: d.positionen.map(p => ({ ticker: p.ticker, betrag: p.eur })),
-    waehrung: "€",
+    waehrung: "€", gesamtwert: d.vermoegen,
   };
 }
 
@@ -244,7 +255,7 @@ const AGENTEN = {
         })),
         notiz: null,
         betraege: d.positionen.map(p => ({ ticker: p.ticker, betrag: p.einsatz })),
-        waehrung: "€",
+        waehrung: "€", gesamtwert: d.aktuell.vermoegen,
       };
     },
   },
@@ -390,7 +401,7 @@ cfg.laden().then(m => {
     ? m.positionen.map(zeile).join("") : '<div class="leer">Keine offenen Positionen.</div>';
   document.getElementById("trades").innerHTML = m.trades.length
     ? m.trades.map(zeile).join("") : '<div class="leer">Noch keine Trades.</div>';
-  konzentrationZeigen(m.betraege || [], m.waehrung || "€");
+  konzentrationZeigen(m.betraege || [], m.waehrung || "€", m.gesamtwert || 0);
   if (m.notiz) {
     document.getElementById("notiz-titel").style.display = "";
     document.getElementById("notiz").style.display = "";
