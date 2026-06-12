@@ -1,6 +1,34 @@
 {
- "standUtc": "2026-06-12T15:41:26Z",
+ "standUtc": "2026-06-12T15:51:30Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T15:51:30Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: GUI Desktop-Breite"
+  },
+  {
+   "zeit": "2026-06-12T15:51:24Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: GUI Desktop-Breite"
+  },
+  {
+   "zeit": "2026-06-12T15:51:16Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Desktop-Fix: Pills umbrechen statt unsichtbar zu scrollen, agent/logs auf 1000px Breite"
+  },
+  {
+   "zeit": "2026-06-12T15:49:46Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 17:48"
+  },
   {
    "zeit": "2026-06-12T15:41:26Z",
    "agent": "speku",
@@ -371,27 +399,6 @@
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Scan 14:05 Vorboerse"
-  },
-  {
-   "zeit": "2026-06-12T11:54:33Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 13:51: kein Material, Quantum-Premarket stark"
-  },
-  {
-   "zeit": "2026-06-12T11:51:42Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 13:50 Vorboerse"
-  },
-  {
-   "zeit": "2026-06-12T11:39:24Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 13:36: kein Material"
   },
   {
    "zeit": "2026-06-12T10:25:58Z",
