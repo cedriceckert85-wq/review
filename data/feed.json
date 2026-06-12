@@ -1,0 +1,404 @@
+{
+ "standUtc": "2026-06-12T15:25:49Z",
+ "eintraege": [
+  {
+   "zeit": "2026-06-12T15:25:49Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Stop-Wache 17:21: HOLD x3"
+  },
+  {
+   "zeit": "2026-06-12T15:19:51Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 17:18"
+  },
+  {
+   "zeit": "2026-06-12T15:10:54Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Stop-Wache 17:06: HOLD x3, neue Buchhochs"
+  },
+  {
+   "zeit": "2026-06-12T15:04:52Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 17:03"
+  },
+  {
+   "zeit": "2026-06-12T14:55:51Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Stop-Wache 16:51: HOLD x3"
+  },
+  {
+   "zeit": "2026-06-12T14:49:46Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 16:48"
+  },
+  {
+   "zeit": "2026-06-12T14:40:58Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Stop-Wache 16:36: HOLD x3, RGTI +10% auf Einstand"
+  },
+  {
+   "zeit": "2026-06-12T14:38:25Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 16:36"
+  },
+  {
+   "zeit": "2026-06-12T14:36:09Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Hauptlauf Tag 5: AMZN-Kauf + IWM-Aufstockung"
+  },
+  {
+   "zeit": "2026-06-12T14:29:36Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 16:28"
+  },
+  {
+   "zeit": "2026-06-12T14:25:54Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Stop-Wache 16:21: HOLD x3, SPCX haelt Pop"
+  },
+  {
+   "zeit": "2026-06-12T14:19:46Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 16:18"
+  },
+  {
+   "zeit": "2026-06-12T14:11:26Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "SPCX-Erstprint 171, Proxies fallen, Hauptlauf: HOLD x3, keine Tranche 2"
+  },
+  {
+   "zeit": "2026-06-12T14:03:14Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "UMich T+1: Reaktion positiv, Zahlen unscharf"
+  },
+  {
+   "zeit": "2026-06-12T13:58:46Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "UMich T-2: Basis erfasst"
+  },
+  {
+   "zeit": "2026-06-12T13:53:39Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "EROEFFNUNGS-CHECK: RKLB-Short gecovert +5.25 EUR (+4.4%), Quantum HALTEN x3"
+  },
+  {
+   "zeit": "2026-06-12T13:51:39Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 15:50"
+  },
+  {
+   "zeit": "2026-06-12T13:36:51Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 15:35 zum Open"
+  },
+  {
+   "zeit": "2026-06-12T13:34:17Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "SPCX T+3: Sell-the-News live, RKLB -8% am Open"
+  },
+  {
+   "zeit": "2026-06-12T13:28:50Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "SPCX T-2: Referenzen erfasst, handelbar ab 16:00 dt."
+  },
+  {
+   "zeit": "2026-06-12T13:22:15Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 15:21: Deal-Entwurf jetzt beidseitig bestaetigt, Markt oeffnet"
+  },
+  {
+   "zeit": "2026-06-12T13:21:47Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 15:20 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T13:13:39Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Link-Netzwerk bereinigt + Woche-Button"
+  },
+  {
+   "zeit": "2026-06-12T13:13:37Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Link-Netzwerk bereinigt + Woche-Button"
+  },
+  {
+   "zeit": "2026-06-12T13:13:14Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "GUI: Flotten-Leiste ergaenzt"
+  },
+  {
+   "zeit": "2026-06-12T13:13:11Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "GUI: Flotten-Leiste ergaenzt"
+  },
+  {
+   "zeit": "2026-06-12T13:09:53Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 15:06: RKLB faded auf 117.74, Iran-Daempfer (G7-Rand)"
+  },
+  {
+   "zeit": "2026-06-12T13:06:56Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 15:05 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T13:05:52Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Nav auf einheitliche Agenten-Seite umgestellt"
+  },
+  {
+   "zeit": "2026-06-12T13:05:50Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Nav auf einheitliche Agenten-Seite umgestellt"
+  },
+  {
+   "zeit": "2026-06-12T12:58:27Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Apple-Design + Flotten-Navigationsleiste"
+  },
+  {
+   "zeit": "2026-06-12T12:58:25Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Apple-Design + Flotten-Navigationsleiste"
+  },
+  {
+   "zeit": "2026-06-12T12:51:50Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 14:50 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T12:39:13Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 14:36: Unterzeichnung evtl. Sonntag/Schweiz, Risk-on"
+  },
+  {
+   "zeit": "2026-06-12T12:38:47Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
+  },
+  {
+   "zeit": "2026-06-12T12:36:40Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 14:35 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T12:35:23Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-12"
+  },
+  {
+   "zeit": "2026-06-12T12:32:53Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-12"
+  },
+  {
+   "zeit": "2026-06-12T12:26:35Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Encoding-Fix + LIVE-Status sauber (Write-Tool statt Set-Content)"
+  },
+  {
+   "zeit": "2026-06-12T12:24:47Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Stufe 1 LIVE: Abrechnung, Bracket-Order-Anbindung, dokumentierte Stufe-1-Regeln"
+  },
+  {
+   "zeit": "2026-06-12T12:24:18Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 14:21: SPCX-Pop-Erwartung 155-167, Praemie schrumpft"
+  },
+  {
+   "zeit": "2026-06-12T12:21:45Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 14:20 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T12:17:24Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Phase 0: SOLID+RISK Geruest - Specs, Quant-Pipeline, Journale, GUI (NICHT LIVE)"
+  },
+  {
+   "zeit": "2026-06-12T12:09:22Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 14:06: SPCX-Graumarkt evtl. 167 (unbestaetigt)"
+  },
+  {
+   "zeit": "2026-06-12T12:06:43Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 14:05 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T11:54:33Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 13:51: kein Material, Quantum-Premarket stark"
+  },
+  {
+   "zeit": "2026-06-12T11:51:42Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 13:50 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T11:39:24Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 13:36: kein Material"
+  },
+  {
+   "zeit": "2026-06-12T11:36:51Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 13:35 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T11:24:43Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 13:21: kein Material, RKLB 120.70"
+  },
+  {
+   "zeit": "2026-06-12T11:21:46Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 13:20 Vorboerse"
+  },
+  {
+   "zeit": "2026-06-12T11:09:21Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 13:06: kein Material"
+  },
+  {
+   "zeit": "2026-06-12T10:25:58Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Umstellung auf 100.000-USD-Konto: 1R = 1.000 USD, HPE-Order neu skaliert"
+  },
+  {
+   "zeit": "2026-06-12T09:26:58Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "gitignore: Python-Cache ausschliessen"
+  },
+  {
+   "zeit": "2026-06-12T09:25:54Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Alpaca-Paper-Integration: Bracket-Orders, Fill-Sync, Order-Workflow 23:07"
+  },
+  {
+   "zeit": "2026-06-12T01:34:47Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-12"
+  },
+  {
+   "zeit": "2026-06-12T01:20:25Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Initial: Elite Swing Trade Agent - GUI, Journal, Auto-Auswertung, Regelwerk V3"
+  }
+ ]
+}
