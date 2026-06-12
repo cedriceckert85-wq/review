@@ -44,6 +44,8 @@ jobs:
           ALPACA_SOLID_SECRET: ${{ secrets.ALPACA_SOLID_SECRET }}
           ALPACA_RISK_KEY: ${{ secrets.ALPACA_RISK_KEY }}
           ALPACA_RISK_SECRET: ${{ secrets.ALPACA_RISK_SECRET }}
+          ALPACA_SCHATTEN_KEY: ${{ secrets.ALPACA_SCHATTEN_KEY }}
+          ALPACA_SCHATTEN_SECRET: ${{ secrets.ALPACA_SCHATTEN_SECRET }}
         run: python scripts/live_update.py
       - name: Commit & Push (nur bei Änderung)
         run: |

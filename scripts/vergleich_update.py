@@ -58,21 +58,12 @@ def main():
 
     punkt = {"datum": heute.isoformat(), "label": heute.strftime("%d.%m.")}
 
+    # Schatten seit 12.06. abends wie alle anderen: eigenes Alpaca-Konto PA3XH5SA83HN
+    # (Nutzer-Gutschrift beim Reset — ersetzt den frueheren schatten.json-Rebase).
     for name, prefix in (("swing", "ALPACA_SWING"), ("speku", "ALPACA_SPEKU"), ("haupt", "ALPACA_HAUPT"),
-                         ("solid", "ALPACA_SOLID"), ("risk", "ALPACA_RISK")):
+                         ("solid", "ALPACA_SOLID"), ("risk", "ALPACA_RISK"), ("schatten", "ALPACA_SCHATTEN")):
         eq = sicher(alpaca_equity, prefix)
         punkt[name] = round((eq / 100000 - 1) * 100, 2) if eq else letzter.get(name, 0.0)
-
-    try:
-        with open("data/schatten.json", encoding="utf-8") as f:
-            roh = json.load(f)["aktuell"]["rendite"]
-        # Fairness-Rebase (Nutzerwunsch 12.06.): Schatten startete am 11.06. und stand am
-        # 12.06. (Vergleichsstart) bei +0,11 % — im Chart zaehlt nur die Leistung AB 12.06.
-        basis = d["meta"].get("schattenStartRendite", 0.11)
-        punkt["schatten"] = round(((1 + roh / 100) / (1 + basis / 100) - 1) * 100, 2)
-    except Exception as e:
-        print(f"WARN schatten: {e}")
-        punkt["schatten"] = letzter.get("schatten", 0.0)
 
     spy = sicher(spy_kurs)
     if spy and not d["meta"].get("spyStart"):

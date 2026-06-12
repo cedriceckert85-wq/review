@@ -47,19 +47,11 @@ def main():
     jetzt = datetime.datetime.now(ZoneInfo("Europe/Berlin"))
     punkt = {"datum": jetzt.date().isoformat(), "label": "live", "standUhr": jetzt.strftime("%H:%M")}
 
+    # Schatten seit 12.06. abends wie alle anderen: eigenes Alpaca-Konto PA3XH5SA83HN.
     for name, prefix in (("swing", "ALPACA_SWING"), ("speku", "ALPACA_SPEKU"), ("haupt", "ALPACA_HAUPT"),
-                         ("solid", "ALPACA_SOLID"), ("risk", "ALPACA_RISK")):
+                         ("solid", "ALPACA_SOLID"), ("risk", "ALPACA_RISK"), ("schatten", "ALPACA_SCHATTEN")):
         eq = sicher(alpaca_equity, prefix)
         punkt[name] = round((eq / 100000 - 1) * 100, 2) if eq else None
-
-    try:
-        with open("data/schatten.json", encoding="utf-8") as f:
-            roh = json.load(f)["aktuell"]["rendite"]
-        basis = meta.get("schattenStartRendite", 0.11)
-        punkt["schatten"] = round(((1 + roh / 100) / (1 + basis / 100) - 1) * 100, 2)
-    except Exception as e:
-        print(f"WARN schatten: {e}")
-        punkt["schatten"] = None
 
     spy = sicher(spy_kurs)
     punkt["spy"] = round((spy / meta["spyStart"] - 1) * 100, 2) if spy and meta.get("spyStart") else None
