@@ -185,6 +185,7 @@ document.getElementById("nav").innerHTML = [
   ['agent.html?a=risk', '🔥 RISK', key === 'risk'],
   ['vergleich.html', '📈 Vergleich', false],
   ['index.html', '📝 Reviews', false],
+  ['woche.html', '🗓 Woche', false],
 ].map(([h, t, a]) => `<a href="${h}"${a ? ' class="active"' : ''}>${t}</a>`).join("");
 
 document.title = cfg.name + " — EPMT-Flotte";
