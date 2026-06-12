@@ -138,14 +138,17 @@ function journalModell(d, risikoUsd, notiz) {
     betrag: (t.alpaca ? t.alpaca.qty : Math.max(1, Math.floor(risikoUsd / Math.abs(t.entry - t.stop)))) * (t.entryFill || t.entry),
   }));
   const fertig = d.trades.filter(t => !["offen", "wartet"].includes(t.status));
+  const investiert = betraege.reduce((s, p) => s + p.betrag, 0);
+  const realisiert = (d.statistik.summeR || 0) * risikoUsd;
+  const st = d.statistik;
   return {
     vermoegen: fmtUsd(equity),
     rendite: (equity / 100000 - 1) * 100,
-    stand: d.konto.status + " · 1R = " + risikoUsd.toLocaleString("de-DE") + " $",
+    stand: d.konto.status + " · 1R = " + risikoUsd.toLocaleString("de-DE") + " $" + (st.bremseAktiv ? " · ⛔ Verlustserien-Bremse" : ""),
     chips: [
-      { t: "Trefferquote", v: d.statistik.trefferquote == null ? "—" : d.statistik.trefferquote + " %" },
-      { t: "Erwartungswert", v: d.statistik.erwartungswertR == null ? "—" : fmtR(d.statistik.erwartungswertR), cls: d.statistik.erwartungswertR > 0 ? "up" : d.statistik.erwartungswertR < 0 ? "down" : "" },
-      { t: "Verlustserie", v: d.statistik.aktuelleVerlustserie + (d.statistik.bremseAktiv ? " ⛔" : "") },
+      { t: "Cash", v: ((equity - investiert) / equity * 100).toLocaleString("de-DE", {maximumFractionDigits: 1}) + " %" },
+      { t: "Realisiert", v: (realisiert > 0 ? "+" : "") + Math.round(realisiert).toLocaleString("de-DE") + " $", cls: realisiert > 0 ? "up" : realisiert < 0 ? "down" : "" },
+      { t: "Trefferquote", v: st.trefferquote == null ? "— (0 Trades)" : st.trefferquote.toLocaleString("de-DE") + " % (" + st.gewonnen + "/" + st.trades + ")", cls: st.trefferquote >= 50 ? "up" : st.trefferquote == null ? "" : "down" },
     ],
     positionen: offen.map(t => ({
       tk: t.ticker, sub: `${t.id}${t.engine ? " · " + t.engine : ""} · Entry ${t.entryFill || t.entry} · Stop ${t.stop} · Ziel ${t.tp}`,
@@ -169,12 +172,14 @@ async function depotModell(seite, detailUrl) {
   const m = html.match(/<script type="application\/json" id="agent-daten">([\s\S]*?)<\/script>/);
   if (!m) throw new Error("kein Datenblock");
   const d = JSON.parse(m[1]);
+  const verkaeufe = d.trades.filter(t => t.aktion === "Verkauf" && (t.ergebnis || "") !== "");
+  const gewonnen = verkaeufe.filter(t => (t.ergebnis || "").startsWith("+")).length;
   return {
-    vermoegen: fmtEur(d.vermoegen), rendite: d.rendite, stand: d.stand,
+    vermoegen: fmtEur(d.vermoegen), rendite: d.rendite, stand: d.stand + " · vs. SPY: " + fmtPct(d.vsSpyPp).replace(" %", " pp"),
     chips: [
       { t: "Cash", v: d.cashQuote.toLocaleString("de-DE") + " %" },
       { t: "Realisiert", v: (d.realisiert > 0 ? "+" : "") + d.realisiert.toLocaleString("de-DE", {minimumFractionDigits: 2}) + " €", cls: d.realisiert > 0 ? "up" : d.realisiert < 0 ? "down" : "" },
-      { t: "vs. SPY", v: fmtPct(d.vsSpyPp).replace(" %", " pp"), cls: d.vsSpyPp > 0 ? "up" : "down" },
+      { t: "Trefferquote", v: verkaeufe.length === 0 ? "— (0 Trades)" : Math.round(gewonnen / verkaeufe.length * 100) + " % (" + gewonnen + "/" + verkaeufe.length + ")", cls: verkaeufe.length === 0 ? "" : (gewonnen / verkaeufe.length >= 0.5 ? "up" : "down") },
     ],
     positionen: d.positionen.map(p => {
       const kurs = p.kurs || p.entry;
@@ -216,12 +221,15 @@ const AGENTEN = {
     details: "schatten.html",
     laden: async () => {
       const d = await (await fetch(BASIS + "/review/data/schatten.json?_=" + Date.now())).json();
+      const unrealisiert = d.positionen.reduce((s, p) => s + p.einsatz * p.rendite / 100, 0);
+      const realisiert = (d.aktuell.vermoegen - d.meta.startKapital) - unrealisiert;
+      const verkaeufe = d.trades.filter(t => t.aktion !== "Kauf");
       return {
-        vermoegen: fmtEur(d.aktuell.vermoegen), rendite: d.aktuell.rendite, stand: d.aktuell.stand,
+        vermoegen: fmtEur(d.aktuell.vermoegen), rendite: d.aktuell.rendite, stand: d.aktuell.stand + " · Calls: " + d.scoreboard.richtig + " richtig / " + d.scoreboard.falsch + " falsch / " + d.scoreboard.offen + " offen",
         chips: [
           { t: "Cash", v: d.aktuell.cashQuote.toLocaleString("de-DE") + " %" },
-          { t: "Calls richtig", v: d.scoreboard.richtig + " / " + (d.scoreboard.richtig + d.scoreboard.falsch + d.scoreboard.offen) },
-          { t: "Offene Wetten", v: d.abweichungen.filter(a => a.status === "offen").length },
+          { t: "Realisiert", v: (realisiert > 0 ? "+" : "") + realisiert.toLocaleString("de-DE", {maximumFractionDigits: 2}) + " €", cls: realisiert > 0.005 ? "up" : realisiert < -0.005 ? "down" : "" },
+          { t: "Trefferquote", v: verkaeufe.length === 0 ? "— (0 Trades)" : "siehe Calls" },
         ],
         positionen: d.positionen.map(p => ({
           tk: p.ticker, sub: `${fmtEur(p.einsatz)} · Einstand ${p.einstand} · Stop ${p.stop} · Ziel ${p.ziel}`,
