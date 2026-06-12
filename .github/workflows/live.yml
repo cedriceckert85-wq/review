@@ -56,11 +56,11 @@ jobs:
             python scripts/live_update.py || true
             git add data/live.json
             if ! git diff --cached --quiet; then
-              git commit -m "Live $(TZ=Europe/Berlin date +%H:%M)" || true
-              git pull --rebase || true
-              git push || (git pull --rebase && git push) || true
+              # 1-Minuten-Takt auf den separaten live-Branch (Force-Push = keine Historien-Flut)
+              git commit -m "live" --quiet || true
+              git push -f origin HEAD:live --quiet || true
             fi
-            sleep 240
+            sleep 60
           done
       - name: Selbst-Neustart (falls Markt noch offen)
         if: always()
