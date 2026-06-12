@@ -5,11 +5,11 @@
     "regeln": "Start 2000 € am 11.06.2026. Einstieg nur zu auf den Dashboards (oder per Quelle) belegbaren Kursen. Jede Abweichung vom Original braucht eine Messlatte, an der sie später als richtig/falsch bewertet wird. Keine rückwirkenden Änderungen — Fehler bleiben sichtbar."
   },
   "aktuell": {
-    "vermoegen": 1989.5,
-    "rendite": -0.53,
+    "vermoegen": 2002.0,
+    "rendite": 0.1,
     "cash": 1100.0,
-    "cashQuote": 55.3,
-    "stand": "12.06.2026, 15:52 (Auto-Kurse)"
+    "cashQuote": 54.9,
+    "stand": "12.06.2026, 18:26 (Auto-Kurse)"
   },
   "scoreboard": {
     "richtig": 0,
@@ -22,8 +22,8 @@
       "name": "Constellation Energy",
       "einsatz": 250,
       "einstand": 242.26,
-      "kurs": 248.67,
-      "rendite": 2.65,
+      "kurs": 251.23,
+      "rendite": 3.7,
       "stop": 232,
       "ziel": 268,
       "begruendung": "Einzige Haupt-Depot-Position, die ich übernehme: Nuklear/Strom profitiert strukturell von KI-Strombedarf UND von der Öl-Krise (Energiepreise +6 %). Stop bewusst weiter als das Original (232 statt 237) — in einer Nachrichten-Phase mit 3-4 % Tagesschwankung ist ein 2,2 %-Stop Rauschen, kein Risikomanagement.",
@@ -34,8 +34,8 @@
       "name": "D-Wave Quantum",
       "einsatz": 400,
       "einstand": 23.83,
-      "kurs": 23.21,
-      "rendite": -2.6,
+      "kurs": 23.52,
+      "rendite": -1.3,
       "stop": 18.6,
       "ziel": 36,
       "begruendung": "Quantum-Kernwette übernommen — die These (kommerzielle Annealing-Erlöse) ist die stärkste der drei Speku-Positionen. Aber: Ich deckle das Quantum-Thema insgesamt auf 650 € statt 770 € und streiche die Nachkauf-Regel ersatzlos.",
@@ -46,8 +46,8 @@
       "name": "IonQ",
       "einsatz": 250,
       "einstand": 58.51,
-      "kurs": 56.94,
-      "rendite": -2.68,
+      "kurs": 58.03,
+      "rendite": -0.82,
       "stop": 46,
       "ziel": 75,
       "begruendung": "Zweite Quantum-Position als Qualitätsführer. RGTI lasse ich bewusst weg — drei hochkorrelierte Titel desselben Themas sind keine drei Positionen, sondern eine große mit dreifachen Gebühren.",
