@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-12T17:59:20Z",
+ "standUtc": "2026-06-12T18:05:20Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T18:05:20Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
+  },
   {
    "zeit": "2026-06-12T17:59:20Z",
    "agent": "haupt",
@@ -269,13 +276,6 @@
   },
   {
    "zeit": "2026-06-12T17:54:58Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:54:52Z",
    "agent": "haupt",
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
