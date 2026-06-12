@@ -1,6 +1,48 @@
 {
- "standUtc": "2026-06-12T15:34:43Z",
+ "standUtc": "2026-06-12T15:41:26Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T15:41:26Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:06 — HOLD x3 (QBTS 24.32/IONQ 59.61/RGTI 21.84), kein Material"
+  },
+  {
+   "zeit": "2026-06-12T15:40:24Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: GUI-Update einheitliche Navigation"
+  },
+  {
+   "zeit": "2026-06-12T15:40:18Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: GUI-Update einheitliche Navigation"
+  },
+  {
+   "zeit": "2026-06-12T15:40:13Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Einheitliche Nav-Komponente"
+  },
+  {
+   "zeit": "2026-06-12T15:40:12Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Einheitliche Nav-Komponente"
+  },
+  {
+   "zeit": "2026-06-12T15:40:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Einheitliche GUI: zentrale Nav-Komponente nav.js (Desktop Pills, Handy Dropdown) auf allen Seiten"
+  },
   {
    "zeit": "2026-06-12T15:34:43Z",
    "agent": "system",
@@ -350,27 +392,6 @@
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Scan 13:36: kein Material"
-  },
-  {
-   "zeit": "2026-06-12T11:36:51Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 13:35 Vorboerse"
-  },
-  {
-   "zeit": "2026-06-12T11:24:43Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 13:21: kein Material, RKLB 120.70"
-  },
-  {
-   "zeit": "2026-06-12T11:21:46Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 13:20 Vorboerse"
   },
   {
    "zeit": "2026-06-12T10:25:58Z",
