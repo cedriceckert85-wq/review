@@ -238,8 +238,8 @@ function laden() {
     kommentare = kom;
     document.getElementById("hinweis").textContent = d.meta.hinweis + " · Keine Anlageberatung";
 
-    agentenTrades.haupt = (kom && kom.agenten.haupt.trades) || [];
-    agentenTrades.speku = (kom && kom.agenten.speku.trades) || [];
+    agentenTrades.haupt = (kom && kom.agenten.haupt && kom.agenten.haupt.trades) || [];
+    agentenTrades.speku = (kom && kom.agenten.speku && kom.agenten.speku.trades) || [];
     if (schatten) {
       agentenTrades.schatten = [...schatten.trades].reverse().map(t => ({
         datum: t.datum.includes("-") ? t.datum.slice(8, 10) + "." + t.datum.slice(5, 7) + "." : t.datum,
@@ -276,7 +276,8 @@ function laden() {
     const sortiert = [...SERIEN].sort((a, b) => (letzte[b.key] ?? -999) - (letzte[a.key] ?? -999));
     document.getElementById("rangliste").innerHTML = sortiert.map((s, i) => {
       const istAgent = AGENTEN.includes(s.key);
-      const kurz = istAgent && kom ? (kom.agenten[s.key].beschreibung || kom.agenten[s.key].kommentar) : "";
+      const ak = istAgent && kom ? (kom.agenten[s.key] || {}) : {};
+      const kurz = ak.beschreibung || ak.kommentar || "";
       return `
       <div class="r-item ${istAgent ? "klickbar" : ""}" style="--c:${s.farbe}" ${istAgent ? `onclick="tabUndScroll('${s.key}')"` : ""}>
         <div class="platz">Platz ${i + 1}${istAgent ? " · Tippen für Details" : ""}</div>
