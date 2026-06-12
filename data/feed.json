@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-12T15:33:27Z",
+ "standUtc": "2026-06-12T15:34:43Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T15:34:43Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Scan 17:33"
+  },
   {
    "zeit": "2026-06-12T15:33:27Z",
    "agent": "system",
@@ -364,13 +371,6 @@
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Scan 13:20 Vorboerse"
-  },
-  {
-   "zeit": "2026-06-12T11:09:21Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 13:06: kein Material"
   },
   {
    "zeit": "2026-06-12T10:25:58Z",
