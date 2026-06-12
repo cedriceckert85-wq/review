@@ -45,6 +45,13 @@ Du bist ein Experte für Aktien und Finanzen. Dieser Lauf passiert 2× täglich 
    aktualisiert die Positions-Kurse alle 15 Minuten automatisch (Stand-Vermerk „(Auto-Kurse)")
    und setzt bei Stop-Unterschreitung nur das Flag `stopVerletzt` — er handelt NICHT.
    Die Exekution von Stops/Zielen und alle Trades bleiben ausschließlich Aufgabe dieses Laufs.
+   **Alpaca-Spiegel (seit 12.06.):** Das Schatten-Depot hat ein eigenes Paper-Konto
+   (PA3XH5SA83HN, 100.000 $, Stückzahl = einsatz/einstand × 50). Derselbe Actions-Job
+   gleicht es nach jeder Änderung von `data/schatten.json` automatisch ab
+   (`scripts/alpaca_schatten.py sync` — schließt Weggefallenes, eröffnet Fehlendes,
+   setzt GTC-Schutz-Stops). Der Reviewer muss dafür NICHTS tun — einfach nur
+   `data/schatten.json` korrekt fortschreiben und pushen; das Konto ist Beobachter,
+   nie Blocker. `schatten.json` bleibt die Wahrheit.
    a. **Kurse aktualisieren:** Für jede Position in `positionen` den aktuellen Kurs aus den
       Dashboards übernehmen (CEG aus Haupt-Depot, QBTS/IONQ aus Speku-Depot); sind die
       Auto-Kurse aktueller, gelten die Auto-Kurse. `rendite` je

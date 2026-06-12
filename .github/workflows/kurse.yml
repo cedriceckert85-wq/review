@@ -5,6 +5,9 @@ on:
     # Alle 15 Min während US-Marktzeiten (13-20 UTC = 15:30-22:00 Berlin im Sommer), Mo-Fr.
     # Minuten 7/22/37/52: versetzt zu den Review-Läufen (17:00/22:00) gegen Push-Kollisionen.
     - cron: '7,22,37,52 13-20 * * 1-5'
+  push:
+    branches: [main]
+    paths: ['data/schatten.json']
   workflow_dispatch:
 
 permissions:
@@ -24,6 +27,11 @@ jobs:
           python-version: '3.12'
       - name: Kurse aktualisieren
         run: python scripts/update_kurse.py
+      - name: Alpaca-Spiegel Schatten (sync)
+        env:
+          ALPACA_SCHATTEN_KEY: ${{ secrets.ALPACA_SCHATTEN_KEY }}
+          ALPACA_SCHATTEN_SECRET: ${{ secrets.ALPACA_SCHATTEN_SECRET }}
+        run: python scripts/alpaca_schatten.py sync || echo "Spiegel-Fehler ignoriert (Beobachter, nie Blocker)"
       - name: Live-Punkt (Alpaca-Equities)
         env:
           ALPACA_SWING_KEY: ${{ secrets.ALPACA_SWING_KEY }}
