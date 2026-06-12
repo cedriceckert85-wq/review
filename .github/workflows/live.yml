@@ -41,7 +41,9 @@ jobs:
           git config user.name "live-bot"
           git config user.email "actions@users.noreply.github.com"
           START=$(date +%s)
+          RUNDE=0
           while true; do
+            RUNDE=$((RUNDE + 1))
             STUNDE=$(TZ=UTC date +%H); MINUTE=$(TZ=UTC date +%M); TAG=$(TZ=UTC date +%u)
             JETZT="$STUNDE$MINUTE"
             # US-Marktzeiten (Sommer): 13:30–20:00 UTC, Mo–Fr
@@ -59,6 +61,11 @@ jobs:
               # 1-Minuten-Takt auf den separaten live-Branch (Force-Push = keine Historien-Flut)
               git commit -m "live" --quiet || true
               git push -f origin HEAD:live --quiet || true
+              # alle ~10 Min zusaetzlich nach main (Fallback fuer alte/gecachte Seitenversionen)
+              if [ $((RUNDE % 10)) -eq 0 ]; then
+                git pull --rebase origin main --quiet || true
+                git push origin HEAD:main --quiet || true
+              fi
             fi
             sleep 60
           done
