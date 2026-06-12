@@ -107,25 +107,11 @@
    "text": "Einheitliche Nav-Komponente"
   },
   {
-   "zeit": "2026-06-12T15:40:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Einheitliche GUI: zentrale Nav-Komponente nav.js (Desktop Pills, Handy Dropdown) auf allen Seiten"
-  },
-  {
    "zeit": "2026-06-12T15:34:43Z",
    "agent": "system",
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Scan 17:33"
-  },
-  {
-   "zeit": "2026-06-12T15:33:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Flotten-Log: alle Agenten-Aktivitaeten in einem Strom (logs.html + feed im Minuten-Laeufer)"
   },
   {
    "zeit": "2026-06-12T15:25:49Z",
