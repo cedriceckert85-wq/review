@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-12T16:08:20Z",
+ "standUtc": "2026-06-12T16:17:08Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-12T16:17:08Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:51 — HOLD x3, kein Material, Iran-Deal verifiziert"
+  },
   {
    "zeit": "2026-06-12T16:08:20Z",
    "agent": "system",
@@ -399,13 +406,6 @@
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Scan 14:21: SPCX-Pop-Erwartung 155-167, Praemie schrumpft"
-  },
-  {
-   "zeit": "2026-06-12T12:21:45Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Scan 14:20 Vorboerse"
   },
   {
    "zeit": "2026-06-12T12:17:24Z",
