@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Agent — EPMT-Flotte</title>
+<style>
+  :root { --bg:#000000; --card:#1c1c1e; --card2:#2c2c2e; --txt:#f5f5f7; --dim:#98989d; --line:#2c2c2e;
+          --up:#30d158; --down:#ff453a; --blue:#0a84ff; --amber:#ffd60a; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Roboto,sans-serif;
+    padding:max(16px,env(safe-area-inset-top)) 16px max(32px,env(safe-area-inset-bottom));
+    -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:640px; margin:0 auto; }
+  .flotte { display:flex; gap:4px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+            background:#161618; border-radius:14px; padding:4px; margin-bottom:8px; scrollbar-width:none; }
+  .flotte::-webkit-scrollbar { display:none; }
+  .flotte a { white-space:nowrap; padding:9px 13px; border-radius:10px; color:var(--dim);
+              text-decoration:none; font-size:13px; font-weight:600; }
+  .flotte a.active { background:#2f2f31; color:var(--txt); }
+  .hero { text-align:center; padding:24px 0 8px; }
+  .hero .label { font-size:15px; color:var(--dim); font-weight:500; }
+  .hero .big { font-size:46px; font-weight:700; letter-spacing:-1px; margin:2px 0; font-variant-numeric:tabular-nums; }
+  .pill { display:inline-block; font-size:15px; font-weight:600; padding:3px 12px; border-radius:999px; }
+  .pill.up { background:rgba(48,209,88,.15); color:var(--up); }
+  .pill.down { background:rgba(255,69,58,.15); color:var(--down); }
+  .stamp { font-size:12px; color:var(--dim); margin-top:8px; }
+  .compare { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:20px 0; }
+  .chip { background:var(--card); border-radius:16px; padding:12px 10px; text-align:center; }
+  .chip .t { font-size:11px; color:var(--dim); font-weight:500; }
+  .chip .v { font-size:17px; font-weight:600; margin-top:2px; font-variant-numeric:tabular-nums; }
+  .up { color:var(--up); } .down { color:var(--down); }
+  h2 { font-size:20px; font-weight:700; letter-spacing:-.3px; margin:28px 4px 10px; }
+  .card { background:var(--card); border-radius:18px; overflow:hidden; }
+  .row { display:flex; justify-content:space-between; align-items:center; gap:10px;
+         padding:13px 16px; border-bottom:.5px solid var(--line); font-size:15px; }
+  .row:last-child { border-bottom:none; }
+  .tk { font-weight:600; }
+  .dim { color:var(--dim); font-size:13px; margin-top:1px; }
+  .right { text-align:right; font-variant-numeric:tabular-nums; flex-shrink:0; }
+  .res { font-weight:600; font-size:13px; }
+  .badge { font-size:11px; font-weight:600; padding:1px 8px; border-radius:999px; vertical-align:1px; }
+  .badge.buy { background:rgba(10,132,255,.12); color:var(--blue); }
+  .badge.sell { background:rgba(255,149,0,.15); color:#ff9500; }
+  .badge.win { background:rgba(48,209,88,.15); color:var(--up); }
+  .badge.loss { background:rgba(255,69,58,.15); color:var(--down); }
+  .badge.wait { background:rgba(152,152,157,.15); color:var(--dim); }
+  .leer { padding:18px 16px; color:var(--dim); font-size:14px; }
+  .notiz { padding:13px 16px; font-size:14px; color:var(--dim); line-height:1.5; }
+  .note { font-size:12px; color:var(--dim); line-height:1.5; margin:28px 8px 0; text-align:center; }
+  .note a { color:var(--blue); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="flotte" id="nav"></nav>
+  <div class="hero">
+    <div class="label" id="agent-name">…</div>
+    <div class="big" id="vermoegen">—</div>
+    <span class="pill up" id="rendite">—</span>
+    <div class="stamp" id="stamp"></div>
+  </div>
+  <div class="compare" id="chips"></div>
+  <h2>Offene Positionen</h2>
+  <div class="card" id="positionen"><div class="leer">Lade…</div></div>
+  <h2>Trades</h2>
+  <div class="card" id="trades"><div class="leer">Lade…</div></div>
+  <h2 id="notiz-titel" style="display:none">Letzter Lauf</h2>
+  <div class="card" id="notiz" style="display:none"></div>
+  <p class="note">Paper-Trading · Keine Anlageberatung · <a id="details" href="#">Detail-Ansicht öffnen</a></p>
+</div>
+
+<script>
+const fmtUsd = v => v.toLocaleString("de-DE", {maximumFractionDigits: 0}) + " $";
+const fmtEur = v => v.toLocaleString("de-DE", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " €";
+const fmtPct = v => (v > 0 ? "+" : "") + v.toLocaleString("de-DE", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " %";
+const fmtR = v => (v > 0 ? "+" : "") + v.toLocaleString("de-DE", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " R";
+const dd = s => s && s.includes("-") ? s.slice(8, 10) + "." + s.slice(5, 7) + "." : (s || "");
+
+const BASIS = "https://cedriceckert85-wq.github.io";
+
+function journalModell(d, risikoUsd, notiz) {
+  const equity = 100000 + (d.statistik.summeR || 0) * risikoUsd;
+  const offen = d.trades.filter(t => t.status === "offen" || t.status === "wartet");
+  const fertig = d.trades.filter(t => !["offen", "wartet"].includes(t.status));
+  return {
+    vermoegen: fmtUsd(equity),
+    rendite: (equity / 100000 - 1) * 100,
+    stand: d.konto.status + " · 1R = " + risikoUsd.toLocaleString("de-DE") + " $",
+    chips: [
+      { t: "Trefferquote", v: d.statistik.trefferquote == null ? "—" : d.statistik.trefferquote + " %" },
+      { t: "Erwartungswert", v: d.statistik.erwartungswertR == null ? "—" : fmtR(d.statistik.erwartungswertR), cls: d.statistik.erwartungswertR > 0 ? "up" : d.statistik.erwartungswertR < 0 ? "down" : "" },
+      { t: "Verlustserie", v: d.statistik.aktuelleVerlustserie + (d.statistik.bremseAktiv ? " ⛔" : "") },
+    ],
+    positionen: offen.map(t => ({
+      tk: t.ticker, sub: `${t.id}${t.engine ? " · " + t.engine : ""} · Entry ${t.entryFill || t.entry} · Stop ${t.stop} · Ziel ${t.tp}`,
+      badge: t.status === "wartet" ? ["wait", "wartet"] : ["buy", t.richtung],
+      rechts: t.alpaca ? t.alpaca.qty + " Stk." : "—", rsub: t.status === "offen" ? "seit " + dd(t.entryDatum) : "Order liegt",
+    })),
+    trades: [...d.trades].reverse().map(t => ({
+      tk: t.ticker, sub: `${dd(t.datumEmpfehlung)} ${t.id}${t.engine ? " · " + t.engine : ""} · ${t.entryTyp || ""} ${t.entry} → ${t.status === "gewonnen" ? "Ziel " + t.tp : t.status === "verloren" ? "Stop " + t.stop : "Ziel " + t.tp + " / Stop " + t.stop}`,
+      badge: t.status === "gewonnen" ? ["win", "gewonnen"] : t.status === "verloren" ? ["loss", "verloren"] : ["wait", t.status.replace("_", "-")],
+      rechts: t.ergebnisR != null ? fmtR(t.ergebnisR) : "—",
+      rcls: t.ergebnisR > 0 ? "up" : t.ergebnisR < 0 ? "down" : "",
+      rsub: t.pnlEur != null ? t.pnlEur.toLocaleString("de-DE") + " $" : "",
+    })),
+    notiz,
+  };
+}
+
+const AGENTEN = {
+  schatten: {
+    name: "👤 Schatten-Depot (Reviewer)",
+    details: "schatten.html",
+    laden: async () => {
+      const d = await (await fetch(BASIS + "/review/data/schatten.json?_=" + Date.now())).json();
+      return {
+        vermoegen: fmtEur(d.aktuell.vermoegen), rendite: d.aktuell.rendite, stand: d.aktuell.stand,
+        chips: [
+          { t: "Cash", v: d.aktuell.cashQuote.toLocaleString("de-DE") + " %" },
+          { t: "Calls richtig", v: d.scoreboard.richtig + " / " + (d.scoreboard.richtig + d.scoreboard.falsch + d.scoreboard.offen) },
+          { t: "Offene Wetten", v: d.abweichungen.filter(a => a.status === "offen").length },
+        ],
+        positionen: d.positionen.map(p => ({
+          tk: p.ticker, sub: `${fmtEur(p.einsatz)} · Einstand ${p.einstand} · Stop ${p.stop} · Ziel ${p.ziel}`,
+          badge: p.stopVerletzt ? ["loss", "STOP!"] : ["buy", "long"],
+          rechts: fmtPct(p.rendite), rcls: p.rendite > 0 ? "up" : p.rendite < 0 ? "down" : "",
+          rsub: "Kurs " + p.kurs.toLocaleString("de-DE"),
+        })),
+        trades: [...d.trades].reverse().map(t => ({
+          tk: t.ticker, sub: `${t.datum} ${t.zeit || ""} · ${t.kommentar || ""}`,
+          badge: t.aktion === "Kauf" ? ["buy", "Kauf"] : ["sell", t.aktion],
+          rechts: t.kurs.toLocaleString("de-DE"), rsub: fmtEur(t.einsatz),
+        })),
+        notiz: null,
+      };
+    },
+  },
+  swing: {
+    name: "◆ Elite Swing Agent",
+    details: BASIS + "/swing/",
+    laden: async () => {
+      const [j, e] = await Promise.all([
+        (await fetch(BASIS + "/swing/data/journal.json?_=" + Date.now())).json(),
+        fetch(BASIS + "/swing/data/empfehlungen.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
+      ]);
+      const letzter = e && e.laeufe.length ? e.laeufe[e.laeufe.length - 1] : null;
+      return journalModell(j, 1000, letzter
+        ? `${letzter.datum}: ${letzter.empfehlung && letzter.empfehlung.trade ? "TRADE → " + letzter.empfehlung.tradeId : "KEIN TRADE"} — ${letzter.empfehlung ? letzter.empfehlung.begruendung : ""}`
+        : null);
+    },
+  },
+  solid: {
+    name: "🤍 SOLID — Evidenz-Bot",
+    details: BASIS + "/bots/",
+    laden: async () => {
+      const j = await (await fetch(BASIS + "/bots/data/solid_journal.json?_=" + Date.now())).json();
+      return journalModell(j, 1000, j.konto.hinweisLetzterLauf || null);
+    },
+  },
+  risk: {
+    name: "🔥 RISK — Gewinn-Jäger",
+    details: BASIS + "/bots/",
+    laden: async () => {
+      const j = await (await fetch(BASIS + "/bots/data/risk_journal.json?_=" + Date.now())).json();
+      return journalModell(j, 2000, j.konto.hinweisLetzterLauf || null);
+    },
+  },
+};
+
+const key = new URLSearchParams(location.search).get("a") || "schatten";
+const cfg = AGENTEN[key] || AGENTEN.schatten;
+
+document.getElementById("nav").innerHTML = [
+  ['https://cedriceckert85-wq.github.io/epmt-dashboard/index.html', '📊 Haupt', false],
+  ['https://cedriceckert85-wq.github.io/epmt-dashboard/speku.html', '🚀 Speku', false],
+  ['agent.html?a=schatten', '👤 Schatten', key === 'schatten'],
+  ['agent.html?a=swing', '◆ Swing', key === 'swing'],
+  ['agent.html?a=solid', '🤍 SOLID', key === 'solid'],
+  ['agent.html?a=risk', '🔥 RISK', key === 'risk'],
+  ['vergleich.html', '📈 Vergleich', false],
+  ['index.html', '📝 Reviews', false],
+].map(([h, t, a]) => `<a href="${h}"${a ? ' class="active"' : ''}>${t}</a>`).join("");
+
+document.title = cfg.name + " — EPMT-Flotte";
+document.getElementById("agent-name").textContent = cfg.name;
+document.getElementById("details").href = cfg.details;
+
+function zeile(z) {
+  return `<div class="row">
+    <div><span class="tk">${z.tk}</span> <span class="badge ${z.badge[0]}">${z.badge[1]}</span>
+      <div class="dim">${z.sub}</div></div>
+    <div class="right"><div class="res ${z.rcls || ""}">${z.rechts}</div><div class="dim">${z.rsub || ""}</div></div>
+  </div>`;
+}
+
+cfg.laden().then(m => {
+  document.getElementById("vermoegen").textContent = m.vermoegen;
+  const pill = document.getElementById("rendite");
+  pill.textContent = fmtPct(m.rendite);
+  pill.className = "pill " + (m.rendite >= 0 ? "up" : "down");
+  document.getElementById("stamp").textContent = m.stand;
+  document.getElementById("chips").innerHTML = m.chips.map(c =>
+    `<div class="chip"><div class="t">${c.t}</div><div class="v ${c.cls || ""}">${c.v}</div></div>`).join("");
+  document.getElementById("positionen").innerHTML = m.positionen.length
+    ? m.positionen.map(zeile).join("") : '<div class="leer">Keine offenen Positionen.</div>';
+  document.getElementById("trades").innerHTML = m.trades.length
+    ? m.trades.map(zeile).join("") : '<div class="leer">Noch keine Trades.</div>';
+  if (m.notiz) {
+    document.getElementById("notiz-titel").style.display = "";
+    document.getElementById("notiz").style.display = "";
+    document.getElementById("notiz").innerHTML = `<div class="notiz">${m.notiz}</div>`;
+  }
+}).catch(() => {
+  document.getElementById("positionen").innerHTML = '<div class="leer">Daten nicht ladbar.</div>';
+});
+setInterval(() => location.reload(), 10 * 60 * 1000);
+</script>
+</body>
+</html>
