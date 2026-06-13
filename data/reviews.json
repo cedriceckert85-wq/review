@@ -309,6 +309,71 @@
         "D3 (RGTI-Auslassung) trendet gegen den Reviewer: RGTI +7,87 % ist aktuell der stärkste Quantum-Titel. Die Diversifikations-These (schwächsten Titel raus) ist kurzfristig widerlegt — Endurteil aber erst zur 1-Monats-Messlatte (~11.07.).",
         "Operativ (Windows): python-stdout ist cp1252, '−' (U+2212) wirft beim Print UnicodeEncodeError → Diagnose mit 'python -X utf8'. JSON-Schreiben/Validieren (encoding='utf-8') ist nicht betroffen, Pipeline stabil."
       ]
+    },
+    {
+      "id": "2026-06-13-2200",
+      "datum": "2026-06-13",
+      "zeit": "22:00",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 1994.25,
+        "rendite": -0.29,
+        "cashQuote": 77,
+        "score": 5,
+        "fazit": "Bestätigungslauf — identische Daten zum 17:00-Lauf (Dashboard weiter auf Fr 17:48 eingefroren, Börse Sa zu). Keine neuen Kurse, kein Trade, keine Stop-/Ziel-Berührung. Score bleibt 5 (Regel: ändert sich nur bei neuen Daten). Nächster echter Prüfpunkt: Mo 15.06. (NVDA-Zeit-Exit, F-H-003).",
+        "punkte": [
+          "Keine Veränderung ggü. 17:00 — siehe Eintrag 2026-06-13-1700 für die volle Begründung.",
+          "Mo 15.06.: NVDA max. Haltedauer endet, Verlängerung/Zeit-Exit fällig."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2022,
+        "rendite": 1.11,
+        "cashQuote": 61,
+        "score": 7,
+        "fazit": "Bestätigungslauf — Quantum-Buch unverändert zum Fr-Schluss (RGTI +7,87 %, IONQ +2,15 %, QBTS +0,52 %), Börse zu. Score bleibt 7. Klumpenrisiko (F-S-001) strukturell weiter offen; Nachkauf-Trigger nicht ausgelöst.",
+        "punkte": [
+          "Keine neuen Daten ggü. 17:00 — RGTI führt weiter und stellt D3 in Frage (Messlatte ~11.07.).",
+          "Cash ~61 % bereit für die offene Tranche-2-Diversifikation (Space)."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2001.33,
+        "rendite": 0.07,
+        "cashQuote": 55,
+        "score": 6,
+        "fazit": "Bestätigungslauf — eigenes Depot +0,07 % unverändert (Kurse = Fr-Schluss). Keine Wochenend-Trades erzwungen. D5 (FALSCH) und D3 (Trend negativ) bleiben die offenen Schwachpunkte der eigenen Calls.",
+        "punkte": [
+          "Scoreboard unverändert: 0 richtig / 1 falsch / 5 offen.",
+          "Keine Stop-/Ziel-Trigger (CEG 253,76 / QBTS 23,37 / IONQ 57,85), keine neue Abweichung (kein Original-Trade am Wochenende)."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Unverändert: 1 Pending-Limit (HPE @ 45,00), 0 Fills. Börse zu, keine Bewegung.",
+        "punkte": [
+          "Keine Execution seit 17:00 — Bewertung wartet auf den ersten echten Fill."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Unverändert: 3 Pending-Limits (MU/INTC/AMD), 0 Fills, risk_on. Börse zu.",
+        "punkte": [
+          "Halbleiter-Konzentration der Pending-Orders bei Fill im Blick behalten."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Unverändert: TQQQ (3x) gefüllt, LRCX/CAT pending, summeR=0. Börse zu.",
+        "punkte": [
+          "Gehebeltes TQQQ-Beta bleibt der kritische Risikopunkt — Stop-Disziplin entscheidend."
+        ]
+      },
+      "vergleich": "22:00-Bestätigungslauf ohne neue Daten (Wochenende, beide Dashboards identisch zum 17:00-Lauf). Rangfolge unverändert: Speku +1,11 % > Schatten +0,07 % > Haupt −0,29 %. Der Speku-Vorsprung bleibt reine Marktbewegung eines konzentrierten Quantum-Buchs (hohe Varianz, H6), kein risikoadjustierter Edge. Keine Score-Änderung, keine erzwungenen Trades. Inhaltlich gilt der 17:00-Eintrag (2026-06-13-1700); der nächste echte Erkenntnisgewinn kommt Mo 15.06. mit frischen Kursen und der NVDA-Zeit-Exit-Entscheidung.",
+      "lektionen": [
+        "L3 erneut bestätigt: Der 22:00-Wochenend-Lauf fand exakt dieselben Kursdaten vor wie der 17:00-Lauf. Erkenntnisgewinn in Zwischenläufen liegt im Kontext/News, nicht in neuen Kursen — eine Score-Änderung wäre hier Gefälligkeit gewesen.",
+        "Disziplin gegen Lärm: Bei identischer Datenlage werden Fehler-Akten und LESSONS bewusst NICHT mit Pseudo-Updates aufgebläht. Ein Bestätigungseintrag genügt."
+      ]
     }
   ]
 }
