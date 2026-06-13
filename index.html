@@ -133,6 +133,7 @@
     <h1>EPMT Review <span class="tag">2× täglich · 17:00 &amp; 22:00</span></h1>
     <p class="sub">Unabhängige Experten-Bewertung der Trader-Flotte — alle Agenten über die Leiste oben erreichbar.</p>
   </header>
+  <div id="agentwahl-box" style="margin:0 0 18px"></div>
   <div id="reviews"><p class="empty">Lade Bewertungen…</p></div>
   <footer>Automatisch erstellt · Bewertungen sind keine Anlageberatung</footer>
 </div>
@@ -150,52 +151,108 @@ function scoreColor(s) {
   if (s >= 5) return "var(--amber)";
   return "var(--red)";
 }
-function depotCol(d, name, cls, link) {
-  const cls2 = d.rendite >= 0 ? "pos" : "neg";
+// Die 6 Agenten (Reihenfolge = Dropdown-Reihenfolge). link = Detailseite agent.html.
+const AGENTEN = [
+  { key: "haupt",    name: "📊 Haupt-Depot",    farbe: "#0a84ff" },
+  { key: "speku",    name: "🚀 Speku-Depot",    farbe: "#bf5af2" },
+  { key: "schatten", name: "👤 Schatten-Depot", farbe: "#64d2ff" },
+  { key: "swing",    name: "◆ Swing",           farbe: "#5ac8fa" },
+  { key: "solid",    name: "🤍 SOLID",          farbe: "#a5d6ff" },
+  { key: "risk",     name: "🔥 RISK",           farbe: "#ff7b54" },
+];
+const AGENT_BY = Object.fromEntries(AGENTEN.map(a => [a.key, a]));
+
+function depotCol(d, name, farbe, link) {
+  d = d || {};
+  const dot = `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${farbe};margin-right:6px;vertical-align:middle"></span>`;
+  const rend = (typeof d.rendite === "number") ? fmtPct(d.rendite) : "—";
+  const cls2 = (typeof d.rendite === "number" && d.rendite < 0) ? "neg" : "pos";
+  const verm = (typeof d.vermoegen === "number") ? fmtEur(d.vermoegen) : (d.vermoegen || "—");
+  const cash = (typeof d.cashQuote === "number") ? d.cashQuote.toLocaleString("de-DE") + " %" : "—";
+  const score = (typeof d.score === "number") ? d.score : null;
   return `
   <div class="col">
-    <h3><span class="dot ${cls}"></span><a href="${link}" target="_blank">${name}</a></h3>
+    <h3>${dot}<a href="${link}" target="_blank">${name}</a></h3>
     <div class="kpis">
-      <div class="kpi"><div class="v">${fmtEur(d.vermoegen)}</div><div class="l">Vermögen</div></div>
-      <div class="kpi"><div class="v ${cls2}">${fmtPct(d.rendite)}</div><div class="l">Rendite</div></div>
-      <div class="kpi"><div class="v">${d.cashQuote.toLocaleString("de-DE")} %</div><div class="l">Cash</div></div>
+      <div class="kpi"><div class="v">${verm}</div><div class="l">Vermögen</div></div>
+      <div class="kpi"><div class="v ${cls2}">${rend}</div><div class="l">Rendite</div></div>
+      <div class="kpi"><div class="v">${cash}</div><div class="l">Cash</div></div>
     </div>
-    <div class="score">
-      <div class="score-bar"><div class="score-fill" style="width:${d.score * 10}%; background:${scoreColor(d.score)}"></div></div>
-      <div class="score-num">${d.score}/10</div>
-    </div>
-    <div class="fazit">${d.fazit}</div>
-    <ul class="punkte">${d.punkte.map(p => `<li>${p}</li>`).join("")}</ul>
+    ${score != null ? `<div class="score">
+      <div class="score-bar"><div class="score-fill" style="width:${score * 10}%; background:${scoreColor(score)}"></div></div>
+      <div class="score-num">${score}/10</div>
+    </div>` : ""}
+    ${d.fazit ? `<div class="fazit">${d.fazit}</div>` : ""}
+    ${(d.punkte && d.punkte.length) ? `<ul class="punkte">${d.punkte.map(p => `<li>${p}</li>`).join("")}</ul>` : ""}
   </div>`;
 }
 
-fetch("data/reviews.json?_=" + Date.now())
-  .then(r => r.json())
-  .then(data => {
-    const el = document.getElementById("reviews");
-    const reviews = [...data.reviews].reverse();
-    if (!reviews.length) { el.innerHTML = '<p class="empty">Noch keine Bewertungen.</p>'; return; }
+function kopf(r) {
+  return `<div class="review-head"><span class="datum">${r.datum}</span><span class="slot">${r.slot}</span><span class="zeit">${r.zeit} Uhr</span></div>`;
+}
+
+let REVIEWS = [];
+function render(sel) {
+  const el = document.getElementById("reviews");
+  const reviews = [...REVIEWS].reverse();
+  if (!reviews.length) { el.innerHTML = '<p class="empty">Noch keine Bewertungen.</p>'; return; }
+
+  if (sel === "uebersicht") {
     el.innerHTML = reviews.map(r => `
       <article class="review">
-        <div class="review-head">
-          <span class="datum">${r.datum}</span>
-          <span class="slot">${r.slot}</span>
-          <span class="zeit">${r.zeit} Uhr</span>
-        </div>
+        ${kopf(r)}
         <div class="cols">
-          ${depotCol(r.haupt, "Haupt-Depot", "haupt", "https://cedriceckert85-wq.github.io/epmt-dashboard/index.html")}
-          ${depotCol(r.speku, "Speku-Depot", "speku", "https://cedriceckert85-wq.github.io/epmt-dashboard/speku.html")}
+          ${depotCol(r.haupt, "📊 Haupt-Depot", "#0a84ff", "agent.html?a=haupt")}
+          ${depotCol(r.speku, "🚀 Speku-Depot", "#bf5af2", "agent.html?a=speku")}
         </div>
-        <div class="vergleich"><h4>Vergleich der Denkwege</h4><p>${r.vergleich}</p></div>
+        ${r.vergleich ? `<div class="vergleich"><h4>Vergleich der Denkwege</h4><p>${r.vergleich}</p></div>` : ""}
         ${r.lektionen && r.lektionen.length ? `
         <div class="lektionen"><h4>Lektionen / Fehler-Lernen</h4>
           <ul>${r.lektionen.map(l => `<li>${l}</li>`).join("")}</ul>
         </div>` : ""}
       </article>`).join("");
-  })
-  .catch(() => {
-    document.getElementById("reviews").innerHTML = '<p class="empty">Bewertungen konnten nicht geladen werden.</p>';
+    return;
+  }
+
+  const ag = AGENT_BY[sel];
+  const mit = reviews.filter(r => r[sel]);
+  if (!mit.length) {
+    el.innerHTML = `<p class="empty">Noch kein eigenes Review für ${ag.name}.<br>
+      Der Reviewer ergänzt das in den kommenden Läufen (17:00 / 22:00).</p>`;
+    return;
+  }
+  el.innerHTML = mit.map(r => `
+    <article class="review">
+      ${kopf(r)}
+      <div class="cols">${depotCol(r[sel], ag.name, ag.farbe, "agent.html?a=" + sel)}</div>
+    </article>`).join("");
+}
+
+// Dropdown aufbauen
+(function () {
+  const box = document.getElementById("agentwahl-box");
+  box.innerHTML = `<label style="display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--muted)">Review wählen:
+    <select id="agentwahl" style="flex:0 1 auto;padding:8px 12px;border-radius:10px;background:var(--card2,#1c1c1e);color:inherit;border:1px solid var(--border);font-size:.95rem">
+      <option value="uebersicht">Übersicht — Haupt + Speku</option>
+      ${AGENTEN.map(a => `<option value="${a.key}">${a.name} – Review</option>`).join("")}
+    </select></label>`;
+  const dd = document.getElementById("agentwahl");
+  const start = (location.hash || "").replace("#", "") || "uebersicht";
+  dd.value = start; if (dd.value !== start) dd.value = "uebersicht";
+  dd.addEventListener("change", () => { location.hash = dd.value; render(dd.value); });
+  window.addEventListener("hashchange", () => {
+    const v = (location.hash || "").replace("#", "") || "uebersicht";
+    if (dd.value !== v) dd.value = v;
+    render(v);
   });
+
+  fetch("data/reviews.json?_=" + Date.now())
+    .then(r => r.json())
+    .then(data => { REVIEWS = data.reviews || []; render(dd.value); })
+    .catch(() => {
+      document.getElementById("reviews").innerHTML = '<p class="empty">Bewertungen konnten nicht geladen werden.</p>';
+    });
+})();
 </script>
 </body>
 </html>

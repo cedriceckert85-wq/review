@@ -39,6 +39,14 @@ Du bist ein Experte für Aktien und Finanzen. Dieser Lauf passiert 2× täglich 
 6. **Review-Eintrag anhängen:** Neues Objekt ans Ende von `data/reviews.json` → `reviews`.
    Schema exakt wie bestehende Einträge (id, datum, zeit, slot „17:00-Lauf"/„22:00-Lauf",
    haupt{vermoegen,rendite,cashQuote,score,fazit,punkte}, speku{…}, vergleich, lektionen).
+6b. **Alle 6 Depots bewerten (seit 13.06., Dropdown in der Review-GUI):** Lege in JEDEM
+   Review-Eintrag zusätzlich zu `haupt`/`speku` auch `schatten`, `swing`, `solid`, `risk` an —
+   **gleiches Sub-Schema** {vermoegen, rendite, cashQuote, score, fazit, punkte}. Datenquellen:
+   `data/schatten.json` (Schatten), `https://cedriceckert85-wq.github.io/swing/data/journal.json`
+   (Swing), `…/bots/data/solid_journal.json` und `…/bots/data/risk_journal.json` (SOLID/RISK).
+   Für die regelbasierten Bots/Swing darf das Review knapper sein (score + 1–2 Sätze fazit + 1–2
+   punkte, Fokus **Prozessdisziplin** statt Rendite). Felder, die du nicht sauber hast (z. B.
+   cashQuote eines Bots), weglassen — die GUI zeigt dann „—". Beim 17:00- UND 22:00-Lauf füllen.
 7. **Schatten-Depot fortschreiben** (`data/schatten.json` — das eigene Depot des Reviewers,
    GUI: `schatten.html`):
    **Hinweis:** Ein GitHub-Actions-Job (`.github/workflows/kurse.yml` → `scripts/update_kurse.py`)
