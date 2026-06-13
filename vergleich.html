@@ -266,11 +266,17 @@ function laden() {
       const jetzt = new Date();
       const [lh, lm] = live.standUhr.split(":").map(Number);
       const alterMin = (jetzt.getHours() * 60 + jetzt.getMinutes()) - (lh * 60 + lm);
-      if (live.datum === jetzt.toISOString().slice(0, 10) && alterMin >= 0 && alterMin <= 5) {
+      const min = jetzt.getHours() * 60 + jetzt.getMinutes();
+      const marktOffen = jetzt.getDay() >= 1 && jetzt.getDay() <= 5 && min >= 15 * 60 + 30 && min <= 22 * 60;
+      const dStr = live.datum.slice(8, 10) + "." + live.datum.slice(5, 7) + ".";
+      if (live.datum === jetzt.toISOString().slice(0, 10) && alterMin >= 0 && alterMin <= 5 && marktOffen) {
         el.textContent = "● LIVE " + live.standUhr + " Uhr";
         el.style.color = "var(--geld)";
+      } else if (marktOffen) {
+        el.textContent = "Datenstand " + dStr + " " + live.standUhr + " Uhr — Aktualisierung alle 5–15 Min (GitHub-Takt)";
+        el.style.color = "var(--muted)";
       } else {
-        el.textContent = "Datenstand " + live.standUhr + " Uhr — neuer Punkt kommt alle 5–15 Min (GitHub-Takt)";
+        el.textContent = "Börse geschlossen — Stand " + dStr + " " + live.standUhr + " Uhr. Nächster Punkt am nächsten US-Handelstag (Mo–Fr ab ~15:30).";
         el.style.color = "var(--muted)";
       }
     }
