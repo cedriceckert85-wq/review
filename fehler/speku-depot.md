@@ -20,6 +20,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Messlatte:** Gleichzeitiger Drawdown aller drei Positionen; Umsetzung von Tranche 2 (Space) als erste echte Diversifikation.
 - **Update 11.06.2026 (22:00):** RKLB-Short (120 €) eingebucht — taktische Ergänzung in entgegengesetzter Richtung, aber kein Ersatz für strukturelle Diversifikation. Quantum-Klumpenrisiko bleibt ungelöst.
 - **Update 12.06.2026 (17:57):** RKLB-Short profitabel gecovert (+5,25 €). Das taktische Gegen-Buch ist abgeschlossen — das offene Aktienbuch ist nun wieder 100 % Quantum (QBTS/IONQ/RGTI). Teilweise Divergenz der Titel heute (RGTI +6,58 % vs. QBTS −1,33 %) zeigt, dass die Korrelation nicht ~1 ist. Trotzdem: ein einziger negativer Quantum-Katalysator würde alle drei gleichzeitig treffen. Strukturell keine Verbesserung, Tranche 2 (Space/Diversifikation) weiter offen.
+- **Update 13.06.2026 (17:00, Sa):** Fr-Schluss — alle drei Quantum-Titel im Plus (RGTI +7,87 %, IONQ +2,15 %, QBTS +0,52 %), Divergenz breit. Kein gemeinsamer Drawdown (kein Stressereignis), Klumpenrisiko strukturell unverändert; Tranche-2-Diversifikation (Space) weiter offen. Kein neuer Trade (Börse zu).
 - **Status:** OFFEN
 
 ### F-S-002 · 2026-06-11 · Nachkauf-Automatik in Story-Aktien
@@ -28,6 +29,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Messlatte:** Löst ein Nachkauf-Trigger aus: Fällt der Kurs danach weiter Richtung Stop → SKILL-FEHLER. Dreht die Position → die Automatik hatte (diesmal) recht.
 - **Update 11.06.2026 (22:00):** IONQ 58,28 $, QBTS 24,05 $ — beide weit über Trigger-Niveaus. Kein Trigger.
 - **Update 12.06.2026 (17:57):** IONQ 56,77 $, QBTS 22,94 $ — beide weiterhin weit über Trigger-Niveaus (50 $ bzw. 21 $). Kein Trigger ausgelöst.
+- **Update 13.06.2026 (17:00):** IONQ 57,85 $, QBTS 23,37 $ — weit über Triggern (50 $ / 21 $). Kein Trigger.
 - **Status:** OFFEN
 
 ### F-S-003 · 2026-06-11 · Scout-Fehlalarme als Prozessrisiko
@@ -46,6 +48,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Einstufung:** UNKLAR — das Cover-at-Open-Regelwerk hat funktioniert (+5,25 €), aber der Overnight-Squeeze hätte auch am nächsten Tag unkontrolliert eskalieren können. Das ist ein Designproblem für Extrem-Speku-Shorts, keine Entscheidung, die sich einfach wiederholen lässt.
 - **Messlatte:** SKILL-FEHLER, wenn ein künftiger Extrem-Speku-Short durch einen Overnight-Breach zu schlechterem Kurs als der ursprüngliche Stop schließt (d. h. das Cover-at-Open erleidet einen Slippage-Verlust, der die geplante Positionsgröße übersteigt). PECH, wenn der Overnight-Breach durch nicht-antizipierbare Ereignisse entsteht und das Cover mechanisch ausgeführt wird.
 - **Lehre:** Extrem-Speku-Shorts in volatilen Small Caps brauchen entweder (a) explizite AH-Monitoring-Regel mit enger Positionsgröße oder (b) Day-only-Charakter (kein Overnight-Halten). Positionsgröße 120 € war angemessen — das war der plan­gemäße Risikopuffer.
+- **Update 13.06.2026 (17:00):** RKLB-Short bleibt geschlossen (Cover 12.06., +5,25 €); keine neue Extrem-Speku-Short-Position eröffnet. Die endgültige Einstufung (SKILL-FEHLER vs. PECH) wird im ersten Wochen-Review (So 14.06.) gegen die Messlatte geprüft.
 - **Status:** OFFEN
 
 ---

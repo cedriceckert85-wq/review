@@ -27,6 +27,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Messlatte:** Anteil der Einstiege, die nach 2 Handelstagen im Minus sind. > 70 % bei n≥8 → SKILL-FEHLER „kauft fallende Messer".
 - **Update 11.06.2026 (22:00):** Stand Tag 4: NVDA −2,76 %, CEG −2,16 %, IWM +0,40 %. IWM erstmals leicht positiv — 2/3 noch im Minus. Muster läuft weiter.
 - **Update 12.06.2026 (17:57):** AMZN neu eingegangen zu 236,56 — sofort −0,13 % auf Einstand. **n=4, alle 4 Einstiege sofort im Minus.** IWM-Aufstockung (294,25) nur marginal unter aktuellem Kurs (294,11). Das Muster ist bei n=4 eindeutiger als bei n=3. Messlatte rückt näher.
+- **Update 13.06.2026 (17:00, Sa):** Wochenende, kein neuer Einstieg. Fr-Schluss im (eingefrorenen) 17:48-Haupt-Stand: NVDA −2,05 %, CEG −1,46 %, IWM +0,43 %, AMZN −0,13 %. Der echte CEG-Schluss (253,76 laut Auto-Kursen) liegt bei +0,42 % auf Einstand — der 17:48-Stand überzeichnet das Muster also leicht. n=4 unverändert, Messlatte n≥8 weiter offen.
 - **Status:** OFFEN (n=4, alle 4 sofort im Minus — Tendenz SKILL-FEHLER, Messlatte bei n≥8)
 
 ### F-H-003 · 2026-06-11 · Stop-Abstand im Nachrichtensturm (NVDA 0,7 %)
@@ -35,6 +36,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Messlatte:** Reißt der Stop 199 und erholt sich NVDA danach über 205 → SKILL-FEHLER (klassischer Whipsaw). Fällt NVDA nach Stop-Riss weiter unter 195 → enger Stop war richtig.
 - **Update 11.06.2026 (22:00):** Near-Miss 199,88 am 11.06. bestätigt Kernthese der Hypothese H3 → L4. Endgültige Einstufung bei nächstem Stop-Riss.
 - **Update 12.06.2026 (17:57):** NVDA aktuell 205,17 — Stop 199 nun 3,0 % entfernt (deutlich entspannter). Keine Gefahr mehr kurzfristig. Messlatte (Stop reißt, NVDA erholt sich danach über 205) nicht getriggert. Die ursprüngliche Fehlplatzierung (0,7 % Abstand) war trotzdem ein Fehler — das Rauschen hat den Stop beinahe ausgelöst, gerettet durch exogenes Geopolitik-Glück. Max. Haltedauer endet 15.06. — dann Verlängerung oder Zeit-Exit.
+- **Update 13.06.2026 (17:00):** NVDA 205,17, Stop 199 = 3,0 % entfernt. **Die maximale Haltedauer endet Mo 15.06.** — die Verlängerungs-/Zeit-Exit-Entscheidung steht beim Montags-Lauf an und ist der nächste konkrete Prüfpunkt dieses Eintrags.
 - **Status:** OFFEN (Messlatte nicht getriggert, aber Near-Miss bleibt als dokumentierter Prozessfehler)
 
 ---

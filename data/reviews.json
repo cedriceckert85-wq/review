@@ -175,8 +175,8 @@
         ]
       },
       "speku": {
-        "vermoegen": 2025.90,
-        "rendite": 1.30,
+        "vermoegen": 2025.9,
+        "rendite": 1.3,
         "cashQuote": 55,
         "score": 7,
         "fazit": "Quantum-Trio beendet Tag 1 stark: QBTS +3,44 %, IONQ +2,91 %, RGTI +6,32 %. Neuer Trade: RKLB Short (SpaceX-IPO-Fade, 120 €) eingebucht um 19:55 Uhr, läuft am ersten Tag mit −2,30 % gegen die Position (Kurs 113,45). Gesamtrendite +1,30 % vs. SPY +1,59 %. Score 7 bleibt: Kernwetten laufen, aber RKLB-Short ist ein Kontra-Trend-Trade in einer Risk-on-Rally.",
@@ -233,6 +233,81 @@
         "H5 → L5 bestätigt: RKLB-Sell-the-News hat funktioniert. SpaceX-SPCX-Listing am 12.06. löste exakt die Kapitalrotation aus RKLB aus. D5 ist FALSCH — Reviewer hat einen profitablen, kalibrierten Trade wegen Geopolitik-Risikoschätzung verpasst.",
         "F-H-002 bei n=4: AMZN-Einstieg heute setzt das Muster fort — 4/4 Einstiege sofort im Minus. Die Empfehlung (mindestens grüner Schlusskurs vor Kauf) ist seit L4/F-H-002 dokumentiert aber noch nicht implementiert. Das wird von einem Beobachtungs- zu einem Persistenz-Fehler.",
         "Overnight-Stop-Management für Extrem-Speku (F-S-004): RKLB-Short-Breach auf 121,50 nachbörslich zeigt ein Design-Gap. Cover-at-Open hat funktioniert, aber das Zittern war vermeidbar. Extrem-Speku-Shorts in volatilen Small Caps brauchen explizite AH-Protokolle oder Day-only-Charakter."
+      ]
+    },
+    {
+      "id": "2026-06-13-1700",
+      "datum": "2026-06-13",
+      "zeit": "17:00",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 1994.25,
+        "rendite": -0.29,
+        "cashQuote": 77,
+        "score": 5,
+        "fazit": "Wochenend-Lauf (Sa 13.06., Börse zu). Das Haupt-Dashboard ist auf Fr 17:48 eingefroren (CEG dort 249,00 vs. echter Freitags-Schluss 253,76 laut Auto-Kursen). Bewertung daher unverändert ggü. dem 12.06.-Lauf: Score bleibt 5 (Regel: Score ändert sich nur bei neuen Daten/Erkenntnissen). Einstiegs-Muster F-H-002 (n=4) im 17:48-Stand unverändert; ob der echte Schluss CEG ins Plus drehte (+0,42 % auf Einstand 252,69), lässt sich erst Montag mit frischem Dashboard sauber bewerten. Prozessdisziplin (kein Stop gerissen) bleibt die Stärke. NVDA-Zeit-Exit-Entscheidung steht Mo 15.06. an (F-H-003).",
+        "punkte": [
+          "Datenqualität: Haupt-Dashboard friert am Wochenende auf Fr 17:48 ein; NVDA/IWM/AMZN nur in diesem Stand, CEG via Auto-Kurse aktueller (253,76). Score-Stabilität ist hier Pflicht, kein Lob.",
+          "NVDA 205,17 (−2,05 %), Stop 199 nun 3,0 % entfernt — entspannt. Max. Haltedauer endet Mo 15.06.: Verlängerung oder Zeit-Exit fällig (F-H-003).",
+          "CEG 249,00 (−1,46 %) im 17:48-Stand; echter Fr-Schluss 253,76 → +0,42 % auf Einstand. Energie-These (KI-Strom + Öl) intakt.",
+          "IWM 294,11 (+0,43 %) — einzige Original-Position klar über Einstand; Rotations-These hält bislang (D2 läuft gegen den Reviewer).",
+          "AMZN 236,26 (−0,13 %) — vierter Einstieg, weiter knapp im Minus. F-H-002-Muster ungebrochen; Empfehlung 'grüner Schlusskurs vor Kauf' weiter nicht implementiert."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2022,
+        "rendite": 1.11,
+        "cashQuote": 61,
+        "score": 7,
+        "fazit": "Erster Blick auf den echten Freitags-Schluss: Quantum-Buch hat stark geschlossen — alle drei Titel im Plus, RGTI +7,87 % führt, IONQ +2,15 %, QBTS +0,52 %. Depot +1,11 % (vs. +0,42 % im 17:57-Stand). Score bleibt 7: der starke Schluss ist Ergebnis, kein Prozess-Fortschritt — das strukturelle Klumpenrisiko (F-S-001, nach RKLB-Cover wieder 100 % Quantum) ist unverändert ungelöst. Die RKLB-Sell-the-News-Execution (+4,37 %) bleibt das prozessual beste Ereignis der Woche.",
+        "punkte": [
+          "RGTI +7,87 % ist aktuell der stärkste der drei Quantum-Titel — das stellt die Reviewer-Entscheidung D3 (RGTI bewusst weggelassen) in Frage. Messlatte: nach 1 Monat schlechter als QBTS/IONQ (~11.07.). Trend läuft gegen den Reviewer.",
+          "Korrelation NICHT ~1 auf Tagesbasis (Spread RGTI +7,87 % vs. QBTS +0,52 %), aber ein gemeinsamer negativer Quantum-Katalysator träfe trotzdem alle drei — strukturelles Klumpenrisiko bleibt (F-S-001).",
+          "Nachkauf-Trigger (IONQ < 50 / QBTS < 21) klar nicht ausgelöst (57,85 / 23,37) — F-S-002 weiter unentschieden.",
+          "Cash-Quote ~61 % gibt Spielraum für die offene Tranche-2-Diversifikation (Space), die seit dem RKLB-Cover wieder fehlt."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2001.33,
+        "rendite": 0.07,
+        "cashQuote": 55,
+        "score": 6,
+        "fazit": "Erstbewertung im 6-Depot-Format. Eigenes Depot zum Freitags-Schluss +0,07 % (2001,33 €), erholt vom 17:57-Tief (−0,77 %), weil Quantum-Schluss + CEG stark waren. Score 6: der Subtraktions-Ansatz (gleiches Buch minus dokumentierte Fehler) ist sauber, aber zwei eigene Entscheidungen stehen aktuell schlecht da — D5 (RKLB-Short verpasst) ist bereits FALSCH, D3 (RGTI weggelassen) läuft gegen mich (RGTI bester Quantum-Titel). Ehrliche Selbstkritik vor Gefälligkeit.",
+        "punkte": [
+          "Scoreboard 0 richtig / 1 falsch / 5 offen — der einzige aufgelöste Call (D5) ging gegen den Reviewer. Demut angebracht.",
+          "D3 (RGTI raus) trendet negativ: RGTI +7,87 % schlägt aktuell QBTS/IONQ. Endgültige Wertung der 1-Monats-Messlatte ~11.07.",
+          "Keine Wochenend-Trades erzwungen (Börse zu, Nutzervorgabe). Kurse = Auto-Kurse (Fr-Schluss), keine Stops/Ziele getriggert."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Regelbasiert, Fokus Prozessdisziplin: sauberes Journal, aber bislang 0 abgeschlossene Trades — eine einzige Pending-Limit-Order (HPE 250 Stk. @ 45,00). Edge weiter unbewiesen (H6). Geduld ist Disziplin, solange das Limit regelkonform sitzt.",
+        "punkte": [
+          "1 offene Order (HPE Limit 45,00, 'wartet'), 0 Fills — noch keine Execution zu bewerten.",
+          "Prozessarchitektur gilt als beste der Flotte (H6), muss sich aber erst in echten Fills beweisen."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Regelbasierter Momentum-Bot im risk_on-Regime: 3 Pending-Limit-Orders (MU, INTC, AMD), 0 Fills. Diszipliniertes Warten auf Limits statt Marktkäufe — prozessual sauber, aber noch ohne Ergebnis.",
+        "punkte": [
+          "3 Limit-Orders 'wartet' (MU/INTC/AMD) — Auswahl mit klarem Halbleiter-Schwerpunkt.",
+          "Bei Fill auf Sektorkonzentration achten: drei Halbleiter-Namen gleichzeitig = Klumpenrisiko."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Aggressivster Bot (RISK-Stufe 1): 1 Position gefüllt (TQQQ @ 75,46, 3x-gehebelter Nasdaq), 2 Pending (LRCX, CAT). summeR=0, 0 abgeschlossen. Hebel-Exposure früh — Prozess diszipliniert, aber Risiko-Charakter sichtbar.",
+        "punkte": [
+          "TQQQ (3x QQQ) gefüllt — gehebeltes Beta, reagiert überproportional auf Nasdaq-Schwäche. Stop-Disziplin hier kritisch.",
+          "2 weitere Orders (LRCX, CAT) pending — Mischung Tech/Industrie."
+        ]
+      },
+      "vergleich": "Zum Freitags-Schluss: Speku +1,11 % (Quantum-Rally) > Schatten +0,07 % > Haupt −0,29 % (Stand teils eingefroren). Speku führt nominal, aber der Vorsprung ist heute reine Marktbewegung eines hochkonzentrierten Quantum-Buchs — risikoadjustiert kein Beleg für Überlegenheit, sondern für höhere Varianz (genau die H6-These: Speku Kandidat für Platz 1 ODER 4). Das Haupt-Depot bleibt das defensivste (77 % Cash) und zahlt dafür mit langsamer Befüllung in einer Rally. Das Schatten-Depot liegt dazwischen und muss sich eingestehen, dass seine bislang einzige aufgelöste Abweichung (D5) und die RGTI-Auslassung (D3) gegen es laufen. Die drei Bots (swing/solid/risk) sind noch in der Order-Aufbauphase (zusammen nur 1 echter Fill: TQQQ) — Prozessdisziplin ja, Edge unbewiesen. Wochenend-Lauf, keine Trades erzwungen.",
+      "lektionen": [
+        "Wochenend-Daten-Asymmetrie: Speku-Dashboard + Auto-Kurse tragen den echten Fr-Schluss, das Haupt-Dashboard friert auf Fr 17:48 ein. CEG/QBTS/IONQ über Auto-Kurse gegenprüfen; NVDA/IWM/AMZN bleiben am Wochenende stale → Haupt-Score nicht auf Basis veralteter 17:48-Kurse senken.",
+        "D3 (RGTI-Auslassung) trendet gegen den Reviewer: RGTI +7,87 % ist aktuell der stärkste Quantum-Titel. Die Diversifikations-These (schwächsten Titel raus) ist kurzfristig widerlegt — Endurteil aber erst zur 1-Monats-Messlatte (~11.07.).",
+        "Operativ (Windows): python-stdout ist cp1252, '−' (U+2212) wirft beim Print UnicodeEncodeError → Diagnose mit 'python -X utf8'. JSON-Schreiben/Validieren (encoding='utf-8') ist nicht betroffen, Pipeline stabil."
       ]
     }
   ]
