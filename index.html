@@ -69,11 +69,8 @@
   }
   .review-head .zeit { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
 
-  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
-  @media (max-width: 760px) { .cols { grid-template-columns: 1fr; } }
+  .cols { display: block; }
   .col { padding: 18px 20px; }
-  .col + .col { border-left: 1px solid var(--border); }
-  @media (max-width: 760px) { .col + .col { border-left: none; border-top: 1px solid var(--border); } }
 
   .col h3 { font-size: 1rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
   .col h3 a { color: inherit; text-decoration: none; }
@@ -197,23 +194,6 @@ function render(sel) {
   const reviews = [...REVIEWS].reverse();
   if (!reviews.length) { el.innerHTML = '<p class="empty">Noch keine Bewertungen.</p>'; return; }
 
-  if (sel === "uebersicht") {
-    el.innerHTML = reviews.map(r => `
-      <article class="review">
-        ${kopf(r)}
-        <div class="cols">
-          ${depotCol(r.haupt, "📊 Haupt-Depot", "#0a84ff", "agent.html?a=haupt")}
-          ${depotCol(r.speku, "🚀 Speku-Depot", "#bf5af2", "agent.html?a=speku")}
-        </div>
-        ${r.vergleich ? `<div class="vergleich"><h4>Vergleich der Denkwege</h4><p>${r.vergleich}</p></div>` : ""}
-        ${r.lektionen && r.lektionen.length ? `
-        <div class="lektionen"><h4>Lektionen / Fehler-Lernen</h4>
-          <ul>${r.lektionen.map(l => `<li>${l}</li>`).join("")}</ul>
-        </div>` : ""}
-      </article>`).join("");
-    return;
-  }
-
   const ag = AGENT_BY[sel];
   const mit = reviews.filter(r => r[sel]);
   if (!mit.length) {
@@ -233,15 +213,17 @@ function render(sel) {
   const box = document.getElementById("agentwahl-box");
   box.innerHTML = `<label style="display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--muted)">Review wählen:
     <select id="agentwahl" style="flex:0 1 auto;padding:8px 12px;border-radius:10px;background:var(--card2,#1c1c1e);color:inherit;border:1px solid var(--border);font-size:.95rem">
-      <option value="uebersicht">Übersicht — Haupt + Speku</option>
       ${AGENTEN.map(a => `<option value="${a.key}">${a.name} – Review</option>`).join("")}
     </select></label>`;
   const dd = document.getElementById("agentwahl");
-  const start = (location.hash || "").replace("#", "") || "uebersicht";
-  dd.value = start; if (dd.value !== start) dd.value = "uebersicht";
+  const valid = AGENTEN.map(a => a.key);
+  let start = (location.hash || "").replace("#", "");
+  if (!valid.includes(start)) start = "haupt";
+  dd.value = start;
   dd.addEventListener("change", () => { location.hash = dd.value; render(dd.value); });
   window.addEventListener("hashchange", () => {
-    const v = (location.hash || "").replace("#", "") || "uebersicht";
+    let v = (location.hash || "").replace("#", "");
+    if (!valid.includes(v)) v = "haupt";
     if (dd.value !== v) dd.value = v;
     render(v);
   });
