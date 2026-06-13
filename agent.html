@@ -179,10 +179,27 @@ function journalModell(d, risikoUsd, notiz) {
 }
 
 async function depotModell(seite, detailUrl) {
-  const html = await (await fetch(seite + "?_=" + Date.now())).text();
-  const m = html.match(/<script type="application\/json" id="agent-daten">([\s\S]*?)<\/script>/);
-  if (!m) throw new Error("kein Datenblock");
-  const d = JSON.parse(m[1]);
+  let d;
+  try {
+    const html = await (await fetch(seite + "?_=" + Date.now())).text();
+    const m = html.match(/<script type="application\/json" id="agent-daten">([\s\S]*?)<\/script>/);
+    if (!m) throw new Error("kein Datenblock im Dashboard");
+    d = JSON.parse(m[1]);
+  } catch (e) {
+    // Robust: fehlt der Datenblock (z.B. veraltetes Dashboard), nicht hart scheitern,
+    // sondern sauber degradieren statt "Daten nicht ladbar".
+    return {
+      vermoegen: "—", rendite: 0,
+      stand: "Detaildaten erscheinen nach dem nächsten Depot-Lauf",
+      chips: [],
+      positionen: [],
+      trades: [],
+      notiz: 'Die strukturierten Daten dieses Depots sind im veröffentlichten Dashboard gerade nicht eingebettet ('
+        + (e.message || "Ladefehler") + '). Vollansicht: <a href="' + seite
+        + '" target="_blank" style="color:inherit;text-decoration:underline">Dashboard direkt öffnen</a>.',
+      betraege: [], waehrung: "€", gesamtwert: 0,
+    };
+  }
   const verkaeufe = d.trades.filter(t => t.aktion === "Verkauf" && (t.ergebnis || "") !== "");
   const gewonnen = verkaeufe.filter(t => (t.ergebnis || "").startsWith("+")).length;
   return {
