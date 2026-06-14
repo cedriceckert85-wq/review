@@ -1,0 +1,20 @@
+{
+  "konto": {
+    "start": 100000,
+    "status": "ALPACA PAPER (ALPACA_CRYPTO)",
+    "konto_nr": "PA3X2F870VJ0",
+    "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
+  },
+  "positionen": {},
+  "trades": [],
+  "heute": {
+    "datum": "2026-06-14",
+    "trades": 0
+  },
+  "statistik": {
+    "trades": 0,
+    "gewonnen": 0,
+    "verloren": 0,
+    "summePnlUsd": 0
+  }
+}

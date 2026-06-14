@@ -180,9 +180,9 @@ function zeichnen() {
   });
 }
 
-const AGENTEN = ["schatten", "swing", "haupt", "speku", "solid", "risk"];
+const AGENTEN = ["schatten", "swing", "haupt", "speku", "solid", "risk", "crypto"];
 let kommentare = null;
-let agentenTrades = { schatten: [], swing: [], haupt: [], speku: [], solid: [], risk: [] };
+let agentenTrades = { schatten: [], swing: [], haupt: [], speku: [], solid: [], risk: [], crypto: [] };
 let aktiverTab = "schatten";
 
 function tradesTabelle(zeilen) {
@@ -250,10 +250,11 @@ function laden() {
     fetch("https://cedriceckert85-wq.github.io/swing/data/journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("https://cedriceckert85-wq.github.io/bots/data/solid_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("https://cedriceckert85-wq.github.io/bots/data/risk_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
+    fetch("data/crypto_journal.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
     fetch("https://raw.githubusercontent.com/cedriceckert85-wq/review/live/data/live.json?_=" + Date.now())
       .then(r => r.ok ? r.json() : Promise.reject())
       .catch(() => fetch("https://raw.githubusercontent.com/cedriceckert85-wq/review/main/data/live.json?_=" + Date.now()).then(r => r.json()).catch(() => null))
-  ]).then(([d, kom, schatten, swingJournal, solidJournal, riskJournal, live]) => {
+  ]).then(([d, kom, schatten, swingJournal, solidJournal, riskJournal, cryptoJournal, live]) => {
     daten = [...d.verlauf];
     if (live && live.standUhr) {
       const letzterTag = daten.length ? daten[daten.length - 1] : null;
@@ -309,6 +310,19 @@ function laden() {
     agentenTrades.swing = journalTrades(swingJournal);
     agentenTrades.solid = journalTrades(solidJournal);
     agentenTrades.risk = journalTrades(riskJournal);
+    const cryptoTrades = (jrn) => {
+      if (!jrn) return [];
+      const tag = (d) => d ? d.slice(8, 10) + "." + d.slice(5, 7) + "." : "—";
+      const st = [];
+      Object.entries(jrn.positionen || {}).forEach(([sym, p]) =>
+        st.push({ datum: tag(p.entryDatum), aktion: "Kauf", ticker: sym, kurs: p.entry, info: "offen — Stop " + p.stop }));
+      [...(jrn.trades || [])].reverse().forEach(t => {
+        st.push({ datum: tag(t.exitDatum), aktion: "Verkauf", ticker: t.sym, kurs: t.exit, info: (t.grund || "") + " — PnL " + t.pnlUsd + " USD" });
+        st.push({ datum: tag(t.entryDatum), aktion: "Kauf", ticker: t.sym, kurs: t.entry, info: "Einstieg" });
+      });
+      return st;
+    };
+    agentenTrades.crypto = cryptoTrades(cryptoJournal);
 
     if (kom) document.getElementById("tab-stand").textContent = "Stand der Kommentare: " + kom.stand + " — gepflegt von den täglichen Review-Läufen.";
     tabsBauen();
