@@ -1,9 +1,9 @@
 {
-  "stand": "12.06.2026, 17:57",
+  "stand": "14.06.2026, 17:00",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "D5 (RKLB-Short) entschieden als FALSCH — Reviewer hat kalibrierten Winning-Trade verpasst. Aktuelle Rendite −0,77 %, hinter beiden bewerteten Depots. Die Subtraktion von Fehlern schützt nicht vor eigenen Fehleinschätzungen.",
+      "kommentar": "Wochen-Review KW24: selbstkritische Bilanz. 1 Call FALSCH (D5, verpasster RKLB-Short), D3 trendet gegen mich (RGTI +7,87 % = stärkster der drei), D2 dicht an FALSCH. Depot +0,07 %, hinter Speku. Die Subtraktion fremder Fehler schützt nicht vor eigenen Fehleinschätzungen — Konstruktion trägt, Call-Qualität war diese Woche schwach.",
       "verbesserungen": [
         "D5-Lehre internalisieren: Risk-on-Umfeld schließt einen klar definierten, kleinen Extrem-Speku-Short nicht aus — Geopolitik-Risikoabschätzung war zu konservativ. Nächster ähnlicher Trade: kritischer prüfen, ob Geopolitik ein Blocker ist oder nur Rauschen.",
         "D2 (IWM-Skip) kurz vor dem FALSCH-Schwellenwert (294,11 vs. 295) — Rotations-These war robuster als angenommen. Eigene Makro-Skepsis bei bewiesenen Rotations-Mustern zurücknehmen.",
@@ -21,18 +21,72 @@
     },
     "haupt": {
       "trades": [
-        { "datum": "08.06.", "aktion": "Kauf", "ticker": "NVDA", "kurs": 209.46, "info": "70 € — KI-Kernposition, Stop 199" },
-        { "datum": "08.06.", "aktion": "Kauf", "ticker": "AMD", "kurs": 493.40, "info": "50 € — Chase am +5,8 %-Tag (späterer Lesson-Kandidat)" },
-        { "datum": "08.06.", "aktion": "Kauf", "ticker": "CEG", "kurs": 252.69, "info": "50 € — Nuklear/AI-Strom, Stop 237" },
-        { "datum": "09.06.", "aktion": "Kauf", "ticker": "GLD", "kurs": 397.80, "info": "40 € — Diversifikator/Kriegs-Hedge" },
-        { "datum": "10.06.", "aktion": "Verkauf", "ticker": "AMD", "kurs": 471.90, "info": "Stop 469 gerissen → −4,36 % (Disziplin gehalten)" },
-        { "datum": "10.06.", "aktion": "Kauf", "ticker": "IWM", "kurs": 288.77, "info": "40 € — Rotation Chips → Small Caps, Stop 274" },
-        { "datum": "10.06.", "aktion": "Verkauf", "ticker": "GLD", "kurs": 377.14, "info": "These-Bruch: Gold fiel TROTZ Eskalation → −5,20 %" },
-        { "datum": "12.06.", "aktion": "Kauf", "ticker": "IWM", "kurs": 294.25, "info": "120 € Aufstockung — Small-Cap-Rotation bestätigt, Stop 274, Ziel 309" },
-        { "datum": "12.06.", "aktion": "Kauf", "ticker": "AMZN", "kurs": 236.56, "info": "180 € — KI-Commerce/AWS-These, Stop 219, Ziel 257" }
+        {
+          "datum": "08.06.",
+          "aktion": "Kauf",
+          "ticker": "NVDA",
+          "kurs": 209.46,
+          "info": "70 € — KI-Kernposition, Stop 199"
+        },
+        {
+          "datum": "08.06.",
+          "aktion": "Kauf",
+          "ticker": "AMD",
+          "kurs": 493.4,
+          "info": "50 € — Chase am +5,8 %-Tag (späterer Lesson-Kandidat)"
+        },
+        {
+          "datum": "08.06.",
+          "aktion": "Kauf",
+          "ticker": "CEG",
+          "kurs": 252.69,
+          "info": "50 € — Nuklear/AI-Strom, Stop 237"
+        },
+        {
+          "datum": "09.06.",
+          "aktion": "Kauf",
+          "ticker": "GLD",
+          "kurs": 397.8,
+          "info": "40 € — Diversifikator/Kriegs-Hedge"
+        },
+        {
+          "datum": "10.06.",
+          "aktion": "Verkauf",
+          "ticker": "AMD",
+          "kurs": 471.9,
+          "info": "Stop 469 gerissen → −4,36 % (Disziplin gehalten)"
+        },
+        {
+          "datum": "10.06.",
+          "aktion": "Kauf",
+          "ticker": "IWM",
+          "kurs": 288.77,
+          "info": "40 € — Rotation Chips → Small Caps, Stop 274"
+        },
+        {
+          "datum": "10.06.",
+          "aktion": "Verkauf",
+          "ticker": "GLD",
+          "kurs": 377.14,
+          "info": "These-Bruch: Gold fiel TROTZ Eskalation → −5,20 %"
+        },
+        {
+          "datum": "12.06.",
+          "aktion": "Kauf",
+          "ticker": "IWM",
+          "kurs": 294.25,
+          "info": "120 € Aufstockung — Small-Cap-Rotation bestätigt, Stop 274, Ziel 309"
+        },
+        {
+          "datum": "12.06.",
+          "aktion": "Kauf",
+          "ticker": "AMZN",
+          "kurs": 236.56,
+          "info": "180 € — KI-Commerce/AWS-These, Stop 219, Ziel 257"
+        }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Score auf 5 gesenkt: F-H-002-Muster bei n=4 zu klar — AMZN folgt identischem Einstiegs-Timing ohne Bestätigung. IWM-Aufstockung ist Gegenpol und zeigt gutes Trade-Management. Depot −0,29 %, Cash von 92 % auf 77 % reduziert.",
+      "kommentar": "Wochen-Review KW24: Score 5. Einstiegs-Disziplin ist das durchgehende Leck — 4/4 Käufe sofort im Minus (F-H-002) PLUS AMD-Chase am +5,8 %-Tag (F-H-004, neu dokumentiert). Gemeinsame Wurzel: Einstieg ohne Bestätigung. Stop-/Verkaufsdisziplin top, IWM-Aufstockung gutes Trade-Management. Mo 15.06.: NVDA-Zeit-Exit fällig.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs als Aufwärtsbestätigung — bisher notierte JEDER Einstieg (NVDA, CEG, IWM, AMZN) sofort im Minus. Das ist kein Pech mehr, das ist ein Muster.",
         "Stops aus der Volatilität ableiten (L4/F-H-003): mindestens 1 ATR unter dem letzten Swing-Tief. NVDA-Near-Miss 199,88 ist Beweis genug — Stop war im Rauschen, nicht am Signal.",
@@ -59,14 +113,44 @@
     },
     "speku": {
       "trades": [
-        { "datum": "11.06.", "aktion": "Kauf", "ticker": "QBTS", "kurs": 23.25, "info": "400 € — Quantum-Kernwette, Ziel 36 / Stop 18,60" },
-        { "datum": "11.06.", "aktion": "Kauf", "ticker": "IONQ", "kurs": 56.63, "info": "250 € — Quantum-Anker, Ziel 75 / Stop 46" },
-        { "datum": "11.06.", "aktion": "Kauf", "ticker": "RGTI", "kurs": 19.45, "info": "120 € — Quantum-Lottery, Ziel 28 / Stop 15,50" },
-        { "datum": "11.06.", "aktion": "Short", "ticker": "RKLB", "kurs": 110.90, "info": "120 € — Sell-the-News aufs SPCX-Listing, Ziel 99,80 / Stop 119,80, Zeit-Exit Mo 15.06." },
-        { "datum": "12.06.", "aktion": "Verkauf", "ticker": "RKLB", "kurs": 106.05, "info": "Short gecovert: +5,25 € (+4,37 %) — Sell-the-News-These bestätigt, Cover-at-Open nach Overnight-Stop-Breach 121,50" }
+        {
+          "datum": "11.06.",
+          "aktion": "Kauf",
+          "ticker": "QBTS",
+          "kurs": 23.25,
+          "info": "400 € — Quantum-Kernwette, Ziel 36 / Stop 18,60"
+        },
+        {
+          "datum": "11.06.",
+          "aktion": "Kauf",
+          "ticker": "IONQ",
+          "kurs": 56.63,
+          "info": "250 € — Quantum-Anker, Ziel 75 / Stop 46"
+        },
+        {
+          "datum": "11.06.",
+          "aktion": "Kauf",
+          "ticker": "RGTI",
+          "kurs": 19.45,
+          "info": "120 € — Quantum-Lottery, Ziel 28 / Stop 15,50"
+        },
+        {
+          "datum": "11.06.",
+          "aktion": "Short",
+          "ticker": "RKLB",
+          "kurs": 110.9,
+          "info": "120 € — Sell-the-News aufs SPCX-Listing, Ziel 99,80 / Stop 119,80, Zeit-Exit Mo 15.06."
+        },
+        {
+          "datum": "12.06.",
+          "aktion": "Verkauf",
+          "ticker": "RKLB",
+          "kurs": 106.05,
+          "info": "Short gecovert: +5,25 € (+4,37 %) — Sell-the-News-These bestätigt, Cover-at-Open nach Overnight-Stop-Breach 121,50"
+        }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "RKLB-Short profitabel gecovert (+5,25 €) — Sell-the-News-These bestätigt. Quantum-Buch gemischt: RGTI stark (+6,58 %), QBTS schwächer (−1,33 %). Klumpenrisiko nach RKLB-Schließung wieder 100 % Quantum.",
+      "kommentar": "Wochen-Review KW24: Score 7. RKLB-Short +5,25 € (Sell-the-News exakt geliefert); F-S-004 als PECH aufgelöst (Cover-at-Open mechanisch). Schwächster Punkt unverändert: 100 % Quantum im Aktienbuch (F-S-001), Tranche-2-Diversifikation offen. RGTI führt (+7,87 %), Vorsprung ist Varianz, kein Edge.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",

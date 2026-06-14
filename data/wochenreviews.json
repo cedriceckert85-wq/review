@@ -1,4 +1,86 @@
 {
-  "naechstesReview": "Sonntag, 14.06.2026, 17:00 Uhr",
-  "wochen": []
+  "naechstesReview": "Sonntag, 21.06.2026, 17:00 Uhr",
+  "wochen": [
+    {
+      "id": "KW24 2026",
+      "zeitraum": "08.06.–14.06.2026",
+      "erstellt": "14.06. 17:00",
+      "haupt": {
+        "wochenrendite": "−0,29 %",
+        "stand": "1.994,25 € / −0,29 % / Cash 77 % (Fr-Schluss, Dashboard eingefroren 12.06. 17:48)",
+        "skillFehler": [
+          {
+            "titel": "Ungetestete Makro-Hedge-These (Gold) — F-H-001",
+            "detail": "GLD als Iran-Kriegs-Hedge gekauft, fiel TROTZ Eskalation, Verkauf −5,20 % (−2,09 € realisiert). 'Krise → Gold steigt' war ein Reflex ohne historische Prüfung; Gold fällt regelmäßig bei steigendem Dollar/Realzins (CPI 4,2 %).",
+            "empfehlung": "Hedge-Thesen vor dem Kauf an ≥3 historischen Episoden testen; Makro-Reflexe nie ungeprüft handeln."
+          },
+          {
+            "titel": "Einstieg ohne Bestätigung — F-H-002 (n=4, alle 4 sofort im Minus)",
+            "detail": "NVDA, CEG, IWM, AMZN — vier von vier Käufen notierten unmittelbar nach Einstieg im Minus (Kauf in Schwäche ohne Stabilisierungskriterium). Formal noch UNKLAR (Messlatte >70 % bei n≥8), faktisch 4/4 = 100 %.",
+            "empfehlung": "Einstiegs-Bestätigung als harte Regel: kein Kauf ohne mind. einen grünen Schlusskurs / gebrochenes Swing-High / Volumen-Anstieg."
+          },
+          {
+            "titel": "Momentum-Chase ohne Pullback (AMD) — F-H-004 (neu)",
+            "detail": "AMD am +5,8 %-Tag (08.06., 493,40) ohne Rücksetzer gekauft; 10.06. Stop 469 gerissen, −4,36 % (−2,17 € realisiert). Der überdehnte Einstieg war der vermeidbare Können-Fehler — der Stop-Exit selbst war diszipliniert (PECH-Anteil).",
+            "empfehlung": "Überdehnte Momentum-Tage (>+4 %) nicht chasen — auf Pullback zur Ausbruchszone / zum gleitenden Durchschnitt warten."
+          }
+        ],
+        "pech": [
+          {
+            "titel": "AMD-Stop im KI-Selloff diszipliniert exekutiert",
+            "detail": "Der AMD-Stop 469 wurde im KI-Selloff sauber ausgeführt (−4,36 %). Die Stop-Ausführung war korrekter Prozess; nur der Chase-Einstieg ist der Können-Fehler (F-H-004)."
+          },
+          {
+            "titel": "NVDA-Stop-Near-Miss durch Iran-Panik",
+            "detail": "NVDA fiel 11.06. intraday auf 199,88 (0,4 % über Stop 199), Erholung durch Trumps Iran-Nacht-Absage. Der Near-Miss war exogenes Rauschen; der Stop hielt (knapp). Die zu enge Platzierung bleibt als F-H-003 in Beobachtung."
+          }
+        ],
+        "gutGemacht": [
+          "Stop-/Verkaufsdisziplin gehalten: AMD (469) und GLD (These-Bruch) konsequent verkauft, keine Verlust-Position 'gehofft'.",
+          "IWM-Aufstockung (12.06.) nach bestätigter Rotation = gutes Trade-Management und Gegenpol zum Einstiegs-Muster.",
+          "Cash-Disziplin: 77 % Cash, keine Überallokation in einen fallenden Markt."
+        ],
+        "empfehlungen": [
+          "PRIO 1 — Einstiegs-Bestätigung einführen: kein Kauf ohne grünen Schlusskurs / Swing-High-Bruch. Adressiert F-H-002 (Schwäche-Kauf) UND F-H-004 (Stärke-Chase) zugleich — beides ist 'Einstieg ohne Bestätigung'.",
+          "PRIO 2 — Stops aus Volatilität ableiten (≥1 ATR unter Swing-Tief) statt fixer %-Abstände; NVDA-Near-Miss (199,88 vs. 199) belegt zu enge Platzierung (L4/F-H-003).",
+          "PRIO 3 — NVDA-Zeit-Exit Mo 15.06. konsequent vollziehen, falls die Relative-Stärke-These nach 7 Tagen nicht greift."
+        ],
+        "umsetzungVorwoche": "Erstes Wochen-Review (KW24) — keine Vorwoche zum Abgleich."
+      },
+      "speku": {
+        "wochenrendite": "+1,11 %",
+        "stand": "2.022 € / +1,11 % / Cash 61 % (Fr-Schluss)",
+        "skillFehler": [
+          {
+            "titel": "Klumpenrisiko 100 % Quantum, nicht bepreist — F-S-001",
+            "detail": "QBTS/IONQ/RGTI = drei Positionen, eine Wette (gemeinsame Zinssensitivität). Nach dem RKLB-Cover ist das Aktienbuch wieder 100 % Quantum. Strukturell UNKLAR (kein realisierter Schaden, kein gemeinsamer Drawdown diese Woche), aber unverändert ungelöst.",
+            "empfehlung": "Themen-Obergrenze 60–70 % je Thema einführen; Tranche 2 (Space) als erste echte Diversifikation umsetzen."
+          },
+          {
+            "titel": "Ungesicherte Datenquelle (Scout-Fehlalarme) — F-S-003",
+            "detail": "Tag 1 ~14, Tag 2 7 Fehlalarme (Quellen mit falschem Datum). Im Vollautonom-Modus wäre jeder ein potenzieller Fehltrade. Prozess-SKILL-FEHLER, bisher manuell abgefangen (0 € Kosten).",
+            "empfehlung": "Hard-Gate: kein Handeln auf Meldungen mit Quellendatum < 24 h + 2 unabhängige Quellen; Master-Fix verifizieren (Ziel 0 Fehlalarme/Woche)."
+          }
+        ],
+        "pech": [
+          {
+            "titel": "RKLB Overnight-Stop-Breach (121,50 > Stop 119,80) — F-S-004 → PECH",
+            "detail": "RKLB handelte nachbörslich bis 121,50 über den Stop. Der Squeeze war nicht antizipierbar; das mechanische Cover-at-Open (106,05) rettete +5,25 €. Pro Messlatte F-S-004 → PECH (Cover mechanisch, kein Slippage-Verlust). Das Designrisiko für künftige Extrem-Shorts bleibt als Leitplanke bestehen."
+          }
+        ],
+        "gutGemacht": [
+          "RKLB Sell-the-News exakt geliefert (+5,25 €, +4,37 %): binäre These (SPCX-Listing-Fade) korrekt kalibriert (L5).",
+          "Cover-at-Open-Regelwerk hat unter Overnight-Druck diszipliniert funktioniert — Schaden in Gewinn verwandelt.",
+          "Nachkauf-Automatik nicht ausgelöst (kein Averaging-down) — Kurse blieben über den Triggern, Disziplin gehalten."
+        ],
+        "empfehlungen": [
+          "PRIO 1 — Klumpenrisiko bepreisen (F-S-001): harte Themen-Obergrenze 60–70 %. Quantum ist seit Start 100 % des Aktienbuchs; der erste gemeinsame Quantum-Drawdown trifft sonst alles gleichzeitig.",
+          "PRIO 2 — Nachkauf-Trigger (IONQ<50 / QBTS<21) durch eine Stabilisierungs-Bedingung ersetzen (F-S-002): Averaging-down per Limit bleibt der dokumentierte Speku-Killer.",
+          "PRIO 3 — AH-Protokoll für Extrem-Speku-Shorts (F-S-004): Positionsgröße muss die Worst-Case-Eröffnung tragen ODER Day-only-Charakter — nicht auf das nächste mechanische Glück verlassen."
+        ],
+        "umsetzungVorwoche": "Erstes Wochen-Review (KW24) — keine Vorwoche zum Abgleich."
+      },
+      "fazit": "Nach Woche 1 ist keiner der Trader risikoadjustiert profitabel. Haupt −0,29 % ist diszipliniert, aber das Einstiegs-Timing ist das durchgehende Leck — F-H-001/002/004 teilen dieselbe Wurzel: Einstieg ohne Bestätigung. Speku +1,11 % liegt nominal vorn, doch der Vorsprung ist reine Varianz eines 100-%-Quantum-Buchs, kein Edge (H6/F-S-001). Beide zeigen die Kern-Tugend (Stop- und Verkaufsdisziplin) und denselben Kern-Mangel (ungeprüfte Eintritts-/Themen-Annahmen). Messlatten am 12.07. (4 Wochen): (a) Haupt-Einstiege nicht mehr zu >70 % sofort im Minus (F-H-002 bei n≥8); (b) Speku hat Tranche-2-Diversifikation umgesetzt ODER eine dokumentierte Themen-Obergrenze; (c) beide schlagen risikoadjustiert — nicht nur nominal — das SPY-Buy&Hold (+1,57 % diese Woche). Vorläufiger Wochensieger bleibt SPY (+1,57 %) vor Speku (+1,11 %): passives Buy&Hold schlägt bislang beide aktiven Trader."
+    }
+  ]
 }

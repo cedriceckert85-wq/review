@@ -374,6 +374,75 @@
         "L3 erneut bestätigt: Der 22:00-Wochenend-Lauf fand exakt dieselben Kursdaten vor wie der 17:00-Lauf. Erkenntnisgewinn in Zwischenläufen liegt im Kontext/News, nicht in neuen Kursen — eine Score-Änderung wäre hier Gefälligkeit gewesen.",
         "Disziplin gegen Lärm: Bei identischer Datenlage werden Fehler-Akten und LESSONS bewusst NICHT mit Pseudo-Updates aufgebläht. Ein Bestätigungseintrag genügt."
       ]
+    },
+    {
+      "id": "2026-06-14-1700",
+      "datum": "2026-06-14",
+      "zeit": "17:00",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 1994.25,
+        "rendite": -0.29,
+        "cashQuote": 77,
+        "score": 5,
+        "fazit": "Wochen-Review-Lauf (KW24). Kurse weiter Fr-Schluss (Dashboard eingefroren 12.06. 17:48), kein neuer Kurs-Input — Score bleibt 5. Neue Erkenntnis aus dem Wochen-Review: AMD-Chase als F-H-004 dokumentiert; F-H-001/002/004 teilen dieselbe Wurzel (Einstieg ohne Bestätigung). Nächster echter Prüfpunkt Mo 15.06. (NVDA-Zeit-Exit, F-H-003).",
+        "punkte": [
+          "Einstiegs-Disziplin ist das durchgehende Leck: 4/4 Käufe sofort im Minus (F-H-002) PLUS AMD-Chase am +5,8 %-Tag (F-H-004, neu) — Schwäche-Kauf UND Stärke-Chase, beide ohne Bestätigung.",
+          "Gut: Stop-/Verkaufsdisziplin (AMD 469, GLD These-Bruch konsequent) und IWM-Aufstockung nach bestätigter Rotation.",
+          "Mo 15.06.: NVDA max. Haltedauer endet (Tag 7/7) — Zeit-Exit-Entscheidung fällig (F-H-003)."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2022,
+        "rendite": 1.11,
+        "cashQuote": 61,
+        "score": 7,
+        "fazit": "Wochen-Review-Lauf (KW24). Quantum-Buch unverändert (RGTI +7,87 %, IONQ +2,15 %, QBTS +0,52 %), Score bleibt 7. Neue Erkenntnis: F-S-004 (RKLB-Overnight-Breach) als PECH aufgelöst und in die Erledigt-Akte verschoben — Cover-at-Open mechanisch, kein Slippage-Verlust. Klumpenrisiko (F-S-001) strukturell weiter offen.",
+        "punkte": [
+          "Bestes der Woche: RKLB Sell-the-News +5,25 € (+4,37 %), These exakt geliefert (L5); Cover-Disziplin unter Overnight-Druck gehalten.",
+          "Schwächster Punkt: 100 % Quantum im Aktienbuch, Tranche-2-Diversifikation (Space) weiter offen — Vorsprung ist Varianz, kein Edge (H6).",
+          "RGTI führt (+7,87 %) und stellt D3 weiter in Frage (Messlatte ~11.07.)."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2001.33,
+        "rendite": 0.07,
+        "cashQuote": 55,
+        "score": 6,
+        "fazit": "Wochen-Review-Lauf. Eigenes Depot +0,07 % unverändert (Kurse = Fr-Schluss), keine Wochenend-Trades erzwungen. Selbstkritische Wochenbilanz: 1 Call FALSCH (D5), D3 trendet gegen mich (RGTI stärkster Titel), D2 dicht an FALSCH (294,11 vs. 295). Score bleibt 6 — Konstruktion (Subtraktions-Edge) und Disziplin tragen, die Call-Qualität war diese Woche aber schwach.",
+        "punkte": [
+          "Scoreboard unverändert 0 richtig / 1 falsch / 5 offen — die offenen Calls (D1/D2/D3/D6) werden ab Mo 15.06. mit frischen Kursen prüfbar.",
+          "Keine Stop-/Ziel-Trigger (CEG 253,76 / QBTS 23,37 / IONQ 57,85), keine neue Abweichung (kein Original-Trade am Wochenende).",
+          "Lehre aus D5: Risk-on-Umfeld ist kein Blocker für einen kalibrierten kleinen Short — eigene Geopolitik-Skepsis war zu konservativ."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Unverändert: HPE-Limit @ 45,00 pending, 0 Fills (Börse zu). Erster echter Fill frühestens Mo 15.06. — die Bewertung der Score-85-Kalibrierung wartet darauf.",
+        "punkte": [
+          "Prozessdisziplin Tag 1 sauber (genau 1 Trade, Bracket-Order steht); Edge bleibt unbewiesen bis zum ersten Fill."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Unverändert: 3 Halbleiter-Limits (MU/INTC/AMD) pending, 0 Fills (Börse zu). Decision-Run 13.06. wählte Top-3 aus 8 Kandidaten.",
+        "punkte": [
+          "Halbleiter-Konzentration der drei Pending-Orders bei Fill beobachten — wenig Diversifikation für einen 'Evidenz'-Bot."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Unverändert: R-001 TQQQ (3x, 148 Stk) gefüllt, LRCX/CAT pending, Engine D aus, summeR=0 (Börse zu).",
+        "punkte": [
+          "Gehebeltes TQQQ-Beta bleibt der kritische Risikopunkt; Engine-A/B/C-Statistik ab Tag 1 getrennt führen."
+        ]
+      },
+      "vergleich": "Wochen-Review-Lauf (KW24) auf eingefrorenen Fr-Kursen — Rangfolge nominal unverändert: Speku +1,11 % > Schatten +0,07 % > Haupt −0,29 %, und über allen SPY-Buy&Hold +1,57 %. Risikoadjustiert ist das Bild anders als die nominale Rangliste: Spekus Vorsprung ist die Varianz eines 100-%-Quantum-Buchs (F-S-001/H6), kein Edge; Haupt ist diszipliniert, verliert aber konsistent am Einstiegs-Timing (F-H-002/004). Beide Trader teilen die Tugend (Stop-Disziplin) und denselben Mangel (ungeprüfte Eintritts-/Themen-Annahmen). Nach Woche 1 schlägt passives SPY beide aktiven Depots — die 4-Wochen-Messlatten (12.07.) im Wochen-Review definieren, woran echter Fortschritt messbar wird.",
+      "lektionen": [
+        "Wochen-Review-Erkenntnis: Die Diagnose des Haupt-Depots war zu eng. Nicht 'kauft fallende Messer' (F-H-002), sondern 'kauft ohne Bestätigung' — der AMD-Chase (F-H-004) ist das Spiegelbild in die Gegenrichtung (Stärke statt Schwäche). Eine einzige Einstiegs-Bestätigungsregel adressiert beide.",
+        "F-S-004 sauber als PECH aufgelöst (Messlatte erfüllt: Overnight-Breach nicht antizipierbar + Cover mechanisch, +5,25 €). Das Cover-at-Open-Regelwerk hat Schaden in Gewinn verwandelt — Disziplin > Panik. Das Designrisiko für künftige Extrem-Shorts bleibt als Leitplanke, nicht als offener Fehler.",
+        "L3/L6 erneut bestätigt: Sonntag = identische Fr-Kurse wie Samstag. Der Erkenntnisgewinn dieses Laufs kam ausschließlich aus dem Wochen-Review (Fehler-Akten-Auswertung), nicht aus Kursen — Scores nur dort verändert, wo neue Erkenntnis vorlag (hier: keine)."
+      ]
     }
   ]
 }

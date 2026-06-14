@@ -9,7 +9,7 @@
     "rendite": 0.07,
     "cash": 1100.0,
     "cashQuote": 55.0,
-    "stand": "13.06.2026, 22:00 (Wochenend-Bestätigungslauf, Kurse = Fr-Schluss)"
+    "stand": "14.06.2026, 17:00 (Wochen-Review-Lauf, Kurse = Fr-Schluss, unverändert ggü. 13.06.)"
   },
   "scoreboard": {
     "richtig": 0,
@@ -197,6 +197,13 @@
     {
       "datum": "13.06.",
       "zeit": "22:00",
+      "schatten": 0.07,
+      "haupt": -0.29,
+      "speku": 1.11
+    },
+    {
+      "datum": "14.06.",
+      "zeit": "17:00",
       "schatten": 0.07,
       "haupt": -0.29,
       "speku": 1.11
