@@ -49,7 +49,8 @@ def main():
 
     # Schatten seit 12.06. abends wie alle anderen: eigenes Alpaca-Konto PA3XH5SA83HN.
     for name, prefix in (("swing", "ALPACA_SWING"), ("speku", "ALPACA_SPEKU"), ("haupt", "ALPACA_HAUPT"),
-                         ("solid", "ALPACA_SOLID"), ("risk", "ALPACA_RISK"), ("schatten", "ALPACA_SCHATTEN")):
+                         ("solid", "ALPACA_SOLID"), ("risk", "ALPACA_RISK"), ("schatten", "ALPACA_SCHATTEN"),
+                         ("crypto", "ALPACA_CRYPTO")):
         eq = sicher(alpaca_equity, prefix)
         punkt[name] = round((eq / 100000 - 1) * 100, 2) if eq else None
 
