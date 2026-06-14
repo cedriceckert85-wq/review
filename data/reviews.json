@@ -443,6 +443,71 @@
         "F-S-004 sauber als PECH aufgelöst (Messlatte erfüllt: Overnight-Breach nicht antizipierbar + Cover mechanisch, +5,25 €). Das Cover-at-Open-Regelwerk hat Schaden in Gewinn verwandelt — Disziplin > Panik. Das Designrisiko für künftige Extrem-Shorts bleibt als Leitplanke, nicht als offener Fehler.",
         "L3/L6 erneut bestätigt: Sonntag = identische Fr-Kurse wie Samstag. Der Erkenntnisgewinn dieses Laufs kam ausschließlich aus dem Wochen-Review (Fehler-Akten-Auswertung), nicht aus Kursen — Scores nur dort verändert, wo neue Erkenntnis vorlag (hier: keine)."
       ]
+    },
+    {
+      "id": "2026-06-14-2200",
+      "datum": "2026-06-14",
+      "zeit": "22:00",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 1994.25,
+        "rendite": -0.29,
+        "cashQuote": 77,
+        "score": 5,
+        "fazit": "22:00-Bestätigungslauf — identische Daten zum 17:00-Lauf (Haupt weiter auf Fr 12.06. 17:48 eingefroren, Börse So zu). Keine neuen Kurse, kein Trade, keine Stop-/Ziel-Berührung. Score bleibt 5. Nächster echter Prüfpunkt Mo 15.06.: NVDA-Zeit-Exit (Tag 7/7, F-H-003) bei dann frischen Kursen.",
+        "punkte": [
+          "Keine Veränderung ggü. 17:00 — siehe Eintrag 2026-06-14-1700 (Wochen-Review KW24) für die volle Begründung.",
+          "Mo 15.06.: NVDA max. Haltedauer endet; dann werden die F-H-002/004-Einstiege erstmals wieder mit frischen Kursen prüfbar."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2022,
+        "rendite": 1.11,
+        "cashQuote": 61,
+        "score": 7,
+        "fazit": "22:00-Bestätigungslauf — Quantum-Buch unverändert zum Fr-Schluss (RGTI +7,87 %, IONQ +2,15 %, QBTS +0,52 %), Speku-Dashboard weiter >24 h alt. Score bleibt 7. Klumpenrisiko (F-S-001) strukturell offen; kein Nachkauf-Trigger ausgelöst.",
+        "punkte": [
+          "Keine neuen Daten ggü. 17:00 — RGTI führt weiter und stellt D3 in Frage (Messlatte ~11.07.).",
+          "Cash ~61 % bereit für die offene Tranche-2-Diversifikation (Space)."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2001.33,
+        "rendite": 0.07,
+        "cashQuote": 55,
+        "score": 6,
+        "fazit": "22:00-Bestätigungslauf — eigenes Depot +0,07 % unverändert (Kurse = Fr-Schluss). Keine Wochenend-Trades, keine Stop-/Ziel-Trigger. Scoreboard 0/1/5 unverändert; die offenen Calls (D1/D2/D3/D6) werden ab Mo 15.06. prüfbar.",
+        "punkte": [
+          "Keine Stop-/Ziel-Berührung (CEG 253,76 / QBTS 23,37 / IONQ 57,85), keine neue Abweichung (kein Original-Trade am Wochenende).",
+          "Verlaufspunkt 14.06. 22:00 angehängt (unverändert) — sonst bewusst kein Pseudo-Update."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Unverändert: HPE-Limit @ 45,00 pending, 0 Fills (Börse zu). Erster echter Fill frühestens Mo 15.06.",
+        "punkte": [
+          "Bewertung der Score-85-Kalibrierung wartet weiter auf den ersten Fill."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Unverändert: 3 Halbleiter-Limits (MU/INTC/AMD) pending, 0 Fills (Börse zu).",
+        "punkte": [
+          "Halbleiter-Konzentration der Pending-Orders bei Fill im Blick behalten."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Unverändert: R-001 TQQQ (3×, 148 Stk) gefüllt, LRCX/CAT pending, Engine D aus, summeR=0 (Börse zu).",
+        "punkte": [
+          "Gehebeltes TQQQ-Beta bleibt der kritische Risikopunkt — Stop-Disziplin entscheidend."
+        ]
+      },
+      "vergleich": "22:00-Bestätigungslauf ohne neue Daten (Sonntag, beide Dashboards identisch zum 17:00-Lauf). Rangfolge unverändert: Speku +1,11 % > Schatten +0,07 % > Haupt −0,29 %, darüber SPY-Buy&Hold +1,57 %. Keine Score-Änderung, keine erzwungenen Trades. Inhaltlich gilt der 17:00-Eintrag (2026-06-14-1700) inkl. Wochen-Review KW24; der nächste echte Erkenntnisgewinn kommt Mo 15.06. mit frischen Kursen und der NVDA-Zeit-Exit-Entscheidung.",
+      "lektionen": [
+        "L3 erneut bestätigt: Der 22:00-Sonntag-Lauf fand exakt dieselben Kursdaten vor wie der 17:00-Lauf. Eine Score-Änderung oder neue Fehler-Akten-Einträge wären hier Gefälligkeit bzw. Lärm — bewusst unterlassen.",
+        "Disziplin gegen Lärm: Bei identischer Datenlage genügt ein Bestätigungseintrag; Fehler-Akten und LESSONS bleiben unverändert."
+      ]
     }
   ]
 }
