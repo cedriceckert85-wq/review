@@ -12,6 +12,7 @@
       ["swing",    "◆ Swing",          B + "/review/agent.html?a=swing"],
       ["solid",    "🤍 SOLID",         B + "/review/agent.html?a=solid"],
       ["risk",     "🔥 RISK",          B + "/review/agent.html?a=risk"],
+      ["crypto",   "₿ Crypto-Bot",     B + "/review/agent.html?a=crypto"],
     ]],
     ["Flotte", [
       ["vergleich", "📈 Vergleich",    B + "/review/vergleich.html"],

@@ -103,6 +103,7 @@ const THEMEN = {
   "Hebel-Index": ["TQQQ", "SQQQ", "UPRO", "SPXL"],
   "Index / Breite": ["SPY", "QQQ", "IWM", "DIA"],
   "IT-Hardware": ["HPE", "DELL", "IBM", "CSCO", "ANET"],
+  "Krypto": ["BTC", "ETH", "SOL", "XRP", "DOGE", "ADA", "LTC", "BCH", "AVAX", "LINK", "DOT", "UNI"],
 };
 function themaVon(ticker) {
   for (const [thema, liste] of Object.entries(THEMEN)) {
@@ -306,6 +307,48 @@ const AGENTEN = {
       return journalModell(j, 2000, j.konto.hinweisLetzterLauf || null);
     },
   },
+  crypto: {
+    name: "₿ Crypto-Bot (Daytrade)",
+    details: BASIS + "/review/vergleich.html",
+    laden: async () => {
+      const [j, verg] = await Promise.all([
+        (await fetch(BASIS + "/review/data/crypto_journal.json?_=" + Date.now())).json(),
+        fetch(BASIS + "/review/data/vergleich.json?_=" + Date.now()).then(r => r.json()).catch(() => null),
+      ]);
+      const letzte = verg && verg.verlauf.length ? verg.verlauf[verg.verlauf.length - 1] : {};
+      const pct = letzte.crypto != null ? letzte.crypto : 0;
+      const equity = 100000 * (1 + pct / 100);
+      const st = j.statistik || {};
+      const offen = Object.entries(j.positionen || {});
+      const investiert = offen.reduce((s, [, p]) => s + (p.notional || 0), 0);
+      const tq = st.trades ? Math.round(st.gewonnen / st.trades * 100) : null;
+      return {
+        vermoegen: fmtUsd(equity),
+        rendite: pct,
+        stand: ((j.konto && j.konto.status) || "ALPACA PAPER") + " · Spot BTC/ETH, regime-Momentum" + (j.heute ? " · Trades heute " + j.heute.trades : ""),
+        chips: [
+          { t: "Cash", v: ((equity - investiert) / equity * 100).toLocaleString("de-DE", {maximumFractionDigits: 1}) + " %" },
+          { t: "Realisiert", v: ((st.summePnlUsd || 0) > 0 ? "+" : "") + Math.round(st.summePnlUsd || 0).toLocaleString("de-DE") + " $", cls: (st.summePnlUsd || 0) > 0 ? "up" : (st.summePnlUsd || 0) < 0 ? "down" : "" },
+          { t: "Trefferquote", v: tq == null ? "— (0 Trades)" : tq + " % (" + st.gewonnen + "/" + st.trades + ")", cls: tq == null ? "" : (tq >= 50 ? "up" : "down") },
+        ],
+        positionen: offen.map(([sym, p]) => ({
+          tk: sym, sub: `Einstieg ${p.entry} · Stop ${p.stop} · ~${Math.round(p.notional)} $`,
+          badge: ["buy", "long"],
+          rechts: "~" + Math.round(p.notional).toLocaleString("de-DE") + " $", rsub: "seit " + dd(p.entryDatum),
+        })),
+        trades: [...(j.trades || [])].reverse().flatMap(t => ([
+          { tk: t.sym, sub: `${dd(t.exitDatum)} · Verkauf · ${t.grund || ""}`, badge: ["sell", "Verkauf"],
+            rechts: t.exit != null ? t.exit.toLocaleString("de-DE") : "—", rcls: t.pnlUsd > 0 ? "up" : t.pnlUsd < 0 ? "down" : "",
+            rsub: ((t.pnlUsd || 0) > 0 ? "+" : "") + (t.pnlUsd != null ? t.pnlUsd : 0) + " $" },
+          { tk: t.sym, sub: `${dd(t.entryDatum)} · Kauf`, badge: ["buy", "Kauf"],
+            rechts: t.entry != null ? t.entry.toLocaleString("de-DE") : "—", rsub: "" },
+        ])),
+        notiz: (j.konto && j.konto.hinweis) || null,
+        betraege: offen.map(([sym, p]) => ({ ticker: sym.split("/")[0], betrag: p.notional })),
+        waehrung: "$", gesamtwert: equity,
+      };
+    },
+  },
 };
 
 const key = new URLSearchParams(location.search).get("a") || "schatten";
@@ -314,7 +357,7 @@ const cfg = AGENTEN[key] || AGENTEN.schatten;
 document.getElementById("flotten-nav").dataset.active = key;
 
 const AGENT_FARBEN = { haupt: "#0a84ff", speku: "#bf5af2", schatten: "#64d2ff",
-                       swing: "#ffd60a", solid: "#f5f5f7", risk: "#ff9f0a" };
+                       swing: "#ffd60a", solid: "#f5f5f7", risk: "#ff9f0a", crypto: "#5e5ce6" };
 let chartDaten = [];
 
 function chartZeichnen() {
@@ -369,7 +412,7 @@ function chartZeichnen() {
       ctx.arc(x(i), y(p[s.k]), s.breite + 0.5, 0, Math.PI * 2); ctx.fill();
     });
   });
-  const namen = { haupt: "Haupt-Depot", speku: "Speku-Depot", schatten: "Schatten", swing: "Swing", solid: "SOLID", risk: "RISK" };
+  const namen = { haupt: "Haupt-Depot", speku: "Speku-Depot", schatten: "Schatten", swing: "Swing", solid: "SOLID", risk: "RISK", crypto: "Crypto-Bot" };
   document.getElementById("legende").innerHTML =
     `<span style="color:${AGENT_FARBEN[key]}">●</span> ${namen[key] || key} &nbsp;` +
     `<span style="color:#8e8e93">◌</span> S&P 500 &nbsp;` +
