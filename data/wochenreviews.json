@@ -80,7 +80,43 @@
         ],
         "umsetzungVorwoche": "Erstes Wochen-Review (KW24) — keine Vorwoche zum Abgleich."
       },
-      "fazit": "Nach Woche 1 ist keiner der Trader risikoadjustiert profitabel. Haupt −0,29 % ist diszipliniert, aber das Einstiegs-Timing ist das durchgehende Leck — F-H-001/002/004 teilen dieselbe Wurzel: Einstieg ohne Bestätigung. Speku +1,11 % liegt nominal vorn, doch der Vorsprung ist reine Varianz eines 100-%-Quantum-Buchs, kein Edge (H6/F-S-001). Beide zeigen die Kern-Tugend (Stop- und Verkaufsdisziplin) und denselben Kern-Mangel (ungeprüfte Eintritts-/Themen-Annahmen). Messlatten am 12.07. (4 Wochen): (a) Haupt-Einstiege nicht mehr zu >70 % sofort im Minus (F-H-002 bei n≥8); (b) Speku hat Tranche-2-Diversifikation umgesetzt ODER eine dokumentierte Themen-Obergrenze; (c) beide schlagen risikoadjustiert — nicht nur nominal — das SPY-Buy&Hold (+1,57 % diese Woche). Vorläufiger Wochensieger bleibt SPY (+1,57 %) vor Speku (+1,11 %): passives Buy&Hold schlägt bislang beide aktiven Trader."
+      "fazit": "Nach Woche 1 ist keiner der Trader risikoadjustiert profitabel. Haupt −0,29 % ist diszipliniert, aber das Einstiegs-Timing ist das durchgehende Leck — F-H-001/002/004 teilen dieselbe Wurzel: Einstieg ohne Bestätigung. Speku +1,11 % liegt nominal vorn, doch der Vorsprung ist reine Varianz eines 100-%-Quantum-Buchs, kein Edge (H6/F-S-001). Beide zeigen die Kern-Tugend (Stop- und Verkaufsdisziplin) und denselben Kern-Mangel (ungeprüfte Eintritts-/Themen-Annahmen). Messlatten am 12.07. (4 Wochen): (a) Haupt-Einstiege nicht mehr zu >70 % sofort im Minus (F-H-002 bei n≥8); (b) Speku hat Tranche-2-Diversifikation umgesetzt ODER eine dokumentierte Themen-Obergrenze; (c) beide schlagen risikoadjustiert — nicht nur nominal — das SPY-Buy&Hold (+1,57 % diese Woche). Vorläufiger Wochensieger bleibt SPY (+1,57 %) vor Speku (+1,11 %): passives Buy&Hold schlägt bislang beide aktiven Trader.",
+      "swing": {
+        "wochenrendite": "±0,00 %",
+        "stand": "100.000 $ / 0 Fills (Alpaca Paper)",
+        "fazit": "Tag-1-Prozess sauber: genau EIN Trade selektiert (HPE, Score 85, CRV 3,0) als echte 250-Stück-Bracket-Order — diszipliniert, aber der Edge ist bis zum ersten Fill unbewiesen. Erster möglicher Fill Mo 15.06.",
+        "empfehlungen": [
+          "Score-Kalibrierung ab Trade 1 mitschreiben — ab ~30 Trades muss belegbar sein, dass 85er öfter gewinnen als 70er, sonst ist der Score Dekoration.",
+          "EU-Kandidaten (DAX/EuroStoxx) laufen nur in der Yahoo-Sim (Alpaca US-only) — bei häufigen EU-Empfehlungen IBKR-Paper als Stufe 2 erwägen."
+        ]
+      },
+      "solid": {
+        "wochenrendite": "±0,00 %",
+        "stand": "100.000 € / 0 Trades · 3 Bracket-Orders pending",
+        "fazit": "Live seit 12.06. Erster Entscheider-Lauf wählte Top-3 aus 8 Kandidaten (MU/INTC/AMD) — alle drei sind aber Halbleiter, das ist Konzentration statt Diversifikation für einen Evidenz-Bot.",
+        "empfehlungen": [
+          "Halbleiter-Klumpen der drei Pending-Orders bei Fill bewerten (MU/INTC/AMD korrelieren stark).",
+          "Jede trade-lose Nacht dokumentieren (warum kein Kandidat die Filter überlebte) — Kalibrierung ab Tag 1."
+        ]
+      },
+      "risk": {
+        "wochenrendite": "±0,00 %",
+        "stand": "100.000 € / Summe R 0 · TQQQ offen, LRCX/CAT pending",
+        "fazit": "Live seit 12.06. Eine gehebelte Position (R-001 TQQQ 3×, 148 Stk) gefüllt, zwei Stop-Orders (LRCX/CAT) pending. Engine D (Shorts) korrekt deaktiviert; Summe R noch 0.",
+        "empfehlungen": [
+          "Gehebeltes TQQQ-Beta ist der kritische Risikopunkt — Stop-Disziplin entscheidet über die Woche.",
+          "Engine-A/B/C-Statistik ab Tag 1 getrennt führen (Spec verlangt gepoolte Expectancy nur für A+B; C ist kalendergegated)."
+        ]
+      },
+      "crypto": {
+        "wochenrendite": "±0,00 %",
+        "stand": "100.000 $ / 0 Trades (Paper PA3X2F870VJ0, seit 14.06.)",
+        "fazit": "Heute 14.06. gestartet (Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kein Hebel/Short). Noch kein Trade — KW24 ist reiner Setup-Tag, die Bewertung beginnt mit der ersten vollen Handelswoche.",
+        "empfehlungen": [
+          "Ab dem ersten Trade die Kosten-Disziplin dokumentieren — Daytrade-Gebühren fressen bei BTC/ETH schnell den Edge.",
+          "Regime-Gate-Trefferquote (handelt nur bei grünem Regime) von Tag 1 mitschreiben."
+        ]
+      }
     }
   ]
 }

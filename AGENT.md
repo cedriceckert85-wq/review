@@ -90,11 +90,21 @@ Du bist ein Experte für Aktien und Finanzen. Dieser Lauf passiert 2× täglich 
    - `stand` aktualisieren.
 7b. **Wochen-Review (NUR sonntags beim 17:00-Lauf):** Neues Objekt an `data/wochenreviews.json`
    → `wochen` anhängen und `naechstesReview` auf den Folgesonntag setzen. GUI: `woche.html`.
-   Schema je Woche:
+   Schema je Woche (GUI: `woche.html` mit Bot-Dropdown — schaltet haupt/speku/swing/solid/risk/crypto durch):
    `{id: "KW24 2026", zeitraum: "08.06.–14.06.2026", erstellt: "TT.MM. HH:MM",`
    ` haupt: {wochenrendite, stand, skillFehler: [{titel, detail, empfehlung}], pech: [{titel, detail}],`
    `         gutGemacht: ["…"], empfehlungen: ["…"], umsetzungVorwoche: "…"},`
-   ` speku: {…gleiches Schema…}, fazit: "…"}`
+   ` speku: {…gleiches Vollschema…},`
+   ` swing/solid/risk/crypto: {…Kurzschema, s. u.…}, fazit: "…"}`
+   **`wochenrendite` und `stand` sind ANZEIGE-STRINGS** (die Bots haben verschiedene Einheiten €/$/%),
+   z. B. `"wochenrendite": "+1,11 %"`, `"stand": "2.022 € / +1,11 % / Cash 61 %"`. Negativwerte mit „−" beginnen
+   (die GUI färbt danach rot/grün).
+   **Alle Trade-Bots füllen (Pflicht seit KW24):** Zusätzlich zu `haupt`/`speku` (Vollschema oben) IMMER auch
+   `swing`, `solid`, `risk` und `crypto` anlegen — **Kurzschema** `{wochenrendite, stand, fazit (1–2 Sätze,
+   Fokus Prozessdisziplin), empfehlungen: ["…", "…"]}` (analog Tages-Review-Abschnitt 6b). Datenquellen wie in 6b:
+   `…/swing/data/journal.json` (Swing), `…/bots/data/solid_journal.json` & `…/bots/data/risk_journal.json`
+   (SOLID/RISK), lokal `data/crypto_journal.json` (Crypto). Ein Bot ohne sinnvolle Wochendaten bekommt trotzdem
+   einen Eintrag (knapper Stand + „noch kein Trade"); fehlt ein Key ganz, zeigt die GUI im Dropdown „—".
    Inhaltliche Pflichten:
    - Alle OFFENEN Einträge der Fehler-Akten durchgehen: Was ist jetzt entscheidbar? Entschiedene
      Einträge in der Akte nach „Erledigte Einträge" verschieben (mit KW-Vermerk und Urteil).

@@ -60,8 +60,24 @@
   .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
   .dot.haupt { background: var(--blue); }
   .dot.speku { background: var(--purple); }
+  .dot.swing { background: var(--teal); }
+  .dot.solid { background: var(--green); }
+  .dot.risk { background: var(--red); }
+  .dot.crypto { background: var(--amber); }
   .wrendite { font-size: 1.2rem; font-weight: 800; margin-bottom: 12px; }
   .pos { color: var(--green); } .neg { color: var(--red); }
+  .standnote { font-size: .8rem; color: var(--muted); font-weight: 400; }
+
+  .botbar { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; }
+  .botbar label { color: var(--muted); font-size: 0.9rem; font-weight: 600; }
+  .botbar select { background: var(--card2); color: var(--text); border: 1px solid var(--border);
+                   border-radius: 10px; padding: 9px 34px 9px 12px; font-size: 0.95rem; font-weight: 600;
+                   font-family: inherit; -webkit-appearance: none; appearance: none; min-width: 180px;
+                   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%2398989d' stroke-width='1.6' fill='none'/%3E%3C/svg%3E");
+                   background-repeat: no-repeat; background-position: right 12px center; }
+  .cols.cols-1 { grid-template-columns: 1fr; }
+  .kurzfazit { font-size: 0.9rem; color: var(--text); margin-bottom: 12px; }
+  .strich { color: var(--muted); font-size: 0.92rem; padding: 10px 0; }
 
   .block { margin-bottom: 14px; }
   .block h4 { font-size: 0.74rem; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
@@ -101,12 +117,23 @@
     <h1>Wochen-Review</h1>
     <p class="sub">Jeden Sonntag: Was war Können, was war Pech — und was muss besser werden. Ziel: profitable Trader.</p>
   </header>
+  <div id="botbar"></div>
   <div id="wochen"></div>
   <footer>Fehler-Akten: <a href="https://github.com/cedriceckert85-wq/review/blob/main/fehler/haupt-depot.md" style="color:var(--blue)">Haupt-Depot</a> · <a href="https://github.com/cedriceckert85-wq/review/blob/main/fehler/speku-depot.md" style="color:var(--blue)">Speku-Depot</a> · Keine Anlageberatung</footer>
 </div>
 
 <script>
-const fmtP = v => (v > 0 ? "+" : "") + v.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " %";
+const BOTS = [
+  { key: "haupt",  name: "Haupt-Depot" },
+  { key: "speku",  name: "Speku-Depot" },
+  { key: "swing",  name: "Swing-Agent" },
+  { key: "solid",  name: "SOLID-Bot" },
+  { key: "risk",   name: "RISK-Bot" },
+  { key: "crypto", name: "Crypto-Bot" },
+];
+
+// wochenrendite/stand sind Anzeige-Strings — die Bots haben verschiedene Einheiten (€ / $ / %).
+const isNeg = s => typeof s === "string" && /^\s*[−-]/.test(s);
 
 function liste(items, cls, titel) {
   if (!items || !items.length) return "";
@@ -117,10 +144,13 @@ function liste(items, cls, titel) {
 }
 
 function traderCol(t, name, cls) {
+  if (!t) return `<div class="col"><h3><span class="dot ${cls}"></span>${name}</h3>`
+    + `<div class="strich">— für diese Woche kein Eintrag.</div></div>`;
   return `
   <div class="col">
     <h3><span class="dot ${cls}"></span>${name}</h3>
-    <div class="wrendite ${t.wochenrendite >= 0 ? "pos" : "neg"}">${fmtP(t.wochenrendite)} <span style="font-size:.8rem;color:var(--muted);font-weight:400">diese Woche · Stand ${t.stand.toLocaleString("de-DE", {minimumFractionDigits:2})} €</span></div>
+    <div class="wrendite ${isNeg(t.wochenrendite) ? "neg" : "pos"}">${t.wochenrendite || "—"}<span class="standnote">${t.stand ? " · Stand " + t.stand : ""}</span></div>
+    ${t.fazit ? `<div class="kurzfazit">${t.fazit}</div>` : ""}
     ${liste(t.skillFehler, "skill", "Können-Fehler (abstellen!)")}
     ${liste(t.pech, "pech", "Pech (nicht überreagieren)")}
     ${liste(t.gutGemacht, "gut", "Gut gemacht (beibehalten)")}
@@ -129,25 +159,37 @@ function traderCol(t, name, cls) {
   </div>`;
 }
 
-fetch("data/wochenreviews.json?_=" + Date.now()).then(r => r.json()).then(d => {
-  const el = document.getElementById("wochen");
-  const wochen = [...d.wochen].reverse();
-  if (!wochen.length) {
-    el.innerHTML = `<div class="empty">Noch kein Wochen-Review.<br><br>Das erste Review erscheint am <b style="color:var(--text)">${d.naechstesReview}</b>.<br>Bis dahin sammeln die Tages-Läufe Fehler und Beobachtungen in den Fehler-Akten beider Trader.</div>`;
-    return;
-  }
-  el.innerHTML = wochen.map(w => `
+let DATA = null, currentBot = "haupt";
+
+function render() {
+  const bot = BOTS.find(b => b.key === currentBot) || BOTS[0];
+  const wochen = [...DATA.wochen].reverse();
+  document.getElementById("wochen").innerHTML = wochen.map(w => `
     <article class="woche">
       <div class="woche-head">
         <span class="kw">${w.id}</span>
         <span class="zeitraum">${w.zeitraum} · erstellt ${w.erstellt}</span>
       </div>
-      <div class="cols">
-        ${traderCol(w.haupt, "Haupt-Depot", "haupt")}
-        ${traderCol(w.speku, "Speku-Depot", "speku")}
+      <div class="cols cols-1">
+        ${traderCol(w[currentBot], bot.name, currentBot)}
       </div>
       <div class="fazit"><h4>Wochen-Fazit des Reviewers</h4><p>${w.fazit}</p></div>
     </article>`).join("");
+}
+
+fetch("data/wochenreviews.json?_=" + Date.now()).then(r => r.json()).then(d => {
+  DATA = d;
+  if (!(d.wochen && d.wochen.length)) {
+    document.getElementById("wochen").innerHTML = `<div class="empty">Noch kein Wochen-Review.<br><br>Das erste Review erscheint am <b style="color:var(--text)">${d.naechstesReview}</b>.<br>Bis dahin sammeln die Tages-Läufe Fehler und Beobachtungen in den Fehler-Akten der Trader.</div>`;
+    return;
+  }
+  document.getElementById("botbar").innerHTML =
+    `<label for="botSelect">Trade-Bot:</label> <select id="botSelect">`
+    + BOTS.map(b => `<option value="${b.key}">${b.name}</option>`).join("") + `</select>`;
+  const sel = document.getElementById("botSelect");
+  sel.value = currentBot;
+  sel.addEventListener("change", e => { currentBot = e.target.value; render(); });
+  render();
 }).catch(() => {
   document.getElementById("wochen").innerHTML = '<div class="empty">Wochen-Reviews konnten nicht geladen werden.</div>';
 });
