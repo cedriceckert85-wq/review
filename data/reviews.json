@@ -650,6 +650,73 @@
         "Bestätigung L4: NVDA schloss bei +1,31 %, der Stop 199 wurde nie wieder getestet — die 11.06.-Stop-Nähe war endgültig als Intraday-Rauschen entlarvt.",
         "Datenfrische 22:00: Haupt-Dashboard hängt bei 19:04 (kein echter US-Schluss), Speku bei 22:21 (Schluss) — die bekannte Wochentags-Asymmetrie bleibt zu beachten, Haupt-Schlusskurse erst Di früh final."
       ]
+    },
+    {
+      "id": "2026-06-15-2319",
+      "datum": "2026-06-15",
+      "zeit": "23:19",
+      "slot": "Sonderlauf (L9-Regel-Adoption)",
+      "haupt": {
+        "vermoegen": 2008.41,
+        "rendite": 0.42,
+        "cashQuote": 67,
+        "score": 6,
+        "fazit": "Sonderlauf (außerplanmäßig, Regel-Adoption auf Leiter-Anweisung) — keine neuen Kurse seit dem 22:00-Schluss, keine neuen Trades. Haupt unverändert +0,42 %, alle 5 Positionen grün, NVDA 212,20 € (+1,31 %). Zeit-Exit (Tag 8/7) offen, vertagt auf das Mo-Morgen-Briefing 09:08. Score unverändert 6 — dieser Lauf bewertet keine neuen Trader-Daten, sondern übernimmt die neuen Reviewer-Regeln.",
+        "punkte": [
+          "Keine neuen Daten ggü. dem 22:00-Lauf — inhaltlich gilt 2026-06-15-2200.",
+          "Offen für Di: NVDA-Zeit-Exit Tag 8/7, Einstiegs-Bestätigungsregel weiter nicht eingeführt."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2097.71,
+        "rendite": 4.86,
+        "cashQuote": 59,
+        "score": 7,
+        "fazit": "Sonderlauf — Quantum unverändert +4,86 % (RGTI +16,7 % führt), 0 neue Trades, Score 7. Relevanz für diesen Lauf: RGTI als stärkster der drei ist der empirische Beleg für die neue Regel 3 (Werkzeug zur These passen lassen) — der Speku-Trader, der RGTI gehalten hat, lag richtig; der Reviewer-Ausschluss (D3) lag mit dem falschen Frame (fundamentale Schwäche) daneben.",
+        "punkte": [
+          "100 % Quantum (F-S-001) bleibt das offene Strukturthema.",
+          "RGTI +16,7 % = Beleg, dass eine Schwäche-These kein Ausschlussgrund für ein Momentum-Setup mit weitem Stop ist."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2074.33,
+        "rendite": 3.72,
+        "cashQuote": 53,
+        "score": 6,
+        "fazit": "Sonderlauf zur ADOPTION der neuen AGENT.md-Regeln (Schritt 7d + Regeln-Sektion, L9-Fixes des Leiters, Commit 9aef7fb). Konkret angewandt: (1) SYMMETRIE — die offenen Verzichts-Calls D3 (RGTI) und D6 (AMZN) erneut mit explizitem Pro/Contra + Messlatte geprüft; beide trenden FALSCH und bestätigen L9. (2) KALIBRIERUNG statt Überkompensation — BEWUSST kein RGTI-Chase (+16,7 %, am Hoch kaufen wäre ein neuer Fehler) und kein impulsives Leeren der 53 % Cash; die Subtraktions-Konstruktion trägt (+3,72 % > Haupt +0,42 %). (3) WERKZEUG-ZUR-THESE — der D3-Ausschlussgrund (fundamentale Schwäche) ist für einen Momentum-Trade mit weitem Stop der falsche Frame; ab sofort müssen Ausschlussgründe zum Trade-Typ passen. Keine neuen Kurse, kein Trade, Scoreboard unverändert 0/3/3. Score 6: das Prozess-Upgrade ist real, aber noch unbewiesen.",
+        "punkte": [
+          "Regeln gelesen aus AGENT.md (Commit 9aef7fb) und in LESSONS.md/L9 als operationalisiert vermerkt.",
+          "Anwendung von Regel 2 = kein Trade: die richtige Lehre aus 0/3/3 ist schärfere Einzelfall-Begründung, nicht Aktionismus.",
+          "D3-Reasoning-Fix dokumentiert OHNE rückwirkende Änderung der D3-Felder — die 1-Monats-Messlatte (~11.07.) bleibt offen."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Sonderlauf — keine Bot-Daten-Änderung (Journal-Stand 12.06.), Score unverändert. Kein Bezug zur Regel-Adoption.",
+        "punkte": [
+          "Erster Fill weiter ausstehend."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Sonderlauf — keine Bot-Daten-Änderung (Journal-Stand 13.06.), Score unverändert.",
+        "punkte": [
+          "3 Momentum-Limits pending."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Sonderlauf — keine Bot-Daten-Änderung (Journal-Stand 12./13.06.), Score unverändert.",
+        "punkte": [
+          "TQQQ-Beta bleibt der kritische Punkt."
+        ]
+      },
+      "vergleich": "Außerplanmäßiger Sonderlauf auf Anweisung des Leiters — Zweck ist die direkte Übernahme der drei neuen Reviewer-Regeln (AGENT.md Schritt 7d + Regeln, Commit 9aef7fb), nicht eine neue Marktbewertung (keine Kurse seit 22:00). Rangfolge unverändert: Speku +4,86 % > Schatten +3,72 % > Haupt +0,42 %. Die Regeln sind angewandt: abgelehnte Trades brauchen künftig eine eigene Messlatte + symmetrisches Pro/Contra (R1), die Antwort auf den dokumentierten Über-Konservatismus ist schärfere Einzelfall-Kalibrierung statt Cash-Aktionismus (R2), Ausschlussgründe müssen zum Trade-Typ passen (R3, Beleg RGTI). Konkrete Sofortwirkung: bewusst KEIN RGTI-Nachkauf trotz +16,7 % — die korrekte Anwendung von R2 ist Disziplin, nicht Überkompensation.",
+      "lektionen": [
+        "L9 ist ab 15.06. in AGENT.md operationalisiert (Schritt 7d + Regeln): Verzicht = vollwertige Entscheidung mit Messlatte; Kalibrierung statt Überkompensation; Ausschlussgrund muss zum Trade-Typ passen.",
+        "Regel 3 angewandt auf D3: fundamentale Schwäche war der falsche Frame für RGTI (Momentum, weiter Stop) — der Speku-Trader lag mit dem Halten richtig.",
+        "Erste Bewährungsprobe der neuen Regeln bestanden: kein RGTI-Chase am Hoch — R2 verbietet die Überkompensation, die der naive Reflex auf 0/3/3 wäre."
+      ]
     }
   ]
 }

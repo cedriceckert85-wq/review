@@ -1,9 +1,9 @@
 {
-  "stand": "15.06.2026, 22:00",
+  "stand": "15.06.2026, 23:19 (Sonderlauf)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Mo 15.06. (Schluss): +3,72 %, klar vor Haupt (+0,42 %), hinter Speku (+4,86 %). D1 (NVDA-Verzicht) als FALSCH aufgelöst → Scoreboard 0/3/3. Drei abgelehnte Trader-Trades (D5/D2/D1) alle falsch — L9 (Über-Konservatismus) jetzt statistisch belegt. Konstruktion trägt, Einzelcall-Kalibrierung ist die Schwäche.",
+      "kommentar": "Sonderlauf 23:19: neue AGENT.md-Regeln (L9, Schritt 7d) übernommen — Verzicht braucht eigene Messlatte + symmetrisches Pro/Contra, Kalibrierung statt Überkompensation, Ausschlussgrund muss zum Trade-Typ passen. Erste Anwendung: bewusst KEIN RGTI-Chase (+16,7 %) und kein Cash-Dump trotz 0/3/3 — Disziplin, nicht Aktionismus. Depot unverändert +3,72 %.",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
