@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-15T18:39:13Z",
+ "standUtc": "2026-06-15T18:51:40Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-15T18:51:40Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 15.06.2026 20:51"
+  },
   {
    "zeit": "2026-06-15T18:39:13Z",
    "agent": "speku",
