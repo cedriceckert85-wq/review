@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-15T18:24:27Z",
+ "standUtc": "2026-06-15T18:39:13Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-15T18:39:13Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Stop-Wache 2026-06-15 14:37 — QBTS 26.75/18.6–36, IONQ 62.23/46–75, RGTI 22.99/15.5–28 (alle grün, im Zappel-Bereich, kein Handeln)"
+  },
   {
    "zeit": "2026-06-15T18:24:27Z",
    "agent": "speku",
@@ -84,13 +91,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Stop-Wache 2026-06-15 17:36 — Live-Kurse aktualisiert (IONQ 61.89, QBTS 26.28, RGTI 22.98, alle grün)"
-  },
-  {
-   "zeit": "2026-06-15T15:41:42Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-15 17:00"
   },
   {
    "zeit": "2026-06-15T15:14:44Z",
@@ -367,13 +367,6 @@
   },
   {
    "zeit": "2026-06-12T17:58:11Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:57:58Z",
    "agent": "haupt",
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
