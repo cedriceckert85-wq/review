@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-15T19:21:58Z",
+ "standUtc": "2026-06-15T19:26:41Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-15T19:26:41Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Stop-Wache 15:25 — IONQ 62.36 / QBTS 26.70 / RGTI 22.89 USD, alle Positionen über Stops, unter Zielen, kein Handeln"
+  },
   {
    "zeit": "2026-06-15T19:21:58Z",
    "agent": "speku",
@@ -367,13 +374,6 @@
   },
   {
    "zeit": "2026-06-12T17:58:26Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:58:21Z",
    "agent": "haupt",
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
