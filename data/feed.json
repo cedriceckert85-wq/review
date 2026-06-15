@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-15T18:09:33Z",
+ "standUtc": "2026-06-15T18:14:02Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-15T18:14:02Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 15.06.2026 20:14"
+  },
   {
    "zeit": "2026-06-15T18:09:33Z",
    "agent": "speku",
@@ -553,13 +560,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Phase 0: SOLID+RISK Geruest - Specs, Quant-Pipeline, Journale, GUI (NICHT LIVE)"
-  },
-  {
-   "zeit": "2026-06-12T10:25:58Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Umstellung auf 100.000-USD-Konto: 1R = 1.000 USD, HPE-Order neu skaliert"
   }
  ]
 }
