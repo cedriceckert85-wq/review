@@ -226,55 +226,6 @@
    "text": "Review 2026-06-14 22:00"
   },
   {
-   "zeit": "2026-06-14T19:29:41Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Wochen-Review: alle Trade-Bots per Dropdown durchschaltbar"
-  },
-  {
-   "zeit": "2026-06-14T15:15:09Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-14 17:00 (KW24 Wochen-Review)"
-  },
-  {
-   "zeit": "2026-06-14T13:26:36Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-14 15:26"
-  },
-  {
-   "zeit": "2026-06-14T00:49:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "agent.html: eigene Crypto-Bot-Seite (?a=crypto) 1:1 wie andere Agenten + nav-Tab (Nutzer-Wunsch 2026-06-14)"
-  },
-  {
-   "zeit": "2026-06-14T00:40:32Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard: Crypto-Trade-Tab + Journal-Publish (Trades Kauf/Verkauf wie andere Bots) - Nutzer-Wunsch 2026-06-14"
-  },
-  {
-   "zeit": "2026-06-14T00:31:29Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard: Crypto-Bot (Paper PA3X2F870VJ0) in Vergleich eingebunden - live/vergleich-Pipeline + Chart-Serie (Nutzer-Wunsch 2026-06-14)"
-  },
-  {
-   "zeit": "2026-06-13T22:24:23Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "nav.js: Bot-Umbenennen lokal (localStorage) - Edit-UI in Flotten-Nav, ersetzt Namen client-seitig; bestehende Nav unveraendert (Nutzer-Wunsch 2026-06-14)"
-  },
-  {
    "zeit": "2026-06-13T21:23:33Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -560,6 +511,41 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Phase 0: SOLID+RISK Geruest - Specs, Quant-Pipeline, Journale, GUI (NICHT LIVE)"
+  },
+  {
+   "zeit": "2026-06-12T10:25:58Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Umstellung auf 100.000-USD-Konto: 1R = 1.000 USD, HPE-Order neu skaliert"
+  },
+  {
+   "zeit": "2026-06-12T09:26:58Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "gitignore: Python-Cache ausschliessen"
+  },
+  {
+   "zeit": "2026-06-12T09:25:54Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Alpaca-Paper-Integration: Bracket-Orders, Fill-Sync, Order-Workflow 23:07"
+  },
+  {
+   "zeit": "2026-06-12T01:34:47Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-12"
+  },
+  {
+   "zeit": "2026-06-12T01:20:25Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Initial: Elite Swing Trade Agent - GUI, Journal, Auto-Auswertung, Regelwerk V3"
   }
  ]
 }
