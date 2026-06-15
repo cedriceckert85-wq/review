@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-15T17:54:07Z",
+ "standUtc": "2026-06-15T18:09:33Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-15T18:09:33Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Stop-Wache 2026-06-15 20:08 — IONQ 62.47 / QBTS 26.75 / RGTI 23.03 USD, alle Positionen über Stops, unter Zielen, kein Handeln"
+  },
   {
    "zeit": "2026-06-15T17:54:07Z",
    "agent": "speku",
@@ -268,27 +275,6 @@
    "text": "RISK: Positionsgroesse 30% des Equity/Trade (statt 1R=2%), Stop bleibt ATR-basiert; SOLID/CODEX unveraendert (Nutzer-Mandat 2026-06-13)"
   },
   {
-   "zeit": "2026-06-13T20:31:45Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-13 22:00"
-  },
-  {
-   "zeit": "2026-06-13T15:38:52Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-13 17:00"
-  },
-  {
-   "zeit": "2026-06-13T11:45:53Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Review-GUI: Uebersicht-Tab entfernt, einspaltig pro Depot (Default Haupt)"
-  },
-  {
    "zeit": "2026-06-13T11:45:10Z",
    "agent": "risk",
    "label": "🔥 RISK",
@@ -301,27 +287,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Reflexion 13.06 — Woche 1, n=1 RAUSCHEN, Buch 100% Quantum, +5,25€ RKLB realisiert"
-  },
-  {
-   "zeit": "2026-06-13T11:37:29Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Review-GUI: Dropdown je Depot (alle 6) + AGENT.md erweitert"
-  },
-  {
-   "zeit": "2026-06-13T10:17:44Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "vergleich.html: ehrlicher Datenstand-Hinweis bei geschlossener Boerse/Wochenende"
-  },
-  {
-   "zeit": "2026-06-13T10:02:04Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "agent.html: Haupt/Speku robust gegen fehlenden agent-daten-Block (kein Ladefehler mehr, sauberes Degradieren)"
   },
   {
    "zeit": "2026-06-13T10:00:49Z",
@@ -492,13 +457,6 @@
    "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
   },
   {
-   "zeit": "2026-06-12T17:57:43Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
    "zeit": "2026-06-12T15:40:13Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -560,6 +518,48 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
+  },
+  {
+   "zeit": "2026-06-12T12:35:23Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-12"
+  },
+  {
+   "zeit": "2026-06-12T12:32:53Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-12"
+  },
+  {
+   "zeit": "2026-06-12T12:26:35Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Encoding-Fix + LIVE-Status sauber (Write-Tool statt Set-Content)"
+  },
+  {
+   "zeit": "2026-06-12T12:24:47Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Stufe 1 LIVE: Abrechnung, Bracket-Order-Anbindung, dokumentierte Stufe-1-Regeln"
+  },
+  {
+   "zeit": "2026-06-12T12:17:24Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Phase 0: SOLID+RISK Geruest - Specs, Quant-Pipeline, Journale, GUI (NICHT LIVE)"
+  },
+  {
+   "zeit": "2026-06-12T10:25:58Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Umstellung auf 100.000-USD-Konto: 1R = 1.000 USD, HPE-Order neu skaliert"
   }
  ]
 }
