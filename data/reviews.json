@@ -508,6 +508,79 @@
         "L3 erneut bestätigt: Der 22:00-Sonntag-Lauf fand exakt dieselben Kursdaten vor wie der 17:00-Lauf. Eine Score-Änderung oder neue Fehler-Akten-Einträge wären hier Gefälligkeit bzw. Lärm — bewusst unterlassen.",
         "Disziplin gegen Lärm: Bei identischer Datenlage genügt ein Bestätigungseintrag; Fehler-Akten und LESSONS bleiben unverändert."
       ]
+    },
+    {
+      "id": "2026-06-15-1700",
+      "datum": "2026-06-15",
+      "zeit": "17:00",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 2006.2,
+        "rendite": 0.31,
+        "cashQuote": 67,
+        "score": 6,
+        "fazit": "Erster echter Montagslauf (frische Kurse). Erholung in den positiven Bereich (+0,31 %, von −0,29 %): CEG +3,84 %, AMZN +3,88 %, IWM +0,80 %, NVDA zurück auf Breakeven −0,01 %. NEU: XLP (Consumer Staples) als defensiver Diversifikator gekauft (85,43 €, +0,04 %) — erstmals ein Einstieg, der NICHT sofort ins Minus läuft und kein fallendes Messer ist. ABER: NVDA-Zeit-Exit (Tag 7) nicht vollzogen — Dashboard zeigt Tag 8/7, Position eine Woche für 0 % gehalten. Einstiegs-Bestätigungsregel (F-H-002) weiter nicht eingeführt. Score 5→6: Diversifikation + Erholung sind echte Prozess-Fortschritte; Rendite-Rückstand und das ungelöste Einstiegs-Leck deckeln nach oben.",
+        "punkte": [
+          "Alle 5 Positionen grün oder breakeven (NVDA −0,01 %, CEG +3,84 %, IWM +0,80 %, AMZN +3,88 %, XLP +0,04 %); Stop-Disziplin intakt, kein Stop gerissen.",
+          "XLP-Kauf = Diversifikation in defensives, niedrig korreliertes Segment — qualitativ anders als die F-H-002-Messer; erster sauberer Prozess-Schritt aus der Tech/Energie-Konzentration.",
+          "NVDA Zeit-Exit (Tag 8/7) NICHT exekutiert — eigene 7-Tage-Regel überschritten ohne dokumentierte Begründung. Minor Slip (70 €), aber Verbesserungspunkt 3 der Vorwoche damit ignoriert.",
+          "Rendite +0,31 % bleibt Schlusslicht der drei aktiven Depots (Schatten +3,86 %, Speku +4,60 %) — die Einstiegs-Schwäche kostet relative Performance."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2092,
+        "rendite": 4.6,
+        "cashQuote": 59,
+        "score": 7,
+        "fazit": "Bestes Nominal-Ergebnis (+4,60 %): Quantum-Rally trägt alle drei Titel — RGTI +18,6 %, QBTS +13,2 %, IONQ +9,3 %. Diszipliniert (0 Trades, kein Chase, kein Nachkauf-Trigger). ABER: genau diese Tages-Gleichläufigkeit ist die Kehrseite des Klumpenrisikos (F-S-001) — derselbe Katalysator, der heute +14 % bringt, bringt im Stress −14 % über alle drei. 100 % Quantum unverändert, Tranche-2-Diversifikation offen. Scout-Fehlalarm heute (SPCX-Datum falsch). Score bleibt 7: Rendite stark, aber risikoadjustiert unverdient, bis ein Quantum-Drawdown überstanden ist.",
+        "punkte": [
+          "RGTI +18,6 % führt klar (vor QBTS +13,2 %, IONQ +9,3 %) — stellt D3 (RGTI-Ausschluss) weiter in Frage, 1-Monats-Messlatte ~11.07.",
+          "Kein Nachkauf-Trigger (IONQ 61,92 > 50 / QBTS 26,32 > 21) — F-S-002 weiter untestbar, Automatik-Streichung bisher kostenlos.",
+          "Aufwärts-Gleichlauf aller drei Titel illustriert F-S-001: hohe Korrelation wirkt im Stress symmetrisch nach unten; Tranche-2-Stabilisierungsregel noch nicht erfüllt (1 Tag seit SPCX)."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2077.13,
+        "rendite": 3.86,
+        "cashQuote": 53,
+        "score": 6,
+        "fazit": "Eigenes Depot +3,86 % — schlägt Haupt (+0,31 %) klar (H6-Messlatte a tracking RICHTIG), bleibt aber hinter Speku (+4,60 %), weil RGTI (+18,6 %) bewusst ausgelassen und 53 % Cash gehalten. Selbstkritik: die Einzelcall-Bilanz ist schwach — D2 (IWM) heute als FALSCH aufgelöst (295,20 > 295), Scoreboard jetzt 0 richtig / 2 falsch / 4 offen. D1 (NVDA-Verzicht) 0,6 € von FALSCH entfernt (NVDA 209,44, nie ausgestoppt). Jede abgelehnte Trader-Chance lief gegen mich → neue L9 (Über-Konservatismus). Score bleibt 6: Konstruktion (beste Namen + Cash) trägt, Call-Kalibrierung nicht.",
+        "punkte": [
+          "Kurse aktualisiert (CEG 262,38 → +8,31 %, QBTS 26,32 → +10,45 %, IONQ 61,92 → +5,83 %); kein Stop/Ziel berührt, keine erzwungenen Trades.",
+          "D2 (IWM-Skip) FALSCH aufgelöst — zweiter falscher 'Trade-Verzicht'-Call nach D5 (RKLB); D3/D6 trenden ebenfalls FALSCH.",
+          "Bewusst kein impulsives Cash-Deployment trotz der Konservatismus-Lektion — internalisieren heißt Kalibrierung schärfen, nicht überkompensieren."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Daten eingefroren (Journal-Stand 12.06.) — HPE-Limit @ 45,00 weiter pending, 0 Fills, ~99,75 % Cash, 0R. Prozessdisziplin (wartet auf Setup, R-Multiple-Sizing) intakt. Score 6 unter Vorbehalt — kein verifizierbarer Montags-Datenpunkt.",
+        "punkte": [
+          "Erster echter Fill steht weiter aus; Score-85-Kalibrierung noch ohne Beleg.",
+          "Journal seit 12.06. nicht aktualisiert — Montags-Bewertung erst mit frischem Fill belastbar."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Daten eingefroren (Journal-Stand 13.06.) — 3 Momentum-Limits (MU/INTC/AMD) pending, 0 Fills, 100 % Cash, halbleiter-lastige Auswahl. Score 6 unter Vorbehalt (kein Montags-Update).",
+        "punkte": [
+          "Halbleiter-Konzentration der Pending-Orders (MU/INTC/AMD) bei Fill beobachten.",
+          "Jede trade-lose Nacht als Datenpunkt dokumentieren (warum kein Kandidat die Filter überlebte)."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Daten eingefroren (Journal-Stand 12./13.06.) — R-001 TQQQ (148 Stk) gefüllt, LRCX/CAT pending, Engine D aus, summeR 0. Gehebeltes TQQQ-Beta bleibt der kritische Punkt. Score 6 unter Vorbehalt (kein Montags-Update).",
+        "punkte": [
+          "Gehebeltes TQQQ-Beta + Stop-Disziplin bleiben der Schlüsselrisikopunkt.",
+          "Engine-Statistik (A/B/C) ab Tag 1 getrennt führen für belastbare Expectancy."
+        ]
+      },
+      "vergleich": "Erster echter Montagslauf mit frischen Kursen. Rangfolge nach Rendite: Speku +4,60 % > Schatten +3,86 % > Haupt +0,31 % (SPY-Buy&Hold als Hintergrund-Benchmark ~+1,5–2 %). Risikoadjustiert differenzierter: Speku's Vorsprung ist ein reiner Quantum-Beta-Ritt (100 % ein Thema, Korrelation heute sichtbar ~1 auf der Oberseite) — hohe Rendite, aber unverdient bis zum ersten gemeinsamen Drawdown. Haupt ist das diszipliniert-diversifizierteste Buch (5 Titel + XLP-Defensive + 67 % Cash), zahlt aber mit dem schwächsten Ertrag für sein anhaltendes Einstiegs-Timing-Leck. Schatten sitzt risikoadjustiert am besten dazwischen: die meisten Quantum-Gewinne mitgenommen, RGTI-Klumpen vermieden, > 50 % Cash — schlägt Haupt klar (H6-a), bleibt aber hinter Speku, weil die eigene Konservatismus-Schlagseite Chancen gekostet hat. Kernspannung: Speku gewinnt das Nominalrennen durch ungehedgte Konzentration, Haupt verliert es durch Über-Vorsicht beim Einstieg — zwei entgegengesetzte Kalibrierungsfehler.",
+      "lektionen": [
+        "L9 neu: Reviewer-Über-Konservatismus bestätigt — alle abgelehnten Trader-Trades (D5/D2 falsch, D1/D3/D6 trenden falsch) liefen gegen den Reviewer; eine abgelehnte Chance ist ein genauso teurer Fehler wie ein schlechter Trade.",
+        "H1 (Haupt-Einstieg ohne Bestätigung): XLP (+0,04 %) ist der erste Einstieg, der NICHT sofort ins Minus läuft — als defensiver ETF aber kein sauberer Test der Messer-These; n=4 unverändert.",
+        "H2 (Quantum-Klumpen): Montags-Gleichlauf nach oben (alle drei +9–19 %) zeigt die hohe Korrelation, die im Stress symmetrisch nach unten wirkt — F-S-001 strukturell bestätigt, noch ohne Drawdown-Test."
+      ]
     }
   ]
 }

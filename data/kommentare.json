@@ -1,18 +1,18 @@
 {
-  "stand": "14.06.2026, 17:00",
+  "stand": "15.06.2026, 17:00",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Wochen-Review KW24: selbstkritische Bilanz. 1 Call FALSCH (D5, verpasster RKLB-Short), D3 trendet gegen mich (RGTI +7,87 % = stärkster der drei), D2 dicht an FALSCH. Depot +0,07 %, hinter Speku. Die Subtraktion fremder Fehler schützt nicht vor eigenen Fehleinschätzungen — Konstruktion trägt, Call-Qualität war diese Woche schwach.",
+      "kommentar": "Mo 15.06.: +3,86 %, schlägt Haupt (+0,31 %) klar (H6-a), hinter Speku (+4,60 %) wegen RGTI-Verzicht + 53 % Cash. Selbstkritisch: D2 (IWM) heute FALSCH (295,20 > 295), Scoreboard 0/2/4. Jede abgelehnte Trader-Chance lief gegen mich → neue L9 (Über-Konservatismus). Konstruktion trägt, Einzelcall-Kalibrierung nicht.",
       "verbesserungen": [
-        "D5-Lehre internalisieren: Risk-on-Umfeld schließt einen klar definierten, kleinen Extrem-Speku-Short nicht aus — Geopolitik-Risikoabschätzung war zu konservativ. Nächster ähnlicher Trade: kritischer prüfen, ob Geopolitik ein Blocker ist oder nur Rauschen.",
-        "D2 (IWM-Skip) kurz vor dem FALSCH-Schwellenwert (294,11 vs. 295) — Rotations-These war robuster als angenommen. Eigene Makro-Skepsis bei bewiesenen Rotations-Mustern zurücknehmen.",
-        "D3 (RGTI-Ausschluss) wird zum Problem: RGTI +6,58 % heute vs. QBTS −1,33 %. Das 'Lotterie-Ticket' outperformt. Fundamentale Schwäche (Umsatz, Verwässerung) war ein zu hartes Urteil für einen Momentum-Trade mit weitem Stop."
+        "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
+        "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
+        "D3 (RGTI-Ausschluss) ehrlich nachhalten: RGTI +18,6 % ist der stärkste der drei — die fundamentale Schwäche-These war für einen Momentum-Trade mit weitem Stop zu hart."
       ]
     },
     "swing": {
       "beschreibung": "Durchsucht jeden Abend 20+ Aktien (S&P 500, Nasdaq, DAX, EuroStoxx) per Deep Research — und handelt maximal DEN einen besten Trade, sonst keinen.",
-      "kommentar": "Tag 1 fehlerfrei: HPE-Empfehlung (Score 85) liegt als echte 250-Stück-Bracket-Order im Alpaca-Konto und wartet auf den Montags-Fill.",
+      "kommentar": "Journal-Stand 12.06. (noch kein Montags-Update): HPE-Limit @ 45,00 pending, 0 Fills, ~99,75 % Cash, 0R. Disziplin intakt, aber erster echter Fill steht weiter aus.",
       "verbesserungen": [
         "Score-Kalibrierung von Anfang an mitschreiben: Ab 30 Trades muss belegbar sein, dass 85er-Scores öfter gewinnen als 70er — sonst ist der Score Dekoration (Regel 12).",
         "DAX/EuroStoxx-Kandidaten laufen nur in der Yahoo-Simulation, nicht als echte Paper-Orders (Alpaca ist US-only) — bei häufigen EU-Empfehlungen IBKR-Paper als Stufe 2 erwägen.",
@@ -83,19 +83,26 @@
           "ticker": "AMZN",
           "kurs": 236.56,
           "info": "180 € — KI-Commerce/AWS-These, Stop 219, Ziel 257"
+        },
+        {
+          "datum": "15.06.",
+          "aktion": "Kauf",
+          "ticker": "XLP",
+          "kurs": 85.43,
+          "info": "200 € — Consumer-Staples-Defensive, Stop 82, Ziel 90; erster Einstieg nicht sofort im Minus"
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Wochen-Review KW24: Score 5. Einstiegs-Disziplin ist das durchgehende Leck — 4/4 Käufe sofort im Minus (F-H-002) PLUS AMD-Chase am +5,8 %-Tag (F-H-004, neu dokumentiert). Gemeinsame Wurzel: Einstieg ohne Bestätigung. Stop-/Verkaufsdisziplin top, IWM-Aufstockung gutes Trade-Management. Mo 15.06.: NVDA-Zeit-Exit fällig.",
+      "kommentar": "Mo 15.06.: Erholung auf +0,31 %, alle 5 Positionen grün/breakeven (NVDA zurück auf −0,01 %). XLP als defensiver Diversifikator neu — guter Schritt aus der Tech/Energie-Konzentration und erster Einstieg, der nicht sofort ins Minus läuft. ABER: NVDA-Zeit-Exit (Tag 8/7) nicht vollzogen, Einstiegs-Bestätigungsregel weiter nicht eingeführt.",
       "verbesserungen": [
-        "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs als Aufwärtsbestätigung — bisher notierte JEDER Einstieg (NVDA, CEG, IWM, AMZN) sofort im Minus. Das ist kein Pech mehr, das ist ein Muster.",
-        "Stops aus der Volatilität ableiten (L4/F-H-003): mindestens 1 ATR unter dem letzten Swing-Tief. NVDA-Near-Miss 199,88 ist Beweis genug — Stop war im Rauschen, nicht am Signal.",
-        "NVDA Zeit-Exit Montag 15.06. konsequent einhalten: Wenn nach 7 Tagen die Relative-Stärke-These nicht greift, ist Zeitmanagement genauso wichtig wie Stop-Disziplin."
+        "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
+        "NVDA-Zeit-Exit nachholen oder dokumentiert verlängern: Tag 8/7 überschritten, Position seit einer Woche bei 0 % — Zeitmanagement ist so wichtig wie Stop-Disziplin.",
+        "Stops aus der Volatilität ableiten (L4/F-H-003): mind. 1 ATR unter dem letzten Swing-Tief; NVDA-Near-Miss 199,88 bleibt der Beleg für einen Stop im Rauschen."
       ]
     },
     "solid": {
       "beschreibung": "Der Evidenz-Bot: handelt nur, was die Deep Research als robust belegt — Long-only-Momentum plus verifizierte News-Drifts. Lieber kein Trade als ein unbelegter.",
-      "kommentar": "Live seit 12.06. (Stufe 1). Erster Entscheider-Lauf heute Nacht 02:53 — noch keine Trades.",
+      "kommentar": "Journal-Stand 13.06. (noch kein Montags-Update): 3 Momentum-Limits (MU/INTC/AMD) pending, 0 Fills, 100 % Cash. Halbleiter-lastige Pending-Auswahl.",
       "verbesserungen": [
         "Phase 2 ausbauen: share-basierte Portfolio-Buchführung (eval_v2) und risk-gate-Workflow, damit der volle Spec-Momentum-Kern mit Roll-Logik statt der diskreten Stufe-1-Trades laufen kann.",
         "EDGAR-Filing-Feed anbinden, damit der News-Drift-Satellit deterministische Kandidaten bekommt statt WebSearch-Funde.",
@@ -104,7 +111,7 @@
     },
     "risk": {
       "beschreibung": "Der kontrolliert aggressive Gewinn-Jäger: konzentrierte High-Beta-Wetten (2 % Risiko), Volumen-Spikes früh statt am Buzz-Peak, TQQQ nur bei grünen Regime-Gates — die research-dokumentierten Todesarten sind hart verboten.",
-      "kommentar": "Live seit 12.06. (Stufe 1). Erster Entscheider-Lauf heute Nacht 03:08 — Engine D (Shorts) bleibt deaktiviert.",
+      "kommentar": "Journal-Stand 12./13.06. (noch kein Montags-Update): R-001 TQQQ (148 Stk) gefüllt, LRCX/CAT pending, Engine D aus, summeR 0. Gehebeltes TQQQ-Beta = kritischer Punkt.",
       "verbesserungen": [
         "Engine-Statistik von Tag 1 getrennt führen (A/B/C) — die Spec verlangt gepoolte Expectancy nur für A+B, C ist kalendergegated.",
         "FINRA-Short-Interest-Feed für die deaktivierte Engine D nachweisen oder D endgültig streichen.",
@@ -150,7 +157,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Wochen-Review KW24: Score 7. RKLB-Short +5,25 € (Sell-the-News exakt geliefert); F-S-004 als PECH aufgelöst (Cover-at-Open mechanisch). Schwächster Punkt unverändert: 100 % Quantum im Aktienbuch (F-S-001), Tranche-2-Diversifikation offen. RGTI führt (+7,87 %), Vorsprung ist Varianz, kein Edge.",
+      "kommentar": "Mo 15.06.: Quantum-Rally +4,60 % (RGTI +18,6 % führt vor QBTS +13,2 %, IONQ +9,3 %). Diszipliniert: 0 Trades, kein Chase, kein Nachkauf-Trigger. Größtes ungelöstes Thema unverändert: 100 % Quantum (F-S-001) — der heutige Aufwärts-Gleichlauf zeigt genau die Korrelation, die im Stress alle drei gleichzeitig trifft. Scout-Fehlalarm heute (SPCX-Datum falsch).",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",

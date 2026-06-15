@@ -5,16 +5,16 @@
     "regeln": "Start 2000 € am 11.06.2026. Einstieg nur zu auf den Dashboards (oder per Quelle) belegbaren Kursen. Jede Abweichung vom Original braucht eine Messlatte, an der sie später als richtig/falsch bewertet wird. Keine rückwirkenden Änderungen — Fehler bleiben sichtbar."
   },
   "aktuell": {
-    "vermoegen": 2001.33,
-    "rendite": 0.07,
+    "vermoegen": 2077.13,
+    "rendite": 3.86,
     "cash": 1100.0,
-    "cashQuote": 55.0,
-    "stand": "14.06.2026, 22:00 (Bestätigungslauf, Kurse = Fr-Schluss, unverändert ggü. 17:00)"
+    "cashQuote": 53.0,
+    "stand": "15.06.2026, 17:00 (1. echter Montagslauf, frische Kurse)"
   },
   "scoreboard": {
     "richtig": 0,
-    "falsch": 1,
-    "offen": 5
+    "falsch": 2,
+    "offen": 4
   },
   "positionen": [
     {
@@ -22,8 +22,8 @@
       "name": "Constellation Energy",
       "einsatz": 250,
       "einstand": 242.26,
-      "kurs": 253.76,
-      "rendite": 4.75,
+      "kurs": 262.38,
+      "rendite": 8.31,
       "stop": 232,
       "ziel": 268,
       "begruendung": "Einzige Haupt-Depot-Position, die ich übernehme: Nuklear/Strom profitiert strukturell von KI-Strombedarf UND von der Öl-Krise (Energiepreise +6 %). Stop bewusst weiter als das Original (232 statt 237) — in einer Nachrichten-Phase mit 3-4 % Tagesschwankung ist ein 2,2 %-Stop Rauschen, kein Risikomanagement.",
@@ -34,8 +34,8 @@
       "name": "D-Wave Quantum",
       "einsatz": 400,
       "einstand": 23.83,
-      "kurs": 23.37,
-      "rendite": -1.93,
+      "kurs": 26.32,
+      "rendite": 10.45,
       "stop": 18.6,
       "ziel": 36,
       "begruendung": "Quantum-Kernwette übernommen — die These (kommerzielle Annealing-Erlöse) ist die stärkste der drei Speku-Positionen. Aber: Ich deckle das Quantum-Thema insgesamt auf 650 € statt 770 € und streiche die Nachkauf-Regel ersatzlos.",
@@ -46,8 +46,8 @@
       "name": "IonQ",
       "einsatz": 250,
       "einstand": 58.51,
-      "kurs": 57.85,
-      "rendite": -1.13,
+      "kurs": 61.92,
+      "rendite": 5.83,
       "stop": 46,
       "ziel": 75,
       "begruendung": "Zweite Quantum-Position als Qualitätsführer. RGTI lasse ich bewusst weg — drei hochkorrelierte Titel desselben Themas sind keine drei Positionen, sondern eine große mit dreifachen Gebühren.",
@@ -74,8 +74,8 @@
       "meineEntscheidung": "Nicht gekauft — kein Einstieg in einen fallenden Markt am Tag 2 einer Geopolitik-Krise",
       "begruendung": "Small Caps sind zinssensitiv (CPI 4,2 % drückt) und konjunktursensitiv (Ölpreis-Schock drückt). Die Rotations-These widerspricht beiden aktuellen Makro-Treibern. Position ist nach 1 Tag −2,35 %.",
       "messlatte": "RICHTIG, wenn IWM den Stop 274 reißt oder in 2 Wochen unter 282 steht. FALSCH, wenn IWM über 295 steigt.",
-      "status": "offen",
-      "aufloesung": null
+      "status": "falsch",
+      "aufloesung": "15.06.2026 (17:00) — IWM 295,20 € (Haupt-Einstand 292,86, +0,80 %), über der FALSCH-Schwelle 295. Die Rotations-These Chips→Small Caps hat sich erholt; die Makro-Bedenken des Reviewers (Zins-/Konjunktursensitivität) haben sich nicht durchgesetzt. Reviewer-Auslassung war schlechter als der Trade des Haupt-Depots."
     },
     {
       "id": "D3",
@@ -214,6 +214,13 @@
       "schatten": 0.07,
       "haupt": -0.29,
       "speku": 1.11
+    },
+    {
+      "datum": "15.06.",
+      "zeit": "17:00",
+      "schatten": 3.86,
+      "haupt": 0.31,
+      "speku": 4.6
     }
   ]
 }
