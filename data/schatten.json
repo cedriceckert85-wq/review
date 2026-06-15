@@ -5,11 +5,11 @@
     "regeln": "Start 2000 € am 11.06.2026. Einstieg nur zu auf den Dashboards (oder per Quelle) belegbaren Kursen. Jede Abweichung vom Original braucht eine Messlatte, an der sie später als richtig/falsch bewertet wird. Keine rückwirkenden Änderungen — Fehler bleiben sichtbar."
   },
   "aktuell": {
-    "vermoegen": 2074.33,
-    "rendite": 3.72,
+    "vermoegen": 2072.93,
+    "rendite": 3.65,
     "cash": 1100.0,
-    "cashQuote": 53.0,
-    "stand": "15.06.2026, 22:00 (Montags-Schlusskurse)"
+    "cashQuote": 53.1,
+    "stand": "15.06.2026, 22:35 (Auto-Kurse)"
   },
   "scoreboard": {
     "richtig": 0,
@@ -22,8 +22,8 @@
       "name": "Constellation Energy",
       "einsatz": 250,
       "einstand": 242.26,
-      "kurs": 263.22,
-      "rendite": 8.65,
+      "kurs": 262.35,
+      "rendite": 8.29,
       "stop": 232,
       "ziel": 268,
       "begruendung": "Einzige Haupt-Depot-Position, die ich übernehme: Nuklear/Strom profitiert strukturell von KI-Strombedarf UND von der Öl-Krise (Energiepreise +6 %). Stop bewusst weiter als das Original (232 statt 237) — in einer Nachrichten-Phase mit 3-4 % Tagesschwankung ist ein 2,2 %-Stop Rauschen, kein Risikomanagement.",
@@ -34,8 +34,8 @@
       "name": "D-Wave Quantum",
       "einsatz": 400,
       "einstand": 23.83,
-      "kurs": 26.29,
-      "rendite": 10.32,
+      "kurs": 26.26,
+      "rendite": 10.2,
       "stop": 18.6,
       "ziel": 36,
       "begruendung": "Quantum-Kernwette übernommen — die These (kommerzielle Annealing-Erlöse) ist die stärkste der drei Speku-Positionen. Aber: Ich deckle das Quantum-Thema insgesamt auf 650 € statt 770 € und streiche die Nachkauf-Regel ersatzlos.",
