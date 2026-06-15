@@ -156,13 +156,6 @@
    "text": "Speku: Premarket-Scan 2026-06-15 14:58 — Quantum-Sektor +4-8%, kein Material, Stops weit weg"
   },
   {
-   "zeit": "2026-06-15T13:09:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-15 15:09 - ETH verkauft +185.62 USD"
-  },
-  {
    "zeit": "2026-06-15T12:58:11Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -198,39 +191,11 @@
    "text": "Speku: Dashboard-Refresh 15.06. 11:42 (Premarket, Markt zu)"
   },
   {
-   "zeit": "2026-06-15T09:31:43Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Repo: Zeilenenden auf LF normalisieren (.gitattributes)"
-  },
-  {
    "zeit": "2026-06-15T08:13:27Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Premarket-Scan 2026-06-15 10:11 — Quantum +6%, Kurse aktualisiert"
-  },
-  {
-   "zeit": "2026-06-14T22:39:58Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-15 00:39"
-  },
-  {
-   "zeit": "2026-06-14T21:51:10Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-14 23:51"
-  },
-  {
-   "zeit": "2026-06-14T20:12:20Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-14 22:00"
   },
   {
    "zeit": "2026-06-13T21:23:33Z",
