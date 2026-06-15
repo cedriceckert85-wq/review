@@ -581,6 +581,75 @@
         "H1 (Haupt-Einstieg ohne Bestätigung): XLP (+0,04 %) ist der erste Einstieg, der NICHT sofort ins Minus läuft — als defensiver ETF aber kein sauberer Test der Messer-These; n=4 unverändert.",
         "H2 (Quantum-Klumpen): Montags-Gleichlauf nach oben (alle drei +9–19 %) zeigt die hohe Korrelation, die im Stress symmetrisch nach unten wirkt — F-S-001 strukturell bestätigt, noch ohne Drawdown-Test."
       ]
+    },
+    {
+      "id": "2026-06-15-2200",
+      "datum": "2026-06-15",
+      "zeit": "22:00",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 2008.41,
+        "rendite": 0.42,
+        "cashQuote": 67,
+        "score": 6,
+        "fazit": "22:00-Bestätigungslauf (Schlusskurs-Stand 19:04). Leichte Verbesserung auf +0,42 %: NVDA hat sich auf 212,20 € (+1,31 %) ins Plus gedreht, CEG +4,17 %, AMZN +4,08 %, IWM +0,93 %, XLP +0,32 % — alle 5 grün. Keine neuen Trades seit dem XLP-Kauf, kein Stop berührt. NVDA-Zeit-Exit (Tag 8/7) weiter NICHT vollzogen — Dashboard: 'Check für den Abend geplant, Verlängerung nur mit neuer These'. Score bleibt 6: solide Erholung, aber Zeit-Exit-Entscheidung steht weiter aus und die Einstiegs-Bestätigungsregel fehlt unverändert.",
+        "punkte": [
+          "NVDA ins Plus (+1,31 %) — bestätigt rückwirkend, dass der 11.06.-Near-Miss am Stop 199 reines Rauschen war (L4); der enge Stop blieb folgenlos.",
+          "Zeit-Exit Tag 8/7 weiter offen — wird beim Di-Lauf zur konkreten Disziplin-Frage, falls ohne dokumentierte Verlängerung weiter gehalten.",
+          "Keine erzwungenen Trades, alle Positionen grün — sauberes Trade-Management, aber +0,42 % bleibt Schlusslicht hinter Speku/Schatten."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2097.2,
+        "rendite": 4.86,
+        "cashQuote": 59,
+        "score": 7,
+        "fazit": "22:00-Bestätigungslauf (echte Schlusskurse 22:21). Quantum hält die Gewinne: +4,86 % (RGTI +16,7 %, QBTS +13,1 %, IONQ +8,0 % — alle leicht unter den 17:00-Hochs, aber stark im Plus). 0 neue Trades, kein Nachkauf-Trigger. POSITIV: Scout in den Abend-Scans (19:07–22:00) mit 0 Fehlalarmen — Gegengewicht zum 12:08-Datums-Fehlalarm. Klumpenrisiko (100 % Quantum) unverändert das offene Strukturthema. Score bleibt 7.",
+        "punkte": [
+          "RGTI +16,7 % führt weiter — D3 (RGTI-Ausschluss) trendet FALSCH, 1-Monats-Messlatte ~11.07.",
+          "Abend-Scout sauber (0 Fehlalarme) — F-S-003 mit gemischtem Tagesbild (1 Datums-Fehlalarm mittags, abends 0).",
+          "IONQ Shareholder Meeting Di 16.06. notiert — möglicher Katalysator/Vola-Quelle für den nächsten Lauf."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2074.33,
+        "rendite": 3.72,
+        "cashQuote": 53,
+        "score": 6,
+        "fazit": "22:00-Bestätigungslauf. Eigenes Depot +3,72 % (leicht unter 17:00 +3,86 % wegen IONQ/QBTS-Schlussabgaben), weiter klar vor Haupt (+0,42 %), hinter Speku (+4,86 %). Materielles Ereignis: D1 (NVDA-Verzicht) als FALSCH aufgelöst — NVDA 212,20 € über Schwelle 210, nie ausgestoppt. Scoreboard jetzt 0 richtig / 3 falsch / 3 offen. Drei abgelehnte Trader-Trades (D5/D2/D1) alle falsch — L9 (Über-Konservatismus) verschärft. Score bleibt 6: Konstruktion trägt (+3,72 % > Haupt), Einzelcall-Kalibrierung bleibt die dokumentierte Schwäche.",
+        "punkte": [
+          "Kurse aktualisiert (CEG 263,22 → +8,65 %, QBTS 26,29 → +10,32 %, IONQ 61,18 → +4,56 %); kein Stop/Ziel berührt, kein Trade.",
+          "D1 FALSCH aufgelöst — der dritte 'Verzicht'-Fehler in Folge; das Muster ist jetzt statistisch (3/3), nicht mehr anekdotisch.",
+          "Verlaufspunkt 22:00 angehängt; bewusst weiter kein Cash-Deployment (Kalibrierung schärfen, nicht überkompensieren)."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Unverändert: Journal-Stand 12.06., HPE-Limit @ 45,00 pending, 0 Fills, ~99,75 % Cash, 0R. Kein Montags-Update im Journal verfügbar.",
+        "punkte": [
+          "Erster echter Fill + Score-85-Kalibrierung weiter ausstehend."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Unverändert: Journal-Stand 13.06., 3 Momentum-Limits (MU/INTC/AMD) pending, 0 Fills, 100 % Cash.",
+        "punkte": [
+          "Halbleiter-Konzentration der Pending-Orders bei Fill im Blick behalten."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Unverändert: Journal-Stand 12./13.06., R-001 TQQQ (148 Stk) gefüllt, LRCX/CAT pending, Engine D aus, summeR 0.",
+        "punkte": [
+          "Gehebeltes TQQQ-Beta bleibt der kritische Risikopunkt — Stop-Disziplin entscheidend."
+        ]
+      },
+      "vergleich": "22:00-Bestätigungslauf mit echten Montags-Schlusskursen. Rangfolge stabil: Speku +4,86 % > Schatten +3,72 % > Haupt +0,42 %. Das risikoadjustierte Bild des 17:00-Laufs gilt unverändert — Speku führt nominal über ungehedgte Quantum-Konzentration, Haupt ist am robustesten diversifiziert aber ertragsschwach, Schatten sitzt risikoadjustiert dazwischen am besten. Einzige materielle Tagesänderung: D1 (NVDA-Verzicht) kippt auf FALSCH (NVDA 212,20 € > 210, nie ausgestoppt). Damit sind alle drei aufgelösten 'Trade-Verzicht'-Calls des Reviewers falsch (D5/D2/D1) — die Über-Konservatismus-Diagnose L9 ist jetzt durch drei unabhängige Fälle belegt, während die Schatten-Konstruktion das Haupt-Depot weiter klar schlägt. Kein erzwungener Trade, keine Score-Änderung gegenüber 17:00.",
+      "lektionen": [
+        "L9 verschärft: D1 (NVDA) als dritter abgelehnter Trade FALSCH — 3/3 'Verzichts'-Calls falsch. Das Muster ist statistisch belegt; die Subtraktion fremder Fehler darf nicht zur Subtraktion fremder Gewinne werden.",
+        "Bestätigung L4: NVDA schloss bei +1,31 %, der Stop 199 wurde nie wieder getestet — die 11.06.-Stop-Nähe war endgültig als Intraday-Rauschen entlarvt.",
+        "Datenfrische 22:00: Haupt-Dashboard hängt bei 19:04 (kein echter US-Schluss), Speku bei 22:21 (Schluss) — die bekannte Wochentags-Asymmetrie bleibt zu beachten, Haupt-Schlusskurse erst Di früh final."
+      ]
     }
   ]
 }

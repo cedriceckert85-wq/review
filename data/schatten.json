@@ -5,16 +5,16 @@
     "regeln": "Start 2000 € am 11.06.2026. Einstieg nur zu auf den Dashboards (oder per Quelle) belegbaren Kursen. Jede Abweichung vom Original braucht eine Messlatte, an der sie später als richtig/falsch bewertet wird. Keine rückwirkenden Änderungen — Fehler bleiben sichtbar."
   },
   "aktuell": {
-    "vermoegen": 2092.27,
-    "rendite": 4.61,
+    "vermoegen": 2074.33,
+    "rendite": 3.72,
     "cash": 1100.0,
-    "cashQuote": 52.6,
-    "stand": "15.06.2026, 20:01 (Auto-Kurse)"
+    "cashQuote": 53.0,
+    "stand": "15.06.2026, 22:00 (Montags-Schlusskurse)"
   },
   "scoreboard": {
     "richtig": 0,
-    "falsch": 2,
-    "offen": 4
+    "falsch": 3,
+    "offen": 3
   },
   "positionen": [
     {
@@ -22,8 +22,8 @@
       "name": "Constellation Energy",
       "einsatz": 250,
       "einstand": 242.26,
-      "kurs": 263.41,
-      "rendite": 8.73,
+      "kurs": 263.22,
+      "rendite": 8.65,
       "stop": 232,
       "ziel": 268,
       "begruendung": "Einzige Haupt-Depot-Position, die ich übernehme: Nuklear/Strom profitiert strukturell von KI-Strombedarf UND von der Öl-Krise (Energiepreise +6 %). Stop bewusst weiter als das Original (232 statt 237) — in einer Nachrichten-Phase mit 3-4 % Tagesschwankung ist ein 2,2 %-Stop Rauschen, kein Risikomanagement.",
@@ -34,8 +34,8 @@
       "name": "D-Wave Quantum",
       "einsatz": 400,
       "einstand": 23.83,
-      "kurs": 26.94,
-      "rendite": 13.05,
+      "kurs": 26.29,
+      "rendite": 10.32,
       "stop": 18.6,
       "ziel": 36,
       "begruendung": "Quantum-Kernwette übernommen — die These (kommerzielle Annealing-Erlöse) ist die stärkste der drei Speku-Positionen. Aber: Ich deckle das Quantum-Thema insgesamt auf 650 € statt 770 € und streiche die Nachkauf-Regel ersatzlos.",
@@ -46,8 +46,8 @@
       "name": "IonQ",
       "einsatz": 250,
       "einstand": 58.51,
-      "kurs": 62.78,
-      "rendite": 7.3,
+      "kurs": 61.18,
+      "rendite": 4.56,
       "stop": 46,
       "ziel": 75,
       "begruendung": "Zweite Quantum-Position als Qualitätsführer. RGTI lasse ich bewusst weg — drei hochkorrelierte Titel desselben Themas sind keine drei Positionen, sondern eine große mit dreifachen Gebühren.",
@@ -63,8 +63,8 @@
       "meineEntscheidung": "Heute aktiv zu 200,31 € verkaufen statt das Overnight-Gap-Risiko zu tragen",
       "begruendung": "Bei Iran-Eskalation + CPI-Angst ist die Wahrscheinlichkeit eines Gap-Down unter den Stop hoch. Dann wird zu deutlich schlechteren Kursen als 199 ausgestoppt. Ein Stop, der fast sicher reißt, ist kein Schutz mehr — er ist nur ein schlechterer Verkaufskurs.",
       "messlatte": "RICHTIG, wenn NVDA unter 199 eröffnet/ausgestoppt wird (Haupt-Depot realisiert schlechter als 200,31). FALSCH, wenn NVDA sich ohne Stop-Riss über 210 erholt.",
-      "status": "offen",
-      "aufloesung": null
+      "status": "falsch",
+      "aufloesung": "15.06.2026 (22:00) — NVDA 212,20 € (Stand 19:04), über der FALSCH-Schwelle 210 und nie ausgestoppt (Stop 199 nie berührt). Das befürchtete Gap-Down-unter-Stop trat nie ein; NVDA machte eine Woche seitwärts und schloss im Plus (+1,31 %). Der Verkauf zu 200,31 war schlechter als Halten. Dritter falscher 'Trade-Verzicht'-Call nach D5 und D2 — bestätigt L9."
     },
     {
       "id": "D2",
@@ -221,6 +221,13 @@
       "schatten": 3.86,
       "haupt": 0.31,
       "speku": 4.6
+    },
+    {
+      "datum": "15.06.",
+      "zeit": "22:00",
+      "schatten": 3.72,
+      "haupt": 0.42,
+      "speku": 4.86
     }
   ]
 }

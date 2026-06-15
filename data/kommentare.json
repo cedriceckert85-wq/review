@@ -1,9 +1,9 @@
 {
-  "stand": "15.06.2026, 17:00",
+  "stand": "15.06.2026, 22:00",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Mo 15.06.: +3,86 %, schlägt Haupt (+0,31 %) klar (H6-a), hinter Speku (+4,60 %) wegen RGTI-Verzicht + 53 % Cash. Selbstkritisch: D2 (IWM) heute FALSCH (295,20 > 295), Scoreboard 0/2/4. Jede abgelehnte Trader-Chance lief gegen mich → neue L9 (Über-Konservatismus). Konstruktion trägt, Einzelcall-Kalibrierung nicht.",
+      "kommentar": "Mo 15.06. (Schluss): +3,72 %, klar vor Haupt (+0,42 %), hinter Speku (+4,86 %). D1 (NVDA-Verzicht) als FALSCH aufgelöst → Scoreboard 0/3/3. Drei abgelehnte Trader-Trades (D5/D2/D1) alle falsch — L9 (Über-Konservatismus) jetzt statistisch belegt. Konstruktion trägt, Einzelcall-Kalibrierung ist die Schwäche.",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -93,7 +93,7 @@
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Mo 15.06.: Erholung auf +0,31 %, alle 5 Positionen grün/breakeven (NVDA zurück auf −0,01 %). XLP als defensiver Diversifikator neu — guter Schritt aus der Tech/Energie-Konzentration und erster Einstieg, der nicht sofort ins Minus läuft. ABER: NVDA-Zeit-Exit (Tag 8/7) nicht vollzogen, Einstiegs-Bestätigungsregel weiter nicht eingeführt.",
+      "kommentar": "Mo 15.06. (Schluss): +0,42 %, alle 5 Positionen grün — NVDA hat sich ins Plus gedreht (212,20 €, +1,31 %), Stop 199 nie wieder getestet. XLP-Defensive neu, guter Schritt aus der Konzentration. Offen bleibt: NVDA-Zeit-Exit (Tag 8/7) nicht vollzogen und Einstiegs-Bestätigung fehlt.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
         "NVDA-Zeit-Exit nachholen oder dokumentiert verlängern: Tag 8/7 überschritten, Position seit einer Woche bei 0 % — Zeitmanagement ist so wichtig wie Stop-Disziplin.",
@@ -157,7 +157,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Mo 15.06.: Quantum-Rally +4,60 % (RGTI +18,6 % führt vor QBTS +13,2 %, IONQ +9,3 %). Diszipliniert: 0 Trades, kein Chase, kein Nachkauf-Trigger. Größtes ungelöstes Thema unverändert: 100 % Quantum (F-S-001) — der heutige Aufwärts-Gleichlauf zeigt genau die Korrelation, die im Stress alle drei gleichzeitig trifft. Scout-Fehlalarm heute (SPCX-Datum falsch).",
+      "kommentar": "Mo 15.06. (Schluss): +4,86 % (RGTI +16,7 % führt). 0 Trades, kein Trigger, Abend-Scout 0 Fehlalarme. 100 % Quantum (F-S-001) bleibt das offene Strukturthema; IONQ-Hauptversammlung Di 16.06. als möglicher Katalysator notiert.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",
