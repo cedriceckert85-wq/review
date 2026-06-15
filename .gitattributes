@@ -1,0 +1,3 @@
+# Zeilenenden repo-weit auf LF normalisieren — verhindert CRLF-Rauschen
+# (Windows/Editor schreibt sonst CRLF, was den ganzen Tree als "geändert" zeigt).
+* text=auto eol=lf
