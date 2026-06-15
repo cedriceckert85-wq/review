@@ -5,25 +5,27 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {
-    "ETH/USD": {
+  "positionen": {},
+  "trades": [
+    {
+      "sym": "ETH/USD",
       "entry": 1718.37,
-      "notional": 5000.0,
-      "stop": 1580.9,
+      "exit": 1783.63,
+      "qty": "2.844272739",
+      "pnlUsd": 185.62,
       "entryDatum": "2026-06-14",
-      "orderId": "44e39405-7380-457b-b1d4-f5884c7c5ad6",
-      "grund": "Starter-Long: staerkstes Momentum (+1.78% 24h, +3.2% am 12.06), Preis 1715 klar ueber beiden MAs, fast-MA noch knapp unter slow = frueher Move mit Luft. Ziel ~1785 (+4%), Ausstieg Rueckfall unter MA-Cluster ~1670."
+      "exitDatum": "2026-06-15",
+      "grund": "Ziel ~1785 erreicht (Kurs ~1783): +174 USD / ~+3.5% realisiert. Vertikaler Move +6.9% von 1718, Momentum +7% ueberdehnt, Markt in Extreme Fear (F&G 18) -> Spike-Gewinn am Ziel gesichert statt bei 30-Min-Eingreif-Latenz Rueckgabe-Risiko einzugehen."
     }
-  },
-  "trades": [],
+  ],
   "heute": {
     "datum": "2026-06-15",
     "trades": 0
   },
   "statistik": {
-    "trades": 0,
-    "gewonnen": 0,
+    "trades": 1,
+    "gewonnen": 1,
     "verloren": 0,
-    "summePnlUsd": 0
+    "summePnlUsd": 185.62
   }
 }
