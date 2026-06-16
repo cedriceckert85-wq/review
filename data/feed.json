@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-16T18:13:42Z",
+ "standUtc": "2026-06-16T18:19:54Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-16T18:19:54Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 16.06.2026 20:19"
+  },
   {
    "zeit": "2026-06-16T18:13:42Z",
    "agent": "speku",
@@ -553,13 +560,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
-  },
-  {
-   "zeit": "2026-06-12T12:35:23Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-12"
   }
  ]
 }
