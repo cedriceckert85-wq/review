@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-16T18:36:04Z",
+ "standUtc": "2026-06-16T18:45:29Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-16T18:45:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 16.06.2026 20:45"
+  },
+  {
+   "zeit": "2026-06-16T18:43:53Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~20:36"
+  },
   {
    "zeit": "2026-06-16T18:36:04Z",
    "agent": "haupt",
@@ -394,13 +408,6 @@
    "text": "DAYTRADER Signal 15.06.2026 20:14"
   },
   {
-   "zeit": "2026-06-15T18:09:33Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Stop-Wache 2026-06-15 20:08 — IONQ 62.47 / QBTS 26.75 / RGTI 23.03 USD, alle Positionen über Stops, unter Zielen, kein Handeln"
-  },
-  {
    "zeit": "2026-06-13T21:23:33Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -553,13 +560,6 @@
    "label": "🤍 SOLID",
    "repo": "bots",
    "text": "SOLID-Lauf 2026-06-12"
-  },
-  {
-   "zeit": "2026-06-12T12:32:53Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-12"
   }
  ]
 }
