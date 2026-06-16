@@ -791,6 +791,78 @@
         "L6 gilt auch werktags: Heute war das Haupt-Dashboard auf Mo 19:04 eingefroren, während Speku live auf Di 17:28 stand. Haupt-Aktualität ist auch unter der Woche unzuverlässig — Zeitstempel prüfen, Haupt-Score nie auf vermeintlich neue Daten stützen.",
         "L9/R2 in der Praxis bestätigt: Der Mo-Verzicht auf den RGTI-Chase am +16,7 %-Hoch war heute von Vorteil (RGTI −8 Pp auf +8,12 %) — Kalibrierung statt Cash-/Chase-Aktionismus zahlt sich aus; D3 bleibt dennoch offen/trend FALSCH, weil RGTI weiter beide anderen anführt."
       ]
+    },
+    {
+      "id": "2026-06-16-2200",
+      "datum": "2026-06-16",
+      "zeit": "22:30",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 2006.01,
+        "rendite": 0.3,
+        "cashQuote": 70,
+        "score": 6,
+        "fazit": "Frische Schluss-Daten (22:10): Haupt +0,30 % (von +0,42 % Mo zurück), 4 Positionen — NVDA wurde heute bei 208,57 € ausgestoppt/zeit-exit (−0,49 %). Damit ist der überfällige NVDA-Zeit-Exit (F-H-003) endlich vollzogen — aber 2 Tage zu spät (Tag 9 statt 7); die Verzögerung kostete ~1,8 Pp ggü. dem Mo-Stand 212,20 €. Cash jetzt 70 % (defensiver). CEG stark (+6,09 %), AMZN +4,05 %, XLP +0,21 %, IWM zurück leicht negativ (−0,25 %). Score 6 gehalten: Disziplin durch den vollzogenen Exit wiederhergestellt, aber die Lateness-Kosten verhindern ein Upgrade.",
+        "punkte": [
+          "NVDA-Zeit-Exit endlich vollzogen (208,57 €, −0,49 %) — F-H-003-Disziplinpunkt geschlossen, aber 2 Tage spät (~1,8 Pp Kosten ggü. Mo 212,20).",
+          "Cash 70 % nach NVDA-Exit — defensivere Aufstellung in einen schwachen Tagesmarkt hinein.",
+          "IWM zurück unter Einstand (−0,25 %, 292,12 €) — die Rotations-These wackelt wieder (D2 bleibt aber aufgelöst, keine Rückwirkung).",
+          "Einstiegs-Bestätigungsregel (F-H-002) weiter nicht formal eingeführt — kein neuer Einstieg heute."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2021.97,
+        "rendite": 1.1,
+        "cashQuote": 61,
+        "score": 6,
+        "fazit": "Der Quantum-Rücksetzer vertiefte sich in den Schluss: Speku +4,86 % (Mo) → +2,12 % (17:28) → +1,10 % (22:19). Alle drei gaben weiter synchron nach (RGTI +6,12 %, QBTS +2,97 %, IONQ jetzt −1,01 % unter Einstand) — ~−9 % gemeinsamer Drawdown vom Mo-Hoch, im Lockstep, knapp unter der >10-%-F-S-001-Messlatte. 0 Trades, HALTEN ×3. Score 7→6: NICHT der Rücksetzer selbst (Markt-PECH, Stops fern, These intakt), sondern dass die unveränderte 100-%-Quantum-Konzentration Montags +4,86 % in zwei Tagen auf +1,10 % zurückspülte UND über beide Abwärts-Beine keine einzige Risikomaßnahme (Teilverkauf, Theme-Cap, Hedge) erfolgte. Das Konzentrations-Leck ist von strukturell zu materialisiert gewechselt.",
+        "punkte": [
+          "Round-Trip: +4,86 %→+1,10 % in 2 Tagen, weil alle drei synchron fielen — die 100-%-Konzentration amplifiziert die Schwankung (das ist der Prozess-Malus, nicht der Marktrückgang).",
+          "~−9 % gemeinsamer Drawdown vom Mo-Hoch, IONQ erstmals unter Einstand — die >10-%-SKILL-Messlatte (F-S-001) ist in Reichweite.",
+          "0 Risikomaßnahme über beide Abwärts-Beine — kein Theme-Cap, kein Teilverkauf trotz wiederholter Flags.",
+          "Disziplin-Pluspunkt: kein Panikverkauf in den Rücksetzer (These intakt, Stops fern) — das Problem ist die Größe der Wette, nicht das Halten an sich."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2017.94,
+        "rendite": 0.9,
+        "cashQuote": 68.2,
+        "score": 6,
+        "fazit": "Erster realisierter Gewinn: CEG erreichte das eigene (engere) Ziel 268 (intraday bis 270,17 €) → mechanischer Take-Profit, +26,56 € (+10,62 %), Erlös zu Cash. Damit 68 % Cash und nur noch 2 Quantum-Titel (QBTS +0,46 %, IONQ −4,19 % — der höhere Schatten-Einstand schmerzt im Pullback). Schatten +0,90 % > Haupt +0,30 %, aber unter Speku (+1,10 %). Das Take-Profit am vorab gesetzten Ziel ist saubere Disziplin (ohne Gier bis 273 zu warten); ob das engere Ziel klug war, klärt D7. Score 6 gehalten.",
+        "punkte": [
+          "CEG-Take-Profit mechanisch am Ziel 268 ausgeführt (+10,62 %) — erster realisierter Schatten-Gewinn, Disziplin der vorab gesetzten Marke.",
+          "Neue Abweichung D7: engeres CEG-Ziel (268) als Haupt (273) — Messlatte: FALSCH wenn CEG 273 erreicht ohne unter 262 zu fallen, RICHTIG wenn CEG unter 262 zurückfällt.",
+          "Restbuch jetzt 100 % Quantum (QBTS/IONQ) bei 68 % Cash — IONQ −4,19 % zeigt den Einstands-Nachteil ggü. Speku.",
+          "Schatten > Haupt (H6-Messlatte a) hält: +0,90 % vs +0,30 % — Cash + Subtraktion dämpfen den Down-Tag."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Unverändert ggü. 17:00: Journal-Stand 12.06., HPE-long-Limit (45 $) weiter ohne Fill, 0 geschlossen; der Mean-Reversion-Umbau (16.06.) ist mandatlich vollzogen, aber noch kein neuer Trade. Score 6.",
+        "punkte": [
+          "Erster Mean-Reversion-Trade steht aus; Statistik ab Trade 1 mitschreiben (Regel 12)."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Unverändert: 3/3 Slots durch pending Halbleiter-Limits (MU/INTC/AMD seit 13.06.) belegt, 0 Fills, 'KEIN TRADE' am 16.06. ('MOMENTUM: 0 neue'). Diszipliniertes Warten, aber handlungsunfähig bis zur Auflösung. Score 6.",
+        "punkte": [
+          "Slots 3/3 blockiert — keine neuen Empfehlungen möglich; Markt 15.06. als 'makro-getrieben' notiert (Top-Gainer außerhalb des Universums)."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "4 offen: TQQQ (R-001, Engine C, gehebelt) + LRCX (R-002, Engine A, gefüllt 15.06.) + MU/INTC (Engine A, pending); CAT verfallen. summeR 0, Expectancy null, 0 geschlossen. Regelkonformer Aufbau, aber gehebeltes TQQQ-Beta bleibt kritisch und der Edge ist unbewiesen. Score 6.",
+        "punkte": [
+          "Engine-A-Halbleiter-Cluster (LRCX/MU/INTC) wächst — Beta-Budget/8-%-Deckel im Auge behalten; summeR 0, kein geschlossener Trade."
+        ]
+      },
+      "vergleich": "Erster 22:00-Schluss mit beidseitig frischen Daten — und ein Tag, der Defensive belohnte. Risikoadjustiert ist heute der Beleg für F-S-001/H2: Speku führt nominal noch (+1,10 %), ist aber im freien Fall — die 100-%-Quantum-Konzentration spülte Montags +4,86 % in zwei Tagen auf +1,10 % zurück, weil alle drei Titel synchron ~9 % vom Hoch nachgaben. Das Schatten-Depot (+0,90 %) zeigt die Gegenthese der Konstruktion: Es nahm CEG mechanisch am eigenen Ziel 268 mit (+10,62 %, erster realisierter Gewinn) und sitzt nun auf 68 % Cash — die Subtraktions-+-Cash-Logik dämpft den Down-Tag sichtbar (Schatten > Haupt, H6-Messlatte a hält). Haupt (+0,30 %) vollzog den überfälligen NVDA-Zeit-Exit und ist mit 70 % Cash am defensivsten, zahlt aber ~1,8 Pp Lateness-Kosten für die 2 Tage Verzögerung. Fazit des Tages: An einem Tag mit synchronem Sektor-Rücksetzer schlägt mechanische Gewinnsicherung + Cash das voll investierte Konzentrations-Buch — genau die risikoadjustierte Logik hinter dem Schatten-Design. Rangfolge Tagesrendite: Speku +1,10 % > Schatten +0,90 % > Haupt +0,30 % (Trajektorie aber klar zugunsten der defensiveren Depots).",
+      "lektionen": [
+        "H2/F-S-001 materialisiert: Der synchrone Quantum-Drawdown erreichte ~−9 % vom Mo-Hoch (IONQ jetzt unter Einstand) und spülte Speku von +4,86 % auf +1,10 % zurück — die 100-%-Konzentration amplifiziert beide Richtungen. Knapp unter der >10-%-SKILL-Messlatte; der Prozess-Malus ist die fehlende Risikomaßnahme über beide Abwärts-Beine, nicht der Marktrückgang.",
+        "F-H-003 (Zeit-Exit) aufgelöst: NVDA endlich bei 208,57 € ausgestiegen (Tag 9, 2 Tage spät, −0,49 %); die Verzögerung kostete ~1,8 Pp ggü. Mo 212,20 €. Disziplin wiederhergestellt, aber die Lateness-Kosten sind die Lehre — Zeit-Management ist so teuer wie Stop-Management.",
+        "Schatten-Disziplin belegt (D7): CEG mechanisch am vorab gesetzten Ziel 268 mitgenommen (+10,62 %, erster realisierter Gewinn), während Haupt Richtung 273 weiterhält. Take-Profit ohne Aufweichen ist die Kehrseite der Stop-Disziplin; D7 misst, ob das engere Ziel klug war."
+      ]
     }
   ]
 }

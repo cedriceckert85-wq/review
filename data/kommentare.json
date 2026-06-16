@@ -1,9 +1,9 @@
 {
-  "stand": "16.06.2026, 17:30 (17:00-Lauf)",
+  "stand": "16.06.2026, 22:30 (22:00-Lauf)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Di 16.06. 17:30: mit dem synchronen Quantum-Rücksetzer auf +1,49 % zurück (IONQ erstmals leicht negativ −1,30 %, höherer Einstand als Speku). Cash-Puffer 54 % + CEG dämpfen ggü. einem voll investierten Quantum-Buch; der Mo-Verzicht auf den RGTI-Chase am +16,7 %-Hoch war richtig (RGTI heute −8 Pp). D3 (RGTI-Verzicht) bleibt offen/trend FALSCH, weil RGTI weiter führt.",
+      "kommentar": "Di 16.06. 22:19 (Schluss): erster realisierter Gewinn — CEG am eigenen Ziel 268 mechanisch mitgenommen (+10,62 %, intraday bis 270,17 €), jetzt 68 % Cash + nur QBTS/IONQ (IONQ −4,19 %). Schatten +0,90 % > Haupt +0,30 %, unter Speku (+1,10 %). Take-Profit ohne Aufweichen ist Disziplin; D7 misst, ob das engere Ziel (268 statt Haupt 273) klug war.",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -90,10 +90,17 @@
           "ticker": "XLP",
           "kurs": 85.43,
           "info": "200 € — Consumer-Staples-Defensive, Stop 82, Ziel 90; erster Einstieg nicht sofort im Minus"
+        },
+        {
+          "datum": "16.06.",
+          "aktion": "Verkauf",
+          "ticker": "NVDA",
+          "kurs": 208.57,
+          "info": "Zeit-Exit (Tag 9, 2 Tage spät) → −0,49 % (−0,34 €); Cash-Quote auf 70 %"
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Di 16.06. 17:30: Haupt-Dashboard auf Mo 19:04 eingefroren — keine frischen Di-Kurse, daher keine neue Bewertung (inhaltlich gilt der Mo-Schluss +0,42 %, alle 5 grün). NVDA-Zeit-Exit (Tag 8/7) heute nicht verifizierbar; bleibt offen bis zum ersten Lauf mit frischem Haupt-Stand.",
+      "kommentar": "Di 16.06. 22:10 (Schluss): +0,30 %, NVDA-Zeit-Exit endlich vollzogen (208,57 €, −0,49 %), Cash 70 % — defensivste Aufstellung. Aber 2 Tage spät (Tag 9 statt 7) = ~1,8 Pp Kosten ggü. Mo 212,20. CEG +6,09 % stark, IWM zurück leicht negativ. F-H-003-Zeit-Exit damit entscheidungsreif (KW25 abschließen).",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
         "NVDA-Zeit-Exit nachholen oder dokumentiert verlängern: Tag 8/7 überschritten, Position seit einer Woche bei 0 % — Zeitmanagement ist so wichtig wie Stop-Disziplin.",
@@ -157,7 +164,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Di 16.06. 17:28: +2,12 % — alle drei Quantum-Titel synchron von den Mo-Hochs zurückgefallen (erster Abwärts-Lockstep, F-S-001 jetzt beidseitig belegt), alle weiter grün. 0 Trades, Deep-Speku 0/3 (TLT-Short/XLF-Long/ITRK-Long regelkonform abgelehnt), kein Fehlalarm. 100 % Quantum bleibt das offene Strukturthema.",
+      "kommentar": "Di 16.06. 22:19 (Schluss): Quantum-Rücksetzer vertieft — +4,86 %→+1,10 % in zwei Tagen, alle drei synchron ~−9 % vom Mo-Hoch (IONQ jetzt −1,01 % unter Einstand). 0 Trades, HALTEN ×3, keine Risikomaßnahme über beide Abwärts-Beine. Score 7→6: nicht der Rücksetzer (PECH), sondern dass die 100-%-Konzentration den Round-Trip amplifiziert und unverändert bleibt (>10-%-Messlatte in Reichweite).",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",

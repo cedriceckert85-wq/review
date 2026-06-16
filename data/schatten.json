@@ -5,37 +5,25 @@
     "regeln": "Start 2000 € am 11.06.2026. Einstieg nur zu auf den Dashboards (oder per Quelle) belegbaren Kursen. Jede Abweichung vom Original braucht eine Messlatte, an der sie später als richtig/falsch bewertet wird. Keine rückwirkenden Änderungen — Fehler bleiben sichtbar."
   },
   "aktuell": {
-    "vermoegen": 2042.09,
-    "rendite": 2.1,
-    "cash": 1100.0,
-    "cashQuote": 53.9,
-    "stand": "16.06.2026, 20:07 (Auto-Kurse)"
+    "vermoegen": 2017.94,
+    "rendite": 0.9,
+    "cash": 1376.56,
+    "cashQuote": 68.2,
+    "stand": "16.06.2026, 22:19 (Schluss; CEG-Ziel 268 ausgeführt)"
   },
   "scoreboard": {
     "richtig": 0,
     "falsch": 3,
-    "offen": 3
+    "offen": 4
   },
   "positionen": [
-    {
-      "ticker": "CEG",
-      "name": "Constellation Energy",
-      "einsatz": 250,
-      "einstand": 242.26,
-      "kurs": 270.17,
-      "rendite": 11.52,
-      "stop": 232,
-      "ziel": 268,
-      "begruendung": "Einzige Haupt-Depot-Position, die ich übernehme: Nuklear/Strom profitiert strukturell von KI-Strombedarf UND von der Öl-Krise (Energiepreise +6 %). Stop bewusst weiter als das Original (232 statt 237) — in einer Nachrichten-Phase mit 3-4 % Tagesschwankung ist ein 2,2 %-Stop Rauschen, kein Risikomanagement.",
-      "stopVerletzt": false
-    },
     {
       "ticker": "QBTS",
       "name": "D-Wave Quantum",
       "einsatz": 400,
       "einstand": 23.83,
-      "kurs": 24.81,
-      "rendite": 4.11,
+      "kurs": 23.94,
+      "rendite": 0.46,
       "stop": 18.6,
       "ziel": 36,
       "begruendung": "Quantum-Kernwette übernommen — die These (kommerzielle Annealing-Erlöse) ist die stärkste der drei Speku-Positionen. Aber: Ich deckle das Quantum-Thema insgesamt auf 650 € statt 770 € und streiche die Nachkauf-Regel ersatzlos.",
@@ -46,8 +34,8 @@
       "name": "IonQ",
       "einsatz": 250,
       "einstand": 58.51,
-      "kurs": 57.77,
-      "rendite": -1.26,
+      "kurs": 56.06,
+      "rendite": -4.19,
       "stop": 46,
       "ziel": 75,
       "begruendung": "Zweite Quantum-Position als Qualitätsführer. RGTI lasse ich bewusst weg — drei hochkorrelierte Titel desselben Themas sind keine drei Positionen, sondern eine große mit dreifachen Gebühren.",
@@ -120,6 +108,17 @@
       "messlatte": "RICHTIG (Reviewer besser), wenn AMZN innerhalb von 3 Wochen unter 229 € fällt (−3 % vom Einstand, Stop-Gefahr). FALSCH (Reviewer verpasst etwas), wenn AMZN 250 € erreicht, ohne vorher unter 230 € zu fallen.",
       "status": "offen",
       "aufloesung": null
+    },
+    {
+      "id": "D7",
+      "datum": "2026-06-16",
+      "depot": "haupt",
+      "original": "Haupt hält CEG weiter (eigenes Ziel 273, Stop 237); CEG-Schluss 16.06. 268,08 € (+6,09 %), Tag 9/10",
+      "meineEntscheidung": "Schatten nimmt CEG bei seinem engeren Ziel 268 € mechanisch mit (Take-Profit, Position glattgestellt, +10,62 % auf den Einsatz)",
+      "begruendung": "Der Schatten hatte CEG bewusst mit engerem Ziel 268 statt Haupt 273 übernommen. CEG handelte intraday bis 270,17 € (Auto-Kurse 20:07) und damit durch die 268er-Marke — der Take-Profit wird mechanisch ausgeführt (ohne Aufweichen, AGENT.md 7b). An einem schwachen Tagesmarkt (Quantum-Pullback, Haupt nur +0,30 %) den belegten Gewinn sichern statt die letzten ~1,8 % bis 273 zu riskieren.",
+      "messlatte": "FALSCH (zu früh verkauft), wenn CEG das Haupt-Ziel 273 € erreicht, ohne vorher unter 262 € zurückzufallen. RICHTIG (Gewinnsicherung war besser), wenn CEG nach dem Verkauf unter 262 € fällt.",
+      "status": "offen",
+      "aufloesung": null
     }
   ],
   "trades": [
@@ -149,6 +148,15 @@
       "kurs": 58.51,
       "einsatz": 250,
       "kommentar": "Start-Bestückung: Quantum auf 2 Titel begrenzt, RGTI bewusst weggelassen"
+    },
+    {
+      "datum": "2026-06-16",
+      "zeit": "22:00",
+      "aktion": "Verkauf",
+      "ticker": "CEG",
+      "kurs": 268.0,
+      "einsatz": 250,
+      "kommentar": "Take-Profit am eigenen Ziel 268 (Haupt-Ziel 273) — CEG intraday bis 270,17 € durch die Marke; Erlös 276.56 €, realisiert +26.56 € (+10,62 %). Erster realisierter Gewinn des Schatten-Depots (D7)."
     }
   ],
   "verlauf": [
@@ -235,6 +243,13 @@
       "schatten": 1.49,
       "haupt": 0.42,
       "speku": 2.12
+    },
+    {
+      "datum": "16.06.",
+      "zeit": "22:00",
+      "schatten": 0.9,
+      "haupt": 0.3,
+      "speku": 1.1
     }
   ]
 }
