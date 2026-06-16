@@ -1,6 +1,328 @@
 {
- "standUtc": "2026-06-15T19:26:41Z",
+ "standUtc": "2026-06-16T18:06:08Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-16T18:06:08Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 19:58 — 4 Positionen HOLD (CEG 270.48 96.8% Ziel, IWM/AMZN/XLP unter Ziel), Depot 2007.10 EUR"
+  },
+  {
+   "zeit": "2026-06-16T17:52:07Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 19:43 — Dashboard Update, Depot 2006.77€"
+  },
+  {
+   "zeit": "2026-06-16T17:45:46Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~19:36"
+  },
+  {
+   "zeit": "2026-06-16T17:20:55Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 17:28 UTC — Equity-Update 2007.36€, SPY 752.56, 4 HOLD"
+  },
+  {
+   "zeit": "2026-06-16T17:14:29Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~19:06"
+  },
+  {
+   "zeit": "2026-06-16T17:05:46Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 19:13 — 4 HOLD, Depot 2007.72€, SPY 752.50"
+  },
+  {
+   "zeit": "2026-06-16T16:59:14Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~18:58"
+  },
+  {
+   "zeit": "2026-06-16T16:50:31Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18:58 — CEG/IWM/AMZN/XLP alle HOLD, Depot 2007.66€, SPY 752.84€"
+  },
+  {
+   "zeit": "2026-06-16T16:47:00Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Hauptlauf 16:46 — NVDA Zeit-Exit @208.57, 4 HOLD, keine Neukaeufe vor FOMC; Depot 2008.67€"
+  },
+  {
+   "zeit": "2026-06-16T16:44:03Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~18:43"
+  },
+  {
+   "zeit": "2026-06-16T16:28:59Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~18:28 — Kurs-Update"
+  },
+  {
+   "zeit": "2026-06-16T16:14:00Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~18:06"
+  },
+  {
+   "zeit": "2026-06-16T15:43:46Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~17:36"
+  },
+  {
+   "zeit": "2026-06-16T15:41:38Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-16 17:30 (17:00-Lauf: Quantum-Abwärts-Lockstep; Haupt-Daten Mo-stale)"
+  },
+  {
+   "zeit": "2026-06-16T15:28:54Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~17:28"
+  },
+  {
+   "zeit": "2026-06-16T15:14:12Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~17:06"
+  },
+  {
+   "zeit": "2026-06-16T14:59:30Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~16:56"
+  },
+  {
+   "zeit": "2026-06-16T14:52:40Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Hauptlauf 2026-06-16 (Tag 4, HOLD x3, 0 Trades)"
+  },
+  {
+   "zeit": "2026-06-16T14:46:04Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~16:36"
+  },
+  {
+   "zeit": "2026-06-16T14:14:32Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~16:06"
+  },
+  {
+   "zeit": "2026-06-16T14:09:09Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Eroeffnung 2026-06-16 — Kurse aktualisiert, Stops OK"
+  },
+  {
+   "zeit": "2026-06-16T13:37:59Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~15:37 — Quantum -3-4% rot, kein MATERIAL"
+  },
+  {
+   "zeit": "2026-06-16T13:07:07Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-16"
+  },
+  {
+   "zeit": "2026-06-16T12:59:29Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 ~14:59 (Flotten-Neustart, speku.html)"
+  },
+  {
+   "zeit": "2026-06-16T12:52:00Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Agenten-Check: Swing-Beschreibung auf Mean-Reversion (Gegentrend) umgestellt — Mandatsaenderung 16.06."
+  },
+  {
+   "zeit": "2026-06-16T12:47:16Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Website: Swing-Anzeigename -> 'Gegentrend' (Vergleich/Agenten/Nav/Woche). Daten-Key swing unveraendert."
+  },
+  {
+   "zeit": "2026-06-16T12:47:13Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Website: 'Elite Swing Agent' -> 'Gegentrend' (Mean-Reversion). Nur Anzeigename, Daten-Key swing unveraendert."
+  },
+  {
+   "zeit": "2026-06-16T12:38:39Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Umbau: Swing -> Mean-Reversion (V4). Mandat/Regeln/Cron auf Gegen-Trend; API-Plumbing (alpaca_sync/trade_eval/Journal/Actions) unveraendert. Momentum-Spec V3 archiviert."
+  },
+  {
+   "zeit": "2026-06-16T12:15:01Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard 2026-06-16 14:14 (Flotten-Neustart, Markt zu)"
+  },
+  {
+   "zeit": "2026-06-16T11:21:29Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard Premarket 2026-06-16 ~13:06 — IONQ/QBTS/RGTI Kurse aktualisiert, kein neues Material."
+  },
+  {
+   "zeit": "2026-06-16T11:00:17Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Flotten-Neustart 2026-06-16 12:59"
+  },
+  {
+   "zeit": "2026-06-16T10:08:53Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Premarket-Scan 16:06 — Quantum +4-8%, Japan-Nuklear-Deal verified, Dashboard aktualisiert"
+  },
+  {
+   "zeit": "2026-06-16T09:45:24Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-16 11:45"
+  },
+  {
+   "zeit": "2026-06-16T09:14:40Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-16 11:14 (Neustart, Markt zu)"
+  },
+  {
+   "zeit": "2026-06-16T08:16:55Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Update Premarket 2026-06-16 — MATERIAL Japan-Nuclear-Deal (SMR/OKLO); Quantum-Kurse aktualisiert; news_log ergänzt"
+  },
+  {
+   "zeit": "2026-06-16T07:16:10Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-16 09:16"
+  },
+  {
+   "zeit": "2026-06-16T06:16:17Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 16.06.2026 08:16"
+  },
+  {
+   "zeit": "2026-06-16T01:42:46Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-16"
+  },
+  {
+   "zeit": "2026-06-16T01:27:00Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-16 (KEIN TRADE: Momentum 3/3 Slots voll, kein News-Drift-Kandidat)"
+  },
+  {
+   "zeit": "2026-06-15T22:28:47Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 16.06.2026"
+  },
+  {
+   "zeit": "2026-06-15T21:22:56Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-15 23:19 (Sonderlauf: L9-Regel-Adoption)"
+  },
+  {
+   "zeit": "2026-06-15T21:14:05Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Reviewer-Fixes (L9): Ablehnen so hart pruefen wie Zustimmen; Kalibrierung statt Ueberkompensation; Ausschlussgrund muss zum Trade-Typ passen (D3/RGTI)"
+  },
+  {
+   "zeit": "2026-06-15T21:12:58Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-15"
+  },
+  {
+   "zeit": "2026-06-15T20:35:13Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-15 22:00"
+  },
+  {
+   "zeit": "2026-06-15T20:22:21Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Abend-Check 2026-06-15 — Tagesabschluss, Depot 2097,20 EUR (HALTEN x3, 0 Trades), IONQ 61,18 / QBTS 26,26 / RGTI 22,70"
+  },
+  {
+   "zeit": "2026-06-15T20:08:04Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Stop-Wache 22:00 — IONQ 61.23/46–75, QBTS 26.55/18.6–36, RGTI 22.72/15.5–28 USD, alle Positionen über Stops, unter Zielen, kein Handeln."
+  },
   {
    "zeit": "2026-06-15T19:26:41Z",
    "agent": "speku",
@@ -86,146 +408,6 @@
    "text": "Speku: Stop-Wache 2026-06-15 19:07 — IONQ 62.71, QBTS 26.70, RGTI 23.29 USD, alle Positionen über Stops, unter Zielen, kein Handeln"
   },
   {
-   "zeit": "2026-06-15T17:06:19Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:58 CEST — alle 5 HOLD (kein Stop/Ziel), Live-Kurse aktualisiert, kein neues Material; Depot 2008.43 EUR; guard OK"
-  },
-  {
-   "zeit": "2026-06-15T16:54:34Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Stop-Wache 18:52 — IONQ 62.75, QBTS 26.60, RGTI 23.31 USD, alle grün, kein Handeln"
-  },
-  {
-   "zeit": "2026-06-15T16:39:10Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Stop-Wache 18:38 — IONQ 62.62 / QBTS 26.52 / RGTI 23.27 USD, alle grün, im Korridor, kein Handeln"
-  },
-  {
-   "zeit": "2026-06-15T16:30:35Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Stop-Wache 2026-06-15 18:29 — Dashboard aktualisiert (IONQ 62,84 / QBTS 26,60 / RGTI 23,24), alle Positionen über Stop & im Plus, kein Handeln"
-  },
-  {
-   "zeit": "2026-06-15T15:42:41Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Stop-Wache 2026-06-15 17:36 — Live-Kurse aktualisiert (IONQ 61.89, QBTS 26.28, RGTI 22.98, alle grün)"
-  },
-  {
-   "zeit": "2026-06-15T15:14:44Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Speku-Slot 17:10 — kein Trade (kein regelkonformer Katalysator), Depot ~2092 EUR vor SPY"
-  },
-  {
-   "zeit": "2026-06-15T14:41:42Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Hauptlauf 16:41 — HALTEN x3, 0 Trades, Depot 2108 EUR vor SPY (kein Trigger)"
-  },
-  {
-   "zeit": "2026-06-15T14:35:21Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 16:43 — alle Positionen HOLD, Stops sicher, Depot 2006.20 EUR"
-  },
-  {
-   "zeit": "2026-06-15T14:32:30Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Kurs-Refresh 16:36 — Fehlalarm korrigiert, Depot 2006.74 EUR, alle Stops sicher"
-  },
-  {
-   "zeit": "2026-06-15T14:27:02Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Hauptlauf 16:26 — XLP 200 EUR Diversifikator-Kauf, IWM-Spiegel gefixt, Depot 2006 EUR"
-  },
-  {
-   "zeit": "2026-06-15T14:13:39Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Stop-Wache 2026-06-15 16:06 — HALTEN x3, Kurse aktualisiert, kein Material"
-  },
-  {
-   "zeit": "2026-06-15T14:09:15Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Eroeffnungs-Check 2026-06-15 15:38 — IONQ 61.82, QBTS 26.26, RGTI 23.16 alle über Stops, keine Trades"
-  },
-  {
-   "zeit": "2026-06-15T13:49:00Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 2026-06-15 09:47 — NVDA 209.70 +2.24%, CEG 259.97 +2.44%, IWM 296.71 +1.53%, AMZN 246.47 +3.31%, SPY 753.21 +1.53%; guard OK; kein neues Material"
-  },
-  {
-   "zeit": "2026-06-15T13:37:42Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Premarket-Scan 2026-06-15 14:58 — Quantum-Sektor +4-8%, kein Material, Stops weit weg"
-  },
-  {
-   "zeit": "2026-06-15T12:58:11Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Update 15.06.2026 14:57 (Fleet-Start, Markt zu)"
-  },
-  {
-   "zeit": "2026-06-15T12:00:37Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 14:15 — NVDA 208.63 -0.10%, CEG 260.37 +0.22%, IWM 297.76 +1.62%, AMZN 243.60 +3.00%, SPY 751.66 +1.24%"
-  },
-  {
-   "zeit": "2026-06-15T10:11:57Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard 12:12 — SPCX-Korrektur (kein heutiges IPO)"
-  },
-  {
-   "zeit": "2026-06-15T10:09:10Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Premarket 2026-06-15 12:08 — MATERIAL: SPCX-IPO heute, alle Stops sicher"
-  },
-  {
-   "zeit": "2026-06-15T09:44:09Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 15.06. 11:42 (Premarket, Markt zu)"
-  },
-  {
-   "zeit": "2026-06-15T08:13:27Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Premarket-Scan 2026-06-15 10:11 — Quantum +6%, Kurse aktualisiert"
-  },
-  {
    "zeit": "2026-06-13T21:23:33Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -238,27 +420,6 @@
    "label": "🔥 RISK",
    "repo": "bots",
    "text": "RISK-Lauf 2026-06-13 (Nachhol Montag-Setup, kein neuer Trade)"
-  },
-  {
-   "zeit": "2026-06-13T11:42:47Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Reflexion 13.06 — Woche 1, n=1 RAUSCHEN, Buch 100% Quantum, +5,25€ RKLB realisiert"
-  },
-  {
-   "zeit": "2026-06-13T10:00:49Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Fix 12:01 - agent-daten-Block in speku.html wiederhergestellt (behebt agent.html-Ladefehler)"
-  },
-  {
-   "zeit": "2026-06-13T10:00:09Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Fix 12:00 - agent-daten-Block in index.html wiederhergestellt (behebt agent.html-Ladefehler auf Vergleichsseite)"
   },
   {
    "zeit": "2026-06-13T09:36:49Z",
@@ -331,55 +492,6 @@
    "text": "Add cloud bot workflows"
   },
   {
-   "zeit": "2026-06-12T18:05:20Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:59:20Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:58:56Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:58:49Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:58:43Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:58:29Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
-   "zeit": "2026-06-12T17:58:26Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18:13 — HOLD x4, Stops fern, kein Material"
-  },
-  {
    "zeit": "2026-06-12T15:40:13Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -448,69 +560,6 @@
    "label": "🤍 SOLID",
    "repo": "bots",
    "text": "SOLID-Lauf 2026-06-12"
-  },
-  {
-   "zeit": "2026-06-12T12:32:53Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-12"
-  },
-  {
-   "zeit": "2026-06-12T12:26:35Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Encoding-Fix + LIVE-Status sauber (Write-Tool statt Set-Content)"
-  },
-  {
-   "zeit": "2026-06-12T12:24:47Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Stufe 1 LIVE: Abrechnung, Bracket-Order-Anbindung, dokumentierte Stufe-1-Regeln"
-  },
-  {
-   "zeit": "2026-06-12T12:17:24Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Phase 0: SOLID+RISK Geruest - Specs, Quant-Pipeline, Journale, GUI (NICHT LIVE)"
-  },
-  {
-   "zeit": "2026-06-12T10:25:58Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Umstellung auf 100.000-USD-Konto: 1R = 1.000 USD, HPE-Order neu skaliert"
-  },
-  {
-   "zeit": "2026-06-12T09:26:58Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "gitignore: Python-Cache ausschliessen"
-  },
-  {
-   "zeit": "2026-06-12T09:25:54Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Alpaca-Paper-Integration: Bracket-Orders, Fill-Sync, Order-Workflow 23:07"
-  },
-  {
-   "zeit": "2026-06-12T01:34:47Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-12"
-  },
-  {
-   "zeit": "2026-06-12T01:20:25Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Initial: Elite Swing Trade Agent - GUI, Journal, Auto-Auswertung, Regelwerk V3"
   }
  ]
 }
