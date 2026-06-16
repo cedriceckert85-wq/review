@@ -9,7 +9,7 @@
       ["haupt",    "📊 Haupt-Depot",   B + "/review/agent.html?a=haupt"],
       ["speku",    "🚀 Speku-Depot",   B + "/review/agent.html?a=speku"],
       ["schatten", "👤 Schatten",      B + "/review/agent.html?a=schatten"],
-      ["swing",    "◆ Swing",          B + "/review/agent.html?a=swing"],
+      ["swing",    "◆ Gegentrend",          B + "/review/agent.html?a=swing"],
       ["solid",    "🤍 SOLID",         B + "/review/agent.html?a=solid"],
       ["risk",     "🔥 RISK",          B + "/review/agent.html?a=risk"],
       ["crypto",   "₿ Crypto-Bot",     B + "/review/agent.html?a=crypto"],
@@ -25,7 +25,7 @@
       ["speku-detail",    "🚀 Speku-Details",    B + "/epmt-dashboard/speku.html"],
       ["manuell",         "🧠 Manuell/Research", B + "/epmt-dashboard/spec.html"],
       ["schatten-detail", "👤 Schatten-Details", B + "/review/schatten.html"],
-      ["swing-detail",    "◆ Swing-Details",     B + "/swing/"],
+      ["swing-detail",    "◆ Gegentrend-Details",     B + "/swing/"],
       ["duo",             "🤍🔥 Bot-Duo-Details", B + "/bots/"],
     ]],
   ];
@@ -102,7 +102,7 @@
     var KEY = "epmt_bot_namen";
     var BOTS = [
       { k: "haupt", def: "Haupt" }, { k: "speku", def: "Speku" }, { k: "schatten", def: "Schatten" },
-      { k: "swing", def: "Swing" }, { k: "solid", def: "SOLID" }, { k: "risk", def: "RISK" }
+      { k: "swing", def: "Gegentrend" }, { k: "solid", def: "SOLID" }, { k: "risk", def: "RISK" }
     ];
     function esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
     function load() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }

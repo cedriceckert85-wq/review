@@ -278,7 +278,7 @@ const AGENTEN = {
     },
   },
   swing: {
-    name: "◆ Elite Swing Agent",
+    name: "◆ Gegentrend",
     details: BASIS + "/swing/",
     laden: async () => {
       const [j, e] = await Promise.all([
@@ -412,7 +412,7 @@ function chartZeichnen() {
       ctx.arc(x(i), y(p[s.k]), s.breite + 0.5, 0, Math.PI * 2); ctx.fill();
     });
   });
-  const namen = { haupt: "Haupt-Depot", speku: "Speku-Depot", schatten: "Schatten", swing: "Swing", solid: "SOLID", risk: "RISK", crypto: "Crypto-Bot" };
+  const namen = { haupt: "Haupt-Depot", speku: "Speku-Depot", schatten: "Schatten", swing: "Gegentrend", solid: "SOLID", risk: "RISK", crypto: "Crypto-Bot" };
   document.getElementById("legende").innerHTML =
     `<span style="color:${AGENT_FARBEN[key]}">●</span> ${namen[key] || key} &nbsp;` +
     `<span style="color:#8e8e93">◌</span> S&P 500 &nbsp;` +
