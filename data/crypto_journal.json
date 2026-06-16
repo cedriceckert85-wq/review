@@ -5,16 +5,7 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {
-    "ETH/USD": {
-      "entry": 1769.1,
-      "notional": 20000.0,
-      "stop": 1627.57,
-      "entryDatum": "2026-06-16",
-      "orderId": "3803ac28-b3ab-445b-8e52-c7616160f1e9",
-      "grund": "Pullback im intakten Aufwaertstrend ausgespielt: ETH hielt Nacht-slow-MA-Region (~1735), regime ok (Kurs>slow, fast>slow, mom +3.1% steigend), BTC fuehrt mit gehaltenem fast-MA-Reclaim+steigendem Momentum -> Regime dreht hoch. Starter 20k (20% Eq), Stop ~1738 (unter slow-MA/Nacht-Tief), Ziel ~1800/1810 dann trailen."
-    }
-  },
+  "positionen": {},
   "trades": [
     {
       "sym": "ETH/USD",
@@ -25,6 +16,16 @@
       "entryDatum": "2026-06-14",
       "exitDatum": "2026-06-15",
       "grund": "Ziel ~1785 erreicht (Kurs ~1783): +174 USD / ~+3.5% realisiert. Vertikaler Move +6.9% von 1718, Momentum +7% ueberdehnt, Markt in Extreme Fear (F&G 18) -> Spike-Gewinn am Ziel gesichert statt bei 30-Min-Eingreif-Latenz Rueckgabe-Risiko einzugehen."
+    },
+    {
+      "sym": "ETH/USD",
+      "entry": 1769.1,
+      "exit": 1791.8,
+      "qty": "11.046500617",
+      "pnlUsd": 250.76,
+      "entryDatum": "2026-06-16",
+      "exitDatum": "2026-06-16",
+      "grund": "Ziel ~1800 erreicht (Hoch 1798,5), Move dort abgeprallt + Momentum kuehlt auf beiden Coins ab (ETH +4,7->+4,3%, BTC +1,74->+1,65%). Alles-oder-nichts-Tool + 30-Min-Latenz + Relief-Rally auf misstrauter Schlagzeile -> Ziel-Disziplin, +~234 USD gesichert statt Rueckgabe-Risiko."
     }
   ],
   "heute": {
@@ -32,9 +33,9 @@
     "trades": 1
   },
   "statistik": {
-    "trades": 1,
-    "gewonnen": 1,
+    "trades": 2,
+    "gewonnen": 2,
     "verloren": 0,
-    "summePnlUsd": 185.62
+    "summePnlUsd": 436.38
   }
 }
