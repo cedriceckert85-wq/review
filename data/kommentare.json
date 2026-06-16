@@ -1,9 +1,9 @@
 {
-  "stand": "15.06.2026, 23:19 (Sonderlauf)",
+  "stand": "16.06.2026, 17:30 (17:00-Lauf)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Sonderlauf 23:19: neue AGENT.md-Regeln (L9, Schritt 7d) übernommen — Verzicht braucht eigene Messlatte + symmetrisches Pro/Contra, Kalibrierung statt Überkompensation, Ausschlussgrund muss zum Trade-Typ passen. Erste Anwendung: bewusst KEIN RGTI-Chase (+16,7 %) und kein Cash-Dump trotz 0/3/3 — Disziplin, nicht Aktionismus. Depot unverändert +3,72 %.",
+      "kommentar": "Di 16.06. 17:30: mit dem synchronen Quantum-Rücksetzer auf +1,49 % zurück (IONQ erstmals leicht negativ −1,30 %, höherer Einstand als Speku). Cash-Puffer 54 % + CEG dämpfen ggü. einem voll investierten Quantum-Buch; der Mo-Verzicht auf den RGTI-Chase am +16,7 %-Hoch war richtig (RGTI heute −8 Pp). D3 (RGTI-Verzicht) bleibt offen/trend FALSCH, weil RGTI weiter führt.",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -93,7 +93,7 @@
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Mo 15.06. (Schluss): +0,42 %, alle 5 Positionen grün — NVDA hat sich ins Plus gedreht (212,20 €, +1,31 %), Stop 199 nie wieder getestet. XLP-Defensive neu, guter Schritt aus der Konzentration. Offen bleibt: NVDA-Zeit-Exit (Tag 8/7) nicht vollzogen und Einstiegs-Bestätigung fehlt.",
+      "kommentar": "Di 16.06. 17:30: Haupt-Dashboard auf Mo 19:04 eingefroren — keine frischen Di-Kurse, daher keine neue Bewertung (inhaltlich gilt der Mo-Schluss +0,42 %, alle 5 grün). NVDA-Zeit-Exit (Tag 8/7) heute nicht verifizierbar; bleibt offen bis zum ersten Lauf mit frischem Haupt-Stand.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
         "NVDA-Zeit-Exit nachholen oder dokumentiert verlängern: Tag 8/7 überschritten, Position seit einer Woche bei 0 % — Zeitmanagement ist so wichtig wie Stop-Disziplin.",
@@ -102,7 +102,7 @@
     },
     "solid": {
       "beschreibung": "Der Evidenz-Bot: handelt nur, was die Deep Research als robust belegt — Long-only-Momentum plus verifizierte News-Drifts. Lieber kein Trade als ein unbelegter.",
-      "kommentar": "Journal-Stand 13.06. (noch kein Montags-Update): 3 Momentum-Limits (MU/INTC/AMD) pending, 0 Fills, 100 % Cash. Halbleiter-lastige Pending-Auswahl.",
+      "kommentar": "Journal-Stand 16.06.: 3 Momentum-Limits (MU/INTC/AMD) seit 13.06. pending, 0 Fills, Slots 3/3 voll → keine neuen Empfehlungen bis zur Auflösung. Diszipliniertes Warten, aber alle Slots durch Halbleiter blockiert.",
       "verbesserungen": [
         "Phase 2 ausbauen: share-basierte Portfolio-Buchführung (eval_v2) und risk-gate-Workflow, damit der volle Spec-Momentum-Kern mit Roll-Logik statt der diskreten Stufe-1-Trades laufen kann.",
         "EDGAR-Filing-Feed anbinden, damit der News-Drift-Satellit deterministische Kandidaten bekommt statt WebSearch-Funde.",
@@ -111,7 +111,7 @@
     },
     "risk": {
       "beschreibung": "Der kontrolliert aggressive Gewinn-Jäger: konzentrierte High-Beta-Wetten (2 % Risiko), Volumen-Spikes früh statt am Buzz-Peak, TQQQ nur bei grünen Regime-Gates — die research-dokumentierten Todesarten sind hart verboten.",
-      "kommentar": "Journal-Stand 12./13.06. (noch kein Montags-Update): R-001 TQQQ (148 Stk) gefüllt, LRCX/CAT pending, Engine D aus, summeR 0. Gehebeltes TQQQ-Beta = kritischer Punkt.",
+      "kommentar": "Journal-Stand 16.06.: 4 offen — TQQQ (R-001, Engine C, gehebelt) + LRCX (R-002, Engine A, 15.06. gefüllt) + MU/INTC pending; CAT verfallen. summeR 0, 0 geschlossen → Expectancy unbewiesen. Gehebeltes TQQQ-Beta bleibt der kritische Punkt.",
       "verbesserungen": [
         "Engine-Statistik von Tag 1 getrennt führen (A/B/C) — die Spec verlangt gepoolte Expectancy nur für A+B, C ist kalendergegated.",
         "FINRA-Short-Interest-Feed für die deaktivierte Engine D nachweisen oder D endgültig streichen.",
@@ -157,7 +157,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Mo 15.06. (Schluss): +4,86 % (RGTI +16,7 % führt). 0 Trades, kein Trigger, Abend-Scout 0 Fehlalarme. 100 % Quantum (F-S-001) bleibt das offene Strukturthema; IONQ-Hauptversammlung Di 16.06. als möglicher Katalysator notiert.",
+      "kommentar": "Di 16.06. 17:28: +2,12 % — alle drei Quantum-Titel synchron von den Mo-Hochs zurückgefallen (erster Abwärts-Lockstep, F-S-001 jetzt beidseitig belegt), alle weiter grün. 0 Trades, Deep-Speku 0/3 (TLT-Short/XLF-Long/ITRK-Long regelkonform abgelehnt), kein Fehlalarm. 100 % Quantum bleibt das offene Strukturthema.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",

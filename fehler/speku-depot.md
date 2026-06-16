@@ -23,7 +23,8 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Update 13.06.2026 (17:00, Sa):** Fr-Schluss — alle drei Quantum-Titel im Plus (RGTI +7,87 %, IONQ +2,15 %, QBTS +0,52 %), Divergenz breit. Kein gemeinsamer Drawdown (kein Stressereignis), Klumpenrisiko strukturell unverändert; Tranche-2-Diversifikation (Space) weiter offen. Kein neuer Trade (Börse zu).
 - **Update 14.06.2026 (17:00, So — Wochen-Review KW24):** Daten eingefroren, kein Stressereignis → Klumpenrisiko weiter ungetestet, aber strukturell unverändert (100 % Quantum nach RKLB-Cover). **PRIO-1-Empfehlung der Woche:** harte Themen-Obergrenze 60–70 % je Thema + Tranche 2 (Space) als erste echte Diversifikation. Der erste gemeinsame Quantum-Drawdown trifft sonst alle drei gleichzeitig.
 - **Update 15.06.2026 (17:00):** Frische Kurse — alle drei Quantum-Titel stark im Plus am SELBEN Tag (RGTI +18,6 %, QBTS +13,2 %, IONQ +9,3 %), Speku +4,60 %. Der Aufwärts-Gleichlauf ist der erste sichtbare Beleg der gemeinsamen Sektor-Sensitivität (auf der Oberseite). Strukturell unverändert 100 % Quantum (857 €), keine Diversifikation, Tranche-2 (Space) nicht ausgeführt (Stabilisierungsregel erst 1 Tag nach SPCX, nicht erfüllt). Das Klumpenrisiko ist damit von „vermutet" zu „auf der Oberseite belegt" gerückt — der teure Test (gemeinsamer Drawdown) steht weiter aus.
-- **Status:** OFFEN
+- **Update 16.06.2026 (17:30):** Erster synchroner ABWÄRTS-Rücksetzer aller drei vom Mo-Hoch — RGTI +16,7 %→+8,12 %, QBTS +13,2 %→+5,63 %, IONQ +9,3 %→+1,98 % (in Preisen ~−7 %, im Lockstep), Speku +4,86 %→+2,12 %. Das ist die erste Abwärts-Demonstration der gemeinsamen Sensitivität — genau das vorhergesagte Muster, jetzt sichtbar. ABER: noch unter der >10-%-Drawdown-Messlatte und ohne realisierten Verlust (alle drei weiter grün auf Einstand, kein Stop in der Nähe). Strukturell weiter 100 % Quantum, kein Theme-Cap, keine Diversifikation. Einstufung bleibt UNKLAR (strukturell), rückt aber Richtung SKILL, sobald ein Rücksetzer die 10-%-Marke aller drei reißt.
+- **Status:** OFFEN (Korrelation jetzt beidseitig belegt — Oberseite 15.06., Unterseite 16.06.; >10-%-Drawdown-Test steht aus)
 
 ### F-S-002 · 2026-06-11 · Nachkauf-Automatik in Story-Aktien
 - **Was passiert ist:** Regel „IONQ < 50 $ / QBTS < 21 $ → aufstocken bis 500 €" — automatisches Averaging-down in unprofitable Spekulationswerte. Die Automatik erhöht genau dann, wenn die These bröckelt.
@@ -34,6 +35,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Update 13.06.2026 (17:00):** IONQ 57,85 $, QBTS 23,37 $ — weit über Triggern (50 $ / 21 $). Kein Trigger.
 - **Update 14.06.2026 (17:00, So — Wochen-Review KW24):** Unverändert, kein Trigger (Daten eingefroren). KW24-Empfehlung: Limit-Automatik durch eine Stabilisierungs-Bedingung ersetzen, bevor je ein Trigger im fallenden Markt feuert — Averaging-down per Limit bleibt der dokumentierte Speku-Killer.
 - **Update 15.06.2026 (17:00):** IONQ 61,92 € (Trigger < 50), QBTS 26,32 € (Trigger < 21) — beide nach der Rally noch weiter von den Triggern entfernt. Kein Trigger; die Streichung der Nachkauf-Automatik war bisher kostenlos (im steigenden Markt nie gebraucht). Der echte Test kommt erst in einem Abwärtsmarkt.
+- **Update 16.06.2026 (17:30):** Nach dem Rücksetzer IONQ 57,75 € (Trigger < 50), QBTS 24,56 € (Trigger < 21) — beide weiter klar über den (gestrichenen) Trigger-Niveaus. Kein Trigger. Der Pullback bringt die Trigger erstmals wieder in Sichtweite, der echte Abwärts-Test steht aber weiter aus.
 - **Status:** OFFEN
 
 ### F-S-003 · 2026-06-11 · Scout-Fehlalarme als Prozessrisiko
@@ -45,7 +47,8 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Update 12.06.2026 (17:57):** Kein expliziter Fehlalarm-Count im Dashboard sichtbar. Beobachtung läuft weiter.
 - **Update 14.06.2026 (17:00, So — Wochen-Review KW24):** Am Wochenende kein neuer Fehlalarm-Count belegbar (kein Scout-Lauf). KW24-Bilanz der Woche: Tag 1 ~14 → Tag 2 7 → danach unbelegt; Trend rückläufig, aber Ziel 0/Woche noch nicht erreicht und nicht verifizierbar. Bleibt SKILL-FEHLER (Prozess), bis eine volle Woche mit 0 unverifizierten Handels-Auslösern belegt ist.
 - **Update 15.06.2026 (17:00):** NEUER Fehlalarm — Scout meldete um 12:08 „SPCX-IPO heute (15.06.)", tatsächlich war das Listing bereits Fr 12.06. (falsches Datum). Zusätzlich ein unverifizierbarer Alert (Japan-SMR 25 Mrd. $, nur 1 Quelle Chosun → korrekt NICHT gehandelt). Beide wurden abgefangen, aber das Datums-Fehlalarm-Muster (Quellendatum vs. Ereignisdatum) wiederholt sich. Die 0-Fehlalarme-über-eine-Woche-Messlatte ist damit erneut gerissen — Zähler bleibt > 0.
-- **Status:** OFFEN (Fehlalarm-Rate: Tag 1 ~14, Tag 2 7, 15.06. erneut ≥1 Datums-Fehlalarm — Ziel: 0 über eine Woche weiter nicht erreicht)
+- **Update 16.06.2026 (17:30):** Sauberer Tag — keine Material-Events <24 h gemeldet, Deep-Speku lehnte 3 Kandidaten (TLT-Short, XLF-Long, ITRK-Long) regelkonform ab (crowded positioning / Binär-Event-Risiko), kein neuer Fehlalarm belegbar. Erster fehlalarmfreier Lauf nach dem 15.06.-SPCX-Datumsfehler; der 0-über-eine-Woche-Zähler läuft weiter (eine saubere Sitzung reicht nicht).
+- **Status:** OFFEN (Fehlalarm-Rate: Tag 1 ~14, Tag 2 7, 15.06. erneut ≥1 Datums-Fehlalarm, 16.06. sauber — Ziel: 0 über eine Woche weiter nicht erreicht)
 
 ---
 
@@ -62,7 +65,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 
 | Muster | Vorkommen | IDs | Trend |
 |---|---|---|---|
-| Konzentration ohne Risiko-Kennzahl | 1 | F-S-001 | 15.06. Aufwärts-Gleichlauf (alle 3 +9–19 %) belegt die Korrelation auf der Oberseite — Drawdown-Test steht aus |
+| Konzentration ohne Risiko-Kennzahl | 1 | F-S-001 | 16.06. synchroner Abwärts-Rücksetzer (~−7 % alle 3) → Korrelation jetzt BEIDSEITIG belegt; >10-%-Drawdown-Test steht aus |
 | Automatik ohne Stabilisierungs-Bedingung | 1 | F-S-002 | beobachten — kein Trigger |
-| Ungesicherte Datenquelle im Entscheidungsweg | 1 | F-S-003 | 15.06. erneut Datums-Fehlalarm (SPCX) — Muster Quellendatum vs. Ereignisdatum wiederholt sich |
+| Ungesicherte Datenquelle im Entscheidungsweg | 1 | F-S-003 | 15.06. Datums-Fehlalarm (SPCX); 16.06. sauber (0 Fehlalarme) — Wochen-Zähler läuft weiter |
 | Kein AH-Schutz für Extrem-Speku-Short | 1 | F-S-004 (erledigt KW24, PECH) | abgeschlossen — Leitplanke aktiv, neuer Eintrag bei künftigem Breach |

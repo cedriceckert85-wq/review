@@ -717,6 +717,80 @@
         "Regel 3 angewandt auf D3: fundamentale Schwäche war der falsche Frame für RGTI (Momentum, weiter Stop) — der Speku-Trader lag mit dem Halten richtig.",
         "Erste Bewährungsprobe der neuen Regeln bestanden: kein RGTI-Chase am Hoch — R2 verbietet die Überkompensation, die der naive Reflex auf 0/3/3 wäre."
       ]
+    },
+    {
+      "id": "2026-06-16-1700",
+      "datum": "2026-06-16",
+      "zeit": "17:30",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 2008.41,
+        "rendite": 0.42,
+        "cashQuote": 67,
+        "score": 6,
+        "fazit": "Daten-Asymmetrie (L6, jetzt werktags): Das Haupt-Dashboard ist heute auf Mo 15.06. 19:04 eingefroren, obwohl es Di 17:30 ist — Speku stand dagegen live auf Di 17:28. Keine frischen Di-Kurse fürs Haupt-Depot, daher keine neue Bewertung möglich; inhaltlich gilt der Mo-Schluss (+0,42 %, alle 5 Positionen grün, NVDA 212,20 €). Der NVDA-Zeit-Exit (Tag 8/7) ist im letzten verfügbaren Stand weiter offen und heute NICHT verifizierbar. Score unverändert 6 — mangels neuer Trader-Daten.",
+        "punkte": [
+          "Haupt-Dashboard auf Mo 19:04 eingefroren (Tag-Zähler unverändert Tag 8/7 etc.) — Zeitstempel vor jeder Haupt-Bewertung prüfen.",
+          "NVDA-Zeit-Exit (Tag 8/7) heute nicht verifizierbar; bleibt der offene Disziplin-Punkt für den ersten Lauf mit frischem Haupt-Stand.",
+          "Einstiegs-Bestätigungsregel (F-H-002) weiter nicht belegbar eingeführt — keine neuen Einstiege in den Daten."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2042.5,
+        "rendite": 2.12,
+        "cashQuote": 60,
+        "score": 7,
+        "fazit": "Erster Lauf mit Di-Live-Daten: alle drei Quantum-Titel fielen synchron von den Mo-Hochs zurück (RGTI +16,7→+8,12 %, QBTS +13,2→+5,63 %, IONQ +9,3→+1,98 %), Speku +4,86 %→+2,12 %. Prozess heute sauber: gehalten ohne Panik, 0 Trades, Deep-Speku lehnte TLT-Short/XLF-Long/ITRK-Long regelkonform ab (crowded positioning / Binär-Event), kein Fehlalarm. Der synchrone Rücksetzer ist die erste ABWÄRTS-Demonstration des 100-%-Quantum-Klumpenrisikos (F-S-001) — noch unter der >10-%-Drawdown-Messlatte und alle drei weiter grün. Score 7 gehalten: gute Tages-Disziplin, aber die unaufgelöste Konzentration zeigt jetzt beidseitig ihre Zähne.",
+        "punkte": [
+          "Synchroner Quantum-Rücksetzer (~−7 % in Preisen, im Lockstep) belegt F-S-001/H2 jetzt auch auf der Unterseite — bisher nur Oberseite.",
+          "0 Trades, Deep-Speku 0/3 (TLT/XLF/ITRK abgelehnt) — die Skips wirken prozesssauber, kein neuer Reviewer-Dissens (D-Reihe).",
+          "Kein Fehlalarm heute (keine Material-Events <24 h) — sauberer Tag für F-S-003, Wochen-Zähler läuft weiter.",
+          "100 % Quantum, kein Theme-Cap — der >10-%-Drawdown-Test steht weiter aus, ist heute aber spürbar näher gerückt."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2029.73,
+        "rendite": 1.49,
+        "cashQuote": 54.2,
+        "score": 6,
+        "fazit": "Mit dem Quantum-Rücksetzer von +3,72 % auf +1,49 % zurück (QBTS +3,06 %, IONQ jetzt −1,30 % — der höhere Schatten-Einstand 58,51 liegt unter Wasser; CEG +8,29 % Mo-stale). Der Cash-Puffer (54 %) + CEG halten Schatten über dem (eingefrorenen) Haupt, aber heute unter Speku (+2,12 %): der RGTI-Verzicht (D3) kostet erneut Relativ-Performance, denn RGTI führt mit +8,12 % weiter vor QBTS/IONQ. Pluspunkt für die Mo-Disziplin: KEIN RGTI-Chase am +16,7 %-Hoch war richtig — RGTI fiel heute auf +8,12 % zurück, ein Chase hätte nahe dem Top gekauft. Score 6 gehalten.",
+        "punkte": [
+          "Rendite +1,49 %: Quantum-Pullback schlägt durch; IONQ (höherer Einstand als Speku) erstmals leicht negativ (−1,30 %).",
+          "Kein Trade — korrekt: Haupt-Daten stale, Speku hielt, kein neues belegbares Signal (R2: Kalibrierung statt Aktionismus).",
+          "Mo-Disziplin bestätigt: Verzicht auf RGTI-Chase am Hoch war richtig; D3 bleibt aber offen/trend FALSCH, weil RGTI weiter beide anderen anführt.",
+          "CEG-Kurs Mo-stale (262,35) — Schatten-Stand ist ein Misch-Snapshot (Speku live, Haupt eingefroren), ehrlich vermerkt."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Mandatswechsel 16.06.: von Momentum-Swing auf Mean-Reversion (Gegen-Trend, V4) umgestellt, Statistik startet faktisch frisch (n≥30-Gate). Alt-Trade HPE long (T-001, Limit 45 $) läuft regulär aus, 0 Fills, 0 geschlossen. Strategiewechsel vor n≥30-Evidenz der Vorgängerregel ist neutral-bis-heikel, aber als dokumentierter Redesign sauber kommuniziert. Score 6.",
+        "punkte": [
+          "Strategie-Reset (Mean-Reversion statt Momentum) — Score-Kalibrierung ab Trade 1 mitschreiben (Regel 12).",
+          "HPE-Limit (45 $) weiter ohne Fill; erster Mean-Reversion-Trade steht aus."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "3 Momentum-Limits (MU/INTC/AMD) seit 13.06. pending, 0 Fills, Slots 3/3 voll → keine neuen Empfehlungen möglich. Diszipliniertes Warten ('lieber kein Trade als ein unbelegter'), aber die Halbleiter-lastige Pending-Auswahl blockiert nun alle Slots. Score 6.",
+        "punkte": [
+          "Slots 3/3 belegt durch pending Halbleiter-Limits (MU/INTC/AMD) — bis zur Auflösung handlungsunfähig.",
+          "Jede fill-lose Nacht dokumentieren (warum kein Kandidat durchkam) — Kalibrierung von Tag 1."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "4 offene Positionen: TQQQ (R-001, Engine C, gehebelt) + LRCX (R-002, Engine A, 15.06. gefüllt) + MU/INTC (Engine A, pending); CAT (R-003) verfallen. 0 geschlossen, summeR 0, Expectancy null, Stale-Gate bestanden. Regelkonformer Aufbau, aber das gehebelte TQQQ-Beta bleibt der kritische Punkt und der Edge ist mangels geschlossener Trades unbewiesen. Score 6.",
+        "punkte": [
+          "Jetzt 4 offen (TQQQ gehebelt + LRCX + 2 pending) — Engine-A-Cluster Halbleiter (LRCX/MU/INTC), Beta-Budget im Auge behalten.",
+          "summeR 0 / 0 geschlossene Trades — Expectancy weiter unbewiesen; CAT verfiel (kein Fill = kein Schaden)."
+        ]
+      },
+      "vergleich": "Erster echter Di-Lauf, aber mit Daten-Asymmetrie: Speku live (Di 17:28), Haupt eingefroren auf Mo 19:04 — der Haupt-Vergleich gilt nur unter Vorbehalt. Risikoadjustiert ist heute der Tag des Quantum-Klumpenrisikos: Speku (+2,12 %) fiel am stärksten von den Mo-Hochs zurück, weil alle drei Titel synchron nachgaben — genau der gemeinsame Katalysator, vor dem F-S-001/H2 warnen, jetzt erstmals auf der Unterseite sichtbar. Das Schatten-Depot (+1,49 %) zeigt die andere Seite derselben Medaille: Cash-Puffer (54 %) + defensivere CEG-Gewichtung dämpfen den Rücksetzer gegenüber einem voll investierten Quantum-Buch, aber der bewusste RGTI-Verzicht (D3) kostet weiter, weil RGTI auch nach dem Rücksetzer der stärkste der drei bleibt — die L9-Über-Konservatismus-Spur zieht sich fort, ohne dass die richtige Antwort ein RGTI-Chase wäre (R2: der Mo-Verzicht auf den Chase am +16,7 %-Hoch war heute sogar von Vorteil). Haupt bleibt mangels frischer Daten neben der Wertung. Rangfolge nach Tagesrendite (Vorbehalt Haupt): Speku +2,12 % > Schatten +1,49 % > Haupt +0,42 % (stale).",
+      "lektionen": [
+        "H2/F-S-001 beidseitig belegt: Nach dem Mo-Aufwärts-Gleichlauf zeigten die drei Quantum-Titel heute den ersten synchronen ABWÄRTS-Rücksetzer (alle ~−7 % vom Hoch, im Lockstep). Die gemeinsame Sektor-Sensitivität ist damit symmetrisch sichtbar — der teure >10-%-Drawdown-Test steht aber weiter aus (alle drei noch grün).",
+        "L6 gilt auch werktags: Heute war das Haupt-Dashboard auf Mo 19:04 eingefroren, während Speku live auf Di 17:28 stand. Haupt-Aktualität ist auch unter der Woche unzuverlässig — Zeitstempel prüfen, Haupt-Score nie auf vermeintlich neue Daten stützen.",
+        "L9/R2 in der Praxis bestätigt: Der Mo-Verzicht auf den RGTI-Chase am +16,7 %-Hoch war heute von Vorteil (RGTI −8 Pp auf +8,12 %) — Kalibrierung statt Cash-/Chase-Aktionismus zahlt sich aus; D3 bleibt dennoch offen/trend FALSCH, weil RGTI weiter beide anderen anführt."
+      ]
     }
   ]
 }
