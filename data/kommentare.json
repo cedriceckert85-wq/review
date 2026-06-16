@@ -11,8 +11,8 @@
       ]
     },
     "swing": {
-      "beschreibung": "Durchsucht jeden Abend 20+ Aktien (S&P 500, Nasdaq, DAX, EuroStoxx) per Deep Research — und handelt maximal DEN einen besten Trade, sonst keinen.",
-      "kommentar": "Journal-Stand 12.06. (noch kein Montags-Update): HPE-Limit @ 45,00 pending, 0 Fills, ~99,75 % Cash, 0R. Disziplin intakt, aber erster echter Fill steht weiter aus.",
+      "beschreibung": "Gegen-Trend-Bot (Mean-Reversion): fadet jeden Abend messbare statistische Extreme statt Stärke zu kaufen — kauft überverkaufte Dips (RSI(2)<10, Z-Score≤−2/Bollinger) im Aufwärtstrend ÜBER der 200-Tage-Linie, shortet überkaufte Spikes DARUNTER. Ziel = Rückkehr zum Mittelwert (Haltedauer ≤3 Tage, Limit-Entry), Stop = Invalidation. Ein harter News-Katalysator ist hier ein AUSSCHLUSSgrund (Trendbruch statt Dip = fallendes Messer). Max. 1 Trade/Tag, sonst keiner.",
+      "kommentar": "Umbau 16.06.2026: von Momentum-Swing auf Mean-Reversion (Gegen-Trend) umgestellt — Mandat/Regeln (V4)/Website neu, API-Plumbing (Alpaca-Konto PA34N7DVVXE5, Bracket-Orders, Eval/Sync) unverändert. Statistik startet faktisch frisch (n≥30-Gate). Alttrade T-001 (HPE long) läuft regulär aus. Erster Mean-Reversion-Lauf heute 22:31.",
       "verbesserungen": [
         "Score-Kalibrierung von Anfang an mitschreiben: Ab 30 Trades muss belegbar sein, dass 85er-Scores öfter gewinnen als 70er — sonst ist der Score Dekoration (Regel 12).",
         "DAX/EuroStoxx-Kandidaten laufen nur in der Yahoo-Simulation, nicht als echte Paper-Orders (Alpaca ist US-only) — bei häufigen EU-Empfehlungen IBKR-Paper als Stufe 2 erwägen.",
