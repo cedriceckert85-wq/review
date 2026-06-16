@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-16T19:24:01Z",
+ "standUtc": "2026-06-16T19:29:41Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-16T19:29:41Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 21:13 — Depot 2006.33€, alle 4 HOLD, CEG naehert sich Ziel"
+  },
   {
    "zeit": "2026-06-16T19:24:01Z",
    "agent": "speku",
@@ -343,13 +350,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Abend-Check 2026-06-15 — Tagesabschluss, Depot 2097,20 EUR (HALTEN x3, 0 Trades), IONQ 61,18 / QBTS 26,26 / RGTI 22,70"
-  },
-  {
-   "zeit": "2026-06-15T20:08:04Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Stop-Wache 22:00 — IONQ 61.23/46–75, QBTS 26.55/18.6–36, RGTI 22.72/15.5–28 USD, alle Positionen über Stops, unter Zielen, kein Handeln."
   },
   {
    "zeit": "2026-06-15T18:51:40Z",
