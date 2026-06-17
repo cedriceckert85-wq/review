@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T18:50:33Z",
+ "standUtc": "2026-06-17T19:00:17Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T19:00:17Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Persoenliche Reise-Weltkarte (weltkarte.html) - interaktiv, Laender antippen, localStorage"
+  },
   {
    "zeit": "2026-06-17T18:50:33Z",
    "agent": "system",
@@ -553,13 +560,6 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Apple-Design + Flotten-Navigationsleiste"
-  },
-  {
-   "zeit": "2026-06-12T12:38:47Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
   }
  ]
 }
