@@ -5,16 +5,7 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {
-    "BTC/USD": {
-      "entry": 65854.25,
-      "notional": 20061.04,
-      "stop": 60585.91,
-      "entryDatum": "2026-06-17",
-      "orderId": "ed59ddba-e743-439d-a4d2-f4ed8657c5d6",
-      "grund": "Breiter Bounce aus dem strukturellen Selloff: BTC (Bellwether) hat slow-MA zurueckerobert (65962>65929, mom +0,4%), Bounce haelt ~1,5h breit (BTC/SOL/LINK/AVAX/LTC alle Kurs>slow, Leader-Momentum bis +2,7%). Gegentrend-Trade (fast<slow noch ueberall) -> tatktisch/eng. Starter 0,20xCash. Stop ~64.800 (unter Stabilisierungs-Basis), Ziel ~66.900 dann trailen."
-    }
-  },
+  "positionen": {},
   "trades": [
     {
       "sym": "ETH/USD",
@@ -35,6 +26,16 @@
       "entryDatum": "2026-06-16",
       "exitDatum": "2026-06-16",
       "grund": "Ziel ~1800 erreicht (Hoch 1798,5), Move dort abgeprallt + Momentum kuehlt auf beiden Coins ab (ETH +4,7->+4,3%, BTC +1,74->+1,65%). Alles-oder-nichts-Tool + 30-Min-Latenz + Relief-Rally auf misstrauter Schlagzeile -> Ziel-Disziplin, +~234 USD gesichert statt Rueckgabe-Risiko."
+    },
+    {
+      "sym": "BTC/USD",
+      "entry": 65854.25,
+      "exit": 65405.56,
+      "qty": "0.297582693",
+      "pnlUsd": -133.52,
+      "entryDatum": "2026-06-17",
+      "exitDatum": "2026-06-17",
+      "grund": "These gescheitert (vordefinierter Ausstieg): breiter Bounce gekippt - alle 8 Coins wieder negatives Momentum, Leader (AVAX/SOL/LTC) zurueck unter slow-MA; BTC klar unter slow-MA (live ~64906 vs slow 65864) und am/unter fast-MA, an Stop-Zone ~64800. Gegentrend-Bounce im strukturellen Baer = dritter Fehlausbruch -> Verlust ~-300 USD geschnitten, Kapital geschont statt Gap-Risiko bei 30-Min-Latenz."
     }
   ],
   "heute": {
@@ -42,9 +43,9 @@
     "trades": 1
   },
   "statistik": {
-    "trades": 2,
+    "trades": 3,
     "gewonnen": 2,
-    "verloren": 0,
-    "summePnlUsd": 436.38
+    "verloren": 1,
+    "summePnlUsd": 302.86
   }
 }
