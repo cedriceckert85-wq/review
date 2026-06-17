@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T18:43:56Z",
+ "standUtc": "2026-06-17T18:50:33Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T18:50:33Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Haupt-Dashboard 17.06. 20:49 CEST — Depot 1998.33€, alle HOLD, CEG nahe Ziel"
+  },
   {
    "zeit": "2026-06-17T18:43:56Z",
    "agent": "speku",
@@ -35,13 +42,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Dashboard-Refresh 2026-06-17 ~20:13"
-  },
-  {
-   "zeit": "2026-06-17T18:11:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-17 20:11"
   },
   {
    "zeit": "2026-06-17T18:09:11Z",
@@ -294,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Hauptlauf 17.06. — alle 4 HOLD, keine Neukaeufe vor FOMC, Depot 2002.00€"
-  },
-  {
-   "zeit": "2026-06-17T14:30:15Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh Hauptlauf 2026-06-17 (Tag 5, HOLD x3, 0 Trades)"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Apple-Design + Flotten-Navigationsleiste"
+  },
+  {
+   "zeit": "2026-06-12T12:38:47Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
   }
  ]
 }
