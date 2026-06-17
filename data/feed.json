@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T16:47:33Z",
+ "standUtc": "2026-06-17T16:50:55Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T16:50:55Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard 17.06. 18:49 CEST — Depot 2000.58€, SPY 749.93, CEG HOLD 271.39, alle 4 Positionen HOLD"
+  },
   {
    "zeit": "2026-06-17T16:47:33Z",
    "agent": "bots",
@@ -294,13 +301,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Premarket 17.06. 13:28 — Depot 2006.04€"
-  },
-  {
-   "zeit": "2026-06-17T11:30:49Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~13:30 — Kurse IONQ 56.06 / QBTS 23.94 / RGTI 20.64; Depot 2021.97 EUR"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
