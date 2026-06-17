@@ -6,21 +6,40 @@
 <title>🌍 Meine Reise-Weltkarte</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1/dist/css/jsvectormap.min.css">
 <style>
-  :root { --bg:#0f1115; --panel:#171a21; --txt:#e8eaed; --muted:#9aa0aa; --accent:#22c55e; }
+  :root { --bg:#0f1115; --panel:#171a21; --txt:#e8eaed; --muted:#9aa0aa; --accent:#22c55e; --line:#2a2f3a; }
   * { box-sizing:border-box; }
-  html,body { margin:0; height:100%; background:var(--bg); color:var(--txt);
+  html,body { margin:0; min-height:100%; background:var(--bg); color:var(--txt);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
-  header { padding:14px 16px 8px; text-align:center; }
+  header { padding:14px 16px 6px; text-align:center; }
   h1 { margin:0; font-size:1.25rem; }
-  #stats { margin-top:6px; font-size:1rem; color:var(--muted); }
-  #stats b { color:var(--accent); font-size:1.15rem; }
-  #map { width:100%; height:70vh; background:var(--panel); border-radius:12px; }
+  #stats { margin-top:6px; font-size:.95rem; color:var(--muted); }
+  #stats b { color:var(--accent); font-size:1.1rem; }
   .wrap { padding:0 12px; }
-  footer { display:flex; gap:10px; align-items:center; justify-content:center;
-    flex-wrap:wrap; padding:12px; color:var(--muted); font-size:.85rem; }
-  button { background:var(--panel); color:var(--txt); border:1px solid #2a2f3a;
-    padding:9px 14px; border-radius:9px; font-size:.9rem; cursor:pointer; }
+  .searchbox { position:relative; max-width:520px; margin:10px auto 6px; }
+  .searchbox input { width:100%; padding:11px 13px; font-size:1rem; border-radius:10px;
+    border:1px solid var(--line); background:var(--panel); color:var(--txt); }
+  #results { position:absolute; left:0; right:0; top:48px; z-index:30; background:var(--panel);
+    border:1px solid var(--line); border-radius:10px; overflow:hidden; display:none; }
+  #results div { padding:10px 13px; cursor:pointer; border-bottom:1px solid var(--line); }
+  #results div:last-child { border-bottom:0; }
+  #results div:hover, #results .active { background:#222633; }
+  #results .ok { color:var(--accent); }
+  #map { width:100%; height:62vh; background:var(--panel); border-radius:12px; }
+  .places { max-width:620px; margin:12px auto 0; }
+  .places h2 { font-size:.95rem; margin:0 0 6px; color:var(--muted); font-weight:600; }
+  .prow { display:flex; gap:8px; }
+  .prow input { flex:1; padding:10px 12px; border-radius:9px; border:1px solid var(--line);
+    background:var(--panel); color:var(--txt); font-size:.95rem; }
+  .chips { margin-top:8px; display:flex; flex-wrap:wrap; gap:7px; }
+  .chip { background:#1d3a2a; color:#b8f5cf; border:1px solid #2e6b48; border-radius:999px;
+    padding:6px 10px; font-size:.85rem; display:flex; align-items:center; gap:7px; }
+  .chip span { cursor:pointer; font-weight:700; opacity:.8; }
+  button { background:var(--panel); color:var(--txt); border:1px solid var(--line);
+    padding:10px 14px; border-radius:9px; font-size:.9rem; cursor:pointer; }
   button:active { background:#222633; }
+  .accent { background:#16351f; border-color:#2e6b48; color:#b8f5cf; }
+  footer { display:flex; gap:10px; align-items:center; justify-content:center;
+    flex-wrap:wrap; padding:14px 12px 26px; color:var(--muted); font-size:.82rem; }
   .hint { flex:1 1 100%; text-align:center; }
 </style>
 </head>
@@ -29,57 +48,185 @@
     <h1>🌍 Meine Reise-Weltkarte</h1>
     <div id="stats">Lade Karte…</div>
   </header>
-  <div class="wrap"><div id="map"></div></div>
+
+  <div class="wrap">
+    <div class="searchbox">
+      <input id="search" type="text" placeholder="Land suchen & markieren (z. B. Malta, Spanien, Thailand)…" autocomplete="off">
+      <div id="results"></div>
+    </div>
+    <div id="map"></div>
+
+    <div class="places">
+      <h2>Weitere Orte (keine eigenen Länder — z. B. Mallorca, Städte, Inseln)</h2>
+      <div class="prow">
+        <input id="placeInput" type="text" placeholder="Ort eingeben, z. B. Mallorca…" autocomplete="off">
+        <button id="placeAdd" class="accent">+ Hinzufügen</button>
+      </div>
+      <div id="chips" class="chips"></div>
+    </div>
+  </div>
+
   <footer>
-    <span class="hint">Tippe ein Land an = <b style="color:var(--accent)">besucht</b> · nochmal tippen = entfernen · zoomen mit + / − oder Wischen</span>
-    <button id="reset">Alle zurücksetzen</button>
+    <span class="hint">Land antippen oder oben suchen = <b style="color:var(--accent)">besucht</b> · nochmal = entfernen · zoomen mit + / − oder Wischen</span>
+    <button id="reset">Alles zurücksetzen</button>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1/dist/jsvectormap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jsvectormap@1/dist/maps/world.js"></script>
   <script>
-    var KEY = "weltkarte_besucht_v1";
-    var TOTAL = 195; // grobe Zahl souveräner Staaten für die %-Anzeige
-    function load() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch(e){ return []; } }
-    function save(arr){ localStorage.setItem(KEY, JSON.stringify(arr)); }
-    function updateStats(n){
-      var pct = Math.round(n / TOTAL * 100);
-      document.getElementById("stats").innerHTML =
-        "<b>" + n + "</b> Länder besucht · " + pct + "% der Welt";
-    }
+  (function(){
+    "use strict";
+    var KEY="weltkarte_besucht_v1", PKEY="weltkarte_orte_v1", TOTAL=195;
 
-    var visited = load();
-    updateStats(visited.length);
+    function loadArr(k){ try { return JSON.parse(localStorage.getItem(k))||[]; } catch(e){ return []; } }
+    function save(){ localStorage.setItem(KEY, JSON.stringify(visited));
+                     localStorage.setItem(PKEY, JSON.stringify(places)); }
+    var visited = loadArr(KEY);
+    var places  = loadArr(PKEY);
+
+    function updateStats(){
+      var pct = Math.round(visited.length/TOTAL*100);
+      document.getElementById("stats").innerHTML =
+        "<b>"+visited.length+"</b> Länder · <b>"+places.length+"</b> Orte · "+pct+"% der Welt";
+    }
+    function norm(s){ return (s||"").toLowerCase()
+      .replace(/ä/g,"a").replace(/ö/g,"o").replace(/ü/g,"u").replace(/ß/g,"ss")
+      .replace(/[^a-z0-9]/g,""); }
+
+    // Deutsche Ländernamen -> ISO-Code (de kann mehrere Aliase via | enthalten)
+    var DICT = [
+      ["AL","Albanien"],["AD","Andorra"],["AT","Österreich"],["BY","Belarus|Weißrussland"],
+      ["BE","Belgien"],["BA","Bosnien und Herzegowina"],["BG","Bulgarien"],["HR","Kroatien"],
+      ["CY","Zypern"],["CZ","Tschechien"],["DK","Dänemark"],["EE","Estland"],["FI","Finnland"],
+      ["FR","Frankreich"],["DE","Deutschland"],["GR","Griechenland"],["HU","Ungarn"],["IS","Island"],
+      ["IE","Irland"],["IT","Italien"],["XK","Kosovo"],["LV","Lettland"],["LI","Liechtenstein"],
+      ["LT","Litauen"],["LU","Luxemburg"],["MT","Malta"],["MD","Moldau|Moldawien"],["MC","Monaco"],
+      ["ME","Montenegro"],["NL","Niederlande|Holland"],["MK","Nordmazedonien|Mazedonien"],["NO","Norwegen"],
+      ["PL","Polen"],["PT","Portugal"],["RO","Rumänien"],["RU","Russland"],["SM","San Marino"],
+      ["RS","Serbien"],["SK","Slowakei"],["SI","Slowenien"],["ES","Spanien"],["SE","Schweden"],
+      ["CH","Schweiz"],["UA","Ukraine"],["GB","Vereinigtes Königreich|Großbritannien|England|UK"],
+      ["VA","Vatikan"],["TR","Türkei"],
+      ["US","Vereinigte Staaten|USA|Amerika"],["CA","Kanada"],["MX","Mexiko"],["BR","Brasilien"],
+      ["AR","Argentinien"],["CL","Chile"],["PE","Peru"],["CO","Kolumbien"],["EC","Ecuador"],
+      ["BO","Bolivien"],["UY","Uruguay"],["PY","Paraguay"],["VE","Venezuela"],["CU","Kuba"],
+      ["DO","Dominikanische Republik"],["CR","Costa Rica"],["PA","Panama"],["GT","Guatemala"],
+      ["CN","China"],["JP","Japan"],["KR","Südkorea"],["KP","Nordkorea"],["IN","Indien"],
+      ["ID","Indonesien|Bali"],["TH","Thailand"],["VN","Vietnam"],["MY","Malaysia"],["SG","Singapur"],
+      ["PH","Philippinen"],["KH","Kambodscha"],["LA","Laos"],["MM","Myanmar"],["NP","Nepal"],
+      ["LK","Sri Lanka"],["PK","Pakistan"],["BD","Bangladesch"],["IR","Iran"],["IQ","Irak"],
+      ["IL","Israel"],["SA","Saudi-Arabien"],["AE","Vereinigte Arabische Emirate|VAE|Dubai|Abu Dhabi"],
+      ["QA","Katar"],["JO","Jordanien"],["LB","Libanon"],["KZ","Kasachstan"],["UZ","Usbekistan"],
+      ["GE","Georgien"],["AM","Armenien"],["AZ","Aserbaidschan"],["MN","Mongolei"],["TW","Taiwan"],
+      ["EG","Ägypten"],["MA","Marokko"],["TN","Tunesien"],["DZ","Algerien"],["LY","Libyen"],
+      ["ZA","Südafrika"],["KE","Kenia"],["TZ","Tansania|Sansibar"],["NG","Nigeria"],["GH","Ghana"],
+      ["ET","Äthiopien"],["SN","Senegal"],["NA","Namibia"],["BW","Botswana"],["ZW","Simbabwe"],
+      ["MZ","Mosambik"],["UG","Uganda"],["MU","Mauritius"],["MG","Madagaskar"],
+      ["AU","Australien"],["NZ","Neuseeland"],["FJ","Fidschi"],["PG","Papua-Neuguinea"]
+    ];
 
     var map = new jsVectorMap({
-      selector: "#map",
-      map: "world",
-      zoomButtons: true,
-      backgroundColor: "transparent",
-      regionsSelectable: true,
-      selectedRegions: visited,
-      regionStyle: {
-        initial: { fill: "#3a3f4b", stroke: "#0f1115", strokeWidth: 0.4 },
-        hover:   { fill: "#5a93d4" },
-        selected:{ fill: "#22c55e" }
-      },
-      onRegionSelected: function () {
-        var sel;
-        try { sel = map.getSelectedRegions(); } catch(e) { sel = visited; }
-        if (!Array.isArray(sel)) sel = Object.keys(sel || {});
-        visited = sel;
-        save(visited);
-        updateStats(visited.length);
+      selector:"#map", map:"world", zoomButtons:true, backgroundColor:"transparent",
+      regionsSelectable:true, selectedRegions:visited.slice(),
+      regionStyle:{ initial:{fill:"#3a3f4b",stroke:"#0f1115",strokeWidth:0.4},
+                    hover:{fill:"#5a93d4"}, selected:{fill:"#22c55e"} },
+      onRegionSelected:function(){
+        if (silent) return;
+        var sel; try { sel = map.getSelectedRegions(); } catch(e){ sel = visited; }
+        visited = Array.isArray(sel) ? sel : Object.keys(sel||{});
+        save(); updateStats();
       }
     });
 
-    document.getElementById("reset").addEventListener("click", function () {
-      if (!confirm("Wirklich ALLE Markierungen löschen?")) return;
-      visited = [];
-      save(visited);
-      // ausgewählte Regionen in der Karte leeren und neu laden ist am robustesten:
-      location.reload();
+    // Englische Namen aus den Kartendaten ergänzen (alle Länder, falls verfügbar)
+    var EN = {};
+    try {
+      var paths = jsVectorMap.maps.world.paths;
+      for (var c in paths) EN[c] = paths[c].name || "";
+    } catch(e){}
+
+    var silent=false;
+    function setRegion(code, on){
+      silent=true;
+      try { if(on) map.setSelectedRegions([code]); else map.clearSelectedRegions([code]); }
+      catch(e){ try { if(on) map.setSelectedRegions(code); else map.clearSelectedRegions(code); } catch(e2){} }
+      silent=false;
+    }
+    function toggleCode(code){
+      var i=visited.indexOf(code);
+      if(i>=0){ visited.splice(i,1); setRegion(code,false); }
+      else { visited.push(code); setRegion(code,true); }
+      save(); updateStats();
+    }
+
+    // ---- Such-Logik ----
+    var search=document.getElementById("search"), results=document.getElementById("results"), active=-1, current=[];
+    function matches(q){
+      q=norm(q); if(!q) return [];
+      var out=[];
+      for(var i=0;i<DICT.length;i++){
+        var code=DICT[i][0], aliases=DICT[i][1].split("|"), en=EN[code]||"";
+        var hit=false, label=aliases[0];
+        var toks=aliases.concat([en, code]);
+        for(var j=0;j<toks.length;j++){ if(norm(toks[j]).indexOf(q)>=0){ hit=true; break; } }
+        if(hit) out.push({code:code, label:label, en:en});
+        if(out.length>=8) break;
+      }
+      return out;
+    }
+    function renderResults(){
+      if(!current.length){ results.style.display="none"; return; }
+      results.innerHTML="";
+      current.forEach(function(m,idx){
+        var d=document.createElement("div");
+        var done=visited.indexOf(m.code)>=0;
+        d.innerHTML=(done?"✓ ":"")+m.label+(m.en&&norm(m.en)!==norm(m.label)?" <span style='color:#9aa0aa'>("+m.en+")</span>":"");
+        if(done) d.className="ok";
+        if(idx===active) d.className+=" active";
+        d.onclick=function(){ pick(m.code); };
+        results.appendChild(d);
+      });
+      results.style.display="block";
+    }
+    function pick(code){
+      toggleCode(code);
+      search.value=""; current=[]; active=-1; results.style.display="none"; search.focus();
+    }
+    search.addEventListener("input",function(){ current=matches(search.value); active=current.length?0:-1; renderResults(); });
+    search.addEventListener("keydown",function(e){
+      if(!current.length) return;
+      if(e.key==="ArrowDown"){ active=(active+1)%current.length; renderResults(); e.preventDefault(); }
+      else if(e.key==="ArrowUp"){ active=(active-1+current.length)%current.length; renderResults(); e.preventDefault(); }
+      else if(e.key==="Enter"){ if(active>=0) pick(current[active].code); e.preventDefault(); }
+      else if(e.key==="Escape"){ results.style.display="none"; }
     });
+    document.addEventListener("click",function(e){ if(!e.target.closest(".searchbox")) results.style.display="none"; });
+
+    // ---- Weitere Orte (frei) ----
+    var pInput=document.getElementById("placeInput"), chips=document.getElementById("chips");
+    function renderChips(){
+      chips.innerHTML="";
+      places.forEach(function(p,idx){
+        var c=document.createElement("div"); c.className="chip";
+        c.innerHTML=p+" <span>×</span>";
+        c.querySelector("span").onclick=function(){ places.splice(idx,1); save(); updateStats(); renderChips(); };
+        chips.appendChild(c);
+      });
+    }
+    function addPlace(){
+      var v=pInput.value.trim(); if(!v) return;
+      if(places.map(norm).indexOf(norm(v))<0){ places.push(v); save(); updateStats(); renderChips(); }
+      pInput.value=""; pInput.focus();
+    }
+    document.getElementById("placeAdd").onclick=addPlace;
+    pInput.addEventListener("keydown",function(e){ if(e.key==="Enter"){ addPlace(); e.preventDefault(); } });
+
+    document.getElementById("reset").addEventListener("click",function(){
+      if(!confirm("Wirklich ALLE Länder UND Orte löschen?")) return;
+      visited=[]; places=[]; save(); location.reload();
+    });
+
+    renderChips(); updateStats();
+  })();
   </script>
 </body>
 </html>
