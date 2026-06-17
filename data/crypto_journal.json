@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {},
+  "positionen": {
+    "BTC/USD": {
+      "entry": 65854.25,
+      "notional": 20061.04,
+      "stop": 60585.91,
+      "entryDatum": "2026-06-17",
+      "orderId": "ed59ddba-e743-439d-a4d2-f4ed8657c5d6",
+      "grund": "Breiter Bounce aus dem strukturellen Selloff: BTC (Bellwether) hat slow-MA zurueckerobert (65962>65929, mom +0,4%), Bounce haelt ~1,5h breit (BTC/SOL/LINK/AVAX/LTC alle Kurs>slow, Leader-Momentum bis +2,7%). Gegentrend-Trade (fast<slow noch ueberall) -> tatktisch/eng. Starter 0,20xCash. Stop ~64.800 (unter Stabilisierungs-Basis), Ziel ~66.900 dann trailen."
+    }
+  },
   "trades": [
     {
       "sym": "ETH/USD",
@@ -29,7 +38,7 @@
     }
   ],
   "heute": {
-    "datum": "2026-06-16",
+    "datum": "2026-06-17",
     "trades": 1
   },
   "statistik": {
