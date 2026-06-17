@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T17:20:52Z",
+ "standUtc": "2026-06-17T17:28:41Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T17:28:41Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-17 ~19:21 — Kurse aktualisiert"
+  },
   {
    "zeit": "2026-06-17T17:20:52Z",
    "agent": "system",
@@ -280,13 +287,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Premarket 17.06. 14:28 — CEG +0.36%, IWM +0.12%, AMZN +0.35%, XLP -0.27%; Depot 2006.50€; FOMC Hold 20:00 CEST (erwartet, kein MATERIAL)"
-  },
-  {
-   "zeit": "2026-06-17T12:29:51Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~14:29"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
