@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T18:03:05Z",
+ "standUtc": "2026-06-17T18:06:46Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T18:06:46Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Dashboard 17.06. 20:04 CEST — FOMC-Hold + Warsh hawkish, SPY -0.66%, alle Positionen HOLD, Depot 1997.13€"
+  },
   {
    "zeit": "2026-06-17T18:03:05Z",
    "agent": "haupt",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Eröffnung 17.06. 14:05 CEST — CEG 268.84, IWM 293.79, AMZN 241.85, XLP 84.81, alle HOLD, Depot 2001.93€"
-  },
-  {
-   "zeit": "2026-06-17T13:51:13Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Scan 17.06. 15:49 — Depot 2003.66€, Live-Kurse aktualisiert"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
