@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-17T17:28:41Z",
+ "standUtc": "2026-06-17T17:36:41Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T17:36:41Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard 17.06. 19:34 CEST — Depot 2000.04€ vs. SPY-B&H 2054.53€"
+  },
+  {
+   "zeit": "2026-06-17T17:35:12Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 17.06.2026 19:35"
+  },
   {
    "zeit": "2026-06-17T17:28:41Z",
    "agent": "speku",
@@ -282,13 +296,6 @@
    "text": "Haupt: Premarket 17.06. 14:43 CEST — CEG 269.37, IWM 292.41, AMZN 246.70, XLP 85.52, SPY 751.23; Depot 2006.63€; FOMC 20:00."
   },
   {
-   "zeit": "2026-06-17T12:36:04Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 17.06. 14:28 — CEG +0.36%, IWM +0.12%, AMZN +0.35%, XLP -0.27%; Depot 2006.50€; FOMC Hold 20:00 CEST (erwartet, kein MATERIAL)"
-  },
-  {
    "zeit": "2026-06-17T05:30:28Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -553,13 +560,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
-  },
-  {
-   "zeit": "2026-06-12T12:35:23Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-12"
   }
  ]
 }
