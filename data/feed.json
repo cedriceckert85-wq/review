@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T18:11:14Z",
+ "standUtc": "2026-06-17T18:14:27Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T18:14:27Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-17 ~20:13"
+  },
   {
    "zeit": "2026-06-17T18:11:14Z",
    "agent": "system",
@@ -294,13 +301,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Eröffnung 17.06. — Hero/coach_state auf Live 15:50 (Depot 2001.93€)"
-  },
-  {
-   "zeit": "2026-06-17T14:08:58Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh Eroeffnung 2026-06-17"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
