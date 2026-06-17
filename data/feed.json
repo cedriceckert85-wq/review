@@ -51,13 +51,6 @@
    "text": "Speku: Dashboard-Refresh 2026-06-17 ~18:43"
   },
   {
-   "zeit": "2026-06-17T16:41:46Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-17 18:41"
-  },
-  {
    "zeit": "2026-06-17T16:35:43Z",
    "agent": "system",
    "label": "🛠 System",
@@ -112,13 +105,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Dashboard-Refresh 2026-06-17 ~17:36"
-  },
-  {
-   "zeit": "2026-06-17T15:36:15Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-17 17:30 (17:00-Lauf: Pre-FOMC-Drift; D7 trend FALSCH; Speku-Automatik >24h offline)"
   },
   {
    "zeit": "2026-06-17T15:35:46Z",
@@ -338,13 +324,6 @@
    "text": "Swing-Lauf 2026-06-16"
   },
   {
-   "zeit": "2026-06-16T20:39:09Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-16 22:30 (22:00-Lauf: CEG-Take-Profit 268; NVDA-Zeit-Exit; Quantum-Round-Trip)"
-  },
-  {
    "zeit": "2026-06-16T18:45:29Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -560,6 +539,27 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Apple-Design + Flotten-Navigationsleiste"
+  },
+  {
+   "zeit": "2026-06-12T12:58:25Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Apple-Design + Flotten-Navigationsleiste"
+  },
+  {
+   "zeit": "2026-06-12T12:38:47Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
+  },
+  {
+   "zeit": "2026-06-12T12:35:23Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-12"
   }
  ]
 }
