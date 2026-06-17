@@ -1,14 +1,14 @@
 {
   "datum": "2026-06-17",
   "label": "live",
-  "standUhr": "21:09",
+  "standUhr": "21:10",
   "swing": 0.0,
-  "speku": -0.25,
+  "speku": -0.28,
   "haupt": -0.01,
-  "solid": -0.02,
-  "risk": -0.83,
-  "schatten": 0.42,
+  "solid": -0.03,
+  "risk": -0.95,
+  "schatten": 0.43,
   "crypto": null,
-  "spy": 1.11,
+  "spy": 1.04,
   "tagesgeld": 0.027
 }
