@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T16:58:36Z",
+ "standUtc": "2026-06-17T17:05:35Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T17:05:35Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard update 17.06. 19:04 CEST — Depot 2000.64€, CEG 272.04."
+  },
   {
    "zeit": "2026-06-17T16:58:36Z",
    "agent": "speku",
@@ -294,13 +301,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Premarket 17.06. 13:58 CEST — Depot 2006.40€ (CEG +0.89%, IWM -0.07%, AMZN -0.15%, XLP +0.13%), FOMC 20:00 CEST, kein MATERIAL."
-  },
-  {
-   "zeit": "2026-06-17T11:51:05Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 17.06. 13:43 CEST — Depot 2005.64€, Futures mixed, FOMC 20:00 CEST"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
