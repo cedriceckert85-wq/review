@@ -935,6 +935,78 @@
         "Neuer Prozess-/Reliability-Risikotyp: Speku-Automatik >24h offline. Eine stillstehende Entscheidungs-Engine auf einem konzentrierten Buch vor einem Binär-Event (FOMC) = keine Reaktionsfähigkeit. Operativer Gap (lokale Autonomie pausiert), aber prozessrelevant — bei Persistenz als formaler F-S-Eintrag zu führen.",
         "R2 in der Praxis: Sowohl Haupt (keine Neukäufe) als auch Schatten (kein Trade) verzichteten korrekt auf Aktionismus vor FOMC — wenn keine Edge da ist, ist Nichthandeln die richtige kalibrierte Entscheidung (nicht zu verwechseln mit dem dokumentierten Über-Konservatismus, der eine vorhandene Edge ablehnt)."
       ]
+    },
+    {
+      "id": "2026-06-17-2200",
+      "datum": "2026-06-17",
+      "zeit": "22:30",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 1993.63,
+        "rendite": -0.32,
+        "cashQuote": 70,
+        "score": 6,
+        "fazit": "Post-FOMC (Fed hielt, ~98 % erwartet): Haupt erstmals leicht negativ (−0,32 %), Markt fadete nach der Entscheidung. Korrekt KEIN Trade auf den Hold (70 % Cash). ABER: CEG steht bei Tag 10/10 (Max-Haltedauer) und wurde NICHT ge-exited — dasselbe Muster wie NVDA (Tag 9, 2 Tage spät). CEG fadete dabei von 271,35 (17:13, nahe Ziel 273) auf 267,26 zurück — die Zeit-Exit-Lücke hat diesmal Aufwärtspotenzial gekostet. Damit n=2 bei 'Zeit-Exit nicht eingehalten' → Gewohnheit statt Einzel-Slip. XLP nahe Stop (83,71 vs 82). Score 6 gehalten, aber durch die wiederkehrende Zeit-Exit-Lücke gedeckelt (CEG ist noch +5,77 %, deshalb kein Downgrade — würde ein Winner dadurch zum Verlierer, fällt der Score).",
+        "punkte": [
+          "Zeit-Exit-Lücke WIEDERHOLT sich (n=2): CEG Tag 10/10 nicht exekutiert wie NVDA Tag 9 — nach eigener Akten-Logik jetzt Gewohnheit, nicht Einzelfehler.",
+          "CEG von 271,35 (nahe Ziel 273) auf 267,26 zurück — die Nicht-Exekution kostete diesmal Upside (anders als bei NVDA, wo es folgenlos war).",
+          "FOMC-Hold korrekt nicht gehandelt, 70 % Cash — Pre/Post-Event-Disziplin gut.",
+          "XLP −2,01 % nahe Stop 82 (83,71) — nächster möglicher mechanischer Exit; IWM −1,03 % zurück negativ."
+        ]
+      },
+      "speku": {
+        "vermoegen": 1996.31,
+        "rendite": -0.18,
+        "cashQuote": 61.8,
+        "score": 5,
+        "fazit": "Voller Round-Trip: Speku +4,86 % (Mo) → −0,18 % (Mi-Schluss) in drei Tagen — die gesamte Quantum-Rally zurückgegeben, alle drei im Lockstep (RGTI +4,11 % als einziger grün, QBTS −1,33 %, IONQ −3,43 %). Score 6→5: NICHT der Marktrückgang (PECH), sondern die Häufung von Prozessmängeln: (1) Entscheidungs-Automatik seit >24h (jetzt ~30h) offline — ein totes Entscheidungs-/Scout-System hielt ein konzentriertes Buch durch das FOMC-Event, (2) 100 % Quantum unverändert, kein Theme-Cap, (3) null Risikomaßnahme über den gesamten Round-Trip. Das Halten an sich ist bei intakten Thesen + fernen Stops vertretbar — der 5er-Score gilt der toten Engine + ungemanagten Konzentration, nicht dem Halten. Erholt sich schnell, sobald die Engine wieder läuft und Risiko steuert.",
+        "punkte": [
+          "Automatik ~30h offline UND konzentriertes Buch durch FOMC getragen — Entscheidungsfähigkeit faktisch null (dominanter Score-Treiber).",
+          "Kompletter Round-Trip +4,86 %→−0,18 %: die 100-%-Konzentration gab die ganze Rally synchron zurück, kein Risikoschritt dagegen.",
+          "RGTI (+4,11 %) hält die Stellung, QBTS/IONQ negativ — >10-%-Einzel-Drawdown aller drei noch nicht erreicht (RGTI grün), aber Depot-Round-Trip ist der Beleg für F-S-001.",
+          "Score 5 gilt Prozess/Reliability, nicht dem Halten selbst (Thesen intakt, Stops fern) — Recovery bei aktiver Engine + Risikosteuerung."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 1995.3,
+        "rendite": -0.24,
+        "cashQuote": 69.0,
+        "score": 6,
+        "fazit": "Leicht negativ (−0,24 %): die zwei Quantum-Reste fielen weiter (QBTS −3,73 %, IONQ −6,53 %), aber 69 % Cash + der realisierte CEG-Gewinn dämpfen — Schatten −0,24 % > Haupt −0,32 % (H6-Messlatte a hält). Kein Trade (R2, keine Edge post-FOMC). EHRLICHE KORREKTUR ggü. 17:00: D7 (CEG-Verkauf 268) trendet NICHT mehr FALSCH — CEG fiel von 271,35 auf 267,26 (unter den Verkaufskurs), das Take-Profit sieht jetzt eher gut aus. Meine 17:00-Lehre (Exit-Über-Konservatismus) war selbst verfrüht. Score 6.",
+        "punkte": [
+          "Cash-Puffer (69 %) wirkt: −0,24 % an einem post-FOMC-Down-Tag, weniger negativ als Haupt — Defensiv-Design trägt.",
+          "D7-Trend gedreht: CEG 267,26 < Verkaufskurs 268 → der Take-Profit war (vorerst) richtig, nicht zu früh; 17:00-Lehre zu schnell gezogen.",
+          "D3 kostet weiter: RGTI (+4,11 %) ist der einzige grüne Quantum-Titel — der ausgeschlossene Name schlägt die gehaltenen QBTS/IONQ erneut.",
+          "Restbuch 100 % Quantum (beide tief rot) — gleiche Konzentration wie Speku, nur mit großem Cash-Puffer abgefedert."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Unverändert: HPE-Limit (45 $) seit 12.06. ungefüllt, 0 geschlossen, kein neuer Mean-Reversion-Trade. n=0 seit dem Umbau. Score 6.",
+        "punkte": [
+          "Kein Trade seit Mandatswechsel — erster Mean-Reversion-Entry steht aus."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "INTC + AMD bleiben offen (gefüllt 16.06.), MU-Limit heute verfallen → 2 Positionen. Korrekt kein neuer Trade ('Fed-Entscheid = zusätzliches Event-Risiko' selbst notiert). 0 geschlossen. Score 6 — saubere Event-Disziplin, Edge unbewiesen.",
+        "punkte": [
+          "MU verfiel (Slot/Ranking), INTC+AMD gehalten; Bot flaggte FOMC-Event-Risiko selbst — gute Zurückhaltung."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "5 Positionen (TQQQ/LRCX/MU/INTC gefüllt + CAT R-006 pending), Positions-Cap (5) erreicht. summeR 0, 0 geschlossen. Tuesday-Selloff hat MU/INTC/AMD/LRCX aus dem Top-5-Ranking gedrängt (Ranking-Drift notiert). Score 6 — voll deployed, gehebeltes TQQQ + Halbleiter-Cluster, Edge unbewiesen.",
+        "punkte": [
+          "Cap (5) erreicht, kein Spielraum; Engine-A-Halbleiter-Cluster + gehebeltes TQQQ — Beta-Budget kritisch, summeR weiter 0."
+        ]
+      },
+      "vergleich": "Post-FOMC-Tag (Fed-Hold wie erwartet, Markt fadete) — alle vier Hauptdepots schlossen leicht negativ, ein sauberer Risiko-Stresstest im Kleinen. Risikoadjustiert bestätigt der Tag die Defensiv-These: Die cash-schweren Depots verloren am wenigsten relativ und behielten Reaktionsspielraum. Speku (−0,18 %) führt zwar nominal, ist aber der klare Verlierer der Prozess-Bewertung (6→5): die gesamte +4,86 %-Quantum-Rally von Montag ist in drei Tagen auf −0,18 % zurückgespült, während die Entscheidungs-Automatik ~30h offline blieb — konzentriert UND unbeaufsichtigt durch ein Makro-Event ist die schlechteste Kombination. Schatten (−0,24 %) demonstriert das Gegenteil: 69 % Cash + realisierter CEG-Gewinn dämpfen, Schatten > Haupt (H6 a). Haupt (−0,32 %) hielt FOMC-diszipliniert still, leistete sich aber die WIEDERHOLUNG der Zeit-Exit-Lücke (CEG Tag 10/10 nicht exekutiert wie NVDA) — n=2, jetzt Gewohnheit. Zwei ehrliche Reviewer-Korrekturen heute: D7 (CEG-Take-Profit 268) trendet nicht mehr FALSCH, sondern eher richtig (CEG fiel unter den Verkaufskurs) — meine 17:00-Lehre vom 'Exit-Über-Konservatismus' war selbst verfrüht und wird getempert. Rangfolge Tagesrendite: Speku −0,18 % > Schatten −0,24 % > Haupt −0,32 % (knapp, alle negativ).",
+      "lektionen": [
+        "Selbstkorrektur (Meta-Lehre): Die 17:00-Lehre 'Über-Konservatismus auch im Exit' (D7 trend FALSCH) war SELBST verfrüht — bis zum Schluss fiel CEG von 271,35 auf 267,26 unter den 268er-Verkaufskurs, das Take-Profit sieht jetzt richtig aus. Lehre über die Lehre: Intraday-Trends nicht zu schnell zu Lektionen erheben; eine Messlatte erst am Stichtag werten, nicht am Zwischenstand (vgl. L3).",
+        "F-H-003 verschärft (Zeit-Exit-Gewohnheit, n=2): CEG Tag 10/10 wurde wie NVDA (Tag 9) nicht am Limit exekutiert — nach eigener Akten-Logik ('zweimal = Gewohnheit') jetzt ein verfestigter SKILL-Bereich. Diesmal kostete es Upside (CEG 271→267). Das Zeit-Management ist die konkreteste offene Disziplinlücke des Haupt-Depots.",
+        "F-S-001 belegt auf Depot-Ebene: Speku hat die komplette +4,86 %-Rally in drei Tagen zurückgegeben (→ −0,18 %), weil 100 % Quantum synchron liefen — der Round-Trip ist der bisher stärkste Beleg, auch ohne dass die >10-%-Einzel-Drawdown-Messlatte (RGTI noch grün) gerissen ist. Verschärfend: offline Entscheidungs-Engine = keine Reaktionsfähigkeit."
+      ]
     }
   ]
 }

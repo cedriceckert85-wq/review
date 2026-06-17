@@ -1,9 +1,9 @@
 {
-  "stand": "17.06.2026, 17:30 (17:00-Lauf)",
+  "stand": "17.06.2026, 22:30 (22:00-Lauf)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Mi 17.06. 17:30: +0,43 % (QBTS −1,38 %, IONQ −4,94 %, beide unter Einstand), realisierter CEG-Gewinn + 68,5 % Cash halten über Haupt (+0,07 %). Kein Trade — bewusst kein Aktionismus vor FOMC (R2). Ehrlich: D7 (CEG-Verkauf 268) trendet FALSCH — CEG stieg auf 271,35 nahe 273, nicht unter 262; das engere Ziel war wohl verfrüht (Exit-seitiger Über-Konservatismus, L9).",
+      "kommentar": "Mi 17.06. 22:18 (Schluss): −0,24 % (QBTS −3,73 %, IONQ −6,53 %), aber 69 % Cash + CEG-Gewinn dämpfen → Schatten > Haupt (−0,32 %). Kein Trade (R2). Ehrliche Korrektur: D7 trendet NICHT mehr FALSCH — CEG fiel auf 267,26 unter den 268er-Verkaufskurs, das Take-Profit war doch richtig; meine 17:00-Exit-Über-Konservatismus-Lehre war selbst verfrüht (L3).",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -100,10 +100,10 @@
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Mi 17.06. 17:20: +0,07 %, Pre-FOMC-Drift, 70 % Cash, bewusst keine Neukäufe vor der 20:00-Entscheidung — gute Event-Disziplin. CEG +7,39 % bei Tag 10/10 nahe Ziel 273 = nächster Zeit-Exit-Test (nach NVDA-Lateness). AMZN gab zurück (+1,70 %), XLP −0,84 %.",
+      "kommentar": "Mi 17.06. 22:10 (Schluss): −0,32 % post-FOMC (Fed-Hold korrekt nicht gehandelt, 70 % Cash). ABER: CEG bei Tag 10/10 NICHT exekutiert (wie NVDA Tag 9) → Zeit-Exit-Lücke n=2 = SKILL-FEHLER; CEG fadete dabei 271→267 (~1,5 % Buchgewinn verschenkt). XLP −2,01 % nahe Stop 82. Zeit-Management ist die konkreteste offene Disziplinlücke.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
-        "NVDA-Zeit-Exit nachholen oder dokumentiert verlängern: Tag 8/7 überschritten, Position seit einer Woche bei 0 % — Zeitmanagement ist so wichtig wie Stop-Disziplin.",
+        "Zeit-Exit-Disziplin abstellen (F-H-003, jetzt SKILL-FEHLER n=2): NVDA (Tag 9) UND CEG (Tag 10/10) beide nicht am Limit exekutiert — CEG verschenkte 271→267. Zeit-Limit hart wie einen Stop behandeln: am Tag X exekutieren ODER dokumentiert mit neuer These verlängern.",
         "Stops aus der Volatilität ableiten (L4/F-H-003): mind. 1 ATR unter dem letzten Swing-Tief; NVDA-Near-Miss 199,88 bleibt der Beleg für einen Stop im Rauschen."
       ]
     },
@@ -164,7 +164,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Mi 17.06. 17:13: milder Weiter-Fade +0,65 % (IONQ −1,78 %), 100 % Quantum unverändert in das 20:00-FOMC-Event. PROZESS-WARNUNG: Dashboard flaggt 'Automatik-Lauf >24h zurück' — Entscheidungs-Engine steht still, konzentriertes Buch UNbeaufsichtigt vor Binär-Event. Score 6 (gestern 7→6): Fade ist PECH, aber offline Automatik + unveränderte Konzentration sind ein echtes Reliability-Manko.",
+      "kommentar": "Mi 17.06. 22:18 (Schluss): voller Round-Trip — +4,86 % (Mo) → −0,18 %, die ganze Quantum-Rally in 3 Tagen zurückgegeben (RGTI +4,11 % einziger grün). Score 6→5: nicht der Markt (PECH), sondern die Häufung — Entscheidungs-Automatik ~30h offline durch FOMC + 100 % Quantum + null Risikoschritt. Halten an sich vertretbar; der 5er gilt der toten Engine + ungemanagten Konzentration.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",
