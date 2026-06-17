@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T17:43:29Z",
+ "standUtc": "2026-06-17T17:51:44Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T17:51:44Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard: Wache 17.06. 19:49 CEST — Depot 2000.35€ vs SPY 2054.53€, CEG HOLD 270.79, FOMC 20:00"
+  },
   {
    "zeit": "2026-06-17T17:43:29Z",
    "agent": "speku",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Premarket 17.06. 15:13 CEST — Depot 2005.51€, SPY 751.37."
-  },
-  {
-   "zeit": "2026-06-17T13:06:04Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 17.06. 14:58 CEST — Depot 2006.67€, SPY 751.10"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
