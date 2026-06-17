@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T17:36:41Z",
+ "standUtc": "2026-06-17T17:43:29Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T17:43:29Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-17 ~19:36"
+  },
   {
    "zeit": "2026-06-17T17:36:41Z",
    "agent": "system",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Premarket 17.06. 14:58 CEST — Depot 2006.67€, SPY 751.10"
-  },
-  {
-   "zeit": "2026-06-17T12:51:15Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 17.06. 14:43 CEST — CEG 269.37, IWM 292.41, AMZN 246.70, XLP 85.52, SPY 751.23; Depot 2006.63€; FOMC 20:00."
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
