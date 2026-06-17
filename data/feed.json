@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-17T18:06:46Z",
+ "standUtc": "2026-06-17T18:11:14Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T18:11:14Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-17 20:11"
+  },
+  {
+   "zeit": "2026-06-17T18:09:11Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 20:04 — news_log MATERIAL-Flags korrigiert (FOMC Basis-Szenario)"
+  },
   {
    "zeit": "2026-06-17T18:06:46Z",
    "agent": "haupt",
@@ -289,13 +303,6 @@
    "text": "Speku: Dashboard-Refresh Eroeffnung 2026-06-17"
   },
   {
-   "zeit": "2026-06-17T14:07:03Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Eröffnung 17.06. 14:05 CEST — CEG 268.84, IWM 293.79, AMZN 241.85, XLP 84.81, alle HOLD, Depot 2001.93€"
-  },
-  {
    "zeit": "2026-06-17T05:30:28Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -553,13 +560,6 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Apple-Design + Flotten-Navigationsleiste"
-  },
-  {
-   "zeit": "2026-06-12T12:38:47Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Fix: 2y-Kurshistorie fuer 12-1-Momentum, R-001 Schema-Normalisierung, Schema-Block in STUFE1"
   }
  ]
 }
