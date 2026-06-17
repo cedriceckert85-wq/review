@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T18:14:27Z",
+ "standUtc": "2026-06-17T18:21:25Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T18:21:25Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Haupt Dashboard 17.06. 20:19 CEST — Depot 1998.42€ (SPY 747.66, +0.3%), HOLD"
+  },
   {
    "zeit": "2026-06-17T18:14:27Z",
    "agent": "speku",
@@ -294,13 +301,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Wache 17.06. 16:13 — Dashboard CEG 270.87, Depot 2002.77€"
-  },
-  {
-   "zeit": "2026-06-17T14:09:38Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Eröffnung 17.06. — Hero/coach_state auf Live 15:50 (Depot 2001.93€)"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
