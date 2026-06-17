@@ -863,6 +863,78 @@
         "F-H-003 (Zeit-Exit) aufgelöst: NVDA endlich bei 208,57 € ausgestiegen (Tag 9, 2 Tage spät, −0,49 %); die Verzögerung kostete ~1,8 Pp ggü. Mo 212,20 €. Disziplin wiederhergestellt, aber die Lateness-Kosten sind die Lehre — Zeit-Management ist so teuer wie Stop-Management.",
         "Schatten-Disziplin belegt (D7): CEG mechanisch am vorab gesetzten Ziel 268 mitgenommen (+10,62 %, erster realisierter Gewinn), während Haupt Richtung 273 weiterhält. Take-Profit ohne Aufweichen ist die Kehrseite der Stop-Disziplin; D7 misst, ob das engere Ziel klug war."
       ]
+    },
+    {
+      "id": "2026-06-17-1700",
+      "datum": "2026-06-17",
+      "zeit": "17:30",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 2001.49,
+        "rendite": 0.07,
+        "cashQuote": 70,
+        "score": 6,
+        "fazit": "Pre-FOMC-Drift: Haupt +0,42 %→+0,30 %→+0,07 % in drei Tagen, nahe Breakeven vor der 20:00-Fed-Entscheidung (Konsens ~98 % Hold). 4 Positionen, 70 % Cash, bewusst keine Neukäufe vor dem Binär-Event — saubere Pre-Event-Disziplin. CEG +7,39 % stark, aber bei Tag 10/10 (Max-Haltedauer) UND nahe Ziel 273 (271,35) — der nächste Zeit-Exit-Prüfpunkt nach der NVDA-Lateness. AMZN gab zurück (+1,70 %), XLP jetzt −0,84 %, IWM +0,49 %. Score 6: defensive Aufstellung angemessen, aber flach und der CEG-Zeit-Exit steht als Disziplintest an.",
+        "punkte": [
+          "Pre-FOMC-Disziplin: 70 % Cash, keine Neukäufe in das Binär-Event — richtiges Risikomanagement.",
+          "CEG bei Tag 10/10 + nahe Ziel 273: nächster Zeit-Exit-Test (nach NVDA 2 Tage zu spät, F-H-003) — wird er diesmal pünktlich exekutiert?",
+          "Depot driftet mit dem Markt auf +0,07 % zurück, aber keine realisierten Verluste — XLP/AMZN gaben Buchgewinne ab.",
+          "Einstiegs-Bestätigungsregel (F-H-002) weiter nicht formalisiert; pre-FOMC ohne neue Einstiege ohnehin kein Test."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2012.95,
+        "rendite": 0.65,
+        "cashQuote": 61,
+        "score": 6,
+        "fazit": "Milder Weiter-Fade (+1,10 %→+0,65 %), 100 % Quantum: QBTS +1,08 %, RGTI +6,53 %, IONQ jetzt −1,78 % (tiefer unter Einstand). PROZESS-WARNUNG: Das Dashboard flaggt 'Automatik-Lauf >24h zurück' — die Entscheidungs-/Scout-Engine des Bots läuft seit >24h NICHT (Kurse via kurse.yml noch live, aber keine Trade-Bewertung). Ein konzentriertes Quantum-Buch UNbeaufsichtigt in ein Binär-FOMC-Event zu tragen ist die ungünstigste Kombination (keine Reaktionsfähigkeit auf Stop-Annäherung/Signal). 0 Trades. Score 6 gehalten (gestern 7→6): der Fade selbst ist mild/PECH, aber die offline Automatik + unveränderte Konzentration sind ein echtes Prozess-/Reliability-Manko.",
+        "punkte": [
+          "Automatik-Lauf >24h offline — Entscheidungs-Engine stalled; Buch läuft auf Autopilot ohne Monitoring, riskant vor FOMC.",
+          "100 % Quantum unverändert in das Binär-Event — kein Theme-Cap, kein Hedge, höchstes Event-Risiko der vier Hauptdepots.",
+          "IONQ −1,78 % (tiefer), QBTS/RGTI noch grün — Lockstep-Fade hält an, ~−10 % vom Mo-Hoch.",
+          "Verbesserung: Automatik-Uptime überwachen — eine stillstehende Engine ist ein ungesicherter Prozess (F-S-003-Familie)."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2008.67,
+        "rendite": 0.43,
+        "cashQuote": 68.5,
+        "score": 6,
+        "fazit": "Mit dem Quantum-Rest weiter zurück auf +0,43 % (QBTS −1,38 %, IONQ −4,94 % — beide jetzt unter Einstand), aber der realisierte CEG-Gewinn + 68 % Cash halten über Haupt (+0,07 %). Kein Trade — bewusst KEINE impulsive Aktion vor FOMC (R2: Kalibrierung statt Aktionismus), keine belegbare Edge für einen Pre-Event-Trade. EHRLICHE Selbstkritik: D7 (CEG-Verkauf bei 268) trendet FALSCH — CEG stieg auf 271,35 (nahe 273), ohne unter 262 zu fallen; das engere Ziel war wahrscheinlich verfrüht. Score 6.",
+        "punkte": [
+          "Disziplinierter Pre-FOMC-Hold (R2) — kein Aktionismus, keine Edge; 68,5 % Cash ist gute Event-Aufstellung.",
+          "D7 trendet FALSCH: CEG 271,35 nahe Ziel 273, nicht unter 262 — der Take-Profit bei 268 sieht verfrüht aus (Exit-seitige Über-Konservatismus, vgl. L9).",
+          "Restbuch 100 % Quantum (QBTS/IONQ, beide negativ) — Spiegel des Speku-Klumpenrisikos, aber mit Cash-Puffer abgefedert.",
+          "Schatten +0,43 % > Haupt +0,07 % (H6-Messlatte a hält); unter Speku (+0,65 %)."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Unverändert: HPE-long-Limit (45 $) seit 12.06. ohne Fill, 0 geschlossen, kein neuer Mean-Reversion-Trade (16./17.06.). Der Umbau ist mandatlich vollzogen, aber die neue Strategie hat noch keinen einzigen Trade produziert. Score 6.",
+        "punkte": [
+          "Seit dem Mandatswechsel kein Trade — erster Mean-Reversion-Entry steht aus; Statistik bei n=0."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Erste Fills! INTC (125,6) und AMD (516,69) am 16.06. gefüllt → 2 offene Positionen; MU-Limit verfallen (Slot-Limit). 17.06. 'KEIN TRADE'. Kapital erstmals deployed, 0 geschlossen. Score 6 — Fortschritt (raus aus 100 % Cash), Edge weiter unbewiesen.",
+        "punkte": [
+          "INTC + AMD gefüllt (16.06.) — erste Positionen; MU verfiel am Slot-Limit. Halbleiter-Cluster, 0 geschlossene Trades."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "4 gefüllt: TQQQ (Engine C, gehebelt) + LRCX/MU/INTC (Engine A, MU+INTC neu 16.06.), CAT R-006 neu pending; CAT R-003 verfallen. summeR 0, Expectancy null, 0 geschlossen. Engine-A-Halbleiter-Cluster wächst spürbar. Score 6 — regelkonformer Aufbau, aber Konzentration + gehebeltes TQQQ-Beta + unbewiesener Edge.",
+        "punkte": [
+          "Jetzt 4 gefüllt (Engine-A-Cluster LRCX/MU/INTC + gehebeltes TQQQ) — Beta-Budget/8-%-Deckel im Blick behalten; summeR weiter 0."
+        ]
+      },
+      "vergleich": "Wednesday war ein Pre-FOMC-Drift-Tag — alle Depots faden Richtung Breakeven vor der 20:00-Fed-Entscheidung. Risikoadjustiert sind die cash-schweren Defensiv-Depots am besten positioniert: Haupt (70 % Cash, +0,07 %, keine Neukäufe) und Schatten (68,5 % Cash, +0,43 %, kein impulsiver Trade) tragen das Binär-Event mit Puffer und Reaktionsspielraum. Speku (61 % Cash, +0,65 %) führt nominal noch, hat aber die ungünstigste Event-Aufstellung: 100 % Quantum UND eine seit >24h stillstehende Entscheidungs-Automatik — konzentriert und unbeaufsichtigt zugleich. Das Schatten-Design (Subtraktion + Cash) zeigt seine Defensiv-Stärke erneut (Schatten > Haupt, H6 a hält), aber heute liefert es auch eine ehrliche Gegenrechnung: D7 (CEG-Take-Profit bei 268) trendet FALSCH, weil CEG auf 271,35 nahe 273 stieg — die Exit-seitige Über-Konservatismus ist der Spiegel der von L9 dokumentierten Entry-seitigen Vorsicht. Rangfolge Tagesrendite: Speku +0,65 % > Schatten +0,43 % > Haupt +0,07 %; die FOMC-Entscheidung um 20:00 wird die nächste echte Differenzierung bringen (Auswertung im 22:00-Lauf).",
+      "lektionen": [
+        "Über-Konservatismus zeigt sich auch im EXIT (D7): Der CEG-Verkauf am engeren Ziel 268 trendet FALSCH (CEG stieg auf 271,35 nahe 273, nicht unter 262) — zu früh Gewinne sichern ist das Exit-seitige Spiegelbild des von L9 dokumentierten zu-leicht-Ablehnens. Lehre: Take-Profit-Ziele genauso kalibrieren wie Entry-Entscheidungen, nicht reflexhaft enger als das Original setzen.",
+        "Neuer Prozess-/Reliability-Risikotyp: Speku-Automatik >24h offline. Eine stillstehende Entscheidungs-Engine auf einem konzentrierten Buch vor einem Binär-Event (FOMC) = keine Reaktionsfähigkeit. Operativer Gap (lokale Autonomie pausiert), aber prozessrelevant — bei Persistenz als formaler F-S-Eintrag zu führen.",
+        "R2 in der Praxis: Sowohl Haupt (keine Neukäufe) als auch Schatten (kein Trade) verzichteten korrekt auf Aktionismus vor FOMC — wenn keine Edge da ist, ist Nichthandeln die richtige kalibrierte Entscheidung (nicht zu verwechseln mit dem dokumentierten Über-Konservatismus, der eine vorhandene Edge ablehnt)."
+      ]
     }
   ]
 }

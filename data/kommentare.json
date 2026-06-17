@@ -1,9 +1,9 @@
 {
-  "stand": "16.06.2026, 22:30 (22:00-Lauf)",
+  "stand": "17.06.2026, 17:30 (17:00-Lauf)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Di 16.06. 22:19 (Schluss): erster realisierter Gewinn — CEG am eigenen Ziel 268 mechanisch mitgenommen (+10,62 %, intraday bis 270,17 €), jetzt 68 % Cash + nur QBTS/IONQ (IONQ −4,19 %). Schatten +0,90 % > Haupt +0,30 %, unter Speku (+1,10 %). Take-Profit ohne Aufweichen ist Disziplin; D7 misst, ob das engere Ziel (268 statt Haupt 273) klug war.",
+      "kommentar": "Mi 17.06. 17:30: +0,43 % (QBTS −1,38 %, IONQ −4,94 %, beide unter Einstand), realisierter CEG-Gewinn + 68,5 % Cash halten über Haupt (+0,07 %). Kein Trade — bewusst kein Aktionismus vor FOMC (R2). Ehrlich: D7 (CEG-Verkauf 268) trendet FALSCH — CEG stieg auf 271,35 nahe 273, nicht unter 262; das engere Ziel war wohl verfrüht (Exit-seitiger Über-Konservatismus, L9).",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -100,7 +100,7 @@
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Di 16.06. 22:10 (Schluss): +0,30 %, NVDA-Zeit-Exit endlich vollzogen (208,57 €, −0,49 %), Cash 70 % — defensivste Aufstellung. Aber 2 Tage spät (Tag 9 statt 7) = ~1,8 Pp Kosten ggü. Mo 212,20. CEG +6,09 % stark, IWM zurück leicht negativ. F-H-003-Zeit-Exit damit entscheidungsreif (KW25 abschließen).",
+      "kommentar": "Mi 17.06. 17:20: +0,07 %, Pre-FOMC-Drift, 70 % Cash, bewusst keine Neukäufe vor der 20:00-Entscheidung — gute Event-Disziplin. CEG +7,39 % bei Tag 10/10 nahe Ziel 273 = nächster Zeit-Exit-Test (nach NVDA-Lateness). AMZN gab zurück (+1,70 %), XLP −0,84 %.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
         "NVDA-Zeit-Exit nachholen oder dokumentiert verlängern: Tag 8/7 überschritten, Position seit einer Woche bei 0 % — Zeitmanagement ist so wichtig wie Stop-Disziplin.",
@@ -109,7 +109,7 @@
     },
     "solid": {
       "beschreibung": "Der Evidenz-Bot: handelt nur, was die Deep Research als robust belegt — Long-only-Momentum plus verifizierte News-Drifts. Lieber kein Trade als ein unbelegter.",
-      "kommentar": "Journal-Stand 16.06.: 3 Momentum-Limits (MU/INTC/AMD) seit 13.06. pending, 0 Fills, Slots 3/3 voll → keine neuen Empfehlungen bis zur Auflösung. Diszipliniertes Warten, aber alle Slots durch Halbleiter blockiert.",
+      "kommentar": "Journal-Stand 17.06.: erste Fills! INTC (125,6) + AMD (516,69) am 16.06. gefüllt → 2 offene Positionen, MU-Limit verfallen. 17.06. 'KEIN TRADE'. Raus aus 100 % Cash, aber 0 geschlossen → Edge unbewiesen.",
       "verbesserungen": [
         "Phase 2 ausbauen: share-basierte Portfolio-Buchführung (eval_v2) und risk-gate-Workflow, damit der volle Spec-Momentum-Kern mit Roll-Logik statt der diskreten Stufe-1-Trades laufen kann.",
         "EDGAR-Filing-Feed anbinden, damit der News-Drift-Satellit deterministische Kandidaten bekommt statt WebSearch-Funde.",
@@ -118,7 +118,7 @@
     },
     "risk": {
       "beschreibung": "Der kontrolliert aggressive Gewinn-Jäger: konzentrierte High-Beta-Wetten (2 % Risiko), Volumen-Spikes früh statt am Buzz-Peak, TQQQ nur bei grünen Regime-Gates — die research-dokumentierten Todesarten sind hart verboten.",
-      "kommentar": "Journal-Stand 16.06.: 4 offen — TQQQ (R-001, Engine C, gehebelt) + LRCX (R-002, Engine A, 15.06. gefüllt) + MU/INTC pending; CAT verfallen. summeR 0, 0 geschlossen → Expectancy unbewiesen. Gehebeltes TQQQ-Beta bleibt der kritische Punkt.",
+      "kommentar": "Journal-Stand 17.06.: 4 gefüllt — TQQQ (Engine C, gehebelt) + LRCX/MU/INTC (Engine A, MU+INTC neu 16.06.), CAT R-006 neu pending. summeR 0, 0 geschlossen → Expectancy unbewiesen. Engine-A-Halbleiter-Cluster wächst — Beta-Budget/8-%-Deckel im Blick.",
       "verbesserungen": [
         "Engine-Statistik von Tag 1 getrennt führen (A/B/C) — die Spec verlangt gepoolte Expectancy nur für A+B, C ist kalendergegated.",
         "FINRA-Short-Interest-Feed für die deaktivierte Engine D nachweisen oder D endgültig streichen.",
@@ -164,7 +164,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Di 16.06. 22:19 (Schluss): Quantum-Rücksetzer vertieft — +4,86 %→+1,10 % in zwei Tagen, alle drei synchron ~−9 % vom Mo-Hoch (IONQ jetzt −1,01 % unter Einstand). 0 Trades, HALTEN ×3, keine Risikomaßnahme über beide Abwärts-Beine. Score 7→6: nicht der Rücksetzer (PECH), sondern dass die 100-%-Konzentration den Round-Trip amplifiziert und unverändert bleibt (>10-%-Messlatte in Reichweite).",
+      "kommentar": "Mi 17.06. 17:13: milder Weiter-Fade +0,65 % (IONQ −1,78 %), 100 % Quantum unverändert in das 20:00-FOMC-Event. PROZESS-WARNUNG: Dashboard flaggt 'Automatik-Lauf >24h zurück' — Entscheidungs-Engine steht still, konzentriertes Buch UNbeaufsichtigt vor Binär-Event. Score 6 (gestern 7→6): Fade ist PECH, aber offline Automatik + unveränderte Konzentration sind ein echtes Reliability-Manko.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",
