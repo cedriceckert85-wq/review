@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-17T16:41:46Z",
+ "standUtc": "2026-06-17T16:47:33Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T16:47:33Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 17.06.2026 18:47"
+  },
+  {
+   "zeit": "2026-06-17T16:44:02Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-17 ~18:43"
+  },
   {
    "zeit": "2026-06-17T16:41:46Z",
    "agent": "system",
@@ -289,13 +303,6 @@
    "text": "Speku: Dashboard-Refresh 2026-06-17 ~13:30 — Kurse IONQ 56.06 / QBTS 23.94 / RGTI 20.64; Depot 2021.97 EUR"
   },
   {
-   "zeit": "2026-06-17T11:21:28Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 17.06. 13:13 — CEG 268.26, IWM 292.08, AMZN 246.00, XLP 85.61, Depot 2005.81€, SPY 750.33; FOMC 20:00 CEST erwartet (97% HOLD), kein Material."
-  },
-  {
    "zeit": "2026-06-17T05:30:28Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -552,13 +559,6 @@
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
-   "text": "Apple-Design + Flotten-Navigationsleiste"
-  },
-  {
-   "zeit": "2026-06-12T12:58:25Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
    "text": "Apple-Design + Flotten-Navigationsleiste"
   }
  ]
