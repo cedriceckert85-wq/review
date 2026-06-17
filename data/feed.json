@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-17T18:28:23Z",
+ "standUtc": "2026-06-17T18:37:01Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-17T18:37:01Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Haupt-Dashboard 17.06. 20:34 CEST — Depo 1996.75€, SPY 746.08, HOLD alle Positionen"
+  },
   {
    "zeit": "2026-06-17T18:28:23Z",
    "agent": "speku",
@@ -294,13 +301,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Scan 17.06. 16:29 CEST — Depot 2002.33€, CEG nahe Ziel."
-  },
-  {
-   "zeit": "2026-06-17T14:22:14Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~16:20"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
