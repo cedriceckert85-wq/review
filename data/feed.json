@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-18T18:34:41Z",
+ "standUtc": "2026-06-18T18:44:12Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T18:44:12Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~20:50"
+  },
+  {
+   "zeit": "2026-06-18T18:42:50Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~20:21"
+  },
   {
    "zeit": "2026-06-18T18:34:41Z",
    "agent": "haupt",
@@ -280,20 +294,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Dashboard-Refresh Speku-Slot 2026-06-18 (kein Trade)"
-  },
-  {
-   "zeit": "2026-06-18T14:52:06Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 16:50 CEST — Dashboard aktualisiert"
-  },
-  {
-   "zeit": "2026-06-18T14:35:39Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 16:34 CEST"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
