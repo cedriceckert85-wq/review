@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-18T17:24:42Z",
+ "standUtc": "2026-06-18T17:29:02Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T17:29:02Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~19:21"
+  },
+  {
+   "zeit": "2026-06-18T17:26:09Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Globalstar-Flag korrigiert"
+  },
   {
    "zeit": "2026-06-18T17:24:42Z",
    "agent": "haupt",
@@ -273,20 +287,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Scan 18.06. 15:50 CEST"
-  },
-  {
-   "zeit": "2026-06-18T13:37:43Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~15:06"
-  },
-  {
-   "zeit": "2026-06-18T13:37:32Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Scan 18.06. 15:35 CEST"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
