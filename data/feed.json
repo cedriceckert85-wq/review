@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T18:05:06Z",
+ "standUtc": "2026-06-18T18:13:40Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T18:13:40Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~20:06"
+  },
   {
    "zeit": "2026-06-18T18:05:06Z",
    "agent": "haupt",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: CEG Ziel-Exit @275 — Journal nachgetragen"
-  },
-  {
-   "zeit": "2026-06-18T14:30:52Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~16:21"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
