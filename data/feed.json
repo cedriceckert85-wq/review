@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T18:44:12Z",
+ "standUtc": "2026-06-18T18:49:43Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T18:49:43Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 20:43 — Depot 2001€"
+  },
   {
    "zeit": "2026-06-18T18:44:12Z",
    "agent": "speku",
@@ -287,13 +294,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Dashboard-Refresh 2026-06-18 ~16:51"
-  },
-  {
-   "zeit": "2026-06-18T14:54:22Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh Speku-Slot 2026-06-18 (kein Trade)"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
