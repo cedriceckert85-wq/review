@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T19:22:05Z",
+ "standUtc": "2026-06-18T19:28:29Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T19:28:29Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 21:13 — Depot 2000€"
+  },
   {
    "zeit": "2026-06-18T19:22:05Z",
    "agent": "speku",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: equity_history-Bereinigung 18.06."
-  },
-  {
-   "zeit": "2026-06-18T15:08:11Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 17:06 — equity_history-Format-Fix"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
