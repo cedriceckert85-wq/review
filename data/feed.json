@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T18:13:40Z",
+ "standUtc": "2026-06-18T18:19:46Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T18:19:46Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 20:13 — Depot 2001€"
+  },
   {
    "zeit": "2026-06-18T18:13:40Z",
    "agent": "speku",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Hauptlauf 18.06. bestaetigt — 3 HOLD, Depot 1997.92EUR"
-  },
-  {
-   "zeit": "2026-06-18T14:31:15Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: CEG Ziel-Exit @275 — Journal nachgetragen"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
