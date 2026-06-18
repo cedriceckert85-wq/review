@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T17:44:01Z",
+ "standUtc": "2026-06-18T17:45:54Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T17:45:54Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 19:45"
+  },
   {
    "zeit": "2026-06-18T17:44:01Z",
    "agent": "speku",
@@ -546,13 +553,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Add cloud bot workflows"
-  },
-  {
-   "zeit": "2026-06-12T15:40:13Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Einheitliche Nav-Komponente"
   },
   {
    "zeit": "2026-06-12T15:40:12Z",
