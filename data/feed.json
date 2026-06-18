@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-18T16:36:47Z",
+ "standUtc": "2026-06-18T16:46:24Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T16:46:24Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 18:46"
+  },
+  {
+   "zeit": "2026-06-18T16:43:33Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~18:36"
+  },
   {
    "zeit": "2026-06-18T16:36:47Z",
    "agent": "haupt",
@@ -282,13 +296,6 @@
    "text": "Haupt: Premarket 18.06. 14:20 — Depot 1996.56€, SPY 744.80€"
   },
   {
-   "zeit": "2026-06-18T12:07:11Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 18.06. 14:05 CEST"
-  },
-  {
    "zeit": "2026-06-18T05:23:29Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -553,13 +560,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Fix GitHub secret setup helper"
-  },
-  {
-   "zeit": "2026-06-12T19:04:29Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Wire Alpaca paper accounts for challenger bots"
   }
  ]
 }
