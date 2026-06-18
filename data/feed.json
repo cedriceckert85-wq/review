@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T17:29:02Z",
+ "standUtc": "2026-06-18T17:36:33Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T17:36:33Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 19:34 CEST — Depot 2003.03€, IWM 294.49 HOLD, AMZN 245.65 HOLD, XLP 83.36 HOLD"
+  },
   {
    "zeit": "2026-06-18T17:29:02Z",
    "agent": "speku",
@@ -280,13 +287,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Eröffnung 18.06. 16:06 CEST — Guard OK, alle 4 HOLD, Depot 1995.26€"
-  },
-  {
-   "zeit": "2026-06-18T13:52:28Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Scan 18.06. 15:50 CEST"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
