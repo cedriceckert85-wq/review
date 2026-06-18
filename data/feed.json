@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T18:19:46Z",
+ "standUtc": "2026-06-18T18:34:41Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T18:34:41Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 20:28 — Depot 2001€"
+  },
   {
    "zeit": "2026-06-18T18:19:46Z",
    "agent": "haupt",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Wache 18.06. 16:34 CEST"
-  },
-  {
-   "zeit": "2026-06-18T14:33:03Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Hauptlauf 18.06. bestaetigt — 3 HOLD, Depot 1997.92EUR"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
