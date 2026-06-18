@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T17:06:19Z",
+ "standUtc": "2026-06-18T17:13:37Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T17:13:37Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~19:06"
+  },
   {
    "zeit": "2026-06-18T17:06:19Z",
    "agent": "haupt",
@@ -289,13 +296,6 @@
    "text": "Haupt: Premarket 18.06. 15:05 CEST — Depot 1996.96€ vs. SPY-B&H 2043.29€"
   },
   {
-   "zeit": "2026-06-18T12:52:16Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 18.06. 14:50 CEST — Depot 1997.42€, Chip-Rally-Bounce"
-  },
-  {
    "zeit": "2026-06-18T05:23:29Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -350,13 +350,6 @@
    "label": "🛠 Review-System",
    "repo": "review",
    "text": "Weltkarte: Länder-Suche per Name (DE+EN) + freie Orte-Liste (Mallorca etc.)"
-  },
-  {
-   "zeit": "2026-06-17T19:00:17Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Persoenliche Reise-Weltkarte (weltkarte.html) - interaktiv, Laender antippen, localStorage"
   },
   {
    "zeit": "2026-06-17T17:35:12Z",
@@ -560,6 +553,13 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Fix GitHub secret setup helper"
+  },
+  {
+   "zeit": "2026-06-12T19:04:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Wire Alpaca paper accounts for challenger bots"
   }
  ]
 }
