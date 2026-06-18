@@ -1,9 +1,9 @@
 {
-  "stand": "18.06.2026, 17:30 (17:00-Lauf)",
+  "stand": "18.06.2026, 22:30 (22:00-Lauf)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Do 18.06. 17:30: D7 aufgelöst — FALSCH. CEG lief bis Ziel 275 (Haupt-Verkauf), ohne unter 262 zu fallen → mein Take-Profit bei 268 war zu früh (~2,6 % verschenkt); L9 gilt auch beim Exit. Scoreboard 0/4/3. Wert heute getragen (Quantum-Kurse wegen Speku-Outage nicht abrufbar), kein verlauf-Punkt. Disziplin ok, der D7-Fehler steht sichtbar im Scoreboard.",
+      "kommentar": "Do 18.06. 22:00 (Schluss): mit dem Quantum-Rebound erholt auf +0,86 % (von getragen −0,25 %), verlässlich via Auto-Kurse 21:13 (QBTS +1,26 %, IONQ −5,74 %). 68 % Cash → weniger Rebound als Speku (+2,07 %), aber auch weniger Drawdown — by design. Kein Trade, kein Trigger. D7 (gestern FALSCH) bleibt im Scoreboard sichtbar (0/4/3).",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -12,7 +12,7 @@
     },
     "swing": {
       "beschreibung": "Gegen-Trend-Bot (Mean-Reversion): fadet jeden Abend messbare statistische Extreme statt Stärke zu kaufen — kauft überverkaufte Dips (RSI(2)<10, Z-Score≤−2/Bollinger) im Aufwärtstrend ÜBER der 200-Tage-Linie, shortet überkaufte Spikes DARUNTER. Ziel = Rückkehr zum Mittelwert (Haltedauer ≤3 Tage, Limit-Entry), Stop = Invalidation. Ein harter News-Katalysator ist hier ein AUSSCHLUSSgrund (Trendbruch statt Dip = fallendes Messer). Max. 1 Trade/Tag, sonst keiner.",
-      "kommentar": "Umbau 16.06.2026: von Momentum-Swing auf Mean-Reversion (Gegen-Trend) umgestellt — Mandat/Regeln (V4)/Website neu, API-Plumbing (Alpaca-Konto PA34N7DVVXE5, Bracket-Orders, Eval/Sync) unverändert. Statistik startet faktisch frisch (n≥30-Gate). Alttrade T-001 (HPE long) läuft regulär aus. Erster Mean-Reversion-Lauf heute 22:31.",
+      "kommentar": "Do 18.06.: Alttrade HPE (T-001) jetzt VERFALLEN (2 Tage ohne Fill) — das Momentum-Ära-Trade ist weg, Depot wieder 100 % flach. Der Mean-Reversion-Umbau (16.06., V4) hat weiter 0 Trades produziert (n=0, n≥30-Gate). Sauber (kein erzwungener Trade), aber die neue Strategie ist unbelegt.",
       "verbesserungen": [
         "Score-Kalibrierung von Anfang an mitschreiben: Ab 30 Trades muss belegbar sein, dass 85er-Scores öfter gewinnen als 70er — sonst ist der Score Dekoration (Regel 12).",
         "DAX/EuroStoxx-Kandidaten laufen nur in der Yahoo-Simulation, nicht als echte Paper-Orders (Alpaca ist US-only) — bei häufigen EU-Empfehlungen IBKR-Paper als Stufe 2 erwägen.",
@@ -171,7 +171,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Do 18.06. 17:28: Dashboard 3. Tag degradiert (Automatik >24h offline), liefert teils Falschdaten ('Nur SPY') — Einzeltitel nicht abrufbar, nur Aggregat +0,87 % (Rebound, unter Vorbehalt). Score 5 fortgeschrieben: die ausgefallene Berichts-/Entscheidungskette ist das dominante Manko, eine Do-Prozessbewertung ist nicht möglich. Schnelle Erholung sobald Engine + Reporting wieder laufen.",
+      "kommentar": "Do 18.06. 22:18 (Schluss): Rebound +2,07 % (von −0,18 % Mi), via Auto-Kurse (QBTS/IONQ) plausibilisiert — die Konzentration bringt den Bounce so synchron wie zuvor den Drawdown. Dashboard 3. Tag degradiert (Falschdaten), Automatik offline → Engine/Reporting bleibt das Manko. Score 5: hoher Tageskurs aus unbeaufsichtigtem Buch ist kein Prozess-Verdienst.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",

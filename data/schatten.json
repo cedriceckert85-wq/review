@@ -9,7 +9,7 @@
     "rendite": 0.86,
     "cash": 1376.56,
     "cashQuote": 68.2,
-    "stand": "18.06.2026, 21:13 (Auto-Kurse)"
+    "stand": "18.06.2026, 22:00 (Schluss; Auto-Kurse 21:13 — Dashboards degradiert, Preis-Feed ok)"
   },
   "scoreboard": {
     "richtig": 0,
@@ -264,6 +264,13 @@
       "schatten": -0.24,
       "haupt": -0.32,
       "speku": -0.18
+    },
+    {
+      "datum": "18.06.",
+      "zeit": "22:00",
+      "schatten": 0.86,
+      "haupt": 0.15,
+      "speku": 2.07
     }
   ]
 }

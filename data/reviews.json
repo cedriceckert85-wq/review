@@ -1079,6 +1079,77 @@
         "L9 auf Exit-Seite BESTÄTIGT (via D7=FALSCH): Über-Konservatismus zeigt sich auch beim Gewinnmitnehmen — ein reflexhaft engeres Take-Profit-Ziel (268 statt Original 273) schneidet Upside ab. Exit-Ziele nicht enger als das Original ohne belegte Edge.",
         "Reliability als Prozess-Dimension: Eine seit 3 Tagen offline Entscheidungs-/Reporting-Kette (Speku) macht das Depot unbewertbar UND unsteuerbar. Datenintegrität/Uptime gehört zur Prozessqualität — ein Depot, dessen Berichtskette ausfällt, ist prozessual schwach unabhängig vom Tageskurs."
       ]
+    },
+    {
+      "id": "2026-06-18-2200",
+      "datum": "2026-06-18",
+      "zeit": "22:30",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 2002.94,
+        "rendite": 0.15,
+        "cashQuote": 73,
+        "score": 6,
+        "fazit": "Daten-eingeschränkt: das Haupt-Dashboard rendert am Schluss ebenfalls Falschdaten (SPY/Tagesgeld-Benchmark statt Positionstabelle) — verlässlich nur die WACHE-Notiz 21:58: 'Depot 2.002,94 €, 3 HOLD'. Also +0,15 %, 3 Positionen (IWM/AMZN/XLP) gehalten, KEINE neuen Trades, XLP NICHT ausgestoppt (Stop 82 hielt). Nach dem CEG-Ziel-Verkauf (275, +8,8 % heute Mittag) sitzt Haupt auf 73 % Cash. Score 6 gehalten — kein neuer per-Position-Datenpunkt, aber Disziplin (Halten, kein Aktionismus) intakt.",
+        "punkte": [
+          "Nur Aggregat verlässlich (Dashboard degradiert): 2.002,94 € / +0,15 %, 3 HOLD, keine Trades (WACHE 21:58).",
+          "XLP nicht ausgestoppt (Stop 82 hielt) — der am Nachmittag drohende mechanische Exit kam nicht.",
+          "CEG-Ziel-Gewinn (+8,8 %) vom Nachmittag gebucht; 73 % Cash = defensiv.",
+          "Per-Position-Schlusskurse nicht extrahierbar — Detail-Bewertung vertagt bis Dashboard-Recovery."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2041.48,
+        "rendite": 2.07,
+        "cashQuote": 61,
+        "score": 5,
+        "fazit": "Erholung setzte sich fort: +2.07 % (von +0,87 % um 17:00, −0,18 % Mi-Schluss) — die Quantum-Namen drehten kräftig nach oben. Diesmal CROSS-VALIDIERT: die Auto-Kurse (21:13) zeigen QBTS +1,26 % und IONQ −5,74 % (beide erholt ggü. Mi), konsistent mit dem Aggregat-Rebound. ABER: Das Dashboard ist 3. Tag degradiert (Automatik >24h offline, Positionstabelle liefert Falschdaten 'Nur SPY') — die Einzeltitel-Bewertung/Engine-Steuerung bleibt aus. Score 5 fortgeschrieben: der Tageskurs erholt, aber die Reporting-/Entscheidungskette ist weiter ausgefallen (das dominante Manko).",
+        "punkte": [
+          "Aggregat +2,07 % (Rebound) — diesmal durch die Auto-Kurse (QBTS/IONQ) plausibilisiert, nicht nur die degradierte Seite.",
+          "Volatilität beidseitig: dieselbe 100-%-Konzentration, die Mo→Mi −5 Pp brachte, bringt jetzt den Rebound — H2/F-S-001 in Aktion.",
+          "Automatik 3. Tag offline, Dashboard liefert Falschdaten — Engine-Steuerung/Reporting bleibt das Reliability-Manko (Score-Treiber).",
+          "Score 5 gilt der ausgefallenen Prozesskette, nicht dem (erholten) Kurs."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2017.24,
+        "rendite": 0.86,
+        "cashQuote": 68.2,
+        "score": 6,
+        "fazit": "Mit dem Quantum-Rebound erholt auf +0,86 % (von getragen −0,25 % um 17:00) — verlässlich, weil die Auto-Kurse (21:13) heute liefen: QBTS 24,13 € (+1,26 %), IONQ 55,15 € (−5,74 %). Der 68 % Cash-Puffer ließ den Schatten weniger vom Rebound mitnehmen als das voll investierte Speku (+2,07 %) — dieselbe Asymmetrie wie auf dem Weg nach unten (das ist das Design, kein Fehler). Kein Trade, keine Stop-/Ziel-Trigger. verlauf-Punkt heute wieder gesetzt (Preis-Feed ok). Score 6.",
+        "punkte": [
+          "+0,86 % via verlässliche Auto-Kurse (21:13) — der gestrige Daten-Gap ist geschlossen, verlauf-Punkt nachgeholt.",
+          "Cash-Puffer dämpft beide Richtungen: weniger Rebound (+0,86 % vs Speku +2,07 %), aber auch weniger Drawdown — by design.",
+          "QBTS zurück im Plus (+1,26 %), IONQ noch −5,74 % (höherer Einstand als Speku) — kein Trigger nahe.",
+          "D7 (gestern FALSCH aufgelöst) bleibt im Scoreboard sichtbar (0/4/3); keine neue Abweichung heute."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "HPE-Limit (45 $) jetzt VERFALLEN (T-001, nach 2 Tagen ohne Fill, Score 85) — das letzte Momentum-Ära-Trade ist weg, der Mean-Reversion-Umbau hat weiter 0 Trades produziert (n=0). 0 offen, 0 geschlossen, 1 verfallen. Score 6 — sauber (kein erzwungener Trade), aber die neue Strategie ist weiter unbelegt.",
+        "punkte": [
+          "HPE verfallen — Depot wieder 100 % flach; erster Mean-Reversion-Entry weiter ausstehend (n=0)."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Unverändert ggü. 17:00: INTC + AMD offen (16.06.), LRCX (S-004) pending, MU verfallen (Earnings-Binärrisiko bewusst gemieden). 0 geschlossen. Score 6 — begründete Selektion, Edge unbewiesen.",
+        "punkte": [
+          "LRCX pending statt MU (Earnings-Risiko) — nachvollziehbare Disziplin; 2 gefüllt + 1 pending."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Unverändert: 5 Positionen (TQQQ/LRCX/MU/INTC gefüllt + CAT R-007 pending), Engine D reaktiviert, summeR 0, 0 geschlossen. CAT verfiel zuvor 2× (Limit weiter fraglich). Score 6 — voll deployed, gehebeltes TQQQ + Halbleiter-Cluster, Edge unbewiesen.",
+        "punkte": [
+          "Engine D reaktiviert; CAT-Limit nach 2 Verfällen weiter beobachten; summeR 0."
+        ]
+      },
+      "vergleich": "Rebound-Schluss mit eingeschränkter Datenlage — beide Haupt-Dashboards rendern am Abend Falschdaten (SPY/Tagesgeld-Benchmark), nur die Aggregate + die Auto-Kurse (Preis-Feed) sind verlässlich. Risikoadjustiert zeigt der Tag die Kehrseite der Konzentration: Speku (+2,07 %) holte als voll investiertes Quantum-Buch am meisten vom Rebound — dieselbe 100-%-Wette, die Mo→Mi den Round-Trip ins Minus trug, liefert jetzt den stärksten Bounce (H2/F-S-001 beidseitig in Aktion). Das Schatten-Depot (+0,86 %) nimmt mit 68 % Cash erwartungsgemäß weniger mit — die Asymmetrie ist das Design (weniger Drawdown UND weniger Rebound), nicht ein Fehler. Haupt (+0,15 %) bleibt nach dem CEG-Ziel-Gewinn defensiv (73 % Cash, 3 HOLD). Wichtig: Speku führt nominal (+2,07 %), bleibt aber prozessual der Schwächste (Score 5), weil die Engine-/Reporting-Kette 3. Tag ausgefallen ist — ein hoher Tageskurs aus einem unbeaufsichtigten, unbewertbaren Buch ist kein Prozess-Verdienst. Rangfolge Tagesrendite: Speku +2,07 % > Schatten +0,86 % > Haupt +0,15 %.",
+      "lektionen": [
+        "Kein neuer Trading-Befund heute (datenbeschränkter Lauf): Der Quantum-Rebound ist die bekannte Kehrseite der Konzentrations-Volatilität (H2/F-S-001), keine neue Erkenntnis — und gemäß der gestrigen L10 (nicht voreilig klassifizieren) wird daraus KEINE neue Lektion gezimmert. Bewusst keine LESSONS-Änderung.",
+        "Operativ präzisiert: Der Preis-Feed (kurse.yml → Auto-Kurse, lief 21:13) ist INTAKT, nur die Dashboard-Seiten-Renderung ist degradiert (Falschdaten auf beiden Seiten). Folge: Schatten verlässlich über Auto-Kurse bewertbar, Speku/Haupt-Einzeltitel nur über die (degradierten) Seiten — daher per-Position vertagt, Aggregate genutzt."
+      ]
     }
   ]
 }
