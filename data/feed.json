@@ -1,110 +1,355 @@
 {
- "standUtc": "2026-06-17T19:00:17Z",
+ "standUtc": "2026-06-18T16:36:47Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T16:36:47Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 18:34 CEST"
+  },
+  {
+   "zeit": "2026-06-18T16:29:32Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~18:30"
+  },
+  {
+   "zeit": "2026-06-18T16:21:41Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 18:19 CEST — Depot 2001.08€, SPY 746.13€"
+  },
+  {
+   "zeit": "2026-06-18T16:13:41Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~18:13"
+  },
+  {
+   "zeit": "2026-06-18T16:06:23Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 18:05 CEST"
+  },
+  {
+   "zeit": "2026-06-18T15:58:28Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:51"
+  },
+  {
+   "zeit": "2026-06-18T15:51:15Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 17:49 CEST"
+  },
+  {
+   "zeit": "2026-06-18T15:43:33Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:45 — IONQ/QBTS/RGTI aktualisiert"
+  },
+  {
+   "zeit": "2026-06-18T15:39:47Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-18 17:30 (17:00-Lauf: CEG-Ziel 275; D7=FALSCH; F-H-003 zurueck auf UNKLAR; neue L10; Speku-Daten-Outage)"
+  },
+  {
+   "zeit": "2026-06-18T15:37:55Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 17:37 — Zeit/Flag-Korrektur"
+  },
+  {
+   "zeit": "2026-06-18T15:36:28Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 15:34 CEST"
+  },
+  {
+   "zeit": "2026-06-18T15:28:38Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:21"
+  },
+  {
+   "zeit": "2026-06-18T15:21:38Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 17:19 CEST — Dashboard aktualisiert"
+  },
+  {
+   "zeit": "2026-06-18T15:16:51Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:06"
+  },
+  {
+   "zeit": "2026-06-18T15:09:22Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: equity_history dedupliziert"
+  },
+  {
+   "zeit": "2026-06-18T15:08:46Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: equity_history-Bereinigung 18.06."
+  },
+  {
+   "zeit": "2026-06-18T15:08:11Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 17:06 — equity_history-Format-Fix"
+  },
+  {
+   "zeit": "2026-06-18T15:07:19Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 17:06 CEST — Dashboard Update"
+  },
+  {
+   "zeit": "2026-06-18T15:05:24Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Speku-Slot 18.06. PASS bestaetigt"
+  },
+  {
+   "zeit": "2026-06-18T14:58:59Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~16:51"
+  },
+  {
+   "zeit": "2026-06-18T14:54:22Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Speku-Slot 2026-06-18 (kein Trade)"
+  },
+  {
+   "zeit": "2026-06-18T14:52:06Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 16:50 CEST — Dashboard aktualisiert"
+  },
+  {
+   "zeit": "2026-06-18T14:35:39Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 16:34 CEST"
+  },
+  {
+   "zeit": "2026-06-18T14:33:03Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Hauptlauf 18.06. bestaetigt — 3 HOLD, Depot 1997.92EUR"
+  },
+  {
+   "zeit": "2026-06-18T14:31:15Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: CEG Ziel-Exit @275 — Journal nachgetragen"
+  },
+  {
+   "zeit": "2026-06-18T14:30:52Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~16:21"
+  },
+  {
+   "zeit": "2026-06-18T14:30:06Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Scan 18.06. 16:28 — CEG VERKAUFT, Depot 1998.31€"
+  },
+  {
+   "zeit": "2026-06-18T14:21:03Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Hauptlauf 18.06. — alle 4 HOLD, keine Neukaeufe, Depot 1998.03EUR"
+  },
+  {
+   "zeit": "2026-06-18T14:14:53Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Hauptlauf 2026-06-18 (Tag 6, HOLD x3, Tranche-2 nein)"
+  },
+  {
+   "zeit": "2026-06-18T14:09:19Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Eroeffnung 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T14:07:33Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Eröffnung 18.06. 16:06 CEST — Guard OK, alle 4 HOLD, Depot 1995.26€"
+  },
+  {
+   "zeit": "2026-06-18T13:52:28Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Scan 18.06. 15:50 CEST"
+  },
+  {
+   "zeit": "2026-06-18T13:37:43Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~15:06"
+  },
+  {
+   "zeit": "2026-06-18T13:37:32Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Scan 18.06. 15:35 CEST"
+  },
+  {
+   "zeit": "2026-06-18T13:22:20Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Premarket 18.06. 15:20 CEST"
+  },
+  {
+   "zeit": "2026-06-18T13:07:11Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Premarket 18.06. 15:05 CEST — Depot 1996.96€ vs. SPY-B&H 2043.29€"
+  },
+  {
+   "zeit": "2026-06-18T12:52:16Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Premarket 18.06. 14:50 CEST — Depot 1997.42€, Chip-Rally-Bounce"
+  },
+  {
+   "zeit": "2026-06-18T12:37:24Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Premarket 18.06. 14:35 CEST"
+  },
+  {
+   "zeit": "2026-06-18T12:30:35Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~14:30 — Premarket-Kurse aktualisiert"
+  },
+  {
+   "zeit": "2026-06-18T12:22:15Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Premarket 18.06. 14:20 — Depot 1996.56€, SPY 744.80€"
+  },
+  {
+   "zeit": "2026-06-18T12:07:11Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Premarket 18.06. 14:05 CEST"
+  },
+  {
+   "zeit": "2026-06-18T05:23:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 18.06.2026 07:23"
+  },
+  {
+   "zeit": "2026-06-18T01:39:52Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T01:28:07Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-18 (1 Momentum: LRCX S-004; MU verfallen + wg. Earnings 24.06. uebersprungen)"
+  },
+  {
+   "zeit": "2026-06-17T22:14:28Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 18.06.2026"
+  },
+  {
+   "zeit": "2026-06-17T21:05:16Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-17"
+  },
+  {
+   "zeit": "2026-06-17T20:36:14Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-17 22:30 (22:00-Lauf: post-FOMC; F-H-003 Zeit-Exit n=2 SKILL; Speku 6->5 Round-Trip; D7 Trend-Korrektur)"
+  },
+  {
+   "zeit": "2026-06-17T19:46:48Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "RISK -> Long/Short: Engine D reaktiviert als Regime-Index-Hedge (Short SPY/QQQ bei spyZone risk_off). Nutzer-Mandat 17.06. Plumbing/Journal-Schema unveraendert."
+  },
+  {
+   "zeit": "2026-06-17T19:22:50Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Weltkarte: Länder-Suche per Name (DE+EN) + freie Orte-Liste (Mallorca etc.)"
+  },
   {
    "zeit": "2026-06-17T19:00:17Z",
    "agent": "system",
    "label": "🛠 Review-System",
    "repo": "review",
    "text": "Persoenliche Reise-Weltkarte (weltkarte.html) - interaktiv, Laender antippen, localStorage"
-  },
-  {
-   "zeit": "2026-06-17T18:50:33Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Haupt-Dashboard 17.06. 20:49 CEST — Depot 1998.33€, alle HOLD, CEG nahe Ziel"
-  },
-  {
-   "zeit": "2026-06-17T18:43:56Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~20:36"
-  },
-  {
-   "zeit": "2026-06-17T18:37:01Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Haupt-Dashboard 17.06. 20:34 CEST — Depo 1996.75€, SPY 746.08, HOLD alle Positionen"
-  },
-  {
-   "zeit": "2026-06-17T18:28:23Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~20:21"
-  },
-  {
-   "zeit": "2026-06-17T18:21:25Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Haupt Dashboard 17.06. 20:19 CEST — Depot 1998.42€ (SPY 747.66, +0.3%), HOLD"
-  },
-  {
-   "zeit": "2026-06-17T18:14:27Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~20:13"
-  },
-  {
-   "zeit": "2026-06-17T18:09:11Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 20:04 — news_log MATERIAL-Flags korrigiert (FOMC Basis-Szenario)"
-  },
-  {
-   "zeit": "2026-06-17T18:06:46Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Dashboard 17.06. 20:04 CEST — FOMC-Hold + Warsh hawkish, SPY -0.66%, alle Positionen HOLD, Depot 1997.13€"
-  },
-  {
-   "zeit": "2026-06-17T18:03:05Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: FOMC-Radar-NACH — Fed HOLD, Basis-Szenario, alle HOLD, Depot 1999.54EUR"
-  },
-  {
-   "zeit": "2026-06-17T17:59:26Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: FOMC-Radar-VOR 19:59 — Depot 2001.09€, alle HOLD, Entscheid 20:00"
-  },
-  {
-   "zeit": "2026-06-17T17:58:35Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~19:51"
-  },
-  {
-   "zeit": "2026-06-17T17:51:44Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard: Wache 17.06. 19:49 CEST — Depot 2000.35€ vs SPY 2054.53€, CEG HOLD 270.79, FOMC 20:00"
-  },
-  {
-   "zeit": "2026-06-17T17:43:29Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~19:36"
-  },
-  {
-   "zeit": "2026-06-17T17:36:41Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard 17.06. 19:34 CEST — Depot 2000.04€ vs. SPY-B&H 2054.53€"
   },
   {
    "zeit": "2026-06-17T17:35:12Z",
@@ -114,193 +359,11 @@
    "text": "DAYTRADER Signal 17.06.2026 19:35"
   },
   {
-   "zeit": "2026-06-17T17:28:41Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~19:21 — Kurse aktualisiert"
-  },
-  {
-   "zeit": "2026-06-17T17:20:52Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard 17.06. 19:19 CEST — Depot 2000.31€, SPY 749.32, alle 4 HOLD"
-  },
-  {
-   "zeit": "2026-06-17T17:18:35Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~19:06 — Kurse aktualisiert"
-  },
-  {
-   "zeit": "2026-06-17T17:05:35Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard update 17.06. 19:04 CEST — Depot 2000.64€, CEG 272.04."
-  },
-  {
-   "zeit": "2026-06-17T16:58:36Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~18:51"
-  },
-  {
-   "zeit": "2026-06-17T16:50:55Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard 17.06. 18:49 CEST — Depot 2000.58€, SPY 749.93, CEG HOLD 271.39, alle 4 Positionen HOLD"
-  },
-  {
    "zeit": "2026-06-17T16:47:33Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "DAYTRADER Signal 17.06.2026 18:47"
-  },
-  {
-   "zeit": "2026-06-17T16:44:02Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~18:43"
-  },
-  {
-   "zeit": "2026-06-17T16:35:43Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard 17.06. 18:34 — Depot 2001.56€, CEG 271.44 nahe 273, alle HOLD"
-  },
-  {
-   "zeit": "2026-06-17T16:28:31Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~18:21"
-  },
-  {
-   "zeit": "2026-06-17T16:20:34Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 17.06. 18:19 CEST — Depot 2001.67€, alle 4 Positionen HOLD"
-  },
-  {
-   "zeit": "2026-06-17T16:13:49Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~18:13 — Kurse QBTS 23.7 / IONQ 56.01 / RGTI 21.08 aktualisiert"
-  },
-  {
-   "zeit": "2026-06-17T16:05:55Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Dashboard-Update 17.06. 18:04 CEST — 2001.82 EUR, CEG 270.85"
-  },
-  {
-   "zeit": "2026-06-17T15:58:58Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~18:00"
-  },
-  {
-   "zeit": "2026-06-17T15:50:37Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Dashboard 17.06. 17:49 CEST — Depot 2001.79€, HOLD alle"
-  },
-  {
-   "zeit": "2026-06-17T15:43:56Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~17:36"
-  },
-  {
-   "zeit": "2026-06-17T15:35:46Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard 17.06. 17:34 CEST — Depot 2001.93 EUR"
-  },
-  {
-   "zeit": "2026-06-17T15:31:40Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~17:21"
-  },
-  {
-   "zeit": "2026-06-17T15:20:43Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard 17.06. 17:19 CEST — Depot 2001.49€, CEG 271.35 (ziel 273.0)"
-  },
-  {
-   "zeit": "2026-06-17T15:13:35Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~17:06 — Live-Kurse (IONQ 55.80, QBTS 23.70, RGTI 20.80)"
-  },
-  {
-   "zeit": "2026-06-17T15:05:23Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Haupt Dashboard: 17.06. 17:04 — CEG 270.89, Depot 2001.61€, FOMC 20:00 CEST"
-  },
-  {
-   "zeit": "2026-06-17T14:58:58Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~16:58"
-  },
-  {
-   "zeit": "2026-06-17T14:51:35Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 16:49 — news_log FOMC-Flag korrigiert"
-  },
-  {
-   "zeit": "2026-06-17T14:50:40Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 17.06. 16:49 CEST — Depot 2000.79€, SPY 749.20"
-  },
-  {
-   "zeit": "2026-06-17T14:43:54Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-17 ~16:36 — Kurse + Quantum-News"
-  },
-  {
-   "zeit": "2026-06-17T14:37:01Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 16:34 — Dashboard auf 2001.58€ (Nachtrag)"
-  },
-  {
-   "zeit": "2026-06-17T14:34:11Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Hauptlauf 17.06. — alle 4 HOLD, keine Neukaeufe vor FOMC, Depot 2002.00€"
   },
   {
    "zeit": "2026-06-17T05:30:28Z",
@@ -497,69 +560,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Wire Alpaca paper accounts for challenger bots"
-  },
-  {
-   "zeit": "2026-06-12T18:42:50Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Add cloud bot workflows"
-  },
-  {
-   "zeit": "2026-06-12T15:40:13Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Einheitliche Nav-Komponente"
-  },
-  {
-   "zeit": "2026-06-12T15:40:12Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Einheitliche Nav-Komponente"
-  },
-  {
-   "zeit": "2026-06-12T13:13:39Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Link-Netzwerk bereinigt + Woche-Button"
-  },
-  {
-   "zeit": "2026-06-12T13:13:37Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Link-Netzwerk bereinigt + Woche-Button"
-  },
-  {
-   "zeit": "2026-06-12T13:05:52Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Nav auf einheitliche Agenten-Seite umgestellt"
-  },
-  {
-   "zeit": "2026-06-12T13:05:50Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Nav auf einheitliche Agenten-Seite umgestellt"
-  },
-  {
-   "zeit": "2026-06-12T12:58:27Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Apple-Design + Flotten-Navigationsleiste"
-  },
-  {
-   "zeit": "2026-06-12T12:58:25Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Apple-Design + Flotten-Navigationsleiste"
   }
  ]
 }
