@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-18T17:13:37Z",
+ "standUtc": "2026-06-18T17:24:42Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T17:24:42Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: XLP-Fehlverkauf reversiert — 3 Positionen, Depot 2002.88€"
+  },
+  {
+   "zeit": "2026-06-18T17:22:11Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 19:19 CEST — Depot 2002.94€, XLP verkauft"
+  },
   {
    "zeit": "2026-06-18T17:13:37Z",
    "agent": "speku",
@@ -98,13 +112,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:45 — IONQ/QBTS/RGTI aktualisiert"
-  },
-  {
-   "zeit": "2026-06-18T15:39:47Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-18 17:30 (17:00-Lauf: CEG-Ziel 275; D7=FALSCH; F-H-003 zurueck auf UNKLAR; neue L10; Speku-Daten-Outage)"
   },
   {
    "zeit": "2026-06-18T15:37:55Z",
@@ -282,20 +289,6 @@
    "text": "Haupt: Scan 18.06. 15:35 CEST"
   },
   {
-   "zeit": "2026-06-18T13:22:20Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 18.06. 15:20 CEST"
-  },
-  {
-   "zeit": "2026-06-18T13:07:11Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 18.06. 15:05 CEST — Depot 1996.96€ vs. SPY-B&H 2043.29€"
-  },
-  {
    "zeit": "2026-06-18T05:23:29Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -331,25 +324,11 @@
    "text": "Swing-Lauf 2026-06-17"
   },
   {
-   "zeit": "2026-06-17T20:36:14Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-17 22:30 (22:00-Lauf: post-FOMC; F-H-003 Zeit-Exit n=2 SKILL; Speku 6->5 Round-Trip; D7 Trend-Korrektur)"
-  },
-  {
    "zeit": "2026-06-17T19:46:48Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "RISK -> Long/Short: Engine D reaktiviert als Regime-Index-Hedge (Short SPY/QQQ bei spyZone risk_off). Nutzer-Mandat 17.06. Plumbing/Journal-Schema unveraendert."
-  },
-  {
-   "zeit": "2026-06-17T19:22:50Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Weltkarte: Länder-Suche per Name (DE+EN) + freie Orte-Liste (Mallorca etc.)"
   },
   {
    "zeit": "2026-06-17T17:35:12Z",
@@ -560,6 +539,27 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Wire Alpaca paper accounts for challenger bots"
+  },
+  {
+   "zeit": "2026-06-12T18:42:50Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Add cloud bot workflows"
+  },
+  {
+   "zeit": "2026-06-12T15:40:13Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Einheitliche Nav-Komponente"
+  },
+  {
+   "zeit": "2026-06-12T15:40:12Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Einheitliche Nav-Komponente"
   }
  ]
 }
