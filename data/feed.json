@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T16:59:26Z",
+ "standUtc": "2026-06-18T17:06:19Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T17:06:19Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 19:04 CEST"
+  },
   {
    "zeit": "2026-06-18T16:59:26Z",
    "agent": "speku",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Premarket 18.06. 14:50 CEST — Depot 1997.42€, Chip-Rally-Bounce"
-  },
-  {
-   "zeit": "2026-06-18T12:37:24Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 18.06. 14:35 CEST"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
