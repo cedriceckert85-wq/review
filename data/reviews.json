@@ -1007,6 +1007,78 @@
         "F-H-003 verschärft (Zeit-Exit-Gewohnheit, n=2): CEG Tag 10/10 wurde wie NVDA (Tag 9) nicht am Limit exekutiert — nach eigener Akten-Logik ('zweimal = Gewohnheit') jetzt ein verfestigter SKILL-Bereich. Diesmal kostete es Upside (CEG 271→267). Das Zeit-Management ist die konkreteste offene Disziplinlücke des Haupt-Depots.",
         "F-S-001 belegt auf Depot-Ebene: Speku hat die komplette +4,86 %-Rally in drei Tagen zurückgegeben (→ −0,18 %), weil 100 % Quantum synchron liefen — der Round-Trip ist der bisher stärkste Beleg, auch ohne dass die >10-%-Einzel-Drawdown-Messlatte (RGTI noch grün) gerissen ist. Verschärfend: offline Entscheidungs-Engine = keine Reaktionsfähigkeit."
       ]
+    },
+    {
+      "id": "2026-06-18-1700",
+      "datum": "2026-06-18",
+      "zeit": "17:30",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 1999.89,
+        "rendite": -0.01,
+        "cashQuote": 73,
+        "score": 6,
+        "fazit": "CEG am Ziel verkauft: Take-Profit zu 275,00 € (Ziel 273 getroffen, +8,8 % auf Einstand 252,69) — die sauberste Gewinnmitnahme der Woche und das beste realisierte Geschäft. WICHTIG: Damit RELATIVIERT sich mein gestriger 'SKILL-FEHLER'-Vorwurf zum Zeit-Exit — das Halten von CEG ÜBER Tag 10/10 hinaus war RICHTIG (CEG erholte sich von 267 auf 275 und traf das Ziel), nicht falsch. Mein Wed-Urteil war voreilig (→ L10). 3 Positionen verbleiben (IWM +0,32 %, AMZN +2,07 %, XLP −2,21 % nahe Stop 82), Cash 73 %, Depot flach (−0,01 %) aber mit gebanktem CEG-Gewinn. Score 6 gehalten (bewusst KEIN reaktiver Aufschlag nur wegen eines guten Exits — die Entry-Bestätigungslücke F-H-002 bleibt offen).",
+        "punkte": [
+          "CEG-Take-Profit am Ziel 275 (+8,8 %) — beste realisierte Trade-Disziplin der Woche; Energie/AI-Strom-These voll aufgegangen.",
+          "Zeit-Exit-Vorwurf von gestern relativiert: CEG über Tag 10/10 zu halten war RICHTIG (Ziel-Treffer) — F-H-003 von SKILL zurück auf UNKLAR/Prozess-Inkonsistenz.",
+          "XLP −2,21 % nahe Stop 82 (83,54) — nächster möglicher mechanischer Exit; IWM/AMZN halten.",
+          "Cash 73 % nach CEG-Verkauf — defensiv; Entry-Bestätigungsregel (F-H-002) weiter offen, kein Aufschlag nur wegen eines guten Exits."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2017.34,
+        "rendite": 0.87,
+        "cashQuote": 61,
+        "score": 5,
+        "fazit": "Auf Depot-Ebene Erholung (+0,87 %, von −0,18 % Mi-Schluss) im Rebound-Markt — die Quantum-Namen drehten mit. ABER: Das Speku-Dashboard ist im 3. Tag degradiert (Automatik >24h offline) und liefert heute teils FALSCHDATEN (Positionstabelle nicht renderbar, fälschlich 'Nur SPY') — eine belastbare Bewertung der Do-Prozesse oder der Einzeltitel (QBTS/IONQ/RGTI) ist NICHT möglich. Score 5 fortgeschrieben (gestern 6→5): die Reliability der gesamten Berichts-/Entscheidungskette ist das dominante Manko, nicht der (erholte) Tageskurs. Aggregat +0,87 % gilt unter Vorbehalt.",
+        "punkte": [
+          "DATEN-OUTAGE 3. Tag: Automatik >24h offline, Positionstabelle liefert Falschdaten ('Nur SPY') — Do-Bewertung nur auf Aggregat-Ebene möglich.",
+          "Depot-Aggregat +0,87 % (Rebound) unter Vorbehalt; Einzeltitel-Renditen nicht belegbar abrufbar.",
+          "Reliability-Manko dominiert den Score, nicht der Kurs — ein konzentriertes Quantum-Buch ohne funktionierende Engine/Reporting ist prozessual schwach.",
+          "Sobald die Engine + das Reporting wieder laufen, ist eine schnelle Score-Erholung möglich (Positionen vmtl. unverändert gehalten)."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 1994.96,
+        "rendite": -0.25,
+        "cashQuote": 69.0,
+        "score": 6,
+        "fazit": "D7 AUFGELÖST — FALSCH: CEG erreichte über das Haupt-Depot 275 € (Ziel 273), ohne unter 262 zu fallen → der Schatten-Take-Profit bei 268 war zu früh (Haupt 275 vs. Schatten 268, ~2,6 % verschenkt). Das bestätigt L9 auf der EXIT-Seite (Über-Konservatismus auch beim Gewinnmitnehmen). Scoreboard jetzt 0 richtig / 4 falsch / 3 offen. Wert heute getragen (Quantum-Kurse wegen Speku-Dashboard-Outage nicht abrufbar) — QBTS/IONQ stehen auf Mi-Auto-Kurse (−0,25 %), real angesichts des Speku-Rebounds (+0,87 %) wahrscheinlich etwas besser. Kein verlauf-Punkt gesetzt (keine belegbaren Kurse). Score 6 (disziplinierter Prozess; der D7-Fehler ist im Scoreboard sichtbar).",
+        "punkte": [
+          "D7 = FALSCH: Take-Profit bei 268 zu früh, CEG lief bis Ziel 275 — L9 gilt auch beim Exit; Scoreboard 0/4/3.",
+          "Wert getragen vom Mi-Stand (−0,25 %): QBTS/IONQ nicht abrufbar (Speku-Dashboard degraded); real vmtl. etwas höher (Quantum-Rebound).",
+          "Kein verlauf-Punkt 18.06. — ohne belegbare Quantum-Kurse keine fabrizierte Chart-Linie (L3-Disziplin).",
+          "Restbuch weiter QBTS/IONQ + 69 % Cash; D3 (RGTI-Verzicht) heute mangels Daten nicht prüfbar."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Unverändert: HPE-Limit (45 $) seit 12.06. ungefüllt, 0 geschlossen, kein Mean-Reversion-Trade. n=0. Score 6.",
+        "punkte": [
+          "Weiter kein Trade seit dem Mandatswechsel — erster Mean-Reversion-Entry steht aus."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Aktiv: LRCX (S-004) neu als Pending zugefügt, ersetzt das verfallene MU — MU bewusst übersprungen (Earnings 24.06. = Held-into-Earnings-Binärrisiko, ~21 % ATR-Stop). INTC + AMD offen (gefüllt 16.06.). Regime risk_on (VIX 18,44). 0 geschlossen. Score 6 — saubere, begründete Kandidaten-Selektion (gute Prozessdisziplin), Edge unbewiesen.",
+        "punkte": [
+          "MU wegen Earnings-Binärrisiko verworfen, LRCX stattdessen — nachvollziehbare Selektionslogik; 2/3 Slots gefüllt + 1 pending."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "5 Positionen: TQQQ/LRCX/MU/INTC offen + CAT (R-007) neu pending; R-003 und R-006 (beide CAT) verfallen. summeR 0, Expectancy null, 0 geschlossen. Wiederholte CAT-Verfälle deuten auf ein zu eng/falsch gesetztes CAT-Limit. Score 6 — voll deployed, gehebeltes TQQQ + Halbleiter-Cluster, Edge unbewiesen.",
+        "punkte": [
+          "CAT verfiel ZWEIMAL (R-003, R-006), jetzt 3. Versuch R-007 — Limit-Platzierung für CAT prüfen; summeR weiter 0."
+        ]
+      },
+      "vergleich": "Rebound-Tag nach dem FOMC-Hold, aber mit einer ehrlichen Reviewer-Abrechnung im Zentrum. Das dominante Ereignis: CEG traf sein Ziel und wurde vom Haupt zu 275 € verkauft (+8,8 %) — das löst gleich zwei voreilige Wed-Urteile auf: (1) D7 (Schatten-Take-Profit 268) ist damit FALSCH — die Über-Konservatismus-These von L9 gilt auch beim GEWINNMITNEHMEN, nicht nur bei Entries; (2) mein Wed-'SKILL-FEHLER'-Vorwurf zum CEG-Zeit-Exit war verkehrt — das Halten über Tag 10/10 war richtig. Beide Fehlurteile entstanden aus Einzeltages-/Intraday-Daten → neue Lehre L10 (erst am Stichtag werten). Risikoadjustiert ist der Tag schwer zu ranken: Haupt (−0,01 %) bankte sauber den CEG-Gewinn und sitzt auf 73 % Cash — bestes Prozessbild. Speku (+0,87 % Aggregat) erholte sich nominal, ist aber wegen des 3-Tage-Daten-Outages (Automatik offline, Falschdaten) prozessual am schwächsten (Score 5). Schatten ist heute nicht sauber bewertbar (Quantum-Kurse nicht abrufbar), trägt aber den D7-Fehler sichtbar im Scoreboard (0/4/3). Rangfolge daher nur unter Vorbehalt; die nächste saubere Differenzierung kommt, sobald die Speku-Datenkette wieder steht.",
+      "lektionen": [
+        "NEU L10 (Reviewer-Selbstfehler): Voreilige Klassifikation aus Einzeltages-/Intraday-Daten. Belege: D7 am 17.06. 17:00 als FALSCH gewertet → 22:00 reflexhaft revidiert → 18.06. final FALSCH (zweimal voreilig); F-H-003 CEG-Zeit-Exit am 17.06. zu 'SKILL-FEHLER n=2' erklärt → 18.06. durch CEG-Ziel-Treffer 275 widerlegt. Konsequenz: Status (SKILL/PECH/UNKLAR) und neue Lektionen NUR an der Messlatte/am Stichtag festschreiben, dazwischen nur 'trend X' bei Status OFFEN — die Lehr-Ebenen-Anwendung von L3.",
+        "L9 auf Exit-Seite BESTÄTIGT (via D7=FALSCH): Über-Konservatismus zeigt sich auch beim Gewinnmitnehmen — ein reflexhaft engeres Take-Profit-Ziel (268 statt Original 273) schneidet Upside ab. Exit-Ziele nicht enger als das Original ohne belegte Edge.",
+        "Reliability als Prozess-Dimension: Eine seit 3 Tagen offline Entscheidungs-/Reporting-Kette (Speku) macht das Depot unbewertbar UND unsteuerbar. Datenintegrität/Uptime gehört zur Prozessqualität — ein Depot, dessen Berichtskette ausfällt, ist prozessual schwach unabhängig vom Tageskurs."
+      ]
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "stand": "17.06.2026, 22:30 (22:00-Lauf)",
+  "stand": "18.06.2026, 17:30 (17:00-Lauf)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Mi 17.06. 22:18 (Schluss): −0,24 % (QBTS −3,73 %, IONQ −6,53 %), aber 69 % Cash + CEG-Gewinn dämpfen → Schatten > Haupt (−0,32 %). Kein Trade (R2). Ehrliche Korrektur: D7 trendet NICHT mehr FALSCH — CEG fiel auf 267,26 unter den 268er-Verkaufskurs, das Take-Profit war doch richtig; meine 17:00-Exit-Über-Konservatismus-Lehre war selbst verfrüht (L3).",
+      "kommentar": "Do 18.06. 17:30: D7 aufgelöst — FALSCH. CEG lief bis Ziel 275 (Haupt-Verkauf), ohne unter 262 zu fallen → mein Take-Profit bei 268 war zu früh (~2,6 % verschenkt); L9 gilt auch beim Exit. Scoreboard 0/4/3. Wert heute getragen (Quantum-Kurse wegen Speku-Outage nicht abrufbar), kein verlauf-Punkt. Disziplin ok, der D7-Fehler steht sichtbar im Scoreboard.",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -97,10 +97,17 @@
           "ticker": "NVDA",
           "kurs": 208.57,
           "info": "Zeit-Exit (Tag 9, 2 Tage spät) → −0,49 % (−0,34 €); Cash-Quote auf 70 %"
+        },
+        {
+          "datum": "18.06.",
+          "aktion": "Verkauf",
+          "ticker": "CEG",
+          "kurs": 275.00,
+          "info": "Take-Profit am Ziel 273 → +8,8 % auf Einstand 252,69; bestes realisiertes Geschäft, Cash-Quote 73 %"
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Mi 17.06. 22:10 (Schluss): −0,32 % post-FOMC (Fed-Hold korrekt nicht gehandelt, 70 % Cash). ABER: CEG bei Tag 10/10 NICHT exekutiert (wie NVDA Tag 9) → Zeit-Exit-Lücke n=2 = SKILL-FEHLER; CEG fadete dabei 271→267 (~1,5 % Buchgewinn verschenkt). XLP −2,01 % nahe Stop 82. Zeit-Management ist die konkreteste offene Disziplinlücke.",
+      "kommentar": "Do 18.06. 17:20: CEG am Ziel verkauft (275 €, +8,8 %) — bestes realisiertes Geschäft, Cash 73 %. Das HALTEN über Tag 10/10 war doch richtig (CEG 267→275) — mein Wed-'SKILL-FEHLER'-Vorwurf zum Zeit-Exit war voreilig (L10), F-H-003 zurück auf UNKLAR. Depot flach (−0,01 %), XLP −2,21 % nahe Stop 82. Entry-Bestätigung (F-H-002) bleibt der offene Punkt.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
         "Zeit-Exit-Disziplin abstellen (F-H-003, jetzt SKILL-FEHLER n=2): NVDA (Tag 9) UND CEG (Tag 10/10) beide nicht am Limit exekutiert — CEG verschenkte 271→267. Zeit-Limit hart wie einen Stop behandeln: am Tag X exekutieren ODER dokumentiert mit neuer These verlängern.",
@@ -109,7 +116,7 @@
     },
     "solid": {
       "beschreibung": "Der Evidenz-Bot: handelt nur, was die Deep Research als robust belegt — Long-only-Momentum plus verifizierte News-Drifts. Lieber kein Trade als ein unbelegter.",
-      "kommentar": "Journal-Stand 17.06.: erste Fills! INTC (125,6) + AMD (516,69) am 16.06. gefüllt → 2 offene Positionen, MU-Limit verfallen. 17.06. 'KEIN TRADE'. Raus aus 100 % Cash, aber 0 geschlossen → Edge unbewiesen.",
+      "kommentar": "Journal-Stand 18.06.: INTC + AMD offen (gefüllt 16.06.); LRCX (S-004) neu pending ersetzt verfallenes MU — MU bewusst wegen Earnings 24.06. (Held-into-Earnings-Binärrisiko, ~21 % ATR-Stop) übersprungen. Regime risk_on (VIX 18,44). 0 geschlossen. Saubere, begründete Selektion.",
       "verbesserungen": [
         "Phase 2 ausbauen: share-basierte Portfolio-Buchführung (eval_v2) und risk-gate-Workflow, damit der volle Spec-Momentum-Kern mit Roll-Logik statt der diskreten Stufe-1-Trades laufen kann.",
         "EDGAR-Filing-Feed anbinden, damit der News-Drift-Satellit deterministische Kandidaten bekommt statt WebSearch-Funde.",
@@ -118,7 +125,7 @@
     },
     "risk": {
       "beschreibung": "Der kontrolliert aggressive Gewinn-Jäger: konzentrierte High-Beta-Wetten (2 % Risiko), Volumen-Spikes früh statt am Buzz-Peak, TQQQ nur bei grünen Regime-Gates — die research-dokumentierten Todesarten sind hart verboten.",
-      "kommentar": "Journal-Stand 17.06.: 4 gefüllt — TQQQ (Engine C, gehebelt) + LRCX/MU/INTC (Engine A, MU+INTC neu 16.06.), CAT R-006 neu pending. summeR 0, 0 geschlossen → Expectancy unbewiesen. Engine-A-Halbleiter-Cluster wächst — Beta-Budget/8-%-Deckel im Blick.",
+      "kommentar": "Journal-Stand 18.06.: 4 gefüllt (TQQQ gehebelt + LRCX/MU/INTC), CAT R-007 neu pending. CAT verfiel ZWEIMAL (R-003, R-006) → Limit-Platzierung prüfen. summeR 0, 0 geschlossen → Expectancy unbewiesen. Gehebeltes TQQQ + Halbleiter-Cluster bleiben der kritische Punkt.",
       "verbesserungen": [
         "Engine-Statistik von Tag 1 getrennt führen (A/B/C) — die Spec verlangt gepoolte Expectancy nur für A+B, C ist kalendergegated.",
         "FINRA-Short-Interest-Feed für die deaktivierte Engine D nachweisen oder D endgültig streichen.",
@@ -164,7 +171,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Mi 17.06. 22:18 (Schluss): voller Round-Trip — +4,86 % (Mo) → −0,18 %, die ganze Quantum-Rally in 3 Tagen zurückgegeben (RGTI +4,11 % einziger grün). Score 6→5: nicht der Markt (PECH), sondern die Häufung — Entscheidungs-Automatik ~30h offline durch FOMC + 100 % Quantum + null Risikoschritt. Halten an sich vertretbar; der 5er gilt der toten Engine + ungemanagten Konzentration.",
+      "kommentar": "Do 18.06. 17:28: Dashboard 3. Tag degradiert (Automatik >24h offline), liefert teils Falschdaten ('Nur SPY') — Einzeltitel nicht abrufbar, nur Aggregat +0,87 % (Rebound, unter Vorbehalt). Score 5 fortgeschrieben: die ausgefallene Berichts-/Entscheidungskette ist das dominante Manko, eine Do-Prozessbewertung ist nicht möglich. Schnelle Erholung sobald Engine + Reporting wieder laufen.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",

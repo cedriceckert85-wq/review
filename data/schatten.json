@@ -9,12 +9,12 @@
     "rendite": -0.25,
     "cash": 1376.56,
     "cashQuote": 69.0,
-    "stand": "17.06.2026, 22:36 (Auto-Kurse)"
+    "stand": "18.06.2026, 17:30 — Quantum-Kurse nicht abrufbar (Speku-Dashboard degraded, Automatik >24h); Wert getragen vom Mi-Auto-Kurse-Stand 22:36"
   },
   "scoreboard": {
     "richtig": 0,
-    "falsch": 3,
-    "offen": 4
+    "falsch": 4,
+    "offen": 3
   },
   "positionen": [
     {
@@ -117,8 +117,8 @@
       "meineEntscheidung": "Schatten nimmt CEG bei seinem engeren Ziel 268 € mechanisch mit (Take-Profit, Position glattgestellt, +10,62 % auf den Einsatz)",
       "begruendung": "Der Schatten hatte CEG bewusst mit engerem Ziel 268 statt Haupt 273 übernommen. CEG handelte intraday bis 270,17 € (Auto-Kurse 20:07) und damit durch die 268er-Marke — der Take-Profit wird mechanisch ausgeführt (ohne Aufweichen, AGENT.md 7b). An einem schwachen Tagesmarkt (Quantum-Pullback, Haupt nur +0,30 %) den belegten Gewinn sichern statt die letzten ~1,8 % bis 273 zu riskieren.",
       "messlatte": "FALSCH (zu früh verkauft), wenn CEG das Haupt-Ziel 273 € erreicht, ohne vorher unter 262 € zurückzufallen. RICHTIG (Gewinnsicherung war besser), wenn CEG nach dem Verkauf unter 262 € fällt.",
-      "status": "offen",
-      "aufloesung": null
+      "status": "falsch",
+      "aufloesung": "18.06.2026 — CEG erreichte das Haupt-Ziel 273 und wurde vom Haupt-Depot zu 275,00 € verkauft (Target-Take-Profit), OHNE zwischenzeitlich unter 262 € zu fallen (Tief ~267,26 am 17.06.). Damit ist die FALSCH-Bedingung erfüllt: Der Schatten-Take-Profit bei 268 war zu früh — Haupt realisierte 275 vs. Schatten 268 (~2,6 % / ~7 € mehr auf die Position). Bestätigt L9 auf der EXIT-Seite (Über-Konservatismus auch beim Gewinnmitnehmen). Hinweis: Der Zwischenstand am 17.06. 22:00 (CEG 267,26 < Verkaufskurs) hatte die Auflösung kurz Richtung RICHTIG gedreht — die voreilige Zwischenwertung war falsch, erst der Stichtag entscheidet (L3/L10)."
     }
   ],
   "trades": [
