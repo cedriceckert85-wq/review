@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-18T17:45:54Z",
+ "standUtc": "2026-06-18T17:52:19Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T17:52:19Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 19:49 — SPY-Korrektur 747.24"
+  },
+  {
+   "zeit": "2026-06-18T17:51:02Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 19:49 CEST — Dashboard updated (Depot 2003.03€, SPY 783.07)"
+  },
   {
    "zeit": "2026-06-18T17:45:54Z",
    "agent": "bots",
@@ -280,20 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Hauptlauf 18.06. — alle 4 HOLD, keine Neukaeufe, Depot 1998.03EUR"
-  },
-  {
-   "zeit": "2026-06-18T14:14:53Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh Hauptlauf 2026-06-18 (Tag 6, HOLD x3, Tranche-2 nein)"
-  },
-  {
-   "zeit": "2026-06-18T14:09:19Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh Eroeffnung 2026-06-18"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
