@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T16:46:24Z",
+ "standUtc": "2026-06-18T16:51:33Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T16:51:33Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 18.06. 18:49 CEST — Depot 2001.77€"
+  },
   {
    "zeit": "2026-06-18T16:46:24Z",
    "agent": "bots",
@@ -287,13 +294,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Dashboard-Refresh 2026-06-18 ~14:30 — Premarket-Kurse aktualisiert"
-  },
-  {
-   "zeit": "2026-06-18T12:22:15Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Premarket 18.06. 14:20 — Depot 1996.56€, SPY 744.80€"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
