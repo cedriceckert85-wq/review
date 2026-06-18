@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T17:58:26Z",
+ "standUtc": "2026-06-18T18:05:06Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T18:05:06Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 19:58 — Depot 2001.22€"
+  },
   {
    "zeit": "2026-06-18T17:58:26Z",
    "agent": "speku",
@@ -287,13 +294,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Dashboard-Refresh 2026-06-18 ~16:21"
-  },
-  {
-   "zeit": "2026-06-18T14:30:06Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Scan 18.06. 16:28 — CEG VERKAUFT, Depot 1998.31€"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
