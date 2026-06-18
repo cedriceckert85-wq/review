@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-18T19:15:12Z",
+ "standUtc": "2026-06-18T19:22:05Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-18T19:22:05Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~21:21"
+  },
   {
    "zeit": "2026-06-18T19:15:12Z",
    "agent": "haupt",
@@ -287,13 +294,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Wache 17:06 — equity_history-Format-Fix"
-  },
-  {
-   "zeit": "2026-06-18T15:07:19Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 17:06 CEST — Dashboard Update"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
