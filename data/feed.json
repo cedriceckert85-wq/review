@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-19T15:34:21Z",
+ "standUtc": "2026-06-19T16:19:22Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-19T16:19:22Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 19.06.2026 18:19"
+  },
   {
    "zeit": "2026-06-19T15:34:21Z",
    "agent": "schatten",
@@ -553,13 +560,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 13.06.2026 07:09"
-  },
-  {
-   "zeit": "2026-06-13T02:13:38Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-13"
   }
  ]
 }
