@@ -1,6 +1,83 @@
 {
- "standUtc": "2026-06-18T19:28:29Z",
+ "standUtc": "2026-06-19T15:34:21Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-19T15:34:21Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-19 17:30 (17:00-Lauf, Juneteenth: Boerse zu, Werte Do-Schluss; Schatten finalisiert +1,63%; Speku-Tabelle rendert wieder)"
+  },
+  {
+   "zeit": "2026-06-19T07:41:02Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Briefing 2026-06-19"
+  },
+  {
+   "zeit": "2026-06-19T07:37:18Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-19"
+  },
+  {
+   "zeit": "2026-06-19T05:57:20Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 19.06.2026 07:57"
+  },
+  {
+   "zeit": "2026-06-19T01:39:27Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-19 (KEIN TRADE: Juneteenth + Journal 5/5 am Cap-Maximum)"
+  },
+  {
+   "zeit": "2026-06-19T01:24:33Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-19 (Juneteenth, KEIN TRADE: Momentum 3/3 voll, News-Drift ausserhalb Universum)"
+  },
+  {
+   "zeit": "2026-06-18T21:05:03Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T20:34:39Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-18 22:30 (22:00-Lauf: Quantum-Rebound; Schatten via Auto-Kurse +0,86%; Dashboards degradiert, Preis-Feed ok)"
+  },
+  {
+   "zeit": "2026-06-18T20:19:19Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Abend-Check 2026-06-18 (Tag 6, Depot 2041.48 EUR)"
+  },
+  {
+   "zeit": "2026-06-18T20:10:29Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Abend-Check 18.06. — Schluss Depot 2002.67EUR, 3 HOLD"
+  },
+  {
+   "zeit": "2026-06-18T19:58:42Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 21:28 — Depot 2003€"
+  },
   {
    "zeit": "2026-06-18T19:28:29Z",
    "agent": "haupt",
@@ -261,41 +338,6 @@
    "text": "Haupt: Wache 18.06. 15:34 CEST"
   },
   {
-   "zeit": "2026-06-18T15:28:38Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:21"
-  },
-  {
-   "zeit": "2026-06-18T15:21:38Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 17:19 CEST — Dashboard aktualisiert"
-  },
-  {
-   "zeit": "2026-06-18T15:16:51Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:06"
-  },
-  {
-   "zeit": "2026-06-18T15:09:22Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: equity_history dedupliziert"
-  },
-  {
-   "zeit": "2026-06-18T15:08:46Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: equity_history-Bereinigung 18.06."
-  },
-  {
    "zeit": "2026-06-18T05:23:29Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -518,48 +560,6 @@
    "label": "🔥 RISK",
    "repo": "bots",
    "text": "RISK-Lauf 2026-06-13"
-  },
-  {
-   "zeit": "2026-06-13T02:10:27Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-13"
-  },
-  {
-   "zeit": "2026-06-12T22:00:33Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 13.06.2026"
-  },
-  {
-   "zeit": "2026-06-12T19:13:13Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Fix GitHub secret setup helper"
-  },
-  {
-   "zeit": "2026-06-12T19:04:29Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Wire Alpaca paper accounts for challenger bots"
-  },
-  {
-   "zeit": "2026-06-12T18:42:50Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Add cloud bot workflows"
-  },
-  {
-   "zeit": "2026-06-12T15:40:12Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Einheitliche Nav-Komponente"
   }
  ]
 }
