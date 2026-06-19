@@ -9,7 +9,7 @@
     "rendite": 1.63,
     "cash": 1376.56,
     "cashQuote": 67.7,
-    "stand": "18.06.2026, 22:34 (Auto-Kurse)"
+    "stand": "19.06.2026, 17:30 (Juneteenth — US-Börse zu; Werte = Do-Schluss, Auto-Kurse 22:34)"
   },
   "scoreboard": {
     "richtig": 0,
@@ -270,6 +270,13 @@
       "zeit": "22:00",
       "schatten": 0.86,
       "haupt": 0.15,
+      "speku": 2.07
+    },
+    {
+      "datum": "19.06.",
+      "zeit": "17:00",
+      "schatten": 1.63,
+      "haupt": 0.08,
       "speku": 2.07
     }
   ]

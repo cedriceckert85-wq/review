@@ -1150,6 +1150,75 @@
         "Kein neuer Trading-Befund heute (datenbeschränkter Lauf): Der Quantum-Rebound ist die bekannte Kehrseite der Konzentrations-Volatilität (H2/F-S-001), keine neue Erkenntnis — und gemäß der gestrigen L10 (nicht voreilig klassifizieren) wird daraus KEINE neue Lektion gezimmert. Bewusst keine LESSONS-Änderung.",
         "Operativ präzisiert: Der Preis-Feed (kurse.yml → Auto-Kurse, lief 21:13) ist INTAKT, nur die Dashboard-Seiten-Renderung ist degradiert (Falschdaten auf beiden Seiten). Folge: Schatten verlässlich über Auto-Kurse bewertbar, Speku/Haupt-Einzeltitel nur über die (degradierten) Seiten — daher per-Position vertagt, Aggregate genutzt."
       ]
+    },
+    {
+      "id": "2026-06-19-1700",
+      "datum": "2026-06-19",
+      "zeit": "17:30",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 2001.55,
+        "rendite": 0.08,
+        "cashQuote": 73,
+        "score": 6,
+        "fazit": "Juneteenth — US-Börse zu, alle Werte = Do-Schluss (eingefroren). Haupt-Dashboard rendert weiter Falschdaten (SPY/Tagesgeld statt Positionstabelle); verlässlich nur das Aggregat 2.001,55 € / +0,08 %, 3 HOLD (IWM/AMZN/XLP), 73 % Cash, keine Trades. Score 6 unverändert (Feiertag, keine neuen handelbaren Daten — L3).",
+        "punkte": [
+          "Feiertag: keine Trades, Werte eingefroren auf Do-Schluss; nur Aggregat verlässlich (Haupt-Tabelle noch defekt).",
+          "73 % Cash nach CEG-Ziel-Verkauf — defensiv ins Wochenende.",
+          "Per-Position-Bewertung weiter vertagt bis zur Haupt-Dashboard-Recovery."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2041.48,
+        "rendite": 2.07,
+        "cashQuote": 61,
+        "score": 5,
+        "fazit": "Feiertag, Werte = Do-Schluss. POSITIV: Die Speku-Positionstabelle RENDERT wieder (Teil-Recovery) — QBTS +6,19 %, IONQ −0,14 %, RGTI +9,82 % (Do-Schluss). Das Aggregat +2,07 % ist damit per-Titel bestätigt. ABER: Die Automatik ist weiter als '>24h offline' geflaggt (am Feiertag ohne Folge, ab Mo wieder kritisch). Score 5 fortgeschrieben — der Tabellen-Render ist ein gutes Zeichen, aber die Engine-Recovery ist erst Mo prüfbar; keine Score-Änderung an einem handelsfreien Tag.",
+        "punkte": [
+          "Positionstabelle rendert wieder (QBTS/IONQ/RGTI sichtbar) — Reporting teil-erholt; Aggregat +2,07 % per-Titel bestätigt.",
+          "RGTI +9,82 % weiter der stärkste der drei (vor QBTS +6,19 %, IONQ −0,14 %) — bestätigt den D3-Trend gegen den Reviewer.",
+          "Automatik weiter offline-geflaggt; am Feiertag folgenlos, ab Mo der eigentliche Test (Score bleibt 5 bis dahin).",
+          "100 % Quantum unverändert — Konzentration ruht über das verlängerte Wochenende."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2032.62,
+        "rendite": 1.63,
+        "cashQuote": 67.7,
+        "score": 6,
+        "fazit": "Wert finalisiert auf +1,63 % (Do-Schluss, Auto-Kurse 22:34: QBTS 24,69 € +3,61 %, IONQ 56,55 € −3,35 %). WICHTIG/EHRLICH: Das ist KEIN Freitags-Gewinn (Börse zu) — gestern um 22:00 hatte ich mit dem 21:13-Auto-Kurse-Snapshot nur +0,86 % erfasst; der echte Do-Schluss (22:34) lag durch die Spätsitzungs-Erholung höher (+1,63 %). Ein Snapshot-Timing-Effekt, kein Markt-Move (vgl. L10). Kein Trade, keine Trigger; 67,7 % Cash. Score 6.",
+        "punkte": [
+          "+1,63 % = finalisierter Do-Schluss (Auto-Kurse 22:34), nicht ein Fr-Move — die +0,77 Pp ggü. dem 22:00-Snapshot sind Spätsitzungs-Erholung (Snapshot-Timing, L10).",
+          "QBTS zurück klar im Plus (+3,61 %), IONQ −3,35 % (höherer Einstand als Speku) — kein Trigger nahe.",
+          "D3 bleibt offen/trend FALSCH: RGTI (+9,82 %) führt die gehaltenen QBTS/IONQ weiter an.",
+          "Feiertag: eingefroren bis Mo; Scoreboard unverändert 0/4/3."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Feiertag, keine Änderung. HPE verfallen (s. 18.06.), Depot 100 % flach, Mean-Reversion weiter n=0. Score 6.",
+        "punkte": [
+          "Eingefroren über den Feiertag; erster Mean-Reversion-Entry weiter ausstehend."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Feiertag, keine Fills möglich. INTC + AMD offen, LRCX pending (Fill frühestens Mo 22.), MU verfallen. Regime risk_on. 0 geschlossen. Score 6.",
+        "punkte": [
+          "LRCX-Fill auf Mo 22. verschoben (Feiertags-Lücke); 2 offen + 1 pending."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Feiertag, keine Fills/Closures. 5 Positionen (TQQQ/LRCX/MU/INTC offen + CAT R-007 pending), summeR 0, Regime risk_on (VIX 16,4). Score 6.",
+        "punkte": [
+          "Eingefroren; CAT R-007 pending (nach 2 Verfällen); gehebeltes TQQQ + Halbleiter-Cluster bleiben das Thema."
+        ]
+      },
+      "vergleich": "Juneteenth — handelsfreier Tag, alle Werte eingefroren auf den Do-Schluss; ein reiner Pflege-/Bestätigungslauf (L3: ohne neue Kurse kein echter Vergleich). Teilrecovery der Datenlage: die Speku-Positionstabelle rendert wieder (QBTS/IONQ/RGTI sichtbar, RGTI +9,82 % führend → bestätigt D3-Trend), das Haupt-Dashboard zeigt weiter Falschdaten (nur Aggregat verlässlich). Der einzige substantielle Punkt ist eine ehrliche Daten-Korrektur: Der Schatten steht per finalisiertem Do-Schluss (Auto-Kurse 22:34) bei +1,63 %, nicht +0,86 % wie im 22:00-Lauf mit dem früheren 21:13-Snapshot erfasst — ein Snapshot-Timing-Effekt, kein Fr-Move (genau die L10-Disziplin: am Stichtag/Schluss werten). Rangfolge per Do-Schluss: Speku +2,07 % > Schatten +1,63 % > Haupt +0,08 % — die Reihenfolge spiegelt den Quantum-Rebound (voll investiert > Cash-gepuffert > defensiv). Kein Eingriff, keine neue Lektion (Feiertag).",
+      "lektionen": [
+        "Kein neuer Befund (Feiertag, eingefrorene Daten) — bewusst keine neue Lektion (L10/L3). Einzige Pflege: Schatten-Wert auf den finalisierten Do-Schluss +1,63 % korrigiert (Snapshot-Timing, kein Markt-Move)."
+      ]
     }
   ]
 }

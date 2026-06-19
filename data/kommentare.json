@@ -1,9 +1,9 @@
 {
-  "stand": "18.06.2026, 22:30 (22:00-Lauf)",
+  "stand": "19.06.2026, 17:30 (17:00-Lauf, Juneteenth — US-Börse zu)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Do 18.06. 22:00 (Schluss): mit dem Quantum-Rebound erholt auf +0,86 % (von getragen −0,25 %), verlässlich via Auto-Kurse 21:13 (QBTS +1,26 %, IONQ −5,74 %). 68 % Cash → weniger Rebound als Speku (+2,07 %), aber auch weniger Drawdown — by design. Kein Trade, kein Trigger. D7 (gestern FALSCH) bleibt im Scoreboard sichtbar (0/4/3).",
+      "kommentar": "Fr 19.06. (Juneteenth, Börse zu): Wert finalisiert auf +1,63 % (Do-Schluss, Auto-Kurse 22:34: QBTS +3,61 %, IONQ −3,35 %) — KEIN Fr-Gewinn, sondern Korrektur ggü. dem 22:00-Snapshot (+0,86 %) durch die Spätsitzungs-Erholung (L10). 67,7 % Cash, kein Trade, kein Trigger. D7 (FALSCH) bleibt im Scoreboard (0/4/3).",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -107,7 +107,7 @@
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Do 18.06. 17:20: CEG am Ziel verkauft (275 €, +8,8 %) — bestes realisiertes Geschäft, Cash 73 %. Das HALTEN über Tag 10/10 war doch richtig (CEG 267→275) — mein Wed-'SKILL-FEHLER'-Vorwurf zum Zeit-Exit war voreilig (L10), F-H-003 zurück auf UNKLAR. Depot flach (−0,01 %), XLP −2,21 % nahe Stop 82. Entry-Bestätigung (F-H-002) bleibt der offene Punkt.",
+      "kommentar": "Fr 19.06. (Juneteenth, Börse zu): Werte = Do-Schluss. Aggregat 2.001,55 € / +0,08 %, 3 HOLD (IWM/AMZN/XLP), 73 % Cash, keine Trades. Haupt-Dashboard rendert noch Falschdaten → Per-Position vertagt. CEG-Ziel-Gewinn (+8,8 %) vom Do gebucht; Entry-Bestätigung (F-H-002) bleibt der offene Punkt.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
         "Zeit-Exit-Disziplin abstellen (F-H-003, jetzt SKILL-FEHLER n=2): NVDA (Tag 9) UND CEG (Tag 10/10) beide nicht am Limit exekutiert — CEG verschenkte 271→267. Zeit-Limit hart wie einen Stop behandeln: am Tag X exekutieren ODER dokumentiert mit neuer These verlängern.",
@@ -171,7 +171,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Do 18.06. 22:18 (Schluss): Rebound +2,07 % (von −0,18 % Mi), via Auto-Kurse (QBTS/IONQ) plausibilisiert — die Konzentration bringt den Bounce so synchron wie zuvor den Drawdown. Dashboard 3. Tag degradiert (Falschdaten), Automatik offline → Engine/Reporting bleibt das Manko. Score 5: hoher Tageskurs aus unbeaufsichtigtem Buch ist kein Prozess-Verdienst.",
+      "kommentar": "Fr 19.06. (Juneteenth): Werte = Do-Schluss (+2,07 %). Teilrecovery — Positionstabelle rendert wieder (QBTS +6,19 %, IONQ −0,14 %, RGTI +9,82 %; RGTI führt → bestätigt D3-Trend). Automatik aber weiter offline-geflaggt (am Feiertag folgenlos, ab Mo wieder kritisch). Score 5 fortgeschrieben — Engine-Recovery erst Mo prüfbar.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",
