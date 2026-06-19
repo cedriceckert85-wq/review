@@ -1219,6 +1219,70 @@
       "lektionen": [
         "Kein neuer Befund (Feiertag, eingefrorene Daten) — bewusst keine neue Lektion (L10/L3). Einzige Pflege: Schatten-Wert auf den finalisierten Do-Schluss +1,63 % korrigiert (Snapshot-Timing, kein Markt-Move)."
       ]
+    },
+    {
+      "id": "2026-06-19-2200",
+      "datum": "2026-06-19",
+      "zeit": "22:30",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 2001.55,
+        "rendite": 0.08,
+        "cashQuote": 73,
+        "score": 6,
+        "fazit": "Juneteenth-Schluss — identisch zum 17:00-Lauf (Börse war ganztags zu, keine neuen Kurse). 2.001,55 € / +0,08 %, 3 HOLD, 73 % Cash, keine Trades. Haupt-Tabelle rendert weiter Falschdaten (nur Aggregat verlässlich). Score 6 unverändert. Nächster Handelstag Mo 22.06.",
+        "punkte": [
+          "Eingefroren = 17:00-Stand; keine Trades, keine neuen Kurse (L3).",
+          "Per-Position weiter vertagt (Haupt-Dashboard defekt)."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2041.48,
+        "rendite": 2.07,
+        "cashQuote": 61,
+        "score": 5,
+        "fazit": "Identisch zum 17:00-Lauf (Feiertag): +2,07 %, QBTS +6,19 % / IONQ −0,14 % / RGTI +9,82 % (Do-Schluss). Tabelle rendert, Automatik weiter offline-geflaggt. Score 5 fortgeschrieben — Engine-Recovery erst Mo prüfbar.",
+        "punkte": [
+          "Eingefroren = 17:00; RGTI führt weiter (D3-Trend).",
+          "Automatik-Recovery der eigentliche Mo-Test."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2032.62,
+        "rendite": 1.63,
+        "cashQuote": 67.7,
+        "score": 6,
+        "fazit": "Unverändert ggü. 17:00 (Feiertag): +1,63 % (finalisierter Do-Schluss), QBTS +3,61 %, IONQ −3,35 %, 67,7 % Cash. Kein Trade, kein Trigger. Scoreboard 0/4/3. Score 6.",
+        "punkte": [
+          "Eingefroren = 17:00-Stand; verlauf-Punkt zur Konsistenz gesetzt (frozen).",
+          "Keine neue Abweichung/Lektion (L3/L10)."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Feiertag, eingefroren. HPE verfallen, 100 % flach, n=0. Score 6.",
+        "punkte": [
+          "Unverändert; erster Mean-Reversion-Entry steht aus."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Feiertag, eingefroren. INTC+AMD offen, LRCX pending (Fill Mo 22.), MU verfallen. Score 6.",
+        "punkte": [
+          "Unverändert; LRCX-Fill auf Mo verschoben."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Feiertag, eingefroren. 5 Positionen (TQQQ/LRCX/MU/INTC + CAT R-007 pending), summeR 0. Score 6.",
+        "punkte": [
+          "Unverändert; CAT R-007 pending."
+        ]
+      },
+      "vergleich": "22:00-Lauf am Juneteenth — reiner Slot-Pflichteintrag: Börse war ganztags zu, alle Werte exakt wie im 17:00-Lauf (Do-Schluss eingefroren), keine Trades, keine neuen Kurse (L3 — Zwischenlauf ohne Erkenntnisgewinn). Rangfolge unverändert: Speku +2,07 % > Schatten +1,63 % > Haupt +0,08 %. Substanziell nichts Neues; die nächste echte Bewertung kommt am So-17:00-Lauf (KW25-Wochen-Review) bzw. Mo 22.06. mit dem Handelsstart und der Klärung, ob die Speku-Automatik wieder läuft.",
+      "lektionen": [
+        "Kein neuer Befund (Feiertag, Daten = 17:00-Lauf). Bewusst keine Lektion/Score-Änderung (L3/L10)."
+      ]
     }
   ]
 }
