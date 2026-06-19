@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-19T16:19:22Z",
+ "standUtc": "2026-06-19T17:01:57Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-19T17:01:57Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 19.06.2026 19:01"
+  },
   {
    "zeit": "2026-06-19T16:19:22Z",
    "agent": "bots",
@@ -553,13 +560,6 @@
    "label": "🔥 RISK",
    "repo": "bots",
    "text": "RISK-Lauf 2026-06-13"
-  },
-  {
-   "zeit": "2026-06-13T02:10:27Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-13"
   }
  ]
 }
