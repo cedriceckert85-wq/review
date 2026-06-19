@@ -9,13 +9,6 @@
    "text": "DAYTRADER Signal 19.06.2026 18:19"
   },
   {
-   "zeit": "2026-06-19T15:34:21Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-19 17:30 (17:00-Lauf, Juneteenth: Boerse zu, Werte Do-Schluss; Schatten finalisiert +1,63%; Speku-Tabelle rendert wieder)"
-  },
-  {
    "zeit": "2026-06-19T07:41:02Z",
    "agent": "haupt",
    "label": "📊 Haupt",
@@ -56,13 +49,6 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Swing-Lauf 2026-06-18"
-  },
-  {
-   "zeit": "2026-06-18T20:34:39Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-18 22:30 (22:00-Lauf: Quantum-Rebound; Schatten via Auto-Kurse +0,86%; Dashboards degradiert, Preis-Feed ok)"
   },
   {
    "zeit": "2026-06-18T20:19:19Z",
@@ -560,6 +546,20 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 13.06.2026 07:09"
+  },
+  {
+   "zeit": "2026-06-13T02:13:38Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-13"
+  },
+  {
+   "zeit": "2026-06-13T02:10:27Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-13"
   }
  ]
 }
