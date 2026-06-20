@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {},
+  "positionen": {
+    "BTC/USD": {
+      "entry": 63428.06,
+      "notional": 20007.1,
+      "stop": 58353.82,
+      "entryDatum": "2026-06-20",
+      "orderId": "8f390664-89e4-4c15-a2fa-a596e61a361f",
+      "grund": "Erster voller Regime-Flip eines liquiden Majors im 4-Tage-Baer: BTC Kurs>slow UND fast>slow (fast-Kreuz, +55), ueber ~5 Laeufe gehalten, Momentum beschleunigt (+0,7->+1,1%). Breite jetzt 7/8 Coins +Momentum (LTC voller Flip, SOL Kurs>slow, ETH +0,7% knapp unter slow-MA) - besser als der gescheiterte 17.06.-Trade + fast-Kreuz das damals fehlte. Starter 0,20xCash. Stop ~62.800 (unter Coil-Basis/slow-MA, invalidiert Flip), Ziel ~64.300 dann trailen. Bleibt Gegentrend im strukturellen Baer -> eng gefuehrt."
+    }
+  },
   "trades": [
     {
       "sym": "ETH/USD",
@@ -39,7 +48,7 @@
     }
   ],
   "heute": {
-    "datum": "2026-06-17",
+    "datum": "2026-06-20",
     "trades": 1
   },
   "statistik": {
