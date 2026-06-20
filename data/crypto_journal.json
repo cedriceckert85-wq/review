@@ -5,16 +5,7 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {
-    "BTC/USD": {
-      "entry": 63428.06,
-      "notional": 20007.1,
-      "stop": 58353.82,
-      "entryDatum": "2026-06-20",
-      "orderId": "8f390664-89e4-4c15-a2fa-a596e61a361f",
-      "grund": "Erster voller Regime-Flip eines liquiden Majors im 4-Tage-Baer: BTC Kurs>slow UND fast>slow (fast-Kreuz, +55), ueber ~5 Laeufe gehalten, Momentum beschleunigt (+0,7->+1,1%). Breite jetzt 7/8 Coins +Momentum (LTC voller Flip, SOL Kurs>slow, ETH +0,7% knapp unter slow-MA) - besser als der gescheiterte 17.06.-Trade + fast-Kreuz das damals fehlte. Starter 0,20xCash. Stop ~62.800 (unter Coil-Basis/slow-MA, invalidiert Flip), Ziel ~64.300 dann trailen. Bleibt Gegentrend im strukturellen Baer -> eng gefuehrt."
-    }
-  },
+  "positionen": {},
   "trades": [
     {
       "sym": "ETH/USD",
@@ -45,6 +36,16 @@
       "entryDatum": "2026-06-17",
       "exitDatum": "2026-06-17",
       "grund": "These gescheitert (vordefinierter Ausstieg): breiter Bounce gekippt - alle 8 Coins wieder negatives Momentum, Leader (AVAX/SOL/LTC) zurueck unter slow-MA; BTC klar unter slow-MA (live ~64906 vs slow 65864) und am/unter fast-MA, an Stop-Zone ~64800. Gegentrend-Bounce im strukturellen Baer = dritter Fehlausbruch -> Verlust ~-300 USD geschnitten, Kapital geschont statt Gap-Risiko bei 30-Min-Latenz."
+    },
+    {
+      "sym": "BTC/USD",
+      "entry": 63428.06,
+      "exit": 63189.37,
+      "qty": "0.308289149",
+      "pnlUsd": -73.59,
+      "entryDatum": "2026-06-20",
+      "exitDatum": "2026-06-20",
+      "grund": "These invalidiert - breiter Rollover (vordefinierter Ausstieg): 5/8 Coins jetzt negatives Momentum (LINK/AVAX/LTC/XRP/DOGE), BTC+ETH-Momentum auf ~flach kollabiert (+0,1%), Preise fallen zu den slow-MAs. BTC nur noch ~145 ueber slow-MA/Stop. Der breite Regime-Flip von heute frueh ist gescheitert (struktureller Baer reasserts) -> Verlust ~-90 USD an der slow-MA geschnitten statt tieferen Gap bei 30-Min-Latenz zu riskieren. Re-Entry nur bei frischer breiter Staerke."
     }
   ],
   "heute": {
@@ -52,9 +53,9 @@
     "trades": 1
   },
   "statistik": {
-    "trades": 3,
+    "trades": 4,
     "gewonnen": 2,
-    "verloren": 1,
-    "summePnlUsd": 302.86
+    "verloren": 2,
+    "summePnlUsd": 229.27
   }
 }
