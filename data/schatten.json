@@ -9,7 +9,7 @@
     "rendite": 1.63,
     "cash": 1376.56,
     "cashQuote": 67.7,
-    "stand": "19.06.2026, 22:30 (Juneteenth — US-Börse zu; Werte = Do-Schluss, unverändert seit 17:00)"
+    "stand": "20.06.2026, 17:30 (Sa, US-Börse zu; Werte = Do-Schluss 18.06., unverändert)"
   },
   "scoreboard": {
     "richtig": 0,
@@ -282,6 +282,13 @@
     {
       "datum": "19.06.",
       "zeit": "22:00",
+      "schatten": 1.63,
+      "haupt": 0.08,
+      "speku": 2.07
+    },
+    {
+      "datum": "20.06.",
+      "zeit": "17:00",
       "schatten": 1.63,
       "haupt": 0.08,
       "speku": 2.07

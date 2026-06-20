@@ -1283,6 +1283,71 @@
       "lektionen": [
         "Kein neuer Befund (Feiertag, Daten = 17:00-Lauf). Bewusst keine Lektion/Score-Änderung (L3/L10)."
       ]
+    },
+    {
+      "id": "2026-06-20-1700",
+      "datum": "2026-06-20",
+      "zeit": "17:30",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 2001.55,
+        "rendite": 0.08,
+        "cashQuote": 73,
+        "score": 6,
+        "fazit": "Sa, Börse zu — Werte = Do-Schluss 18.06. (eingefroren). 2.001,55 € / +0,08 %, 3 HOLD, 73 % Cash, keine Trades. Haupt-Tabelle rendert weiter Falschdaten. Das Dashboard zeigt eine eigene 'WOCHEN-REFLEXION 20.06.' (Woche 2: +4,08 € realisiert, CEG-Ziel vs NVDA-Zeit-Exit, AI-Konzentration reduziert, n=12) — Kontext für den So-Wochen-Review. Score 6 unverändert (L3).",
+        "punkte": [
+          "Eingefroren = Do-Schluss; keine Trades/Kurse.",
+          "Haupt-eigene Wochen-Reflexion (+4,08 € realisiert) als Input für KW25-Review notiert.",
+          "Per-Position weiter vertagt (Dashboard defekt)."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2041.48,
+        "rendite": 2.07,
+        "cashQuote": 61,
+        "score": 5,
+        "fazit": "Sa, Börse zu — Werte = Do-Schluss (+2,07 %). Tabelle heute wieder nicht renderbar (flaky), Per-Titel vom Do-Schluss bekannt (QBTS +6,19 %, IONQ −0,14 %, RGTI +9,82 %). Automatik weiter offline-geflaggt. Score 5 fortgeschrieben — Engine-Recovery erst Mo prüfbar.",
+        "punkte": [
+          "Eingefroren = Do-Schluss; RGTI führt weiter (D3-Trend).",
+          "Automatik-Recovery der Mo-Test; Dashboard-Render bleibt flaky."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2032.62,
+        "rendite": 1.63,
+        "cashQuote": 67.7,
+        "score": 6,
+        "fazit": "Sa, eingefroren = Do-Schluss: +1,63 %, QBTS +3,61 %, IONQ −3,35 %, 67,7 % Cash. Kein Trade, kein Trigger, Scoreboard 0/4/3. Score 6.",
+        "punkte": [
+          "Eingefroren; verlauf-Punkt zur Konsistenz (frozen).",
+          "Keine neue Abweichung/Lektion (L3/L10)."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Wochenende, eingefroren. HPE verfallen, 100 % flach, n=0. Score 6.",
+        "punkte": [
+          "Unverändert."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Wochenende, eingefroren. INTC+AMD offen, LRCX pending (Fill Mo 22.), MU verfallen. Score 6.",
+        "punkte": [
+          "Unverändert; LRCX-Fill Mo."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Wochenende, eingefroren. 5 Positionen (TQQQ/LRCX/MU/INTC + CAT R-007 pending), summeR 0. Score 6.",
+        "punkte": [
+          "Unverändert."
+        ]
+      },
+      "vergleich": "Sa-Lauf — Börse zu (verlängertes Juneteenth-Wochenende), alle Werte = Do-Schluss 18.06., keine Trades/Kurse (L3 — Pflichteintrag ohne Erkenntnisgewinn). Rangfolge unverändert: Speku +2,07 % > Schatten +1,63 % > Haupt +0,08 %. Nichts Neues; der nächste substanzielle Lauf ist der So-17:00-Wochen-Review (KW25), danach Mo 22.06. der Handelsstart (Test: Speku-Automatik wieder live? Haupt-Tabelle repariert?).",
+      "lektionen": [
+        "Kein neuer Befund (Wochenende, Daten = Do-Schluss). Keine Lektion/Score-Änderung (L3/L10)."
+      ]
     }
   ]
 }
