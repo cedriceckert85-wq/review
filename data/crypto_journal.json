@@ -13,6 +13,14 @@
       "entryDatum": "2026-06-21",
       "orderId": "574aeef2-5576-4b0b-9141-144d496ff2ce",
       "grund": "Staerkstes Setup im Universum: Preis ueber beiden MAs, fast-MA ~2,4% ueber slow (klares Long-Regime), hoechstes 24h-Momentum +4,9%. Ziel: Momentum Richtung jüngste Hochs reiten. Ausstieg: Bruch der slow-MA ~70,0 oder Momentum dreht negativ."
+    },
+    "AVAX/USD": {
+      "entry": 6.23,
+      "notional": 16056.56,
+      "stop": 5.73,
+      "entryDatum": "2026-06-21",
+      "orderId": "519aca5c-f9dc-4736-b44c-31182ad1f4c4",
+      "grund": "Zweitstaerkstes Momentum-Setup: Preis 6,24 ueber beiden MAs, fast > slow (Long-Regime), 24h-Momentum auf +5,2% beschleunigt. Diversifiziert weg von Single-Coin-Risiko. Ziel: Momentum mitnehmen. Ausstieg: Bruch slow-MA ~6,09 oder Momentum dreht negativ."
     }
   },
   "trades": [
@@ -59,7 +67,7 @@
   ],
   "heute": {
     "datum": "2026-06-21",
-    "trades": 1
+    "trades": 2
   },
   "statistik": {
     "trades": 4,
