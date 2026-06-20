@@ -1,5 +1,5 @@
 {
-  "stand": "20.06.2026, 17:30 (17:00-Lauf, Sa — US-Börse zu, Werte = Do-Schluss)",
+  "stand": "20.06.2026, 22:30 (22:00-Lauf, Sa — US-Börse zu, Werte unverändert)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",

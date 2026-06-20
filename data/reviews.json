@@ -1348,6 +1348,70 @@
       "lektionen": [
         "Kein neuer Befund (Wochenende, Daten = Do-Schluss). Keine Lektion/Score-Änderung (L3/L10)."
       ]
+    },
+    {
+      "id": "2026-06-20-2200",
+      "datum": "2026-06-20",
+      "zeit": "22:30",
+      "slot": "22:00-Lauf",
+      "haupt": {
+        "vermoegen": 2001.55,
+        "rendite": 0.08,
+        "cashQuote": 73,
+        "score": 6,
+        "fazit": "Sa-Schluss — identisch zum 17:00-Lauf (Wochenende, Börse zu, Werte = Do-Schluss). 2.001,55 € / +0,08 %, 3 HOLD, 73 % Cash, keine Trades. Haupt-Tabelle weiter defekt. Score 6 (L3).",
+        "punkte": [
+          "Eingefroren = 17:00/Do-Schluss; keine Trades/Kurse.",
+          "Per-Position vertagt (Dashboard defekt)."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2041.48,
+        "rendite": 2.07,
+        "cashQuote": 61,
+        "score": 5,
+        "fazit": "Sa-Schluss, eingefroren (+2,07 %, Do-Schluss). Tabelle nicht renderbar, Automatik weiter offline-geflaggt. Score 5 — Recovery erst Mo prüfbar.",
+        "punkte": [
+          "Eingefroren = Do-Schluss; RGTI führt (D3-Trend).",
+          "Automatik-Recovery = Mo-Test."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2032.62,
+        "rendite": 1.63,
+        "cashQuote": 67.7,
+        "score": 6,
+        "fazit": "Sa-Schluss, eingefroren: +1,63 %, QBTS +3,61 %, IONQ −3,35 %, 67,7 % Cash. Kein Trade/Trigger, Scoreboard 0/4/3. Score 6.",
+        "punkte": [
+          "Eingefroren; verlauf-Punkt zur Konsistenz.",
+          "Keine neue Abweichung/Lektion (L3/L10)."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "Wochenende, eingefroren. HPE verfallen, flach, n=0. Score 6.",
+        "punkte": [
+          "Unverändert."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "Wochenende, eingefroren. INTC+AMD offen, LRCX pending (Fill Mo 22.), MU verfallen. Score 6.",
+        "punkte": [
+          "Unverändert."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "Wochenende, eingefroren. 5 Positionen + CAT R-007 pending, summeR 0. Score 6.",
+        "punkte": [
+          "Unverändert."
+        ]
+      },
+      "vergleich": "Sa-22:00 — Börse zu, alle Werte = Do-Schluss 18.06., keine Trades/Kurse (L3, Pflichteintrag). Rangfolge unverändert: Speku +2,07 % > Schatten +1,63 % > Haupt +0,08 %. Der nächste substanzielle Lauf ist MORGEN So 17:00 — der KW25-Wochen-Review (alle Bots, Fehler-Akten-Auswertung, KW24-Empfehlungs-Check).",
+      "lektionen": [
+        "Kein neuer Befund (Wochenende, Daten = Do-Schluss). Keine Lektion/Score-Änderung (L3/L10)."
+      ]
     }
   ]
 }
