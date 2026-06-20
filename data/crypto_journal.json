@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {},
+  "positionen": {
+    "SOL/USD": {
+      "entry": 72.32,
+      "notional": 19968.97,
+      "stop": 66.53,
+      "entryDatum": "2026-06-21",
+      "orderId": "574aeef2-5576-4b0b-9141-144d496ff2ce",
+      "grund": "Staerkstes Setup im Universum: Preis ueber beiden MAs, fast-MA ~2,4% ueber slow (klares Long-Regime), hoechstes 24h-Momentum +4,9%. Ziel: Momentum Richtung jüngste Hochs reiten. Ausstieg: Bruch der slow-MA ~70,0 oder Momentum dreht negativ."
+    }
+  },
   "trades": [
     {
       "sym": "ETH/USD",
@@ -49,7 +58,7 @@
     }
   ],
   "heute": {
-    "datum": "2026-06-20",
+    "datum": "2026-06-21",
     "trades": 1
   },
   "statistik": {
