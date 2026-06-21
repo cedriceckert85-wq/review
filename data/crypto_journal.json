@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {},
+  "positionen": {
+    "LTC/USD": {
+      "entry": 45.85,
+      "notional": 19833.8,
+      "stop": 42.18,
+      "entryDatum": "2026-06-21",
+      "orderId": "3f4cbf90-4cac-45f1-b09f-ad154f1cf070",
+      "grund": "Saubererster/stetigster Trend im Feld: LTC macht kontinuierlich neue Hochs (45,86), Preis +1,8% ueber fast-MA (robustes Long-Regime), Momentum auf +3,59% gestiegen (hoechstes). Endlich breite Bestaetigung: BTC (2. Lauf) und ETH beide ueber ihrer fast-MA. Ziel: stetigen Trend Richtung weitere Hochs reiten. Ausstieg: Bruch fast-MA ~45,05 oder Momentum unter ~2%/negativ."
+    }
+  },
   "trades": [
     {
       "sym": "ETH/USD",
@@ -80,7 +89,7 @@
   ],
   "heute": {
     "datum": "2026-06-21",
-    "trades": 3
+    "trades": 4
   },
   "statistik": {
     "trades": 7,
