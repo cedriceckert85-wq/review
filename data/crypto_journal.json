@@ -13,6 +13,14 @@
       "entryDatum": "2026-06-21",
       "orderId": "3f4cbf90-4cac-45f1-b09f-ad154f1cf070",
       "grund": "Saubererster/stetigster Trend im Feld: LTC macht kontinuierlich neue Hochs (45,86), Preis +1,8% ueber fast-MA (robustes Long-Regime), Momentum auf +3,59% gestiegen (hoechstes). Endlich breite Bestaetigung: BTC (2. Lauf) und ETH beide ueber ihrer fast-MA. Ziel: stetigen Trend Richtung weitere Hochs reiten. Ausstieg: Bruch fast-MA ~45,05 oder Momentum unter ~2%/negativ."
+    },
+    "SOL/USD": {
+      "entry": 74.45,
+      "notional": 15918.54,
+      "stop": 68.49,
+      "entryDatum": "2026-06-21",
+      "orderId": "b98b0aad-ae29-4c73-8574-900ed8d6d4fb",
+      "grund": "Hoechstes Momentum im Feld (+4,13%), sauberes Long-Regime (74,45 ueber beiden MAs), ENGER Spread (BTC/ETH/SOL-Gruppe). Endlich klare breite Bestaetigung: BTC und ETH zurueck ueber fast-MA, XRP/LINK/DOGE alle positiv — ganzes Feld gruen. Besseres Setup als die fruehen SOL-Whipsaws. Ziel: Momentum reiten. Ausstieg: Bruch fast-MA ~73,81 oder Momentum unter ~2,5%/negativ."
     }
   },
   "trades": [
@@ -89,7 +97,7 @@
   ],
   "heute": {
     "datum": "2026-06-21",
-    "trades": 4
+    "trades": 5
   },
   "statistik": {
     "trades": 7,
