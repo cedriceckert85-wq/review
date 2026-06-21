@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {},
+  "positionen": {
+    "SOL/USD": {
+      "entry": 73.98,
+      "notional": 19906.65,
+      "stop": 68.06,
+      "entryDatum": "2026-06-21",
+      "orderId": "a8064a1f-7274-493d-b3fe-3b75e0ce1047",
+      "grund": "Wiedereinstieg: SOL fuehrt Markterholung — Preis 73,98 klar ueber beiden MAs, Momentum stetig steigend (2,2->3,0->3,3%), und BTC/ETH erobern gerade ihre fast-MA zurueck (breiter Rueckenwind kehrt). Liquider Major, enger Spread. Ziel: Erholung Richtung Tageshochs reiten. Ausstieg: Bruch fast-MA ~73,35 oder Momentum faellt unter ~2%/negativ."
+    }
+  },
   "trades": [
     {
       "sym": "ETH/USD",
@@ -70,7 +79,7 @@
   ],
   "heute": {
     "datum": "2026-06-21",
-    "trades": 2
+    "trades": 3
   },
   "statistik": {
     "trades": 6,
