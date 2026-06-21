@@ -6,14 +6,6 @@
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
   "positionen": {
-    "SOL/USD": {
-      "entry": 72.32,
-      "notional": 19968.97,
-      "stop": 66.53,
-      "entryDatum": "2026-06-21",
-      "orderId": "574aeef2-5576-4b0b-9141-144d496ff2ce",
-      "grund": "Staerkstes Setup im Universum: Preis ueber beiden MAs, fast-MA ~2,4% ueber slow (klares Long-Regime), hoechstes 24h-Momentum +4,9%. Ziel: Momentum Richtung jüngste Hochs reiten. Ausstieg: Bruch der slow-MA ~70,0 oder Momentum dreht negativ."
-    },
     "AVAX/USD": {
       "entry": 6.23,
       "notional": 16056.56,
@@ -63,6 +55,16 @@
       "entryDatum": "2026-06-20",
       "exitDatum": "2026-06-20",
       "grund": "These invalidiert - breiter Rollover (vordefinierter Ausstieg): 5/8 Coins jetzt negatives Momentum (LINK/AVAX/LTC/XRP/DOGE), BTC+ETH-Momentum auf ~flach kollabiert (+0,1%), Preise fallen zu den slow-MAs. BTC nur noch ~145 ueber slow-MA/Stop. Der breite Regime-Flip von heute frueh ist gescheitert (struktureller Baer reasserts) -> Verlust ~-90 USD an der slow-MA geschnitten statt tieferen Gap bei 30-Min-Latenz zu riskieren. Re-Entry nur bei frischer breiter Staerke."
+    },
+    {
+      "sym": "SOL/USD",
+      "entry": 72.32,
+      "exit": 73.08,
+      "qty": "269.476496636",
+      "pnlUsd": 204.8,
+      "entryDatum": "2026-06-21",
+      "exitDatum": "2026-06-21",
+      "grund": "Gewinnmitnahme: Momentum-These erodiert — 24h-Momentum von +6,5% auf +1,9% kollabiert, Preis sitzt auf der fast-MA (73,04), breiter Markt dreht (XRP/LINK/DOGE negativ). Buchgewinn sichern statt zurueckgeben."
     }
   ],
   "heute": {
@@ -70,9 +72,9 @@
     "trades": 2
   },
   "statistik": {
-    "trades": 4,
-    "gewonnen": 2,
+    "trades": 5,
+    "gewonnen": 3,
     "verloren": 2,
-    "summePnlUsd": 229.27
+    "summePnlUsd": 434.07
   }
 }
