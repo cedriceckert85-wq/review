@@ -1,5 +1,5 @@
 {
-  "naechstesReview": "Sonntag, 21.06.2026, 17:00 Uhr",
+  "naechstesReview": "Sonntag, 28.06.2026, 17:00 Uhr",
   "wochen": [
     {
       "id": "KW24 2026",
@@ -115,6 +115,115 @@
         "empfehlungen": [
           "Ab dem ersten Trade die Kosten-Disziplin dokumentieren — Daytrade-Gebühren fressen bei BTC/ETH schnell den Edge.",
           "Regime-Gate-Trefferquote (handelt nur bei grünem Regime) von Tag 1 mitschreiben."
+        ]
+      }
+    },
+    {
+      "id": "KW25 2026",
+      "zeitraum": "15.06.–21.06.2026",
+      "erstellt": "21.06. 17:30",
+      "haupt": {
+        "wochenrendite": "+0,37 %",
+        "stand": "2.001,55 € / kumuliert +0,08 % / Cash 73 % (Do-Schluss 18.06., 3 Tage eingefroren)",
+        "skillFehler": [
+          {
+            "titel": "Zeit-Exit inkonsistent / ad hoc übersteuert — F-H-003",
+            "detail": "NVDA-Zeit-Exit 2 Tage zu spät vollzogen (Tag 9 statt 7, −0,49 %); CEG über Tag 10/10 hinaus gehalten → traf aber Ziel 273 (Verkauf 275, +8,8 %). Gemischte Ergebnisse → kein starres Limit, aber auch keine dokumentierte Verlängerungs-/Ziel-Vorrang-Regel. Die Handhabung ist ad hoc (Wed-SKILL-Einstufung war voreilig, vgl. Reviewer-L10).",
+            "empfehlung": "Zeit-Limit als Prozess festschreiben: am Tag X exekutieren ODER dokumentiert mit neuer These/Ziel-Vorrang verlängern — Regel vor dem nächsten Limit-Treffer."
+          },
+          {
+            "titel": "Einstiegs-Bestätigung weiter nicht eingeführt — F-H-002 (n=4)",
+            "detail": "KW24-PRIO-1-Empfehlung die 2. Woche ignoriert. XLP (15.06.) war der erste Einstieg ohne Sofort-Minus, aber als defensiver Low-Vol-ETF kein sauberer Test der Messer-These; n bleibt 4 (Messlatte n≥8). Eine richtungsneutrale Bestätigungsregel (grüner Schluss / Swing-High) fehlt weiterhin.",
+            "empfehlung": "Bestätigungsregel jetzt verbindlich machen — sie adressiert F-H-002 (Schwäche-Kauf) UND F-H-004 (Stärke-Chase) zugleich."
+          }
+        ],
+        "pech": [
+          {
+            "titel": "Stop-Abstand benigne ausgegangen (F-H-003/NVDA)",
+            "detail": "Die zu enge NVDA-Stop-Platzierung (199, 0,7 % Abstand) wurde nie wieder getestet — NVDA kehrte auf Breakeven zurück, der Near-Miss vom 11.06. war bestätigt Intraday-Rauschen (L4). Kein Können-Schaden auf der Ergebnis-Seite; die Stop-Distanz-Frage ist erledigt."
+          }
+        ],
+        "gutGemacht": [
+          "CEG-Ziel-Disziplin: bis Ziel 273 gehalten und zu 275 verkauft (+8,8 %, bestes realisiertes Geschäft) — das Halten über das Zeit-Limit war hier richtig.",
+          "Stop-/Verkaufsdisziplin durchgehend: NVDA-Zeit-Exit vollzogen, keine Position 'gehofft', 73 % Cash gehalten.",
+          "XLP erster Einstieg ohne Sofort-Minus — Ansatz in die richtige Richtung (auch wenn als Low-Vol-ETF kein sauberer Test)."
+        ],
+        "empfehlungen": [
+          "PRIO 1 — Dokumentierte Zeit-Exit-Regel (F-H-003): wann ist das Limit hart, wann hat ein nahes Ziel Vorrang? Ad-hoc-Handhabung gab bei CEG zwischenzeitlich ~1,5 % Buchgewinn zurück (Mi-Dip), bei NVDA −0,49 % durch Verzögerung.",
+          "PRIO 2 — Einstiegs-Bestätigung endlich einführen (F-H-002, 2. Woche offen): kein Kauf ohne grünen Schlusskurs / Swing-High-Bruch.",
+          "PRIO 3 — Stops aus Volatilität ableiten (≥1 ATR unter Swing-Tief) statt fixer %-Abstände (L4/F-H-003)."
+        ],
+        "umsetzungVorwoche": "Gemischt bis schwach. KW24-PRIO 1 (Einstiegs-Bestätigung): IGNORIERT — keine Regel eingeführt, XLP war kein bewusster Regel-Test. KW24-PRIO 2 (ATR-Stops): nicht belegbar umgesetzt. KW24-PRIO 3 (NVDA-Zeit-Exit konsequent): TEILWEISE — NVDA wurde exekutiert, aber 2 Tage zu spät (Tag 9 statt 7). Die wichtigste Empfehlung (Entry-Bestätigung) blieb das zweite Mal liegen."
+      },
+      "speku": {
+        "wochenrendite": "+0,96 %",
+        "stand": "2.041,48 € / kumuliert +2,07 % / Cash 60 % (Do-Schluss, 3 Tage eingefroren)",
+        "skillFehler": [
+          {
+            "titel": "100 % Quantum ohne Risiko-Kennzahl, Round-Trip ungebremst — F-S-001",
+            "detail": "Mo 15.06. +4,86 % (RGTI +18,6 %, QBTS +13,2 %, IONQ +9,3 %) → Mi 17.06. −0,18 % (voller Round-Trip) → Do +2,07 %. Die 100-%-Konzentration gab die Rally synchron und nahm sie synchron zurück; über BEIDE Abwärts-Beine erfolgte keine Risikomaßnahme (kein Theme-Cap, kein Teilverkauf). >10-%-Einzel-Drawdown-Messlatte formal nicht gerissen (RGTI blieb grün), faktisch der ganze Gewinn einmal vernichtet und zurückgeholt.",
+            "empfehlung": "Harte Themen-Obergrenze 60–70 % + Tranche 2 (Space) — der erste echte gemeinsame Drawdown trifft sonst alles gleichzeitig."
+          },
+          {
+            "titel": "Entscheidungs-/Scout-Automatik persistent offline — F-S-005 (neu)",
+            "detail": "Seit 17.06. flaggt das Dashboard 'letzter Automatik-Lauf >24h' — durchgehend bis Sonntag (~4 Tage). Das konzentrierte Buch ging unbeaufsichtigt in das 20:00-FOMC-Event (17.06.); am 18.06. lieferte das Dashboard zusätzlich Falschdaten ('Nur SPY', Positionstabelle nicht renderbar). Am Feiertag/Wochenende folgenlos, ab Mo 22.06. wieder kritisch (keine Reaktion auf Stop-Annäherung/Signal möglich). Der Preis-Feed (kurse.yml) ist intakt; das Manko ist die Entscheidungs-/Berichtskette.",
+            "empfehlung": "Operatives Monitoring/Heartbeat für die Automatik; Datenintegrität (Positionstabelle) als Prozess-Dimension absichern, bevor Mo der Handel wieder live ist."
+          }
+        ],
+        "pech": [
+          {
+            "titel": "Quantum-Round-Trip war Sektor-Varianz, kein Einzelfehler",
+            "detail": "Der Mo→Mi-Rücksetzer selbst ist Markt-/Sektor-Bewegung (gemeinsame Quantum-Sensitivität), kein Fehltrade — der Können-Anteil ist ausschließlich die fehlende Risikomaßnahme, nicht der Drawdown. Kein Stop gerissen, alle Positionen am Wochenende grün/nahe Einstand."
+          }
+        ],
+        "gutGemacht": [
+          "Keine Panik im Round-Trip: kein Notverkauf am Mi-Tief, keine These über Bord geworfen — Buch blieb intakt (+2,07 %).",
+          "Nachkauf-Automatik nicht ausgelöst (kein Averaging-down) — Kurse blieben über den Triggern.",
+          "RGTI-These trägt: RGTI führte die Woche (+18,6 % Mo, weiter stärkster der drei) — der Original-Trader lag mit dem Halten richtig (D3-Ausschluss des Reviewers trendet falsch)."
+        ],
+        "empfehlungen": [
+          "PRIO 1 — Klumpenrisiko bepreisen (F-S-001), 3. Woche offen: harte Themen-Obergrenze 60–70 %. Der Round-Trip hat live gezeigt, was 100 % Konzentration in beide Richtungen bedeutet.",
+          "PRIO 2 — Automatik-Zuverlässigkeit (F-S-005): Heartbeat/Alerting, damit das Buch nicht erneut tagelang unbeaufsichtigt in ein Binär-Event läuft.",
+          "PRIO 3 — Nachkauf-Trigger durch Stabilisierungs-Bedingung ersetzen (F-S-002) — im nächsten Abwärtsmarkt sonst Averaging-down per Limit."
+        ],
+        "umsetzungVorwoche": "Schwach. KW24-PRIO 1 (Themen-Obergrenze/Tranche-2-Diversifikation): IGNORIERT — Buch unverändert 100 % Quantum. KW24-PRIO 2 (Nachkauf durch Stabilisierung ersetzen): nicht belegbar umgesetzt, mangels Trigger ungetestet. KW24-PRIO 3 (AH-Protokoll für Shorts): diese Woche nicht anwendbar (kein Short). Die Kern-Empfehlung (Diversifikation) blieb das zweite Mal unbeachtet; neu hinzugekommen ist das Automatik-Offline-Problem."
+      },
+      "fazit": "Woche 2 (15.–21.06., nur Mo–Do gehandelt, Fr Juneteenth + Wochenende). Kumuliert führt weiter passives SPY-Buy&Hold (+2,94 %) vor Speku (+2,07 %), Schatten (+1,63 %) und Haupt (+0,08 %) — risikoadjustiert ist keiner der aktiven Trader vor dem Index. Haupt-Highlight: CEG-Ziel-Treffer +8,8 % (Halte-Disziplin zahlte sich aus), schattenseitig als D7 sogar +10,62 % realisiert — aber Haupts Zeit-Exit bleibt inkonsistent und die Einstiegs-Bestätigung wurde die 2. Woche nicht eingeführt. Speku-Highlight (negativ): der 100-%-Quantum-Round-Trip (Mo +4,86 % → Mi −0,18 % → +2,07 %) demonstrierte das Klumpenrisiko beidseitig und ungebremst — plus eine seit 17.06. offline Automatik. Der heimliche Star ist der Crypto-Bot: als einziger aktiv handelnd (7 Trades, 3W/4V, +266 USD netto, positiver Payoff ~2,3:1, thesengetriebene Exits). Swing/SOLID/RISK weiter im Vor-Edge-Status (0 geschlossen). Durchgehender Befund der Woche: Beide Haupt-Trader haben die PRIO-1-Empfehlung aus KW24 IGNORIERT — sie lernen (noch) nicht aus den Reviews. Messlatten 12.07. (4 Wochen): (a) Haupt-Einstiege bei n≥8 nicht >70 % sofort im Minus — noch n=4; (b) Speku-Themen-Cap/Tranche-2 umgesetzt — bisher NICHT; (c) beide schlagen SPY risikoadjustiert — bisher NICHT (SPY +2,94 % führt). H6-Ranking-Stichtag 10.07.",
+      "swing": {
+        "wochenrendite": "±0,00 %",
+        "stand": "100.000 $ / 0 Fills (Alpaca Paper) — V4 Mean-Reversion",
+        "fazit": "Der 16.06.-Umbau auf Mean-Reversion (fadet statistische Extreme statt Stärke zu kaufen) produzierte in KW25 0 Trades; HPE (T-001) verfiel ohne Fill, Depot 100 % flach. Diszipliniert (kein erzwungener Trade), aber n=0 vs. n≥30-Gate = Edge weiter unbelegt.",
+        "empfehlungen": [
+          "Prüfen, ob die V4-Filter nicht zu eng sind (3 trade-lose Tage in Folge) — der n≥30-Gate kommt nur, wenn überhaupt Setups feuern.",
+          "After-Hours-Earnings-Gap-Risiko bei Empfehlungen vor Übernacht-Events explizit kennzeichnen/meiden."
+        ]
+      },
+      "solid": {
+        "wochenrendite": "±0,00 %",
+        "stand": "100.000 € / 0 geschlossen · INTC+AMD offen, LRCX pending",
+        "fazit": "Begründete Evidenz-Selektion: INTC+AMD gefüllt (16.06.), LRCX ersetzte das verfallene MU (bewusster Skip wegen MU-Earnings 24.06., Held-into-Earnings-Binärrisiko). Regime risk_on (VIX ~18). 0 geschlossen → Expectancy unbewiesen; der Halbleiter-Cluster (INTC/AMD/LRCX) ist Konzentration statt Diversifikation.",
+        "empfehlungen": [
+          "Halbleiter-Klumpen bewerten/begrenzen — drei stark korrelierte Chip-Namen für einen Evidenz-Bot.",
+          "Jede trade-lose Nacht dokumentieren (warum kein Kandidat die Filter überlebte) — Kalibrierung ab Tag 1."
+        ]
+      },
+      "risk": {
+        "wochenrendite": "±0,00 %",
+        "stand": "100.000 € / Summe R 0 · 4 gefüllt (TQQQ 3× + LRCX/MU/INTC), CAT pending",
+        "fazit": "Gehebeltes TQQQ + Halbleiter-Cluster gefüllt, CAT (R-007) pending nach ZWEIMALIGEM Verfall (R-003/R-006) → Limit-Platzierung zu eng/zu fern. summeR 0, 0 geschlossen → Expectancy unbewiesen. Engine D (Shorts) korrekt deaktiviert. Der gehebelte TQQQ-Beta bleibt der kritische Risikopunkt.",
+        "empfehlungen": [
+          "CAT-Limit-Logik prüfen (2× verfallen ist ein Platzierungs-Signal).",
+          "Engine-A/B/C-Statistik ab Tag 1 getrennt führen; gehebelte Position eng an der Stop-Disziplin halten."
+        ]
+      },
+      "crypto": {
+        "wochenrendite": "+0,27 %",
+        "stand": "100.266 $ / +0,27 % / 7 Trades (3 Gewinn / 4 Verlust), +266 USD netto",
+        "fazit": "Erste volle Handelswoche und klar der aktivste Bot: 7 Trades, Trefferquote 43 %, aber positiver Payoff (Ø-Gewinn ~214 USD vs. Ø-Verlust ~94 USD = 2,3:1) → netto +266 USD. Verlierer wurden konsequent thesengetrieben an der slow-MA geschnitten (BTC 2×, SOL-Wiedereinstieg), Gewinner am Ziel gesichert (ETH 2×, SOL). Heute (21.06.) etwas Churn: SOL bei +204 mitgenommen, dann sofortiger Wiedereinstieg −168 ausgestoppt (Fehlausbruch).",
+        "empfehlungen": [
+          "Re-Entry-Churn vermeiden: heute SOL +204 raus → sofort wieder rein → −168 ausgestoppt; nach einem thesengetriebenen Exit nicht in denselben abkühlenden Namen sofort wieder einsteigen.",
+          "Gebühren-/Kosten-Disziplin je Trade dokumentieren — bei 7 Trades/Woche frisst die Frequenz sonst den Edge.",
+          "Regime-Gate-Trefferquote mitschreiben (handelt nur bei grünem Regime)."
         ]
       }
     }

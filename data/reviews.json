@@ -1412,6 +1412,74 @@
       "lektionen": [
         "Kein neuer Befund (Wochenende, Daten = Do-Schluss). Keine Lektion/Score-Änderung (L3/L10)."
       ]
+    },
+    {
+      "id": "2026-06-21-1700",
+      "datum": "2026-06-21",
+      "zeit": "17:30",
+      "slot": "17:00-Lauf",
+      "haupt": {
+        "vermoegen": 2001.55,
+        "rendite": 0.08,
+        "cashQuote": 73,
+        "score": 6,
+        "fazit": "So-17:00, KW25-Wochen-Review-Tag. Daten 3. Tag eingefroren (Do-Schluss 18.06.; Fr Juneteenth, Sa/So zu): 2.001,55 € / +0,08 %, 3 HOLD (IWM/AMZN/XLP), 73 % Cash. Woche brachte CEG-Ziel-Gewinn +8,8 % (bestes Geschäft) und NVDA-Zeit-Exit (2 Tage spät, −0,49 %); Entry-Bestätigung (F-H-002) weiter nicht eingeführt. Score 6.",
+        "punkte": [
+          "KW25: CEG +8,8 % (Ziel-Disziplin) vs. NVDA-Zeit-Exit 2 Tage spät.",
+          "F-H-003 Zeit-Exit → UNKLAR/inkonsistent (braucht dokumentierte Regel).",
+          "KW24-PRIO-1 (Entry-Bestätigung) ignoriert — Details im Wochen-Review."
+        ]
+      },
+      "speku": {
+        "vermoegen": 2041.48,
+        "rendite": 2.07,
+        "cashQuote": 60,
+        "score": 5,
+        "fazit": "So-17:00, eingefroren (+2,07 %, Do-Schluss), 60 % Cash, 100 % Quantum. KW25 = voller Round-Trip (Mo +4,86 % → Mi −0,18 % → +2,07 %): Klumpenrisiko beidseitig demonstriert, ungebremst. Automatik seit 17.06. >24h offline (am Feiertag folgenlos, Mo kritisch). Score 5.",
+        "punkte": [
+          "KW25: Konzentration gab die Rally synchron und nahm sie zurück (F-S-001).",
+          "Automatik-Offline = neuer Prozess-Punkt (F-S-005).",
+          "RGTI führte die Woche → D3-Ausschluss trendet falsch."
+        ]
+      },
+      "schatten": {
+        "vermoegen": 2032.62,
+        "rendite": 1.63,
+        "cashQuote": 67.7,
+        "score": 6,
+        "fazit": "So-17:00, eingefroren: +1,63 %, QBTS +3,61 %, IONQ −3,35 %, 67,7 % Cash. In KW25 führt der Schatten die Trader-Trio-Wochenrendite (+1,56 pp) dank CEG +10,62 % realisiert — aber D7 zeigte Exit-Über-Konservatismus (268 statt 275). Kein Trade/Trigger. Score 6.",
+        "punkte": [
+          "Subtraktions-Edge trägt: bestes Trio-Wochenergebnis.",
+          "D7 FALSCH aufgelöst (zu früh bei 268 verkauft).",
+          "verlauf-Punkt; keine neue Abweichung (L3/L10)."
+        ]
+      },
+      "swing": {
+        "score": 6,
+        "fazit": "KW25: V4-Mean-Reversion 0 Trades (HPE verfallen), flach, n=0 vs. n≥30-Gate. Sauber (kein erzwungener Trade), aber Edge unbelegt. Score 6.",
+        "punkte": [
+          "Kein erzwungener Trade — aber 0 Datenpunkte."
+        ]
+      },
+      "solid": {
+        "score": 6,
+        "fazit": "KW25: INTC+AMD offen (16.06.), LRCX pending (ersetzt verfallenes MU, Earnings-Skip 24.06.), 0 geschlossen, Regime risk_on. Begründete Selektion, aber Halbleiter-Cluster. Score 6.",
+        "punkte": [
+          "Halbleiter-Cluster + 0 geschlossen → Expectancy offen."
+        ]
+      },
+      "risk": {
+        "score": 6,
+        "fazit": "KW25: 4 gefüllt (TQQQ gehebelt + LRCX/MU/INTC), CAT 2× verfallen → Limit prüfen, summeR 0, 0 geschlossen. Gehebeltes TQQQ bleibt kritisch. Score 6.",
+        "punkte": [
+          "Expectancy unbewiesen; CAT-Limit-Platzierung prüfen."
+        ]
+      },
+      "vergleich": "So-17:00, KW25-Wochen-Review-Tag. Daten 3. Tag eingefroren (Do-Schluss). Kumuliert: SPY +2,94 % > Speku +2,07 % > Schatten +1,63 % > Haupt +0,08 % — passives SPY-Buy&Hold schlägt weiter alle aktiven Trader. Wochen-Highlights: Haupt CEG +8,8 %-Ziel-Treffer (Disziplin), Speku 100-%-Quantum-Round-Trip (Klumpenrisiko beidseitig belegt), Crypto-Bot als aktivster mit +266 USD netto. Voller KW25-Review in data/wochenreviews.json.",
+      "lektionen": [
+        "KW25-Wochen-Review erstellt (15.–21.06.). KW24-PRIO-1-Empfehlungen (Haupt-Entry-Bestätigung, Speku-Themen-Cap) BEIDE ignoriert — die Trader handeln die Reviews (noch) nicht.",
+        "Neuer Fehler-Akten-Eintrag F-S-005 (Speku-Automatik persistent offline). H1/H6 in LESSONS.md fortgeschrieben."
+      ]
     }
   ]
 }

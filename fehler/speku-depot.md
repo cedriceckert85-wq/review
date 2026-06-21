@@ -29,7 +29,8 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Update 17.06.2026 (22:30, Schluss):** VOLLER ROUND-TRIP — Speku +4,86 % (Mo) → −0,18 % (Mi-Schluss), die gesamte Quantum-Rally in drei Tagen synchron zurückgegeben (RGTI +4,11 % einziger grün, QBTS −1,33 %, IONQ −3,43 %). Stärkster F-S-001-Beleg auf Depot-Ebene; die >10-%-Einzel-Drawdown-Messlatte ist formal noch NICHT gerissen (RGTI grün hält sie auf), aber die Konzentration hat de facto den ganzen Gewinn vernichtet. Verschärfend: Automatik weiter (~30h) offline durch das FOMC-Event — keine Reaktionsfähigkeit. Die Persistenz der offline-Engine über mehrere Läufe ist selbst ein Prozessmangel (Score-Treiber Speku 6→5).
 - **Update 18.06.2026 (17:30) — Daten-Outage 3. Tag:** Das Speku-Dashboard ist weiter degradiert (Automatik >24h offline) und liefert heute teils FALSCHDATEN (Positionstabelle nicht renderbar, fälschlich „Nur SPY"). Einzeltitel (QBTS/IONQ/RGTI) sind NICHT belegbar abrufbar; nur das Aggregat (+0,87 %, Rebound) war extrahierbar (unter Vorbehalt). Folge: Klumpenrisiko-These heute nicht prüfbar; das eigentliche Manko ist jetzt die ausgefallene Berichts-/Entscheidungskette selbst (Datenintegrität als Prozess-Dimension). Schatten-Quantum-Kurse mussten vom Mi-Auto-Kurse-Stand getragen werden.
 - **Update 18.06.2026 (22:30):** Quantum-Rebound — Speku +2,07 % (von −0,18 % Mi), die Konzentration liefert jetzt den Bounce so synchron, wie sie davor den Drawdown trug (beidseitige Volatilität, via Auto-Kurse QBTS +1,26 % / IONQ −5,74 % plausibilisiert). Reporting-/Automatik-Outage läuft weiter (beide Dashboards rendern abends Falschdaten); der Preis-Feed (kurse.yml) ist dagegen intakt. Keine neue Klassifikation (L10: nicht am Zwischenstand werten).
-- **Status:** OFFEN (beidseitige Konzentrations-Volatilität bestätigt; >10-%-Einzel-Drawdown weiter offen; Reporting-Outage 3. Tag, Preis-Feed ok)
+- **Update 21.06.2026 (KW25-Wochen-Review — Konsolidierung):** KW25 war die bisher klarste Demonstration des Klumpenrisikos: voller Round-Trip Mo 15.06. +4,86 % → Mi 17.06. −0,18 % → Do +2,07 %, alle drei Titel im synchronen Lockstep nach oben UND unten. Über beide Abwärts-Beine (Di/Mi) erfolgte **keine Risikomaßnahme** (kein Theme-Cap, kein Teilverkauf). Die >10-%-Einzel-Drawdown-Messlatte ist formal weiter NICHT gerissen (RGTI blieb durchgehend grün), faktisch wurde der gesamte Gewinn einmal vernichtet und zurückgeholt. Strukturell unverändert 100 % Quantum — KW24-PRIO-1 (Themen-Cap/Tranche 2) die **2. Woche ignoriert**. Bleibt UNKLAR (strukturell), praktisch bestätigt.
+- **Status:** OFFEN (beidseitige Konzentrations-Volatilität in KW25 voll demonstriert; >10-%-Einzel-Drawdown weiter offen; Diversifikation 2. Woche nicht umgesetzt; Preis-Feed ok)
 
 ### F-S-002 · 2026-06-11 · Nachkauf-Automatik in Story-Aktien
 - **Was passiert ist:** Regel „IONQ < 50 $ / QBTS < 21 $ → aufstocken bis 500 €" — automatisches Averaging-down in unprofitable Spekulationswerte. Die Automatik erhöht genau dann, wenn die These bröckelt.
@@ -41,6 +42,7 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Update 14.06.2026 (17:00, So — Wochen-Review KW24):** Unverändert, kein Trigger (Daten eingefroren). KW24-Empfehlung: Limit-Automatik durch eine Stabilisierungs-Bedingung ersetzen, bevor je ein Trigger im fallenden Markt feuert — Averaging-down per Limit bleibt der dokumentierte Speku-Killer.
 - **Update 15.06.2026 (17:00):** IONQ 61,92 € (Trigger < 50), QBTS 26,32 € (Trigger < 21) — beide nach der Rally noch weiter von den Triggern entfernt. Kein Trigger; die Streichung der Nachkauf-Automatik war bisher kostenlos (im steigenden Markt nie gebraucht). Der echte Test kommt erst in einem Abwärtsmarkt.
 - **Update 16.06.2026 (17:30):** Nach dem Rücksetzer IONQ 57,75 € (Trigger < 50), QBTS 24,56 € (Trigger < 21) — beide weiter klar über den (gestrichenen) Trigger-Niveaus. Kein Trigger. Der Pullback bringt die Trigger erstmals wieder in Sichtweite, der echte Abwärts-Test steht aber weiter aus.
+- **Update 21.06.2026 (KW25-Wochen-Review):** Kein Trigger in KW25 — selbst auf dem Mi-Round-Trip-Tief blieben IONQ/QBTS klar über 50 $/21 $. Die ersatzlose Streichung der Nachkauf-Automatik war auch in KW25 kostenlos (im weiter steigenden/seitwärts Markt nie gebraucht); der echte Test (Averaging-down-Vermeidung) kommt erst im nachhaltigen Abwärtsmarkt. Bleibt OFFEN.
 - **Status:** OFFEN
 
 ### F-S-003 · 2026-06-11 · Scout-Fehlalarme als Prozessrisiko
@@ -53,7 +55,16 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 - **Update 14.06.2026 (17:00, So — Wochen-Review KW24):** Am Wochenende kein neuer Fehlalarm-Count belegbar (kein Scout-Lauf). KW24-Bilanz der Woche: Tag 1 ~14 → Tag 2 7 → danach unbelegt; Trend rückläufig, aber Ziel 0/Woche noch nicht erreicht und nicht verifizierbar. Bleibt SKILL-FEHLER (Prozess), bis eine volle Woche mit 0 unverifizierten Handels-Auslösern belegt ist.
 - **Update 15.06.2026 (17:00):** NEUER Fehlalarm — Scout meldete um 12:08 „SPCX-IPO heute (15.06.)", tatsächlich war das Listing bereits Fr 12.06. (falsches Datum). Zusätzlich ein unverifizierbarer Alert (Japan-SMR 25 Mrd. $, nur 1 Quelle Chosun → korrekt NICHT gehandelt). Beide wurden abgefangen, aber das Datums-Fehlalarm-Muster (Quellendatum vs. Ereignisdatum) wiederholt sich. Die 0-Fehlalarme-über-eine-Woche-Messlatte ist damit erneut gerissen — Zähler bleibt > 0.
 - **Update 16.06.2026 (17:30):** Sauberer Tag — keine Material-Events <24 h gemeldet, Deep-Speku lehnte 3 Kandidaten (TLT-Short, XLF-Long, ITRK-Long) regelkonform ab (crowded positioning / Binär-Event-Risiko), kein neuer Fehlalarm belegbar. Erster fehlalarmfreier Lauf nach dem 15.06.-SPCX-Datumsfehler; der 0-über-eine-Woche-Zähler läuft weiter (eine saubere Sitzung reicht nicht).
-- **Status:** OFFEN (Fehlalarm-Rate: Tag 1 ~14, Tag 2 7, 15.06. erneut ≥1 Datums-Fehlalarm, 16.06. sauber — Ziel: 0 über eine Woche weiter nicht erreicht)
+- **Update 21.06.2026 (KW25-Wochen-Review):** In KW25 ein belegter Datums-Fehlalarm (15.06. SPCX) plus ein korrekt abgelehnter 1-Quellen-Alert, danach 16.06. sauber; ab 17.06. ist die Automatik offline (kein Scout-Lauf, daher kein neuer Count belegbar — siehe F-S-005). Das Wochenziel **0 Fehlalarme/Woche bleibt nicht erreicht**. Bleibt SKILL-FEHLER (Prozess), bis eine volle Handelswoche mit 0 unverifizierten Auslösern belegt ist.
+- **Status:** OFFEN (Fehlalarm-Rate: Tag 1 ~14, Tag 2 7, 15.06. erneut ≥1 Datums-Fehlalarm, 16.06. sauber, ab 17.06. Scout offline — Ziel 0/Woche weiter nicht erreicht)
+
+### F-S-005 · 2026-06-17 · Entscheidungs-/Scout-Automatik persistent offline (Datenintegrität + Reaktionsfähigkeit)
+- **Was passiert ist:** Seit 17.06. flaggt das Speku-Dashboard durchgehend „letzter Automatik-Lauf >24h zurück" — über das 20:00-FOMC-Event (17.06.) hinweg, am 18.06. zusätzlich mit Falschdaten (Positionstabelle nicht renderbar, fälschlich „Nur SPY"), und weiter über Feiertag/Wochenende (~4 Tage bis 21.06.). Das konzentrierte 100-%-Quantum-Buch lief unbeaufsichtigt in ein Binär-Event und kann auf Stop-Annäherung/Signal nicht reagieren.
+- **Einstufung:** SKILL-FEHLER (Prozess/Operations) — kein Marktfehler, sondern eine ausgefallene Entscheidungs- und Berichtskette. Der Preis-Feed (kurse.yml) ist intakt; das Manko ist die Engine/das Reporting, nicht die Kurse.
+- **Abgrenzung:** Am Feiertag (Fr 19.06.) + Wochenende ist die Offline-Zeit folgenlos (Börse zu); kritisch wird es ab **Mo 22.06.**, wenn der Handel wieder live ist und das Buch weiter unbeaufsichtigt wäre.
+- **Messlatte:** ERLEDIGT, wenn die Automatik wieder online ist und ein sauberer Lauf mit korrekt renderndem Dashboard belegt ist (Ziel: bis Mo 22.06.). ESKALATION zu hartem SKILL-FEHLER mit Kosten, wenn die Offline-Phase an einem Handelstag einen nötigen Stop/Exit verhindert.
+- **Kosten:** 0 € bisher (Feiertag/Wochenende), Risiko ab 22.06.
+- **Status:** OFFEN (Offline seit 17.06., ~4 Tage; Mo 22.06. ist der entscheidende Prüfpunkt)
 
 ---
 
@@ -70,7 +81,8 @@ Ziel: Muster erkennen → abstellen → profitabler Trader. Ein Fehler, der zwei
 
 | Muster | Vorkommen | IDs | Trend |
 |---|---|---|---|
-| Konzentration ohne Risiko-Kennzahl | 1 | F-S-001 | 16.06. synchroner Abwärts-Rücksetzer (~−7 % alle 3) → Korrelation jetzt BEIDSEITIG belegt; >10-%-Drawdown-Test steht aus |
-| Automatik ohne Stabilisierungs-Bedingung | 1 | F-S-002 | beobachten — kein Trigger |
-| Ungesicherte Datenquelle im Entscheidungsweg | 1 | F-S-003 | 15.06. Datums-Fehlalarm (SPCX); 16.06. sauber (0 Fehlalarme) — Wochen-Zähler läuft weiter |
+| Konzentration ohne Risiko-Kennzahl | 1 | F-S-001 | KW25: voller Round-Trip (Mo +4,86 % → Mi −0,18 % → +2,07 %) → Lockstep beidseitig voll demonstriert; >10-%-Einzel-Drawdown-Test steht aus; Diversifikation 2. Woche nicht umgesetzt |
+| Automatik ohne Stabilisierungs-Bedingung | 1 | F-S-002 | beobachten — kein Trigger (auch nicht auf dem KW25-Round-Trip-Tief) |
+| Ungesicherte Datenquelle im Entscheidungsweg | 1 | F-S-003 | 15.06. Datums-Fehlalarm (SPCX); 16.06. sauber; ab 17.06. Scout offline — Ziel 0/Woche weiter offen |
+| Operativer Ausfall der Entscheidungs-/Berichtskette | 1 | F-S-005 (neu) | Automatik offline seit 17.06. (~4 Tage), Falschdaten 18.06.; folgenlos am Feiertag/WE, kritisch ab Mo 22.06. |
 | Kein AH-Schutz für Extrem-Speku-Short | 1 | F-S-004 (erledigt KW24, PECH) | abgeschlossen — Leitplanke aktiv, neuer Eintrag bei künftigem Breach |

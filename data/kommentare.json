@@ -1,9 +1,9 @@
 {
-  "stand": "20.06.2026, 22:30 (22:00-Lauf, Sa — US-Börse zu, Werte unverändert)",
+  "stand": "21.06.2026, 17:30 (17:00-Lauf, So — US-Börse zu, Werte = Do-Schluss eingefroren; KW25-Wochen-Review erstellt)",
   "agenten": {
     "schatten": {
       "beschreibung": "Zieht die Informationen der anderen 3 Agenten, übernimmt nur deren beste Ideen — und lässt deren dokumentierte Fehler bewusst weg.",
-      "kommentar": "Fr 19.06. (Juneteenth, Börse zu): Wert finalisiert auf +1,63 % (Do-Schluss, Auto-Kurse 22:34: QBTS +3,61 %, IONQ −3,35 %) — KEIN Fr-Gewinn, sondern Korrektur ggü. dem 22:00-Snapshot (+0,86 %) durch die Spätsitzungs-Erholung (L10). 67,7 % Cash, kein Trade, kein Trigger. D7 (FALSCH) bleibt im Scoreboard (0/4/3).",
+      "kommentar": "So 21.06. (KW25-Review, 3. Tag eingefroren): +1,63 % (QBTS +3,61 %, IONQ −3,35 %), 67,7 % Cash, kein Trade/Trigger. In KW25 führt der Schatten die Trader-Trio-Wochenrendite (+1,56 pp) dank CEG +10,62 % realisiert; D7 (FALSCH) bleibt im Scoreboard (0/4/3). Subtraktions-Edge trägt weiter.",
       "verbesserungen": [
         "L9 umsetzen: Bei 'würde ich diesen Trade auch machen?' das ABLEHNEN genauso hart prüfen wie das Zustimmen — D5/D2 falsch, D1/D3/D6 trenden falsch.",
         "Kalibrierung schärfen statt überkompensieren: Aus der Konservatismus-Lehre folgt nicht blindes Cash-Deployment, sondern bessere Einzelfall-Begründung mit Messlatte.",
@@ -12,7 +12,7 @@
     },
     "swing": {
       "beschreibung": "Gegen-Trend-Bot (Mean-Reversion): fadet jeden Abend messbare statistische Extreme statt Stärke zu kaufen — kauft überverkaufte Dips (RSI(2)<10, Z-Score≤−2/Bollinger) im Aufwärtstrend ÜBER der 200-Tage-Linie, shortet überkaufte Spikes DARUNTER. Ziel = Rückkehr zum Mittelwert (Haltedauer ≤3 Tage, Limit-Entry), Stop = Invalidation. Ein harter News-Katalysator ist hier ein AUSSCHLUSSgrund (Trendbruch statt Dip = fallendes Messer). Max. 1 Trade/Tag, sonst keiner.",
-      "kommentar": "Do 18.06.: Alttrade HPE (T-001) jetzt VERFALLEN (2 Tage ohne Fill) — das Momentum-Ära-Trade ist weg, Depot wieder 100 % flach. Der Mean-Reversion-Umbau (16.06., V4) hat weiter 0 Trades produziert (n=0, n≥30-Gate). Sauber (kein erzwungener Trade), aber die neue Strategie ist unbelegt.",
+      "kommentar": "KW25 (Stand 18.06.): HPE (T-001) verfallen, Depot 100 % flach; der V4-Mean-Reversion-Umbau (16.06.) produzierte die ganze Woche 0 Trades (n=0 vs. n≥30-Gate). Sauber, aber Edge unbelegt — prüfen, ob die Filter zu eng sind.",
       "verbesserungen": [
         "Score-Kalibrierung von Anfang an mitschreiben: Ab 30 Trades muss belegbar sein, dass 85er-Scores öfter gewinnen als 70er — sonst ist der Score Dekoration (Regel 12).",
         "DAX/EuroStoxx-Kandidaten laufen nur in der Yahoo-Simulation, nicht als echte Paper-Orders (Alpaca ist US-only) — bei häufigen EU-Empfehlungen IBKR-Paper als Stufe 2 erwägen.",
@@ -107,16 +107,16 @@
         }
       ],
       "beschreibung": "Der disziplinierte Regel-Trader: 5 Analyse-Agenten + Portfolio-Manager, feste Stops und Ziele für jede Position, 15-Minuten-Stop-Wache — Sicherheit vor Rendite.",
-      "kommentar": "Fr 19.06. (Juneteenth, Börse zu): Werte = Do-Schluss. Aggregat 2.001,55 € / +0,08 %, 3 HOLD (IWM/AMZN/XLP), 73 % Cash, keine Trades. Haupt-Dashboard rendert noch Falschdaten → Per-Position vertagt. CEG-Ziel-Gewinn (+8,8 %) vom Do gebucht; Entry-Bestätigung (F-H-002) bleibt der offene Punkt.",
+      "kommentar": "So 21.06. (KW25-Review, eingefroren): 2.001,55 € / +0,08 %, 3 HOLD (IWM/AMZN/XLP), 73 % Cash. KW25-Bilanz: CEG-Ziel-Gewinn +8,8 % (bestes Geschäft, Halte-Disziplin) vs. NVDA-Zeit-Exit 2 Tage spät; Zeit-Exit-Handhabung inkonsistent (F-H-003 → UNKLAR), Entry-Bestätigung (F-H-002) die 2. Woche nicht eingeführt.",
       "verbesserungen": [
         "Einstiegs-Bestätigung einführen (F-H-002, n=4): Kein Kauf ohne mindestens einen grünen Schlusskurs — XLP zeigt, dass es auch ohne Sofort-Minus geht; das zur Regel machen.",
-        "Zeit-Exit-Disziplin abstellen (F-H-003, jetzt SKILL-FEHLER n=2): NVDA (Tag 9) UND CEG (Tag 10/10) beide nicht am Limit exekutiert — CEG verschenkte 271→267. Zeit-Limit hart wie einen Stop behandeln: am Tag X exekutieren ODER dokumentiert mit neuer These verlängern.",
+        "Zeit-Exit konsistent regeln (F-H-003, UNKLAR/inkonsistent): NVDA (Tag 9, −0,49 %) zu spät, CEG (Tag 10/10) über Limit gehalten → traf aber Ziel 275 (+8,8 %). Gemischt = kein starres Limit; eine dokumentierte Verlängerungs-/Ziel-Vorrang-Regel fehlt. Am Tag X exekutieren ODER begründet verlängern.",
         "Stops aus der Volatilität ableiten (L4/F-H-003): mind. 1 ATR unter dem letzten Swing-Tief; NVDA-Near-Miss 199,88 bleibt der Beleg für einen Stop im Rauschen."
       ]
     },
     "solid": {
       "beschreibung": "Der Evidenz-Bot: handelt nur, was die Deep Research als robust belegt — Long-only-Momentum plus verifizierte News-Drifts. Lieber kein Trade als ein unbelegter.",
-      "kommentar": "Journal-Stand 18.06.: INTC + AMD offen (gefüllt 16.06.); LRCX (S-004) neu pending ersetzt verfallenes MU — MU bewusst wegen Earnings 24.06. (Held-into-Earnings-Binärrisiko, ~21 % ATR-Stop) übersprungen. Regime risk_on (VIX 18,44). 0 geschlossen. Saubere, begründete Selektion.",
+      "kommentar": "KW25 (Stand 18.06.): INTC + AMD offen (gefüllt 16.06.), LRCX (S-004) pending ersetzt verfallenes MU (bewusster Earnings-Skip 24.06., Held-into-Earnings-Binärrisiko ~21 % ATR-Stop). Regime risk_on (VIX 18,44), 0 geschlossen → Expectancy offen. Saubere Selektion, aber Halbleiter-Cluster.",
       "verbesserungen": [
         "Phase 2 ausbauen: share-basierte Portfolio-Buchführung (eval_v2) und risk-gate-Workflow, damit der volle Spec-Momentum-Kern mit Roll-Logik statt der diskreten Stufe-1-Trades laufen kann.",
         "EDGAR-Filing-Feed anbinden, damit der News-Drift-Satellit deterministische Kandidaten bekommt statt WebSearch-Funde.",
@@ -125,7 +125,7 @@
     },
     "risk": {
       "beschreibung": "Der kontrolliert aggressive Gewinn-Jäger: konzentrierte High-Beta-Wetten (2 % Risiko), Volumen-Spikes früh statt am Buzz-Peak, TQQQ nur bei grünen Regime-Gates — die research-dokumentierten Todesarten sind hart verboten.",
-      "kommentar": "Journal-Stand 18.06.: 4 gefüllt (TQQQ gehebelt + LRCX/MU/INTC), CAT R-007 neu pending. CAT verfiel ZWEIMAL (R-003, R-006) → Limit-Platzierung prüfen. summeR 0, 0 geschlossen → Expectancy unbewiesen. Gehebeltes TQQQ + Halbleiter-Cluster bleiben der kritische Punkt.",
+      "kommentar": "KW25 (Stand 18.06.): 4 gefüllt (TQQQ gehebelt + LRCX/MU/INTC), CAT R-007 pending nach ZWEIMALIGEM Verfall (R-003/R-006 → Limit prüfen). summeR 0, 0 geschlossen → Expectancy unbewiesen. Gehebeltes TQQQ + Halbleiter-Cluster bleiben kritisch.",
       "verbesserungen": [
         "Engine-Statistik von Tag 1 getrennt führen (A/B/C) — die Spec verlangt gepoolte Expectancy nur für A+B, C ist kalendergegated.",
         "FINRA-Short-Interest-Feed für die deaktivierte Engine D nachweisen oder D endgültig streichen.",
@@ -171,7 +171,7 @@
         }
       ],
       "beschreibung": "Der Zukunfts-Jäger: sucht per Deep Research (100+ Agenten) die größten Chancen von morgen (Quantum, Space, Robotik) — konzentrierte Wetten, Long und Short, maximaler Gewinn als Auftrag.",
-      "kommentar": "Fr 19.06. (Juneteenth): Werte = Do-Schluss (+2,07 %). Teilrecovery — Positionstabelle rendert wieder (QBTS +6,19 %, IONQ −0,14 %, RGTI +9,82 %; RGTI führt → bestätigt D3-Trend). Automatik aber weiter offline-geflaggt (am Feiertag folgenlos, ab Mo wieder kritisch). Score 5 fortgeschrieben — Engine-Recovery erst Mo prüfbar.",
+      "kommentar": "So 21.06. (KW25-Review, eingefroren +2,07 %): 100 % Quantum, 60 % Cash. KW25-Bilanz: voller Round-Trip (Mo +4,86 % → Mi −0,18 % → +2,07 %) = Klumpenrisiko beidseitig demonstriert (F-S-001); Automatik seit 17.06. >24h offline (neu: F-S-005), ab Mo wieder kritisch. RGTI führte die Woche → D3-Ausschluss trendet falsch. Score 5.",
       "verbesserungen": [
         "Klumpenrisiko endlich bepreisen (F-S-001): Themen-Obergrenze von 60–70 % des investierten Kapitals je Thema — der Vorschlag liegt seit der Härtung beim Nutzer, Quantum ist weiter 100 % des Aktienbuchs.",
         "Nachkauf-Automatik (IONQ < 50 $ / QBTS < 21 $) durch die bereits definierte Stabilisierungs-Bedingung ersetzen — Averaging-down per Limit-Trigger bleibt der dokumentierte Speku-Killer (F-S-002).",
