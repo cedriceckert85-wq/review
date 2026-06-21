@@ -30,6 +30,18 @@ _REPO = os.path.dirname(_HIER)
 SKALIERUNG = 50  # 2.000-EUR-Journal -> 100.000-$-Alpaca-Konto
 BASE = "https://paper-api.alpaca.markets/v2"
 
+# Flotte 2.0: Orders NUR ueber das zentrale Risk-Gate (steuerung/pi/bin/order_gate.py).
+# Nicht erreichbar -> KEINE Order direkt (fail-safe). Gate liest die Schatten-Keys
+# ueber ALPACA_SCHATTEN_KEY/_SECRET bzw. dieselbe alpaca_keys.json.
+_GATE_BIN = os.path.normpath(os.path.join(_HIER, "..", "..", "..", "steuerung", "pi", "bin"))
+if _GATE_BIN not in sys.path:
+    sys.path.insert(0, _GATE_BIN)
+try:
+    from order_gate import submit_order as _gate_submit  # noqa: E402
+except Exception as _e:  # pragma: no cover
+    _gate_submit = None
+    print(f"WARN order_gate nicht erreichbar ({_e}) -> Orders werden NICHT direkt gesetzt.")
+
 
 def _keys():
     if os.environ.get("ALPACA_SCHATTEN_KEY"):
@@ -59,12 +71,16 @@ def api(pfad, methode="GET", body=None):
 
 
 def market_order(symbol, qty, side):
-    return api("/orders", "POST", {"symbol": symbol, "qty": str(int(qty)),
+    if _gate_submit is None:
+        return None
+    return _gate_submit("review", {"symbol": symbol, "qty": str(int(qty)),
                                    "side": side, "type": "market", "time_in_force": "day"})
 
 
 def stop_order(symbol, qty, side, stop):
-    return api("/orders", "POST", {"symbol": symbol, "qty": str(int(qty)), "side": side,
+    if _gate_submit is None:
+        return None
+    return _gate_submit("review", {"symbol": symbol, "qty": str(int(qty)), "side": side,
                                    "type": "stop", "stop_price": f"{stop:.2f}",
                                    "time_in_force": "gtc"})
 
@@ -106,8 +122,10 @@ def sync():
             continue
         qty = _spiegel_qty(p)
         o = market_order(sym, qty, "buy")
-        if o:
-            print(f"{sym}: buy {qty} Stk. ({p['einsatz']} EUR x{SKALIERUNG}) — Market-Order ({o['status']})")
+        if o and o.get("id"):
+            print(f"{sym}: buy {qty} Stk. ({p['einsatz']} EUR x{SKALIERUNG}) — Market-Order ({o.get('status')})")
+        elif o:
+            print(f"{sym}: Spiegel-Kauf abgelehnt/Fehler ({o.get('reason', 'Gate?')})")
 
     stops_offen = {o["symbol"] for o in (api("/orders?status=open") or []) if o["type"] == "stop"}
     for pos in (api("/positions") or []):
@@ -116,7 +134,7 @@ def sync():
             continue
         qty = abs(int(float(pos["qty"])))
         o = stop_order(sym, qty, "sell", journal[sym]["stop"])
-        if o:
+        if o and o.get("id"):
             print(f"{sym}: Schutz-Stop {journal[sym]['stop']} (sell {qty} Stk.) gesetzt")
 
 
