@@ -5,16 +5,7 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {
-    "SOL/USD": {
-      "entry": 73.98,
-      "notional": 19906.65,
-      "stop": 68.06,
-      "entryDatum": "2026-06-21",
-      "orderId": "a8064a1f-7274-493d-b3fe-3b75e0ce1047",
-      "grund": "Wiedereinstieg: SOL fuehrt Markterholung — Preis 73,98 klar ueber beiden MAs, Momentum stetig steigend (2,2->3,0->3,3%), und BTC/ETH erobern gerade ihre fast-MA zurueck (breiter Rueckenwind kehrt). Liquider Major, enger Spread. Ziel: Erholung Richtung Tageshochs reiten. Ausstieg: Bruch fast-MA ~73,35 oder Momentum faellt unter ~2%/negativ."
-    }
-  },
+  "positionen": {},
   "trades": [
     {
       "sym": "ETH/USD",
@@ -75,6 +66,16 @@
       "entryDatum": "2026-06-21",
       "exitDatum": "2026-06-21",
       "grund": "Momentum-These erodiert: 24h-Momentum von +4,9% auf +1,4% kollabiert (gleicher Verlauf wie SOL), Preis unter fast-MA gefallen, breiter Markt schwach. Konsistente thesengetriebene Schliessung — kein Halten aus Verlustaversion; Kapital fuer sauberes Setup freimachen."
+    },
+    {
+      "sym": "SOL/USD",
+      "entry": 73.98,
+      "exit": 73.34,
+      "qty": "262.676454519",
+      "pnlUsd": -168.11,
+      "entryDatum": "2026-06-21",
+      "exitDatum": "2026-06-21",
+      "grund": "Stop erreicht: Preis 73,34 unter fast-MA (73,36), Momentum stetig fallend (3,35->2,24%), und der breite Rueckenwind ist weg — ETH zurueck unter fast-MA, XRP/DOGE negativ. Wiedereinstieg war Fehlausbruch; kleinen kontrollierten Verlust diszipliniert realisieren statt auf Erholung hoffen."
     }
   ],
   "heute": {
@@ -82,9 +83,9 @@
     "trades": 3
   },
   "statistik": {
-    "trades": 6,
+    "trades": 7,
     "gewonnen": 3,
-    "verloren": 3,
-    "summePnlUsd": 434.07
+    "verloren": 4,
+    "summePnlUsd": 265.96
   }
 }
