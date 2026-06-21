@@ -5,16 +5,7 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {
-    "AVAX/USD": {
-      "entry": 6.23,
-      "notional": 16056.56,
-      "stop": 5.73,
-      "entryDatum": "2026-06-21",
-      "orderId": "519aca5c-f9dc-4736-b44c-31182ad1f4c4",
-      "grund": "Zweitstaerkstes Momentum-Setup: Preis 6,24 ueber beiden MAs, fast > slow (Long-Regime), 24h-Momentum auf +5,2% beschleunigt. Diversifiziert weg von Single-Coin-Risiko. Ziel: Momentum mitnehmen. Ausstieg: Bruch slow-MA ~6,09 oder Momentum dreht negativ."
-    }
-  },
+  "positionen": {},
   "trades": [
     {
       "sym": "ETH/USD",
@@ -65,6 +56,16 @@
       "entryDatum": "2026-06-21",
       "exitDatum": "2026-06-21",
       "grund": "Gewinnmitnahme: Momentum-These erodiert — 24h-Momentum von +6,5% auf +1,9% kollabiert, Preis sitzt auf der fast-MA (73,04), breiter Markt dreht (XRP/LINK/DOGE negativ). Buchgewinn sichern statt zurueckgeben."
+    },
+    {
+      "sym": "AVAX/USD",
+      "entry": 6.23,
+      "exit": 6.23,
+      "qty": "2512.87598758",
+      "pnlUsd": 0.0,
+      "entryDatum": "2026-06-21",
+      "exitDatum": "2026-06-21",
+      "grund": "Momentum-These erodiert: 24h-Momentum von +4,9% auf +1,4% kollabiert (gleicher Verlauf wie SOL), Preis unter fast-MA gefallen, breiter Markt schwach. Konsistente thesengetriebene Schliessung — kein Halten aus Verlustaversion; Kapital fuer sauberes Setup freimachen."
     }
   ],
   "heute": {
@@ -72,9 +73,9 @@
     "trades": 2
   },
   "statistik": {
-    "trades": 5,
+    "trades": 6,
     "gewonnen": 3,
-    "verloren": 2,
+    "verloren": 3,
     "summePnlUsd": 434.07
   }
 }
