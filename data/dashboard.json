@@ -1,5 +1,5 @@
 {
-  "ts_utc": "2026-06-22T20:56:14Z",
+  "ts_utc": "2026-06-22T21:06:14Z",
   "fleet": {
     "equity": 699075.54,
     "heute_usd": -924.46,
@@ -10,14 +10,14 @@
     "gross_exposure_pct": 1.1,
     "n_positions_total": 1,
     "n_bots": 7,
-    "n_fresh": 1
+    "n_fresh": 2
   },
   "drawdown": {
     "peak_equity": 699075.54,
     "dd_pct": 0.0,
     "status": "ok",
     "armed": false,
-    "n_fresh": 1,
+    "n_fresh": 2,
     "complete": false,
     "missing": [
       "diversifikator",
@@ -114,7 +114,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": false,
+      "fresh": true,
       "ok": true
     },
     {
