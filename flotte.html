@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EPMT-Flotte 2.0 — Live</title>
+<style>
+  :root{
+    --bg:#0b0f17; --card:#141a26; --card2:#19212f; --line:#243049;
+    --txt:#e8edf6; --dim:#8b97ad; --pos:#34d399; --neg:#fb7185; --warn:#fbbf24; --acc:#60a5fa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.45 -apple-system,Segoe UI,Roboto,system-ui,sans-serif;
+       -webkit-font-smoothing:antialiased;padding:max(14px,env(safe-area-inset-top)) 14px 40px}
+  .wrap{max-width:720px;margin:0 auto}
+  header{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:14px}
+  h1{font-size:17px;margin:0;font-weight:800;letter-spacing:.2px}
+  .sub{color:var(--dim);font-size:12px;margin-top:2px}
+  .toggle{display:flex;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .toggle button{background:none;border:0;color:var(--dim);padding:7px 13px;font-weight:700;font-size:13px;cursor:pointer}
+  .toggle button.on{background:var(--acc);color:#0b0f17}
+  .fonds{background:linear-gradient(180deg,#16203a,#121826);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}
+  .fonds .eq{font-size:30px;font-weight:800;letter-spacing:-.5px}
+  .fonds .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .chip{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:7px 11px;font-size:12px}
+  .chip b{display:block;color:var(--dim);font-weight:600;font-size:11px;margin-bottom:2px}
+  .badge{display:inline-block;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:800}
+  .b-ok{background:rgba(52,211,153,.15);color:var(--pos)} .b-warn{background:rgba(251,191,36,.15);color:var(--warn)}
+  .b-breach{background:rgba(251,113,133,.18);color:var(--neg)}
+  .alerts{margin-bottom:14px;display:flex;flex-direction:column;gap:8px}
+  .alert{border-radius:12px;padding:10px 13px;font-size:13px;border:1px solid}
+  .alert.warn{background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.3)}
+  .alert.breach{background:rgba(251,113,133,.08);border-color:rgba(251,113,133,.35)}
+  .cards{display:flex;flex-direction:column;gap:10px}
+  .card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 15px}
+  .card .nm{flex:1;min-width:0}
+  .card .nm .t{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .card .nm .s{color:var(--dim);font-size:12px;margin-top:2px}
+  .card .val{text-align:right;min-width:120px}
+  .card .pct{font-size:20px;font-weight:800}
+  .card .usd{font-size:12px;color:var(--dim);margin-top:1px}
+  .pos{color:var(--pos)} .neg{color:var(--neg)} .flat{color:var(--dim)}
+  .stale{opacity:.5}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:5px;vertical-align:middle}
+  .dot.fresh{background:var(--pos)} .dot.old{background:var(--warn)}
+  .err{background:rgba(251,113,133,.1);border:1px solid rgba(251,113,133,.3);border-radius:12px;padding:14px;color:var(--neg)}
+  .foot{color:var(--dim);font-size:11px;text-align:center;margin-top:18px}
+  .empty{color:var(--dim);text-align:center;padding:30px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><h1>🚢 EPMT-Flotte 2.0</h1><div class="sub" id="ts">lade …</div></div>
+    <div class="toggle"><button id="t-heute" class="on">Heute</button><button id="t-gesamt">Gesamt</button></div>
+  </header>
+  <div id="root"><div class="empty">lade Daten …</div></div>
+  <div class="foot">Auto-Refresh alle 30&thinsp;s · Quelle <code>data/dashboard.json</code> (Fonds-Sicht + Heartbeats)</div>
+</div>
+<script>
+"use strict";
+let MODE = "heute";
+const eur = n => (n>=0?"+":"−") + Math.abs(n).toLocaleString("de-DE",{maximumFractionDigits:0}) + " $";
+const pct = n => (n>=0?"+":"−") + Math.abs(n).toLocaleString("de-DE",{minimumFractionDigits:2,maximumFractionDigits:2}) + " %";
+const cls = n => n>0?"pos":(n<0?"neg":"flat");
+const esc = s => String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+function render(d){
+  document.getElementById("ts").textContent =
+    "Stand " + (d.ts_utc? new Date(d.ts_utc).toLocaleString("de-DE") : "—") +
+    " · " + (d.fleet.n_fresh||0) + "/" + (d.fleet.n_bots||0) + " Bots frisch";
+  const f = d.fleet, dd = d.drawdown||{};
+  const heute = MODE==="heute";
+  const fUsd = heute? f.heute_usd : f.gesamt_usd, fPct = heute? f.heute_pct : f.gesamt_pct;
+  const ddBadge = {ok:"b-ok",warn:"b-warn",breach:"b-breach"}[dd.status]||"b-ok";
+  const ddTxt = dd.status==="breach"?"🔴 Drawdown-Breach":(dd.status==="warn"?"🟡 Drawdown-Warnung":"🟢 Risiko ok");
+
+  let html = `<div class="fonds">
+    <div class="sub">Fonds-Equity (${heute?"heute":"gesamt"})</div>
+    <div class="eq">${(f.equity||0).toLocaleString("de-DE",{maximumFractionDigits:0})} $</div>
+    <div class="${cls(fUsd)}" style="font-weight:700;margin-top:2px">${eur(fUsd)} · ${pct(fPct)} ${heute?"heute":"gesamt"}</div>
+    <div class="row">
+      <div class="chip"><b>Netto-Exposure</b>${pct(f.net_exposure_pct||0)}</div>
+      <div class="chip"><b>Brutto-Exposure</b>${(f.gross_exposure_pct||0).toFixed(0)} %</div>
+      <div class="chip"><b>Positionen</b>${f.n_positions_total||0}</div>
+      <div class="chip"><b>Drawdown</b>${(dd.dd_pct||0).toFixed(2)} %</div>
+      <div class="chip"><span class="badge ${ddBadge}">${ddTxt}</span></div>
+    </div></div>`;
+
+  const al = [];
+  (d.concentration_alerts||[]).forEach(c=>al.push(`<div class="alert warn">⚠️ <b>Konzentration ${esc(c.symbol)}</b>: netto ${eur(c.net_mv)} (${pct(c.net_pct_of_fleet)} des Fonds) über ${(c.bots||[]).length} Bot(s)</div>`));
+  (d.groupthink_alerts||[]).forEach(g=>al.push(`<div class="alert warn">⚠️ <b>Groupthink ${esc(g.symbol)}</b>: ${g.n_long} long / ${g.n_short} short (netto ${eur(g.net_mv)})</div>`));
+  if(dd.status==="breach") al.unshift(`<div class="alert breach">🔴 <b>Fonds-Drawdown ${(dd.dd_pct||0).toFixed(2)} %</b> vom Peak — ${esc(dd.action||"")}</div>`);
+  if(al.length) html += `<div class="alerts">${al.join("")}</div>`;
+
+  const cards = d.cards||[];
+  if(!cards.length){ html += `<div class="empty">Noch keine Bot-Heartbeats. Sobald die Flotte läuft (<code>tick.py</code> pro Bot), erscheinen hier die Karten.</div>`; }
+  else {
+    html += `<div class="cards">` + cards.map(c=>{
+      const u = heute? c.heute_usd : c.gesamt_usd, p = heute? c.heute_pct : c.gesamt_pct;
+      const other = heute? `Gesamt ${pct(c.gesamt_pct)}` : `Heute ${pct(c.heute_pct)}`;
+      return `<div class="card ${c.fresh?"":"stale"}">
+        <div class="nm"><div class="t">${esc(c.name)}</div>
+          <div class="s"><span class="dot ${c.fresh?"fresh":"old"}"></span>${(c.equity||0).toLocaleString("de-DE",{maximumFractionDigits:0})} $ · ${c.n_positions||0} Pos · ${other}</div></div>
+        <div class="val"><div class="pct ${cls(p)}">${pct(p)}</div><div class="usd ${cls(u)}">${eur(u)} ${heute?"heute":"gesamt"}</div></div>
+      </div>`;
+    }).join("") + `</div>`;
+  }
+  document.getElementById("root").innerHTML = html;
+}
+
+async function load(){
+  try{
+    const r = await fetch("data/dashboard.json?_="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    render(await r.json());
+  }catch(e){
+    document.getElementById("root").innerHTML =
+      `<div class="err">Konnte <code>data/dashboard.json</code> nicht laden (${esc(e.message)}).<br>
+       Erzeugen: <code>python3 steuerung/pi/bin/dashboard_data.py</code> — und über einen Webserver öffnen (file:// blockt fetch).</div>`;
+  }
+}
+document.getElementById("t-heute").onclick = ()=>{MODE="heute";setTog();load();};
+document.getElementById("t-gesamt").onclick = ()=>{MODE="gesamt";setTog();load();};
+function setTog(){document.getElementById("t-heute").classList.toggle("on",MODE==="heute");
+                  document.getElementById("t-gesamt").classList.toggle("on",MODE==="gesamt");}
+load(); setInterval(load, 30000);
+</script>
+</body>
+</html>
