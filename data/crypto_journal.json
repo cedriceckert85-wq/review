@@ -5,16 +5,7 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot). KI-gesteuert (Opus) seit 2026-06-22."
   },
-  "positionen": {
-    "SOL/USD": {
-      "entry": 74.25,
-      "notional": 19929.15,
-      "stop": 68.31,
-      "entryDatum": "2026-06-22",
-      "orderId": "7e64a545-0159-4ba7-a877-a4b3d66e6718",
-      "grund": "Bestaetigter Risk-on-Ausbruch: SOL +1.52% bricht ueber Stunden-Range (74.24>74.1) UND Leader BTC dreht positiv mit bullischem fast>slow-Cross, ETH +0.95% bestaetigt. Diesmal breite Bestaetigung (fehlte beim 1. Versuch). News konstruktiv (MS Spot-SOL-ETF MSOL, ETF-Assets >1Mrd). Ziel Reclaim 78-85; Stop bei Rueckfall unter fast-MA/in die Range (~73.5) oder BTC-Regime-Flip; 600k-SOL-Zufluss als Risiko respektieren."
-    }
-  },
+  "positionen": {},
   "trades": [
     {
       "sym": "SOL/USD",
@@ -25,13 +16,23 @@
       "entryDatum": "2026-06-22",
       "exitDatum": "2026-06-22",
       "grund": "EXIT: These gebrochen - Risk-on-Regime gekippt (BTC-Mom +0.45->-0.51, ETH -0.39), SOL-Mom +1.17->-0.13 gedreht und Kurs unter fast-MA. Definierter Stop ausgeloest. PnL = realer Round-Trip lt. Broker (inkl. beider Spreads)."
+    },
+    {
+      "sym": "SOL/USD",
+      "entry": 74.446242386,
+      "exit": 73.3,
+      "qty": "262.097046759",
+      "pnlUsd": -348.81,
+      "entryDatum": "2026-06-22",
+      "exitDatum": "2026-06-22",
+      "grund": "Stop ausgeloest wie vorab definiert: SOL faellt unter fast-MA (73.72<73.76), Fehlausbruch (zurueck unter 74.2), Momentum -0.33% und weiter fallend, SOL Nachzuegler (ETH noch +0.82). Breakout-These invalidiert -> diszipliniert kleinen Verlust nehmen. PnL = realer Round-Trip lt. Broker (inkl. beider Spreads); Skript-Wert -138.91 ignorierte Spread."
     }
   ],
   "statistik": {
-    "trades": 1,
+    "trades": 2,
     "gewonnen": 0,
-    "verloren": 1,
-    "summePnlUsd": -354.25
+    "verloren": 2,
+    "summePnlUsd": -703.06
   },
   "heute": {
     "datum": "2026-06-22",
