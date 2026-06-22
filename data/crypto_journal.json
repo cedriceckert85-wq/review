@@ -5,106 +5,10 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {
-    "SOL/USD": {
-      "entry": 74.45,
-      "notional": 15918.54,
-      "stop": 68.49,
-      "entryDatum": "2026-06-21",
-      "orderId": "b98b0aad-ae29-4c73-8574-900ed8d6d4fb",
-      "grund": "Hoechstes Momentum im Feld (+4,13%), sauberes Long-Regime (74,45 ueber beiden MAs), ENGER Spread (BTC/ETH/SOL-Gruppe). Endlich klare breite Bestaetigung: BTC und ETH zurueck ueber fast-MA, XRP/LINK/DOGE alle positiv — ganzes Feld gruen. Besseres Setup als die fruehen SOL-Whipsaws. Ziel: Momentum reiten. Ausstieg: Bruch fast-MA ~73,81 oder Momentum unter ~2,5%/negativ."
-    }
-  },
-  "trades": [
-    {
-      "sym": "ETH/USD",
-      "entry": 1718.37,
-      "exit": 1783.63,
-      "qty": "2.844272739",
-      "pnlUsd": 185.62,
-      "entryDatum": "2026-06-14",
-      "exitDatum": "2026-06-15",
-      "grund": "Ziel ~1785 erreicht (Kurs ~1783): +174 USD / ~+3.5% realisiert. Vertikaler Move +6.9% von 1718, Momentum +7% ueberdehnt, Markt in Extreme Fear (F&G 18) -> Spike-Gewinn am Ziel gesichert statt bei 30-Min-Eingreif-Latenz Rueckgabe-Risiko einzugehen."
-    },
-    {
-      "sym": "ETH/USD",
-      "entry": 1769.1,
-      "exit": 1791.8,
-      "qty": "11.046500617",
-      "pnlUsd": 250.76,
-      "entryDatum": "2026-06-16",
-      "exitDatum": "2026-06-16",
-      "grund": "Ziel ~1800 erreicht (Hoch 1798,5), Move dort abgeprallt + Momentum kuehlt auf beiden Coins ab (ETH +4,7->+4,3%, BTC +1,74->+1,65%). Alles-oder-nichts-Tool + 30-Min-Latenz + Relief-Rally auf misstrauter Schlagzeile -> Ziel-Disziplin, +~234 USD gesichert statt Rueckgabe-Risiko."
-    },
-    {
-      "sym": "BTC/USD",
-      "entry": 65854.25,
-      "exit": 65405.56,
-      "qty": "0.297582693",
-      "pnlUsd": -133.52,
-      "entryDatum": "2026-06-17",
-      "exitDatum": "2026-06-17",
-      "grund": "These gescheitert (vordefinierter Ausstieg): breiter Bounce gekippt - alle 8 Coins wieder negatives Momentum, Leader (AVAX/SOL/LTC) zurueck unter slow-MA; BTC klar unter slow-MA (live ~64906 vs slow 65864) und am/unter fast-MA, an Stop-Zone ~64800. Gegentrend-Bounce im strukturellen Baer = dritter Fehlausbruch -> Verlust ~-300 USD geschnitten, Kapital geschont statt Gap-Risiko bei 30-Min-Latenz."
-    },
-    {
-      "sym": "BTC/USD",
-      "entry": 63428.06,
-      "exit": 63189.37,
-      "qty": "0.308289149",
-      "pnlUsd": -73.59,
-      "entryDatum": "2026-06-20",
-      "exitDatum": "2026-06-20",
-      "grund": "These invalidiert - breiter Rollover (vordefinierter Ausstieg): 5/8 Coins jetzt negatives Momentum (LINK/AVAX/LTC/XRP/DOGE), BTC+ETH-Momentum auf ~flach kollabiert (+0,1%), Preise fallen zu den slow-MAs. BTC nur noch ~145 ueber slow-MA/Stop. Der breite Regime-Flip von heute frueh ist gescheitert (struktureller Baer reasserts) -> Verlust ~-90 USD an der slow-MA geschnitten statt tieferen Gap bei 30-Min-Latenz zu riskieren. Re-Entry nur bei frischer breiter Staerke."
-    },
-    {
-      "sym": "SOL/USD",
-      "entry": 72.32,
-      "exit": 73.08,
-      "qty": "269.476496636",
-      "pnlUsd": 204.8,
-      "entryDatum": "2026-06-21",
-      "exitDatum": "2026-06-21",
-      "grund": "Gewinnmitnahme: Momentum-These erodiert — 24h-Momentum von +6,5% auf +1,9% kollabiert, Preis sitzt auf der fast-MA (73,04), breiter Markt dreht (XRP/LINK/DOGE negativ). Buchgewinn sichern statt zurueckgeben."
-    },
-    {
-      "sym": "AVAX/USD",
-      "entry": 6.23,
-      "exit": 6.23,
-      "qty": "2512.87598758",
-      "pnlUsd": 0.0,
-      "entryDatum": "2026-06-21",
-      "exitDatum": "2026-06-21",
-      "grund": "Momentum-These erodiert: 24h-Momentum von +4,9% auf +1,4% kollabiert (gleicher Verlauf wie SOL), Preis unter fast-MA gefallen, breiter Markt schwach. Konsistente thesengetriebene Schliessung — kein Halten aus Verlustaversion; Kapital fuer sauberes Setup freimachen."
-    },
-    {
-      "sym": "SOL/USD",
-      "entry": 73.98,
-      "exit": 73.34,
-      "qty": "262.676454519",
-      "pnlUsd": -168.11,
-      "entryDatum": "2026-06-21",
-      "exitDatum": "2026-06-21",
-      "grund": "Stop erreicht: Preis 73,34 unter fast-MA (73,36), Momentum stetig fallend (3,35->2,24%), und der breite Rueckenwind ist weg — ETH zurueck unter fast-MA, XRP/DOGE negativ. Wiedereinstieg war Fehlausbruch; kleinen kontrollierten Verlust diszipliniert realisieren statt auf Erholung hoffen."
-    },
-    {
-      "sym": "LTC/USD",
-      "entry": 45.85,
-      "exit": 45.1,
-      "qty": "421.482918263",
-      "pnlUsd": -316.11,
-      "entryDatum": "2026-06-21",
-      "exitDatum": "2026-06-21",
-      "grund": "Stop erreicht: Preis 45,1 unter fast-MA (45,18), Trend tot (stetiger Abstieg vom Hoch 45,86), breite Bestaetigung weg (BTC unter MA, ETH negativ). Wide-Spread-Coin mit erschoepfter Trend-These — diszipliniert am Stop raus."
-    }
-  ],
+  "positionen": {},
+  "trades": [],
   "heute": {
     "datum": "2026-06-21",
     "trades": 5
-  },
-  "statistik": {
-    "trades": 8,
-    "gewonnen": 3,
-    "verloren": 5,
-    "summePnlUsd": -50.15
   }
 }
