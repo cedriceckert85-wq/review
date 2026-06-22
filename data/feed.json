@@ -268,41 +268,6 @@
    "text": "Crypto: Journal 2026-06-21 00:45"
   },
   {
-   "zeit": "2026-06-20T22:02:23Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-21 00:02"
-  },
-  {
-   "zeit": "2026-06-20T20:31:05Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-20 22:30 (22:00-Lauf, Sa: Boerse zu, Werte = Do-Schluss eingefroren)"
-  },
-  {
-   "zeit": "2026-06-20T15:31:19Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-20 17:30 (17:00-Lauf, Sa: Boerse zu, Werte = Do-Schluss eingefroren)"
-  },
-  {
-   "zeit": "2026-06-20T14:29:18Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Live-Feed: Crypto nie mehr null (Heartbeat-Fallback + keine null-Regression). Frischer live.json mit crypto -0.16%."
-  },
-  {
-   "zeit": "2026-06-20T14:11:11Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-20 16:11"
-  },
-  {
    "zeit": "2026-06-20T09:39:16Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -322,13 +287,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 20.06.2026 06:59"
-  },
-  {
-   "zeit": "2026-06-20T03:41:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Crypto: Journal 2026-06-20 05:41"
   },
   {
    "zeit": "2026-06-20T01:39:00Z",
@@ -560,6 +518,48 @@
    "label": "🤍 SOLID",
    "repo": "bots",
    "text": "SOLID-Lauf 2026-06-18 (1 Momentum: LRCX S-004; MU verfallen + wg. Earnings 24.06. uebersprungen)"
+  },
+  {
+   "zeit": "2026-06-17T22:14:28Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 18.06.2026"
+  },
+  {
+   "zeit": "2026-06-17T21:05:16Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-17"
+  },
+  {
+   "zeit": "2026-06-17T19:46:48Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "RISK -> Long/Short: Engine D reaktiviert als Regime-Index-Hedge (Short SPY/QQQ bei spyZone risk_off). Nutzer-Mandat 17.06. Plumbing/Journal-Schema unveraendert."
+  },
+  {
+   "zeit": "2026-06-17T17:35:12Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 17.06.2026 19:35"
+  },
+  {
+   "zeit": "2026-06-17T16:47:33Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 17.06.2026 18:47"
+  },
+  {
+   "zeit": "2026-06-17T05:30:28Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 17.06.2026 07:30"
   }
  ]
 }
