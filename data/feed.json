@@ -1,6 +1,370 @@
 {
- "standUtc": "2026-06-19T17:01:57Z",
+ "standUtc": "2026-06-22T17:42:52Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-22T17:42:52Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 19:5x — IONQ ~59.8 HOLD (Opus-Sync)"
+  },
+  {
+   "zeit": "2026-06-22T17:27:41Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 19:36 — IONQ 59.76 USD, HOLD"
+  },
+  {
+   "zeit": "2026-06-22T16:27:26Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:36 — IONQ 58.43, HOLD"
+  },
+  {
+   "zeit": "2026-06-22T16:05:38Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-22 18:05 (ETH-Exit Stop, real -370)"
+  },
+  {
+   "zeit": "2026-06-22T15:27:39Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:36 — IONQ 57.56, HOLD"
+  },
+  {
+   "zeit": "2026-06-22T15:07:44Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Speku-Slot 17:2x — kein Trade, IONQ-Probe bleibt einzige Position"
+  },
+  {
+   "zeit": "2026-06-22T14:57:28Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:06 — IONQ 57.19, HOLD"
+  },
+  {
+   "zeit": "2026-06-22T14:42:53Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 16:51 — IONQ $57.93, HOLD"
+  },
+  {
+   "zeit": "2026-06-22T14:37:11Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Hauptlauf 16:33 — KEIN TRADE, Cash 100k (Clean-Start-Basis), kein sauberes Setup, PCE-Risiko Do"
+  },
+  {
+   "zeit": "2026-06-22T14:24:41Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Hauptlauf 16:2x — Tranche 1 IONQ Long 7.5% (Stop 51), 92.5% Cash vor PCE Do"
+  },
+  {
+   "zeit": "2026-06-22T14:08:43Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Eroeffnungs-Check 15:38 — 0 Positionen, kein Stop-Risiko"
+  },
+  {
+   "zeit": "2026-06-22T13:37:12Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Vorboers-Scan 15:06 — kein neues Material, Watchlist stabil"
+  },
+  {
+   "zeit": "2026-06-22T12:26:05Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Vorboers-Scan 14:06 — KEINE neuen Schocks, guard OK 0/0"
+  },
+  {
+   "zeit": "2026-06-22T11:35:26Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-22 13:35 (ETH-Long, breiter Risk-on)"
+  },
+  {
+   "zeit": "2026-06-22T11:25:59Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Vorboers-Scan 13:06 — kein neues Material, Heartbeat aktualisiert"
+  },
+  {
+   "zeit": "2026-06-22T10:25:56Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Vorboers-Scan 12:06 — kein neues Material, State OK"
+  },
+  {
+   "zeit": "2026-06-22T09:35:50Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-22 11:35 (SOL-Exit Stop, real -349)"
+  },
+  {
+   "zeit": "2026-06-22T09:25:42Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Vorboers-Scan 11:06 — kein MATERIAL (Nasdaq-100/OKLO-Deal alt)"
+  },
+  {
+   "zeit": "2026-06-22T08:26:28Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Vorboers-Scan 10:06 — kein neues MATERIAL, Guard OK."
+  },
+  {
+   "zeit": "2026-06-22T07:38:09Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Briefing 09:36 — Depot resettet 1:1-100k, 0 Positionen, Futures +1-2%"
+  },
+  {
+   "zeit": "2026-06-22T07:35:49Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-22 09:35 (SOL-Long Ausbruch)"
+  },
+  {
+   "zeit": "2026-06-22T03:05:44Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-22 05:05 (SOL-Exit -354 USD)"
+  },
+  {
+   "zeit": "2026-06-22T01:35:33Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-22 03:35"
+  },
+  {
+   "zeit": "2026-06-22T01:23:04Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Reset 03:24 — Neustart 1:1-$100k, 0 Positionen, Cash 100000 (Flotte lokal Mo 22.06.)"
+  },
+  {
+   "zeit": "2026-06-22T00:59:48Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-22 02:59"
+  },
+  {
+   "zeit": "2026-06-22T00:13:47Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Live-Dashboard (Flotte 2.0, Karten) hinzugefuegt"
+  },
+  {
+   "zeit": "2026-06-21T21:40:25Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Flotte 2.0: Orders ueber zentrales Risk-Gate (order_gate.submit_order); atomare Journal-Writes; Cloud-Order-Workflows -> workflow_dispatch (alles auf den Pi)"
+  },
+  {
+   "zeit": "2026-06-21T21:39:53Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Flotte 2.0: Orders ueber zentrales Risk-Gate (order_gate.submit_order); reconcile/tick-Integration"
+  },
+  {
+   "zeit": "2026-06-21T21:39:25Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Flotte 2.0: Orders ueber zentrales Risk-Gate (order_gate.submit_order); reconcile/tick-Integration; Cloud-orders.yml -> workflow_dispatch (alles auf den Pi)"
+  },
+  {
+   "zeit": "2026-06-21T18:15:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 20:15"
+  },
+  {
+   "zeit": "2026-06-21T17:15:46Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 19:15"
+  },
+  {
+   "zeit": "2026-06-21T15:45:44Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 17:45"
+  },
+  {
+   "zeit": "2026-06-21T15:41:24Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-21 17:30 (17:00-Lauf, So: KW25-Wochen-Review; Boerse zu, Werte = Do-Schluss eingefroren)"
+  },
+  {
+   "zeit": "2026-06-21T11:45:44Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 13:45"
+  },
+  {
+   "zeit": "2026-06-21T10:15:35Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 12:15"
+  },
+  {
+   "zeit": "2026-06-21T07:16:51Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 09:16"
+  },
+  {
+   "zeit": "2026-06-21T05:45:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 07:45"
+  },
+  {
+   "zeit": "2026-06-20T22:45:47Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 00:45"
+  },
+  {
+   "zeit": "2026-06-20T22:02:23Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-21 00:02"
+  },
+  {
+   "zeit": "2026-06-20T20:31:05Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-20 22:30 (22:00-Lauf, Sa: Boerse zu, Werte = Do-Schluss eingefroren)"
+  },
+  {
+   "zeit": "2026-06-20T15:31:19Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-20 17:30 (17:00-Lauf, Sa: Boerse zu, Werte = Do-Schluss eingefroren)"
+  },
+  {
+   "zeit": "2026-06-20T14:29:18Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Live-Feed: Crypto nie mehr null (Heartbeat-Fallback + keine null-Regression). Frischer live.json mit crypto -0.16%."
+  },
+  {
+   "zeit": "2026-06-20T14:11:11Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-20 16:11"
+  },
+  {
+   "zeit": "2026-06-20T09:39:16Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Wochen-Reflexion 2 (2026-06-20)"
+  },
+  {
+   "zeit": "2026-06-20T09:35:17Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Reflexion 2026-06-20 — Woche-2-Bilanz"
+  },
+  {
+   "zeit": "2026-06-20T04:59:25Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 20.06.2026 06:59"
+  },
+  {
+   "zeit": "2026-06-20T03:41:14Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-20 05:41"
+  },
+  {
+   "zeit": "2026-06-20T01:39:00Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-20 (KEIN TRADE: kein neuer Handelstag, Journal 5/5 am Cap)"
+  },
+  {
+   "zeit": "2026-06-20T01:24:29Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-20 (Sa, KEIN TRADE: Momentum 3/3 voll, News-Drift kein Universums-Ticker)"
+  },
+  {
+   "zeit": "2026-06-19T20:31:48Z",
+   "agent": "schatten",
+   "label": "👤 Review/Schatten",
+   "repo": "review",
+   "text": "Review 2026-06-19 22:30 (22:00-Lauf, Juneteenth: Boerse zu, Werte = Do-Schluss eingefroren, kein Eingriff)"
+  },
+  {
+   "zeit": "2026-06-19T20:18:26Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Abend-Check Juneteenth 2026-06-19"
+  },
+  {
+   "zeit": "2026-06-19T20:14:35Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Abend-Check 19.06. — Juneteenth No-Op"
+  },
   {
    "zeit": "2026-06-19T17:01:57Z",
    "agent": "bots",
@@ -170,13 +534,6 @@
    "text": "Haupt: Wache 19:49 — SPY-Korrektur 747.24"
   },
   {
-   "zeit": "2026-06-18T17:51:02Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 19:49 CEST — Dashboard updated (Depot 2003.03€, SPY 783.07)"
-  },
-  {
    "zeit": "2026-06-18T17:45:54Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -184,158 +541,11 @@
    "text": "DAYTRADER Signal 18.06.2026 19:45"
   },
   {
-   "zeit": "2026-06-18T17:44:01Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~19:36"
-  },
-  {
-   "zeit": "2026-06-18T17:36:33Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 19:34 CEST — Depot 2003.03€, IWM 294.49 HOLD, AMZN 245.65 HOLD, XLP 83.36 HOLD"
-  },
-  {
-   "zeit": "2026-06-18T17:29:02Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~19:21"
-  },
-  {
-   "zeit": "2026-06-18T17:26:09Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Globalstar-Flag korrigiert"
-  },
-  {
-   "zeit": "2026-06-18T17:24:42Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: XLP-Fehlverkauf reversiert — 3 Positionen, Depot 2002.88€"
-  },
-  {
-   "zeit": "2026-06-18T17:22:11Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 19:19 CEST — Depot 2002.94€, XLP verkauft"
-  },
-  {
-   "zeit": "2026-06-18T17:13:37Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~19:06"
-  },
-  {
-   "zeit": "2026-06-18T17:06:19Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 19:04 CEST"
-  },
-  {
-   "zeit": "2026-06-18T16:59:26Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~18:51"
-  },
-  {
-   "zeit": "2026-06-18T16:51:33Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 18:49 CEST — Depot 2001.77€"
-  },
-  {
    "zeit": "2026-06-18T16:46:24Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "DAYTRADER Signal 18.06.2026 18:46"
-  },
-  {
-   "zeit": "2026-06-18T16:43:33Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~18:36"
-  },
-  {
-   "zeit": "2026-06-18T16:36:47Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 18:34 CEST"
-  },
-  {
-   "zeit": "2026-06-18T16:29:32Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~18:30"
-  },
-  {
-   "zeit": "2026-06-18T16:21:41Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 18:19 CEST — Depot 2001.08€, SPY 746.13€"
-  },
-  {
-   "zeit": "2026-06-18T16:13:41Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~18:13"
-  },
-  {
-   "zeit": "2026-06-18T16:06:23Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 18:05 CEST"
-  },
-  {
-   "zeit": "2026-06-18T15:58:28Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:51"
-  },
-  {
-   "zeit": "2026-06-18T15:51:15Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 17:49 CEST"
-  },
-  {
-   "zeit": "2026-06-18T15:43:33Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~17:45 — IONQ/QBTS/RGTI aktualisiert"
-  },
-  {
-   "zeit": "2026-06-18T15:37:55Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 17:37 — Zeit/Flag-Korrektur"
-  },
-  {
-   "zeit": "2026-06-18T15:36:28Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 18.06. 15:34 CEST"
   },
   {
    "zeit": "2026-06-18T05:23:29Z",
@@ -350,216 +560,6 @@
    "label": "🔥 RISK",
    "repo": "bots",
    "text": "RISK-Lauf 2026-06-18"
-  },
-  {
-   "zeit": "2026-06-18T01:28:07Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-18 (1 Momentum: LRCX S-004; MU verfallen + wg. Earnings 24.06. uebersprungen)"
-  },
-  {
-   "zeit": "2026-06-17T22:14:28Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 18.06.2026"
-  },
-  {
-   "zeit": "2026-06-17T21:05:16Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-17"
-  },
-  {
-   "zeit": "2026-06-17T19:46:48Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "RISK -> Long/Short: Engine D reaktiviert als Regime-Index-Hedge (Short SPY/QQQ bei spyZone risk_off). Nutzer-Mandat 17.06. Plumbing/Journal-Schema unveraendert."
-  },
-  {
-   "zeit": "2026-06-17T17:35:12Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 17.06.2026 19:35"
-  },
-  {
-   "zeit": "2026-06-17T16:47:33Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 17.06.2026 18:47"
-  },
-  {
-   "zeit": "2026-06-17T05:30:28Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 17.06.2026 07:30"
-  },
-  {
-   "zeit": "2026-06-17T01:39:58Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-17"
-  },
-  {
-   "zeit": "2026-06-17T01:24:47Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-17 (KEIN TRADE: Momentum 3/3 voll, News-Drift nur QCOM-Geruecht)"
-  },
-  {
-   "zeit": "2026-06-16T22:22:18Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 17.06.2026"
-  },
-  {
-   "zeit": "2026-06-16T21:05:39Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-16"
-  },
-  {
-   "zeit": "2026-06-16T18:45:29Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 16.06.2026 20:45"
-  },
-  {
-   "zeit": "2026-06-16T18:19:54Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 16.06.2026 20:19"
-  },
-  {
-   "zeit": "2026-06-16T13:07:07Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-16"
-  },
-  {
-   "zeit": "2026-06-16T12:47:13Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Website: 'Elite Swing Agent' -> 'Gegentrend' (Mean-Reversion). Nur Anzeigename, Daten-Key swing unveraendert."
-  },
-  {
-   "zeit": "2026-06-16T12:38:39Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Umbau: Swing -> Mean-Reversion (V4). Mandat/Regeln/Cron auf Gegen-Trend; API-Plumbing (alpaca_sync/trade_eval/Journal/Actions) unveraendert. Momentum-Spec V3 archiviert."
-  },
-  {
-   "zeit": "2026-06-16T06:16:17Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 16.06.2026 08:16"
-  },
-  {
-   "zeit": "2026-06-16T01:42:46Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-16"
-  },
-  {
-   "zeit": "2026-06-16T01:27:00Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-16 (KEIN TRADE: Momentum 3/3 Slots voll, kein News-Drift-Kandidat)"
-  },
-  {
-   "zeit": "2026-06-15T22:28:47Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 16.06.2026"
-  },
-  {
-   "zeit": "2026-06-15T21:12:58Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-15"
-  },
-  {
-   "zeit": "2026-06-15T18:51:40Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 15.06.2026 20:51"
-  },
-  {
-   "zeit": "2026-06-15T18:14:02Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 15.06.2026 20:14"
-  },
-  {
-   "zeit": "2026-06-13T21:23:33Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "RISK: Positionsgroesse 30% des Equity/Trade (statt 1R=2%), Stop bleibt ATR-basiert; SOLID/CODEX unveraendert (Nutzer-Mandat 2026-06-13)"
-  },
-  {
-   "zeit": "2026-06-13T11:45:10Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-13 (Nachhol Montag-Setup, kein neuer Trade)"
-  },
-  {
-   "zeit": "2026-06-13T09:36:49Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "quant_snapshot: Yahoo-Retry + Sanity-Gate (kein stiller Garbage-Snapshot)"
-  },
-  {
-   "zeit": "2026-06-13T09:33:24Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Lokaler Betrieb: .claude/ und FLOTTE_START_LOKAL.md ignorieren"
-  },
-  {
-   "zeit": "2026-06-13T05:21:44Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-13"
-  },
-  {
-   "zeit": "2026-06-13T05:09:25Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 13.06.2026 07:09"
-  },
-  {
-   "zeit": "2026-06-13T02:13:38Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-13"
   }
  ]
 }
