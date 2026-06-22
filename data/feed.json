@@ -345,13 +345,6 @@
    "text": "SOLID-Lauf 2026-06-20 (Sa, KEIN TRADE: Momentum 3/3 voll, News-Drift kein Universums-Ticker)"
   },
   {
-   "zeit": "2026-06-19T20:31:48Z",
-   "agent": "schatten",
-   "label": "👤 Review/Schatten",
-   "repo": "review",
-   "text": "Review 2026-06-19 22:30 (22:00-Lauf, Juneteenth: Boerse zu, Werte = Do-Schluss eingefroren, kein Eingriff)"
-  },
-  {
    "zeit": "2026-06-19T20:18:26Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -560,6 +553,13 @@
    "label": "🔥 RISK",
    "repo": "bots",
    "text": "RISK-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T01:28:07Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-18 (1 Momentum: LRCX S-004; MU verfallen + wg. Earnings 24.06. uebersprungen)"
   }
  ]
 }
