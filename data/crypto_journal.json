@@ -5,16 +5,7 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot). KI-gesteuert (Opus) seit 2026-06-22."
   },
-  "positionen": {
-    "ETH/USD": {
-      "entry": 1759.37,
-      "notional": 19859.39,
-      "stop": 1618.62,
-      "entryDatum": "2026-06-22",
-      "orderId": "87ad2a63-b15d-4770-99bf-b4370dc7e48a",
-      "grund": "Breit bestaetigter Risk-on: ALLE 8 Coins gruen, Leader BTC dreht positiv (+0.61%, fast>slow). ETH staerkster Major +2.07%, anhaltender Relative-Staerke-Leader ueber Stunden (fast>slow, Kurs klar ueber MAs) - genau das pre-committed Setup (BTC-Mom positiv + ETH fuehrt), das den 2 SOL-Whipsaws fehlte. News neutral-konstruktiv (Glamsterdam Q3, Netzwerk-Rekorde), kein akutes Risiko. Ziel obere Juni-Range 1850-1950; Stop bei Verlust fast-MA (~1740) oder BTC-Regime-Flip."
-    }
-  },
+  "positionen": {},
   "trades": [
     {
       "sym": "SOL/USD",
@@ -35,13 +26,23 @@
       "entryDatum": "2026-06-22",
       "exitDatum": "2026-06-22",
       "grund": "Stop ausgeloest wie vorab definiert: SOL faellt unter fast-MA (73.72<73.76), Fehlausbruch (zurueck unter 74.2), Momentum -0.33% und weiter fallend, SOL Nachzuegler (ETH noch +0.82). Breakout-These invalidiert -> diszipliniert kleinen Verlust nehmen. PnL = realer Round-Trip lt. Broker (inkl. beider Spreads); Skript-Wert -138.91 ignorierte Spread."
+    },
+    {
+      "sym": "ETH/USD",
+      "entry": 1759.76093944,
+      "exit": 1730.71,
+      "qty": "11.035465208",
+      "pnlUsd": -369.75,
+      "entryDatum": "2026-06-22",
+      "exitDatum": "2026-06-22",
+      "grund": "Stop ausgeloest wie vorab definiert: ETH bricht klar unter fast-MA (1736.95<1751.70) und testet slow-MA, Momentum +2.65->+0.65 eingebrochen, Breite kippt (SOL -1.78, Mehrzahl rot), ETH nicht mehr Leader. These (ETH fuehrt Risk-on) gebrochen -> diszipliniert Verlust nehmen, BTC zwar noch +0.93 aber mein ETH-Stop hat Vorrang."
     }
   ],
   "statistik": {
-    "trades": 2,
+    "trades": 3,
     "gewonnen": 0,
-    "verloren": 2,
-    "summePnlUsd": -703.06
+    "verloren": 3,
+    "summePnlUsd": -1072.81
   },
   "heute": {
     "datum": "2026-06-22",
