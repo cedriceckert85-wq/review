@@ -1,23 +1,23 @@
 {
-  "ts_utc": "2026-06-22T20:05:33Z",
+  "ts_utc": "2026-06-22T20:15:42Z",
   "fleet": {
-    "equity": 498880.54,
+    "equity": 598880.54,
     "heute_usd": -1119.46,
-    "heute_pct": -0.224,
+    "heute_pct": -0.187,
     "gesamt_usd": -1119.46,
-    "gesamt_pct": -0.22,
-    "net_exposure_pct": 1.5,
-    "gross_exposure_pct": 1.5,
+    "gesamt_pct": -0.19,
+    "net_exposure_pct": 1.25,
+    "gross_exposure_pct": 1.25,
     "n_positions_total": 1,
-    "n_bots": 5,
-    "n_fresh": 2
+    "n_bots": 6,
+    "n_fresh": 3
   },
   "drawdown": {
-    "peak_equity": 499389.95,
-    "dd_pct": 0.1,
+    "peak_equity": 598880.54,
+    "dd_pct": 0.0,
     "status": "ok",
     "armed": false,
-    "n_fresh": 2,
+    "n_fresh": 3,
     "complete": true,
     "missing": [],
     "triggered": false,
@@ -31,6 +31,20 @@
     {
       "key": "daytrade",
       "name": "💤 Daytrade",
+      "asset_class": "equity",
+      "equity": 100000.0,
+      "heute_usd": 0.0,
+      "heute_pct": 0.0,
+      "gesamt_usd": 0.0,
+      "gesamt_pct": 0.0,
+      "n_positions": 0,
+      "net_exposure_usd": 0.0,
+      "fresh": false,
+      "ok": true
+    },
+    {
+      "key": "diversifikator",
+      "name": "🆕 Diversifikator",
       "asset_class": "equity",
       "equity": 100000.0,
       "heute_usd": 0.0,
@@ -53,7 +67,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": false,
+      "fresh": true,
       "ok": true
     },
     {
