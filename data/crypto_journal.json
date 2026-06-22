@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot). KI-gesteuert (Opus) seit 2026-06-22."
   },
-  "positionen": {},
+  "positionen": {
+    "ETH/USD": {
+      "entry": 1759.37,
+      "notional": 19859.39,
+      "stop": 1618.62,
+      "entryDatum": "2026-06-22",
+      "orderId": "87ad2a63-b15d-4770-99bf-b4370dc7e48a",
+      "grund": "Breit bestaetigter Risk-on: ALLE 8 Coins gruen, Leader BTC dreht positiv (+0.61%, fast>slow). ETH staerkster Major +2.07%, anhaltender Relative-Staerke-Leader ueber Stunden (fast>slow, Kurs klar ueber MAs) - genau das pre-committed Setup (BTC-Mom positiv + ETH fuehrt), das den 2 SOL-Whipsaws fehlte. News neutral-konstruktiv (Glamsterdam Q3, Netzwerk-Rekorde), kein akutes Risiko. Ziel obere Juni-Range 1850-1950; Stop bei Verlust fast-MA (~1740) oder BTC-Regime-Flip."
+    }
+  },
   "trades": [
     {
       "sym": "SOL/USD",
@@ -36,6 +45,6 @@
   },
   "heute": {
     "datum": "2026-06-22",
-    "trades": 2
+    "trades": 3
   }
 }
