@@ -1,23 +1,23 @@
 {
-  "ts_utc": "2026-06-22T20:15:42Z",
+  "ts_utc": "2026-06-22T20:26:14Z",
   "fleet": {
-    "equity": 598880.54,
-    "heute_usd": -1119.46,
-    "heute_pct": -0.187,
-    "gesamt_usd": -1119.46,
-    "gesamt_pct": -0.19,
-    "net_exposure_pct": 1.25,
-    "gross_exposure_pct": 1.25,
+    "equity": 699075.54,
+    "heute_usd": -924.46,
+    "heute_pct": -0.132,
+    "gesamt_usd": -924.46,
+    "gesamt_pct": -0.13,
+    "net_exposure_pct": 1.1,
+    "gross_exposure_pct": 1.1,
     "n_positions_total": 1,
-    "n_bots": 6,
-    "n_fresh": 3
+    "n_bots": 7,
+    "n_fresh": 5
   },
   "drawdown": {
-    "peak_equity": 598880.54,
+    "peak_equity": 699075.54,
     "dd_pct": 0.0,
     "status": "ok",
     "armed": false,
-    "n_fresh": 3,
+    "n_fresh": 5,
     "complete": true,
     "missing": [],
     "triggered": false,
@@ -28,6 +28,20 @@
   "concentration_alerts": [],
   "groupthink_alerts": [],
   "cards": [
+    {
+      "key": "speku",
+      "name": "🚀 Growth",
+      "asset_class": "equity",
+      "equity": 100148.35,
+      "heute_usd": 148.35,
+      "heute_pct": 0.15,
+      "gesamt_usd": 148.35,
+      "gesamt_pct": 0.15,
+      "n_positions": 1,
+      "net_exposure_usd": 7657.0,
+      "fresh": true,
+      "ok": true
+    },
     {
       "key": "daytrade",
       "name": "💤 Daytrade",
@@ -71,6 +85,20 @@
       "ok": true
     },
     {
+      "key": "pead",
+      "name": "🎯 PEAD",
+      "asset_class": "equity",
+      "equity": 100000.0,
+      "heute_usd": 0.0,
+      "heute_pct": 0.0,
+      "gesamt_usd": 0.0,
+      "gesamt_pct": 0.0,
+      "n_positions": 0,
+      "net_exposure_usd": 0.0,
+      "fresh": true,
+      "ok": true
+    },
+    {
       "key": "swing",
       "name": "◆ Gegentrend",
       "asset_class": "equity",
@@ -81,20 +109,6 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": false,
-      "ok": true
-    },
-    {
-      "key": "speku",
-      "name": "🚀 Growth",
-      "asset_class": "equity",
-      "equity": 99953.35,
-      "heute_usd": -46.65,
-      "heute_pct": -0.05,
-      "gesamt_usd": -46.65,
-      "gesamt_pct": -0.05,
-      "n_positions": 1,
-      "net_exposure_usd": 7462.0,
       "fresh": false,
       "ok": true
     },
