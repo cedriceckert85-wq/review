@@ -3,19 +3,27 @@
     "start": 100000,
     "status": "ALPACA PAPER (ALPACA_CRYPTO)",
     "konto_nr": "PA3X2F870VJ0",
-    "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
+    "hinweis": "Crypto-Daytrade-Bot - Spot, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot). KI-gesteuert (Opus) seit 2026-06-22."
   },
-  "positionen": {
-    "SOL/USD": {
-      "entry": 74.13,
-      "notional": 20000.0,
-      "stop": 68.2,
+  "positionen": {},
+  "trades": [
+    {
+      "sym": "SOL/USD",
+      "entry": 74.389782762,
+      "exit": 73.23,
+      "qty": "263.256467458",
+      "pnlUsd": -354.25,
       "entryDatum": "2026-06-22",
-      "orderId": "e4e985bb-bbe4-4c31-83ef-89746e8695b7",
-      "grund": "Regime-Flip risk-on: BTC bricht ueber MAs, SOL staerkstes sauberes Momentum (+1.31%) unter eng-Spread-Majors, fast>slow + Kurs ueber beiden MAs; Rueckenwind MS Spot-SOL-ETF-Antrag + Rekord-Spotvolumen. Ziel Reclaim 78-85; Stop bei Verlust der MAs/Mom-Drehung, 600k-SOL-Boersenzufluss als Abwaertsrisiko respektieren."
+      "exitDatum": "2026-06-22",
+      "grund": "EXIT: These gebrochen - Risk-on-Regime gekippt (BTC-Mom +0.45->-0.51, ETH -0.39), SOL-Mom +1.17->-0.13 gedreht und Kurs unter fast-MA. Definierter Stop ausgeloest. PnL = realer Round-Trip lt. Broker (inkl. beider Spreads)."
     }
+  ],
+  "statistik": {
+    "trades": 1,
+    "gewonnen": 0,
+    "verloren": 1,
+    "summePnlUsd": -354.25
   },
-  "trades": [],
   "heute": {
     "datum": "2026-06-22",
     "trades": 1
