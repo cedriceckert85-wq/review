@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot). KI-gesteuert (Opus) seit 2026-06-22."
   },
-  "positionen": {},
+  "positionen": {
+    "SOL/USD": {
+      "entry": 74.25,
+      "notional": 19929.15,
+      "stop": 68.31,
+      "entryDatum": "2026-06-22",
+      "orderId": "7e64a545-0159-4ba7-a877-a4b3d66e6718",
+      "grund": "Bestaetigter Risk-on-Ausbruch: SOL +1.52% bricht ueber Stunden-Range (74.24>74.1) UND Leader BTC dreht positiv mit bullischem fast>slow-Cross, ETH +0.95% bestaetigt. Diesmal breite Bestaetigung (fehlte beim 1. Versuch). News konstruktiv (MS Spot-SOL-ETF MSOL, ETF-Assets >1Mrd). Ziel Reclaim 78-85; Stop bei Rueckfall unter fast-MA/in die Range (~73.5) oder BTC-Regime-Flip; 600k-SOL-Zufluss als Risiko respektieren."
+    }
+  },
   "trades": [
     {
       "sym": "SOL/USD",
@@ -26,6 +35,6 @@
   },
   "heute": {
     "datum": "2026-06-22",
-    "trades": 1
+    "trades": 2
   }
 }
