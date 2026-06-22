@@ -23,13 +23,6 @@
    "text": "Dashboard-Update 22.06.2026 21:03"
   },
   {
-   "zeit": "2026-06-22T18:52:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 22.06.2026 20:52"
-  },
-  {
    "zeit": "2026-06-22T17:42:52Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Swing-Lauf 2026-06-15"
+  },
+  {
+   "zeit": "2026-06-15T18:51:40Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 15.06.2026 20:51"
   }
  ]
 }
