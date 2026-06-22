@@ -5,10 +5,19 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot BTC/USD + ETH/USD, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot)."
   },
-  "positionen": {},
+  "positionen": {
+    "SOL/USD": {
+      "entry": 74.13,
+      "notional": 20000.0,
+      "stop": 68.2,
+      "entryDatum": "2026-06-22",
+      "orderId": "e4e985bb-bbe4-4c31-83ef-89746e8695b7",
+      "grund": "Regime-Flip risk-on: BTC bricht ueber MAs, SOL staerkstes sauberes Momentum (+1.31%) unter eng-Spread-Majors, fast>slow + Kurs ueber beiden MAs; Rueckenwind MS Spot-SOL-ETF-Antrag + Rekord-Spotvolumen. Ziel Reclaim 78-85; Stop bei Verlust der MAs/Mom-Drehung, 600k-SOL-Boersenzufluss als Abwaertsrisiko respektieren."
+    }
+  },
   "trades": [],
   "heute": {
-    "datum": "2026-06-21",
-    "trades": 5
+    "datum": "2026-06-22",
+    "trades": 1
   }
 }
