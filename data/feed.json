@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-22T18:30:14Z",
+ "standUtc": "2026-06-22T18:41:14Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-22T18:41:14Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 22.06.2026 20:41"
+  },
   {
    "zeit": "2026-06-22T18:30:14Z",
    "agent": "system",
@@ -553,13 +560,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "DAYTRADER Signal 15.06.2026 20:51"
-  },
-  {
-   "zeit": "2026-06-15T18:14:02Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 15.06.2026 20:14"
   }
  ]
 }
