@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-23T17:38:07Z",
+ "standUtc": "2026-06-23T17:42:32Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T17:42:32Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 19:42 — Dashboard aktualisiert."
+  },
   {
    "zeit": "2026-06-23T17:38:07Z",
    "agent": "system",
@@ -371,13 +378,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "DAYTRADER Signal 19.06.2026 18:19"
-  },
-  {
-   "zeit": "2026-06-19T07:41:02Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Briefing 2026-06-19"
   },
   {
    "zeit": "2026-06-19T05:57:20Z",
