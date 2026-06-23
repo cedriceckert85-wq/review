@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-23T17:07:27Z",
+ "standUtc": "2026-06-23T17:12:55Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T17:12:55Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 19:12 — IONQ 57.8 USD Hold"
+  },
   {
    "zeit": "2026-06-23T17:07:27Z",
    "agent": "system",
@@ -399,13 +406,6 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Swing-Lauf 2026-06-18"
-  },
-  {
-   "zeit": "2026-06-18T20:19:19Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh Abend-Check 2026-06-18 (Tag 6, Depot 2041.48 EUR)"
   },
   {
    "zeit": "2026-06-18T17:45:54Z",
