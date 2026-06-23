@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-23T16:15:27Z",
+ "standUtc": "2026-06-23T16:25:27Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T16:25:27Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 23.06.2026 18:25"
+  },
   {
    "zeit": "2026-06-23T16:15:27Z",
    "agent": "system",
@@ -189,83 +196,6 @@
    "label": "🛠 Review-System",
    "repo": "review",
    "text": "Dashboard-Update 23.06.2026 08:45"
-  },
-  {
-   "zeit": "2026-06-23T06:35:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 08:35"
-  },
-  {
-   "zeit": "2026-06-23T06:24:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 08:24"
-  },
-  {
-   "zeit": "2026-06-23T06:13:34Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 08:13"
-  },
-  {
-   "zeit": "2026-06-23T06:03:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 08:03"
-  },
-  {
-   "zeit": "2026-06-23T05:53:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 07:53"
-  },
-  {
-   "zeit": "2026-06-23T05:43:04Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 07:43"
-  },
-  {
-   "zeit": "2026-06-23T05:32:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 07:32"
-  },
-  {
-   "zeit": "2026-06-23T05:22:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 07:22"
-  },
-  {
-   "zeit": "2026-06-23T05:11:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 07:11"
-  },
-  {
-   "zeit": "2026-06-23T05:01:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 07:01"
-  },
-  {
-   "zeit": "2026-06-23T04:50:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 06:50"
   },
   {
    "zeit": "2026-06-23T04:45:33Z",
@@ -560,6 +490,76 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Dashboard-Refresh Abend-Check 2026-06-18 (Tag 6, Depot 2041.48 EUR)"
+  },
+  {
+   "zeit": "2026-06-18T20:10:29Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Abend-Check 18.06. — Schluss Depot 2002.67EUR, 3 HOLD"
+  },
+  {
+   "zeit": "2026-06-18T19:58:42Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 21:28 — Depot 2003€"
+  },
+  {
+   "zeit": "2026-06-18T19:28:29Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Wache 21:13 — Depot 2000€"
+  },
+  {
+   "zeit": "2026-06-18T19:22:05Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-18 ~21:21"
+  },
+  {
+   "zeit": "2026-06-18T17:45:54Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 19:45"
+  },
+  {
+   "zeit": "2026-06-18T16:46:24Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 18:46"
+  },
+  {
+   "zeit": "2026-06-18T05:23:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 18.06.2026 07:23"
+  },
+  {
+   "zeit": "2026-06-18T01:39:52Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T01:28:07Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-18 (1 Momentum: LRCX S-004; MU verfallen + wg. Earnings 24.06. uebersprungen)"
+  },
+  {
+   "zeit": "2026-06-17T22:14:28Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 18.06.2026"
   }
  ]
 }
