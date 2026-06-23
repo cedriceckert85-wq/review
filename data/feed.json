@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-23T16:36:07Z",
+ "standUtc": "2026-06-23T16:43:04Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T16:43:04Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:42 — IONQ 58.1 USD Hold"
+  },
   {
    "zeit": "2026-06-23T16:36:07Z",
    "agent": "system",
@@ -441,13 +448,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Abend-Check 18.06. — Schluss Depot 2002.67EUR, 3 HOLD"
-  },
-  {
-   "zeit": "2026-06-18T19:58:42Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 21:28 — Depot 2003€"
   },
   {
    "zeit": "2026-06-18T17:45:54Z",
