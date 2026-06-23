@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-23T17:17:47Z",
+ "standUtc": "2026-06-23T17:28:06Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T17:28:06Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 19:27 — IONQ 57.9 USD Hold"
+  },
+  {
+   "zeit": "2026-06-23T17:27:56Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 23.06.2026 19:27"
+  },
   {
    "zeit": "2026-06-23T17:17:47Z",
    "agent": "system",
@@ -28,13 +42,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 18:57 — IONQ 57.8 USD Hold"
-  },
-  {
-   "zeit": "2026-06-23T16:57:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 18:57"
   },
   {
    "zeit": "2026-06-23T16:43:04Z",
@@ -371,13 +378,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Briefing 2026-06-19"
-  },
-  {
-   "zeit": "2026-06-19T07:37:18Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-19"
   },
   {
    "zeit": "2026-06-19T05:57:20Z",
