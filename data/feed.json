@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-23T16:25:27Z",
+ "standUtc": "2026-06-23T16:29:36Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T16:29:36Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:29 — IONQ HOLD 58.33, kein Trade"
+  },
+  {
+   "zeit": "2026-06-23T16:28:32Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:27 — IONQ 58.2 USD Hold"
+  },
   {
    "zeit": "2026-06-23T16:25:27Z",
    "agent": "system",
@@ -504,20 +518,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Wache 21:28 — Depot 2003€"
-  },
-  {
-   "zeit": "2026-06-18T19:28:29Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Wache 21:13 — Depot 2000€"
-  },
-  {
-   "zeit": "2026-06-18T19:22:05Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Dashboard-Refresh 2026-06-18 ~21:21"
   },
   {
    "zeit": "2026-06-18T17:45:54Z",
