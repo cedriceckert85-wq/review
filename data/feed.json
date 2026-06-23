@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-23T16:05:07Z",
+ "standUtc": "2026-06-23T16:15:27Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T16:15:27Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 23.06.2026 18:15"
+  },
+  {
+   "zeit": "2026-06-23T16:13:03Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:12 — IONQ 58.78 USD Hold"
+  },
   {
    "zeit": "2026-06-23T16:05:07Z",
    "agent": "system",
@@ -261,83 +275,6 @@
    "text": "CODEX Lauf 23.06.2026 06:45"
   },
   {
-   "zeit": "2026-06-23T04:39:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 06:39"
-  },
-  {
-   "zeit": "2026-06-23T04:28:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 06:28"
-  },
-  {
-   "zeit": "2026-06-23T04:17:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 06:17"
-  },
-  {
-   "zeit": "2026-06-23T04:06:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 06:06"
-  },
-  {
-   "zeit": "2026-06-23T03:55:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 05:55"
-  },
-  {
-   "zeit": "2026-06-23T03:44:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 05:44"
-  },
-  {
-   "zeit": "2026-06-23T03:34:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 05:34"
-  },
-  {
-   "zeit": "2026-06-23T03:24:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 05:24"
-  },
-  {
-   "zeit": "2026-06-23T03:13:34Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 05:13"
-  },
-  {
-   "zeit": "2026-06-23T03:03:14Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 05:03"
-  },
-  {
-   "zeit": "2026-06-23T02:52:54Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 04:52"
-  },
-  {
    "zeit": "2026-06-22T22:16:00Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -560,6 +497,69 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Abend-Check 19.06. — Juneteenth No-Op"
+  },
+  {
+   "zeit": "2026-06-19T17:01:57Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 19.06.2026 19:01"
+  },
+  {
+   "zeit": "2026-06-19T16:19:22Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 19.06.2026 18:19"
+  },
+  {
+   "zeit": "2026-06-19T07:41:02Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Briefing 2026-06-19"
+  },
+  {
+   "zeit": "2026-06-19T07:37:18Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh 2026-06-19"
+  },
+  {
+   "zeit": "2026-06-19T05:57:20Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 19.06.2026 07:57"
+  },
+  {
+   "zeit": "2026-06-19T01:39:27Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-19 (KEIN TRADE: Juneteenth + Journal 5/5 am Cap-Maximum)"
+  },
+  {
+   "zeit": "2026-06-19T01:24:33Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-19 (Juneteenth, KEIN TRADE: Momentum 3/3 voll, News-Drift ausserhalb Universum)"
+  },
+  {
+   "zeit": "2026-06-18T21:05:03Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T20:19:19Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Dashboard-Refresh Abend-Check 2026-06-18 (Tag 6, Depot 2041.48 EUR)"
   }
  ]
 }
