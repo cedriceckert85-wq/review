@@ -1,26 +1,26 @@
 {
-  "ts_utc": "2026-06-23T20:13:56Z",
+  "ts_utc": "2026-06-23T20:24:06Z",
   "fleet": {
-    "equity": 698958.53,
-    "heute_usd": -41.6,
-    "heute_pct": -0.006,
-    "gesamt_usd": -1041.47,
+    "equity": 698968.03,
+    "heute_usd": -32.1,
+    "heute_pct": -0.005,
+    "gesamt_usd": -1031.97,
     "gesamt_pct": -0.15,
-    "net_exposure_pct": 1.08,
-    "gross_exposure_pct": 1.08,
-    "n_positions_total": 1,
+    "net_exposure_pct": -9.54,
+    "gross_exposure_pct": 11.7,
+    "n_positions_total": 4,
     "n_bots": 7,
-    "n_fresh": 3
+    "n_fresh": 5
   },
   "drawdown": {
     "peak_equity": 699112.58,
     "dd_pct": 0.02,
     "status": "ok",
     "armed": false,
-    "n_fresh": 3,
+    "n_fresh": 5,
     "complete": false,
     "missing": [
-      "haupt",
+      "daytrade",
       "swing"
     ],
     "triggered": false,
@@ -31,6 +31,20 @@
   "concentration_alerts": [],
   "groupthink_alerts": [],
   "cards": [
+    {
+      "key": "diversifikator",
+      "name": "🆕 Diversifikator",
+      "asset_class": "equity",
+      "equity": 100009.5,
+      "heute_usd": 9.5,
+      "heute_pct": 0.01,
+      "gesamt_usd": 9.5,
+      "gesamt_pct": 0.01,
+      "n_positions": 3,
+      "net_exposure_usd": -74231.33,
+      "fresh": true,
+      "ok": true
+    },
     {
       "key": "crypto",
       "name": "🪙 Crypto",
@@ -56,20 +70,6 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": true,
-      "ok": true
-    },
-    {
-      "key": "diversifikator",
-      "name": "🆕 Diversifikator",
-      "asset_class": "equity",
-      "equity": 100000.0,
-      "heute_usd": 0.0,
-      "heute_pct": 0.0,
-      "gesamt_usd": 0.0,
-      "gesamt_pct": 0.0,
-      "n_positions": 0,
-      "net_exposure_usd": 0.0,
       "fresh": false,
       "ok": true
     },
@@ -84,7 +84,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": false,
+      "fresh": true,
       "ok": true
     },
     {
@@ -98,7 +98,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": false,
+      "fresh": true,
       "ok": true
     },
     {
