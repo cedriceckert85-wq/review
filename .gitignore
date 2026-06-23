@@ -3,3 +3,7 @@ alpaca_keys.json
 # Claude Code lokale Session-Daten (Crons/Settings) nicht versionieren
 .claude/
 FLOTTE_START_LOKAL.md
+
+# Python-Cache (Review-Lauf nutzt git add -A)
+__pycache__/
+*.pyc
