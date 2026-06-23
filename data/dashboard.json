@@ -1,9 +1,9 @@
 {
-  "ts_utc": "2026-06-23T00:03:14Z",
+  "ts_utc": "2026-06-23T00:14:13Z",
   "fleet": {
     "equity": 699075.54,
-    "heute_usd": -924.46,
-    "heute_pct": -0.132,
+    "heute_usd": 148.35,
+    "heute_pct": 0.021,
     "gesamt_usd": -924.46,
     "gesamt_pct": -0.13,
     "net_exposure_pct": 1.1,
@@ -45,6 +45,20 @@
       "n_positions": 1,
       "net_exposure_usd": 7657.0,
       "fresh": false,
+      "ok": true
+    },
+    {
+      "key": "crypto",
+      "name": "🪙 Crypto",
+      "asset_class": "crypto",
+      "equity": 98927.19,
+      "heute_usd": 0.0,
+      "heute_pct": 0.0,
+      "gesamt_usd": -1072.81,
+      "gesamt_pct": -1.07,
+      "n_positions": 0,
+      "net_exposure_usd": 0.0,
+      "fresh": true,
       "ok": true
     },
     {
@@ -115,20 +129,6 @@
       "n_positions": 0,
       "net_exposure_usd": 0.0,
       "fresh": false,
-      "ok": true
-    },
-    {
-      "key": "crypto",
-      "name": "🪙 Crypto",
-      "asset_class": "crypto",
-      "equity": 98927.19,
-      "heute_usd": -1072.81,
-      "heute_pct": -1.07,
-      "gesamt_usd": -1072.81,
-      "gesamt_pct": -1.07,
-      "n_positions": 0,
-      "net_exposure_usd": 0.0,
-      "fresh": true,
       "ok": true
     }
   ]
