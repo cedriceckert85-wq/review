@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-23T16:43:04Z",
+ "standUtc": "2026-06-23T16:46:07Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T16:46:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 23.06.2026 18:46"
+  },
   {
    "zeit": "2026-06-23T16:43:04Z",
    "agent": "speku",
@@ -37,25 +44,11 @@
    "text": "Dashboard-Update 23.06.2026 18:25"
   },
   {
-   "zeit": "2026-06-23T16:15:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 18:15"
-  },
-  {
    "zeit": "2026-06-23T16:13:03Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 18:12 — IONQ 58.78 USD Hold"
-  },
-  {
-   "zeit": "2026-06-23T16:05:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 18:05"
   },
   {
    "zeit": "2026-06-23T15:58:11Z",
@@ -65,32 +58,11 @@
    "text": "Speku: Wache 17:57 — IONQ ~58.7 USD, Hold; S&P -1.17% (erholt), kein MATERIAL."
   },
   {
-   "zeit": "2026-06-23T15:54:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 17:54"
-  },
-  {
-   "zeit": "2026-06-23T15:44:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 17:44"
-  },
-  {
    "zeit": "2026-06-23T15:43:10Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 17:42 — IONQ ~58.2 USD, Hold; S&P -1.31%, Selloff AI-getrieben aber <2%, kein MATERIAL."
-  },
-  {
-   "zeit": "2026-06-23T15:33:37Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 17:33"
   },
   {
    "zeit": "2026-06-23T15:28:16Z",
@@ -100,25 +72,11 @@
    "text": "Speku: Wache 17:27 — IONQ ~58.9 USD, Hold; S&P -1.29%, IonQ-SkyWater-FTC-Routine, kein MATERIAL."
   },
   {
-   "zeit": "2026-06-23T15:23:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 17:23"
-  },
-  {
    "zeit": "2026-06-23T15:13:12Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 17:12 — IONQ ~58.4 USD, Hold; S&P -1.14%, Circuit-Breaker nur Korea, kein MATERIAL."
-  },
-  {
-   "zeit": "2026-06-23T15:13:05Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 17:13"
   },
   {
    "zeit": "2026-06-23T14:58:07Z",
@@ -560,6 +518,48 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "DAYTRADER Signal 16.06.2026 20:45"
+  },
+  {
+   "zeit": "2026-06-16T18:19:54Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 16.06.2026 20:19"
+  },
+  {
+   "zeit": "2026-06-16T13:07:07Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-16"
+  },
+  {
+   "zeit": "2026-06-16T12:47:13Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Website: 'Elite Swing Agent' -> 'Gegentrend' (Mean-Reversion). Nur Anzeigename, Daten-Key swing unveraendert."
+  },
+  {
+   "zeit": "2026-06-16T12:38:39Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Umbau: Swing -> Mean-Reversion (V4). Mandat/Regeln/Cron auf Gegen-Trend; API-Plumbing (alpaca_sync/trade_eval/Journal/Actions) unveraendert. Momentum-Spec V3 archiviert."
+  },
+  {
+   "zeit": "2026-06-16T06:16:17Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 16.06.2026 08:16"
+  },
+  {
+   "zeit": "2026-06-16T01:42:46Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-16"
   }
  ]
 }
