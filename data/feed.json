@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-23T16:58:02Z",
+ "standUtc": "2026-06-23T17:07:27Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T17:07:27Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 23.06.2026 19:07"
+  },
   {
    "zeit": "2026-06-23T16:58:02Z",
    "agent": "speku",
@@ -28,13 +35,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 18:42 — IONQ 58.1 USD Hold"
-  },
-  {
-   "zeit": "2026-06-23T16:36:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 18:36"
   },
   {
    "zeit": "2026-06-23T16:29:36Z",
