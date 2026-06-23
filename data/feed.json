@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-23T17:42:32Z",
+ "standUtc": "2026-06-23T17:48:57Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-23T17:48:57Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 23.06.2026 19:48"
+  },
   {
    "zeit": "2026-06-23T17:42:32Z",
    "agent": "speku",
@@ -28,13 +35,6 @@
    "label": "🛠 Review-System",
    "repo": "review",
    "text": "Dashboard-Update 23.06.2026 19:27"
-  },
-  {
-   "zeit": "2026-06-23T17:17:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 19:17"
   },
   {
    "zeit": "2026-06-23T17:12:55Z",
