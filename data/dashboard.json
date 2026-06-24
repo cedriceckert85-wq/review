@@ -1,27 +1,27 @@
 {
-  "ts_utc": "2026-06-24T14:06:06Z",
+  "ts_utc": "2026-06-24T14:16:07Z",
   "fleet": {
-    "equity": 698968.03,
-    "heute_usd": -32.1,
-    "heute_pct": -0.005,
-    "gesamt_usd": -1031.97,
-    "gesamt_pct": -0.15,
-    "net_exposure_pct": -9.54,
-    "gross_exposure_pct": 11.7,
+    "equity": 698502.63,
+    "heute_usd": -436.4,
+    "heute_pct": -0.062,
+    "gesamt_usd": -1497.37,
+    "gesamt_pct": -0.21,
+    "net_exposure_pct": -9.61,
+    "gross_exposure_pct": 11.64,
     "n_positions_total": 4,
     "n_bots": 7,
     "n_fresh": 2
   },
   "drawdown": {
     "peak_equity": 699112.58,
-    "dd_pct": 0.02,
+    "dd_pct": 0.09,
     "status": "ok",
     "armed": false,
     "n_fresh": 2,
     "complete": false,
     "missing": [
+      "daytrade",
       "haupt",
-      "speku",
       "swing"
     ],
     "triggered": false,
@@ -71,7 +71,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": true,
+      "fresh": false,
       "ok": true
     },
     {
@@ -120,14 +120,14 @@
       "key": "speku",
       "name": "🚀 Growth",
       "asset_class": "equity",
-      "equity": 100031.34,
-      "heute_usd": -41.6,
-      "heute_pct": -0.04,
-      "gesamt_usd": 31.34,
-      "gesamt_pct": 0.03,
+      "equity": 99565.94,
+      "heute_usd": -445.9,
+      "heute_pct": -0.45,
+      "gesamt_usd": -434.06,
+      "gesamt_pct": -0.43,
       "n_positions": 1,
-      "net_exposure_usd": 7540.0,
-      "fresh": false,
+      "net_exposure_usd": 7070.7,
+      "fresh": true,
       "ok": true
     }
   ]
