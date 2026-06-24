@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-24T16:20:07Z",
+ "standUtc": "2026-06-24T16:30:07Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-24T16:30:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 24.06.2026 18:30"
+  },
+  {
+   "zeit": "2026-06-24T16:28:20Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:27 — IONQ 54.76, Stop 51 sicher, SPY +0.61% gruen, kein Material"
+  },
   {
    "zeit": "2026-06-24T16:20:07Z",
    "agent": "system",
@@ -35,13 +49,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 17:57 — IONQ 54.53, Stop 51 sicher, kein Material-Event"
-  },
-  {
-   "zeit": "2026-06-24T15:49:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 17:49"
   },
   {
    "zeit": "2026-06-24T15:43:01Z",
@@ -322,13 +329,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 18:29 — IONQ HOLD 58.33, kein Trade"
-  },
-  {
-   "zeit": "2026-06-23T16:28:32Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 18:27 — IONQ 58.2 USD Hold"
   },
   {
    "zeit": "2026-06-23T04:45:33Z",
