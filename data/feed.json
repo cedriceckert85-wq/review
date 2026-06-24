@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-24T16:50:27Z",
+ "standUtc": "2026-06-24T16:57:56Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-24T16:57:56Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:57 — IONQ 54.01 (-3.75 USD vs Entry, 2.96 über Stop, unter Eskalations-Trigger); S&P +0.26%"
+  },
   {
    "zeit": "2026-06-24T16:50:27Z",
    "agent": "system",
@@ -315,13 +322,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 18:57 — IONQ 57.8 USD Hold"
-  },
-  {
-   "zeit": "2026-06-23T16:43:04Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 18:42 — IONQ 58.1 USD Hold"
   },
   {
    "zeit": "2026-06-23T04:45:33Z",
