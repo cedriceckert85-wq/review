@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-24T15:43:01Z",
+ "standUtc": "2026-06-24T15:49:27Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-24T15:49:27Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 24.06.2026 17:49"
+  },
   {
    "zeit": "2026-06-24T15:43:01Z",
    "agent": "speku",
@@ -373,13 +380,6 @@
    "text": "Dashboard-Update 23.06.2026 20:41"
   },
   {
-   "zeit": "2026-06-23T18:30:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 20:30"
-  },
-  {
    "zeit": "2026-06-23T18:28:29Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -394,13 +394,6 @@
    "text": "Speku: Wache 20:27 — Dashboard aktualisiert (IONQ 57.4, HOLD)."
   },
   {
-   "zeit": "2026-06-23T18:20:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 20:20"
-  },
-  {
    "zeit": "2026-06-23T18:13:32Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -413,13 +406,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 20:12 — Dashboard aktualisiert (IONQ 57.32, HOLD)."
-  },
-  {
-   "zeit": "2026-06-23T18:09:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 20:09"
   },
   {
    "zeit": "2026-06-23T17:58:44Z",
@@ -560,6 +546,20 @@
    "label": "🤍 SOLID",
    "repo": "bots",
    "text": "SOLID-Lauf 2026-06-20 (Sa, KEIN TRADE: Momentum 3/3 voll, News-Drift kein Universums-Ticker)"
+  },
+  {
+   "zeit": "2026-06-19T17:01:57Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 19.06.2026 19:01"
+  },
+  {
+   "zeit": "2026-06-19T16:19:22Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 19.06.2026 18:19"
   }
  ]
 }
