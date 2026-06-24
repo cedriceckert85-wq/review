@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-24T15:28:27Z",
+ "standUtc": "2026-06-24T15:43:01Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-24T15:43:01Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:42 — Kurs 53.96 USD, keine Material-Events."
+  },
+  {
+   "zeit": "2026-06-24T15:39:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 24.06.2026 17:39"
+  },
   {
    "zeit": "2026-06-24T15:28:27Z",
    "agent": "system",
@@ -485,13 +499,6 @@
    "text": "Speku: Wache 17:57 — IONQ ~58.7 USD, Hold; S&P -1.17% (erholt), kein MATERIAL."
   },
   {
-   "zeit": "2026-06-23T15:43:10Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:42 — IONQ ~58.2 USD, Hold; S&P -1.31%, Selloff AI-getrieben aber <2%, kein MATERIAL."
-  },
-  {
    "zeit": "2026-06-23T04:45:33Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -553,13 +560,6 @@
    "label": "🤍 SOLID",
    "repo": "bots",
    "text": "SOLID-Lauf 2026-06-20 (Sa, KEIN TRADE: Momentum 3/3 voll, News-Drift kein Universums-Ticker)"
-  },
-  {
-   "zeit": "2026-06-19T17:01:57Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 19.06.2026 19:01"
   }
  ]
 }
