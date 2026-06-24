@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-24T15:49:27Z",
+ "standUtc": "2026-06-24T15:58:21Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-24T15:58:21Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 17:57 — IONQ 54.53, Stop 51 sicher, kein Material-Event"
+  },
   {
    "zeit": "2026-06-24T15:49:27Z",
    "agent": "system",
@@ -261,46 +268,11 @@
    "text": "Haupt: Abend-Check 2026-06-23 — Dashboard Tagesabschluss, 100k/0 Pos Cash, SPY 733.68, kein Trade (Geduld vor PCE Do)"
   },
   {
-   "zeit": "2026-06-23T20:13:57Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 22:13"
-  },
-  {
    "zeit": "2026-06-23T20:08:52Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Abend-Check 22:07 — IONQ Schluss 57.84 HOLD, Depot 100010 € (+2.2% vs SPY-B&H), 0 Trades"
-  },
-  {
-   "zeit": "2026-06-23T20:03:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 22:03"
-  },
-  {
-   "zeit": "2026-06-23T19:53:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 21:53"
-  },
-  {
-   "zeit": "2026-06-23T19:43:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 21:43"
-  },
-  {
-   "zeit": "2026-06-23T19:33:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 21:33"
   },
   {
    "zeit": "2026-06-23T19:27:12Z",
@@ -317,13 +289,6 @@
    "text": "Speku: Wache 21:21 — News-Log-Scan, IONQ HOLD, kein Material"
   },
   {
-   "zeit": "2026-06-23T19:23:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 21:23"
-  },
-  {
    "zeit": "2026-06-23T19:22:06Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -331,32 +296,11 @@
    "text": "Speku: Wache 21:21 — IONQ 56.73 HOLD (Stop 51, Ziel 69), S&P -1.4%, kein Handel"
   },
   {
-   "zeit": "2026-06-23T19:13:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 21:13"
-  },
-  {
    "zeit": "2026-06-23T19:12:24Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 21:12 — IONQ 56.83 HOLD (Stop 51, Ziel 69), S&P -0.9%, kein Handel"
-  },
-  {
-   "zeit": "2026-06-23T19:03:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 21:03"
-  },
-  {
-   "zeit": "2026-06-23T18:52:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 20:52"
   },
   {
    "zeit": "2026-06-23T18:43:25Z",
@@ -371,13 +315,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 20:42 — Dashboard aktualisiert (IONQ 56.94, HOLD)."
-  },
-  {
-   "zeit": "2026-06-23T18:41:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 20:41"
   },
   {
    "zeit": "2026-06-23T18:28:29Z",
@@ -478,13 +415,6 @@
    "text": "Speku: Wache 18:12 — IONQ 58.78 USD Hold"
   },
   {
-   "zeit": "2026-06-23T15:58:11Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 17:57 — IONQ ~58.7 USD, Hold; S&P -1.17% (erholt), kein MATERIAL."
-  },
-  {
    "zeit": "2026-06-23T04:45:33Z",
    "agent": "bots",
    "label": "🤍🔥 Bot-Duo",
@@ -560,6 +490,76 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "DAYTRADER Signal 19.06.2026 18:19"
+  },
+  {
+   "zeit": "2026-06-19T05:57:20Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 19.06.2026 07:57"
+  },
+  {
+   "zeit": "2026-06-19T01:39:27Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-19 (KEIN TRADE: Juneteenth + Journal 5/5 am Cap-Maximum)"
+  },
+  {
+   "zeit": "2026-06-19T01:24:33Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-19 (Juneteenth, KEIN TRADE: Momentum 3/3 voll, News-Drift ausserhalb Universum)"
+  },
+  {
+   "zeit": "2026-06-18T21:05:03Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T17:45:54Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 19:45"
+  },
+  {
+   "zeit": "2026-06-18T16:46:24Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 18:46"
+  },
+  {
+   "zeit": "2026-06-18T05:23:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 18.06.2026 07:23"
+  },
+  {
+   "zeit": "2026-06-18T01:39:52Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T01:28:07Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-18 (1 Momentum: LRCX S-004; MU verfallen + wg. Earnings 24.06. uebersprungen)"
+  },
+  {
+   "zeit": "2026-06-17T22:14:28Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 18.06.2026"
   }
  ]
 }
