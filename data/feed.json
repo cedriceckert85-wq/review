@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-24T16:13:34Z",
+ "standUtc": "2026-06-24T16:20:07Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-24T16:20:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 24.06.2026 18:20"
+  },
   {
    "zeit": "2026-06-24T16:13:34Z",
    "agent": "speku",
@@ -44,32 +51,11 @@
    "text": "Speku: Wache 17:42 — Kurs 53.96 USD, keine Material-Events."
   },
   {
-   "zeit": "2026-06-24T15:39:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 17:39"
-  },
-  {
-   "zeit": "2026-06-24T15:28:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 17:28"
-  },
-  {
    "zeit": "2026-06-24T15:28:00Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 17:27 — Kurs 53.88 USD, keine Material-Events."
-  },
-  {
-   "zeit": "2026-06-24T15:18:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 17:18"
   },
   {
    "zeit": "2026-06-24T15:12:57Z",
@@ -79,32 +65,11 @@
    "text": "Speku: Wache 17:12 — Kurs 54.07 USD, keine Material-Events."
   },
   {
-   "zeit": "2026-06-24T15:08:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 17:08"
-  },
-  {
    "zeit": "2026-06-24T14:58:02Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 16:57 — Kurs 53.79 USD, keine Material-Events."
-  },
-  {
-   "zeit": "2026-06-24T14:57:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 16:57"
-  },
-  {
-   "zeit": "2026-06-24T14:47:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 16:47"
   },
   {
    "zeit": "2026-06-24T14:43:09Z",
@@ -560,6 +525,41 @@
    "label": "🤍 SOLID",
    "repo": "bots",
    "text": "SOLID-Lauf 2026-06-17 (KEIN TRADE: Momentum 3/3 voll, News-Drift nur QCOM-Geruecht)"
+  },
+  {
+   "zeit": "2026-06-16T22:22:18Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 17.06.2026"
+  },
+  {
+   "zeit": "2026-06-16T21:05:39Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-16"
+  },
+  {
+   "zeit": "2026-06-16T18:45:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 16.06.2026 20:45"
+  },
+  {
+   "zeit": "2026-06-16T18:19:54Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 16.06.2026 20:19"
+  },
+  {
+   "zeit": "2026-06-16T13:07:07Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-16"
   }
  ]
 }
