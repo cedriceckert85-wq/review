@@ -1,28 +1,25 @@
 {
-  "ts_utc": "2026-06-24T20:09:26Z",
+  "ts_utc": "2026-06-24T20:19:26Z",
   "fleet": {
-    "equity": 698496.13,
-    "heute_usd": -442.9,
-    "heute_pct": -0.063,
-    "gesamt_usd": -1503.87,
-    "gesamt_pct": -0.21,
-    "net_exposure_pct": -9.62,
-    "gross_exposure_pct": 11.64,
+    "equity": 699441.41,
+    "heute_usd": 519.02,
+    "heute_pct": 0.074,
+    "gesamt_usd": -558.59,
+    "gesamt_pct": -0.08,
+    "net_exposure_pct": -9.47,
+    "gross_exposure_pct": 11.49,
     "n_positions_total": 4,
     "n_bots": 7,
-    "n_fresh": 3
+    "n_fresh": 4
   },
   "drawdown": {
-    "peak_equity": 699112.58,
-    "dd_pct": 0.09,
+    "peak_equity": 699441.41,
+    "dd_pct": 0.0,
     "status": "ok",
     "armed": false,
-    "n_fresh": 3,
-    "complete": false,
-    "missing": [
-      "haupt",
-      "swing"
-    ],
+    "n_fresh": 4,
+    "complete": true,
+    "missing": [],
     "triggered": false,
     "action": "none",
     "warn_at_pct": 5.0,
@@ -35,14 +32,14 @@
       "key": "diversifikator",
       "name": "🆕 Diversifikator",
       "asset_class": "equity",
-      "equity": 100009.5,
-      "heute_usd": 9.5,
-      "heute_pct": 0.01,
-      "gesamt_usd": 9.5,
-      "gesamt_pct": 0.01,
+      "equity": 100954.78,
+      "heute_usd": 971.42,
+      "heute_pct": 0.97,
+      "gesamt_usd": 954.78,
+      "gesamt_pct": 0.95,
       "n_positions": 3,
-      "net_exposure_usd": -74231.33,
-      "fresh": false,
+      "net_exposure_usd": -73285.82,
+      "fresh": true,
       "ok": true
     },
     {
@@ -70,7 +67,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": true,
+      "fresh": false,
       "ok": true
     },
     {
@@ -84,7 +81,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": false,
+      "fresh": true,
       "ok": true
     },
     {
