@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-24T16:00:07Z",
+ "standUtc": "2026-06-24T16:10:07Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-24T16:10:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 24.06.2026 18:10"
+  },
   {
    "zeit": "2026-06-24T16:00:07Z",
    "agent": "system",
@@ -100,13 +107,6 @@
    "text": "Speku: Wache 16:42 — Kurs 53.79 USD, keine Material-Events."
   },
   {
-   "zeit": "2026-06-24T14:37:06Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 16:37"
-  },
-  {
    "zeit": "2026-06-24T14:27:56Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -114,25 +114,11 @@
    "text": "Speku: Wache 16:27 — Kurs 53.77 USD, keine Material-Events."
   },
   {
-   "zeit": "2026-06-24T14:26:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 16:26"
-  },
-  {
    "zeit": "2026-06-24T14:20:13Z",
    "agent": "haupt",
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Hauptlauf 2026-06-24 — Dashboard, 100k/0 Pos Cash, kein Trade (Cash vor Micron/PCE)"
-  },
-  {
-   "zeit": "2026-06-24T14:16:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 16:16"
   },
   {
    "zeit": "2026-06-24T14:13:58Z",
@@ -156,39 +142,11 @@
    "text": "Speku: Stop-Wache 16:08 (IONQ 54.88, Stop 51 hält)"
   },
   {
-   "zeit": "2026-06-24T14:06:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 16:06"
-  },
-  {
-   "zeit": "2026-06-24T13:56:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 15:56"
-  },
-  {
-   "zeit": "2026-06-24T13:45:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 15:45"
-  },
-  {
    "zeit": "2026-06-24T13:37:19Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Premarket 15:36 (Open IONQ 55.28)"
-  },
-  {
-   "zeit": "2026-06-24T13:34:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 15:34"
   },
   {
    "zeit": "2026-06-24T12:17:17Z",
@@ -252,13 +210,6 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Swing-Lauf 2026-06-23"
-  },
-  {
-   "zeit": "2026-06-23T20:34:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 23.06.2026 22:34"
   },
   {
    "zeit": "2026-06-23T20:16:33Z",
@@ -560,6 +511,55 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Auswertung 18.06.2026"
+  },
+  {
+   "zeit": "2026-06-17T21:05:16Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-17"
+  },
+  {
+   "zeit": "2026-06-17T19:46:48Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "RISK -> Long/Short: Engine D reaktiviert als Regime-Index-Hedge (Short SPY/QQQ bei spyZone risk_off). Nutzer-Mandat 17.06. Plumbing/Journal-Schema unveraendert."
+  },
+  {
+   "zeit": "2026-06-17T17:35:12Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 17.06.2026 19:35"
+  },
+  {
+   "zeit": "2026-06-17T16:47:33Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 17.06.2026 18:47"
+  },
+  {
+   "zeit": "2026-06-17T05:30:28Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 17.06.2026 07:30"
+  },
+  {
+   "zeit": "2026-06-17T01:39:58Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-17"
+  },
+  {
+   "zeit": "2026-06-17T01:24:47Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-17 (KEIN TRADE: Momentum 3/3 voll, News-Drift nur QCOM-Geruecht)"
   }
  ]
 }
