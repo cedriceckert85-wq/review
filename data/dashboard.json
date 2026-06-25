@@ -1,20 +1,20 @@
 {
-  "ts_utc": "2026-06-25T20:10:06Z",
+  "ts_utc": "2026-06-25T20:20:21Z",
   "fleet": {
-    "equity": 899001.03,
-    "heute_usd": 631.14,
-    "heute_pct": 0.07,
-    "gesamt_usd": -998.97,
-    "gesamt_pct": -0.11,
-    "net_exposure_pct": -8.15,
-    "gross_exposure_pct": 8.15,
+    "equity": 898306.37,
+    "heute_usd": -1073.36,
+    "heute_pct": -0.119,
+    "gesamt_usd": -1693.63,
+    "gesamt_pct": -0.19,
+    "net_exposure_pct": -5.43,
+    "gross_exposure_pct": 5.43,
     "n_positions_total": 3,
     "n_bots": 9,
     "n_fresh": 7
   },
   "drawdown": {
     "peak_equity": 899001.03,
-    "dd_pct": 0.0,
+    "dd_pct": 0.08,
     "status": "ok",
     "armed": false,
     "n_fresh": 7,
@@ -28,20 +28,6 @@
   "concentration_alerts": [],
   "groupthink_alerts": [],
   "cards": [
-    {
-      "key": "diversifikator",
-      "name": "🆕 Diversifikator",
-      "asset_class": "equity",
-      "equity": 100954.78,
-      "heute_usd": 971.42,
-      "heute_pct": 0.97,
-      "gesamt_usd": 954.78,
-      "gesamt_pct": 0.95,
-      "n_positions": 3,
-      "net_exposure_usd": -73285.82,
-      "fresh": false,
-      "ok": true
-    },
     {
       "key": "crypto",
       "name": "🪙 Crypto",
@@ -67,7 +53,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": true,
+      "fresh": false,
       "ok": true
     },
     {
@@ -151,6 +137,20 @@
       "gesamt_pct": -0.88,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
+      "fresh": true,
+      "ok": true
+    },
+    {
+      "key": "diversifikator",
+      "name": "🆕 Diversifikator",
+      "asset_class": "equity",
+      "equity": 100260.12,
+      "heute_usd": -733.08,
+      "heute_pct": -0.73,
+      "gesamt_usd": 260.12,
+      "gesamt_pct": 0.26,
+      "n_positions": 3,
+      "net_exposure_usd": -48753.64,
       "fresh": true,
       "ok": true
     }
