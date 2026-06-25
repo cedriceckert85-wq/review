@@ -79,32 +79,11 @@
    "text": "Haupt: Speku-Slot 2026-06-25 PASS — Dashboard, 100k/0 Pos Cash"
   },
   {
-   "zeit": "2026-06-25T14:40:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 25.06.2026 16:40"
-  },
-  {
-   "zeit": "2026-06-25T14:29:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 25.06.2026 16:29"
-  },
-  {
    "zeit": "2026-06-25T14:20:02Z",
    "agent": "haupt",
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Hauptlauf 2026-06-25 — Dashboard, 100k/0 Pos Cash, kein Core-Trade (muted reaction); Chip-Idee -> Speku 16:34"
-  },
-  {
-   "zeit": "2026-06-25T14:19:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 25.06.2026 16:19"
   },
   {
    "zeit": "2026-06-25T14:14:19Z",
@@ -121,39 +100,11 @@
    "text": "Dashboard speku/spec.html — Eroeffnungs-Check 25.06. IONQ ~52, HOLD"
   },
   {
-   "zeit": "2026-06-25T14:09:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 25.06.2026 16:09"
-  },
-  {
-   "zeit": "2026-06-25T13:58:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 25.06.2026 15:58"
-  },
-  {
-   "zeit": "2026-06-25T13:47:37Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 25.06.2026 15:47"
-  },
-  {
    "zeit": "2026-06-25T13:37:52Z",
    "agent": "system",
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Dashboard speku/spec.html — Vorboers-Scan 25.06. IONQ ~54.8"
-  },
-  {
-   "zeit": "2026-06-25T13:37:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 25.06.2026 15:37"
   },
   {
    "zeit": "2026-06-25T12:35:20Z",
@@ -210,13 +161,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Auswertung 24.06.2026"
-  },
-  {
-   "zeit": "2026-06-24T21:12:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 24.06.2026 23:12"
   },
   {
    "zeit": "2026-06-24T21:07:37Z",
@@ -560,6 +504,62 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "DAYTRADER Signal 18.06.2026 18:46"
+  },
+  {
+   "zeit": "2026-06-18T05:23:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 18.06.2026 07:23"
+  },
+  {
+   "zeit": "2026-06-18T01:39:52Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T01:28:07Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-18 (1 Momentum: LRCX S-004; MU verfallen + wg. Earnings 24.06. uebersprungen)"
+  },
+  {
+   "zeit": "2026-06-17T22:14:28Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 18.06.2026"
+  },
+  {
+   "zeit": "2026-06-17T21:05:16Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-17"
+  },
+  {
+   "zeit": "2026-06-17T19:46:48Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "RISK -> Long/Short: Engine D reaktiviert als Regime-Index-Hedge (Short SPY/QQQ bei spyZone risk_off). Nutzer-Mandat 17.06. Plumbing/Journal-Schema unveraendert."
+  },
+  {
+   "zeit": "2026-06-17T17:35:12Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 17.06.2026 19:35"
+  },
+  {
+   "zeit": "2026-06-17T16:47:33Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 17.06.2026 18:47"
   }
  ]
 }
