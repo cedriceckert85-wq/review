@@ -1,29 +1,25 @@
 {
-  "ts_utc": "2026-06-25T18:37:06Z",
+  "ts_utc": "2026-06-25T18:47:48Z",
   "fleet": {
-    "equity": 699001.03,
+    "equity": 899001.03,
     "heute_usd": 631.14,
-    "heute_pct": 0.09,
+    "heute_pct": 0.07,
     "gesamt_usd": -998.97,
-    "gesamt_pct": -0.14,
-    "net_exposure_pct": -10.48,
-    "gross_exposure_pct": 10.48,
+    "gesamt_pct": -0.11,
+    "net_exposure_pct": -8.15,
+    "gross_exposure_pct": 8.15,
     "n_positions_total": 3,
-    "n_bots": 7,
-    "n_fresh": 1
+    "n_bots": 9,
+    "n_fresh": 3
   },
   "drawdown": {
-    "peak_equity": 699441.41,
-    "dd_pct": 0.06,
+    "peak_equity": 899001.03,
+    "dd_pct": 0.0,
     "status": "ok",
     "armed": false,
-    "n_fresh": 1,
-    "complete": false,
-    "missing": [
-      "diversifikator",
-      "haupt",
-      "speku"
-    ],
+    "n_fresh": 3,
+    "complete": true,
+    "missing": [],
     "triggered": false,
     "action": "none",
     "warn_at_pct": 5.0,
@@ -100,6 +96,34 @@
       "n_positions": 0,
       "net_exposure_usd": 0.0,
       "fresh": false,
+      "ok": true
+    },
+    {
+      "key": "risk",
+      "name": "🔥 Short / Hedge",
+      "asset_class": "equity",
+      "equity": 100000.0,
+      "heute_usd": 0.0,
+      "heute_pct": 0.0,
+      "gesamt_usd": 0.0,
+      "gesamt_pct": 0.0,
+      "n_positions": 0,
+      "net_exposure_usd": 0.0,
+      "fresh": true,
+      "ok": true
+    },
+    {
+      "key": "solid",
+      "name": "🤍 Trend",
+      "asset_class": "equity",
+      "equity": 100000.0,
+      "heute_usd": 0.0,
+      "heute_pct": 0.0,
+      "gesamt_usd": 0.0,
+      "gesamt_pct": 0.0,
+      "n_positions": 0,
+      "net_exposure_usd": 0.0,
+      "fresh": true,
       "ok": true
     },
     {
