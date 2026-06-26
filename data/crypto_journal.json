@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot). KI-gesteuert (Opus) seit 2026-06-22."
   },
-  "positionen": {},
+  "positionen": {
+    "SOL/USD": {
+      "entry": 69.83,
+      "notional": 19785.44,
+      "stop": 64.24,
+      "entryDatum": "2026-06-26",
+      "orderId": "bd0ff70f-20ee-4c9c-a285-72b1823879d4",
+      "grund": "Leader-Long: SOL bestaetigter Bullish-Cross (fast 67.97>slow 67.77), Momentum gedreht +0.73, neues Lokalhoch 69.83 (3% ueber slow-MA), Breite bessert sich (BTC zurueck >60k, AVAX-Mom -6.2->-4.3). Einstieg ~69.8. Stop: Schluss unter slow-MA ~67.7 (Cross invalidiert). Ziel: +3-5% Richtung 72-73."
+    }
+  },
   "trades": [
     {
       "sym": "SOL/USD",
@@ -45,7 +54,7 @@
     "summePnlUsd": -1072.81
   },
   "heute": {
-    "datum": "2026-06-22",
-    "trades": 3
+    "datum": "2026-06-26",
+    "trades": 1
   }
 }
