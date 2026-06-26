@@ -261,81 +261,11 @@
    "text": "Dashboard-Update 26.06.2026 12:42"
   },
   {
-   "zeit": "2026-06-26T10:31:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 12:31"
-  },
-  {
-   "zeit": "2026-06-26T10:21:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 12:21"
-  },
-  {
-   "zeit": "2026-06-26T10:10:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 12:10"
-  },
-  {
-   "zeit": "2026-06-26T10:00:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 12:00"
-  },
-  {
-   "zeit": "2026-06-26T09:49:57Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 11:49"
-  },
-  {
-   "zeit": "2026-06-26T09:39:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 11:39"
-  },
-  {
-   "zeit": "2026-06-26T09:28:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 11:28"
-  },
-  {
    "zeit": "2026-06-26T09:20:47Z",
    "agent": "system",
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Site: Dashboard speku.html + spec.html update 2026-06-26"
-  },
-  {
-   "zeit": "2026-06-26T09:17:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 11:17"
-  },
-  {
-   "zeit": "2026-06-26T09:07:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 11:07"
-  },
-  {
-   "zeit": "2026-06-26T08:57:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 10:57"
   },
   {
    "zeit": "2026-06-26T08:22:15Z",
@@ -560,6 +490,76 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 19:42 — IONQ 53.10 hold (2.10 über Stop 51); Tagestief 52.70; S&P -0.16%"
+  },
+  {
+   "zeit": "2026-06-24T17:28:10Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 19:27 — IONQ 53.00 hold (2.00 über Stop 51, AUF Eskal-Trigger 53); S&P -0.09%"
+  },
+  {
+   "zeit": "2026-06-24T17:13:27Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 19:13 — IONQ 53.26 hold (2.26 über Stop 51); S&P +0.20%; keine Material-News"
+  },
+  {
+   "zeit": "2026-06-24T16:57:56Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:57 — IONQ 54.01 (-3.75 USD vs Entry, 2.96 über Stop, unter Eskalations-Trigger); S&P +0.26%"
+  },
+  {
+   "zeit": "2026-06-24T16:43:15Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:42 — IONQ 54.41, Stop 51 sicher, SPY +0.34% gruen, kein Material"
+  },
+  {
+   "zeit": "2026-06-24T16:28:20Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 18:27 — IONQ 54.76, Stop 51 sicher, SPY +0.61% gruen, kein Material"
+  },
+  {
+   "zeit": "2026-06-24T04:51:04Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 24.06.2026 06:51"
+  },
+  {
+   "zeit": "2026-06-23T21:51:43Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 23.06.2026"
+  },
+  {
+   "zeit": "2026-06-23T21:11:33Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-23"
+  },
+  {
+   "zeit": "2026-06-23T04:45:33Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 23.06.2026 06:45"
+  },
+  {
+   "zeit": "2026-06-22T22:16:00Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 23.06.2026"
   }
  ]
 }
