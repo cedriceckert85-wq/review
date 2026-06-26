@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-26T16:14:07Z",
+ "standUtc": "2026-06-26T16:25:07Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-26T16:25:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 26.06.2026 18:25"
+  },
   {
    "zeit": "2026-06-26T16:14:07Z",
    "agent": "system",
@@ -553,13 +560,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 17.06.2026 07:30"
-  },
-  {
-   "zeit": "2026-06-17T01:39:58Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-17"
   }
  ]
 }
