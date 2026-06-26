@@ -1,10 +1,10 @@
 {
-  "ts_utc": "2026-06-26T08:16:06Z",
+  "ts_utc": "2026-06-26T08:27:06Z",
   "fleet": {
-    "equity": 898455.45,
-    "heute_usd": -924.28,
-    "heute_pct": -0.103,
-    "gesamt_usd": -1544.55,
+    "equity": 898455.41,
+    "heute_usd": -584.0,
+    "heute_pct": -0.065,
+    "gesamt_usd": -1544.59,
     "gesamt_pct": -0.17,
     "net_exposure_pct": -3.25,
     "gross_exposure_pct": 7.6,
@@ -113,6 +113,20 @@
       "ok": true
     },
     {
+      "key": "speku",
+      "name": "🚀 Growth",
+      "asset_class": "equity",
+      "equity": 99119.02,
+      "heute_usd": 0.0,
+      "heute_pct": 0.0,
+      "gesamt_usd": -880.98,
+      "gesamt_pct": -0.88,
+      "n_positions": 0,
+      "net_exposure_usd": 0.0,
+      "fresh": true,
+      "ok": true
+    },
+    {
       "key": "swing",
       "name": "◆ Gegentrend",
       "asset_class": "equity",
@@ -121,20 +135,6 @@
       "heute_pct": 0.0,
       "gesamt_usd": 0.0,
       "gesamt_pct": 0.0,
-      "n_positions": 0,
-      "net_exposure_usd": 0.0,
-      "fresh": true,
-      "ok": true
-    },
-    {
-      "key": "speku",
-      "name": "🚀 Growth",
-      "asset_class": "equity",
-      "equity": 99119.06,
-      "heute_usd": -340.28,
-      "heute_pct": -0.34,
-      "gesamt_usd": -880.94,
-      "gesamt_pct": -0.88,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
       "fresh": true,
