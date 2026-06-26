@@ -23,13 +23,6 @@
    "text": "Dashboard-Update 26.06.2026 18:25"
   },
   {
-   "zeit": "2026-06-26T16:14:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 18:14"
-  },
-  {
    "zeit": "2026-06-26T15:12:23Z",
    "agent": "system",
    "label": "🛠 System",
@@ -560,6 +553,13 @@
    "label": "🔥 RISK",
    "repo": "bots",
    "text": "RISK-Lauf 2026-06-17"
+  },
+  {
+   "zeit": "2026-06-17T01:24:47Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-17 (KEIN TRADE: Momentum 3/3 voll, News-Drift nur QCOM-Geruecht)"
   }
  ]
 }
