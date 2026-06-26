@@ -30,13 +30,6 @@
    "text": "Crypto: Journal 2026-06-26 18:02 - BUY BTC"
   },
   {
-   "zeit": "2026-06-26T15:53:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 17:53"
-  },
-  {
    "zeit": "2026-06-26T15:12:23Z",
    "agent": "system",
    "label": "🛠 System",
@@ -560,6 +553,13 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 17.06.2026 07:30"
+  },
+  {
+   "zeit": "2026-06-17T01:39:58Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-17"
   }
  ]
 }
