@@ -5,7 +5,16 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot). KI-gesteuert (Opus) seit 2026-06-22."
   },
-  "positionen": {},
+  "positionen": {
+    "BTC/USD": {
+      "entry": 60276.23,
+      "notional": 19685.23,
+      "stop": 55454.13,
+      "entryDatum": "2026-06-26",
+      "orderId": "3ba818fb-8f46-42f5-ab38-d3ed0c9bb1bf",
+      "grund": "Regime-Flip-Long: breiter bullisher Ausbruch bestaetigt - ALLE 8 Coins ueber fast+slow-MA mit positivem Momentum, BTC UND ETH erobern slow-MA zurueck (BTC 60449>60139 nach 4-5 Ablehnungen heute, Mom +2.09). Vehikel BTC statt extended SOL (SOL +7.8% ueber slow-MA): frischer slow-MA-Ausbruch = enger Stop. Einstieg ~60.45k. Stop: Schluss zurueck unter slow-MA ~60.1k / fast-MA 59.82k. Ziel: +2-3% Richtung 61.5-62k."
+    }
+  },
   "trades": [
     {
       "sym": "SOL/USD",
@@ -56,6 +65,6 @@
   },
   "heute": {
     "datum": "2026-06-26",
-    "trades": 1
+    "trades": 2
   }
 }
