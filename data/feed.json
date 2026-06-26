@@ -9,13 +9,6 @@
    "text": "Dashboard-Update 26.06.2026 18:46"
   },
   {
-   "zeit": "2026-06-26T16:36:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 18:36"
-  },
-  {
    "zeit": "2026-06-26T15:12:23Z",
    "agent": "system",
    "label": "🛠 System",
@@ -560,6 +553,13 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Auswertung 17.06.2026"
+  },
+  {
+   "zeit": "2026-06-16T21:05:39Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-16"
   }
  ]
 }
