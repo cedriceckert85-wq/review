@@ -5,16 +5,7 @@
     "konto_nr": "PA3X2F870VJ0",
     "hinweis": "Crypto-Daytrade-Bot - Spot, regime-gesteuertes Momentum, kostenbewusst, Paper. Erstellt 2026-06-14. KEINE Hebel/Shorts (Alpaca Spot). KI-gesteuert (Opus) seit 2026-06-22."
   },
-  "positionen": {
-    "SOL/USD": {
-      "entry": 69.83,
-      "notional": 19785.44,
-      "stop": 64.24,
-      "entryDatum": "2026-06-26",
-      "orderId": "bd0ff70f-20ee-4c9c-a285-72b1823879d4",
-      "grund": "Leader-Long: SOL bestaetigter Bullish-Cross (fast 67.97>slow 67.77), Momentum gedreht +0.73, neues Lokalhoch 69.83 (3% ueber slow-MA), Breite bessert sich (BTC zurueck >60k, AVAX-Mom -6.2->-4.3). Einstieg ~69.8. Stop: Schluss unter slow-MA ~67.7 (Cross invalidiert). Ziel: +3-5% Richtung 72-73."
-    }
-  },
+  "positionen": {},
   "trades": [
     {
       "sym": "SOL/USD",
@@ -45,13 +36,23 @@
       "entryDatum": "2026-06-22",
       "exitDatum": "2026-06-22",
       "grund": "Stop ausgeloest wie vorab definiert: ETH bricht klar unter fast-MA (1736.95<1751.70) und testet slow-MA, Momentum +2.65->+0.65 eingebrochen, Breite kippt (SOL -1.78, Mehrzahl rot), ETH nicht mehr Leader. These (ETH fuehrt Risk-on) gebrochen -> diszipliniert Verlust nehmen, BTC zwar noch +0.93 aber mein ETH-Stop hat Vorrang."
+    },
+    {
+      "sym": "SOL/USD",
+      "entry": 69.83,
+      "exit": 68.73,
+      "qty": "276.173455384",
+      "pnlUsd": -303.79,
+      "entryDatum": "2026-06-26",
+      "exitDatum": "2026-06-26",
+      "grund": "Stop diszipliniert ausgeloest: Beide These-Saeulen gebrochen - Breite-Erholung gescheitert (BTC -3.27% frisch unter fast-MA <59.2k, Tape neues Abwaertsbein), SOL auf fast-MA (68.73~68.71) zurueckgefallen und Momentum 3 Balken fallend (2.39->1.18->0.97). Leader-These invalidiert -> kleinen Verlust nehmen statt auf slow-MA-Stop hoffen. Einstieg 70.03, Ausstieg ~68.73."
     }
   ],
   "statistik": {
-    "trades": 3,
+    "trades": 4,
     "gewonnen": 0,
-    "verloren": 3,
-    "summePnlUsd": -1072.81
+    "verloren": 4,
+    "summePnlUsd": -1376.6
   },
   "heute": {
     "datum": "2026-06-26",
