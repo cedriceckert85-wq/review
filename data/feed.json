@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-26T15:53:07Z",
+ "standUtc": "2026-06-26T16:04:07Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-26T16:04:07Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 26.06.2026 18:04"
+  },
+  {
+   "zeit": "2026-06-26T16:02:28Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Crypto: Journal 2026-06-26 18:02 - BUY BTC"
+  },
   {
    "zeit": "2026-06-26T15:53:07Z",
    "agent": "system",
@@ -72,13 +86,6 @@
    "text": "Dashboard-Update 26.06.2026 16:40"
   },
   {
-   "zeit": "2026-06-26T14:30:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 16:30"
-  },
-  {
    "zeit": "2026-06-26T14:22:20Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -91,13 +98,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Hauptlauf 2026-06-26 — FLAT, no-trade"
-  },
-  {
-   "zeit": "2026-06-26T14:20:04Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 16:20"
   },
   {
    "zeit": "2026-06-26T14:08:51Z",
