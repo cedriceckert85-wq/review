@@ -100,13 +100,6 @@
    "text": "Dashboard-Update 26.06.2026 16:20"
   },
   {
-   "zeit": "2026-06-26T14:09:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 16:09"
-  },
-  {
    "zeit": "2026-06-26T14:08:51Z",
    "agent": "speku",
    "label": "🚀 Speku",
@@ -114,74 +107,11 @@
    "text": "Speku: Eroeffnungs-Check 2026-06-26"
   },
   {
-   "zeit": "2026-06-26T13:59:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 15:59"
-  },
-  {
-   "zeit": "2026-06-26T13:48:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 15:48"
-  },
-  {
-   "zeit": "2026-06-26T13:38:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 15:38"
-  },
-  {
    "zeit": "2026-06-26T13:37:05Z",
    "agent": "speku",
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Premarket 2026-06-26"
-  },
-  {
-   "zeit": "2026-06-26T13:28:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 15:28"
-  },
-  {
-   "zeit": "2026-06-26T13:18:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 15:18"
-  },
-  {
-   "zeit": "2026-06-26T13:07:47Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 15:07"
-  },
-  {
-   "zeit": "2026-06-26T12:57:27Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 14:57"
-  },
-  {
-   "zeit": "2026-06-26T12:47:12Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 14:47"
-  },
-  {
-   "zeit": "2026-06-26T12:37:07Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 26.06.2026 14:37"
   },
   {
    "zeit": "2026-06-26T12:20:49Z",
@@ -560,6 +490,76 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 19.06.2026 07:57"
+  },
+  {
+   "zeit": "2026-06-19T01:39:27Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-19 (KEIN TRADE: Juneteenth + Journal 5/5 am Cap-Maximum)"
+  },
+  {
+   "zeit": "2026-06-19T01:24:33Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-19 (Juneteenth, KEIN TRADE: Momentum 3/3 voll, News-Drift ausserhalb Universum)"
+  },
+  {
+   "zeit": "2026-06-18T21:05:03Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T17:45:54Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 19:45"
+  },
+  {
+   "zeit": "2026-06-18T16:46:24Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 18:46"
+  },
+  {
+   "zeit": "2026-06-18T05:23:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 18.06.2026 07:23"
+  },
+  {
+   "zeit": "2026-06-18T01:39:52Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T01:28:07Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-18 (1 Momentum: LRCX S-004; MU verfallen + wg. Earnings 24.06. uebersprungen)"
+  },
+  {
+   "zeit": "2026-06-17T22:14:28Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 18.06.2026"
+  },
+  {
+   "zeit": "2026-06-17T21:05:16Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-17"
   }
  ]
 }
