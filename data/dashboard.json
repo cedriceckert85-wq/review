@@ -1,14 +1,14 @@
 {
-  "ts_utc": "2026-06-26T06:52:46Z",
+  "ts_utc": "2026-06-26T07:02:46Z",
   "fleet": {
-    "equity": 898306.37,
-    "heute_usd": -1073.36,
-    "heute_pct": -0.119,
-    "gesamt_usd": -1693.63,
+    "equity": 898256.6,
+    "heute_usd": -1123.13,
+    "heute_pct": -0.125,
+    "gesamt_usd": -1743.4,
     "gesamt_pct": -0.19,
-    "net_exposure_pct": -5.43,
-    "gross_exposure_pct": 5.43,
-    "n_positions_total": 3,
+    "net_exposure_pct": -3.28,
+    "gross_exposure_pct": 7.58,
+    "n_positions_total": 4,
     "n_bots": 9,
     "n_fresh": 6
   },
@@ -28,20 +28,6 @@
   "concentration_alerts": [],
   "groupthink_alerts": [],
   "cards": [
-    {
-      "key": "crypto",
-      "name": "🪙 Crypto",
-      "asset_class": "crypto",
-      "equity": 98927.19,
-      "heute_usd": 0.0,
-      "heute_pct": 0.0,
-      "gesamt_usd": -1072.81,
-      "gesamt_pct": -1.07,
-      "n_positions": 0,
-      "net_exposure_usd": 0.0,
-      "fresh": true,
-      "ok": true
-    },
     {
       "key": "daytrade",
       "name": "💤 Daytrade",
@@ -123,6 +109,20 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
+      "fresh": true,
+      "ok": true
+    },
+    {
+      "key": "crypto",
+      "name": "🪙 Crypto",
+      "asset_class": "crypto",
+      "equity": 98877.42,
+      "heute_usd": -49.77,
+      "heute_pct": -0.05,
+      "gesamt_usd": -1122.58,
+      "gesamt_pct": -1.12,
+      "n_positions": 1,
+      "net_exposure_usd": 19332.14,
       "fresh": true,
       "ok": true
     },
