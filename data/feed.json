@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-06-26T15:12:23Z",
+ "standUtc": "2026-06-27T04:40:00Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-27T04:40:00Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 27.06.2026 06:40"
+  },
   {
    "zeit": "2026-06-26T15:12:23Z",
    "agent": "system",
@@ -541,13 +548,6 @@
    "text": "SOLID-Lauf 2026-06-17 (KEIN TRADE: Momentum 3/3 voll, News-Drift nur QCOM-Geruecht)"
   },
   {
-   "zeit": "2026-06-16T22:22:18Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 17.06.2026"
-  },
-  {
    "zeit": "2026-06-16T21:05:39Z",
    "agent": "swing",
    "label": "◆ Swing",
@@ -555,11 +555,11 @@
    "text": "Swing-Lauf 2026-06-16"
   },
   {
-   "zeit": "2026-06-16T18:45:29Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 16.06.2026 20:45"
+   "zeit": "2026-06-16T13:07:07Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-16"
   }
  ]
 }
