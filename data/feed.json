@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-06-27T04:40:00Z",
+ "standUtc": "2026-06-30T04:50:01Z",
  "eintraege": [
+  {
+   "zeit": "2026-06-30T04:50:01Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 30.06.2026 06:50"
+  },
+  {
+   "zeit": "2026-06-29T21:43:47Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 29.06.2026"
+  },
   {
    "zeit": "2026-06-27T04:40:00Z",
    "agent": "bots",
@@ -532,20 +546,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 17.06.2026 07:30"
-  },
-  {
-   "zeit": "2026-06-17T01:39:58Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-17"
-  },
-  {
-   "zeit": "2026-06-17T01:24:47Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-17 (KEIN TRADE: Momentum 3/3 voll, News-Drift nur QCOM-Geruecht)"
   },
   {
    "zeit": "2026-06-16T21:05:39Z",
