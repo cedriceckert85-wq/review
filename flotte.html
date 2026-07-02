@@ -46,6 +46,8 @@
   .err{background:rgba(251,113,133,.1);border:1px solid rgba(251,113,133,.3);border-radius:12px;padding:14px;color:var(--neg)}
   .foot{color:var(--dim);font-size:11px;text-align:center;margin-top:18px}
   .empty{color:var(--dim);text-align:center;padding:30px 0}
+  .fonds.pi{background:linear-gradient(180deg,#101a2a,#0e1420)}
+  .fonds.pi .eq{font-size:26px}
 </style>
 </head>
 <body>
@@ -64,6 +66,31 @@ const eur = n => (n>=0?"+":"−") + Math.abs(n).toLocaleString("de-DE",{maximumF
 const pct = n => (n>=0?"+":"−") + Math.abs(n).toLocaleString("de-DE",{minimumFractionDigits:2,maximumFractionDigits:2}) + " %";
 const cls = n => n>0?"pos":(n<0?"neg":"flat");
 const esc = s => String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+function piPanel(pi){
+  if(!pi) return "";
+  const tcol = pi.temp_status==="hot"?"var(--neg)":(pi.temp_status==="warm"?"var(--warn)":"var(--pos)");
+  const warn = [];
+  if(pi.throttled_now) warn.push("gedrosselt");
+  if(pi.undervolt_now) warn.push("Unterspannung");
+  if(pi.throttled_ever && !pi.throttled_now) warn.push("war gedrosselt");
+  if(pi.undervolt_ever && !pi.undervolt_now) warn.push("hatte Unterspannung");
+  const warnHtml = warn.length
+    ? `<div class="chip"><span class="badge b-warn">⚠ ${esc(warn.join(" · "))}</span></div>`
+    : `<div class="chip"><span class="badge b-ok">🟢 stabil</span></div>`;
+  const num = (n,d=0)=> n==null? "—" : Number(n).toLocaleString("de-DE",{maximumFractionDigits:d});
+  const temp = pi.temp_c==null? "—" : Number(pi.temp_c).toLocaleString("de-DE",{minimumFractionDigits:1,maximumFractionDigits:1})+" °C";
+  return `<div class="fonds pi">
+    <div class="sub">🖥️ Raspberry Pi — Eckdaten</div>
+    <div class="eq" style="color:${tcol}">${temp}</div>
+    <div class="row">
+      <div class="chip"><b>CPU-Last</b>${num(pi.cpu_pct)} %${pi.cpu_mhz?` · ${num(pi.cpu_mhz)} MHz`:""}</div>
+      <div class="chip"><b>RAM</b>${num(pi.mem_used_pct)} %${pi.mem_total_mb?` · ${num(pi.mem_used_mb)}/${num(pi.mem_total_mb)} MB`:""}</div>
+      <div class="chip"><b>Disk (${esc(pi.root_dev||"?")})</b>${num(pi.disk_used_pct)} %${pi.disk_free_gb!=null?` · ${num(pi.disk_free_gb,1)} GB frei`:""}</div>
+      <div class="chip"><b>Uptime</b>${esc(pi.uptime_txt||"—")}</div>
+      ${warnHtml}
+    </div></div>`;
+}
 
 function render(d){
   document.getElementById("ts").textContent =
@@ -92,6 +119,8 @@ function render(d){
   (d.groupthink_alerts||[]).forEach(g=>al.push(`<div class="alert warn">⚠️ <b>Groupthink ${esc(g.symbol)}</b>: ${g.n_long} long / ${g.n_short} short (netto ${eur(g.net_mv)})</div>`));
   if(dd.status==="breach") al.unshift(`<div class="alert breach">🔴 <b>Fonds-Drawdown ${(dd.dd_pct||0).toFixed(2)} %</b> vom Peak — ${esc(dd.action||"")}</div>`);
   if(al.length) html += `<div class="alerts">${al.join("")}</div>`;
+
+  html += piPanel(d.pi);
 
   const cards = d.cards||[];
   if(!cards.length){ html += `<div class="empty">Noch keine Bot-Heartbeats. Sobald die Flotte läuft (<code>tick.py</code> pro Bot), erscheinen hier die Karten.</div>`; }

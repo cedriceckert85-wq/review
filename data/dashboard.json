@@ -1,27 +1,30 @@
 {
-  "ts_utc": "2026-07-02T21:07:04Z",
+  "ts_utc": "2026-07-02T21:17:09Z",
   "fleet": {
-    "equity": 800646.78,
-    "heute_usd": 1043.5,
-    "heute_pct": 0.131,
-    "gesamt_usd": 646.78,
-    "gesamt_pct": 0.08,
-    "net_exposure_pct": 11.04,
-    "gross_exposure_pct": 23.28,
+    "equity": 700605.68,
+    "heute_usd": 1002.4,
+    "heute_pct": 0.143,
+    "gesamt_usd": 605.68,
+    "gesamt_pct": 0.09,
+    "net_exposure_pct": 12.61,
+    "gross_exposure_pct": 26.6,
     "n_positions_total": 7,
-    "n_bots": 8,
-    "n_fresh": 8
+    "n_bots": 7,
+    "n_fresh": 7
   },
   "drawdown": {
-    "peak_equity": 899001.03,
-    "dd_pct": 10.94,
-    "status": "breach",
+    "peak_equity": 900605.68,
+    "dd_pct": 22.21,
+    "status": "stale_incomplete",
     "armed": false,
-    "n_fresh": 8,
-    "complete": true,
-    "missing": [],
+    "n_fresh": 7,
+    "complete": false,
+    "missing": [
+      "solid",
+      "swing"
+    ],
     "triggered": false,
-    "action": "WARN-only (Breaker nicht scharf: fonds_breaker_scharf.flag fehlt)",
+    "action": "unterdrueckt: Konto(en) fehlen vs. Peak (solid, swing) -> kein Flatten (Drawdown evtl. nur durch Ausfall)",
     "warn_at_pct": 5.0,
     "flat_at_pct": 8.0
   },
@@ -32,13 +35,13 @@
       "key": "haupt",
       "name": "📊 Anker",
       "asset_class": "equity",
-      "equity": 101431.27,
-      "heute_usd": 1645.74,
-      "heute_pct": 1.65,
-      "gesamt_usd": 1431.27,
-      "gesamt_pct": 1.43,
+      "equity": 101390.17,
+      "heute_usd": 1604.64,
+      "heute_pct": 1.61,
+      "gesamt_usd": 1390.17,
+      "gesamt_pct": 1.39,
       "n_positions": 2,
-      "net_exposure_usd": 46435.23,
+      "net_exposure_usd": 46394.13,
       "fresh": true,
       "ok": true
     },
@@ -99,20 +102,6 @@
       "ok": true
     },
     {
-      "key": "solid",
-      "name": "🤍 Trend",
-      "asset_class": "equity",
-      "equity": 100000.0,
-      "heute_usd": 0.0,
-      "heute_pct": 0.0,
-      "gesamt_usd": 0.0,
-      "gesamt_pct": 0.0,
-      "n_positions": 0,
-      "net_exposure_usd": 0.0,
-      "fresh": true,
-      "ok": true
-    },
-    {
       "key": "speku",
       "name": "🚀 Growth",
       "asset_class": "equity",
@@ -140,5 +129,28 @@
       "fresh": true,
       "ok": true
     }
-  ]
+  ],
+  "pi": {
+    "ok": true,
+    "temp_c": 54.3,
+    "temp_status": "ok",
+    "throttled_hex": "0x0",
+    "throttled_now": false,
+    "undervolt_now": false,
+    "throttled_ever": false,
+    "undervolt_ever": false,
+    "cpu_mhz": 2400,
+    "uptime_s": 905,
+    "uptime_txt": "15 Min",
+    "load1": 2.71,
+    "ncores": 4,
+    "cpu_pct": 68.0,
+    "mem_total_mb": 8059,
+    "mem_used_mb": 2935,
+    "mem_used_pct": 36.0,
+    "disk_total_gb": 60.9,
+    "disk_free_gb": 48.8,
+    "disk_used_pct": 20.0,
+    "root_dev": "SD-Karte"
+  }
 }
