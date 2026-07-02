@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-01T05:10:59Z",
+ "standUtc": "2026-07-02T04:45:51Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-02T04:45:51Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 02.07.2026 06:45"
+  },
+  {
+   "zeit": "2026-07-01T21:46:23Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 01.07.2026"
+  },
   {
    "zeit": "2026-07-01T05:10:59Z",
    "agent": "bots",
@@ -527,27 +541,6 @@
    "text": "Swing-Lauf 2026-06-17"
   },
   {
-   "zeit": "2026-06-17T19:46:48Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "RISK -> Long/Short: Engine D reaktiviert als Regime-Index-Hedge (Short SPY/QQQ bei spyZone risk_off). Nutzer-Mandat 17.06. Plumbing/Journal-Schema unveraendert."
-  },
-  {
-   "zeit": "2026-06-17T17:35:12Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 17.06.2026 19:35"
-  },
-  {
-   "zeit": "2026-06-17T16:47:33Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 17.06.2026 18:47"
-  },
-  {
    "zeit": "2026-06-16T21:05:39Z",
    "agent": "swing",
    "label": "◆ Swing",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Swing-Lauf 2026-06-16"
+  },
+  {
+   "zeit": "2026-06-16T12:47:13Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Website: 'Elite Swing Agent' -> 'Gegentrend' (Mean-Reversion). Nur Anzeigename, Daten-Key swing unveraendert."
   }
  ]
 }
