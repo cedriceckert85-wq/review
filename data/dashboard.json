@@ -1,5 +1,5 @@
 {
-  "ts_utc": "2026-07-02T21:27:19Z",
+  "ts_utc": "2026-07-02T21:37:19Z",
   "fleet": {
     "equity": 700605.68,
     "heute_usd": 1002.4,
@@ -10,21 +10,25 @@
     "gross_exposure_pct": 26.6,
     "n_positions_total": 7,
     "n_bots": 7,
-    "n_fresh": 7
+    "n_fresh": 3
   },
   "drawdown": {
     "peak_equity": 900605.68,
     "dd_pct": 22.21,
     "status": "stale_incomplete",
     "armed": false,
-    "n_fresh": 7,
+    "n_fresh": 3,
     "complete": false,
     "missing": [
+      "crypto",
+      "daytrade",
+      "diversifikator",
+      "pead",
       "solid",
       "swing"
     ],
     "triggered": false,
-    "action": "unterdrueckt: Konto(en) fehlen vs. Peak (solid, swing) -> kein Flatten (Drawdown evtl. nur durch Ausfall)",
+    "action": "unterdrueckt: Konto(en) fehlen vs. Peak (crypto, daytrade, diversifikator, pead, solid, swing) -> kein Flatten (Drawdown evtl. nur durch Ausfall)",
     "warn_at_pct": 5.0,
     "flat_at_pct": 8.0
   },
@@ -56,7 +60,7 @@
       "gesamt_pct": 0.65,
       "n_positions": 2,
       "net_exposure_usd": 90969.64,
-      "fresh": true,
+      "fresh": false,
       "ok": true
     },
     {
@@ -70,7 +74,7 @@
       "gesamt_pct": 0.0,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": true,
+      "fresh": false,
       "ok": true
     },
     {
@@ -84,7 +88,7 @@
       "gesamt_pct": -0.58,
       "n_positions": 0,
       "net_exposure_usd": 0.0,
-      "fresh": true,
+      "fresh": false,
       "ok": true
     },
     {
@@ -126,27 +130,27 @@
       "gesamt_pct": 0.03,
       "n_positions": 3,
       "net_exposure_usd": -48984.68,
-      "fresh": true,
+      "fresh": false,
       "ok": true
     }
   ],
   "pi": {
     "ok": true,
-    "temp_c": 48.8,
+    "temp_c": 49.4,
     "temp_status": "ok",
     "throttled_hex": "0x0",
     "throttled_now": false,
     "undervolt_now": false,
     "throttled_ever": false,
     "undervolt_ever": false,
-    "cpu_mhz": 2400,
-    "uptime_s": 1515,
-    "uptime_txt": "25 Min",
-    "load1": 0.09,
+    "cpu_mhz": 1900,
+    "uptime_s": 2115,
+    "uptime_txt": "35 Min",
+    "load1": 0.0,
     "ncores": 4,
-    "cpu_pct": 2.0,
+    "cpu_pct": 0.0,
     "mem_total_mb": 8059,
-    "mem_used_mb": 2602,
+    "mem_used_mb": 2584,
     "mem_used_pct": 32.0,
     "disk_total_gb": 60.9,
     "disk_free_gb": 48.8,
