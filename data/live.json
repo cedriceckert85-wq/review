@@ -1,7 +1,7 @@
 {
   "datum": "2026-07-02",
   "label": "live",
-  "standUhr": "17:45",
+  "standUhr": "17:46",
   "swing": null,
   "speku": null,
   "haupt": null,
@@ -9,6 +9,6 @@
   "risk": null,
   "schatten": null,
   "crypto": null,
-  "spy": 1.04,
+  "spy": 1.01,
   "tagesgeld": 0.11
 }
