@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-07-03T15:35:19Z",
+ "standUtc": "2026-07-03T15:45:19Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-03T15:45:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 03.07.2026 17:45"
+  },
   {
    "zeit": "2026-07-03T15:35:19Z",
    "agent": "system",
@@ -142,13 +149,6 @@
    "text": "Dashboard-Update 03.07.2026 14:37"
   },
   {
-   "zeit": "2026-07-03T12:27:09Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 14:27"
-  },
-  {
    "zeit": "2026-07-03T12:26:04Z",
    "agent": "system",
    "label": "🛠 System",
@@ -156,81 +156,11 @@
    "text": "Speku-Dashboard: Premarket 2026-07-03 14:06 — FLAT all-cash, kein neues Material"
   },
   {
-   "zeit": "2026-07-03T12:16:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 14:16"
-  },
-  {
-   "zeit": "2026-07-03T12:05:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 14:05"
-  },
-  {
-   "zeit": "2026-07-03T11:55:09Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 13:55"
-  },
-  {
-   "zeit": "2026-07-03T11:44:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 13:44"
-  },
-  {
-   "zeit": "2026-07-03T11:33:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 13:33"
-  },
-  {
    "zeit": "2026-07-03T11:25:42Z",
    "agent": "system",
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Speku-Dashboard: Premarket 2026-07-03 13:06 — FLAT all-cash, kein neues Material"
-  },
-  {
-   "zeit": "2026-07-03T11:22:49Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 13:22"
-  },
-  {
-   "zeit": "2026-07-03T11:12:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 13:12"
-  },
-  {
-   "zeit": "2026-07-03T11:01:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 13:01"
-  },
-  {
-   "zeit": "2026-07-03T10:51:09Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 12:51"
-  },
-  {
-   "zeit": "2026-07-03T10:40:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 12:40"
   },
   {
    "zeit": "2026-07-03T10:26:23Z",
@@ -560,6 +490,76 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Abend-Check 2026-06-24 — Dashboard Tagesabschluss, 100k/0 Pos Cash, SPY 733.05, kein Trade (Cash vor Micron/PCE)"
+  },
+  {
+   "zeit": "2026-06-24T20:08:08Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Abend-Check 22:06 — IONQ Schluss 53.64 HOLD durch PCE (Quantum-Flush -7%), 0 Trades, Depot 99465 €"
+  },
+  {
+   "zeit": "2026-06-24T19:27:25Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 21:26 — IONQ 52.80 (+1.80 zu Stop 51.00, HOLD, leichte Erholung), S&P -0.22%, kein Handel"
+  },
+  {
+   "zeit": "2026-06-24T19:21:52Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 21:21 — IONQ 52.44 (+1.44 zu Stop 51.00, HOLD, kritische Zone stabil), S&P -0.32%, kein Handel"
+  },
+  {
+   "zeit": "2026-06-24T19:12:17Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Wache 21:11 — IONQ 52.40 (+1.40 zu Stop 51.00, HOLD, nah an Schwelle), S&P -0.37%, kein Handel"
+  },
+  {
+   "zeit": "2026-06-24T04:51:04Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 24.06.2026 06:51"
+  },
+  {
+   "zeit": "2026-06-23T21:51:43Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 23.06.2026"
+  },
+  {
+   "zeit": "2026-06-23T21:11:33Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-23"
+  },
+  {
+   "zeit": "2026-06-23T04:45:33Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 23.06.2026 06:45"
+  },
+  {
+   "zeit": "2026-06-22T22:16:00Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 23.06.2026"
+  },
+  {
+   "zeit": "2026-06-22T21:07:08Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Pi-Orders swing 22.06.2026 23:07"
   }
  ]
 }
