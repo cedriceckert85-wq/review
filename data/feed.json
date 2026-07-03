@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-07-03T16:16:20Z",
+ "standUtc": "2026-07-03T16:26:39Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-03T16:26:39Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 03.07.2026 18:26"
+  },
   {
    "zeit": "2026-07-03T16:16:20Z",
    "agent": "system",
@@ -14,20 +21,6 @@
    "label": "🛠 Review-System",
    "repo": "review",
    "text": "Dashboard-Update 03.07.2026 18:05"
-  },
-  {
-   "zeit": "2026-07-03T15:55:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 17:55"
-  },
-  {
-   "zeit": "2026-07-03T15:45:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 17:45"
   },
   {
    "zeit": "2026-07-03T14:37:47Z",
@@ -560,6 +553,13 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 18.06.2026 07:23"
+  },
+  {
+   "zeit": "2026-06-17T21:05:16Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-17"
   }
  ]
 }
