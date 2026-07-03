@@ -10,7 +10,8 @@
       "entry": 60712.27,
       "notional": 44118.0,
       "qty": 0.726678191,
-      "stop": 59900,
+      "stop": 61000,
+      "stopTrail": "2026-07-03 23:36: von 59900 auf 61000 (knapp unter rising slow-MA 61336) nachgezogen nach breitem Aufwaertstag - liegt jetzt ueber Einstand 60712 (Position risikofrei), Exit bei decisivem slow-MA-Bruch.",
       "entryDatum": "2026-06-26",
       "orderId": "3ba818fb-8f46-42f5-ab38-d3ed0c9bb1bf",
       "grund": "Reconciled zu Broker-Wahrheit 2026-07-02 (Journal war veraltet: Einstand 60276/Notional 19685 falsch). Halten: Kurs 61491 am fast-MA 61585 konsolidierend, aber ~2,5% ueber slow-MA 60022, Aufwaertstrend intakt, +600 USD unrealisiert. Stop: entschlossener Schluss unter slow-MA ~60022 (Feld 59900). Ziel: neuer Schub ueber fast-MA Richtung 62,5-63k."
@@ -19,7 +20,8 @@
       "entry": 1636.55,
       "notional": 44432.0,
       "qty": 27.149620888,
-      "stop": 1670,
+      "stop": 1680,
+      "stopTrail": "2026-07-03 23:36: von 1670 auf 1680 (knapp unter rising slow-MA 1687) nachgezogen - sichert ~+1180 des offenen Gewinns, Leader behaelt Raum (Kurs 1757, ~4% ueber Stop).",
       "entryDatum": "unbekannt (vor 2026-07-02, nicht journaled)",
       "grund": "Reconciled zu Broker-Wahrheit 2026-07-02 (Position fehlte komplett im Journal). Halten: Leader des Feldes - Kurs 1702.85 ueber fast-MA 1696 UND slow-MA 1621, Momentum +4.42 staerkstes der Majors, +1853 USD unrealisiert. Stop-Feld 1670 (knapp unter fast-MA, Rauschabstand, sichert Grossteil des Gewinns); Katastrophen-Stop slow-MA ~1620. Trailing-Ausstieg: Schluss zurueck unter fast-MA + Breite kippt."
     },
