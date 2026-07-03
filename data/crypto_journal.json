@@ -22,6 +22,15 @@
       "stop": 1670,
       "entryDatum": "unbekannt (vor 2026-07-02, nicht journaled)",
       "grund": "Reconciled zu Broker-Wahrheit 2026-07-02 (Position fehlte komplett im Journal). Halten: Leader des Feldes - Kurs 1702.85 ueber fast-MA 1696 UND slow-MA 1621, Momentum +4.42 staerkstes der Majors, +1853 USD unrealisiert. Stop-Feld 1670 (knapp unter fast-MA, Rauschabstand, sichert Grossteil des Gewinns); Katastrophen-Stop slow-MA ~1620. Trailing-Ausstieg: Schluss zurueck unter fast-MA + Breite kippt."
+    },
+    "SOL/USD": {
+      "entry": 81.48,
+      "notional": 1935.9,
+      "qty": 23.238134805,
+      "stop": 79.5,
+      "entryDatum": "2026-07-03",
+      "orderId": "b07498b8-9239-46c9-bf43-6bdd5d636a52",
+      "grund": "Bestaetigter, sich verbreiternder fast-MA-Reclaim ueber 2 Laeufe (03:11->03:41): 6/8 Coins ueber fast-MA, alle 8 ueber slow-MA, echte Kursgewinne (nicht 24h-Artefakt). SOL sauberster frischer Momentum-Add - klar ueber fast-MA 80.77, 3 Reads steigend (80.68->81.03->81.41), Mom +4.25, Trio-Vehikel (enger Spread als AVAX/LTC). Einstieg ~81.41. Stop: Schluss zurueck unter fast-MA ~80.7 / hart slow-MA 78.0 (Feld 79.5). Ziel +2-3% Richtung 83-84. BETRAG=20% Cash."
     }
   },
   "trades": [
@@ -73,7 +82,7 @@
     "summePnlUsd": -1376.6
   },
   "heute": {
-    "datum": "2026-07-02",
-    "trades": 0
+    "datum": "2026-07-03",
+    "trades": 1
   }
 }
