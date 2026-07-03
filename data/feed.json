@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-07-03T15:55:19Z",
+ "standUtc": "2026-07-03T16:05:59Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-03T16:05:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 03.07.2026 18:05"
+  },
   {
    "zeit": "2026-07-03T15:55:19Z",
    "agent": "system",
@@ -23,53 +30,11 @@
    "text": "Dashboard-Update 03.07.2026 17:35"
   },
   {
-   "zeit": "2026-07-03T15:25:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 17:25"
-  },
-  {
-   "zeit": "2026-07-03T15:14:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 17:14"
-  },
-  {
-   "zeit": "2026-07-03T15:03:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 17:03"
-  },
-  {
-   "zeit": "2026-07-03T14:53:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 16:53"
-  },
-  {
-   "zeit": "2026-07-03T14:42:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 16:42"
-  },
-  {
    "zeit": "2026-07-03T14:37:47Z",
    "agent": "system",
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Speku-Dashboard: Hauptlauf 2026-07-03 (Feiertag, FLAT 99119 USD, 0 Pos)"
-  },
-  {
-   "zeit": "2026-07-03T14:31:39Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 16:31"
   },
   {
    "zeit": "2026-07-03T13:38:33Z",
@@ -560,6 +525,41 @@
    "label": "🔥 RISK",
    "repo": "bots",
    "text": "RISK-Lauf 2026-06-19 (KEIN TRADE: Juneteenth + Journal 5/5 am Cap-Maximum)"
+  },
+  {
+   "zeit": "2026-06-19T01:24:33Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-19 (Juneteenth, KEIN TRADE: Momentum 3/3 voll, News-Drift ausserhalb Universum)"
+  },
+  {
+   "zeit": "2026-06-18T21:05:03Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-18T17:45:54Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 19:45"
+  },
+  {
+   "zeit": "2026-06-18T16:46:24Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 18.06.2026 18:46"
+  },
+  {
+   "zeit": "2026-06-18T05:23:29Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 18.06.2026 07:23"
   }
  ]
 }
