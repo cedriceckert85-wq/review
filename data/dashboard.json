@@ -1,5 +1,5 @@
 {
-  "ts_utc": "2026-07-04T14:44:19Z",
+  "ts_utc": "2026-07-04T14:54:19Z",
   "fleet": {
     "equity": 904459.18,
     "heute_usd": 1427.02,
@@ -157,7 +157,7 @@
   ],
   "pi": {
     "ok": true,
-    "temp_c": 46.6,
+    "temp_c": 48.3,
     "temp_status": "ok",
     "throttled_hex": "0x0",
     "throttled_now": false,
@@ -165,13 +165,13 @@
     "throttled_ever": false,
     "undervolt_ever": false,
     "cpu_mhz": 2400,
-    "uptime_s": 150135,
+    "uptime_s": 150735,
     "uptime_txt": "1 T 17 h",
-    "load1": 0.5,
+    "load1": 0.31,
     "ncores": 4,
-    "cpu_pct": 12.0,
+    "cpu_pct": 8.0,
     "mem_total_mb": 8059,
-    "mem_used_mb": 3368,
+    "mem_used_mb": 3366,
     "mem_used_pct": 42.0,
     "disk_total_gb": 60.9,
     "disk_free_gb": 48.2,
