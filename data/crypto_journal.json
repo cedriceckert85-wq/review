@@ -24,15 +24,6 @@
       "stopTrail": "2026-07-03 23:36: von 1670 auf 1680 (knapp unter rising slow-MA 1687) nachgezogen - sichert ~+1180 des offenen Gewinns, Leader behaelt Raum (Kurs 1757, ~4% ueber Stop).",
       "entryDatum": "unbekannt (vor 2026-07-02, nicht journaled)",
       "grund": "Reconciled zu Broker-Wahrheit 2026-07-02 (Position fehlte komplett im Journal). Halten: Leader des Feldes - Kurs 1702.85 ueber fast-MA 1696 UND slow-MA 1621, Momentum +4.42 staerkstes der Majors, +1853 USD unrealisiert. Stop-Feld 1670 (knapp unter fast-MA, Rauschabstand, sichert Grossteil des Gewinns); Katastrophen-Stop slow-MA ~1620. Trailing-Ausstieg: Schluss zurueck unter fast-MA + Breite kippt."
-    },
-    "SOL/USD": {
-      "entry": 81.48,
-      "notional": 1935.9,
-      "qty": 23.238134805,
-      "stop": 79.5,
-      "entryDatum": "2026-07-03",
-      "orderId": "b07498b8-9239-46c9-bf43-6bdd5d636a52",
-      "grund": "Bestaetigter, sich verbreiternder fast-MA-Reclaim ueber 2 Laeufe (03:11->03:41): 6/8 Coins ueber fast-MA, alle 8 ueber slow-MA, echte Kursgewinne (nicht 24h-Artefakt). SOL sauberster frischer Momentum-Add - klar ueber fast-MA 80.77, 3 Reads steigend (80.68->81.03->81.41), Mom +4.25, Trio-Vehikel (enger Spread als AVAX/LTC). Einstieg ~81.41. Stop: Schluss zurueck unter fast-MA ~80.7 / hart slow-MA 78.0 (Feld 79.5). Ziel +2-3% Richtung 83-84. BETRAG=20% Cash."
     }
   },
   "trades": [
@@ -75,16 +66,26 @@
       "entryDatum": "2026-06-26",
       "exitDatum": "2026-06-26",
       "grund": "Stop diszipliniert ausgeloest: Beide These-Saeulen gebrochen - Breite-Erholung gescheitert (BTC -3.27% frisch unter fast-MA <59.2k, Tape neues Abwaertsbein), SOL auf fast-MA (68.73~68.71) zurueckgefallen und Momentum 3 Balken fallend (2.39->1.18->0.97). Leader-These invalidiert -> kleinen Verlust nehmen statt auf slow-MA-Stop hoffen. Einstieg 70.03, Ausstieg ~68.73."
+    },
+    {
+      "sym": "SOL/USD",
+      "entry": 81.48,
+      "exit": 81.5,
+      "qty": "23.238134805",
+      "pnlUsd": 0.46,
+      "entryDatum": "2026-07-03",
+      "exitDatum": "2026-07-05",
+      "grund": "EXIT (Breakeven): Breite kippt breit ab - praktisch ganzes Feld unter fast-MA, Momentum breit negativ. SOL bricht als schwaechstes/kleinstes Bein den slow-MA (81.44<81.76) mit klar negativem Momentum -1.09, anders als frueheres Chop-Oszillieren jetzt im breiten Roll-over-Kontext (Bounce unwahrscheinlicher). Plan: schwaechstes Bein zuerst abbauen, Leader BTC/ETH (slow-MA intakt) halten. Momentum-These tot -> sauber raus statt Richtung Stop 79.5 tropfen lassen."
     }
   ],
   "statistik": {
-    "trades": 4,
-    "gewonnen": 0,
+    "trades": 5,
+    "gewonnen": 1,
     "verloren": 4,
-    "summePnlUsd": -1376.6
+    "summePnlUsd": -1376.14
   },
   "heute": {
-    "datum": "2026-07-03",
+    "datum": "2026-07-05",
     "trades": 1
   }
 }
