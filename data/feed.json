@@ -1,26 +1,320 @@
 {
- "standUtc": "2026-07-03T16:36:59Z",
+ "standUtc": "2026-07-05T21:09:00Z",
  "eintraege": [
   {
-   "zeit": "2026-07-03T16:36:59Z",
+   "zeit": "2026-07-05T21:09:00Z",
    "agent": "system",
    "label": "🛠 Review-System",
    "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 18:36"
+   "text": "Dashboard-Update 05.07.2026 23:09"
   },
   {
-   "zeit": "2026-07-03T16:26:39Z",
+   "zeit": "2026-07-05T20:58:39Z",
    "agent": "system",
    "label": "🛠 Review-System",
    "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 18:26"
+   "text": "Dashboard-Update 05.07.2026 22:58"
   },
   {
-   "zeit": "2026-07-03T16:16:20Z",
+   "zeit": "2026-07-05T20:48:19Z",
    "agent": "system",
    "label": "🛠 Review-System",
    "repo": "review",
-   "text": "Dashboard-Update 03.07.2026 18:16"
+   "text": "Dashboard-Update 05.07.2026 22:48"
+  },
+  {
+   "zeit": "2026-07-05T20:37:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 22:37"
+  },
+  {
+   "zeit": "2026-07-05T20:27:20Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 22:27"
+  },
+  {
+   "zeit": "2026-07-05T20:16:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 22:16"
+  },
+  {
+   "zeit": "2026-07-05T20:06:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 22:06"
+  },
+  {
+   "zeit": "2026-07-05T19:55:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 21:55"
+  },
+  {
+   "zeit": "2026-07-05T19:45:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 21:45"
+  },
+  {
+   "zeit": "2026-07-05T19:34:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 21:34"
+  },
+  {
+   "zeit": "2026-07-05T19:24:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 21:24"
+  },
+  {
+   "zeit": "2026-07-05T19:13:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 21:13"
+  },
+  {
+   "zeit": "2026-07-05T19:03:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 21:03"
+  },
+  {
+   "zeit": "2026-07-05T18:52:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 20:52"
+  },
+  {
+   "zeit": "2026-07-05T18:42:20Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 20:42"
+  },
+  {
+   "zeit": "2026-07-05T18:31:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 20:31"
+  },
+  {
+   "zeit": "2026-07-05T18:20:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 20:20"
+  },
+  {
+   "zeit": "2026-07-05T18:09:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 20:09"
+  },
+  {
+   "zeit": "2026-07-05T17:58:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 19:58"
+  },
+  {
+   "zeit": "2026-07-05T17:47:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 19:47"
+  },
+  {
+   "zeit": "2026-07-05T17:37:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 19:37"
+  },
+  {
+   "zeit": "2026-07-05T17:27:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 19:27"
+  },
+  {
+   "zeit": "2026-07-05T17:17:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 19:17"
+  },
+  {
+   "zeit": "2026-07-05T17:06:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 19:06"
+  },
+  {
+   "zeit": "2026-07-05T16:56:39Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 18:56"
+  },
+  {
+   "zeit": "2026-07-05T16:46:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 18:46"
+  },
+  {
+   "zeit": "2026-07-05T16:35:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 18:35"
+  },
+  {
+   "zeit": "2026-07-05T16:25:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 18:25"
+  },
+  {
+   "zeit": "2026-07-05T16:14:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 18:14"
+  },
+  {
+   "zeit": "2026-07-05T16:04:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 18:04"
+  },
+  {
+   "zeit": "2026-07-05T15:54:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 17:54"
+  },
+  {
+   "zeit": "2026-07-05T15:44:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 17:44"
+  },
+  {
+   "zeit": "2026-07-05T15:34:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 17:34"
+  },
+  {
+   "zeit": "2026-07-05T15:24:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 17:24"
+  },
+  {
+   "zeit": "2026-07-05T15:14:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 17:14"
+  },
+  {
+   "zeit": "2026-07-05T15:04:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 17:04"
+  },
+  {
+   "zeit": "2026-07-05T14:53:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 16:53"
+  },
+  {
+   "zeit": "2026-07-05T14:42:59Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 16:42"
+  },
+  {
+   "zeit": "2026-07-05T14:32:19Z",
+   "agent": "system",
+   "label": "🛠 Review-System",
+   "repo": "review",
+   "text": "Dashboard-Update 05.07.2026 16:32"
+  },
+  {
+   "zeit": "2026-07-04T09:38:47Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Speku-Dashboard: Wochen-Reflexion 2026-07-04 (FLAT 99119 USD)"
+  },
+  {
+   "zeit": "2026-07-04T04:23:51Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 04.07.2026 06:23"
+  },
+  {
+   "zeit": "2026-07-04T01:39:52Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-07-04"
+  },
+  {
+   "zeit": "2026-07-03T21:31:15Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 03.07.2026"
+  },
+  {
+   "zeit": "2026-07-03T21:10:33Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-07-03"
+  },
+  {
+   "zeit": "2026-07-03T20:18:20Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Speku-Dashboard: Abend-Check 2026-07-03 (Feiertag, FLAT 99119 USD)"
   },
   {
    "zeit": "2026-07-03T14:37:47Z",
@@ -266,300 +560,6 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Abend-Check 2026-06-25 — Dashboard Tagesabschluss Tag 4, 100k/0 Pos Cash, SPY 733.31, kein Trade"
-  },
-  {
-   "zeit": "2026-06-25T15:17:48Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Speku-Slot 16:36 — kein Setup besteht Verifikation, keine Buchung, all-cash"
-  },
-  {
-   "zeit": "2026-06-25T14:42:59Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Speku-Slot 2026-06-25 PASS — Dashboard, 100k/0 Pos Cash"
-  },
-  {
-   "zeit": "2026-06-25T14:20:02Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Hauptlauf 2026-06-25 — Dashboard, 100k/0 Pos Cash, kein Core-Trade (muted reaction); Chip-Idee -> Speku 16:34"
-  },
-  {
-   "zeit": "2026-06-25T14:14:19Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: IONQ Stop-Out @50.98 (Open-Whipsaw), realisiert -11.7%, Depot all-cash 99119 €, FLAT"
-  },
-  {
-   "zeit": "2026-06-25T14:09:57Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard speku/spec.html — Eroeffnungs-Check 25.06. IONQ ~52, HOLD"
-  },
-  {
-   "zeit": "2026-06-25T13:37:52Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard speku/spec.html — Vorboers-Scan 25.06. IONQ ~54.8"
-  },
-  {
-   "zeit": "2026-06-25T12:35:20Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard speku.html aktualisiert — PCE 25.06. 14:34"
-  },
-  {
-   "zeit": "2026-06-25T12:17:14Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard: Premarket 14:16"
-  },
-  {
-   "zeit": "2026-06-25T11:17:16Z",
-   "agent": "system",
-   "label": "🛠 System",
-   "repo": "epmt-dashboard",
-   "text": "Dashboard: Premarket 13:16"
-  },
-  {
-   "zeit": "2026-06-25T09:17:19Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Scan 11:06 — kein Neues, IONQ 53.60 vor PCE 14:30 MESZ"
-  },
-  {
-   "zeit": "2026-06-25T08:17:27Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Scan 10:06 — Micron-Blowout dreht Futures grün (Nasdaq +1.8%), IONQ 53.60 vor PCE 14:30"
-  },
-  {
-   "zeit": "2026-06-25T07:38:06Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Briefing 09:06 — PCE-Konsens Core ~3,3% YoY, IONQ 53,60 vorbörslich, Stop 4,8% Puffer"
-  },
-  {
-   "zeit": "2026-06-25T04:50:24Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 25.06.2026 06:50"
-  },
-  {
-   "zeit": "2026-06-24T21:45:36Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 24.06.2026"
-  },
-  {
-   "zeit": "2026-06-24T21:07:37Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-24"
-  },
-  {
-   "zeit": "2026-06-24T20:15:02Z",
-   "agent": "haupt",
-   "label": "📊 Haupt",
-   "repo": "epmt-dashboard",
-   "text": "Haupt: Abend-Check 2026-06-24 — Dashboard Tagesabschluss, 100k/0 Pos Cash, SPY 733.05, kein Trade (Cash vor Micron/PCE)"
-  },
-  {
-   "zeit": "2026-06-24T20:08:08Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Abend-Check 22:06 — IONQ Schluss 53.64 HOLD durch PCE (Quantum-Flush -7%), 0 Trades, Depot 99465 €"
-  },
-  {
-   "zeit": "2026-06-24T19:27:25Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 21:26 — IONQ 52.80 (+1.80 zu Stop 51.00, HOLD, leichte Erholung), S&P -0.22%, kein Handel"
-  },
-  {
-   "zeit": "2026-06-24T19:21:52Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 21:21 — IONQ 52.44 (+1.44 zu Stop 51.00, HOLD, kritische Zone stabil), S&P -0.32%, kein Handel"
-  },
-  {
-   "zeit": "2026-06-24T19:12:17Z",
-   "agent": "speku",
-   "label": "🚀 Speku",
-   "repo": "epmt-dashboard",
-   "text": "Speku: Wache 21:11 — IONQ 52.40 (+1.40 zu Stop 51.00, HOLD, nah an Schwelle), S&P -0.37%, kein Handel"
-  },
-  {
-   "zeit": "2026-06-24T04:51:04Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 24.06.2026 06:51"
-  },
-  {
-   "zeit": "2026-06-23T21:51:43Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 23.06.2026"
-  },
-  {
-   "zeit": "2026-06-23T21:11:33Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-23"
-  },
-  {
-   "zeit": "2026-06-23T04:45:33Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 23.06.2026 06:45"
-  },
-  {
-   "zeit": "2026-06-22T22:16:00Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 23.06.2026"
-  },
-  {
-   "zeit": "2026-06-22T21:07:08Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Pi-Orders swing 22.06.2026 23:07"
-  },
-  {
-   "zeit": "2026-06-22T21:06:18Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-22"
-  },
-  {
-   "zeit": "2026-06-21T21:40:25Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Flotte 2.0: Orders ueber zentrales Risk-Gate (order_gate.submit_order); atomare Journal-Writes; Cloud-Order-Workflows -> workflow_dispatch (alles auf den Pi)"
-  },
-  {
-   "zeit": "2026-06-21T21:39:25Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Flotte 2.0: Orders ueber zentrales Risk-Gate (order_gate.submit_order); reconcile/tick-Integration; Cloud-orders.yml -> workflow_dispatch (alles auf den Pi)"
-  },
-  {
-   "zeit": "2026-06-20T04:59:25Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 20.06.2026 06:59"
-  },
-  {
-   "zeit": "2026-06-20T01:39:00Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-20 (KEIN TRADE: kein neuer Handelstag, Journal 5/5 am Cap)"
-  },
-  {
-   "zeit": "2026-06-20T01:24:29Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-20 (Sa, KEIN TRADE: Momentum 3/3 voll, News-Drift kein Universums-Ticker)"
-  },
-  {
-   "zeit": "2026-06-19T17:01:57Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 19.06.2026 19:01"
-  },
-  {
-   "zeit": "2026-06-19T16:19:22Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 19.06.2026 18:19"
-  },
-  {
-   "zeit": "2026-06-19T05:57:20Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 19.06.2026 07:57"
-  },
-  {
-   "zeit": "2026-06-19T01:39:27Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-19 (KEIN TRADE: Juneteenth + Journal 5/5 am Cap-Maximum)"
-  },
-  {
-   "zeit": "2026-06-19T01:24:33Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-19 (Juneteenth, KEIN TRADE: Momentum 3/3 voll, News-Drift ausserhalb Universum)"
-  },
-  {
-   "zeit": "2026-06-18T21:05:03Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-18"
-  },
-  {
-   "zeit": "2026-06-18T17:45:54Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 18.06.2026 19:45"
-  },
-  {
-   "zeit": "2026-06-18T16:46:24Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 18.06.2026 18:46"
-  },
-  {
-   "zeit": "2026-06-18T05:23:29Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 18.06.2026 07:23"
-  },
-  {
-   "zeit": "2026-06-17T21:05:16Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Swing-Lauf 2026-06-17"
   }
  ]
 }
