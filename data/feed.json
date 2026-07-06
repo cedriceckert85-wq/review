@@ -1,69 +1,6 @@
 {
- "standUtc": "2026-07-05T21:09:00Z",
+ "standUtc": "2026-07-04T09:38:47Z",
  "eintraege": [
-  {
-   "zeit": "2026-07-05T21:09:00Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 23:09"
-  },
-  {
-   "zeit": "2026-07-05T20:58:39Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 22:58"
-  },
-  {
-   "zeit": "2026-07-05T20:48:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 22:48"
-  },
-  {
-   "zeit": "2026-07-05T20:37:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 22:37"
-  },
-  {
-   "zeit": "2026-07-05T20:27:20Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 22:27"
-  },
-  {
-   "zeit": "2026-07-05T20:16:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 22:16"
-  },
-  {
-   "zeit": "2026-07-05T20:06:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 22:06"
-  },
-  {
-   "zeit": "2026-07-05T19:55:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 21:55"
-  },
-  {
-   "zeit": "2026-07-05T19:45:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 21:45"
-  },
   {
    "zeit": "2026-07-04T09:38:47Z",
    "agent": "system",
@@ -560,6 +497,69 @@
    "label": "🤍 SOLID",
    "repo": "bots",
    "text": "SOLID-Lauf 2026-06-20 (Sa, KEIN TRADE: Momentum 3/3 voll, News-Drift kein Universums-Ticker)"
+  },
+  {
+   "zeit": "2026-06-19T17:01:57Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 19.06.2026 19:01"
+  },
+  {
+   "zeit": "2026-06-19T16:19:22Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "DAYTRADER Signal 19.06.2026 18:19"
+  },
+  {
+   "zeit": "2026-06-19T05:57:20Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 19.06.2026 07:57"
+  },
+  {
+   "zeit": "2026-06-19T01:39:27Z",
+   "agent": "risk",
+   "label": "🔥 RISK",
+   "repo": "bots",
+   "text": "RISK-Lauf 2026-06-19 (KEIN TRADE: Juneteenth + Journal 5/5 am Cap-Maximum)"
+  },
+  {
+   "zeit": "2026-06-19T01:24:33Z",
+   "agent": "solid",
+   "label": "🤍 SOLID",
+   "repo": "bots",
+   "text": "SOLID-Lauf 2026-06-19 (Juneteenth, KEIN TRADE: Momentum 3/3 voll, News-Drift ausserhalb Universum)"
+  },
+  {
+   "zeit": "2026-06-18T21:05:03Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-18"
+  },
+  {
+   "zeit": "2026-06-17T21:05:16Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-17"
+  },
+  {
+   "zeit": "2026-06-16T21:05:39Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-16"
+  },
+  {
+   "zeit": "2026-06-16T13:07:07Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-16"
   }
  ]
 }
