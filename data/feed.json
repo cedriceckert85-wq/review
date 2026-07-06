@@ -205,76 +205,6 @@
    "text": "Dashboard-Update 05.07.2026 18:14"
   },
   {
-   "zeit": "2026-07-05T16:04:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 18:04"
-  },
-  {
-   "zeit": "2026-07-05T15:54:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 17:54"
-  },
-  {
-   "zeit": "2026-07-05T15:44:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 17:44"
-  },
-  {
-   "zeit": "2026-07-05T15:34:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 17:34"
-  },
-  {
-   "zeit": "2026-07-05T15:24:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 17:24"
-  },
-  {
-   "zeit": "2026-07-05T15:14:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 17:14"
-  },
-  {
-   "zeit": "2026-07-05T15:04:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 17:04"
-  },
-  {
-   "zeit": "2026-07-05T14:53:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 16:53"
-  },
-  {
-   "zeit": "2026-07-05T14:42:59Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 16:42"
-  },
-  {
-   "zeit": "2026-07-05T14:32:19Z",
-   "agent": "system",
-   "label": "🛠 Review-System",
-   "repo": "review",
-   "text": "Dashboard-Update 05.07.2026 16:32"
-  },
-  {
    "zeit": "2026-07-04T09:38:47Z",
    "agent": "system",
    "label": "🛠 System",
@@ -560,6 +490,76 @@
    "label": "📊 Haupt",
    "repo": "epmt-dashboard",
    "text": "Haupt: Abend-Check 2026-06-25 — Dashboard Tagesabschluss Tag 4, 100k/0 Pos Cash, SPY 733.31, kein Trade"
+  },
+  {
+   "zeit": "2026-06-25T15:17:48Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Speku-Slot 16:36 — kein Setup besteht Verifikation, keine Buchung, all-cash"
+  },
+  {
+   "zeit": "2026-06-25T14:42:59Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Speku-Slot 2026-06-25 PASS — Dashboard, 100k/0 Pos Cash"
+  },
+  {
+   "zeit": "2026-06-25T14:20:02Z",
+   "agent": "haupt",
+   "label": "📊 Haupt",
+   "repo": "epmt-dashboard",
+   "text": "Haupt: Hauptlauf 2026-06-25 — Dashboard, 100k/0 Pos Cash, kein Core-Trade (muted reaction); Chip-Idee -> Speku 16:34"
+  },
+  {
+   "zeit": "2026-06-25T14:14:19Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: IONQ Stop-Out @50.98 (Open-Whipsaw), realisiert -11.7%, Depot all-cash 99119 €, FLAT"
+  },
+  {
+   "zeit": "2026-06-25T14:09:57Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard speku/spec.html — Eroeffnungs-Check 25.06. IONQ ~52, HOLD"
+  },
+  {
+   "zeit": "2026-06-25T13:37:52Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard speku/spec.html — Vorboers-Scan 25.06. IONQ ~54.8"
+  },
+  {
+   "zeit": "2026-06-25T12:35:20Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard speku.html aktualisiert — PCE 25.06. 14:34"
+  },
+  {
+   "zeit": "2026-06-25T12:17:14Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard: Premarket 14:16"
+  },
+  {
+   "zeit": "2026-06-25T11:17:16Z",
+   "agent": "system",
+   "label": "🛠 System",
+   "repo": "epmt-dashboard",
+   "text": "Dashboard: Premarket 13:16"
+  },
+  {
+   "zeit": "2026-06-25T09:17:19Z",
+   "agent": "speku",
+   "label": "🚀 Speku",
+   "repo": "epmt-dashboard",
+   "text": "Speku: Scan 11:06 — kein Neues, IONQ 53.60 vor PCE 14:30 MESZ"
   }
  ]
 }
