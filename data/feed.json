@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-07T04:37:48Z",
+ "standUtc": "2026-07-08T03:58:11Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-08T03:58:11Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 08.07.2026 05:58"
+  },
+  {
+   "zeit": "2026-07-07T21:40:17Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 07.07.2026"
+  },
   {
    "zeit": "2026-07-07T04:37:48Z",
    "agent": "bots",
@@ -513,27 +527,6 @@
    "text": "SOLID-Lauf 2026-06-20 (Sa, KEIN TRADE: Momentum 3/3 voll, News-Drift kein Universums-Ticker)"
   },
   {
-   "zeit": "2026-06-19T17:01:57Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 19.06.2026 19:01"
-  },
-  {
-   "zeit": "2026-06-19T16:19:22Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "DAYTRADER Signal 19.06.2026 18:19"
-  },
-  {
-   "zeit": "2026-06-19T05:57:20Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 19.06.2026 07:57"
-  },
-  {
    "zeit": "2026-06-18T21:05:03Z",
    "agent": "swing",
    "label": "◆ Swing",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Swing-Lauf 2026-06-16"
+  },
+  {
+   "zeit": "2026-06-16T12:47:13Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Website: 'Elite Swing Agent' -> 'Gegentrend' (Mean-Reversion). Nur Anzeigename, Daten-Key swing unveraendert."
   }
  ]
 }
