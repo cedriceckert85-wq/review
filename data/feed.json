@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-08T03:58:11Z",
+ "standUtc": "2026-07-09T04:37:11Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-09T04:37:11Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 09.07.2026 06:37"
+  },
+  {
+   "zeit": "2026-07-08T21:30:26Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 08.07.2026"
+  },
   {
    "zeit": "2026-07-08T03:58:11Z",
    "agent": "bots",
@@ -511,20 +525,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 20.06.2026 06:59"
-  },
-  {
-   "zeit": "2026-06-20T01:39:00Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-06-20 (KEIN TRADE: kein neuer Handelstag, Journal 5/5 am Cap)"
-  },
-  {
-   "zeit": "2026-06-20T01:24:29Z",
-   "agent": "solid",
-   "label": "🤍 SOLID",
-   "repo": "bots",
-   "text": "SOLID-Lauf 2026-06-20 (Sa, KEIN TRADE: Momentum 3/3 voll, News-Drift kein Universums-Ticker)"
   },
   {
    "zeit": "2026-06-18T21:05:03Z",
