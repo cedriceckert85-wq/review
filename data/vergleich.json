@@ -289,6 +289,19 @@
       "crypto": 0.0,
       "spy": 1.55,
       "tagesgeld": 0.17
+    },
+    {
+      "datum": "2026-07-14",
+      "label": "14.07.",
+      "swing": 0.0,
+      "speku": 0.76,
+      "haupt": 0.33,
+      "solid": 0.53,
+      "risk": 3.36,
+      "schatten": 1.31,
+      "crypto": 0.0,
+      "spy": 1.91,
+      "tagesgeld": 0.175
     }
   ]
 }
