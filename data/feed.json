@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-11T03:56:07Z",
+ "standUtc": "2026-07-14T03:47:20Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-14T03:47:20Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 14.07.2026 05:47"
+  },
+  {
+   "zeit": "2026-07-13T21:12:16Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 13.07.2026"
+  },
   {
    "zeit": "2026-07-11T03:56:07Z",
    "agent": "bots",
@@ -450,13 +464,6 @@
    "text": "CODEX Lauf 25.06.2026 06:50"
   },
   {
-   "zeit": "2026-06-24T21:45:36Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 24.06.2026"
-  },
-  {
    "zeit": "2026-06-24T21:07:37Z",
    "agent": "swing",
    "label": "◆ Swing",
@@ -483,13 +490,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Wache 21:26 — IONQ 52.80 (+1.80 zu Stop 51.00, HOLD, leichte Erholung), S&P -0.22%, kein Handel"
-  },
-  {
-   "zeit": "2026-06-24T04:51:04Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 24.06.2026 06:51"
   },
   {
    "zeit": "2026-06-23T21:11:33Z",
