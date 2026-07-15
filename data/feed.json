@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-14T03:47:20Z",
+ "standUtc": "2026-07-15T03:47:58Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-15T03:47:58Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 15.07.2026 05:47"
+  },
+  {
+   "zeit": "2026-07-14T21:14:00Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 14.07.2026"
+  },
   {
    "zeit": "2026-07-14T03:47:20Z",
    "agent": "bots",
@@ -457,13 +471,6 @@
    "text": "Speku: Briefing 09:06 — PCE-Konsens Core ~3,3% YoY, IONQ 53,60 vorbörslich, Stop 4,8% Puffer"
   },
   {
-   "zeit": "2026-06-25T04:50:24Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 25.06.2026 06:50"
-  },
-  {
    "zeit": "2026-06-24T21:07:37Z",
    "agent": "swing",
    "label": "◆ Swing",
@@ -553,13 +560,6 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Website: 'Elite Swing Agent' -> 'Gegentrend' (Mean-Reversion). Nur Anzeigename, Daten-Key swing unveraendert."
-  },
-  {
-   "zeit": "2026-06-16T12:38:39Z",
-   "agent": "swing",
-   "label": "◆ Swing",
-   "repo": "swing",
-   "text": "Umbau: Swing -> Mean-Reversion (V4). Mandat/Regeln/Cron auf Gegen-Trend; API-Plumbing (alpaca_sync/trade_eval/Journal/Actions) unveraendert. Momentum-Spec V3 archiviert."
   }
  ]
 }
