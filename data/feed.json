@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-07-15T03:47:58Z",
+ "standUtc": "2026-07-16T03:51:31Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-16T03:51:31Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 16.07.2026 05:51"
+  },
   {
    "zeit": "2026-07-15T03:47:58Z",
    "agent": "bots",
@@ -350,13 +357,6 @@
    "label": "🚀 Speku",
    "repo": "epmt-dashboard",
    "text": "Speku: Briefing 2026-06-26"
-  },
-  {
-   "zeit": "2026-06-26T04:57:51Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 26.06.2026 06:57"
   },
   {
    "zeit": "2026-06-25T21:10:36Z",
