@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-07-16T03:51:31Z",
+ "standUtc": "2026-07-17T03:51:42Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-17T03:51:42Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 17.07.2026 05:51"
+  },
   {
    "zeit": "2026-07-16T03:51:31Z",
    "agent": "bots",
@@ -266,20 +273,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 30.06.2026 06:50"
-  },
-  {
-   "zeit": "2026-06-29T21:43:47Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 29.06.2026"
-  },
-  {
-   "zeit": "2026-06-27T04:40:00Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 27.06.2026 06:40"
   },
   {
    "zeit": "2026-06-26T15:12:23Z",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Website: 'Elite Swing Agent' -> 'Gegentrend' (Mean-Reversion). Nur Anzeigename, Daten-Key swing unveraendert."
+  },
+  {
+   "zeit": "2026-06-16T12:38:39Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Umbau: Swing -> Mean-Reversion (V4). Mandat/Regeln/Cron auf Gegen-Trend; API-Plumbing (alpaca_sync/trade_eval/Journal/Actions) unveraendert. Momentum-Spec V3 archiviert."
   }
  ]
 }
