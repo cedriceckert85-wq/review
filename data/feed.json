@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-21T03:59:15Z",
+ "standUtc": "2026-07-22T04:00:27Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-22T04:00:27Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 22.07.2026 06:00"
+  },
+  {
+   "zeit": "2026-07-21T21:32:13Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 21.07.2026"
+  },
   {
    "zeit": "2026-07-21T03:59:15Z",
    "agent": "bots",
@@ -254,13 +268,6 @@
    "text": "RISK-Lauf 2026-07-03"
   },
   {
-   "zeit": "2026-07-02T21:31:40Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 02.07.2026"
-  },
-  {
    "zeit": "2026-07-02T21:13:38Z",
    "agent": "system",
    "label": "🛠 System",
@@ -273,13 +280,6 @@
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Speku-Dashboard 2026-07-02 23:06 — FLAT all-cash 99119 USD, 0 Positionen"
-  },
-  {
-   "zeit": "2026-07-02T04:45:51Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 02.07.2026 06:45"
   },
   {
    "zeit": "2026-06-26T15:12:23Z",
