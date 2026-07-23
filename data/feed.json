@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-22T04:00:27Z",
+ "standUtc": "2026-07-23T03:58:16Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-23T03:58:16Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 23.07.2026 05:58"
+  },
+  {
+   "zeit": "2026-07-22T21:29:39Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 22.07.2026"
+  },
   {
    "zeit": "2026-07-22T04:00:27Z",
    "agent": "bots",
@@ -177,13 +191,6 @@
    "text": "RISK-Lauf 2026-07-04"
   },
   {
-   "zeit": "2026-07-03T21:31:15Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 03.07.2026"
-  },
-  {
    "zeit": "2026-07-03T21:10:33Z",
    "agent": "swing",
    "label": "◆ Swing",
@@ -252,20 +259,6 @@
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Speku-Dashboard: Briefing 2026-07-03 — 4 Quantum-/Space-Katalysatoren, FLAT all-cash"
-  },
-  {
-   "zeit": "2026-07-03T04:30:23Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 03.07.2026 06:30"
-  },
-  {
-   "zeit": "2026-07-03T01:44:20Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-07-03"
   },
   {
    "zeit": "2026-07-02T21:13:38Z",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Website: 'Elite Swing Agent' -> 'Gegentrend' (Mean-Reversion). Nur Anzeigename, Daten-Key swing unveraendert."
+  },
+  {
+   "zeit": "2026-06-16T12:38:39Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Umbau: Swing -> Mean-Reversion (V4). Mandat/Regeln/Cron auf Gegen-Trend; API-Plumbing (alpaca_sync/trade_eval/Journal/Actions) unveraendert. Momentum-Spec V3 archiviert."
   }
  ]
 }
