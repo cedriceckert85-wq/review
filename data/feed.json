@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-23T03:58:16Z",
+ "standUtc": "2026-07-24T03:57:33Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-24T03:57:33Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 24.07.2026 05:57"
+  },
+  {
+   "zeit": "2026-07-23T21:20:20Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 23.07.2026"
+  },
   {
    "zeit": "2026-07-23T03:58:16Z",
    "agent": "bots",
@@ -175,20 +189,6 @@
    "label": "🛠 System",
    "repo": "epmt-dashboard",
    "text": "Speku-Dashboard: Wochen-Reflexion 2026-07-04 (FLAT 99119 USD)"
-  },
-  {
-   "zeit": "2026-07-04T04:23:51Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 04.07.2026 06:23"
-  },
-  {
-   "zeit": "2026-07-04T01:39:52Z",
-   "agent": "risk",
-   "label": "🔥 RISK",
-   "repo": "bots",
-   "text": "RISK-Lauf 2026-07-04"
   },
   {
    "zeit": "2026-07-03T21:10:33Z",
