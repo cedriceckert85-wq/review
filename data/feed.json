@@ -1,6 +1,20 @@
 {
- "standUtc": "2026-07-25T03:53:43Z",
+ "standUtc": "2026-07-28T03:51:06Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-28T03:51:06Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 28.07.2026 05:51"
+  },
+  {
+   "zeit": "2026-07-27T21:28:56Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "Auswertung 27.07.2026"
+  },
   {
    "zeit": "2026-07-25T03:53:43Z",
    "agent": "bots",
@@ -168,20 +182,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Auswertung 08.07.2026"
-  },
-  {
-   "zeit": "2026-07-08T03:58:11Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 08.07.2026 05:58"
-  },
-  {
-   "zeit": "2026-07-07T21:40:17Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 07.07.2026"
   },
   {
    "zeit": "2026-07-04T09:38:47Z",
