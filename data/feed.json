@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-07-30T03:45:06Z",
+ "standUtc": "2026-07-31T04:05:15Z",
  "eintraege": [
+  {
+   "zeit": "2026-07-31T04:05:15Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 31.07.2026 06:05"
+  },
   {
    "zeit": "2026-07-30T03:45:06Z",
    "agent": "bots",
@@ -168,20 +175,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 11.07.2026 05:56"
-  },
-  {
-   "zeit": "2026-07-10T21:19:32Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 10.07.2026"
-  },
-  {
-   "zeit": "2026-07-10T04:38:50Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 10.07.2026 06:38"
   },
   {
    "zeit": "2026-07-04T09:38:47Z",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Umbau: Swing -> Mean-Reversion (V4). Mandat/Regeln/Cron auf Gegen-Trend; API-Plumbing (alpaca_sync/trade_eval/Journal/Actions) unveraendert. Momentum-Spec V3 archiviert."
+  },
+  {
+   "zeit": "2026-06-15T21:12:58Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Swing-Lauf 2026-06-15"
   }
  ]
 }
