@@ -5,11 +5,11 @@
     "regeln": "Start 2000 € am 11.06.2026. Einstieg nur zu auf den Dashboards (oder per Quelle) belegbaren Kursen. Jede Abweichung vom Original braucht eine Messlatte, an der sie später als richtig/falsch bewertet wird. Keine rückwirkenden Änderungen — Fehler bleiben sichtbar."
   },
   "aktuell": {
-    "vermoegen": 1835.74,
-    "rendite": -8.21,
+    "vermoegen": 1879.59,
+    "rendite": -6.02,
     "cash": 1376.56,
-    "cashQuote": 75.0,
-    "stand": "31.07.2026, 23:31 (Auto-Kurse)"
+    "cashQuote": 73.2,
+    "stand": "03.08.2026, 17:49 (Auto-Kurse)"
   },
   "scoreboard": {
     "richtig": 0,
@@ -22,20 +22,20 @@
       "name": "D-Wave Quantum",
       "einsatz": 400,
       "einstand": 23.83,
-      "kurs": 18.08,
-      "rendite": -24.13,
+      "kurs": 19.87,
+      "rendite": -16.62,
       "stop": 18.6,
       "ziel": 36,
       "begruendung": "Quantum-Kernwette übernommen — die These (kommerzielle Annealing-Erlöse) ist die stärkste der drei Speku-Positionen. Aber: Ich deckle das Quantum-Thema insgesamt auf 650 € statt 770 € und streiche die Nachkauf-Regel ersatzlos.",
-      "stopVerletzt": true
+      "stopVerletzt": false
     },
     {
       "ticker": "IONQ",
       "name": "IonQ",
       "einsatz": 250,
       "einstand": 58.51,
-      "kurs": 36.44,
-      "rendite": -37.72,
+      "kurs": 39.67,
+      "rendite": -32.2,
       "stop": 46,
       "ziel": 75,
       "begruendung": "Zweite Quantum-Position als Qualitätsführer. RGTI lasse ich bewusst weg — drei hochkorrelierte Titel desselben Themas sind keine drei Positionen, sondern eine große mit dreifachen Gebühren.",
