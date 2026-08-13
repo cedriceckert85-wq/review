@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-08-12T03:09:27Z",
+ "standUtc": "2026-08-13T03:12:42Z",
  "eintraege": [
+  {
+   "zeit": "2026-08-13T03:12:42Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 13.08.2026 05:12"
+  },
   {
    "zeit": "2026-08-12T03:09:27Z",
    "agent": "bots",
@@ -154,20 +161,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 22.07.2026 06:00"
-  },
-  {
-   "zeit": "2026-07-21T21:32:13Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 21.07.2026"
-  },
-  {
-   "zeit": "2026-07-21T03:59:15Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 21.07.2026 05:59"
   },
   {
    "zeit": "2026-07-04T09:38:47Z",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Swing-Lauf 2026-06-13"
+  },
+  {
+   "zeit": "2026-06-12T15:40:12Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Einheitliche Nav-Komponente"
   }
  ]
 }
