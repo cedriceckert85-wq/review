@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-08-13T03:12:42Z",
+ "standUtc": "2026-08-14T03:10:59Z",
  "eintraege": [
+  {
+   "zeit": "2026-08-14T03:10:59Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 14.08.2026 05:10"
+  },
   {
    "zeit": "2026-08-13T03:12:42Z",
    "agent": "bots",
@@ -154,13 +161,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "Auswertung 22.07.2026"
-  },
-  {
-   "zeit": "2026-07-22T04:00:27Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 22.07.2026 06:00"
   },
   {
    "zeit": "2026-07-04T09:38:47Z",
