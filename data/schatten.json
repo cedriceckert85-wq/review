@@ -5,11 +5,11 @@
     "regeln": "Start 2000 € am 11.06.2026. Einstieg nur zu auf den Dashboards (oder per Quelle) belegbaren Kursen. Jede Abweichung vom Original braucht eine Messlatte, an der sie später als richtig/falsch bewertet wird. Keine rückwirkenden Änderungen — Fehler bleiben sichtbar."
   },
   "aktuell": {
-    "vermoegen": 1930.61,
-    "rendite": -3.47,
+    "vermoegen": 1931.12,
+    "rendite": -3.44,
     "cash": 1376.56,
     "cashQuote": 71.3,
-    "stand": "17.08.2026, 17:12 (Auto-Kurse)"
+    "stand": "17.08.2026, 17:44 (Auto-Kurse)"
   },
   "scoreboard": {
     "richtig": 0,
@@ -34,8 +34,8 @@
       "name": "IonQ",
       "einsatz": 250,
       "einstand": 58.51,
-      "kurs": 46.7,
-      "rendite": -20.18,
+      "kurs": 46.82,
+      "rendite": -19.98,
       "stop": 46,
       "ziel": 75,
       "begruendung": "Zweite Quantum-Position als Qualitätsführer. RGTI lasse ich bewusst weg — drei hochkorrelierte Titel desselben Themas sind keine drei Positionen, sondern eine große mit dreifachen Gebühren.",
