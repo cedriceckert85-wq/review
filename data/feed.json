@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-08-15T02:03:11Z",
+ "standUtc": "2026-08-18T02:04:52Z",
  "eintraege": [
+  {
+   "zeit": "2026-08-18T02:04:52Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 18.08.2026 04:04"
+  },
   {
    "zeit": "2026-08-15T02:03:11Z",
    "agent": "bots",
@@ -147,20 +154,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 24.07.2026 05:57"
-  },
-  {
-   "zeit": "2026-07-23T21:20:20Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 23.07.2026"
-  },
-  {
-   "zeit": "2026-07-23T03:58:16Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 23.07.2026 05:58"
   },
   {
    "zeit": "2026-07-04T09:38:47Z",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Einheitliche Nav-Komponente"
+  },
+  {
+   "zeit": "2026-06-12T13:13:37Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Link-Netzwerk bereinigt + Woche-Button"
   }
  ]
 }
