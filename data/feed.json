@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-09-01T05:39:55Z",
+ "standUtc": "2026-09-02T05:04:32Z",
  "eintraege": [
+  {
+   "zeit": "2026-09-02T05:04:32Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 02.09.2026 07:04"
+  },
   {
    "zeit": "2026-09-01T05:39:55Z",
    "agent": "bots",
@@ -140,13 +147,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 06.08.2026 05:53"
-  },
-  {
-   "zeit": "2026-08-05T03:48:46Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 05.08.2026 05:48"
   },
   {
    "zeit": "2026-07-04T09:38:47Z",
