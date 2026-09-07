@@ -1,6 +1,13 @@
 {
- "standUtc": "2026-09-04T05:05:45Z",
+ "standUtc": "2026-09-05T04:55:45Z",
  "eintraege": [
+  {
+   "zeit": "2026-09-05T04:55:45Z",
+   "agent": "bots",
+   "label": "🤍🔥 Bot-Duo",
+   "repo": "bots",
+   "text": "CODEX Lauf 05.09.2026 06:55"
+  },
   {
    "zeit": "2026-09-04T05:05:45Z",
    "agent": "bots",
@@ -133,20 +140,6 @@
    "label": "🤍🔥 Bot-Duo",
    "repo": "bots",
    "text": "CODEX Lauf 11.08.2026 04:50"
-  },
-  {
-   "zeit": "2026-08-10T21:00:59Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "Auswertung 10.08.2026"
-  },
-  {
-   "zeit": "2026-08-08T02:34:08Z",
-   "agent": "bots",
-   "label": "🤍🔥 Bot-Duo",
-   "repo": "bots",
-   "text": "CODEX Lauf 08.08.2026 04:34"
   },
   {
    "zeit": "2026-07-04T09:38:47Z",
@@ -560,6 +553,13 @@
    "label": "◆ Swing",
    "repo": "swing",
    "text": "Nav auf einheitliche Agenten-Seite umgestellt"
+  },
+  {
+   "zeit": "2026-06-12T12:58:25Z",
+   "agent": "swing",
+   "label": "◆ Swing",
+   "repo": "swing",
+   "text": "Apple-Design + Flotten-Navigationsleiste"
   }
  ]
 }
