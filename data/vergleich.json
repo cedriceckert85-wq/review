@@ -1095,6 +1095,19 @@
       "crypto": 0.0,
       "spy": 5.35,
       "tagesgeld": 0.652
+    },
+    {
+      "datum": "2026-10-10",
+      "label": "10.10.",
+      "swing": 0.0,
+      "speku": 0.76,
+      "haupt": 0.33,
+      "solid": 0.53,
+      "risk": 3.36,
+      "schatten": 1.31,
+      "crypto": 0.0,
+      "spy": 4.9,
+      "tagesgeld": 0.658
     }
   ]
 }
